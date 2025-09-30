@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body.lp-submenu-woowbot{
+    background-color: #F5F7FD;
+        
+}
+
+body.toplevel_page_woowbot{
+    background-color: #F5F7FD;
+}
+body.lp-submenu-woowbot .woo-chatbot-wrap{
+font-family: "DM Sans", sans-serif !important;  
+}
+.notice.notice-info.is-dismissible.woowbot-notice {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 10px;
+    background: linear-gradient(192deg, #FFE3E1 4%, #E9E4FF 98.26%);
+    padding: 15px 15px;
+    margin: 20px 20px 20px 0;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border: none;
+    color: #000;
+    width: 99% !important;
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip nav {
+    width: 16%;
+    display: block;
+    float: left;
+    min-width: 240px;
+    margin-right: 24px;
+    position: sticky;
+    top: 0;
+    overflow: unset;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 16px;
+}
+.woo-chatbot-tabs-style-flip .content-wrap {
+    background: #fff;
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+    width: 81.5%;
+    display: block;
+}
+
+section.woo-chatbot-tab-container-inner-top {
+    width: 99%;
+    padding: 20px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qc_get_pro a {
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #5B4E96;
+    border: 2px solid #5B4E96;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.qc_get_pro a:hover {
+    padding: 10px 25px;
+    background: #5B4E96;
+    color: #fff;
+    border: 2px solid #5B4E96;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+a:hover{
+    text-decoration: none !important;
+}
+section.woo-chatbot-tab-container-inner-top h2 {
+    color: #5b4e96 !important;
+    font-size: 24px;
+}
+section.woo-chatbot-tab-container-inner-top h2 {
+    color: #5b4e96 !important;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip nav ul li a {
+padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #988FBD;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 5px 0;
+}
+
+.woo-chatbot-tabs nav ul li.tab-current a, .woo-chatbot-tabs nav ul li a:hover  {
+    background: #5B4E96 !important; 
+     color: #ffffff !important; 
+}
+
+.woo-chatbot-tabs-style-flip nav a span {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.woo-chatbot-tabs p.qc-opt-title-font {
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-size: 16px;
+    color: #5b4e96 !important;
+}
+
+.woo-chatbot-wrap .form-group {
+    margin-bottom: 15px;
+    border: 1px solid #E5E6F2;
+    padding: 12px 12px;
+    border-radius: 8px;
+}
+.form-group label {
+    width: auto;
+    display: inline-block;
+    font-weight: bold;
+}
+.form-group label {
+    font-size: 14px;
+}
+span.qc-opt-title-font {
+    font-size: 16px;
+}
+.cxsc-settings-blocks {
+    font-size: 15px;
+}
+.woo-chatbot-wrap .form-group input[type=checkbox]+label {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #5b4e96;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	transform: translate(0%, 0%);
+	transition: all ease-out 200ms;
+	text-indent: 28px;
+	white-space: nowrap;
+	color: #555;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: flex;
+	align-items: center;
+    line-height: normal;
+}
+
+.woo-chatbot-wrap .form-group input[type=checkbox]+label:after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 8px;
+	border-bottom: 3px solid #22b573;
+	border-left: 3px solid #22b573;
+	top: 25%;
+	left: 50%;
+	transform-origin: bottom left;
+	transform: rotate(-45deg);
+	opacity: 0;
+	transition: all ease-out 200ms;
+}
+
+.woo-chatbot-wrap .form-group input[type=checkbox]:checked+label {
+	border: 2px solid #22b573;
+}
+
+.woo-chatbot-wrap .form-group input[type=checkbox]:checked+label:after {
+	opacity: 1;
+	width: 22px;
+}
+
+.woo-chatbot-wrap .form-group input[type=checkbox] {
+	display: none;
+}
+
+div#wp-chatbot-exclude-post-list input[type=checkbox]+label {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #5b4e96;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	transform: translate(0%, 0%);
+	transition: all ease-out 200ms;
+	text-indent: 28px;
+	white-space: nowrap;
+	color: #555;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: flex;
+	align-items: center;
+    line-height: normal;
+}
+
+div#wp-chatbot-exclude-post-list input[type=checkbox]+label:after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 8px;
+	border-bottom: 3px solid #22b573;
+	border-left: 3px solid #22b573;
+	top: 25%;
+	left: 50%;
+	transform-origin: bottom left;
+	transform: rotate(-45deg);
+	opacity: 0;
+	transition: all ease-out 200ms;
+}
+
+div#wp-chatbot-exclude-post-list input[type=checkbox]:checked+label {
+	border: 2px solid #22b573;
+}
+
+div#wp-chatbot-exclude-post-list input[type=checkbox]:checked+label:after {
+	opacity: 1;
+	width: 22px;
+}
+
+div#wp-chatbot-exclude-post-list input[type=checkbox] {
+	display: none;
+}
+div#wp-chatbot-exclude-post-list ul li {
+    width: 32%;
+}
+.woo-chatbot-wrap label {
+    font-size: 15px;
+}
+.woo-chatbot-wrap p.qc-opt-dcs-font {
+    font-size: 15px;
+    font-weight: bold;
+       color: #5b4e96 !important; 
+}
+.woo-chatbot-wrap label.qc-opt-dcs-font {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.woo-chatbot-wrap h4.qc-opt-title {
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-size: 16px;
+    color: #5b4e96 !important;
+}
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list li {
+	width: 156px;
+	margin: 4px 4px;
+	border-radius: 16px;
+	background: linear-gradient(192deg, #FFE3E1 4%, #E9E4FF 98.26%);
+	padding: 12px;
+	text-align: center;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+        height: 130px;   
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list li img {
+	max-width: 80px;
+	display: block;
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 input[type=radio]:checked::before {
+	content: "\f058";
+	font: normal normal normal 14px / 1 FontAwesome;
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #5b4e96bd;
+	line-height: 1.14285714;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 16px;
+	z-index: 999;
+	color: #45d72d;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	font-size: 32px;
+	padding: 0 4px;
+	border: 4px solid #f5f7fd;
+
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 input[type=radio] {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 input[type=radio] {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cxsc-settings-blocks button {
+    padding: 3px 15px !important;
+    background: #5B4E96 !important;
+    color: #fff !important;
+    border: 2px solid #5B4E96;
+    border-radius: 6px !important;
+    font-weight: bold;
+    font-size: 13px !important;
+    border: none !important;
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list li span.qc-opt-dcs-font {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 0 0 0;
+}
+
+
+.woo-chatbot-wrap input#submit {
+    background: #5B4E96 !important;
+    color: #ffffff !important;
+    border: none;
+        margin: 20px 20px 0 20px;
+}
+
+div#wp-chatbot-exclude-post-list ul li label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.woowbot_info_carousel .slick-prev {
+    left: -15px;
+}
+.woowbot_info_carousel .slick-next {
+    right: 15px !important;
+}
+
+.woowbot_info_carousel .slick-prev:before, .woowbot_info_carousel .slick-next:before {
+    color: #5B4E96 !important;
+}
+
+.woowbot-notice .notice-dismiss {
+    top: -15px;
+    right: -12px;
+}
+
+
+.woowbot-notice .notice-dismiss:before{
+    color: #d63638;
+}
+.woo-chatbot-tabs-style-flip {
+    display: flex;
+}
+
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list li img {
+    max-width: 65px;
+}
+img#qcld_woo_chatbot_board_bg_image {
+    width: auto !important;
+    height: auto !important;
+}
+.qcld-wpbot-agent-image label.qc-opt-dcs-font {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 0 0 0;
+}
+@media only screen and (max-width: 1024px) {
+.woo-chatbot-tabs.woo-chatbot-tabs-style-flip nav {
+    width: 98%;
+}
+.woo-chatbot-tabs-style-flip .content-wrap {
+    width: 98%;
+}
+.woo-chatbot-tabs-style-flip .content-wrap {
+    background: #fff;
+    margin: 20px 0 0 0;
+}
+.woo-chatbot-tabs-style-flip {
+    display: flex;
+    flex-direction: column;
+}
+}
+
