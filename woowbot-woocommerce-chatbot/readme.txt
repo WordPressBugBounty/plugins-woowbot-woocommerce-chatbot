@@ -4,7 +4,7 @@ Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
 Tested up to: 6.8
-Stable tag: 4.3.4
+Stable tag: 4.3.5
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
@@ -300,6 +300,9 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 
 
 == Changelog ==
+
+= 4.3.4 =
+# Some UI changes
 
 = 4.3.4 =
 # Design changes
