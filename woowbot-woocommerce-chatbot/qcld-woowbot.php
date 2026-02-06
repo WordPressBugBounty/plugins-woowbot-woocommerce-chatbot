@@ -4,13 +4,13 @@
     * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.3.5
+    * Version: 4.5.2
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
     * Author URI: https://woowbot.pro/
     * Requires at least: 4.9
-    * Tested up to: 6.8
+    * Tested up to: 6.9
     * Text Domain: woowbot-woocommerce-chatbot
     * Domain Path: /lang
     * License: GPL2
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.3.5');
+   define('QCLD_WOOCHATBOT_VERSION', '4.5.2');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -73,7 +73,7 @@
                return;
            }
            if( ( !empty($_GET['page']) && $_GET["page"] == "woowbot" ) || ( !empty($_GET['page']) && $_GET['page'] == 'qcld_woowbot_info_page' ) || ( !empty($_GET['page']) && $_GET['page'] == 'qcpro-promo-page-woowbot-support' )  ){
-              // add_action( 'admin_notices', [$this,'qc_woowbot_promotion_notice']);
+           //    add_action( 'admin_notices', [$this,'qc_woowbot_promotion_notice']);
            }
            add_action('admin_menu', array($this, 'qcld_woo_chatbot_admin_menu'), 6);
    
@@ -90,17 +90,17 @@
        }
        public function qc_woowbot_promotion_notice(){
    
-           $promotion_img = QCLD_WOOCHATBOT_IMG_URL . "/wp22-woowbot.jpg";
-           ?>
-<div id="promotion-wpchatbots" data-dismiss-type="qcbot-feedback-notice" class="notice is-dismissible qcbot-feedback" style="background: #542ecf">
-   <div class="">
-      <div class="qc-review-text" >
-         <a href="https://woowbot.pro/pricing" target="_blank">
-         <img src="<?php echo esc_url($promotion_img); ?>" alt=""></a>
-      </div>
-   </div>
-</div>
-<?php
+           $promotion_img = QCLD_WOOCHATBOT_IMG_URL . "/cyber-25-woowbot.jpg";
+         ?>
+         <div id="promotion-wpchatbots" data-dismiss-type="qcbot-feedback-notice" class="notice is-dismissible qcbot-feedback" style="background: #120976">
+            <div class="">
+               <div class="qc-review-text" >
+                  <a href="https://woowbot.pro/pricing" target="_blank">
+                  <img src="<?php echo esc_url($promotion_img); ?>" alt="cyber monday 25 woowbot"></a>
+               </div>
+            </div>
+         </div>
+         <?php
    }
    /**
     * Add a submenu item to the WooCommerce menu
@@ -237,9 +237,9 @@
            'email_successfully' => get_option('qlcd_woo_chatbot_email_successfully'),
            'provide_email_address' => get_option('qlcd_woo_chatbot_provide_email_address'),
            'chatbot_write_your_message' => get_option('qlcd_woo_chatbot_write_your_message'),
-   'conversations_with'=> get_option('qlcd_woo_chatbot_conversations_with'),
-   'is_typing'=> get_option('qlcd_woo_chatbot_is_typing'),
-   'send_a_msg'=> get_option('qlcd_woo_chatbot_send_a_msg'),
+           'conversations_with'=> get_option('qlcd_woo_chatbot_conversations_with'),
+           'is_typing'=> get_option('qlcd_woo_chatbot_is_typing'),
+           'send_a_msg'=> get_option('qlcd_woo_chatbot_send_a_msg'),
            'product_success'=> get_option('qlcd_woo_chatbot_product_success'),
            'product_fail'=> get_option('qlcd_woo_chatbot_product_fail'),
            'specific_fail'=> ( get_option('qlcd_woo_chatbot_more_specific') ? get_option('qlcd_woo_chatbot_more_specific') : 'Can you be more specific?' ),
@@ -294,7 +294,7 @@
    <form action="<?php echo esc_attr($action); ?>" method="POST" enctype="multipart/form-data">
       <div class="form-container">
          <section class="woo-chatbot-tab-container-inner-top">
-         <h2><?php esc_html_e('WoowBot Control Panel', 'woowbot-woocommerce-chatbot'); ?></h2>
+         <h2> <img src="<?php echo esc_url(QCLD_WOOCHATBOT_PLUGIN_URL.'images/icon-256x256.jpg'); ?>" /> <?php esc_html_e('WoowBot Control Panel', 'woowbot-woocommerce-chatbot'); ?></h2>
          <div class="qc_get_pro">
             <a href="https://woowbot.pro/" target="_blank" ><?php esc_html_e(' Get the Professional Version Now!', 'woowbot-woocommerce-chatbot'); ?></a>
          </div>
@@ -1134,6 +1134,58 @@
 <?php wp_nonce_field('woo_chatbot'); ?>
 </form>
 </div>
+
+
+
+<div id="qcld-quick-flyout" >
+    <div class="qcld-quick-flyout-items">
+    <a href="https://woowbot.pro/docs/kb-sections/getting-started/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium" rel="noopener noreferrer" target="_blank" style="transition-delay: 0ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>Getting Started</div>
+                </div>
+                <i class="dashicons dashicons-admin-home"></i>
+            </a>
+            <a href="https://woowbot.pro/faq/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 60ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>FAQ</div>
+                </div>
+                <i class="dashicons dashicons-flag"></i>
+            </a>
+            <a href="https://woowbot.pro/docs/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" style="transition-delay: 90ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>Read the Documentation</div>
+                </div>
+                <i class="dashicons dashicons-sos"></i>
+            </a>
+            <a href="https://www.woowbot.pro/free-support/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 120ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>Ask for Help</div>
+                </div>
+                <i class="dashicons dashicons-email"></i>
+            </a>           
+            <a href="https://www.woowbot.pro/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" style="transition-delay: 30ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>Check out the WoowBot Demo</div>
+                </div>
+                <i class="dashicons dashicons-welcome-view-site"></i>
+            </a>
+            <a href="https://www.woowbot.pro/pricing/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium" rel="noopener noreferrer" target="_blank" style="transition-delay: 0ms;">
+                <div class="qcld-quick-flyout-label">
+                    <div>Upgrade to Premium</div>
+                </div>
+                <i class="dashicons dashicons-star-filled"></i>
+            </a>
+            </div>
+    <a href="javascript:void(0);" class="qcld-quick-flyout-button qcld-quick-flyout-mascot">
+        <div class="qcld-quick-flyout-label">
+            <div>Start Here</div>
+        </div>
+        <img style="width:100%" src="<?php echo esc_url( QCLD_WOOCHATBOT_IMG_URL . '/icon-256x256.jpg' ); ?>" alt="Dialogflow CX">
+    </a>
+</div>
+
+
+
 <?php
    }
    

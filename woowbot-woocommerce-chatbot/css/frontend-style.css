@@ -340,10 +340,10 @@ span.qcld-chatbot-product-category, span.qcld-chatbot-button {
 }
 
 .woo-chatbot-editor-container {
-  background-color: #f2f6f9;
+  background-color: #f2f6f9b8;
   border-radius: 0 0 5px 5px;
   margin: 0;
-  padding: 6px 0 6px 15px;
+  padding: 2px 0 2px 8px;
   border: 4px solid #fff;
   border-radius: 6px;
 }
@@ -351,11 +351,11 @@ span.qcld-chatbot-product-category, span.qcld-chatbot-button {
 .woo-chatbot-editor-container input {
     display: inline-block;
     border: none;
-    height: 50px;
+    height: 40px;
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
+    width: 94%;
     background-color: transparent;
-    color: #565867;
+    color: #222;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -728,17 +728,18 @@ button#woo-chatbot-send-message {
     width: auto;
     box-shadow: rgba(0, 77, 255, 0.5) 0px 4px 24px;
     position: absolute;
-    right: -20px;
+    right: -16px;
+    bottom: 6px;
     z-index: 999999;
     padding: 0 0 0 0;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     background: white url(../images/send-button.png) no-repeat center !important;
 }
 
 button#woo-chatbot-send-message:hover {
-    background: #05b9fa url(../images/send-button.png) no-repeat center !important;
+    background: #222 url(../images/send-button.png) no-repeat center !important;
 }
 
 .woo-chatbot-msg span.qcld-chatbot-button {
@@ -832,7 +833,7 @@ input#woo-chatbot-editor :focus:focus-visible {
     margin: 0;
 }
 button#woo-chatbot-send-message {
-    right: 6px;
+    right: -20px;
 }
 .slimScrollDiv {
     border-radius: 0 !important;
@@ -851,7 +852,7 @@ button#woo-chatbot-send-message {
 }
 
 button#woo-chatbot-send-message {
-    background: #2536de url(../images/send-button.png) no-repeat center !important;
+    background: #a0408d url(../images/send-button.png) no-repeat center !important;
 }
 .woo-chatbot-featured-products ul li .woo-chatbot-product-summary {
     border-radius: 6px;
@@ -864,7 +865,7 @@ body div#woo-chatbot-ball img {
 }
 
 .woo-chatbot-ball-inner {
-    height: calc(100vh - 220px) !important;
+        height: calc(100vh - 280px) !important;
 }
 
 @media screen and (max-width: 480px) {
@@ -877,5 +878,35 @@ body div#woo-chatbot-ball img {
 .woo-chatbot-featured-products ul li .woo-chatbot-product-summary
  {
         background: linear-gradient(135deg, rgb(42 39 218 / 74%) 0%, rgb(0 204 255 / 65%) 100%) !important;
+            border: 2px solid #fff;
 }
 
+.woo-chatbot-featured-products ul li .woo-chatbot-product-summary:hover
+ {
+    background: linear-gradient(135deg, rgb(0 204 255 / 65%) 100%) 0%, rgb(42 39 218 / 74%) !important;
+}
+
+
+
+.woo-chatbot-msg .price span {
+    background: none;
+    box-shadow: none;
+}
+
+
+
+.woo-chatbot-ball-inner {
+    padding: 15px 15px 15px 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .woo-chatbot-ball-inner {
+    height: calc(100vh - 120px) !important;
+}
+
+#woo-chatbot-mobile-close {
+        background-color: #0871cd;
+        color: #ffffff;
+}
+}

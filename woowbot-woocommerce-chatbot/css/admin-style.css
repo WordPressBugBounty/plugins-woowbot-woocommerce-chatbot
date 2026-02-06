@@ -309,7 +309,7 @@ div#wp-chatbot-exclude-post-list ul li {
 	right: 0;
 	border-radius: 16px;
 	z-index: 999;
-	color: #45d72d;
+	color: #ffffff;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
@@ -404,6 +404,22 @@ img#qcld_woo_chatbot_board_bg_image {
     font-weight: bold;
     padding: 7px 0 0 0;
 }
+p.woo-chatbot-settings-instruction {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif !important;  
+}
+button.qcld_woo_chatbot_board_bg_button.button {
+    margin: 0 0 10px 0;
+}
+span.qc-opt-title-font {
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif !important;  
+}
+section.woo-chatbot-tab-container-inner-top img {
+    width: 45px;
+}
 @media only screen and (max-width: 1024px) {
 .woo-chatbot-tabs.woo-chatbot-tabs-style-flip nav {
     width: 98%;
@@ -420,4 +436,222 @@ img#qcld_woo_chatbot_board_bg_image {
     flex-direction: column;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+#qcld-quick-flyout {
+    align-items: center;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    position: fixed;
+    right: 40px;
+    row-gap: 10px;
+    transition: opacity .2s ease-in-out;
+    z-index: 99999
+}
+
+#qcld-quick-flyout:not(.is-open) {
+    pointer-events: none
+}
+
+@media (max-width:959px) {
+    #qcld-quick-flyout {
+        display: none
+    }
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-mascot {
+    align-items: center;
+    display: flex;
+    pointer-events: auto;
+    position: relative
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-mascot:after {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 0 0 0 1px #a1408d, 0 3px 20px rgba(0, 0, 0, .2);
+    content: "";
+    display: block;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 60px;
+    z-index: -1
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-mascot:hover:after {
+    box-shadow: 0 0 0 1px #a1408d, 0 3px 30px rgba(0, 0, 0, .25)
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-mascot:focus {
+    box-shadow: none
+}
+
+#qcld-quick-flyout .qcld-quick-mascot__eyes {
+    transition: transform .2s ease-in-out
+}
+
+#qcld-quick-flyout.is-open .glsr-mascot__eyes {
+    transform: translateY(-2.5%)
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-label {
+    align-items: center;
+    display: flex;
+    height: auto !important;
+    padding-right: 10px;
+    position: absolute;
+    right: 100%;
+    transition: all .2s ease-out;
+    white-space: nowrap
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-label>div {
+    background-color: rgba(44 51 56/.9);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 6px 12px;
+    position: relative
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item:hover .qcld-quick-flyout-label>div,
+#qcld-quick-flyout .qcld-quick-flyout-mascot .qcld-quick-flyout-label>div {
+    background-color: #993885
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-mascot .qcld-quick-flyout-label {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: right
+}
+
+#qcld-quick-flyout.is-open .qcld-quick-flyout-mascot .qcld-quick-flyout-label {
+    opacity: 0;
+    transform: scale(0)
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item {
+    align-items: center;
+    background-color:#5B4E96;
+    border-radius: 50%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .2);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    visibility: hidden;
+    width: 40px
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item:hover {
+    background-color: #111111;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, .25)
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item.qcld-quick-flyout-premium {
+    background-color: #993885
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item.qcld-quick-flyout-premium:hover {
+    background-color: #993885
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item.qcld-quick-flyout-premium i {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+
+#qcld-quick-flyout.is-open .qcld-quick-flyout-item {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible
+}
+
+#qcld-quick-flyout .qcld-quick-flyout-item i {
+    color: #fff;
+    font-size: 26px;
+    height: 26px;
+    width: 26px
+}
+
+a.qcld-quick-flyout-button.qcld-quick-flyout-mascot img {
+    width: 60px !important;
+}
+a.qcld-quick-flyout-button.qcld-quick-flyout-mascot img {
+    border-radius: 50%;
+}
+.woo-chatbot-wrap {
+    padding: 0 0 80px 0;
+}
+
+input.form-control.qc-opt-dcs-font {
+    border: 1px solid #d5d5d5;
+}
+input.form-control.qc-opt-dcs-font:focus {
+       box-shadow: 0 0 0 1px #5b4e96;
+}
+
+.qc_get_pro a {
+    padding: 10px 25px;
+    background: #5B4E96;
+    color: #ffffff;
+    border: 2px solid #5B4E96;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.qc_get_pro a:focus{
+    box-shadow: none;
+    outline: 0px solid transparent;
+}
+
+body.woowbot-flyout #wpcontent .is-open {
+    background: #000000b0;
+    z-index: 99999;
+    width: 100%;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: 10px;
+    transition: opacity .2s ease-in-out;
+    bottom: 0;
+    padding: 40px;
+}
+
+
+
+
 

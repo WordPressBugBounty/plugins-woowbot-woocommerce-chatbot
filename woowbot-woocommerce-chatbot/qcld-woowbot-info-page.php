@@ -149,7 +149,7 @@ display: flex;
                     <div id="post-body-content" style="position: relative;">
                         <div class="qc-plugin-help-container">
                         <div class="qc-plugin-help-container-right">
-                            <h3 class="qc-plugin-help-heading-lg"><?php esc_html_e('Help', 'woowbot-woocommerce-chatbot'); ?></h3>
+                            <h3 class="qc-plugin-help-heading-lg" style="color:#000;"><?php esc_html_e('Help', 'woowbot-woocommerce-chatbot'); ?></h3>
                             <p>
                                 <?php esc_html_e('Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin.', 'woowbot-woocommerce-chatbot'); ?>
                             </p>
@@ -165,7 +165,7 @@ display: flex;
                             <p><?php esc_html_e('Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot.', 'woowbot-woocommerce-chatbot'); ?></p>
                             
                             <div class="clear"></div>
-                            <h3 class="qc-plugin-help-heading-lg"><?php esc_html_e('Get the #1 ChatBot for WooCommerce – WoowBot', 'woowbot-woocommerce-chatbot'); ?></h3>
+                            <h3 class="qc-plugin-help-heading-lg" style="color:#000;"><?php esc_html_e('Get the #1 ChatBot for WooCommerce – WoowBot', 'woowbot-woocommerce-chatbot'); ?></h3>
                             <p style="font-weight:bold;"><?php esc_html_e('Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro', 'woowbot-woocommerce-chatbot'); ?></p>
                             <p>More Sales, Conversions and Satisfied customers! WoowBot is the most powerful, flexible and WooCommerce Integrated native Plug n’ Play ChatBot that can <span style="font-weight:bold;">improve your sales</span> and and provide automated <span style="font-weight:bold;">customer support.</span></p>
                             <p>Utilize the AI powered ChatBot services on your WooCommerce websites with <span style="font-weight:bold;">Live Human Chat,</span> <span style="font-weight:bold;">DialogFlow,</span> or <span style="font-weight:bold;">OpenAI</span> (ChatGPT) along with many built-in, powerful features.</p>

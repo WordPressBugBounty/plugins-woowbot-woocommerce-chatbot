@@ -1,10 +1,10 @@
-=== ChatBot for Woocommerce - WoowBot ===
+=== ChatBot for eCommerce - WoowBot ===
 Contributors: quantumcloud
 Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
-Tested up to: 6.8
-Stable tag: 4.3.5
+Tested up to: 6.9
+Stable tag: 4.5.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
@@ -17,6 +17,7 @@ ChatBot for WooCommerce. Simple & native WooCommerce ChatBot helps shoppers find
 
 The WoowBot Free version is a <strong>simple eCommerce ChatBot</strong> for woocommerce shoppers to search and find the right product quickly. If the shopper does not find the product they are searching for, they can email the shop admin directly from the ChatBot window. Use ChatBot for increased sales in your eCommerce websites.
 
+> 🚀 Black Friday Sale! Use coupon code <strong>friday</strong> and grab the Pro version now!
 > 🚀 Upgrade to the Best <strong> [ChatBot for WooCommerce - WoowBot Pro](https://woowbot.pro/) for AI & Advanced Features</strong> 
 > 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot Pro](https://woowbot.pro/) 
 
@@ -301,7 +302,55 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 
 == Changelog ==
 
-= 4.3.4 =
+= 4.5.2
+# UI changes
+
+= 4.5.1
+# Design update
+
+= 4.5.0
+# End sale
+
+= 4.4.9 =
+# Improved responsiveness
+
+= 4.4.8 =
+# UI update
+
+= 4.4.7 =
+# Cyber Monday sale
+
+= 4.4.6 =
+# Backend update
+
+= 4.4.5 =
+# UI Changes
+
+= 4.4.4 =
+# Black friday sale
+
+= 4.4.2 =
+# Backend update
+
+= 4.4.1 =
+# UI update
+
+= 4.4.0 =
+# Backend update
+
+= 4.3.9 =
+# Halloween sale
+
+= 4.3.8 =
+# CSS changes
+
+= 4.3.7 =
+# Design changes
+
+= 4.3.6 =
+# CSS Updated
+
+= 4.3.5 =
 # Some UI changes
 
 = 4.3.4 =
