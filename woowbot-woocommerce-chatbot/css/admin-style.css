@@ -652,6 +652,15 @@ body.woowbot-flyout #wpcontent .is-open {
 }
 
 
+.cxsc-settings-blocks button:hover {
+    background: #993885 !important;
+    color: #fff !important;
+}
 
-
-
+.woo-chatbot-wrap input#submit:hover {
+    background: #993885 !important;
+}
+.qc_get_pro a:hover {
+    background: #993885;
+    border: 2px solid #993885;
+}
