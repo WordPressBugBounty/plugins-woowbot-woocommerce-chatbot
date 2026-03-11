@@ -340,7 +340,7 @@ span.qcld-chatbot-product-category, span.qcld-chatbot-button {
 }
 
 .woo-chatbot-editor-container {
-  background-color: #f2f6f9b8;
+  background-color: #efefef;
   border-radius: 0 0 5px 5px;
   margin: 0;
   padding: 2px 0 2px 8px;
@@ -893,12 +893,21 @@ body div#woo-chatbot-ball img {
     box-shadow: none;
 }
 
-
+.woo-chatbot-featured-products ul li .woo-chatbot-product-summary {
+    position: relative;
+}
 
 .woo-chatbot-ball-inner {
     padding: 15px 15px 15px 15px;
 }
-
+.woo-chatbot-featured-products ul li .woo-chatbot-product-summary h3.woo-chatbot-product-title {
+    max-height: initial !important;
+    overflow: hidden;
+    font-size: 13px;
+    padding: 8px 0;
+        margin: 0;
+    height: 60px;    
+}
 
 @media screen and (max-width: 480px) {
     .woo-chatbot-ball-inner {
@@ -909,4 +918,16 @@ body div#woo-chatbot-ball img {
         background-color: #0871cd;
         color: #ffffff;
 }
+}
+
+@media screen and (max-width: 480px) {
+    .woo-chatbot-ball-container {
+        width: 98%;
+        margin: 0 auto !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    button#woo-chatbot-send-message {
+        right: 8px;
+    }
 }
