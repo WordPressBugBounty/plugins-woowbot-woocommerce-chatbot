@@ -301,7 +301,7 @@ div#wp-chatbot-exclude-post-list ul li {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background-color: #5b4e96bd;
+	background-color: #993885b8;
 	line-height: 1.14285714;
 	position: absolute;
 	top: 0;
@@ -650,7 +650,11 @@ body.woowbot-flyout #wpcontent .is-open {
     bottom: 0;
     padding: 40px;
 }
-
+.row.qcld-woo-chatbot-board-bg-container img#qcld_woo_chatbot_board_bg_image {
+    width: 100% !important;
+    object-fit: cover;
+    max-height: 480px;
+}
 
 .cxsc-settings-blocks button:hover {
     background: #993885 !important;
