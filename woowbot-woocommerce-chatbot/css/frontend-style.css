@@ -907,6 +907,7 @@ body div#woo-chatbot-ball img {
     padding: 8px 0;
         margin: 0;
     height: 60px;    
+    line-height: normal;
 }
 
 @media screen and (max-width: 480px) {
