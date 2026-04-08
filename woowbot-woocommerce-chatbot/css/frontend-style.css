@@ -906,8 +906,15 @@ body div#woo-chatbot-ball img {
     font-size: 13px;
     padding: 8px 0;
         margin: 0;
-    height: 60px;    
+    height: 52px;    
     line-height: normal;
+}
+ul.woo-chatbot-messages-container > li.woo-chatbot-msg:last-child {
+    padding-bottom: 20px;
+}
+
+.woo-chatbot-featured-products ul li .woo-chatbot-product-summary .price span{
+      font-size: 13px;  
 }
 
 @media screen and (max-width: 480px) {
