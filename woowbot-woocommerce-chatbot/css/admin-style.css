@@ -669,3 +669,12 @@ body.woowbot-flyout #wpcontent .is-open {
     border: 2px solid #993885;
 }
 
+.content-wrap label.radio-inline input[type="radio"]:checked {
+    border-color: #993885;
+    background: #993885;
+}
+.content-wrap label.radio-inline input[type="radio"]:focus, .content-wrap label.radio-inline input[type="radio"]:hover {
+    border-color: #993885;
+    background: #993885;
+    box-shadow: 0 0 0 1px #993885;
+}
