@@ -121,7 +121,7 @@ body.lp-submenu-qcld_woowbot_info_page{
     border-radius: 8px;
     position: relative;
     margin: 0 0 5px 0;
-    background: #5B4E96 !important;
+    background: #a1408d !important;
     color: #ffffff !important;
     border: none;
 }

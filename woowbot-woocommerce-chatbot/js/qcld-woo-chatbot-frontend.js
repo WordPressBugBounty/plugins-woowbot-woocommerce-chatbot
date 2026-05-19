@@ -52,8 +52,35 @@ jQuery(function ($) {
         }
         //Woo chat bot show and initial message.
         var botimage = jQuery('#woo-chatbot-ball').find('img').attr('src');
+        function openChatWindow() {
+            var $chatContainer = $("#woo-chatbot-ball-container");
+            $chatContainer.show();
+            $chatContainer.removeClass('woobot-chat-closing woobot-chat-expand-closing woobot-chat-expand-opening').addClass('woobot-chat-open woobot-chat-opening');
+            setTimeout(function () {
+                $chatContainer.removeClass('woobot-chat-opening');
+            }, 500);
+        }
+        function closeChatWindow() {
+            var $chatContainer = $("#woo-chatbot-ball-container");
+            $chatContainer.removeClass('woobot-chat-opening woobot-chat-open woobot-chat-expanded woobot-chat-expand-opening woobot-chat-expand-closing');
+            // Force reflow so close animation always restarts cleanly.
+            void $chatContainer[0].offsetWidth;
+            $chatContainer.addClass('woobot-chat-closing');
+            $('#woo-chatbot-expand-toggle').removeClass('is-expanded').attr('aria-label', 'Expand chat window');
+            setTimeout(function () {
+                if (!$chatContainer.hasClass('woobot-chat-open')) {
+                    $chatContainer.hide();
+                }
+            }, 380);
+        }
         $(document).on('click', '#woo-chatbot-ball', function (event) {
-            $("#woo-chatbot-ball-container").toggle();
+            var $chatContainer = $("#woo-chatbot-ball-container");
+            var isOpen = $chatContainer.is(':visible') && $chatContainer.hasClass('woobot-chat-open');
+            if (isOpen) {
+                closeChatWindow();
+            } else {
+                openChatWindow();
+            }
             $('.woo-chatbot-ball-inner').slimScroll({height: '50hv',start : 'bottom'});
             localStorage.setItem("wildCard", 0);
 			
@@ -80,7 +107,7 @@ jQuery(function ($) {
            // console.log(qcld_woow_boot_user_init_name);
                      
            //close button
-            if($('#woo-chatbot-ball-container').is(':visible')){                    
+            if(!isOpen){                    
 
                 $('#woo-chatbot-ball').removeClass('woobot_chatclose_iconanimation');
                 $('#woo-chatbot-ball').addClass('woobot_chatopen_iconanimation');
@@ -96,7 +123,7 @@ jQuery(function ($) {
                 
             }
             
-			if($('#woo-chatbot-ball-container').is(':visible')){
+			if(!isOpen){
 				
 			
 			
@@ -158,7 +185,7 @@ jQuery(function ($) {
 
         });
         $(document).on('click', '#woo-chatbot-mobile-close', function (event) {
-            $("#woo-chatbot-ball-container").toggle();
+            closeChatWindow();
             $('#woo-chatbot-icon-container').css({
                 'right': wooChatBotVar.woo_chatbot_position_x + 'px',
                 'bottom': wooChatBotVar.woo_chatbot_position_y + 'px'
@@ -172,6 +199,33 @@ jQuery(function ($) {
             $('.woo-chatbot-ball').css('background', '#ffffff');
             
 
+        });
+        $(document).on('click', '#woo-chatbot-header-close', function (event) {
+            event.preventDefault();
+            closeChatWindow();
+            $('#woo-chatbot-ball').removeClass('woobot_chatopen_iconanimation').addClass('woobot_chatclose_iconanimation');
+            $('#woo-chatbot-ball').find('img').attr('src', botimage);
+            $('.woo-chatbot-ball').css('background', '#ffffff');
+        });
+        $(document).on('click', '#woo-chatbot-expand-toggle', function (event) {
+            event.preventDefault();
+            var $toggle = $(this);
+            var $chatContainer = $("#woo-chatbot-ball-container");
+            var shouldExpand = !$chatContainer.hasClass('woobot-chat-expanded');
+            if (shouldExpand) {
+                $chatContainer.removeClass('woobot-chat-expand-closing').addClass('woobot-chat-expanded woobot-chat-expand-opening');
+                $toggle.addClass('is-expanded').attr('aria-label', 'Collapse chat window');
+                setTimeout(function () {
+                    $chatContainer.removeClass('woobot-chat-expand-opening');
+                }, 500);
+            } else {
+                $chatContainer.removeClass('woobot-chat-expand-opening').addClass('woobot-chat-expand-closing');
+                $chatContainer.removeClass('woobot-chat-expanded');
+                $toggle.removeClass('is-expanded').attr('aria-label', 'Expand chat window');
+                setTimeout(function () {
+                    $chatContainer.removeClass('woobot-chat-expand-closing');
+                }, 300);
+            }
         });
         //Hide Woo chat bot box if click on outside of icon.
         // $(document).on('click',function (e) {
@@ -338,7 +392,6 @@ jQuery(function ($) {
         }
         //For infinite asking answering
         if(userHitNum ==1 && infiniteChat==1){
-            console.log( 'hello' );
             setTimeout(function(){
                $("#woo-chatbot-messages-container li:last").html(get_avatar_client_img()+'<span>'+wooChatBotVar.product_infinite+'<span>');
                 //scroll at the last message.
@@ -351,68 +404,114 @@ jQuery(function ($) {
 
         //Product handling steps.
         if(userHitNum ==2){
-            //Searching product using given user strings.
-            var data = {
-                'action':'qcld_woo_chatbot_keyword',
-                'keyword':userText,
-            };
-            $.post(wooChatBotVar.ajax_url, data, function (response) {
-                // console.log(response);
-                if(response.product_num==0){
-                    var wooChatBotMsg = wooChatBotVar.product_fail+" <strong>"+userText+"</strong>!";
-                    //suggesting product by category.
-                    setTimeout(function(){
-                        $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
-                        //Afer 1.5 second show suggesting.
-                        setTimeout(function(){
+           if(wooChatBotVar.qcld_ai_enabled != ''){
+               if( (( wooChatBotVar.qcld_openai_enabled != "" ) || ( wooChatBotVar.qcld_openai_enabled != "0" )) && ( wooChatBotVar.qcld_openai_enabled == 1)){
+                   var data = {
+                      'action':'qcld_openai_response',
+                      'keyword':userText,
+                      'nonce': qcld_chatbot_obj.nonce
+                   };
+               }
+               if( ( wooChatBotVar.qcld_gemini_enabled != "" ) || ( wooChatBotVar.qcld_gemini_enabled != "0" ) && ( wooChatBotVar.qcld_gemini_enabled == 1)){
+                   var data = {
+                      'action':'qcld_gemini_response',
+                      'keyword':userText,
+                      'nonce': qcld_chatbot_obj.nonce
+                   };
+               }
+               $.post(qcld_chatbot_obj.ajax_url, data, function (response) {
+                       setTimeout(function(){
+                            if( ( wooChatBotVar.qcld_gemini_enabled == 1) || ( wooChatBotVar.qcld_openai_enabled == 1 ) ){
+                                setTimeout(function(){
+                                    var html = '<span class="woo-chatbot-paragraph ai-response">'+ $.parseJSON(response).message +'</span><br>';
+                                    // html += '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ wooChatBotVar.product_search +'</span>';
+                                    html += '<span class="woobot_catalog qcld-chatbot-button" type="button" >'+ wooChatBotVar.catalog +'</span>';
+                                    html += '<span class="woobot_send_us_email qcld-chatbot-button" type="button" >'+ wooChatBotVar.send_us_email +'</span>';
+                                    $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
+                                    
+                                    //scroll at the last message.
+                                    $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                                    enable_message_editor()
+                                }, 1500);
+                            }else{
+                                 setTimeout(function(){
+                                    var html = '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ wooChatBotVar.product_search +'</span>';
+                                    html += '<span class="woobot_catalog qcld-chatbot-button" type="button" >'+ wooChatBotVar.catalog +'</span>';
+                                    $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
+                                    
+                                    //scroll at the last message.
+                                    $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                                    enable_message_editor()
+                                }, 1500);
+                            }
+                                
+                       }, 2000);
+               });
 
-                            $("#woo-chatbot-messages-container li:last").html(get_avatar_client_img()+"<span>"+ wooChatBotVar.specific_fail +"<span>");
-                            
-                            var html = '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ wooChatBotVar.product_search +'</span>';
-                            html += '<span class="woobot_catalog qcld-chatbot-button" type="button" >'+ wooChatBotVar.catalog +'</span>';
-                            html += '<span class="woobot_send_us_email qcld-chatbot-button" type="button" >'+ wooChatBotVar.send_us_email +'</span>';
-                            
-                            $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
-
-                            $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
-                            
-                            //scroll at the last message.
-                            $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
-                            enable_message_editor()
-                        }, 1500);
-                    }, 2000);
-
-                   
-                }else{
-                    var wooChatBotMsg = wooChatBotVar.product_success+" <strong>"+userText+"</strong>!";
-                   //Showing product from ajax response
-                    setTimeout(function(){
-                            $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
-                            setTimeout(function(){
-                            //Afer 1.5 second show categories.
-                            $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none','width':'100%'}).html(response.html);
-                              //scroll at the last message.
+           }else{
+               //Searching product using given user strings.
+               var data = {
+                   'action':'qcld_woo_chatbot_keyword',
+                   'keyword':userText,
+               };
+               $.post(wooChatBotVar.ajax_url, data, function (response) {
+                   // console.log(response);
+                   if(response.product_num==0){
+                       var wooChatBotMsg = wooChatBotVar.product_fail+" <strong>"+userText+"</strong>!";
+                       //suggesting product by category.
+                       setTimeout(function(){
+                           $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
+                           //Afer 1.5 second show suggesting.
+                           setTimeout(function(){
+   
+                               $("#woo-chatbot-messages-container li:last").html(get_avatar_client_img()+"<span>"+ wooChatBotVar.specific_fail +"<span>");
+                               
+                               var html = '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ wooChatBotVar.product_search +'</span>';
+                               html += '<span class="woobot_catalog qcld-chatbot-button" type="button" >'+ wooChatBotVar.catalog +'</span>';
+                               html += '<span class="woobot_send_us_email qcld-chatbot-button" type="button" >'+ wooChatBotVar.send_us_email +'</span>';
+                               
+                               $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
+   
+                               $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
+                               
+                               //scroll at the last message.
                                $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
-								enable_message_editor()
-                            }, 1500);
-
-                        }, 2500);
-                    //Setting infinite value as
-                    setTimeout(function(){
-                        $("#woo-chatbot-send-message").prop("disabled", true);
-                        userHitNum=1;
-                        bot_action(1);
-                    }, 6000);
-                }
-                setTimeout(function(){
-                $("#woo-chatbot-messages-container li:last").html(get_avatar_client_img()+"<span>"+wooChatBotMsg+"<span>");
-                    //scroll at the last message.
-                    $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
-                    //enable user work
-                    //enable_message_editor();
-
-                    }, 1500);
-            });
+                               enable_message_editor()
+                           }, 1500);
+                       }, 2000);
+   
+                      
+                   }else{
+                       var wooChatBotMsg = wooChatBotVar.product_success+" <strong>"+userText+"</strong>!";
+                      //Showing product from ajax response
+                       setTimeout(function(){
+                               $("#woo-chatbot-messages-container").append('<li class="woo-chatbot-msg"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></li>');
+                               setTimeout(function(){
+                               //Afer 1.5 second show categories.
+                               $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none','width':'100%'}).html(response.html);
+                                 //scroll at the last message.
+                                  $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                                   enable_message_editor()
+                               }, 1500);
+   
+                           }, 2500);
+                       //Setting infinite value as
+                       setTimeout(function(){
+                           $("#woo-chatbot-send-message").prop("disabled", true);
+                           userHitNum=1;
+                           bot_action(1);
+                       }, 6000);
+                   }
+                   setTimeout(function(){
+                   $("#woo-chatbot-messages-container li:last").html(get_avatar_client_img()+"<span>"+wooChatBotMsg+"<span>");
+                       //scroll at the last message.
+                       $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                       //enable user work
+                       //enable_message_editor();
+   
+                       }, 1500);
+               });
+           }
         }
         //category handling steps.
         if(userHitNum ==3){
@@ -1106,17 +1205,47 @@ jQuery(function ($) {
         $("#woo-chatbot-messages-container").append("<li class='woo-chat-user-msg'>"+get_avatar_user_img()+"<span class='woo-chatbot-paragraph'>"+$(this).text()+"<span></li>");
         bot_action();
     });
+    $(document).on('click','.qcld_woo_product_details',function(){
 
+        var product_id = $(this).attr('data-product-id');    
+        var variation_id = $(this).attr('variation_id');
+        var data = {
+            'action':'qcld_woo_get_product_details',
+            'product_id':product_id,
+            'variation_id':variation_id,
+            'nonce': qcld_chatbot_obj.nonce
+        };
+        $.post(wooChatBotVar.ajax_url, data, function (response) {
+            setTimeout(function(){
+                var html = '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ $.parseJSON(response).message +'</span>';
+                //scroll at the last message.
+                console.log(html);
+                $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
+                $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                enable_message_editor()
+            }, 1500);
+        });
+    });
+
+    function updateSendButtonStateClass() {
+        var hasValue = $.trim($("#woo-chatbot-editor").val()).length > 0;
+        $("#woo-chatbot-send-message").toggleClass('woo-chatbot-send-message-has-text', hasValue);
+    }
+    $(document).on('input keyup change paste', '#woo-chatbot-editor', function () {
+        updateSendButtonStateClass();
+    });
 
     function disable_message_editor(){
         $("#woo-chatbot-editor").attr('placeholder',wooChatBotVar.agent+' '+wooChatBotVar.is_typing);
         $("#woo-chatbot-editor").attr('disabled',true);
         $("#woo-chatbot-send-message").attr('disabled',true);
+        $("#woo-chatbot-send-message").removeClass('woo-chatbot-send-message-has-text');
     }
     function enable_message_editor(){
         $("#woo-chatbot-editor").attr('disabled',false).focus();
         $("#woo-chatbot-editor").attr('placeholder',wooChatBotVar.send_a_msg);
         $("#woo-chatbot-send-message").attr('disabled',false);
+        updateSendButtonStateClass();
     }
 
     // bargain ...

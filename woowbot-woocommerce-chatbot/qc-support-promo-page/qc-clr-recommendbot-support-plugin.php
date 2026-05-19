@@ -26,8 +26,8 @@ if( !function_exists('qcld_recommend_support_function_ajax') ){
                         'icons'             => true,
                         'reviews'           => true, // excludes all reviews
                     ],
-        			'live_preview'   => 'https://turbopowers.com/kbx/',
-        			'update_to_pro'  => 'https://turbopowers.com/pricing/'
+        			'live_preview'   => 'https://dev.quantumcloud.com/knowledgebase/',
+        			'update_to_pro'  => 'https://www.quantumcloud.com/products/knowledgebase-helpdesk/'
                 ], 
                 [
                     'slug'      => 'woowbot-woocommerce-chatbot',
@@ -46,8 +46,8 @@ if( !function_exists('qcld_recommend_support_function_ajax') ){
                         'icons'             => true,
                         'reviews'           => true, // excludes all reviews
                     ],
-        			'live_preview'   => 'https://www.wpbot.pro/',
-        			'update_to_pro'  => 'https://www.wpbot.pro/pricing/'
+        			'live_preview'   => 'https://www.woowbot.pro/',
+        			'update_to_pro'  => 'https://www.woowbot.pro/pricing/'
                 ], 
                 [
                     'slug'      => 'phone-directory',
