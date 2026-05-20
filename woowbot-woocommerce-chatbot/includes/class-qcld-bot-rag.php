@@ -638,22 +638,19 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				$content .= $main_content;
 
 				// Specific handling for WooCommerce Products
-				error_log( ( $p->post_type ));
-				error_log($p->post_type === 'product' && class_exists('WC_Product') && function_exists('wc_get_product'));
 				if ($p->post_type === 'product' && class_exists('WC_Product') && function_exists('wc_get_product')) {
 					$_product = wc_get_product($p->ID);
 					if ($_product) {
+						$product_id = $_product->get_id();
 						$price = $_product->get_price();
 						$currency = function_exists('get_woocommerce_currency_symbol') ? get_woocommerce_currency_symbol() : '$';
 						$content .= "\nPrice: " . $currency . $price;
-						
+						$content .= "\nProduct ID: " . $product_id;
 						// Add description if main content is empty
 						if (empty(trim($main_content)) && method_exists($_product, 'get_short_description')) {
 							$content .= "\nDescription: " . wp_strip_all_tags($_product->get_short_description());
 						}
 					}
-					error_log( ( $_product ));
-					error_log( ( $_product && $_product->is_type( 'variable' ) ) );
 					if ( $_product && $_product->is_type( 'variable' ) ) {
 						$variation_ids = $_product->get_children(); // Get all variation IDs
 

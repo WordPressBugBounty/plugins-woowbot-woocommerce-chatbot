@@ -1231,8 +1231,3 @@ div#woo-chatbot-editor-container .woo-chatbot-send-message-has-text span.dashico
     align-items: center;
     justify-content: center;
 }
-
-.woo-chatbot-featured-products ul li img {
-    object-fit: cover;
-    max-height: 140px;
-}

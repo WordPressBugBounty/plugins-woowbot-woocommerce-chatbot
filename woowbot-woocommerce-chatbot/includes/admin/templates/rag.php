@@ -44,16 +44,15 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                     <label><strong>Custom Post Types:</strong></label><br>
                     <div class="rag_embed_cpts_wrapper">
                         <?php
-                         foreach ($custom_post_types as $cpt):
-                            $is_pro = !in_array($cpt->name, ['product']);
-                          ?>
+                            $is_pro = !in_array($post_type->name, ['product']);
+                         foreach ($custom_post_types as $cpt): ?>
                             <div class="rag_cpt_checkbox">
                                 <input type="checkbox" class="rag_embed_cpts_checkbox" 
                                     id="rag_cpt_<?php echo esc_attr($cpt->name); ?>" 
                                     value="<?php echo esc_attr($cpt->name); ?>"
                                     <?php echo in_array($cpt->name, $selected_cpts) ? 'checked' : ''; ?>
                                      <?php echo (($is_pro) ? 'disabled' : ''); ?>>
-                                <label for="rag_cpt_<?php echo esc_attr($cpt->name); ?>"><?php echo esc_html($cpt->label); ?> <span><?php echo (($is_pro) ? ' Pro' : ''); ?></span></label>
+                                <label for="rag_cpt_<?php echo esc_attr($cpt->name); ?>"><?php echo esc_html($cpt->label); ?></label>
                             </div>
                         <?php endforeach; ?>
                     </div>

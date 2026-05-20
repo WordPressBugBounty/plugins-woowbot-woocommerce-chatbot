@@ -378,6 +378,11 @@ $(document).ready(function () {
                 }else{
                     var is_context_awareness_enabled = 0;
                 }
+                if($('#is_product_card_enabled').is(":checked")){
+                    var is_product_card_enabled = 1; 
+                }else{
+                    var is_product_card_enabled = 0;
+                }
                 if($('#is_page_rag_enabled').is(":checked")){
                     var is_page_rag_enabled = 1; 
                 }else{
@@ -403,19 +408,11 @@ $(document).ready(function () {
                     return this.value;
                 }).get();
 
-                Swal.fire({
-                    title: 'Saving settings...',
-                    html: 'Please wait while we save your settings.',
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    didOpen: function () {
-                        Swal.showLoading();
-                    }
-                });
                 $.ajax({
                     url:  ajax_object.ajax_url,
                     type:'POST',
-                    data:    ({action  : 'openai_settings_option',nonce: ajax_object.ajax_nonce,api_key: api_key,openai_engines:openai_engines,qcld_openai_prompt: qcld_openai_prompt,max_tokens:max_tokens,file_id:file_id,temperature:temperature,presence_penalty:presence_penalty,frequency_penalty:frequency_penalty,qcld_openai_prompt_custom: qcld_openai_prompt_custom,openai_exclude_keyword:openai_exclude_keyword,is_relevant_enabled:is_relevant_enabled,openai_include_keyword:openai_include_keyword,qcld_openai_enabled:is_ai_enabled,is_page_suggestion_enabled:is_page_suggestion_enabled,is_context_awareness_enabled:is_context_awareness_enabled,qcld_openai_system_content:qcld_openai_system_content,qcld_openai_append_content:qcld_openai_append_content,ai_only_mode: is_ai_only_mode,conversation_continuity:conversation_continuity,openai_post_type:openai_post_type,is_page_rag_enabled:is_page_rag_enabled}),
+                    data:    ({action  : 'openai_settings_option',nonce: ajax_object.ajax_nonce,api_key: api_key,openai_engines:openai_engines,qcld_openai_prompt: qcld_openai_prompt,max_tokens:max_tokens,file_id:file_id,temperature:temperature,presence_penalty:presence_penalty,frequency_penalty:frequency_penalty,qcld_openai_prompt_custom: qcld_openai_prompt_custom,openai_exclude_keyword:openai_exclude_keyword,is_relevant_enabled:is_relevant_enabled,openai_include_keyword:openai_include_keyword,qcld_openai_enabled:is_ai_enabled,is_page_suggestion_enabled:is_page_suggestion_enabled,is_context_awareness_enabled:is_context_awareness_enabled,is_product_card_enabled:is_product_card_enabled,
+                    qcld_openai_system_content:qcld_openai_system_content,qcld_openai_append_content:qcld_openai_append_content,ai_only_mode: is_ai_only_mode,conversation_continuity:conversation_continuity,openai_post_type:openai_post_type,is_page_rag_enabled:is_page_rag_enabled}),
                     
                     success: function(data){
                         $('#result').html(data);
@@ -446,14 +443,6 @@ $(document).ready(function () {
                                     });
                                 }
                             });
-                    },
-                    error: function () {
-                        Swal.fire({
-                            title: 'Failed to save settings.',
-                            text: 'Please try again.',
-                            icon: 'error',
-                            confirmButtonText: 'OK'
-                        });
                     }
 				});
     

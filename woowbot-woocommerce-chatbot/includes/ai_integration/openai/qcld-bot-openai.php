@@ -215,7 +215,7 @@ if(!class_exists('qcld_wpopenai_addons')){
         
             return $links;
             
-        } //End of function relevant_pagelink()
+        } 
        
         public function response_form_file($keyword){
             $max_tokens =  (int)get_option( 'openai_max_tokens');
@@ -307,15 +307,24 @@ if(!class_exists('qcld_wpopenai_addons')){
 
                 // Build context-aware system instructions
                 $system_content = get_option('qcld_openai_system_content');
-                
+
+               
                 // RAG Integration
                 if (get_option('is_page_rag_enabled') == '1') {
                     $rag_context_text = Qcld_Bot_Rag::instance()->run_rag_search($keyword);
                     if (!empty($rag_context_text) && $rag_context_text != "No knowledge base found.") {
-                         $rag_context = "Relevant Knowledge Base Information:\n";
-                         $rag_context .= $rag_context_text;
-                         $rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base.";
-                         $system_content .= "\n\n" . $rag_context;
+                        if( get_option( 'qcldai_product_card_enable' ) == 1 ) {
+                            $rag_context = "Relevant Knowledge Base Information:\n";
+                            $rag_context .= $rag_context_text;
+                            $rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base. Also, if the user query seems to be about a product, retrun the product ID in the following format: [woowbot_product_id:123] where 123 are the relevant product IDs.don't show the product ID as a lebel, only return the product ID in the specified format if the query is about a product.";
+                            $system_content .= "\n\n" . $rag_context;
+                        }else{
+                            $rag_context = "Relevant Knowledge Base Information:\n";
+                            $rag_context .= $rag_context_text;
+                            $rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base.";
+                            $system_content .= "\n\n" . $rag_context;
+
+                        }
                     }
                 }
 
@@ -407,10 +416,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                     $relevant_post_link = get_option('qlcd_wp_chatbot_relevant_post_link_openai');
                     
                     if(is_array($relevant_post_link )){
-                       
                         $relevant_pagelinks = '<br><br><p><em>'. implode('', $relevant_post_link) .'</em></p><ul style="list-style: disc;padding-left: 10px;">'. implode(" ", $relevant_pagelink). '</ul>';
                    }else{
-                    $relevant_pagelinks = '<br><br><p><em>'. $relevant_post_link .'</em></p><ul style="list-style: disc;padding-left: 10px;">'. implode(" ", $relevant_pagelink) .'</ul>';
+                        $relevant_pagelinks = '<br><br><p><em>'. $relevant_post_link .'</em></p><ul style="list-style: disc;padding-left: 10px;">'. implode(" ", $relevant_pagelink) .'</ul>';
                    }
                 }else{
                     $relevant_pagelinks = '';
@@ -468,6 +476,8 @@ if(!class_exists('qcld_wpopenai_addons')){
                                 $msg = $mess->output[1]->content[0]->text;
                             }
                             $msg = $Qcld_Parsedown->text($msg);
+                            // Replace product placeholders like [woowbot_product_id:123,456]
+                            $msg = $this->replace_product_placeholders($msg);
                             $response['message'] = $msg . $relevant_pagelinks;
                         }
                 do_action('qcld_openai_user_rate_cal', 1);
@@ -505,6 +515,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                 $suggestion_enabled = sanitize_text_field($_POST['is_page_suggestion_enabled']);
                 $context_awareness_enabled = sanitize_text_field($_POST['is_context_awareness_enabled']);
                 $is_page_rag_enabled = sanitize_text_field($_POST['is_page_rag_enabled']);
+                $is_product_card_enabled = sanitize_text_field($_POST['is_product_card_enabled']);
 
 
                 $is_relevant_enabled = sanitize_text_field($_POST['is_relevant_enabled']);
@@ -522,7 +533,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                     }
                 }
                 update_option('qcld_openai_relevant_post', $openai_post_types);
-
+                
                 $conversation_continuity = sanitize_text_field($_POST['conversation_continuity']);
 				$qcld_openai_system_content = sanitize_text_field($_POST['qcld_openai_system_content']);
                 $qcld_openai_append_content = sanitize_text_field($_POST['qcld_openai_append_content']);
@@ -566,8 +577,8 @@ if(!class_exists('qcld_wpopenai_addons')){
                 update_option('qcld_openai_custom_model',$qcld_openai_custom_model);
                 update_option( 'qcld_openai_system_content', stripslashes( $qcld_openai_system_content) );
                 update_option( 'qcld_openai_append_content', stripslashes( $qcld_openai_append_content) );
-
-                update_option('qcld_openai_enabled',$qcld_openai_enabled);
+                update_option( 'qcldai_product_card_enable', $is_product_card_enabled );
+                update_option( 'qcld_openai_enabled',$qcld_openai_enabled );
                 if( $qcld_openai_enabled == 1 ){
 
                     update_option('qcld_openrouter_enabled',0);
@@ -704,6 +715,47 @@ if(!class_exists('qcld_wpopenai_addons')){
             return preg_replace('/\b('.implode('|',$stopwords).')\b/','',$query);
 			
         }
+
+        /**
+         * Replace product placeholders produced by AI with product HTML.
+         * Pattern: [woowbot_product_id:123] or [woowbot_product_id:123,456]
+         */
+        public function replace_product_placeholders($msg){
+            if (strpos($msg, '[woowbot_product_id:') === false) {
+                return $msg;
+            }
+            if (preg_match_all('/\[woowbot_product_id:([0-9,\s]+)\]/', $msg, $matches)) {
+                foreach ($matches[0] as $i => $placeholder) {
+                    $ids_str = $matches[1][$i];
+                    $ids = array_map('intval', array_filter(array_map('trim', explode(',', $ids_str))));
+                    if (empty($ids)) continue;
+                    $html = '<div class="woo-chatbot-featured-products"><ul class="woo-chatbot-products">';
+                    foreach ($ids as $id) {
+                        $product = wc_get_product($id);
+                        if (!$product) continue;
+                        $image = get_the_post_thumbnail($id, 'shop_catalog');
+                        if (empty($image)) {
+                            $image = woocommerce_placeholder_img('shop_catalog');
+                        }
+                        $html .= '<li class="woo-chatbot-product">';
+                        $html .= '<a target="_blank" href="' . get_permalink($id) . '" title="' . esc_attr($product->get_name()) . '">';
+                        $html .= $image . '</a><div class="woo-chatbot-product-summary"><div class="woo-chatbot-product-table"><div class="woo-chatbot-product-table-cell">';
+                        $html .= '<h3 class="woo-chatbot-product-title"><a target="_blank" href="' . get_permalink($id) . '">' . esc_attr($product->get_name()) . '</a></h3>';
+                        $html .= '<div class="price">' . $product->get_price_html() . '</div>';
+                        if ($product->is_type('simple')) {
+                            $add_to_cart_url = esc_url( add_query_arg('add-to-cart', $id, home_url()) );
+                            $html .= '<a target="_blank" href="' . $add_to_cart_url . '" class="woo-chatbot-button woo-chatbot-button-cart add_to_cart_button ajax_add_to_cart" data-quantity="1" data-product_id="' . $id . '">' . esc_html__('Add to Cart','woowbot-woocommerce-chatbot') . '</a>';
+                        } else {
+                            $html .= '<a target="_blank" href="' . get_permalink($id) . '" class="woo-chatbot-button woo-chatbot-button-cart">' . esc_html__('View Detail','woowbot-woocommerce-chatbot') . '</a>';
+                        }
+                        $html .= '</div></div></div></li>';
+                    }
+                    $html .= '</ul></div>';
+                    $msg = str_replace($placeholder, $html, $msg);
+                }
+            }
+            return $msg;
+        }
 		public function openai_troubleshooting() {
 			$nonce  = sanitize_text_field( $_POST['nonce'] );
 			$OpenAI = new qcld_wp_OpenAI();
@@ -730,7 +782,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 					$gptkeyword,
 					array(
 						'role'    => 'user',
-						'content' => 'Is our request comes from openAI ?',
+						'content' => 'If you get this query respond in plain text: "Congrats! You are connected to AI." Otherwise, respond with "Connection to AI failed."',
 					)
 				);
 				$res = $OpenAI->gptcomplete(

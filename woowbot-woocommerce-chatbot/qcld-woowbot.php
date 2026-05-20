@@ -4,7 +4,7 @@
     * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.7.0
+    * Version: 4.7.1
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.7.0');
+   define('QCLD_WOOCHATBOT_VERSION', '4.7.1');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -668,12 +668,12 @@
                                        <li>
                                           <?php
                                              if (get_option('wp_chatbot_custom_icon_path') != "") {
-                                                $wp_chatbot_custom_icon_path = get_option('wp_chatbot_custom_icon_path');
+                                                $wp_chatbot_custom_icon_path = esc_url( get_option('wp_chatbot_custom_icon_path') );
                                              } else {
-                                                $wp_chatbot_custom_icon_path = QCLD_WOOCHATBOT_IMG_URL . '/custom.png';
+                                                $wp_chatbot_custom_icon_path = esc_url( QCLD_WOOCHATBOT_IMG_URL . '/custom.png' );
                                              }
                                              ?>
-                                          <img id="woo_chatbot_custom_icon"  src="<?php echo esc_url($wp_chatbot_custom_icon_path); ?>"
+                                          <img id="woo_chatbot_custom_icon"  src="<?php echo $wp_chatbot_custom_icon_path; ?>"
                                              alt=""> <input type="radio" name="woo_chatbot_icon"
                                              value="custom.png" <?php echo(get_option('woo_chatbot_icon') == 'custom.png' ? 'checked' : ''); ?>>
                                           <span class="qc-opt-dcs-font"><?php esc_html_e('Custom Icon', 'woowbot-woocommerce-chatbot'); ?></span>
@@ -715,9 +715,9 @@
                                              </li>
                                              <?php
                                                 if (get_option('wp_chatbot_custom_agent_path') != "") {
-                                                   $wp_chatbot_custom_agent_path = get_option('wp_chatbot_custom_agent_path');
+                                                   $wp_chatbot_custom_agent_path = esc_attr( get_option('wp_chatbot_custom_agent_path') );
                                                 } else {
-                                                   $wp_chatbot_custom_agent_path = QCLD_WOOCHATBOT_IMG_URL . '/custom-agent.png';
+                                                   $wp_chatbot_custom_agent_path = esc_attr( QCLD_WOOCHATBOT_IMG_URL . '/custom-agent.png' );
                                                 }
                                                 ?>
                                              <li>
@@ -727,7 +727,7 @@
                                                    alt="Agent">
                                                 <input type="radio" name="wp_chatbot_agent_image[]"
                                                    id="wp_chatbot_agent_image_custom"
-                                                   value="<?php echo ($wp_chatbot_custom_agent_path); ?>" <?php echo(get_option('wp_chatbot_agent_image') !=  QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png' ? 'checked' : ''); ?>>
+                                                   value="<?php echo ($wp_chatbot_custom_agent_path); ?>" <?php echo(esc_attr(get_option('wp_chatbot_agent_image')) !=  esc_attr(QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png') ? 'checked' : ''); ?>>
                                                 <?php echo esc_html__('Custom Agent', 'wpchatbot'); ?></label>
                                              </li>
                                           </ul>
@@ -1225,12 +1225,13 @@
 
                   </div>
                   <!-- /woo-chatbot-tabs -->
-                  <div class="text-right">
+                  <div class="text-left">
                      <input type="submit" class="btn btn-primary submit-button" name="submit"
                         id="submit" value="<?php echo esc_attr('Save Settings', 'woo_chatbot'); ?>"/>
                   </div>
                </section>
 
+            <input type="hidden" name="qcld_woo_chatbot_options_action" value="save"/>
             <?php wp_nonce_field('woo_chatbot'); ?>
             </form>
          </div>
@@ -1294,8 +1295,31 @@
       if (!current_user_can('manage_options')) {
          return;
       }
+
+      if (wp_doing_ajax()) {
+         return;
+      }
+
+      global $pagenow;
+      if (
+         'admin.php' !== $pagenow ||
+         empty($_GET['page']) ||
+         'woowbot' !== sanitize_key(wp_unslash($_GET['page'])) ||
+         empty($_POST['qcld_woo_chatbot_options_action']) ||
+         'save' !== sanitize_key(wp_unslash($_POST['qcld_woo_chatbot_options_action'])) ||
+         empty($_POST['submit'])
+      ) {
+         return;
+      }
+
+      if (
+         ! isset($_POST['_wpnonce']) ||
+         ! wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'woo_chatbot')
+      ) {
+         return;
+      }
    
-   
+    
        global $woocommerce;
        if (isset($_POST['_wpnonce']) && $_POST['_wpnonce']) {
    
@@ -1356,22 +1380,17 @@
                }
                //page controll of chatbot
                if(isset($_POST["wp_chatbot_show_home_page"])){
-   	$wp_chatbot_show_home_page = sanitize_key(($_POST["wp_chatbot_show_home_page"]));
-   	update_option('wp_chatbot_show_home_page', $wp_chatbot_show_home_page);
-   }
-              
-   
-      if(isset($_POST["wp_chatbot_show_posts"])){
-         $wp_chatbot_show_posts = sanitize_key(($_POST["wp_chatbot_show_posts"]));
-         update_option('wp_chatbot_show_posts', $wp_chatbot_show_posts);
-      }
-               
-   
-      if(isset($_POST["wp_chatbot_show_pages"])){
-         $wp_chatbot_show_pages = sanitize_key(($_POST["wp_chatbot_show_pages"]));
-         update_option('wp_chatbot_show_pages', $wp_chatbot_show_pages);
-      }
-               
+                  $wp_chatbot_show_home_page = sanitize_key(($_POST["wp_chatbot_show_home_page"]));
+                  update_option('wp_chatbot_show_home_page', $wp_chatbot_show_home_page);
+               }
+               if(isset($_POST["wp_chatbot_show_posts"])){
+                  $wp_chatbot_show_posts = sanitize_key(($_POST["wp_chatbot_show_posts"]));
+                  update_option('wp_chatbot_show_posts', $wp_chatbot_show_posts);
+               }
+               if(isset($_POST["wp_chatbot_show_pages"])){
+                  $wp_chatbot_show_pages = sanitize_key(($_POST["wp_chatbot_show_pages"]));
+                  update_option('wp_chatbot_show_pages', $wp_chatbot_show_pages);
+               }
                if(isset( $_POST["wp_chatbot_show_pages_list"])) {
                    $wp_chatbot_show_pages_list = wp_parse_id_list($_POST["wp_chatbot_show_pages_list"]);
                    update_option('wp_chatbot_show_pages_list', serialize($wp_chatbot_show_pages_list));
@@ -1384,10 +1403,10 @@
                }else{ $wp_chatbot_exclude_post_list='';}
                update_option('wp_chatbot_exclude_post_list', serialize($wp_chatbot_exclude_post_list));
    
-         if(isset($_POST["wp_chatbot_show_wpcommerce"])){
-            $wp_chatbot_show_wpcommerce = sanitize_key(($_POST["wp_chatbot_show_wpcommerce"]));
-            update_option('wp_chatbot_show_wpcommerce', $wp_chatbot_show_wpcommerce);
-         }
+               if(isset($_POST["wp_chatbot_show_wpcommerce"])){
+                  $wp_chatbot_show_wpcommerce = sanitize_key(($_POST["wp_chatbot_show_wpcommerce"]));
+                  update_option('wp_chatbot_show_wpcommerce', $wp_chatbot_show_wpcommerce);
+               }
                //Product per page settings.
                if (isset($_POST["qlcd_woo_chatbot_ppp"])) {
                    $qlcd_woo_chatbot_ppp = intval($_POST["qlcd_woo_chatbot_ppp"]);
@@ -1401,13 +1420,12 @@
                    update_option('wp_chatbot_custom_icon_path', sanitize_text_field($_POST["wp_chatbot_custom_icon_path"]));
                }
            
-               if (isset($_POST["wp_chatbot_agent_image"])) {
-                   $wp_chatbot_agent_image = sanitize_url($_POST["wp_chatbot_agent_image"][0]);
-                   $wp_chatbot_custom_agent_path = ($_POST["wp_chatbot_custom_agent_path"]);
+               if (isset($_POST["wp_chatbot_agent_image"]) && is_array($_POST["wp_chatbot_agent_image"])) {
+                   $wp_chatbot_agent_image = isset($_POST["wp_chatbot_agent_image"][0]) ? esc_url_raw(wp_unslash($_POST["wp_chatbot_agent_image"][0])) : '';
+                   $wp_chatbot_custom_agent_path = isset($_POST["wp_chatbot_custom_agent_path"]) ? esc_url_raw(wp_unslash($_POST["wp_chatbot_custom_agent_path"])) : '';
                  
                    update_option('wp_chatbot_agent_image', $wp_chatbot_agent_image);
                    update_option('wp_chatbot_custom_agent_path', $wp_chatbot_custom_agent_path);
-                   //var_dump( get_option('wp_chatbot_custom_agent_path') );wp_die();
                }
                //To override style use custom css.
                $woo_chatbot_custom_css = wp_unslash($_POST["woo_chatbot_custom_css"]);
@@ -1515,7 +1533,7 @@
    
                update_option('qcld_woo_chatbot_board_bg_path', wp_unslash($qcld_woo_chatbot_board_bg_path));
    
-           }
+         }
        }
    }
    /**
@@ -1623,7 +1641,7 @@
                   update_option('qlcd_woo_chatbot_agent', sanitize_text_field('Carrie'));
                   }
                   if(!get_option('wp_chatbot_custom_agent_path')) {
-                  $default_image =  QCLD_WOOCHATBOT_IMG_URL.'icon-0.png';
+                  $default_image = esc_url_raw( QCLD_WOOCHATBOT_IMG_URL.'icon-0.png' );
                   update_option('wp_chatbot_agent_image', sanitize_text_field($default_image));
                   update_option('wp_chatbot_custom_agent_path', sanitize_text_field('agent image'));
                   }

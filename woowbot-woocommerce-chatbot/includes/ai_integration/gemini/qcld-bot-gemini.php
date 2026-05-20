@@ -127,6 +127,7 @@ if(!class_exists('qcld_wpgemini_addons')){
                     $gemini_model = sanitize_text_field($_POST['gemini_model']);
                     $qcld_gemini_page_suggestion_enabled = sanitize_text_field($_POST['qcld_gemini_page_suggestion_enabled']);
                     $gemini_is_context_awareness_enabled = sanitize_text_field($_POST['gemini_is_context_awareness_enabled']);
+					$is_product_card_enabled = sanitize_text_field($_POST['is_product_card_enabled']);
                     $qcld_gemini_append_content = sanitize_text_field($_POST['qcld_gemini_append_content']) ?? '';
                     $qcld_gemini_prepend_content = sanitize_text_field($_POST['qcld_gemini_prepend_content']) ?? '';
                     update_option('qcld_gemini_api_key', $gemini_api_key);
@@ -139,6 +140,7 @@ if(!class_exists('qcld_wpgemini_addons')){
                     } else {
                         update_option('qcld_gemini_enabled', 1);
                     }
+					update_option('is_product_card_enabled', $is_product_card_enabled);
                     update_option('qcld_gemini_page_suggestion_enabled', $qcld_gemini_page_suggestion_enabled);
                     update_option('gemeni_context_awareness_enabled', $gemini_is_context_awareness_enabled);
                     $openai_post_types = array();
@@ -323,14 +325,20 @@ if(!class_exists('qcld_wpgemini_addons')){
 			if (get_option('is_page_rag_enabled') == '1') {
 				$rag_context_text = Qcld_Bot_Rag::instance()->run_rag_search($keyword);
 				if (!empty($rag_context_text) && $rag_context_text != "No knowledge base found.") {
-						$rag_context = "Relevant Knowledge Base Information:\n";
-						$rag_context .= $rag_context_text;
-						$rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base.";
-						
-						if (!empty($system_instructions)) {
-							$system_instructions .= "\n\n" . $rag_context;
-						} else {
-							$system_instructions = $rag_context;
+						if( get_option( 'qcldai_product_card_enable' ) == 1 ) {
+                            $rag_context = "Relevant Knowledge Base Information:\n";
+                            $rag_context .= $rag_context_text;
+                            $rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base. Also, if the user query seems to be about a product, retrun the product ID in the following format: [woowbot_product_id:123] where 123 are the relevant product IDs.";
+                            $system_content .= "\n\n" . $rag_context;
+                        }else{
+							$rag_context = "Relevant Knowledge Base Information:\n";
+							$rag_context .= $rag_context_text;
+							$rag_context .= "\n\nUse the above information to answer the user's question. If the answer is not in the Knowledge Base, rely on your general knowledge but mention that this information is not in the local knowledge base.";
+							if (!empty($system_instructions)) {
+								$system_instructions .= "\n\n" . $rag_context;
+							} else {
+								$system_instructions = $rag_context;
+							}
 						}
 				}
 			}
@@ -422,7 +430,9 @@ if(!class_exists('qcld_wpgemini_addons')){
 						&& !empty($msg->candidates[0]->content->parts[0]->text)
 					) {
 						$response['status']  = 'success';
-						$response['message'] = $Qcld_Parsedown->text( $msg->candidates[0]->content->parts[0]->text ) . $relevant_pagelinks;
+						$msg = $Qcld_Parsedown->text( $msg->candidates[0]->content->parts[0]->text ) . $relevant_pagelinks;
+						$response['message'] = $this->replace_product_placeholders($msg);
+						// $response['message'] = $msg . $relevant_pagelinks;	
 					} else {
 						$response['status']  = 'error';
 						$response['message'] = 'Invalid response format from Gemini API';
@@ -502,6 +512,46 @@ if(!class_exists('qcld_wpgemini_addons')){
 			// Send success response
 			wp_send_json_success(array('message' => esc_html__('Settings updated successfully', 'chatbot')));
 			wp_die();
+        }
+		/**
+         * Replace product placeholders produced by AI with product HTML.
+         * Pattern: [woowbot_product_id:123] or [woowbot_product_id:123,456]
+         */
+        public function replace_product_placeholders($msg){
+            if (strpos($msg, '[woowbot_product_id:') === false) {
+                return $msg;
+            }
+            if (preg_match_all('/\[woowbot_product_id:([0-9,\s]+)\]/', $msg, $matches)) {
+                foreach ($matches[0] as $i => $placeholder) {
+                    $ids_str = $matches[1][$i];
+                    $ids = array_map('intval', array_filter(array_map('trim', explode(',', $ids_str))));
+                    if (empty($ids)) continue;
+                    $html = '<div class="woo-chatbot-featured-products"><ul class="woo-chatbot-products">';
+                    foreach ($ids as $id) {
+                        $product = wc_get_product($id);
+                        if (!$product) continue;
+                        $image = get_the_post_thumbnail($id, 'shop_catalog');
+                        if (empty($image)) {
+                            $image = woocommerce_placeholder_img('shop_catalog');
+                        }
+                        $html .= '<li class="woo-chatbot-product">';
+                        $html .= '<a target="_blank" href="' . get_permalink($id) . '" title="' . esc_attr($product->get_name()) . '">';
+                        $html .= $image . '</a><div class="woo-chatbot-product-summary"><div class="woo-chatbot-product-table"><div class="woo-chatbot-product-table-cell">';
+                        $html .= '<h3 class="woo-chatbot-product-title"><a target="_blank" href="' . get_permalink($id) . '">' . esc_attr($product->get_name()) . '</a></h3>';
+                        $html .= '<div class="price">' . $product->get_price_html() . '</div>';
+                        if ($product->is_type('simple')) {
+                            $add_to_cart_url = esc_url( add_query_arg('add-to-cart', $id, home_url()) );
+                            $html .= '<a target="_blank" href="' . $add_to_cart_url . '" class="woo-chatbot-button woo-chatbot-button-cart add_to_cart_button ajax_add_to_cart" data-quantity="1" data-product_id="' . $id . '">' . esc_html__('Add to Cart','woowbot-woocommerce-chatbot') . '</a>';
+                        } else {
+                            $html .= '<a target="_blank" href="' . get_permalink($id) . '" class="woo-chatbot-button woo-chatbot-button-cart">' . esc_html__('View Detail','woowbot-woocommerce-chatbot') . '</a>';
+                        }
+                        $html .= '</div></div></div></li>';
+                    }
+                    $html .= '</ul></div>';
+                    $msg = str_replace($placeholder, $html, $msg);
+                }
+            }
+            return $msg;
         }
     }
 

@@ -77,15 +77,6 @@ jQuery(document).ready(function($) {
             var qcld_gemini_prepend_content = jQuery('#qcld_gemini_prepend_content').val();
             var is_page_rag_enabled = jQuery("#is_page_rag_enabled_gemini").is(":checked") ? 1 : 0;
             var post_gemini_types = $.map($('input[name="site_gemini_search_posttypes[]"]:checked'), function(c){return c.value; });
-            Swal.fire({
-                title: 'Saving settings...',
-                html: 'Please wait while we save your settings.',
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                didOpen: function () {
-                    Swal.showLoading();
-                }
-            });
             $.ajax({
                 url: qcld_gemini_admin_data.ajax_url,
                 type:'POST',
@@ -126,14 +117,6 @@ jQuery(document).ready(function($) {
                       
                             });
                         }
-                    });
-                },
-                error: function() {
-                    Swal.fire({
-                        title: 'Failed to save settings.',
-                        text: 'Please try again.',
-                        icon: 'error',
-                        confirmButtonText: 'OK'
                     });
                 }
             });

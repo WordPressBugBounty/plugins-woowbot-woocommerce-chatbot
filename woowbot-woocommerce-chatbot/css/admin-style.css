@@ -970,8 +970,8 @@ div#openrouter-settings .tab-content {
 }
 
 .admin-maxwith.qcld-openai-main-box .col-auto.me-auto.ai-settings-title-container {
-display: flex;
-    justify-content: flex-start;
+ display: flex;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 16px;
     background: linear-gradient(192deg, #FFE3E1 4%, #E9E4FF 98.26%);
@@ -2196,6 +2196,16 @@ div#gemini-settings .tab-content {
     font-weight: normal;
 }
 
+
+
+
+
+
+
+
+
+
+
 .woo-chatbot-tabs-style-flip {
     display: flex;
     flex-direction: column;
@@ -2283,33 +2293,4 @@ a.wp-chatbot-admin-pro-upgrade-button {
 }
 .qcld-ai-settings-top-rght {
     display: flex;
-}
-
-.rag_cpt_checkbox label span, div#wp-chatbot-openai-settings label span, div#wp-chatbot-gemini-settings label span {
-    margin: 0 0 0 -20px;
-    color: #a1408d;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-
-span.qcls_openAI_customized {
-    margin: 0 0 0 0px !important;
-    color: #222 !important;
-    font-weight: normal !important;
-    font-size: 16px !important;
-}
-
-
-
-
-button#ai-knowledge-base-tab:hover {
-  display: inline-block;
-  animation: pulse 0.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.02); }
-  100% { transform: scale(1); }
 }

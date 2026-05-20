@@ -58,24 +58,20 @@ class Qcld_WPBot_Common_Functions {
         $links = [];
         
         $post_type_array = get_option('qcld_openai_relevant_post');
-        
-        $the_query = new WP_Query(array(
-            'post_status' => 'publish',
-            'posts_per_page' => 5,
-            's' => esc_attr($q),
-            'post_type' => $post_type_array
-        ));
-        
-        if($the_query->have_posts()) {
-            while($the_query->have_posts()) {
-                $the_query->the_post();
-                
-                $url = esc_url(get_permalink());
-                $link = '<a href=' . $url . ' target="_blank">' . get_the_title() . '</a>';
-                array_push($links, $link);
+
+		 if ( ! empty( $post_type_list ) ) {
+                $sql = "SELECT ID FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type IN ('{$post_type_list}') AND (post_title LIKE %s OR post_content LIKE %s) ORDER BY post_date DESC LIMIT 5";
+                $post_ids = $wpdb->get_col( $wpdb->prepare( $sql, $search_term, $search_term ) );
+
+                if ( ! empty( $post_ids ) ) {
+                    foreach ( $post_ids as $post_id ) {
+                        $url  = esc_url( get_permalink( $post_id ) );
+                        $title = get_the_title( $post_id );
+                        $link = '<li><mark><a style="color: #000" href=' . $url . '>' . esc_html( $title ) . '</a><mark></li>';
+                        array_push( $links, $link );
+                    }
+                }
             }
-            wp_reset_postdata();
-        }
         
         $links = array_unique($links);
         return $links;

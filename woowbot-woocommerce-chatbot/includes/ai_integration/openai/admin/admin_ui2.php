@@ -1,17 +1,17 @@
 
                 <div class="card-body p-sm-0">
                     <!-- <div class="alert alert-danger" role="alert">
-                        <?php // echo esc_html__('OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details.', 'chatbot'); ?>
+                        <?php // echo esc_html__('OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details.', 'woowbot-woocommerce-chatbot'); ?>
                     </div> -->
                     <ul class="nav nav-tabs">
-                        <li ><a class="active" data-toggle="tab" href="#wp-chatbot-openai-settings"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('OpenAI settings', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-rag"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('RAG', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-training-model"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-plugins-checked"></i> </span><?php echo esc_html__('Training Model', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-assistants"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-home"></i> </span><?php echo esc_html__('GPT Assistant', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-data_post_converter"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-database-add"></i> </span><?php echo esc_html__('Fine Tune with Website Data', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-img_generator"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-gallery"></i> </span><?php echo esc_html__('AI Image Generator', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-content_writer"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-status"></i> </span><?php echo esc_html__('AI Article Generator', 'chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-help"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-editor-help"></i> </span><?php echo esc_html__('Help', 'chatbot'); ?></a></li>
+                        <li ><a class="active" data-toggle="tab" href="#wp-chatbot-openai-settings"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('OpenAI settings', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-openai-rag"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('RAG', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-openai-training-model"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-plugins-checked"></i> </span><?php echo esc_html__('Training Model', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-openai-assistants"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-home"></i> </span><?php echo esc_html__('GPT Assistant', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-data_post_converter"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-database-add"></i> </span><?php echo esc_html__('Fine Tune with Website Data', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-img_generator"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-gallery"></i> </span><?php echo esc_html__('AI Image Generator', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-content_writer"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-status"></i> </span><?php echo esc_html__('AI Article Generator', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                        <li><a data-toggle="tab" href="#wp-chatbot-openai-help"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-editor-help"></i> </span><?php echo esc_html__('Help', 'woowbot-woocommerce-chatbot'); ?></a></li>
                     </ul>
                  
                     <div class="qcld-tab-content-main">
