@@ -4,13 +4,13 @@
     * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.7.1
+    * Version: 4.7.4
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
     * Author URI: https://woowbot.pro/
     * Requires at least: 4.9
-    * Tested up to: 6.9
+    * Tested up to: 7.0
     * Text Domain: woowbot-woocommerce-chatbot
     * Domain Path: /lang
     * License: GPL2
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.7.1');
+   define('QCLD_WOOCHATBOT_VERSION', '4.7.4');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -265,6 +265,7 @@
            'qcld_ai_enabled' => ( ( get_option( 'qcld_openai_enabled' ) || get_option( 'qcld_gemini_enabled' ) ) ? 1 : ''),
            'qcld_openai_enabled' => ( get_option( 'qcld_openai_enabled' ) ? 1 : '' ),
            'qcld_gemini_enabled' => ( get_option( 'qcld_gemini_enabled' )  ? 1 : '' ),
+           'openai_steaming_enabled' => ( get_option( 'qcld_openai_stream_enabled' )  ? 1 : '' ),
    
            //bargainator
            'your_offer_price'  => (get_option('qcld_minimum_accept_price_heading_text')!=''?get_option('qcld_minimum_accept_price_heading_text'):'Please, tell me what is your offer price.'),
@@ -296,6 +297,7 @@
         wp_localize_script('qcld-woo-chatbot-frontend', 'qcld_chatbot_obj', [
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce'    => $nonce,
+            'stream_endpoint' => admin_url('admin-ajax.php?action=qcld_stream_openai'),
         ]);
        wp_localize_script('qcld-woo-chatbot-frontend', 'woo_chatbot_obj', $woo_chatbot_obj);
       // Dashicons are not loaded on frontend by default.
@@ -1423,7 +1425,6 @@
                if (isset($_POST["wp_chatbot_agent_image"]) && is_array($_POST["wp_chatbot_agent_image"])) {
                    $wp_chatbot_agent_image = isset($_POST["wp_chatbot_agent_image"][0]) ? esc_url_raw(wp_unslash($_POST["wp_chatbot_agent_image"][0])) : '';
                    $wp_chatbot_custom_agent_path = isset($_POST["wp_chatbot_custom_agent_path"]) ? esc_url_raw(wp_unslash($_POST["wp_chatbot_custom_agent_path"])) : '';
-                 
                    update_option('wp_chatbot_agent_image', $wp_chatbot_agent_image);
                    update_option('wp_chatbot_custom_agent_path', $wp_chatbot_custom_agent_path);
                }
@@ -1606,107 +1607,109 @@
                   */
                   register_activation_hook(__FILE__, 'qcld_woo_chatboot_defualt_options');
                   function qcld_woo_chatboot_defualt_options(){
-                  if(!get_option('woo_chatbot_position_x')){
-                  update_option('woo_chatbot_position_x', intval(50));
-                  }
-                  if(!get_option('woo_chatbot_position_y')) {
-                  update_option('woo_chatbot_position_y', intval(50));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_ppp')){
-                  update_option('qlcd_woo_chatbot_ppp', intval(10));
-                  }
-                  if(!get_option('disable_woo_chatbot')){
-                  update_option('disable_woo_chatbot', '');
-                  }
-                  if(!get_option('qlcd_wp_chatbot_admin_email')){
-                  update_option('qlcd_wp_chatbot_admin_email', '');
-                  }
-                  if(!get_option('qlcd_wp_chatbot_admin_from_email')){
-                  update_option('qlcd_wp_chatbot_admin_from_email', '');
-                  }
-                  
-                  if(!get_option('qlcd_wp_chatbot_admin_email_name')){
-                  update_option('qlcd_wp_chatbot_admin_email_name', '');
-                  }
-                  if(!get_option('disable_woo_chatbot_on_mobile')) {
-                  update_option('disable_woo_chatbot_on_mobile', '');
-                  }
-                  if(!get_option('woo_chatbot_icon')) {
-                  update_option('woo_chatbot_icon', sanitize_text_field('icon-0.png'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_host')) {
-                  update_option('qlcd_woo_chatbot_host', sanitize_text_field('Our Store'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_agent')) {
-                  update_option('qlcd_woo_chatbot_agent', sanitize_text_field('Carrie'));
-                  }
-                  if(!get_option('wp_chatbot_custom_agent_path')) {
-                  $default_image = esc_url_raw( QCLD_WOOCHATBOT_IMG_URL.'icon-0.png' );
-                  update_option('wp_chatbot_agent_image', sanitize_text_field($default_image));
-                  update_option('wp_chatbot_custom_agent_path', sanitize_text_field('agent image'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_agent_join')) {
-                  update_option('qlcd_woo_chatbot_agent_join', sanitize_text_field('has joined the conversation'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_welcome')) {
-                  update_option('qlcd_woo_chatbot_welcome', sanitize_text_field('Welcome to'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_asking_name')) {
-                  update_option('qlcd_woo_chatbot_asking_name', sanitize_text_field('May I know your name?!'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_name_greeting')) {
-                  update_option('qlcd_woo_chatbot_name_greeting', sanitize_text_field('Nice to meet you'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_i_am')) {
-                  update_option('qlcd_woo_chatbot_i_am', sanitize_text_field('I am!'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_product_success')) {
-                  update_option('qlcd_woo_chatbot_product_success', sanitize_text_field('Great! We have these products.'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_product_fail')) {
-                  update_option('qlcd_woo_chatbot_product_fail', sanitize_text_field('Oops! Nothing matches your criteria'));
-                  }
-                  
-                  if(!get_option('qlcd_woo_chatbot_product_search')) {
-                  update_option('qlcd_woo_chatbot_product_search', sanitize_text_field('Product Search'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_catalog')) {
-                  update_option('qlcd_woo_chatbot_catalog', sanitize_text_field('Catalog'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_send_us_email')) {
-                  update_option('qlcd_woo_chatbot_send_us_email', sanitize_text_field('Send Us Email'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_more_specific')) {
-                  update_option('qlcd_woo_chatbot_more_specific', sanitize_text_field('Can you be more specific?'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_product_asking')) {
-                  update_option('qlcd_woo_chatbot_product_asking', sanitize_text_field('I am here to find you the product you need. What are you shopping for?'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_product_suggest')) {
-                  update_option('qlcd_woo_chatbot_product_suggest', sanitize_text_field('You can browse our extensive catalog. Just pick a category from below:'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_product_infinite')) {
-                  update_option('qlcd_woo_chatbot_product_infinite', sanitize_text_field('Too many choices? Lets try another search term'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_email_successfully')){
-                  update_option('qlcd_woo_chatbot_email_successfully', sanitize_text_field('Your email has been sent successfully! We will post a reply very soon. Thank you!'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_provide_email_address')){
-                  update_option('qlcd_woo_chatbot_provide_email_address', sanitize_text_field('Please provide your email address'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_write_your_message')){
-                  update_option('qlcd_woo_chatbot_write_your_message', sanitize_text_field('Please write you message'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_conversations_with')) {
-                  update_option('qlcd_woo_chatbot_conversations_with', sanitize_text_field('Conversations with'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_is_typing')) {
-                  update_option('qlcd_woo_chatbot_is_typing', sanitize_text_field('is typing...'));
-                  }
-                  if(!get_option('qlcd_woo_chatbot_send_a_msg')) {
-                  update_option('qlcd_woo_chatbot_send_a_msg', sanitize_text_field('Send a message'));
-                  }
-                  
+                     if(!get_option('woo_chatbot_position_x')){
+                     update_option('woo_chatbot_position_x', intval(50));
+                     }
+                     if(!get_option('woo_chatbot_position_y')) {
+                     update_option('woo_chatbot_position_y', intval(50));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_ppp')){
+                     update_option('qlcd_woo_chatbot_ppp', intval(10));
+                     }
+                     if(!get_option('disable_woo_chatbot')){
+                     update_option('disable_woo_chatbot', '');
+                     }
+                     if(!get_option('qlcd_wp_chatbot_admin_email')){
+                     update_option('qlcd_wp_chatbot_admin_email', '');
+                     }
+                     if(!get_option('qlcd_wp_chatbot_admin_from_email')){
+                     update_option('qlcd_wp_chatbot_admin_from_email', '');
+                     }
+                     
+                     if(!get_option('qlcd_wp_chatbot_admin_email_name')){
+                     update_option('qlcd_wp_chatbot_admin_email_name', '');
+                     }
+                     if(!get_option('disable_woo_chatbot_on_mobile')) {
+                     update_option('disable_woo_chatbot_on_mobile', '');
+                     }
+                     if(!get_option('woo_chatbot_icon')) {
+                     update_option('woo_chatbot_icon', sanitize_text_field('icon-0.png'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_host')) {
+                     update_option('qlcd_woo_chatbot_host', sanitize_text_field('Our Store'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_agent')) {
+                     update_option('qlcd_woo_chatbot_agent', sanitize_text_field('Carrie'));
+                     }
+                     if(!get_option('wp_chatbot_custom_agent_path')) {
+                     $default_image = esc_url_raw( QCLD_WOOCHATBOT_IMG_URL.'icon-0.png' );
+                     update_option('wp_chatbot_agent_image', sanitize_text_field($default_image));
+                     update_option('wp_chatbot_custom_agent_path', sanitize_text_field('agent image'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_agent_join')) {
+                     update_option('qlcd_woo_chatbot_agent_join', sanitize_text_field('has joined the conversation'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_welcome')) {
+                     update_option('qlcd_woo_chatbot_welcome', sanitize_text_field('Welcome to'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_asking_name')) {
+                     update_option('qlcd_woo_chatbot_asking_name', sanitize_text_field('May I know your name?!'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_name_greeting')) {
+                     update_option('qlcd_woo_chatbot_name_greeting', sanitize_text_field('Nice to meet you'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_i_am')) {
+                     update_option('qlcd_woo_chatbot_i_am', sanitize_text_field('I am!'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_product_success')) {
+                     update_option('qlcd_woo_chatbot_product_success', sanitize_text_field('Great! We have these products.'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_product_fail')) {
+                     update_option('qlcd_woo_chatbot_product_fail', sanitize_text_field('Oops! Nothing matches your criteria'));
+                     }
+                     
+                     if(!get_option('qlcd_woo_chatbot_product_search')) {
+                     update_option('qlcd_woo_chatbot_product_search', sanitize_text_field('Product Search'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_catalog')) {
+                     update_option('qlcd_woo_chatbot_catalog', sanitize_text_field('Catalog'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_send_us_email')) {
+                     update_option('qlcd_woo_chatbot_send_us_email', sanitize_text_field('Send Us Email'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_more_specific')) {
+                     update_option('qlcd_woo_chatbot_more_specific', sanitize_text_field('Can you be more specific?'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_product_asking')) {
+                     update_option('qlcd_woo_chatbot_product_asking', sanitize_text_field('I am here to find you the product you need. What are you shopping for?'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_product_suggest')) {
+                     update_option('qlcd_woo_chatbot_product_suggest', sanitize_text_field('You can browse our extensive catalog. Just pick a category from below:'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_product_infinite')) {
+                     update_option('qlcd_woo_chatbot_product_infinite', sanitize_text_field('Too many choices? Lets try another search term'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_email_successfully')){
+                     update_option('qlcd_woo_chatbot_email_successfully', sanitize_text_field('Your email has been sent successfully! We will post a reply very soon. Thank you!'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_provide_email_address')){
+                     update_option('qlcd_woo_chatbot_provide_email_address', sanitize_text_field('Please provide your email address'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_write_your_message')){
+                     update_option('qlcd_woo_chatbot_write_your_message', sanitize_text_field('Please write you message'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_conversations_with')) {
+                     update_option('qlcd_woo_chatbot_conversations_with', sanitize_text_field('Conversations with'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_is_typing')) {
+                     update_option('qlcd_woo_chatbot_is_typing', sanitize_text_field('is typing...'));
+                     }
+                     if(!get_option('qlcd_woo_chatbot_send_a_msg')) {
+                     update_option('qlcd_woo_chatbot_send_a_msg', sanitize_text_field('Send a message'));
+                     }
+                     if( !get_option('qcld_openai_stream_enabled') ){
+                        update_option('qcld_openai_stream_enabled', 1);
+                     }
                   }
                   
                   /**

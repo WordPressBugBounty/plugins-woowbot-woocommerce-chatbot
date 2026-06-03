@@ -1,37 +1,38 @@
-=== ChatBot for eCommerce - WoowBot ===
+=== AI ChatBot for eCommerce - WoowBot ===
 Contributors: quantumcloud
 Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
-Tested up to: 6.9
-Stable tag: 4.7.1
+Tested up to: 7.0
+Stable tag: 4.7.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
 
-ChatBot for WooCommerce. Simple & native WooCommerce ChatBot helps shoppers find products easily & Increase Sales! AI, ChatGPT available with PRO
+AI chatbot for WooCommerce that automates support, increases WooCommerce sales, answer questions, & boosts engagement. AI, ChatGPT, Gemini. No coding!
+
 
 == Description ==
-= ChatBot for WooCommerce - WoowBot =
-<strong>ChatBot for WooCommerce</strong> - WoowBot is a Free SIMPLE and <strong>Native</strong> WordPress eCommerce ChatBot. This plug n' play chatbot or eCommerce shopping bot works out of the box. Use this eCommerce ChatBot for Woocommerce product search and customer support.
+= AI ChatBot for WooCommerce - WoowBot =
+<strong>WoowBot AI ChatBot for WooCommerce</strong> is a Free SIMPLE and <strong>Native</strong> WordPress eCommerce ChatBot. This plug n' play chatbot or Woocoommerce shopping bot works out of the box. Use this eCommerce ChatBot for Woocommerce product search, customer support, and to answer user questions.
 
-The WoowBot Free version is a <strong>simple eCommerce ChatBot</strong> for woocommerce shoppers to search and find the right product quickly. If the shopper does not find the product they are searching for, they can email the shop admin directly from the ChatBot window. Use ChatBot for increased sales in your eCommerce websites.
+The WoowBot Free version is an <strong>eCommerce ChatBot</strong> for woocommerce shoppers to search and find the right product quickly. If the shopper does not find the product they are searching for, they can email the shop admin directly from the ChatBot window. Use ChatBot for increased sales in your eCommerce websites.
 
-> 🚀 Black Friday Sale! Use coupon code <strong>friday</strong> and grab the Pro version now!
-> 🚀 Upgrade to the Best <strong> [ChatBot for WooCommerce - WoowBot Pro](https://woowbot.pro/) for AI & Advanced Features</strong> 
-> 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot Pro](https://woowbot.pro/) 
+Integrate with OpenAI or Gemini to answer user questions from your website data. You can train an AI model with your website and product data.
 
-You can make this plug n’ play ChatBot to work with <strong>any language</strong> with very little effort. Just change the languages from the ChatBot Dashboard. Grab the best ChatBot for eCommerce websites now!
+> 🚀 Upgrade to the Best <strong> [ChatBot for WooCommerce - WoowBot](https://woowbot.pro/) for AI & Advanced Features</strong> 
+> 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot](https://woowbot.pro/) 
 
-<strong>A pro version </strong>of the ChatBot plugin is available with tons of advanced features that can provide automated customer support and can be integrated with <strong>OpenAI (ChatGPT)</strong> or <strong>Google's Dialogflow </strong>. Use AI ChatBot for product recommendations in eCommerce and provide automated live customer support.
 
-> 🚀  Don't have WooCommerce and Looking for a ChatBot plugin for WordPress? Try our [ Free ChatBot for WordPress](https://wordpress.org/plugins/chatbot/) WPBot plugin!
+<strong>A pro version </strong>of the ChatBot plugin is available with tons of advanced features that can provide automated customer support and can be integrated with <strong>OpenAI (ChatGPT)</strong>, Gemini, OpenRouter, or <strong>Google's Dialogflow </strong>. Use AI ChatBot for product recommendations in eCommerce and provide automated live customer support.
+
+> 🚀  Don't have WooCommerce and Looking for a ChatBot plugin for WordPress? Try the [Best Free ChatBot for WordPress](https://wordpress.org/plugins/chatbot/) WPBot plugin!
 
 = Next Generation Conversational Commerce for WooCommerce =
 Conversational commerce is the future of eCommerce. Enter WoowBot ChatBot: a new way of customer interaction that allows brands to connect with their customers on a personal level with shopbots while creating a more natural interaction that mimics the physical world. 24/7/365, the WoowBot ChatBot can provide live chat support to your shoppers and provide product search services, order status (pro feature) or support(pro feature). Increase customer satisfaction, reduce costs to scale and improve ability to engage customers. 
 
 = What Can this ChatBot do? =
-WooWBot is the first of its kind chatbot <strong>WooCommerce</strong>. 
+WooWBot is a Native chatbot for<strong>WooCommerce</strong>. 
 
 A chatbot can offer numerous benefits to an e-commerce website by enhancing customer experience, streamlining operations, and ultimately driving more sales.
 
@@ -61,29 +62,13 @@ A chatbot can offer numerous benefits to an e-commerce website by enhancing cust
 
 By leveraging the capabilities of chatbots, e-commerce websites can provide faster, more personalized service, increase operational efficiency, and ultimately improve their bottom line.
 
-= WoowBot ChatBot Free vs Pro Version =
-
-WoowBot free version is a great Chat Bot tool for a small online store that does not require the advanced features of the pro version bot. The free version features list:
-
-* One template
-* Chat and search for products
-* Search using WooCommerce standard search function that uses title and description
-* Display products found and link to the product page
-* Adjust location of the button
-* Upload Custom Chat Icon
-* Language center to modify bot responses (in any language)
-* Custom CSS box
-* MO/Port included for translation of multi language in back end
-
 = WoowBot Pro Feature Highlights =
 
 <strong>Artificial Intelligence and NLP </strong>
 
-WoowBot Pro is an Intelligent ChatBot - Powered by AI. Integrate with <strong>OpenAI (ChatGPT)</strong> or <strong>Google’s DialogFlow</strong>. 
+WoowBot Pro is an Intelligent ChatBot - Powered by AI. Integrate with <strong>OpenAI (ChatGPT)</strong>, <strong>Gemini</strong>, <strong>OpenRouter</strong>, or Google’s DialogFlow</strong>. 
 
-<strong>OpenAI (ChatGPT) for ChatBot WoowBot Pro</strong>
-
-<strong>OpenAI ChatGPT</strong> latest models are supported. OpenAI’s API provides access to ChatGPT for a wide variety of natural language tasks. You can limit OpenAI responses based on keywords inclusion or exclusion to reduce token cost. The premium version also supports ChatGPT fine tuning and GPT Assistants. The GPT Assistants API allows you to build AI assistants within your own applications. A GPT Assistant has instructions and can leverage models, tools, and knowledge to respond to user queries. With WoowBot Professional and Master licenses use the Assistants you develop on the OpenAI playground trained with your own website data and/or upload your own PDF documents to answer from.
+<strong>OpenAI ChatGPT</strong>, Gemini, and OpenRouter latest models are supported. 
 
 <strong>Onsite Retargeting, Exit Intent</strong>
 
@@ -103,153 +88,62 @@ All of these will translate into a much higher rate of customer conversion by re
 
 WoowBot pro provides support directly from the Chat window. You can add commonly asked questions (FAQ) and answers in the backend that WoowBot will display when user goes to support area. If the shopper does not find answers to his question in the FAQ, he can opt to send a email to site admin or leave feedback!
 
-Here is a list of the WoowBot pro version feature highlights:
+<strong>What does the WoowBot Pro AI Chatbot do?</strong>
+The WoowBot AI Chatbot plugin allows you to create and train your chatbot to handle customer questions, guide users, and share information. With native WooCommerce integration, the plugin supports online stores with product Q&A, order tracking, and abandoned cart recovery through onsite and offsite retargeting.
 
-= WoowBot Pro Plugin Feature Highlights =
-<strong>WooCommerce Specific Features</strong>
 
-* Woocommerce <strong>Product</strong> Search in Chat window
-* Product display order by and sorting options
-* Option to Show Only <strong>Parent</strong> Categories with or without Sub Category list.
-* Option to display <strong>order status</strong> with or without logging in
-* Show or hide <strong>cart</strong> item number with ChatBot icon
-* Option to <strong>exclude out of stock products</strong> from search results
-* Option to Enable/Disable Product <strong>Search</strong>, <strong>Featured</strong> Products, on <strong>Sale</strong> Products, <strong>Order</strong> <strong>Status</strong> buttons at start menu
-* Show <strong>recently viewed</strong> products for easy reference to the shopper
-* Show <strong>featured products</strong> until shopper has viewed other products
-* <strong>Quick Cart</strong> view
-* Display <strong>product details in-chat</strong> – complete with images, add to cart option and support for multiple images
-* Option to open product details in single page instead of Bot window
-* Onsite R<strong>etargeting</strong> and R<strong>emarketing</strong> to increase customer conversion rate and increase sales!
-* Show R<strong>etargeting</strong> messages for customer on <strong>Exit Intent</strong>, After <strong>Scrolling</strong> Down on page “X” Percent, Or after <strong>“X” seconds</strong>.
-* Show R<strong>etargeting</strong> message for customers to <strong>complete</strong> the <strong>checkout</strong> if idle for a set time
-* Customer <strong>Conversion Reporting</strong> with Charts and Graphs
-* Shopper <strong>Conversion Statistics</strong> by Day, Week, Month and Custom Date Range
+<strong>🚀 Why use WoowBot Pro AI Chatbot on your Woocommerce website?</strong>
 
-<strong>Interactions</strong>
+Scale Your Store with WoowBot Pro: The Ultimate AI Chatbot for WooCommerce
+Looking to automate your customer service, boost sales, and provide 24/7 support? WoowBot Pro AI Chatbot for WooCommerce is a native WordPress plugin designed to turn casual visitors into repeat buyers. By integrating advanced AI directly into your e-commerce store, you can answer product questions, reduce cart abandonment, and streamline the buyer’s journey automatically.
 
-* Create simple <strong>text responses</strong> easily from your WordPress backend.
-* Create <strong>FAQ area</strong> with multiple questions and answers with Categories (supports html)
-* Send <strong>eMail</strong>, <strong>Call Me Back</strong> &amp; <strong>Feedback</strong> Collection
-* Collect <strong>User eMail </strong>for <strong>newsletter Subscription</strong>
-* Automatically supports images (jpgs, animated gifs) and <strong>Youtube Videos</strong> from WPBot Language Settings Responses
-* Add <strong>video in Support area</strong> just by pasting Youtube link
-* Option to <strong>Skip Greeting</strong> and Asking Name and eMail
-* Option to show the ChatBot for Logged in users only
-* <strong>Skip</strong> Greetings and <strong>Trigger an Intent</strong> (like a Custom Form)
-* Option to enable/disable<strong> asking for eMail</strong> address after asking name
-* Enable <strong>Asking for Phone Number</strong>
-* <strong>Quick Help for commands</strong> that can be used in-chat
-* <strong>Keyboard shortcuts</strong> (Ctrl+B to open bot, Esc to close)
+<strong>Why WooCommerce Store Owners Choose WoowBot Pro</strong>
+⚡ Instant FAQ Responses
+Never keep a customer waiting. Provide lightning-fast, highly accurate answers to frequently asked questions (FAQs). By delivering immediate information during crucial buying moments, you remove friction and accelerate the purchase process.
 
-<strong>OpenAI ChatGPT Integration</strong>
-* Integrate with OpenAI so the WPBot can answer any questions
-* OpenAI Content Writer and AI Content Generatror
-* Open AI Image Generator
-* Train and Fine Tune OpenAI 
-* Fine tune with your Website data (pages, posts and custom post types)
-* GPT Assistant support. Upload your PDF, MSWord or other documents to train ChatGPT to respond from
-* Generate and Upload website contents as JSON file to your GPT Assistant for AI training 
+📱 100% Mobile-Friendly Live Chat Widget
+Deliver a flawless user experience across all devices. Our fully responsive live chat widget adapts seamlessly to smartphones, tablets, and desktops, ensuring smooth, accessible customer conversations anytime, anywhere.
 
-<strong>DialogFlow Integration</strong>
+🌐 Multilingual AI Chatbot for Global eCommerce
+Expand your international reach effortlessly. WoowBot Pro automatically detects and adapts to your visitors' preferred languages. Deliver personalized, AI-powered assistance in dozens of languages to scale your global store.
 
-* Full integration with Google Artificial Intelligence, Machine Learning or <strong>AI Engine DialogFlow</strong>
-* Supports <strong>DialogFlow ES - Essential</strong> and <strong>DialogFlow CX</strong>
-* Use DialogFlow CX as <strong>visual workflow builder</strong> to create conversations that are easier to design, <strong>enhance</strong>, and maintain.
-* Supports <strong>Follow Up Intents</strong> and step by step Question Answers through Dialogflow custom Intents
-* Supports <strong>Rich Message Response &amp; Card Responses</strong> from Dialogflow as FaceBook messenger app
-* <strong>Automatically</strong> supports images (jpgs, <strong>animated gifs</strong>) and Youtube Videos from DialogFlow Intent Responses
-* Advanced <strong>Name Recognition with DialogFlow
-</strong>
-* <strong>Sample DialogFlow Agent </strong>for <strong>quick import</strong>
+🎨 Fully Customizable Branding
+Maintain a cohesive brand identity. Easily customize the chatbot’s design, layout, colors, and appearance to perfectly match your WooCommerce theme for a seamless, integrated user experience.
 
-<strong>Customization Options</strong>
+🔒 Secure, Native WordPress Performance
+Keep your store data safe. As a native WordPress and WooCommerce AI chatbot, WoowBot Pro operates securely within your hosting environment, ensuring consistent, dependable, and lightweight performance.
 
-* Enable <strong>Extended Home</strong> Interface to present different interactive options to users
-* <strong>Enable</strong> or disable <strong>Different Sections</strong> and <strong>Buttons</strong> to show on the <strong>Extended Home</strong> interface
-* Option to<strong> choose on which pages WPBot </strong>should <strong>load</strong>
-* Option to <strong>disable WPBot on Mobile Devices</strong>
-* Option to <strong>Auto Open WPBot Window For First Time</strong> Page Load
-* Upload<strong> custom WPBot</strong> icon
-* Upload custom <strong>Agent icon</strong>
-* Customize <strong>primary colors to match your site</strong>
-* Customize bot <strong>response</strong> time
-* Option to Keep ChatBot window open when browsing
-* <strong>Hide/Show</strong> <strong>Icons </strong>at the bottom of WPBot window<strong>
-</strong>
+Top Advanced Features of WoowBot Pro AI Chatbot
+🤖 Auto-Train AI Technology
+Available with Professional or Master Licenses.
 
-<strong>User Conversions &amp; Retargeting</strong>
+Say goodbye to tedious manual setups. Our Auto-Train feature automatically crawls your website content to educate the chatbot. Whenever you add a new WooCommerce product, update a page, publish a blog post, or tweak your FAQs, the AI instantly syncs and learns. This ensures shoppers always receive accurate, up-to-date answers while saving you hours of maintenance.
 
-* Onsite<strong> retargeting and remarketing</strong> to increase customer conversion rate.
-* Show <strong>retargeting</strong> messages for customer on <strong>Exit Intent, After Scrolling Down “X” Percent, Or after “X” seconds.</strong>
-* Create <strong>different Reargeting messages</strong> for different pages
-* Collect <strong>User eMail </strong>for <strong>newsletter Subscription</strong>
-* <strong>Prompt User </strong>for <strong>eMail subscription </strong>with <strong>Retargeting Message</strong>
-* Export <strong>eMail Addresses as CSV</strong>
-* Out of focus <strong>Browser tab flashing</strong> with custom message
+⚙️ Advanced Customization & AI Control
+Take full control over your customer interactions. Tailor the AI’s response tone, control layout designs, and target specific user devices using your own business insights for highly personalized customer management.
 
-<strong>Notification Builder</strong>
+🎯 Smart Chatbot Visibility
+Choose exactly where your chatbot interacts with shoppers. Use target URLs to show or hide the chat widget on specific pages—such as displaying it on high-intent checkout pages or hiding it on distraction-free landing pages.
 
-* Add<strong> multiple site notifications</strong> to show above the WPBot icon
-* Select an <strong>Intent</strong> for Click Action
-* <strong>Show or Hide</strong> Opening Notifications
-* <strong>Add links</strong> to any Intent in the Notification area so user can directly browse to the useful parts
-* Set <strong>Interval</strong> between notifications.
+📝 Interactive Form Assistance
+Stop losing leads to complicated forms. Guide users through account registrations, surveys, or contact forms using a conversational flow that reduces user error and drastically improves submission success rates.
 
-<strong>Start Menu</strong>
+📊 Dashboard Conversation Management
+Monitor your success in real time. View, track, and manage all live customer chats directly from your WordPress dashboard. Review message histories and step in to respond manually without ever leaving your website.
 
-* Manage the <strong>Start Menu </strong>buttons with <strong>Drag and Drop</strong>
-* Option to <strong>Enable/Disable</strong> all ready intents like Site Search, Call Me, eMail, FAQ, newsletter subscription etc.
-* <strong>Rearrange</strong> the Start Menu Items
-* Add Custom Menu Button with <strong>Link</strong>
-* Option to set after how many failed attempt to show Start Menu
+<strong>Drive Sales with a Smarter eCommerce Assistant</strong>
 
-<strong>Interactive Forms</strong>
-Extend the Start Menu with the <strong>powerful Conversational Forms</strong>. It is a visual,<strong> drag and drop</strong> form builder. Conversations or forms can be <strong>eMailed</strong> to you and <strong>saved in the database (pro feature)</strong>. You can create:
+* Supercharge your conversion rates with an AI assistant built specifically for e-commerce utility. WoowBot Pro works around the clock to:
 
-* Conditional <strong>Menu Driven Conversations</strong>
-* Standard Contact Forms
-* Job <strong>Application Forms</strong>
-* <strong>Lead Capture</strong> Forms
-* Various types of <strong>Calculators</strong>
-* Feedback <strong>Survey</strong> Forms etc.
+* Engage Shoppers: Answer complex product questions in real time directly on the product page.
 
-<strong>Language Support</strong>
+* Streamline Support: Assist customers with instant order tracking and shipping updates.
 
-* Works with <strong>any language</strong> (multiple language support is available with WPBot Pro Master license).
-* <strong>Advanced Language Center t</strong>o edit and change every WPBot responses, System languages, stop words and info messages!
-* <strong>Stop Words</strong> dictionary included and editable by admin. Bot will automatically exclude stop words from search criteria and chat commands
-* Add <strong>multiple variations</strong> of <strong>WPBot responses</strong> for each node. They will be used randomly and give an appearance of more human like responses.
-* mo/pot file included so you can translate backend to any language
-* <strong>RTL support</strong>
-* <strong>Multi Language support. Multilingual chatbot for international customers </strong> 
+* Recover Sales: Actively reduce cart abandonment by addressing buyer hesitation before checkout.
 
-<strong>ChatBot Embedding Features</strong>
+* Increase AOV: Naturally suggest relevant items and create automated upselling moments.
 
-* <strong>Embed code to use the WPBot</strong> on any other website including static HTML website
-* <strong>Widget Shortcode</strong> with the possibility to <strong>Load specific Intent</strong> (<strong>forms</strong> etc.) on a page or post.
-* Shortcode for <strong>Click to Chat</strong> Button with the possibility to <strong>Load specific Intent</strong> (<strong>forms</strong> etc.) on a page or post
-* <strong>Shortcode for WPBot on a Page or post</strong> (without floating icon)
-
-<strong>Button Integrations</strong>
-
-* Full Integration with<strong> FaceBook Messenger for Customer Live Chat </strong>as a floating button<strong>
-</strong>
-* Light Integration with <strong>Skype, WhatsApp, Viber, Web Link &amp; Phone Call</strong>
-* <strong>Integrate with 3rd party Live Chat services</strong> that provides a stand alone chat page link like Tawk.to
-
-<strong>Misc. ChatBot Features</strong>
-
-* <strong>Persistent chat history</strong> over user session on website
-* Option to <strong>Disable persistent chat history</strong> (Chat history is reset in every page)
-* Remember chat history in browser local storage and <strong>greet returning users</strong>
-* Option to Open pages in new or same window from search results
-* <strong>GDPR</strong> compliance (message with link to Privacy page)
-* <strong>Unsubscibe</strong> Command
-* <strong>Schedule day and time when WPBot will run</strong>. Make WPBot work with other Live chat software.
-* Plugin <strong>Auto Upgrades from WordPress backend</strong>
-* <strong>Priority Support</strong>
-
+Ready to automate your WooCommerce support and drive more revenue? Upgrade to WoowBot Pro AI Chatbot today and deliver an always-on, premium shopping experience.
 
 > 🚀 <strong> for AI & Advanced Features Upgrade to [ChatBot for WooCommerce - WoowBot Pro](https://woowbot.pro/) Now!</strong> 
 > 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot Pro](https://woowbot.pro/) 
@@ -260,7 +154,7 @@ Extend the Start Menu with the <strong>powerful Conversational Forms</strong>. I
 * We welcome your feedback and new feature requests for this WooCommerce chatbot! *
 Let us know if you face any problem or need help with WooBot woocommerce chatbot.
 
-* [Plugin Support Page](https://www.quantumcloud.com/products/support/) *
+* [Plugin Support Page](https://woowbot.pro/free-support/) *
 
 
 == Installation ==
@@ -301,6 +195,9 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 
 
 == Changelog ==
+
+= 4.7.4 =
+# Added Streaming Support
 
 = 4.7.1 =
 # Product Card Added for AI

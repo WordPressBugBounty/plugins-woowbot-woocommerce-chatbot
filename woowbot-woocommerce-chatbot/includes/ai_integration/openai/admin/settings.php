@@ -5,6 +5,14 @@
             <?php  esc_html_e( 'Enable OpenAI','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php  esc_html_e( '(if you want results from OpenAI only, It will disable default product Search)','woowbot-woocommerce-chatbot'); ?></span>
             </label>
         </div>
+        <div class="mb-3">
+            <div class="form-check form-switch my-4">
+                <input class="form-check-input" type="checkbox" <?php echo ( get_option( 'qcld_openai_stream_enabled',) == '1' ) ? esc_attr( 'checked', 'chatbot' ) : ''; ?> role="switch" value="" id="is_stream_enabled">
+                <label class="form-check-label" for="is_stream_enabled">
+                    <?php esc_html_e( 'Enable Streaming (stream AI responses in real-time as they are generated)', 'chatbot' ); ?>
+                </label>
+            </div>
+        </div>
         <div class="form-check form-switch my-4">
             <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcldai_product_card_enable') == 1) ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_product_card_enabled">
             <label class="form-check-label" for="is_product_card_enabled">

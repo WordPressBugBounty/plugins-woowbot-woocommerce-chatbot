@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
 /**
  * Common functions class
  */
-class Qcld_WPBot_Common_Functions {
+class Qcld_WoowBot_Common_Functions {
 
 
     private static $instance = null;
@@ -219,7 +219,7 @@ class Qcld_WPBot_Common_Functions {
 			$qlcd_wp_chatbot_ai_rate_limiting_message = qcld_wb_chatbot_func_str_replace(
 				maybe_unserialize(get_option('qlcd_wp_chatbot_ai_rate_limiting_message', true))
 			);
-			if (get_option('is_stream_enabled') == 1) {
+			if (get_option('qcld_openai_stream_enabled') == 1) {
 				$response = array(
 					'status'  => 'error',
 					'message' => esc_html__((is_array($qlcd_wp_chatbot_ai_rate_limiting_message) && !empty($qlcd_wp_chatbot_ai_rate_limiting_message[0]) ? $qlcd_wp_chatbot_ai_rate_limiting_message[0] : 'Rate limit exceeded. Please try again later.'), 'chatbot'),
@@ -241,7 +241,7 @@ class Qcld_WPBot_Common_Functions {
 					if (($limit >= $rate_limit) || $limit == 0) {
 						return; // allowed
 					} else {
-						if (get_option('is_stream_enabled') == 1) {
+						if (get_option('qcld_openai_stream_enabled') == 1) {
 							wp_send_json($response); //Proper JSON with header.
 						} else {
 							echo json_encode($response);
@@ -262,7 +262,7 @@ class Qcld_WPBot_Common_Functions {
 				if ($limit >= $guest_rate_limit || $limit == 0) {
 					return; // allowed
 				} else {
-					if (get_option('is_stream_enabled') == 1) {
+					if (get_option('qcld_openai_stream_enabled') == 1) {
 						wp_send_json($response); //Proper JSON with header.
 					} else {
 						echo json_encode($response);
@@ -346,4 +346,4 @@ class Qcld_WPBot_Common_Functions {
 /**
  * Instantiate the class
  */
-Qcld_WPBot_Common_Functions::instance();
+Qcld_WoowBot_Common_Functions::instance();

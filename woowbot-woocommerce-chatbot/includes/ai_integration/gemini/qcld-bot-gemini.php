@@ -206,7 +206,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 			$gemini_api_key   = get_option( 'qcld_gemini_api_key' );
 			$keyword          = isset($_POST['keyword']) ? $_POST['keyword'] : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing
 
-			$relevant_pagelink = Qcld_WPBot_Common_Functions::qcpd_relevant_pagelink( $keyword );
+			$relevant_pagelink = Qcld_WoowBot_Common_Functions::qcpd_relevant_pagelink( $keyword );
 			$relevant_pagelink = array_slice( $relevant_pagelink, 0, 5, true );
 
 			if ( ( get_option( 'page_suggestion_enabled' ) == '1' ) && count( $relevant_pagelink ) > 0 ) {
