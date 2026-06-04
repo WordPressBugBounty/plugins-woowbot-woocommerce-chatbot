@@ -872,7 +872,7 @@ div#openrouter-settings .tab-content {
 }
 
 .admin-maxwith.qcld-openai-main-box .col-auto.me-auto.ai-settings-title-container h4 {
-	width: 396px;
+	width: 280px;
 }
 
 .admin-maxwith.qcld-openai-main-box .col-auto.me-auto.ai-settings-title-container select {
@@ -970,8 +970,8 @@ div#openrouter-settings .tab-content {
 }
 
 .admin-maxwith.qcld-openai-main-box .col-auto.me-auto.ai-settings-title-container {
- display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
     padding: 20px;
     border-radius: 16px;
     background: linear-gradient(192deg, #FFE3E1 4%, #E9E4FF 98.26%);
@@ -2011,9 +2011,9 @@ div#rag-settings h2.nav-tab-wrapper a:hover, div#rag-settings h2.nav-tab-wrapper
 
 
 button#rag-pdf-submit, button#rag-csv-submit, button#rag-xaml-submit, button#rag_embed_btn {
-    padding: 8px 15px;
+    padding: 6px 10px;
     width: auto;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #988FBD;
     border-radius: 8px;
@@ -2026,6 +2026,7 @@ button#rag-pdf-submit, button#rag-csv-submit, button#rag-xaml-submit, button#rag
     text-decoration: none;
     border-color: #a1408d !important;
     line-height: normal;
+    margin: 0 0 12px 0;
 }
 
 div#rag-sync .wrap {
@@ -2293,4 +2294,20 @@ a.wp-chatbot-admin-pro-upgrade-button {
 }
 .qcld-ai-settings-top-rght {
     display: flex;
+}
+
+button#ai-knowledge-base-tab {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
