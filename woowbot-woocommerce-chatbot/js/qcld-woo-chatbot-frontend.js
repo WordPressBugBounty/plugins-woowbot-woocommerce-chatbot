@@ -1501,6 +1501,7 @@ jQuery(function ($) {
                     var $span = getStreamMessageSpan($para);
                     $span.html(msgBuffer.replace(/\n/g, '<br>'));
                 }
+                enable_message_editor();
             }
 
             function processQueue() {

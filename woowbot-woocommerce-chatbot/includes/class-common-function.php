@@ -216,7 +216,7 @@ class Qcld_WoowBot_Common_Functions {
 		}
         public function rate_limit_checker()
 		{
-			$qlcd_wp_chatbot_ai_rate_limiting_message = qcld_wb_chatbot_func_str_replace(
+			$qlcd_wp_chatbot_ai_rate_limiting_message = qcld_wb_woowbot_func_str_replace(
 				maybe_unserialize(get_option('qlcd_wp_chatbot_ai_rate_limiting_message', true))
 			);
 			if (get_option('qcld_openai_stream_enabled') == 1) {

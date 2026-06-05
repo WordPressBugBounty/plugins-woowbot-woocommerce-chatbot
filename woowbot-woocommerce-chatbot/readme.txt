@@ -4,7 +4,7 @@ Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
 Tested up to: 7.0
-Stable tag: 4.7.5
+Stable tag: 4.7.6
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
@@ -187,14 +187,25 @@ The ChatBot can work with ANY language. Just change the language texts from the 
 MultiLanguage is supported with the WoowBot Pro versions. For a multilingual ChatBot for international eCommerce grab the Master License from woowbot.pro website.
 
 == Screenshots ==
-1. Woocommerce chatbot hard at work
-2. Woocommerce chatbot hard at work
-3. Woocommerce chatbot HUD
-4. Woocommerce chatbot HUD for Icon
-5. Woocommerce chatbot HUD for Language Management
-
+1. Woocommerce chatbot front end
+2. Woocommerce chatbot  front end
+3. Woocommerce chatbot  front end
+4. ChatBot for Woocommerce backend
+5. ChatBot for Woocommerce backend
+6. ChatBot for Woocommerce backend
+7. ChatBot for Woocommerce backend
+8. ChatBot for Woocommerce backend
+9. ChatBot for Woocommerce backend
+10. ChatBot for Woocommerce backend
+11. ChatBot for Woocommerce backend
+12. ChatBot for Woocommerce backend
+13. ChatBot for Woocommerce backend
+14. ChatBot for Woocommerce backend
 
 == Changelog ==
+
+= 4.7.6 =
+# Fixed an issue with Streaming
 
 = 4.7.5 =
 # UI Update

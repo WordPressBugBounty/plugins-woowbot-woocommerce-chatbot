@@ -409,7 +409,17 @@ if(!function_exists('qcld_woo_custom_product_details')){
         echo '<div class="qcld_woo_product_details" data-product-id="' . get_the_ID() . '">' . esc_html('Click for Product Details') . '</div>';
     }
 }
+if(!function_exists('qcld_wb_woowbot_func_str_replace')){  
 
+    function qcld_wb_woowbot_func_str_replace($messages = array()){
+        $refined_mesgses = array();
+        foreach ($messages as $message) {
+            $refined_msg = str_replace('\\', '', $message);
+            array_push($refined_mesgses, $refined_msg);
+        }
+        return $refined_mesgses;
+    }
+}
 
 
 
