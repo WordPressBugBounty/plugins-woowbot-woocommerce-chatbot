@@ -1,10 +1,10 @@
-<?php
+﻿<?php
    /**
     * Plugin Name: Chatbot - WoowBot
     * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.7.6
+    * Version: 4.7.8
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.7.6');
+   define('QCLD_WOOCHATBOT_VERSION', '4.7.8');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -465,7 +465,7 @@
                                     <hr>
                                  </div>
                                  <div class="col-sm-4 text-left"> <span class="qc-opt-title-font">
-                                    <?php esc_html_e('Show on Home Page', 'wpchatbot'); ?>
+                                    <?php esc_html_e('Show on Home Page', 'woowbot-woocommerce-chatbot'); ?>
                                     </span> 
                                  </div>
                                  <div class="col-sm-8">
@@ -473,20 +473,20 @@
                                     <input id="wp-chatbot-show-home-page" type="radio"
                                        name="wp_chatbot_show_home_page"
                                        value="on" <?php echo(get_option('wp_chatbot_show_home_page') == 'on' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('YES', 'wpchatbot'); ?>
+                                    <?php esc_html_e('YES', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                     <label class="radio-inline">
                                     <input id="wp-chatbot-show-home-page" type="radio"
                                        name="wp_chatbot_show_home_page"
                                        value="off" <?php echo(get_option('wp_chatbot_show_home_page') == 'off' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('NO', 'wpchatbot'); ?>
+                                    <?php esc_html_e('NO', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                  </div>
                               </div>
                               <!--  row-->
                               <div class="row">
                                  <div class="col-sm-4 text-left"> <span class="qc-opt-title-font">
-                                    <?php esc_html_e('Show on blog posts', 'wpchatbot'); ?>
+                                    <?php esc_html_e('Show on blog posts', 'woowbot-woocommerce-chatbot'); ?>
                                     </span> 
                                  </div>
                                  <div class="col-sm-8">
@@ -494,20 +494,20 @@
                                     <input class="wp-chatbot-show-posts" type="radio"
                                        name="wp_chatbot_show_posts"
                                        value="on" <?php echo(get_option('wp_chatbot_show_posts') == 'on' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('YES', 'wpchatbot'); ?>
+                                    <?php esc_html_e('YES', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                     <label class="radio-inline">
                                     <input class="wp-chatbot-show-posts" type="radio"
                                        name="wp_chatbot_show_posts"
                                        value="off" <?php echo(get_option('wp_chatbot_show_posts') == 'off' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('NO', 'wpchatbot'); ?>
+                                    <?php esc_html_e('NO', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                  </div>
                               </div>
                               <!-- row-->
                               <div class="row">
                                  <div class="col-md-4 text-left"> <span class="qc-opt-title-font">
-                                    <?php esc_html_e('Show on  pages', 'wpchatbot'); ?>
+                                    <?php esc_html_e('Show on  pages', 'woowbot-woocommerce-chatbot'); ?>
                                     </span> 
                                  </div>
                                  <div class="col-md-8">
@@ -515,13 +515,13 @@
                                     <input class="wp-chatbot-show-pages" type="radio"
                                        name="wp_chatbot_show_pages"
                                        value="on" <?php echo(get_option('wp_chatbot_show_pages') == 'on' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('All Pages', 'wpchatbot'); ?>
+                                    <?php esc_html_e('All Pages', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                     <label class="radio-inline">
                                     <input class="wp-chatbot-show-pages" type="radio"
                                        name="wp_chatbot_show_pages"
                                        value="off" <?php echo(get_option('wp_chatbot_show_pages') == 'off' ? 'checked' : ''); ?>>
-                                    <?php esc_html_e('Selected Pages Only ', 'wpchatbot'); ?>
+                                    <?php esc_html_e('Selected Pages Only ', 'woowbot-woocommerce-chatbot'); ?>
                                     </label>
                                     <div id="wp-chatbot-show-pages-list">
                                        <ul class="checkbox-list">
@@ -550,7 +550,7 @@
                               <!--row-->
                               <div class="row">
                                  <div class="col-sm-4 text-left"> <span class="qc-opt-title-font">
-                                    <?php esc_html_e('Exclude from Custom Post', 'wpchatbot'); ?>
+                                    <?php esc_html_e('Exclude from Custom Post', 'woowbot-woocommerce-chatbot'); ?>
                                     </span>
                                  </div>
                                  <div class="col-sm-8">
@@ -694,7 +694,7 @@
                                           <input type="hidden" name="wp_chatbot_custom_icon_path"
                                              id="wp_chatbot_custom_icon_path"
                                              value="<?php echo esc_attr( $wp_chatbot_custom_icon_path ); ?>"/>
-                                          <button type="button" class="wp_chatbot_custom_icon_button button"><?php esc_html_e('Upload Custom Icon', 'wpchatbot'); ?></button>
+                                          <button type="button" class="wp_chatbot_custom_icon_button button"><?php esc_html_e('Upload Custom Icon', 'woowbot-woocommerce-chatbot'); ?></button>
                                        </div>
                                     </div>
                                  </div>
@@ -703,7 +703,7 @@
                               <div class="top-section">
                                  <div class="">
                                     <div class="col-xs-12">
-                                       <h4 class="qc-opt-title"><?php esc_html_e(' Woobot Agent Image', 'wpchatbot'); ?></h4>
+                                       <h4 class="qc-opt-title"><?php esc_html_e(' Woobot Agent Image', 'woowbot-woocommerce-chatbot'); ?></h4>
                                        <div class="cxsc-settings-blocks qcld-wpbot-agent-image">
                                           <ul class="radio-list">
                                              <li>
@@ -713,7 +713,7 @@
                                                 <input id="wp_chatbot_agent_image_def" type="radio"
                                                    name="wp_chatbot_agent_image[]" <?php echo(get_option('wp_chatbot_agent_image') ==  QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png' ? 'checked' : ''); ?>
                                                    value="<?php echo esc_url( QCLD_WOOCHATBOT_IMG_URL . '/icon-0.png' );?>">
-                                                <?php esc_html_e('Default Agent', 'wpchatbot'); ?></label>
+                                                <?php esc_html_e('Default Agent', 'woowbot-woocommerce-chatbot'); ?></label>
                                              </li>
                                              <?php
                                                 if (get_option('wp_chatbot_custom_agent_path') != "") {
@@ -730,7 +730,7 @@
                                                 <input type="radio" name="wp_chatbot_agent_image[]"
                                                    id="wp_chatbot_agent_image_custom"
                                                    value="<?php echo ($wp_chatbot_custom_agent_path); ?>" <?php echo(esc_attr(get_option('wp_chatbot_agent_image')) !=  esc_attr(QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png') ? 'checked' : ''); ?>>
-                                                <?php echo esc_html__('Custom Agent', 'wpchatbot'); ?></label>
+                                                <?php echo esc_html__('Custom Agent', 'woowbot-woocommerce-chatbot'); ?></label>
                                              </li>
                                           </ul>
                                        </div>
@@ -743,12 +743,12 @@
                                  <div class="">
                                     <div class="col-xs-12">
                                        <div class="form-group">
-                                          <h4 class="qc-opt-title"> <?php esc_html_e('Custom Agent Icon', 'wpchatbot'); ?>  <span>** If you select custom icon, you must upload an icon image.</span>  </h4>
+                                          <h4 class="qc-opt-title"> <?php esc_html_e('Custom Agent Icon', 'woowbot-woocommerce-chatbot'); ?>  <span>** If you select custom icon, you must upload an icon image.</span>  </h4>
                                           <div class="cxsc-settings-blocks">
                                              <input type="hidden" name="wp_chatbot_custom_agent_path"
                                                 id="wp_chatbot_custom_agent_path"
                                                 value="<?php echo esc_attr( $wp_chatbot_custom_agent_path ); ?>"/>
-                                             <button type="button" class="wp_chatbot_custom_agent_button button"><?php esc_html_e('Upload Agent Icon', 'wpchatbot'); ?></button>
+                                             <button type="button" class="wp_chatbot_custom_agent_button button"><?php esc_html_e('Upload Agent Icon', 'woowbot-woocommerce-chatbot'); ?></button>
                                           </div>
                                        </div>
                                     </div>

@@ -73,7 +73,6 @@ if(!function_exists('woo_chatbot_load_footer_html')){
                         <img src="<?php  echo esc_url( QCLD_WOOCHATBOT_IMG_URL . '/' . get_option('woo_chatbot_icon') ); ?>"
                         alt="WooChatIcon">
                     <?php }else{
-                    //  var_dump((!empty(get_option('wp_chatbot_custom_icon_path'))) && !is_404(get_option('wp_chatbot_custom_icon_path')));
                     $custom_path = ((!empty(get_option('wp_chatbot_custom_icon_path'))) && !is_404(get_option('wp_chatbot_custom_icon_path'))) ? get_option('wp_chatbot_custom_icon_path') : QCLD_WOOCHATBOT_IMG_URL . '/icon-0.png';
                         ?>
 
@@ -368,15 +367,15 @@ if(!function_exists('qcld_woo_chatbot_email')){
         $response['message'] = 'Failed. Unable to send email.';
         //build email body
         $bodyContent = "";
-        $bodyContent .= '<p><strong>' . esc_html__('Support Request Details', 'wpchatbot') . ':</strong></p><hr>';
-        $bodyContent .= '<p>' . esc_html__('Name', 'wpchatbot') . ' : ' . esc_html($name) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('Email', 'wpchatbot') . ' : ' . esc_html($email) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('Subject', 'wpchatbot') . ' : ' . esc_html($subject) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('Message', 'wpchatbot') . ' : ' . esc_html($message) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('Page', 'wpchatbot') . ' : ' . ($page) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('User Agent', 'wpchatbot') . ' : ' . ($user_agent) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('IP Address', 'wpchatbot') . ' : ' . ($ip_address) . '</p>';
-        $bodyContent .= '<p>' . esc_html__('Mail Generated on', 'wpchatbot') . ': ' . current_time('F j, Y, g:i a') . '</p>';
+        $bodyContent .= '<p><strong>' . esc_html__('Support Request Details', 'woowbot-woocommerce-chatbot') . ':</strong></p><hr>';
+        $bodyContent .= '<p>' . esc_html__('Name', 'woowbot-woocommerce-chatbot') . ' : ' . esc_html($name) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('Email', 'woowbot-woocommerce-chatbot') . ' : ' . esc_html($email) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('Subject', 'woowbot-woocommerce-chatbot') . ' : ' . esc_html($subject) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('Message', 'woowbot-woocommerce-chatbot') . ' : ' . esc_html($message) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('Page', 'woowbot-woocommerce-chatbot') . ' : ' . ($page) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('User Agent', 'woowbot-woocommerce-chatbot') . ' : ' . ($user_agent) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('IP Address', 'woowbot-woocommerce-chatbot') . ' : ' . ($ip_address) . '</p>';
+        $bodyContent .= '<p>' . esc_html__('Mail Generated on', 'woowbot-woocommerce-chatbot') . ': ' . current_time('F j, Y, g:i a') . '</p>';
         $to = $toEmail;
         $body = $bodyContent;
         $headers = array();

@@ -127,7 +127,7 @@ if( ! class_exists( 'Wp_Usage_Feedback') ) {
 			if( empty( $plugin ) ) {
 				// We can't find the plugin data
 				// Send a message back to our home site
-				$body['message'] .= __( 'We can\'t detect any plugin information. This is most probably because you have not included the code in the plugin main file.', 'wpchatbot' );
+				$body['message'] .= __( 'We can\'t detect any plugin information. This is most probably because you have not included the code in the plugin main file.', 'woowbot-woocommerce-chatbot' );
 				$body['status'] = 'Data not found'; // Never translated
 			} else {
 				if( isset( $plugin['Name'] ) ) {
@@ -216,17 +216,17 @@ if( ! class_exists( 'Wp_Usage_Feedback') ) {
 		 */
 		public function form_default_text() {
 			$form = array();
-			$form['heading'] = __( 'Sorry to see you go', 'wpchatbot' );
+			$form['heading'] = __( 'Sorry to see you go', 'woowbot-woocommerce-chatbot' );
 			$form['body'] = '';
 			$form['options'] = array(
-				__( 'Found a Bug', 'wpchatbot' ),
-				__( 'Need More Features', 'wpchatbot' ),
-				__( 'Deactivating Temporarily', 'wpchatbot' ),
-				__( 'Upgrading to Pro', 'wpchatbot' ),
+				__( 'Found a Bug', 'woowbot-woocommerce-chatbot' ),
+				__( 'Need More Features', 'woowbot-woocommerce-chatbot' ),
+				__( 'Deactivating Temporarily', 'woowbot-woocommerce-chatbot' ),
+				__( 'Upgrading to Pro', 'woowbot-woocommerce-chatbot' ),
 
 			);
-			$form['email'] = __( 'Please provide email so we can contact with bug fixes', 'wpchatbot' );
-			$form['details'] = __( 'Please provide some details so we can improve the plugin', 'wpchatbot' );
+			$form['email'] = __( 'Please provide email so we can contact with bug fixes', 'woowbot-woocommerce-chatbot' );
+			$form['details'] = __( 'Please provide some details so we can improve the plugin', 'woowbot-woocommerce-chatbot' );
 			return $form;
 		}
 		

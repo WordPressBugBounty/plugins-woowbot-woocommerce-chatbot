@@ -7,9 +7,9 @@
         </div>
         <div class="mb-3">
             <div class="form-check form-switch my-4">
-                <input class="form-check-input" type="checkbox" <?php echo ( get_option( 'qcld_openai_stream_enabled',) == '1' ) ? esc_attr( 'checked', 'chatbot' ) : ''; ?> role="switch" value="" id="is_stream_enabled">
+                <input class="form-check-input" type="checkbox" <?php echo ( get_option( 'qcld_openai_stream_enabled',) == '1' ) ? esc_attr( 'checked', 'woowbot-woocommerce-chatbot' ) : ''; ?> role="switch" value="" id="is_stream_enabled">
                 <label class="form-check-label" for="is_stream_enabled">
-                    <?php esc_html_e( 'Enable Streaming (stream AI responses in real-time as they are generated)', 'chatbot' ); ?>
+                    <?php esc_html_e( 'Enable Streaming (stream AI responses in real-time as they are generated)', 'woowbot-woocommerce-chatbot' ); ?>
                 </label>
             </div>
         </div>
@@ -34,7 +34,7 @@
 
         		<!-- POST TYPE -->
 		<div class="form-check form-switch my-4">
-		    <label><?php esc_html_e( 'Select POST TYPE(s) to include with search results', 'chatbot' ); ?></label>
+		    <label><?php esc_html_e( 'Select POST TYPE(s) to include with search results', 'woowbot-woocommerce-chatbot' ); ?></label>
 			<div id="wp-chatbot-post-converter">
 				<ul class="checkbox-list">
 					<?php
@@ -75,7 +75,7 @@
         <div class="mb-3 form-check">
                 <label for="api_key" class="form-label"><?php esc_html_e( 'Api key','chatbot');?></label>
                 <input type="password" class="form-control" id="api_key" name="api_key" placeholder="Api key" value="<?php echo esc_attr(get_option( 'qcld_open_ai_api_key')); ?>">
-                <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'chatbot'); ?> </span>
+                <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
         </div>
         <div class="qcld-wpbot-pricing-filter-form-check">
         </div>

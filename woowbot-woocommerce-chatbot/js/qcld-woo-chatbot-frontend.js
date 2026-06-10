@@ -1467,6 +1467,15 @@ jQuery(function ($) {
     }
 
     function qcldStreamOpenAI(dataObj) {
+        // Initialize the message container structure in the last list item
+        var $lastMsg = jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last');
+        $lastMsg.css({'background-color': 'transparent','border':'none'}).html(
+            "<div>" +
+            get_avatar_client_img() +
+            '<span class="woo-chatbot-paragraph ai-response"><img class="woo-chatbot-comment-loader" src="'+wooChatBotVar.image_path+'comment.gif" alt="Typing..." /></span>' +
+            "</div>"
+        );
+
         fetch(qcld_chatbot_obj.stream_endpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -1485,23 +1494,24 @@ jQuery(function ($) {
             var streamEnded = false;
             var msgBuffer   = '';
 
-            function getStreamMessageSpan($para) {
-                $para.find('.woo-chatbot-comment-loader').remove();
-                var $span = $para.children('span').first();
-                if (!$span.length) {
-                    $span = jQuery('<span>');
-                    $para.append($span);
-                }
-                return $span;
-            }
-
             function finalize() {
-                var $para = jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last');
+                var $para = jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last').find('.woo-chatbot-paragraph');
                 if ($para.length && msgBuffer.trim()) {
-                    var $span = getStreamMessageSpan($para);
-                    $span.html(msgBuffer.replace(/\n/g, '<br>'));
+                    $para.html(qcldParseMarkdown(msgBuffer));
                 }
+                
+                // Append standard catalog and send email buttons inside the div inside the last li
+                var buttons = '<br><span class="woobot_catalog qcld-chatbot-button" type="button" >'+ wooChatBotVar.catalog +'</span>';
+                buttons += '<span class="woobot_send_us_email qcld-chatbot-button" type="button" >'+ wooChatBotVar.send_us_email +'</span>';
+                jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last div').append(buttons);
+
+                // Enable message editor
                 enable_message_editor();
+
+                // Scroll to the bottom
+                setTimeout(function() {
+                    $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
+                }, 150);
             }
 
             function processQueue() {
@@ -1511,16 +1521,20 @@ jQuery(function ($) {
                     }
                     return;
                 }
-                
+
                 isTyping = true;
-                var $para = jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last');
                 var nextChunk = queue.shift();
                 msgBuffer += nextChunk;
+
+                var $para = jQuery('#woo-chatbot-messages-container li.woo-chatbot-msg:last').find('.woo-chatbot-paragraph');
                 if ($para.length) {
-                    var $span = getStreamMessageSpan($para);
+                    $para.find('.woo-chatbot-comment-loader').remove();
+                    var $span = jQuery('<span>');
+                    $para.append($span);
                     qcldTypeCharacterByCharacter($span, nextChunk, 10, function() {
                         isTyping = false;
                         processQueue();
+                        $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 50);
                     });
                 } else {
                     isTyping = false;
@@ -1535,6 +1549,7 @@ jQuery(function ($) {
                     buffer += decoder.decode(result.value, { stream: true });
                     var lines = buffer.split('\n');
                     buffer = lines.pop();
+
                     for (var i = 0; i < lines.length; i++) {
                         var line = lines[i].trim();
                         if (!line) { continue; }
@@ -1554,9 +1569,9 @@ jQuery(function ($) {
                                     content = parsed.delta.content;
                                 }
                                 if (content) {
-                                    
                                     queue.push(content);
                                     processQueue();
+                                    $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 50);
                                 }
                             } catch(e) {
                                 console.warn('Streaming parse error:', e, jsonStr);

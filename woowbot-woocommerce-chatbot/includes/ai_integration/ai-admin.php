@@ -1,3 +1,14 @@
+<?php
+$no_ai_active = (
+	get_option( 'qcld_openai_enabled' ) != 1 &&
+	get_option( 'qcld_gemini_enabled' ) != 1 
+);
+$wizard_done = ( get_option( 'wpbot_ai_setup_wizard_done' ) == 1 );
+
+$show_wizard_automatically = $no_ai_active;
+require_once QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . '/includes/admin/templates/wizard-popup.php';
+
+?>
 <div class="qcl-openai">
     <div class=" gx-0">
 
@@ -14,11 +25,14 @@
                                 <option value="gemini" <?php echo (get_option( 'qcld_gemini_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'Gemini','chatbot')?></option>
                             </select>
                             <div class="col-auto ai-settings-title-container">
-                                <button id="ai-knowledge-base-tab" class="qcld-btn-primary" link="page=chatbot_ai_setting#ai-knowledge-base-tab"><?php esc_html_e( 'Knowledge Base (RAG)', 'wpchatbot' ); ?></button>     
+                                <button id="ai-knowledge-base-tab" class="qcld-btn-primary" link="page=chatbot_ai_setting#ai-knowledge-base-tab"><?php esc_html_e( 'Knowledge Base (RAG)', 'woowbot-woocommerce-chatbot' ); ?></button>     
                             </div>
+                            </div>
+                            <div class="col-auto ai-settings-title-container">
+                                <button id="wpbot-trigger-wizard" class="qcld-btn-primary"><?php esc_html_e( 'AI Wizard', 'woowbot-woocommerce-chatbot' ); ?></button>
                             </div>
                             <!-- <div class="col-auto ai-settings-title-container">
-                                <button id="qcld-common-ai-settings" class="qcld-btn-primary" link="page=chatbot_ai_setting#common-ai-settings-tab"><?php // esc_html_e( 'Common AI Settings', 'wpchatbot' ); ?></button>
+                                <button id="qcld-common-ai-settings" class="qcld-btn-primary" link="page=chatbot_ai_setting#common-ai-settings-tab"><?php // esc_html_e( 'Common AI Settings', 'woowbot-woocommerce-chatbot' ); ?></button>
                             </div> -->
                         </div>
     

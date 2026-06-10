@@ -116,10 +116,10 @@ if(!class_exists('qcld_wpgemini_addons')){
         public function qcld_gemini_settings_option_callback() {
                 $nonce = sanitize_text_field($_POST['nonce']);
                 if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
-                    wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'chatbot')));
+                    wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot')));
                     wp_die();
                 } elseif ( ! current_user_can( 'manage_options' ) ) {
-					wp_send_json( array( 'success' => false, 'msg' => esc_html__( 'Unauthorized user', 'chatbot' ) ) );
+					wp_send_json( array( 'success' => false, 'msg' => esc_html__( 'Unauthorized user', 'woowbot-woocommerce-chatbot' ) ) );
 					wp_die();
 				} else {
                     $gemini_api_key = sanitize_text_field($_POST['gemini_api_key']);
@@ -451,12 +451,12 @@ if(!class_exists('qcld_wpgemini_addons')){
 		public function qcld_gemini_get_model_list_callback() {
 			$nonce = sanitize_text_field( $_POST['nonce'] );
 			if ( ! wp_verify_nonce( $nonce, 'wp_chatbot' ) ) {
-				wp_send_json_error( array( 'msg' => esc_html__( 'Failed in Security check', 'wpchatbot' ) ) );
+				wp_send_json_error( array( 'msg' => esc_html__( 'Failed in Security check', 'woowbot-woocommerce-chatbot' ) ) );
 			}
 
 			$api_key = sanitize_text_field( $_POST['api_key'] );
 			if ( empty( $api_key ) ) {
-				wp_send_json_error( array( 'msg' => esc_html__( 'API Key is required', 'wpchatbot' ) ) );
+				wp_send_json_error( array( 'msg' => esc_html__( 'API Key is required', 'woowbot-woocommerce-chatbot' ) ) );
 			}
 
 			$url = "https://generativelanguage.googleapis.com/v1beta/models?key=" . $api_key;
@@ -495,13 +495,13 @@ if(!class_exists('qcld_wpgemini_addons')){
 			// Verify nonce for CSRF protection
 			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
 			if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
-				wp_send_json_error(array('message' => esc_html__('Security check failed', 'chatbot')));
+				wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
 				wp_die();
 			}
 			
 			// Check user capability - only administrators can modify settings
 			if (!current_user_can('manage_options')) {
-				wp_send_json_error(array('message' => esc_html__('Unauthorized access', 'chatbot')));
+				wp_send_json_error(array('message' => esc_html__('Unauthorized access', 'woowbot-woocommerce-chatbot')));
 				wp_die();
 			}
 			
@@ -510,7 +510,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 			update_option('enable_wp_chatbot_post_content', '');
 			
 			// Send success response
-			wp_send_json_success(array('message' => esc_html__('Settings updated successfully', 'chatbot')));
+			wp_send_json_success(array('message' => esc_html__('Settings updated successfully', 'woowbot-woocommerce-chatbot')));
 			wp_die();
         }
 		/**

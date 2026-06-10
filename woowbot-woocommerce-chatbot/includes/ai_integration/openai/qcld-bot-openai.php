@@ -66,7 +66,9 @@ if(!class_exists('qcld_wpopenai_addons')){
             add_action('wp_ajax_nopriv_qcld_openai_response', [$this, 'qcld_openai_response_callback']);
             add_action('wp_ajax_qcld_stream_openai', [$this, 'qcld_stream_openai_callback']);
             add_action('wp_ajax_nopriv_qcld_stream_openai', [$this, 'qcld_stream_openai_callback']);
-         
+            add_action('wp_ajax_wpbot_wizard_save', array($this, 'wpbot_wizard_save_callback'));
+            add_action('wp_ajax_wpbot_wizard_verify_key', array($this, 'wpbot_wizard_verify_key_callback'));
+
             if( (get_option('enable_product_details_from_ai') == 1) && (get_option('qcld_openai_enabled') == 1) && (get_option('qcld_open_ai_api_key') != '' ) ){
                  add_action('wp_ajax_qcld_woo_get_product_details', [$this, 'qcld_woo_get_product_details']);
                  add_action('wp_ajax_nopriv_qcld_woo_get_product_details', [$this, 'qcld_woo_get_product_details']);
@@ -295,7 +297,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                 
                     wp_send_json_error([
                         'status'  => 'error',
-                        'message' => esc_html__( 'Security check failed. Unauthorized request.', 'chatbot' )
+                        'message' => esc_html__( 'Security check failed. Unauthorized request.', 'woowbot-woocommerce-chatbot' )
                     ]);
                     wp_die();
                 }
@@ -490,7 +492,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 		    $nonce =  sanitize_text_field($_POST['nonce']);
 
             if (! wp_verify_nonce($nonce,'ajax_object')) {
-                wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'chatbot')));
+                wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot')));
                 wp_die();
 
             }else{
@@ -631,8 +633,8 @@ if(!class_exists('qcld_wpopenai_addons')){
 					wp_send_json(
 						array(
 							'success' => true,
-							'title'   => esc_html__( 'success', 'chatbot' ),
-							'icon'    => esc_html__( 'success', 'chatbot' ),
+							'title'   => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
 							'msg'     => esc_html( $msg ),
 						)
 					);
@@ -641,8 +643,8 @@ if(!class_exists('qcld_wpopenai_addons')){
 					wp_send_json(
 						array(
 							'success' => true,
-							'title'   => esc_html__( 'Error', 'chatbot' ),
-							'icon'    => esc_html__( 'error', 'chatbot' ),
+							'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => esc_html__( 'error', 'woowbot-woocommerce-chatbot' ),
 							'msg'     => esc_html( json_decode( $res )->error->message ),
 						)
 					);
@@ -653,6 +655,12 @@ if(!class_exists('qcld_wpopenai_addons')){
         }
         public function rag_settings_option_callback()
 		{
+            // Security: verify nonce (CSRF protection) and capability (authorization).
+            $nonce = isset( $_POST['nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
+            if ( ! wp_verify_nonce( $nonce, 'wp_chatbot' ) || ! current_user_can( 'manage_options' ) ) {
+                wp_send_json_error( array( 'message' => esc_html__( 'Security check failed', 'woowbot-woocommerce-chatbot' ) ) );
+                wp_die();
+            }
             if( (get_option('is_page_rag_enabled') == '1' && get_option('qcld_open_ai_api_key')) || (get_option('qcld_gemini_rag_enabled') == '1' && get_option('qcld_gemini_api_key'))){
                 $rag_embed_pages = sanitize_text_field($_POST['rag_embed_pages'] ?? 0);
                 $rag_embed_posts = sanitize_text_field($_POST['rag_embed_posts'] ?? 0);
@@ -682,9 +690,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                 wp_die();
             }else{
                 if( !get_option('qcld_open_ai_api_key') || !get_option('qcld_gemini_api_key') ){
-                    wp_send_json_success(array('status' => 'error', 'message' => esc_html__('RAG cannot be enabled without an API key.', 'chatbot')));
+                    wp_send_json_success(array('status' => 'error', 'message' => esc_html__('RAG cannot be enabled without an API key.', 'woowbot-woocommerce-chatbot')));
                 }else if( get_option('is_page_rag_enabled') != '1' && get_option('qcld_gemini_rag_enabled') != '1' ){
-                    wp_send_json_success(array('status' => 'error', 'message' => esc_html__('Please enable RAG in settings to save RAG related options.', 'chatbot')));
+                    wp_send_json_success(array('status' => 'error', 'message' => esc_html__('Please enable RAG in settings to save RAG related options.', 'woowbot-woocommerce-chatbot')));
                 } 
                 wp_die(); 
             }
@@ -693,13 +701,13 @@ if(!class_exists('qcld_wpopenai_addons')){
             // Verify nonce for CSRF protection
             $nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
             if (!wp_verify_nonce($nonce, 'ajax_object')) {
-                wp_send_json_error(array('message' => esc_html__('Security check failed', 'chatbot')));
+                wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
         
             // Check user capability - only administrators can modify settings
             if (!current_user_can('manage_options')) {
-                wp_send_json_error(array('message' => esc_html__('Unauthorized access', 'chatbot')));
+                wp_send_json_error(array('message' => esc_html__('Unauthorized access', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
             
@@ -708,7 +716,7 @@ if(!class_exists('qcld_wpopenai_addons')){
             update_option('enable_wp_chatbot_post_content', '');
             
             // Send success response
-            wp_send_json_success(array('message' => esc_html__('Settings updated successfully', 'chatbot')));
+            wp_send_json_success(array('message' => esc_html__('Settings updated successfully', 'woowbot-woocommerce-chatbot')));
             wp_die();
         }
         public function qcpd_remove_wa_stopwords($query, $stopwords){
@@ -764,7 +772,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 				wp_send_json(
 					array(
 						'success' => false,
-						'msg'     => esc_html__( 'Failed in Security check', 'chatbot' ),
+						'msg'     => esc_html__( 'Failed in Security check', 'woowbot-woocommerce-chatbot' ),
 					)
 				);
 				wp_die();
@@ -773,7 +781,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 				wp_send_json(
 					array(
 						'success' => false,
-						'msg'     => esc_html__( 'Unauthorized user', 'chatbot' ),
+						'msg'     => esc_html__( 'Unauthorized user', 'woowbot-woocommerce-chatbot' ),
 					)
 				);
 				wp_die();
@@ -789,15 +797,19 @@ if(!class_exists('qcld_wpopenai_addons')){
 				$res = $OpenAI->gptcomplete(
 					$gptkeyword
 				);
-
+               
 				if ( empty( json_decode( $res )->error ) ) {
 					$mess = json_decode( $res );
-					$msg  = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[0]->content[0]->text );
+                    if(isset($mess->output[0]->content[0]->text)){
+					    $msg  = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[0]->content[0]->text );
+                    }else{
+                        $msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[1]->content[0]->text );;
+                    }
 					wp_send_json(
 						array(
 							'success' => true,
-							'title'   => esc_html__( 'success', 'chatbot' ),
-							'icon'    => esc_html__( 'success', 'chatbot' ),
+							'title'   => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
 							'msg'     => esc_html( $msg ),
 						)
 					);
@@ -806,8 +818,8 @@ if(!class_exists('qcld_wpopenai_addons')){
 					wp_send_json(
 						array(
 							'success' => true,
-							'title'   => esc_html__( 'Error', 'chatbot' ),
-							'icon'    => esc_html__( 'error', 'chatbot' ),
+							'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => esc_html__( 'error', 'woowbot-woocommerce-chatbot' ),
 							'msg'     => esc_html( json_decode( $res )->error->message ),
 						)
 					);
@@ -817,17 +829,17 @@ if(!class_exists('qcld_wpopenai_addons')){
         public function qcld_woo_get_product_details() {
             $nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
             if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
-                wp_send_json_error(array('message' => esc_html__('Security check failed', 'chatbot')));
+                wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
             $product_id = isset($_POST['product_id']) ? intval($_POST['product_id']) : 0;
             if ($product_id <= 0) {
-                wp_send_json_error(array('message' => esc_html__('Invalid product ID', 'chatbot')));
+                wp_send_json_error(array('message' => esc_html__('Invalid product ID', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
             $product = wc_get_product($product_id);
             if (!$product) {
-                wp_send_json_error(array('message' => esc_html__('Product not found', 'chatbot')));
+                wp_send_json_error(array('message' => esc_html__('Product not found', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
             $response['status'] = 'success';
@@ -1062,9 +1074,11 @@ if(!class_exists('qcld_wpopenai_addons')){
             curl_setopt( $ch, CURLOPT_POST, true );
             curl_setopt( $ch, CURLOPT_HTTPHEADER, $headers );
             curl_setopt( $ch, CURLOPT_POSTFIELDS, $post_data );
+            curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
+            curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
             curl_setopt( $ch, CURLOPT_WRITEFUNCTION, function ( $ch, $chunk ) {
                 echo $chunk;
-                echo str_repeat( ' ', 1024 );
+                echo "\n: " . str_repeat( ' ', 1024 ) . "\n";
                 flush();
                 return strlen( $chunk );
             } );
@@ -1077,6 +1091,166 @@ if(!class_exists('qcld_wpopenai_addons')){
             do_action( 'qcld_openai_user_rate_cal', 1 );
             exit;
         }
+        public function wpbot_wizard_save_callback()
+		{
+			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+
+			if (! wp_verify_nonce($nonce, 'wp_chatbot')) {
+				wp_send_json_error(esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot'));
+				wp_die();
+			}
+
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(esc_html__('Insufficient permissions', 'woowbot-woocommerce-chatbot'));
+				wp_die();
+			}
+
+			$is_skipped = isset($_POST['is_skipped']) ? intval($_POST['is_skipped']) : 0;
+			
+			if ($is_skipped) {
+				wp_send_json_success();
+				wp_die();
+			}
+
+			// 1. Save AI Provider and API key
+			$provider = isset($_POST['ai_provider']) ? sanitize_text_field($_POST['ai_provider']) : '';
+			$api_key  = isset($_POST['api_key']) ? sanitize_text_field($_POST['api_key']) : '';
+
+			if ($provider === 'openai') {
+				update_option('qcld_open_ai_api_key', $api_key);
+			} elseif ($provider === 'gemini') {
+				update_option('qcld_gemini_api_key', $api_key);
+			} 
+
+			// 2. Enable AI for selected provider automatically
+			// Reset all providers first
+			update_option('ai_enabled', 0);
+			update_option('qcld_gemini_enabled', 0);
+			update_option('qcld_grok_enabled', 0);
+			update_option('qcld_openrouter_enabled', 0);
+			update_option('enable_wp_chatbot_dailogflow', 0);
+
+			if ($provider === 'openai') {
+				update_option('qcld_openai_enabled', 1);
+			} elseif ($provider === 'gemini') {
+				update_option('qcld_gemini_enabled', 1);
+			} 
+
+			// 3. Auto-enable Streaming by default
+			update_option('is_stream_enabled', 1);
+
+			// 4. Auto-enable RAG by default (globally & for provider-specific config)
+			update_option('is_page_rag_enabled', 1);
+			update_option('qcld_gemini_rag_enabled', ($provider === 'gemini') ? 1 : 0);
+			update_option('qcld_grok_rag_enabled', ($provider === 'grok') ? 1 : 0);
+			update_option('qcld_openrouter_rag_enabled', ($provider === 'openrouter') ? 1 : 0);
+
+			// 5. Knowledge Base settings (default Top K to 5)
+			update_option('rag_top_k', 5);
+
+			// Auto-initialize system content defaults if empty
+			if (empty(get_option('qcld_openai_system_content'))) {
+				update_option('qcld_openai_system_content', 'You are a helpful and intelligent assistant for a WordPress chatbot. Always reply to the user query accurately, clearly, and briefly.');
+			}
+			if (empty(get_option('qcld_gemini_system_content'))) {
+				update_option('qcld_gemini_system_content', 'You are a helpful assistant.');
+			}
+			if (empty(get_option('qcld_grok_system_content'))) {
+				update_option('qcld_grok_system_content', 'You are a helpful and intelligent assistant for the website "' . site_url() . '". Use live website data and the provided context to respond accurately and briefly. Stay relevant and do not introduce additional topics.');
+			}
+
+			// 6. Embed sources
+			$rag_embed_pages = isset($_POST['rag_embed_pages']) ? intval($_POST['rag_embed_pages']) : 0;
+			update_option('rag_embed_pages', $rag_embed_pages);
+
+			$rag_embed_posts = isset($_POST['rag_embed_posts']) ? intval($_POST['rag_embed_posts']) : 0;
+			update_option('rag_embed_posts', $rag_embed_posts);
+
+			$rag_embed_cpts = isset($_POST['rag_embed_cpts']) ? array_map('sanitize_text_field', $_POST['rag_embed_cpts']) : array();
+			update_option('rag_embed_cpts', $rag_embed_cpts);
+
+			// Mark wizard as completed permanently in DB
+			update_option('wpbot_ai_setup_wizard_done', 1);
+
+			wp_send_json_success(esc_html__('AI Setup configuration saved successfully.', 'woowbot-woocommerce-chatbot'));
+			wp_die();
+		}
+
+		public function wpbot_wizard_verify_key_callback()
+		{
+			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+
+			if (! wp_verify_nonce($nonce, 'wp_chatbot')) {
+				wp_send_json_error(esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot'));
+				wp_die();
+			}
+
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(esc_html__('Insufficient permissions', 'woowbot-woocommerce-chatbot'));
+				wp_die();
+			}
+
+			$provider = isset($_POST['ai_provider']) ? sanitize_text_field($_POST['ai_provider']) : '';
+			$api_key  = isset($_POST['api_key']) ? sanitize_text_field($_POST['api_key']) : '';
+
+			if ($provider === 'openai') {
+				$url = 'https://api.openai.com/v1/models';
+				$args = array(
+					'headers' => array(
+						'Authorization' => 'Bearer ' . $api_key,
+					),
+					'timeout' => 15,
+				);
+			} elseif ($provider === 'gemini') {
+				$url = 'https://generativelanguage.googleapis.com/v1beta/models?key=' . $api_key;
+				$args = array(
+					'timeout' => 15,
+				);
+			} elseif ($provider === 'grok') {
+				$url = 'https://api.x.ai/v1/models';
+				$args = array(
+					'headers' => array(
+						'Authorization' => 'Bearer ' . $api_key,
+					),
+					'timeout' => 15,
+				);
+			} elseif ($provider === 'openrouter') {
+				$url = 'https://openrouter.ai/api/v1/models';
+				$args = array(
+					'headers' => array(
+						'Authorization' => 'Bearer ' . $api_key,
+					),
+					'timeout' => 15,
+				);
+			}
+
+			$response = wp_remote_get($url, $args);
+
+			if (is_wp_error($response)) {
+				wp_send_json_error($response->get_error_message());
+				wp_die();
+			}
+
+			$code = wp_remote_retrieve_response_code($response);
+			if ($code === 200) {
+				wp_send_json_success();
+			} else {
+				$body = wp_remote_retrieve_body($response);
+				$data = json_decode($body, true);
+				$msg = '';
+				if (isset($data['error']['message'])) {
+					$msg = $data['error']['message'];
+				} elseif (isset($data['error']['metadata']['message'])) {
+					$msg = $data['error']['metadata']['message'];
+				} elseif (isset($data['error'])) {
+					$msg = is_string($data['error']) ? $data['error'] : json_encode($data['error']);
+				} else {
+					$msg = 'HTTP Status ' . $code;
+				}
+				wp_send_json_error($msg);
+			}
+			wp_die();
+		}
       
 
     }

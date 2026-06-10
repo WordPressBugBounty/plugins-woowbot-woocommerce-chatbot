@@ -1231,3 +1231,9 @@ div#woo-chatbot-editor-container .woo-chatbot-send-message-has-text span.dashico
     align-items: center;
     justify-content: center;
 }
+
+span.woo-chatbot-paragraph.ai-response span {
+    background: none !important;
+    color: #555;
+    box-shadow: none;
+}

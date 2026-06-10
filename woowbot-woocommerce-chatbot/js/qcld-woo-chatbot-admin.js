@@ -162,13 +162,13 @@ $(document).ready(function () {
                 type:'POST',
                 data:    ({action  : 'openai_troubleshooting',nonce:ajax_object.ajax_nonce}),
                 success: function(data){
-                    
-                    $('#result').html(data);
+                    var datas = JSON.parse(data);
+                    $('#result').html(datas);
                     Swal.fire({
-                        title: data.title,
-                        html: data.msg,
+                        title: datas.title,
+                        html: datas.msg,
                         width: 450,
-                        icon: data.icon,
+                        icon: datas.icon,
                         confirmButtonText: 'Got it',
                         customClass: 'connection-modal',
                     })
@@ -435,18 +435,6 @@ $(document).ready(function () {
                                 confirmButtonWidth: 100,
                                 confirmButtonClass: 'btn btn-lg'     
                             }).then((result) => {
-                                if (result.isConfirmed) {
-                                    $.ajax({
-                                        url: ajax_object.ajax_url,
-                                        type: 'POST',
-                                        data: {
-                                            action: 'update_settings_option',
-                                            nonce: qcld_openai_admin_data.ajax_nonce,
-                                            disable_ss: 1
-                                        },
-                              
-                                    });
-                                }
                             });
                     }
 				});
