@@ -141,7 +141,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                         ============================ -->
                         <div class="wrap">
                             <h3>Upload CSV Data for RAG</h3>
-                            <p>Upload CSV files with data to be embedded. Each row will be processed as a separate document. <a href="<?php echo plugin_dir_url(__FILE__).'download/rag_test_data.csv'; ?>">Download Test Data</a></p>
+                            <p>Upload CSV files with data to be embedded. Each row will be processed as a separate document. <a href="<?php echo esc_url( plugin_dir_url(__FILE__) . 'download/rag_test_data.csv' ); ?>">Download Test Data</a></p>
 
                             <form id="rag-csv-form">
                                 <input type="file" id="rag-csv-files" name="rag_csv[]" multiple accept=".csv,text/csv" />
@@ -214,7 +214,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             $.post(ajaxurl, {
                 action: 'botmaster_submit_sitemap',
                 sitemap_url: sitemapUrl,
-                nonce: '<?php echo wp_create_nonce("botmaster_kb_nonce"); ?>'
+                nonce: '<?php echo esc_attr( wp_create_nonce("botmaster_kb_nonce") ); ?>'
             }, function(response) {
                 $('#botmaster_submit_sitemap_btn').prop('disabled', false);
                 if (response.success) {
@@ -252,12 +252,12 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             
             <div class="alignright actions" style="margin-left: 10px;">
                 <form method="get" style="display:inline-block;" action="?page=chatbot_ai_setting#ai-knowledge-base-tab#rag-database">
-                    <input type="hidden" name="page" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['page'] ?? '' ) ) ); // phpcs:ignore WordPress.Security.NonceVerification ?>">
-                    <?php if (isset($_GET['post_type'])): // phpcs:ignore WordPress.Security.NonceVerification ?>
-                        <input type="hidden" name="post_type" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['post_type'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification ?>">
+                    <input type="hidden" name="page" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['page'] ?? '' ) ) ); ?>">
+                    <?php if (isset($_GET['post_type'])): ?>
+                        <input type="hidden" name="post_type" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['post_type'] ) ) ); ?>">
                     <?php endif; ?>
                     <p class="search-box" style="margin:0;">
-                        <input type="search" id="rag-search-input" name="s" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['s'] ?? '' ) ) ); // phpcs:ignore WordPress.Security.NonceVerification ?>" placeholder="Search documents...">
+                        <input type="search" id="rag-search-input" name="s" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['s'] ?? '' ) ) ); ?>" placeholder="Search documents...">
                         <input type="submit" id="search-submit" class="button" value="Search">
                     </p>
                 </form>
@@ -337,8 +337,8 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             );
            
             if ($total_pages > 1) {
-                echo '<div class="tablenav-pages"><span class="displaying-num">' . sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) . '</span>';
-                echo paginate_links($pagination_args);
+                echo '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) ) . '</span>';
+                echo wp_kses_post( paginate_links($pagination_args) );
                 echo '</div>';
             }
             ?>
@@ -369,9 +369,9 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                 if ($documents) {
                     foreach ($documents as $doc) {
                         ?>
-                        <tr id="rag-doc-<?php echo $doc->id; ?>">
+                        <tr id="rag-doc-<?php echo esc_attr( $doc->id ); ?>">
                             <th scope="qcld-row" class="check-column">
-                                <input type="checkbox" class="rag-doc-checkbox" value="<?php echo $doc->id; ?>">
+                                <input type="checkbox" class="rag-doc-checkbox" value="<?php echo esc_attr( $doc->id ); ?>">
                             </th>
                             <td><?php echo esc_html($doc->title); ?></td>
                             <td>
@@ -384,10 +384,10 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                             <td><?php echo esc_html($doc->status); ?></td>
                             <td>
                                 <?php if (!in_array($doc->source_type, ['csv', 'xml', 'xaml','sitemap'])): ?>
-                                    <button class="button button-small rag-sync-doc" data-id="<?php echo $doc->id; ?>" title="Re-sync data from source">Sync</button>
+                                    <button class="button button-small rag-sync-doc" data-id="<?php echo esc_attr( $doc->id ); ?>" title="Re-sync data from source">Sync</button>
                                 <?php endif; ?>
-                                <button class="button button-small rag-edit-doc" data-id="<?php echo $doc->id; ?>">Edit</button>
-                                <button class="button button-small button-link-delete rag-delete-doc" data-id="<?php echo $doc->id; ?>">Delete</button>
+                                <button class="button button-small rag-edit-doc" data-id="<?php echo esc_attr( $doc->id ); ?>">Edit</button>
+                                <button class="button button-small button-link-delete rag-delete-doc" data-id="<?php echo esc_attr( $doc->id ); ?>">Delete</button>
                             </td>
                         </tr>
                         <?php
@@ -402,8 +402,8 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
         <div class="tablenav bottom">
             <?php
             if ($total_pages > 1) {
-                echo '<div class="tablenav-pages"><span class="displaying-num">' . sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) . '</span>';
-                echo paginate_links($pagination_args);
+                echo '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) ) . '</span>';
+                echo wp_kses_post( paginate_links($pagination_args) );
                 echo '</div>';
             }
             ?>
@@ -454,7 +454,7 @@ jQuery(document).ready(function($) {
 			formData.append('rag_pdf[]', fileInput.files[i]);
 		}
 		formData.append('action', 'rag_upload_pdf');
-		formData.append('nonce', '<?php echo wp_create_nonce('rag_upload_nonce'); ?>');
+		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-pdf-submit').prop('disabled', true);
 		$('#rag-pdf-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');
@@ -500,7 +500,7 @@ jQuery(document).ready(function($) {
 			formData.append('rag_csv[]', fileInput.files[i]);
 		}
 		formData.append('action', 'rag_upload_csv');
-		formData.append('nonce', '<?php echo wp_create_nonce('rag_upload_nonce'); ?>');
+		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-csv-submit').prop('disabled', true);
 		$('#rag-csv-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');
@@ -546,7 +546,7 @@ jQuery(document).ready(function($) {
 			formData.append('rag_xaml[]', fileInput.files[i]);
 		}
 		formData.append('action', 'rag_upload_xaml');
-		formData.append('nonce', '<?php echo wp_create_nonce('rag_upload_nonce'); ?>');
+		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-xaml-submit').prop('disabled', true);
 		$('#rag-xaml-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');

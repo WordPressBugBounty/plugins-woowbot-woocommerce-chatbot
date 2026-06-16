@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="row my-4">
     <div  class="col-md-12">
         <?php esc_html_e('Fine tuning and training is available with the ','woowbot-woocommerce-chatbot');?>

@@ -1,4 +1,4 @@
-
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="row my-4">
     <div  class="col-md-12">
         <?php esc_html_e('GPT Assistant is available with the ','woowbot-woocommerce-chatbot');?>

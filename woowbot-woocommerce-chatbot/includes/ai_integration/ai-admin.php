@@ -1,4 +1,6 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 $no_ai_active = (
 	get_option( 'qcld_openai_enabled' ) != 1 &&
 	get_option( 'qcld_gemini_enabled' ) != 1 
@@ -18,7 +20,7 @@ require_once QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . '/includes/admin/templates/w
               
                         <div class="col-auto me-auto ai-settings-title-container">
                          
-                                <a href="<?php echo admin_url( 'admin.php?page=chatbot_ai_setting' ); ?>"><h4><?php esc_html_e( 'AI Settings','chatbot');?></h4></a> 
+                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=chatbot_ai_setting' ) ); ?>"><h4><?php esc_html_e( 'AI Settings','chatbot');?></h4></a> 
                             <div class="qcld-ai-settings-top-rght">
                             <select id="ai-provider-selector" class="form-select ai-settings-selector">
                                 <option value="openai" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'OpenAI','chatbot')?></option>

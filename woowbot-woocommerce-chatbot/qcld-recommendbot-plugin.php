@@ -1,7 +1,5 @@
 <?php
-if (defined('ABSPATH') === false) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 ?>
 <?php

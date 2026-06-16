@@ -281,14 +281,14 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				$upload = wp_handle_upload($file_array, ['test_form' => false]);
 
 				if (isset($upload['error'])) {
-					echo "<p>Error uploading: {$filename}</p>";
+					echo "<p>Error uploading: " . esc_html( $filename ) . "</p>";
 					continue;
 				}
 
 				$file_url = $upload['url'];
 				$file_path = $upload['file'];
 
-				echo "<p>Uploaded: $filename</p>";
+				echo "<p>Uploaded: " . esc_html( $filename ) . "</p>";
 
 				$handle = fopen($file_path, 'r'); // phpcs:ignore WordPress.WP.AlternativeFunctions
 				if ($handle === false) {
@@ -303,7 +303,7 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 					continue;
 				}
 
-				echo "<p>Columns: " . implode(', ', $header) . "</p>";
+				echo "<p>Columns: " . esc_html( implode(', ', $header) ) . "</p>";
 				
 				global $wpdb;
 				$table = $wpdb->prefix . "rag_documents";
@@ -325,7 +325,7 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 					}
 					$embedding = $this->generate_embedding($content);
 					if (empty($embedding)) {
-						echo "<p style='color:red;'>Failed embedding for row $row_count</p>";
+						echo "<p style='color:red;'>Failed embedding for row " . esc_html( $row_count ) . "</p>";
 						continue;
 					}
 
@@ -346,12 +346,12 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 					if ($result !== false) {
 						$success_count++;
 					} else {
-						echo "<p style='color:red;'>DB error row $row_count: " . $wpdb->last_error . "</p>";
+						echo "<p style='color:red;'>DB error row " . esc_html( $row_count ) . ": " . esc_html( $wpdb->last_error ) . "</p>";
 					}
 				}
 
 				fclose($handle); // phpcs:ignore WordPress.WP.AlternativeFunctions
-				echo "<p style='color:green;'>✓ Processed $success_count of $row_count rows</p>";
+				echo "<p style='color:green;'>✓ Processed " . esc_html( $success_count ) . " of " . esc_html( $row_count ) . " rows</p>";
 			}
 
 			echo "<h3>CSV Processing Complete!</h3>";
@@ -379,14 +379,14 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				$upload = wp_handle_upload($file_array, ['test_form' => false]);
 
 				if (isset($upload['error'])) {
-					echo "<p>Error uploading: {$filename}</p>";
+					echo "<p>Error uploading: " . esc_html( $filename ) . "</p>";
 					continue;
 				}
 
 				$file_url = $upload['url'];
 				$file_path = $upload['file'];
 
-				echo "<p>Uploaded: $filename</p>";
+				echo "<p>Uploaded: " . esc_html( $filename ) . "</p>";
 
 				// Extract PDF text (uses Smalot/PdfParser)
 				if (!class_exists('\Smalot\PdfParser\Parser')) {
@@ -398,13 +398,13 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				$pdf = $parser->parseFile($file_path);
 				$text = $pdf->getText();
 
-				echo "<p>Extracted text length: ".strlen($text)."</p>";
+				echo "<p>Extracted text length: " . esc_html( strlen($text) ) . "</p>";
 
 				// Generate Embedding
 				$embedding = $this->generate_embedding($text);
 				
 				if (empty($embedding)) {
-					echo "<p style='color:red;'>Failed to generate embedding for: $filename</p>";
+					echo "<p style='color:red;'>Failed to generate embedding for: " . esc_html( $filename ) . "</p>";
 					continue;
 				}
 
@@ -425,9 +425,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				]);
 
 				if ($result === false) {
-					echo "<p style='color:red;'>Database error: " . $wpdb->last_error . "</p>";
+					echo "<p style='color:red;'>Database error: " . esc_html( $wpdb->last_error ) . "</p>";
 				} else {
-					echo "<p style='color:green;'>✓ Saved PDF embedding for: $filename (ID: " . $wpdb->insert_id . ")</p>";
+					echo "<p style='color:green;'>✓ Saved PDF embedding for: " . esc_html( $filename ) . " (ID: " . esc_html( $wpdb->insert_id ) . ")</p>";
 				}
 			}
 
@@ -460,14 +460,14 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				]);
 
 				if (isset($upload['error'])) {
-					echo "<p>Error uploading {$filename}: " . $upload['error'] . "</p>";
+					echo "<p>Error uploading " . esc_html( $filename ) . ": " . esc_html( $upload['error'] ) . "</p>";
 					continue;
 				}
 
 				$file_url = $upload['url'];
 				$file_path = $upload['file'];
 
-				echo "<p>Uploaded: $filename</p>";
+				echo "<p>Uploaded: " . esc_html( $filename ) . "</p>";
 
 				// Read XAML/XML content
 				global $wp_filesystem;
@@ -478,7 +478,7 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 				$xml_content = $wp_filesystem->get_contents( $file_path );
 				
 				if (empty($xml_content)) {
-					echo "<p style='color:red;'>Failed to read file or file is empty: $filename</p>";
+					echo "<p style='color:red;'>Failed to read file or file is empty: " . esc_html( $filename ) . "</p>";
 					continue;
 				}
 
@@ -529,7 +529,7 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 					$embedding = $this->generate_embedding($clean_content);
 					
 					if (empty($embedding)) {
-						echo "<p style='color:red;'>Failed to generate embedding for item: {$item_data['title']}</p>";
+						echo "<p style='color:red;'>Failed to generate embedding for item: " . esc_html( $item_data['title'] ) . "</p>";
 						continue;
 					}
 
@@ -550,9 +550,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 					]);
 
 					if ($result === false) {
-						echo "<p style='color:red;'>Database error for item {$item_data['title']}: " . $wpdb->last_error . "</p>";
+						echo "<p style='color:red;'>Database error for item " . esc_html( $item_data['title'] ) . ": " . esc_html( $wpdb->last_error ) . "</p>";
 					} else {
-						echo "<p style='color:green;'>✓ Saved embedding for: {$item_data['title']} (ID: " . $wpdb->insert_id . ")</p>";
+						echo "<p style='color:green;'>✓ Saved embedding for: " . esc_html( $item_data['title'] ) . " (ID: " . esc_html( $wpdb->insert_id ) . ")</p>";
 					}
 				}
 			}
@@ -792,9 +792,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 			echo "<h3>All Selected Sources Processed!</h3>";
 			echo "<p><strong>Summary:</strong></p>";
 			echo "<ul>";
-			echo "<li>New entries created: <strong>$inserted_count</strong></li>";
-			echo "<li>Existing entries updated: <strong style='color:blue;'>$updated_count</strong></li>";
-			echo "<li>Skipped (too short): <strong>$skipped_count</strong></li>";
+			echo "<li>New entries created: <strong>" . esc_html( $inserted_count ) . "</strong></li>";
+			echo "<li>Existing entries updated: <strong style='color:blue;'>" . esc_html( $updated_count ) . "</strong></li>";
+			echo "<li>Skipped (too short): <strong>" . esc_html( $skipped_count ) . "</strong></li>";
 			echo "</ul>";
 		}
 		public function wp_rag_create_embedding($text, $apiKey)

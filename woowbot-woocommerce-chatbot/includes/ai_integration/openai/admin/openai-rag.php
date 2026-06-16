@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="row g-0">
           <div class="qcl-openai">
 
@@ -6,7 +7,7 @@
     ============================ -->
         <div class="wrap">
             <h3>OpenAI RAG Settings</h3>
-            <p>If you enable RAG, you must configure the <a id="ai-knowledge-base-tab-openai" href="<?php echo admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab'); ?>">Knowledgebase</a> for Post types and other data to embed.</p>
+            <p>If you enable RAG, you must configure the <a id="ai-knowledge-base-tab-openai" href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>">Knowledgebase</a> for Post types and other data to embed.</p>
             <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
             <div class="form-check form-switch my-4">
                 <input class="form-check-input"
@@ -33,7 +34,7 @@
 			<b><?php echo esc_html__( 'How to Use RAG in This Plugin:', 'woowbot-woocommerce-chatbot' ); ?></b>
 			<ol>
 				<li><?php echo esc_html__( 'Enable RAG from the settings panel', 'woowbot-woocommerce-chatbot' ); ?></li>
-				<li><?php echo esc_html__( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab'); ?>" target="_blank">knowledgebase tab</a></li>
+				<li><?php echo esc_html__( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>" target="_blank">knowledgebase tab</a></li>
 				<li><?php echo esc_html__( '(Optional) Upload PDFs or CSV files for embedding', 'woowbot-woocommerce-chatbot' ); ?></li>
 				<li><?php echo esc_html__( 'The system automatically stores embeddings in the database', 'woowbot-woocommerce-chatbot' ); ?></li>
 				<li><?php echo esc_html__( 'User questions will now be answered using your site’s knowledge base', 'woowbot-woocommerce-chatbot' ); ?></li> 

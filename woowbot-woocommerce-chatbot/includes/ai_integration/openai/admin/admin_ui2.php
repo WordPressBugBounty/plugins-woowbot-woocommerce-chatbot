@@ -1,4 +1,4 @@
-
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
                 <div class="card-body p-sm-0">
                     <!-- <div class="alert alert-danger" role="alert">
                         <?php // echo esc_html__('OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details.', 'woowbot-woocommerce-chatbot'); ?>

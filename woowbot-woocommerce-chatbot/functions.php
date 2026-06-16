@@ -405,7 +405,7 @@ if(get_option('enable_product_details_from_ai') == 1){
 }
 if(!function_exists('qcld_woo_custom_product_details')){
     function qcld_woo_custom_product_details() {
-        echo '<div class="qcld_woo_product_details" data-product-id="' . get_the_ID() . '">' . esc_html('Click for Product Details') . '</div>';
+        echo '<div class="qcld_woo_product_details" data-product-id="' . esc_attr( get_the_ID() ) . '">' . esc_html('Click for Product Details') . '</div>';
     }
 }
 if(!function_exists('qcld_wb_woowbot_func_str_replace')){  

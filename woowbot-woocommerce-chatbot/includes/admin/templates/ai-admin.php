@@ -17,7 +17,7 @@ require_once QCLD_wpCHATBOT_PLUGIN_DIR_PATH . 'includes/admin/templates/wizard-p
     <div class="qcld-wp-chatbot-wrap-header-logo"><a href="#" class="qcld-wp-chatbot-wrap-site__logo"><img style="width:100%" src="<?php
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 echo esc_url( QCLD_wpCHATBOT_IMG_URL . '/chatbot.png' ); ?>" alt="Dialogflow CX"> WoowbotControl Panel </a>
-    <p><strong>Core Version:</strong> v<?php echo QCLD_wpCHATBOT_VERSION; ?></p>
+    <p><strong>Core Version:</strong> v<?php echo esc_html( QCLD_wpCHATBOT_VERSION ); ?></p>
     </div>
     <ul class="qcld-wp-chatbot-wrap-version-wrapper">
         <li>
@@ -38,7 +38,7 @@ echo esc_url( QCLD_wpCHATBOT_IMG_URL . '/chatbot.png' ); ?>" alt="Dialogflow CX"
               
                         <div class="col-auto me-auto ai-settings-title-container">
                          
-                                <a href="<?php echo admin_url( 'admin.php?page=chatbot_ai_setting' ); ?>"><h4><?php esc_html_e( 'AI Settings','chatbot');?></h4></a> 
+                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=chatbot_ai_setting' ) ); ?>"><h4><?php esc_html_e( 'AI Settings','chatbot');?></h4></a> 
                             <div class="qcld-ai-settings-top-rght">
                             <select id="ai-provider-selector" class="form-select ai-settings-selector">
                                 <option value="openai" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'OpenAI','chatbot')?></option>

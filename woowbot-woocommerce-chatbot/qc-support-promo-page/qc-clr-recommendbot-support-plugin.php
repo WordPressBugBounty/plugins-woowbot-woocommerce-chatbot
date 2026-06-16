@@ -1,10 +1,6 @@
 <?php
-if (defined('ABSPATH') === false) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-?>
-<?php
 add_action( 'wp_ajax_qcld_recommend_support_function_ajax', 'qcld_recommend_support_function_ajax' );
 
 if( !function_exists('qcld_recommend_support_function_ajax') ){
@@ -435,46 +431,46 @@ if( !function_exists('qcld_recommend_support_function_ajax') ){
                                 if ( ! $compatible_php || ! $compatible_wp ) {
                                     echo '<div class="notice inline notice-error notice-alt"><p>';
                                     if ( ! $compatible_php && ! $compatible_wp ) {
-                                        _e( 'This plugin doesn&#8217;t work with your versions of WordPress and PHP.' );
+                                        esc_html_e( 'This plugin doesn&#8217;t work with your versions of WordPress and PHP.', 'woowbot-woocommerce-chatbot' );
                                         if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
-                                            printf(
+                                            echo wp_kses_post( sprintf(
                                             /* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-                                                ' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
-                                                self_admin_url( 'update-core.php' ),
+                                                ' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.', 'woowbot-woocommerce-chatbot' ),
+                                                esc_url( self_admin_url( 'update-core.php' ) ),
                                                 esc_url( wp_get_update_php_url() )
-                                            );
+                                            ) );
                                             wp_update_php_annotation( '</p><p><em>', '</em>' );
                                         } elseif ( current_user_can( 'update_core' ) ) {
-                                            printf(
+                                            echo wp_kses_post( sprintf(
                                             /* translators: %s: URL to WordPress Updates screen. */
-                                                ' ' . __( '<a href="%s">Please update WordPress</a>.' ),
-                                                self_admin_url( 'update-core.php' )
-                                            );
+                                                ' ' . __( '<a href="%s">Please update WordPress</a>.', 'woowbot-woocommerce-chatbot' ),
+                                                esc_url( self_admin_url( 'update-core.php' ) )
+                                            ) );
                                         } elseif ( current_user_can( 'update_php' ) ) {
-                                            printf(
+                                            echo wp_kses_post( sprintf(
                                             /* translators: %s: URL to Update PHP page. */
-                                                ' ' . __( '<a href="%s">Learn more about updating PHP</a>.' ),
+                                                ' ' . __( '<a href="%s">Learn more about updating PHP</a>.', 'woowbot-woocommerce-chatbot' ),
                                                 esc_url( wp_get_update_php_url() )
-                                            );
+                                            ) );
                                             wp_update_php_annotation( '</p><p><em>', '</em>' );
                                         }
                                     } elseif ( ! $compatible_wp ) {
-                                        _e( 'This plugin doesn&#8217;t work with your version of WordPress.' );
+                                        esc_html_e( 'This plugin doesn&#8217;t work with your version of WordPress.', 'woowbot-woocommerce-chatbot' );
                                         if ( current_user_can( 'update_core' ) ) {
-                                            printf(
+                                            echo wp_kses_post( sprintf(
                                             /* translators: %s: URL to WordPress Updates screen. */
-                                                ' ' . __( '<a href="%s">Please update WordPress</a>.' ),
-                                                self_admin_url( 'update-core.php' )
-                                            );
+                                                ' ' . __( '<a href="%s">Please update WordPress</a>.', 'woowbot-woocommerce-chatbot' ),
+                                                esc_url( self_admin_url( 'update-core.php' ) )
+                                            ) );
                                         }
                                     } elseif ( ! $compatible_php ) {
-                                        _e( 'This plugin doesn&#8217;t work with your version of PHP.' );
+                                        esc_html_e( 'This plugin doesn&#8217;t work with your version of PHP.', 'woowbot-woocommerce-chatbot' );
                                         if ( current_user_can( 'update_php' ) ) {
-                                            printf(
+                                            echo wp_kses_post( sprintf(
                                             /* translators: %s: URL to Update PHP page. */
-                                                ' ' . __( '<a href="%s">Learn more about updating PHP</a>.' ),
+                                                ' ' . __( '<a href="%s">Learn more about updating PHP</a>.', 'woowbot-woocommerce-chatbot' ),
                                                 esc_url( wp_get_update_php_url() )
-                                            );
+                                            ) );
                                             wp_update_php_annotation( '</p><p><em>', '</em>' );
                                         }
                                     }
@@ -494,7 +490,24 @@ if( !function_exists('qcld_recommend_support_function_ajax') ){
                                     <div class="action-links">
                                         <?php
                                         if ( $action_links ) {
-                                            echo '<ul class="plugin-action-buttons"><li>' . implode( '</li><li>', $action_links ) . '</li></ul>';
+                                            $allowed_html = array(
+                                                'a'      => array(
+                                                    'class'       => true,
+                                                    'href'        => true,
+                                                    'aria-label'  => true,
+                                                    'target'      => true,
+                                                    'data-slug'   => true,
+                                                    'data-plugin' => true,
+                                                    'data-name'   => true,
+                                                ),
+                                                'button' => array(
+                                                    'type'     => true,
+                                                    'class'    => true,
+                                                    'disabled' => true,
+                                                ),
+                                                'li'     => array(),
+                                            );
+                                            echo '<ul class="plugin-action-buttons"><li>' . wp_kses( implode( '</li><li>', $action_links ), $allowed_html ) . '</li></ul>';
                                         }
                                         ?>
                                     </div>
@@ -526,7 +539,7 @@ if( !function_exists('qcld_recommend_support_function_ajax') ){
         </div>
 <?php 
 
-    echo  ob_get_clean();
+    echo ob_get_clean(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     exit();
 
 

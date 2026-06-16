@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /*******************************************
  * QuantumCloud Plugin Upgrade Link for Free Plugins

@@ -1077,14 +1077,14 @@ if(!class_exists('qcld_wpopenai_addons')){
             curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
             curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
             curl_setopt( $ch, CURLOPT_WRITEFUNCTION, function ( $ch, $chunk ) {
-                echo $chunk;
-                echo "\n: " . str_repeat( ' ', 1024 ) . "\n";
+                echo $chunk; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                echo "\n: " . str_repeat( ' ', 1024 ) . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                 flush();
                 return strlen( $chunk );
             } );
             curl_exec( $ch );
             if ( curl_errno( $ch ) ) {
-                echo 'data: [ERROR] ' . curl_error( $ch ) . "\n\n";
+                echo 'data: [ERROR] ' . esc_html( curl_error( $ch ) ) . "\n\n";
                 flush();
             }
             curl_close( $ch );

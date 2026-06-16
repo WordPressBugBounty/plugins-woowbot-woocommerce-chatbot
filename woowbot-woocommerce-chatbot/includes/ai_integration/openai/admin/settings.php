@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="row g-0">
         <div class="form-check form-switch my-4">
             <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_ai_enabled">

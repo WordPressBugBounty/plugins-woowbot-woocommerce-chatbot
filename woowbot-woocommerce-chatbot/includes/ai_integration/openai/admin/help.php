@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="accordion" id="qcldopenaiaccordion">
     <div class="qcld-wocard">
       
@@ -169,7 +170,7 @@
 				<li>
 					<ol>
 						<li><?php esc_html_e( 'Enable RAG from the settings panel', 'woowbot-woocommerce-chatbot' ); ?></li>
-						<li><?php esc_html_e( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab'); ?>" target="_blank">knowledgebase tab</a></li>
+						<li><?php esc_html_e( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>" target="_blank">knowledgebase tab</a></li>
 						<li><?php esc_html_e( '(Optional) Upload PDFs or CSV files for embedding', 'woowbot-woocommerce-chatbot' ); ?></li>
 						<li><?php esc_html_e( 'The system automatically stores embeddings in the database', 'woowbot-woocommerce-chatbot' ); ?></li>
 						<li><?php esc_html_e( 'User questions will now be answered using your site’s knowledge base', 'woowbot-woocommerce-chatbot' ); ?></li> 

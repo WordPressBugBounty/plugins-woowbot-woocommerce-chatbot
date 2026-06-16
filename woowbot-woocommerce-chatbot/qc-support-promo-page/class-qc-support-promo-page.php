@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /*
 * QuantumCloud Promo + Support Page
 * Revised On: 18-10-2023

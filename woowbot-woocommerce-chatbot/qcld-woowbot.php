@@ -1,10 +1,10 @@
-﻿<?php
+<?php
    /**
     * Plugin Name: Chatbot - WoowBot
     * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.7.8
+    * Version: 4.7.9
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.7.8');
+   define('QCLD_WOOCHATBOT_VERSION', '4.7.9');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -675,7 +675,7 @@
                                                 $wp_chatbot_custom_icon_path = esc_url( QCLD_WOOCHATBOT_IMG_URL . '/custom.png' );
                                              }
                                              ?>
-                                          <img id="woo_chatbot_custom_icon"  src="<?php echo $wp_chatbot_custom_icon_path; ?>"
+                                          <img id="woo_chatbot_custom_icon"  src="<?php echo esc_url( $wp_chatbot_custom_icon_path ); ?>"
                                              alt=""> <input type="radio" name="woo_chatbot_icon"
                                              value="custom.png" <?php echo(get_option('woo_chatbot_icon') == 'custom.png' ? 'checked' : ''); ?>>
                                           <span class="qc-opt-dcs-font"><?php esc_html_e('Custom Icon', 'woowbot-woocommerce-chatbot'); ?></span>
@@ -729,7 +729,7 @@
                                                    alt="Agent">
                                                 <input type="radio" name="wp_chatbot_agent_image[]"
                                                    id="wp_chatbot_agent_image_custom"
-                                                   value="<?php echo ($wp_chatbot_custom_agent_path); ?>" <?php echo(esc_attr(get_option('wp_chatbot_agent_image')) !=  esc_attr(QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png') ? 'checked' : ''); ?>>
+                                                   value="<?php echo esc_url( $wp_chatbot_custom_agent_path ); ?>" <?php echo(esc_attr(get_option('wp_chatbot_agent_image')) !=  esc_attr(QCLD_WOOCHATBOT_IMG_URL.'/icon-0.png') ? 'checked' : ''); ?>>
                                                 <?php echo esc_html__('Custom Agent', 'woowbot-woocommerce-chatbot'); ?></label>
                                              </li>
                                           </ul>
