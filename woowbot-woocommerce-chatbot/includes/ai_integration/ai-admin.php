@@ -42,7 +42,7 @@ require_once QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . '/includes/admin/templates/w
                     </div>
                 </div>
 				
-                <div id="openai-settings" class="ai-settings-provider" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? 'style="display: block;"' :'style="display: block;"';?> >
+                <div id="openai-settings" class="ai-settings-provider" <?php echo ((get_option( 'qcld_openai_enabled') == 1)  || (get_option( 'qcld_openai_enabled') != 1 && get_option( 'qcld_gemini_enabled') != 1)) ? 'style="display: block;"' :'style="display: none;"';?> >
                     <?php require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . 'includes/ai_integration/openai/admin/admin_ui2.php'); ?>
                 </div>
                 

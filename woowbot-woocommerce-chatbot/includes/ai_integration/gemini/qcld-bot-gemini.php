@@ -136,9 +136,9 @@ if(!class_exists('qcld_wpgemini_addons')){
                     if($gemini_enabled == '1') {
                         update_option('qcld_openai_enabled', 0);
                         update_option('qcld_openrouter_enabled', 0);
-                    
-                    } else {
                         update_option('qcld_gemini_enabled', 1);
+                    } else {
+						update_option('qcld_gemini_enabled', 0);
                     }
 					update_option('is_product_card_enabled', $is_product_card_enabled);
                     update_option('qcld_gemini_page_suggestion_enabled', $qcld_gemini_page_suggestion_enabled);
@@ -184,7 +184,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 						'sslverify'   => true,
 					);
 					$selected_model = get_option('qcld_gemini_model') ? get_option('qcld_gemini_model') : 'gemini-2.5-flash';
-					$api_url = 'https://generativelanguage.googleapis.com/v1/models/' . $selected_model . ':generateContent';
+					$api_url = 'https://generativelanguage.googleapis.com/v1beta/models/' . $selected_model . ':generateContent';
 					$result = wp_remote_post($api_url, $args);
 					$result = json_decode(wp_remote_retrieve_body($result), true);
 					if( $result['error'] ?? false ) {
@@ -363,7 +363,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 
 			$selected_model = get_option('qcld_gemini_model') ? get_option('qcld_gemini_model') : 'gemini-2.5-flash';
 			// Gemini API expects a different payload and endpoint
-			$api_url = 'https://generativelanguage.googleapis.com/v1/models/' . $selected_model . ':generateContent';
+			$api_url = 'https://generativelanguage.googleapis.com/v1beta/models/' . $selected_model . ':generateContent';
 
 			// Build formatted messages with system instructions
 			$formatted_messages = [];
