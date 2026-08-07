@@ -1,10 +1,10 @@
 <?php
    /**
-    * Plugin Name: AI Chatbot - WoowBot
-    * Plugin URI: https://wordpress.org/plugins/woowbot-woocommerce-chatbot/
+    * Plugin Name: Chatbot - WoowBot
+    * Plugin URI: https://woowbot.pro/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.8.1
+    * Version: 4.8.8
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.8.1');
+   define('QCLD_WOOCHATBOT_VERSION', '4.8.8');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -33,6 +33,19 @@
    require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/class-qcld-bot-rag.php");
    require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/openai/qcld-bot-openai.php");
    require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/gemini/qcld-bot-gemini.php");
+
+   $active_plugins = (array) get_option( 'active_plugins', array() );
+   if ( is_multisite() ) {
+      $active_plugins = array_merge( $active_plugins, array_keys( (array) get_site_option( 'active_sitewide_plugins', array() ) ) );
+   }
+
+   $current_plugin = plugin_basename( __FILE__ );
+
+   foreach ( $active_plugins as $plugin ) {
+      if ( $plugin !== $current_plugin && basename( $plugin ) === 'qcld-wpwbot.php' ) {
+         return;
+      }
+   }
    
    /**
     * Main Class.
@@ -1260,7 +1273,7 @@
                         </div>
                         <i class="dashicons dashicons-sos"></i>
                      </a>
-                     <a href="https://www.woowbot.pro/free-support/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 120ms;">
+                     <a href="https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 120ms;">
                         <div class="qcld-quick-flyout-label">
                            <div>Ask for Help</div>
                         </div>

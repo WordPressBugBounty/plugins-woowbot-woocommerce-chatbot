@@ -91,7 +91,7 @@ if ( ! function_exists( 'qcld_wowbot_free_promo_support_page_callback_func' ) ) 
                 <div class="qc-column-12" >
                     <div class="support-btn">
                         
-                        <a class="premium-support premium-support-free" href="<?php echo esc_url('https://woowbot.pro/free-support/','qc-clr') ?>" target="_blank"><?php esc_html_e('Get Support for Free Version','qc-clr') ?></a>
+                        <a class="premium-support premium-support-free" href="<?php echo esc_url('https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/','qc-clr') ?>" target="_blank"><?php esc_html_e('Get Support for Free Version','qc-clr') ?></a>
                     </div>
                 </div>
             </div>

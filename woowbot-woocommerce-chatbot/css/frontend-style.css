@@ -1036,13 +1036,11 @@ ul.woo-chatbot-messages-container > li.woo-chatbot-msg:last-child {
     background-color: transparent !important;
     border-top: 0 !important;
     padding: 14px 16px 10px 16px;
-    height: 520px !important;
     transition: height 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #woo-chatbot-ball-container.woobot-chat-expanded {
     width: min(92vw, 620px) !important;
-    height: min(88vh, 680px) !important;
     border-radius: 20px !important;
     box-shadow: 0 18px 54px rgba(0, 0, 0, 0.24) !important;
 }
@@ -1175,6 +1173,15 @@ div#woo-chatbot-ball {
     border-radius: 50% !important;
 }
 
+#woo-chatbot-ball-container .woo-chatbot-ball-inner {
+    height: calc(100vh - 420px) !important;
+}
+
+div#woo-chatbot-ball-wrapper .woobot-chat-expanded .woo-chatbot-ball-inner{
+    height: calc(100vh - 380px) !important;
+}
+
+
 @media screen and (max-width: 480px) {
     #woo-chatbot-ball-container.woo-chatbot-ball-container {
         width: calc(100vw - 12px) !important;
@@ -1182,12 +1189,31 @@ div#woo-chatbot-ball {
     }
 
     #woo-chatbot-ball-container .woo-chatbot-ball-inner {
-        height: calc(100vh - 200px) !important;
+        height: calc(100vh - 300px) !important;
     }
 
     #woo-chatbot-expand-toggle {
         display: none;
     }
+    div#woo-chatbot-ball {
+        display: block !important;
+    }
+
+    .woobot_chatopen_iconanimation {
+        display: block !important;
+        position: relative;
+        left: -20px;
+        right: 0;
+        top: -22px;
+    }
+    .woobot_chatclose_iconanimation {
+        display: block !important;
+        position: relative;
+        left: -20px;
+        right: 0;
+        top: -22px;
+    }
+
 }
 
 button#woo-chatbot-send-message span.dashicons-arrow-up-alt:before {
@@ -1235,7 +1261,10 @@ span.woo-chatbot-paragraph.ai-response span {
     box-shadow: none;
 }
 
-
 .woobot-chat-expanded .woo-chatbot-ball-inner{
         height: 550px !important;
+}
+.woo-chatbot-featured-products ul li img {
+    object-fit: cover;
+    max-height: 160px;
 }

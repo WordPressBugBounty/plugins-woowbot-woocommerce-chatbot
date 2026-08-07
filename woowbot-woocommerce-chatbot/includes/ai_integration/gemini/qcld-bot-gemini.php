@@ -200,11 +200,18 @@ if(!class_exists('qcld_wpgemini_addons')){
                 wp_die();
         }
 		public function qcld_gemini_response_callback() {
+			if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'wp_chatbot' ) ) {
+				wp_send_json_error([
+					'status'  => 'error',
+					'message' => esc_html__( 'Security check failed. Unauthorized request.', 'woowbot-woocommerce-chatbot' )
+				]);
+				wp_die();
+			}
 			if (get_option('is_rate_limiting_enabled') == '1') {
 				do_action('rate_limit_checker');
 			}
 			$gemini_api_key   = get_option( 'qcld_gemini_api_key' );
-			$keyword          = isset($_POST['keyword']) ? $_POST['keyword'] : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing
+			$keyword          = isset($_POST['keyword']) ? sanitize_text_field($_POST['keyword']) : '';
 
 			$relevant_pagelink = Qcld_WoowBot_Common_Functions::qcpd_relevant_pagelink( $keyword );
 			$relevant_pagelink = array_slice( $relevant_pagelink, 0, 5, true );

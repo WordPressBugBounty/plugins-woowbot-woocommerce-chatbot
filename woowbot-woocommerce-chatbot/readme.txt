@@ -1,10 +1,10 @@
-=== AI ChatBot for eCommerce - WoowBot ===
+=== AI ChatBot for WooCommerce - WoowBot ===
 Contributors: quantumcloud
 Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
 Tested up to: 7.0
-Stable tag: 4.8.1
+Stable tag: 4.8.8
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
@@ -204,7 +204,27 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 
 == Changelog ==
 
-= 4.7.9 =
+= 4.8.8 =
+# Plugin URI updated
+# skip confarmation removed on AI Wizard
+
+= 4.8.6 =
+# Support Link updated
+# Fixed some CSS issues
+
+= 4.8.5 =
+# Improved security
+
+= 4.8.4 =
+# Improved security
+
+= 4.8.3 =
+# troubleshooting message fix
+
+= 4.8.2 =
+# Updated message
+
+= 4.8.1 =
 # Gemini endpoint update
 # AI settings page update
 

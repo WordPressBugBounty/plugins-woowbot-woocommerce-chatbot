@@ -686,15 +686,9 @@ jQuery(document).ready(function($) {
 	// Skip Button Click
 	$('#wpbot-wizard-skip, #wpbot-wizard-close').on('click', function(e) {
 		e.preventDefault();
-		if (currentStep === 4) {
-			dismissWizard();
-			location.reload();
-			return;
-		}
-		if (confirm('Are you sure you want to skip the setup wizard? you can set up these configurations manually inside the settings panel.')) {
-			sessionStorage.setItem('wpbot_wizard_skipped', '1');
-			dismissWizard();
-		}
+	
+		dismissWizard();
+		
 	});
 
 	// Next Button Click

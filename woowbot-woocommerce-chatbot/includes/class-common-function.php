@@ -58,10 +58,17 @@ class Qcld_WoowBot_Common_Functions {
         $links = [];
         
         $post_type_array = get_option('qcld_openai_relevant_post');
+        global $wpdb;
 
-		 if ( ! empty( $post_type_list ) ) {
-                $sql = "SELECT ID FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type IN ('{$post_type_list}') AND (post_title LIKE %s OR post_content LIKE %s) ORDER BY post_date DESC LIMIT 5";
-                $post_ids = $wpdb->get_col( $wpdb->prepare( $sql, $search_term, $search_term ) );
+        if ( ! empty( $post_type_array ) ) {
+                if ( ! is_array( $post_type_array ) ) {
+                    $post_type_array = array( $post_type_array );
+                }
+                $placeholders = implode( ', ', array_fill( 0, count( $post_type_array ), '%s' ) );
+                $search_term = '%' . $wpdb->esc_like( $q ) . '%';
+                $query = "SELECT ID FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type IN ($placeholders) AND (post_title LIKE %s OR post_content LIKE %s) ORDER BY post_date DESC LIMIT 5";
+                $args = array_merge( $post_type_array, array( $search_term, $search_term ) );
+                $post_ids = $wpdb->get_col( $wpdb->prepare( $query, ...$args ) );
 
                 if ( ! empty( $post_ids ) ) {
                     foreach ( $post_ids as $post_id ) {

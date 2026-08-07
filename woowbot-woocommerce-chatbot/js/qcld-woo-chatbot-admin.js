@@ -162,7 +162,7 @@ $(document).ready(function () {
                 type:'POST',
                 data:    ({action  : 'openai_troubleshooting',nonce:ajax_object.ajax_nonce}),
                 success: function(data){
-                    var datas = JSON.parse(data);
+                    var datas = typeof data === 'string' ? JSON.parse(data) : data;
                     $('#result').html(datas);
                     Swal.fire({
                         title: datas.title,
