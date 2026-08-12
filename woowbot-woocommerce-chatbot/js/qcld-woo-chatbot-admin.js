@@ -347,7 +347,8 @@ $(document).ready(function () {
                 }
             });
         });
-        $('.qcl-openai').on('click', '#save_setting', function(){
+        $('.qcl-openai').on('click', '#save_setting', function(e){
+                e.preventDefault();
                 if ($('#is_ai_enabled').is(":checked")){
                     var is_ai_enabled = 1;
                 }else{
@@ -413,6 +414,20 @@ $(document).ready(function () {
                     return this.value;
                 }).get();
 
+                Swal.fire({
+                    html: '<div class="qcld-modern-preloader"><span></span><span></span><span></span><span></span></div>',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: false,
+                    background: 'transparent',
+                    backdrop: 'rgba(0,0,0,0.55)',
+                    customClass: {
+                        container: 'qcld-ai-save-preloader-container',
+                        popup: 'qcld-ai-save-preloader',
+                        htmlContainer: 'qcld-ai-save-preloader-html'
+                    }
+                });
+
                 $.ajax({
                     url:  ajax_object.ajax_url,
                     type:'POST',
@@ -436,6 +451,14 @@ $(document).ready(function () {
                                 confirmButtonClass: 'btn btn-lg'     
                             }).then((result) => {
                             });
+                    },
+                    error: function() {
+                        Swal.fire({
+                            title: 'Error',
+                            text: 'Failed to save settings. Please try again.',
+                            icon: 'error',
+                            confirmButtonText: 'Got it'
+                        });
                     }
 				});
     

@@ -63,7 +63,8 @@ jQuery(document).ready(function($) {
 
     var settingsGemini = document.getElementById("qcld_save_gemini_setting");
     if(settingsGemini){
-        $('.qcl-openai').on('click', '#qcld_save_gemini_setting', function(){
+        $('.qcl-openai').on('click', '#qcld_save_gemini_setting', function(e){
+            e.preventDefault();
             if ($('#qcld_gemini_enabled').is(":checked")){
                 var gemini_enabled = 1;
             }else{
@@ -77,6 +78,21 @@ jQuery(document).ready(function($) {
             var qcld_gemini_prepend_content = jQuery('#qcld_gemini_prepend_content').val();
             var is_page_rag_enabled = jQuery("#is_page_rag_enabled_gemini").is(":checked") ? 1 : 0;
             var post_gemini_types = $.map($('input[name="site_gemini_search_posttypes[]"]:checked'), function(c){return c.value; });
+
+            Swal.fire({
+                html: '<div class="qcld-modern-preloader"><span></span><span></span><span></span><span></span></div>',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                showConfirmButton: false,
+                background: 'transparent',
+                backdrop: 'rgba(0,0,0,0.55)',
+                customClass: {
+                    container: 'qcld-ai-save-preloader-container',
+                    popup: 'qcld-ai-save-preloader',
+                    htmlContainer: 'qcld-ai-save-preloader-html'
+                }
+            });
+
             $.ajax({
                 url: qcld_gemini_admin_data.ajax_url,
                 type:'POST',
@@ -117,6 +133,14 @@ jQuery(document).ready(function($) {
                       
                             });
                         }
+                    });
+                },
+                error: function() {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Failed to save settings. Please try again.',
+                        icon: 'error',
+                        confirmButtonText: 'Got it'
                     });
                 }
             });

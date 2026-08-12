@@ -114,7 +114,7 @@ body.lp-submenu-qcld_woowbot_info_page{
     align-items: center;
 }
 .qc-plugin-help-container-right a.button.button-primary {
-    padding: 10px 20px;
+    padding: 2px 20px;
     width: auto;
     font-size: 16px;
     font-weight: 500;

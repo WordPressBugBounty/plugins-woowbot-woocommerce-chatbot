@@ -2311,3 +2311,68 @@ button#ai-knowledge-base-tab {
         transform: scale(1);
     }
 }
+
+/* AI Save Settings — transparent modern preloader */
+.swal2-container.qcld-ai-save-preloader-container {
+    z-index: 999999 !important;
+}
+.swal2-popup.qcld-ai-save-preloader {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    overflow: visible !important;
+}
+.swal2-html-container.qcld-ai-save-preloader-html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    color: inherit !important;
+}
+.qcld-modern-preloader {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+.qcld-modern-preloader::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
+}
+.qcld-modern-preloader span {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    border: 6px solid transparent;
+    border-top-color: #ffffff !important;
+    border-right-color: #ffffff !important;
+    border-radius: 50%;
+    animation: qcldModernSpin 0.8s linear infinite;
+}
+.qcld-modern-preloader span:nth-child(2),
+.qcld-modern-preloader span:nth-child(3),
+.qcld-modern-preloader span:nth-child(4) {
+    display: none;
+}
+@keyframes qcldModernSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
