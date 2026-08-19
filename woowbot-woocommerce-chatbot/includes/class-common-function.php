@@ -68,7 +68,7 @@ class Qcld_WoowBot_Common_Functions {
                 $search_term = '%' . $wpdb->esc_like( $q ) . '%';
                 $query = "SELECT ID FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type IN ($placeholders) AND (post_title LIKE %s OR post_content LIKE %s) ORDER BY post_date DESC LIMIT 5";
                 $args = array_merge( $post_type_array, array( $search_term, $search_term ) );
-                $post_ids = $wpdb->get_col( $wpdb->prepare( $query, ...$args ) );
+                $post_ids = $wpdb->get_col( $wpdb->prepare( $query, ...$args ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 
                 if ( ! empty( $post_ids ) ) {
                     foreach ( $post_ids as $post_id ) {
@@ -98,14 +98,17 @@ class Qcld_WoowBot_Common_Functions {
         $meta_info      = sanitize_textarea_field(wp_unslash($_POST['meta_info']));
         $date           = current_time('mysql');
 
-        $inserted = $wpdb->insert($table, array(
-            'user_id'        => $user_id,
-            'conversation_id'=> $conversation_id,
-            'message'        => $message,
-            'feedback'       => $feedback,
-            'meta_info'      => $meta_info,
-            'created_at'     => $date
-        ));
+        $inserted = $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
+            $table,
+            array(
+                'user_id'         => $user_id,
+                'conversation_id' => $conversation_id,
+                'message'         => $message,
+                'feedback'        => $feedback,
+                'meta_info'       => $meta_info,
+                'created_at'      => $date,
+            )
+        );
 
         if ($inserted !== false) {
             wp_send_json_success(array('message' => 'Feedback saved.'));
@@ -129,11 +132,11 @@ class Qcld_WoowBot_Common_Functions {
             $message     = sanitize_textarea_field(wp_unslash($_POST['message']));
             $report_text = sanitize_textarea_field(wp_unslash($_POST['report_text']));
 
-            $wpdb->insert(
+            $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
                 $table_report,
                 [
-                    'user_id' => get_current_user_id(), // or match from wpbot_user.
-                    'message' => $message,
+                    'user_id'   => get_current_user_id(), // or match from wpbot_user.
+                    'message'   => $message,
                     'meta_info' => maybe_serialize( [ 'email' => $email, 'report_text' => $report_text ] ),
                 ],
                 [ '%d', '%s', '%s' ]

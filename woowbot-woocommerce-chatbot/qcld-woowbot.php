@@ -1,10 +1,10 @@
 <?php
    /**
-    * Plugin Name: Chatbot - WoowBot
+    * Plugin Name: AI Chatbot - WoowBot
     * Plugin URI: https://woowbot.pro/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.8.9
+    * Version: 4.9.0
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -19,20 +19,13 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.8.9');
+   define('QCLD_WOOCHATBOT_VERSION', '4.9.0');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
    define('QCLD_WOOCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
    define('QCLD_WOOCHATBOT_IMG_URL', QCLD_WOOCHATBOT_PLUGIN_URL . "images");
    define('QCLD_WOOCHATBOT_IMG_ABSOLUTE_PATH', plugin_dir_path(__FILE__) . "images");
-   require_once("functions.php");
-   require_once("qc-support-promo-page/class-qc-support-promo-page.php");
-   require_once("qcld-woowbot-info-page.php");
-   require_once("class-qc-free-plugin-upgrade-notice.php");
-   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/class-qcld-bot-rag.php");
-   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/openai/qcld-bot-openai.php");
-   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/gemini/qcld-bot-gemini.php");
 
    $active_plugins = (array) get_option( 'active_plugins', array() );
    if ( is_multisite() ) {
@@ -46,6 +39,16 @@
          return;
       }
    }
+   require_once("functions.php");
+   require_once("qc-support-promo-page/class-qc-support-promo-page.php");
+   require_once("qcld-woowbot-info-page.php");
+   require_once("class-qc-free-plugin-upgrade-notice.php");
+   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/class-qcld-bot-rag.php");
+   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/openai/qcld-bot-openai.php");
+   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai_integration/gemini/qcld-bot-gemini.php");
+   require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH."includes/ai-tryon-for-woocommerce/ai-tryon-for-woocommerce.php");
+
+
    
    /**
     * Main Class.

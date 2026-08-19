@@ -292,7 +292,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             }
 
             // Check if table exists
-            $table_exists = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $wpdb->esc_like($table_rag_documents))) === $table_rag_documents;
+            $table_exists = $wpdb->get_var($wpdb->prepare("SHOW TABLES LIKE %s", $wpdb->esc_like($table_rag_documents))) === $table_rag_documents; // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
             
             if (!$table_exists) {
                 ?>
@@ -317,9 +317,11 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             
             if ($search_query) {
                 $like = '%' . $wpdb->esc_like($search_query) . '%';
-                $total_items = $wpdb->get_var($wpdb->prepare("SELECT COUNT(id) FROM {$table_name} WHERE title LIKE %s OR content LIKE %s", $like, $like));
+                $safe_table = esc_sql( $table_name );
+                $total_items = $wpdb->get_var($wpdb->prepare("SELECT COUNT(id) FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s", $like, $like)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
             } else {
-                $total_items = $wpdb->get_var("SELECT COUNT(id) FROM {$table_name}");
+                $safe_table = esc_sql( $table_name );
+                $total_items = $wpdb->get_var("SELECT COUNT(id) FROM {$safe_table}"); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
             }
             $items_per_page = 50;
             $page = isset($_GET['paged']) ? absint(wp_unslash($_GET['paged'])) : 1;
@@ -361,9 +363,11 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                 <?php
                 if ($search_query) {
                     $like = '%' . $wpdb->esc_like($search_query) . '%';
-                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$table_name} WHERE title LIKE %s OR content LIKE %s ORDER BY created_at DESC LIMIT %d OFFSET %d", $like, $like, $items_per_page, $offset));
+                    $safe_table = esc_sql( $table_name );
+                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s ORDER BY created_at DESC LIMIT %d OFFSET %d", $like, $like, $items_per_page, $offset)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
                 } else {
-                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$table_name} ORDER BY created_at DESC LIMIT %d OFFSET %d", $items_per_page, $offset));
+                    $safe_table = esc_sql( $table_name );
+                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} ORDER BY created_at DESC LIMIT %d OFFSET %d", $items_per_page, $offset)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
                 }
 
                 if ($documents) {
