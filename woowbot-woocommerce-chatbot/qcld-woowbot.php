@@ -1,16 +1,16 @@
 <?php
    /**
-    * Plugin Name: AI Chatbot - WoowBot
+    * Plugin Name: Chatbot - WoowBot
     * Plugin URI: https://woowbot.pro/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.9.0
+    * Version: 4.9.1
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
     * Author URI: https://woowbot.pro/
     * Requires at least: 4.9
-    * Tested up to: 7.0
+    * Tested up to: 7.1
     * Text Domain: woowbot-woocommerce-chatbot
     * Domain Path: /lang
     * License: GPL2
@@ -19,7 +19,7 @@
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.9.0');
+   define('QCLD_WOOCHATBOT_VERSION', '4.9.1');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));

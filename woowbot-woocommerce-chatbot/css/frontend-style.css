@@ -1268,3 +1268,9 @@ span.woo-chatbot-paragraph.ai-response span {
     object-fit: cover;
     max-height: 160px;
 }
+
+@media screen and (min-height: 1281px) {
+body #woo-chatbot-ball-container .woo-chatbot-ball-inner {
+    height: 680px !important;
+}
+}
