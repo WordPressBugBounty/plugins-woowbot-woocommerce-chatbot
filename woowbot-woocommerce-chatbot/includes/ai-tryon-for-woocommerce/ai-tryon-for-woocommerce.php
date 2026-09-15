@@ -34,11 +34,12 @@ require_once( 'inc/ai-tryon-for-woocommerce-assets.php' );
 require_once( 'inc/ai-tryon-for-woocommerce-ajax.php' );
 require_once( 'inc/ai-tryon-for-woocommerce-admin.php' );
 require_once( 'inc/ai-tryon-for-woocommerce-functions.php' );
+require_once( 'woo-insights-ai/woo-insights-ai.php' );
 
 function qcld_woo_chatbot_woocommerce_missing_notice() {
   ?>
   <div class="notice notice-error">
-    <p><?php echo wp_kses_post( esc_html( '<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin\'s features will not function until WooCommerce is active.', 'ai-tryon-for-woocommerce' ) ); ?></p>
+    <p><?php echo wp_kses_post( __( '<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin\'s features will not function until WooCommerce is active.', 'woowbot-woocommerce-chatbot' ) ); ?></p>
   </div>
   <?php
 }

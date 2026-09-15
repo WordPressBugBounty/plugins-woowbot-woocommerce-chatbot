@@ -1,0 +1,2033 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-14 11:26+0000\n"
+"PO-Revision-Date: 2026-09-14 11:26+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: Nederlands (Dutch)\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "We kunnen geen plugin-informatie detecteren. Dit komt waarschijnlijk omdat je de code niet in het hoofd bestand van de plugin hebt opgenomen."
+
+msgid "Sorry to see you go"
+msgstr "Sorry dat je weggaat"
+
+msgid "Found a Bug"
+msgstr "Een fout gevonden"
+
+msgid "Need More Features"
+msgstr "Meer functies nodig"
+
+msgid "Deactivating Temporarily"
+msgstr "Tijdelijk deactiveren"
+
+msgid "Upgrading to Pro"
+msgstr "Upgraden naar Pro"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "Geef een e-mailadres op zodat we je kunnen contacteren met bugfixes"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "Geef wat details op zodat we de plugin kunnen verbeteren"
+
+msgid "Submitting form"
+msgstr "Formulier indienen"
+
+msgid "Expand chat window"
+msgstr "Chatvenster uitbreiden"
+
+msgid "Conversations with"
+msgstr "Gesprekken met"
+
+msgid "Close chat window"
+msgstr "Chatvenster sluiten"
+
+msgid "Send a message."
+msgstr "Stuur een bericht."
+
+msgid "Support Request Details"
+msgstr "Details van ondersteuningsverzoek"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Subject"
+msgstr "Onderwerp"
+
+msgid "Message"
+msgstr "Bericht"
+
+msgid "Page"
+msgstr "Pagina"
+
+msgid "User Agent"
+msgstr "User Agent"
+
+msgid "IP Address"
+msgstr "IP-adres"
+
+msgid "Mail Generated on"
+msgstr "E-mail gegenereerd op"
+
+msgid "Click for Product Details"
+msgstr "Klik voor productdetails"
+
+msgid "AI Settings"
+msgstr "AI-instellingen"
+
+msgid "selected"
+msgstr "geselecteerd"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "Gemini"
+
+msgid "Grok"
+msgstr "Grok"
+
+msgid "Knowledge Base (RAG)"
+msgstr "Kennisbank (RAG)"
+
+msgid "AI Wizard"
+msgstr "AI Wizard"
+
+msgid "Common AI Settings"
+msgstr "Algemene AI-instellingen"
+
+msgid "Rate Limit"
+msgstr "Rate Limiet"
+
+msgid "Other Common Settings"
+msgstr "Andere algemene instellingen"
+
+msgid "Enable Rate Limiting"
+msgstr "Rate limiting inschakelen"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "Stel het maximale aantal verzoeken in dat elke gebruiker van een bepaalde rol kan doen aan de OpenAI API binnen een specifieke periode. Laat het veld leeg of stel het in op 0 voor onbeperkte verzoeken."
+
+msgid "Set the rate limit for each user role:"
+msgstr "Stel de rate limit in voor elke gebruikersrol:"
+
+msgid "Rate limit for %s"
+msgstr "Rate limit voor %s"
+
+msgid "Timeframe:"
+msgstr "Tijdframe:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "48 Hours"
+msgstr "48 Uur"
+
+msgid "24 Hours"
+msgstr "24 Uur"
+
+msgid "12 Hours"
+msgstr "12 Uur"
+
+msgid "6 Hours"
+msgstr "6 Uur"
+
+msgid "Rate limit for Guest Users"
+msgstr "Rate limit voor gastgebruikers"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "Verbind met een AI-service zoals OpenAI of Gemini voordat je embed."
+
+msgid "Check this Tutorial for more details."
+msgstr "Bekijk deze tutorial voor meer details."
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>AI Try-On Addon voor WooCommerce</strong> vereist dat WooCommerce is geïnstalleerd en actief is. De functies van de plugin zullen niet functioneren totdat WooCommerce actief is."
+
+msgid "AI Try-On Configurations"
+msgstr "AI Try-On Configuraties"
+
+msgid "General Settings"
+msgstr "Algemene instellingen"
+
+msgid "Prompts"
+msgstr "Prompts"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "Configureer al je AI Try-On-instellingen op één plek."
+
+msgid "Enable Try-On Button"
+msgstr "Probeer-knop inschakelen"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Toon de \"Probeer het met AI\"-knop op enkele productpagina's"
+
+msgid "Require Login"
+msgstr "Login vereisen"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "Toon de Try-On-functie alleen voor ingelogde gebruikers"
+
+msgid "Show Add to Cart Button"
+msgstr "Toon 'Voeg toe aan winkelwagentje'-knop"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Toon de 'Voeg toe aan winkelwagentje'-knop in de footer van de Try-On-modus"
+
+msgid "Daily Generation Limit"
+msgstr "Dagelijkse generatie limiet"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "bijv. 5 (Laat leeg voor onbeperkt)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "Beperk de generatie van afbeeldingen en video's per sessie + IP per 24 uur. Laat leeg of 0 voor onbeperkt."
+
+msgid "Try-On Button Position"
+msgstr "Probeer-knop positie"
+
+msgid "Default"
+msgstr "Standaard"
+
+msgid "Inside Product Summary"
+msgstr "Binnen productoverzicht"
+
+msgid "Before Cart"
+msgstr "Voor winkelwagentje"
+
+msgid "Above Add to Cart Form"
+msgstr "Boven het formulier 'Voeg toe aan winkelwagentje'"
+
+msgid "After Cart"
+msgstr "Na winkelwagentje"
+
+msgid "Below Add to Cart Form"
+msgstr "Onder het formulier 'Voeg toe aan winkelwagentje'"
+
+msgid "Before Meta"
+msgstr "Voor meta"
+
+msgid "Above Categories/Tags"
+msgstr "Boven categorieën/tags"
+
+msgid "After Meta"
+msgstr "Na meta"
+
+msgid "Below Categories/Tags"
+msgstr "Onder categorieën/tags"
+
+msgid "Below Summary"
+msgstr "Onder samenvatting"
+
+msgid "At bottom of product details"
+msgstr "Onderaan productdetails"
+
+msgid "Above Summary"
+msgstr "Boven samenvatting"
+
+msgid "At very top of product details"
+msgstr "Helemaal bovenaan productdetails"
+
+msgid "Try-On Button Icon"
+msgstr "Probeer-knop icoon"
+
+msgid "Sparkles"
+msgstr "Vonkels"
+
+msgid "Magic Wand"
+msgstr "Toverstok"
+
+msgid "Shirt"
+msgstr "Shirt"
+
+msgid "No Icon"
+msgstr "Geen icoon"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "Selecteer een emoji-icoon om weer te geven vóór de knoptekst."
+
+msgid "Try with your photo Button Text"
+msgstr "Probeer met je foto knoptekst"
+
+msgid "The text displayed on the frontend button."
+msgstr "De tekst die op de frontend-knop wordt weergegeven."
+
+msgid "Default Video Duration"
+msgstr "Standaard video duur"
+
+msgid "(Pro Feature)"
+msgstr "(Pro-functie)"
+
+msgid "4 Seconds"
+msgstr "4 Seconden"
+
+msgid "Standard generation"
+msgstr "Standaard generatie"
+
+msgid "8 Seconds"
+msgstr "8 Seconden"
+
+msgid "Extended generation"
+msgstr "Uitgebreide generatie"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "Selecteer de lengte van de gegenereerde video. (Beschikbaar in Pro)"
+
+msgid "Video Resolution"
+msgstr "Video resolutie"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "Standaard Definitie"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "Hoge Definitie"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "Selecteer de resolutie voor gegenereerde video's. (Beschikbaar in Pro)"
+
+msgid "Image Size"
+msgstr "Afbeeldingsgrootte"
+
+msgid "1024x1024 (Square)"
+msgstr "1024x1024 (Vierkant)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "DALL-E 2, DALL-E 3, Gemini"
+
+msgid "1024x1792 (Portrait)"
+msgstr "1024x1792 (Portret)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "DALL-E 3, Gemini"
+
+msgid "1792x1024 (Landscape)"
+msgstr "1792x1024 (Landschap)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "Selecteer de beeldverhouding / grootte voor AI gegenereerde afbeeldingen."
+
+msgid "Google Gemini Base Prompt"
+msgstr "Google Gemini Basis Prompt"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "Pas de basisinstructies aan die naar Google Gemini worden verzonden. De invoer van de gebruiker wordt automatisch toegevoegd."
+
+msgid "Reset to Default"
+msgstr "Reset naar Standaard"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "Gemini Veo Video Basis Prompt"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "Pas de basisinstructies aan voor Veo video generatie. De invoer van de gebruiker wordt automatisch toegevoegd. (Beschikbaar in Pro)"
+
+msgid "OpenAI Base Prompt"
+msgstr "OpenAI Basis Prompt"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "Pas de basisinstructies aan die naar OpenAI worden verzonden. De invoer van de gebruiker wordt automatisch toegevoegd."
+
+msgid "Final Prompt Structure Builder"
+msgstr "Eindprompt Structuur Bouwer"
+
+msgid "Use placeholders:"
+msgstr "Gebruik plaatsaanduidingen:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "om te structureren hoe de uiteindelijke gecombineerde prompt wordt verzonden."
+
+msgid "Quick Start Guide"
+msgstr "Snelle Startgids"
+
+msgid "Welcome to"
+msgstr "Welkom bij"
+
+msgid "WooCommerce AI Try-On"
+msgstr "WooCommerce AI Try-On"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "Deze plugin stelt uw klanten in staat om uw producten virtueel te passen met behulp van geavanceerde generatieve AI."
+
+msgid "Pro Tip:"
+msgstr "Pro Tip:"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "U kunt de positie en tekst van de \"Probeer Aan\" knop volledig aanpassen in het <strong>Algemene Instellingen</strong> tabblad!"
+
+msgid "1. Customer Experience"
+msgstr "1. Klantbeleving"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Wanneer een klant op de Probeer Aan knop klikt, verschijnt er een premium modaal interface. Ze kunnen eenvoudig een referentiefoto van zichzelf slepen en neerzetten of uploaden. Ze hebben ook een tekstvak om aangepaste scenario-instructies toe te voegen (bijv. <em>\"Staan in een moderne koffiebar\"</em>)."
+
+msgid "2. The Generation Process"
+msgstr "2. Het Generatieproces"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "Zodra ze op Genereren klikken, neemt de plugin de <strong>Productafbeelding</strong>, de <strong>Geüploade Afbeelding van de Klant</strong>, en hun <strong>Scenario tekst</strong>, en combineert deze met behulp van de <em>Eindprompt Structuur Bouwer</em> (te vinden in het Prompts tabblad)."
+
+msgid "3. Image vs Video"
+msgstr "3. Afbeelding vs Video"
+
+msgid "Images:"
+msgstr "Afbeeldingen:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "Direct gegenereerd door Google Gemini (Imagen 3) of OpenAI (DALL-E 3)."
+
+msgid "Videos:"
+msgstr "Video's:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "Exclusief aangedreven door Google's geavanceerde <strong>Veo</strong> model. Video generatie kan enkele minuten duren. De plugin handelt dit elegant af door continu de servers van Google op de achtergrond te polsen, zodat de klant real-time statusupdates kan zien zonder de pagina te verlaten."
+
+msgid "API Keys & Configuration"
+msgstr "API Sleutels &amp; Configuratie"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "Voordat de Probeer Aan knop functioneert, moet u uw AI-providers configureren."
+
+msgid "Important:"
+msgstr "Belangrijk:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "U moet op de <strong>Verifiëren</strong> knop klikken naast uw geselecteerde modellen in het AI Instellingen tabblad om te bevestigen dat uw API-sleutel toegang heeft."
+
+msgid "Getting a Google Gemini Key"
+msgstr "Een Google Gemini Sleutel Krijgen"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Google's Gemini-modellen (inclusief Imagen 3 en Veo) vereisen een API-sleutel van Google AI Studio. U kunt een gratis API-sleutel krijgen door <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a> te bezoeken."
+
+msgid "Getting an OpenAI Key"
+msgstr "Een OpenAI Sleutel Krijgen"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAI's modellen (zoals DALL-E 3) vereisen een betaald OpenAI-platformaccount. U kunt een sleutel genereren op <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Sleutels</a>."
+
+msgid "Need Support?"
+msgstr "Heeft u ondersteuning nodig?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "Als u problemen ondervindt met de plugin of functieverzoeken heeft, neem dan contact op met onze ondersteuningsdesk."
+
+msgid "Contact Support &rarr;"
+msgstr "Neem Contact Op met Ondersteuning &rarr;"
+
+msgid "Useful Links"
+msgstr "Nuttige Links"
+
+msgid "Google AI Studio"
+msgstr "Google AI Studio"
+
+msgid "OpenAI Developer Platform"
+msgstr "OpenAI Ontwikkelaarsplatform"
+
+msgid "WooCommerce Docs"
+msgstr "WooCommerce Docs"
+
+msgid "Save Configurations"
+msgstr "Configuraties Opslaan"
+
+msgid "AI API Configuration"
+msgstr "AI API Configuratie"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "Configureer API-sleutels, modellen en generatie-instellingen."
+
+msgid "Image Generation AI Provider"
+msgstr "Afbeelding Generatie AI Provider"
+
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgid "OpenAI Integration Settings"
+msgstr "OpenAI Integratie Instellingen"
+
+msgid "OpenAI API Key"
+msgstr "OpenAI API Sleutel"
+
+msgid "Test Connection"
+msgstr "Test Verbinding"
+
+msgid "OpenAI Image Model"
+msgstr "OpenAI Afbeeldingsmodel"
+
+msgid "Verify"
+msgstr "Verifiëren"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "Selecteer het OpenAI-model voor afbeelding generatie."
+
+msgid "Google Gemini Integration Settings"
+msgstr "Google Gemini Integratie Instellingen"
+
+msgid "Powered by Veo for Video"
+msgstr "Aangedreven door Veo voor Video"
+
+msgid "Gemini API Key"
+msgstr "Gemini API Sleutel"
+
+msgid "Gemini Image Model"
+msgstr "Gemini Afbeeldingsmodel"
+
+msgid "Select the Gemini model for image generation."
+msgstr "Selecteer het Gemini-model voor afbeelding generatie."
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "Gemini Video Model (Google Veo)"
+
+msgid " ( Recommended )"
+msgstr " ( Aanbevolen )"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "Selecteer het Google Veo-model voor video try-on generatie. (Beschikbaar in Pro)"
+
+msgid "API Key is empty."
+msgstr "API Sleutel is leeg."
+
+msgid "Connection successful!"
+msgstr "Verbinden succesvol!"
+
+msgid "API Error: "
+msgstr "API Fout: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "Verbinding mislukt (HTTP %1$s). Details: %2$s"
+
+msgid "API Error"
+msgstr "API Fout"
+
+msgid "Missing API key or model."
+msgstr "Ontbrekende API-sleutel of model."
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "Generatie mislukt. (HTTP %s)"
+
+msgid "Model verified successfully."
+msgstr "Model succesvol geverifieerd."
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "Modelverificatie mislukt. (HTTP %s)"
+
+msgid "Invalid provider."
+msgstr "Ongeldige provider."
+
+msgid "OpenAI API Request Failed: "
+msgstr "OpenAI API Verzoek Mislukt: "
+
+msgid "Generation execution failure. %s"
+msgstr "Fout bij uitvoering van generatie. %s"
+
+msgid "OpenAI Error: "
+msgstr "OpenAI Fout: "
+
+msgid "Gemini API Request Failed: "
+msgstr "Gemini API Verzoek Mislukt: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "Gemini generatie gestopt. Reden: "
+
+msgid "Unknown Gemini Error."
+msgstr "Onbekende Gemini Fout."
+
+msgid "Gemini API Error: "
+msgstr "Gemini API Fout: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "U heeft uw dagelijkse limiet voor AI-generaties bereikt. Probeer het morgen opnieuw."
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "API-configuratie ontbreekt. Neem contact op met de winkelbeheerder."
+
+msgid "No media data provided."
+msgstr "Geen mediagegevens verstrekt."
+
+msgid "Invalid base64 data."
+msgstr "Ongeldige base64-gegevens."
+
+msgid "Failed to decode base64."
+msgstr "Mislukt om base64 te decoderen."
+
+msgid "Saved to Media Library!"
+msgstr "Opgeslagen in Medialibrary!"
+
+msgid "Failed to save base64 media."
+msgstr "Mislukt om base64 media op te slaan."
+
+msgid "Failed to download media from URL."
+msgstr "Mislukt om media van URL te downloaden."
+
+msgid "Failed to save downloaded media."
+msgstr "Mislukt om gedownloade media op te slaan."
+
+msgid "Invalid media format."
+msgstr "Ongeldig mediaformaat."
+
+msgid "Reset!"
+msgstr "Reset!"
+
+msgid "Please enter an API key first."
+msgstr "Voer eerst een API-sleutel in."
+
+msgid "Testing connection..."
+msgstr "Verbinding testen..."
+
+msgid "Error: "
+msgstr "Fout: "
+
+msgid "Unknown error"
+msgstr "Onbekende fout"
+
+msgid "Request failed: "
+msgstr "Verzoek mislukt: "
+
+msgid "Please select a model first."
+msgstr "Selecteer eerst een model."
+
+msgid "Verifying..."
+msgstr "Verifiëren..."
+
+msgid "Testing..."
+msgstr "Testen..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "Geverifieerd! Model accepteert deze modaliteit."
+
+msgid "AJAX request failed."
+msgstr "AJAX-verzoek mislukt."
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "Aanbevolen (Optimale snelheid &amp; prijsstelling)"
+
+msgid "Processing..."
+msgstr "Verwerken..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "Video genereren (Dit kan tot 5 minuten duren)..."
+
+msgid "Status Check Error: "
+msgstr "Statuscontrolefout: "
+
+msgid "Execution Error: "
+msgstr "Uitvoeringsfout: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "Er is een onverwachte communicatiefout in de infrastructuur opgetreden."
+
+msgid "No media available to download."
+msgstr "Geen media beschikbaar om te downloaden."
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "Alleen afbeeldingen/video's kunnen worden opgeslagen in de Mediatheek."
+
+msgid "Saving..."
+msgstr "Opslaan..."
+
+msgid "Saved!"
+msgstr "Opgeslagen!"
+
+msgid "Error"
+msgstr "Fout"
+
+msgid "Error saving media."
+msgstr "Fout bij het opslaan van media."
+
+msgid "Network error."
+msgstr "Netwerkfout."
+
+msgid "Adding..."
+msgstr "Toevoegen..."
+
+msgid "You must be logged in to use this feature."
+msgstr "Je moet ingelogd zijn om deze functie te gebruiken."
+
+msgid "AI Product Generation"
+msgstr "AI Productgeneratie"
+
+msgid "Original Image"
+msgstr "Originele afbeelding"
+
+msgid "Original Product"
+msgstr "Origineel product"
+
+msgid "Upload Image"
+msgstr "Afbeelding uploaden"
+
+msgid "Generate Image"
+msgstr "Afbeelding genereren"
+
+msgid "Background Preference"
+msgstr "Achtergrondvoorkeur"
+
+msgid "Studio"
+msgstr "Studio"
+
+msgid "Outdoor"
+msgstr "Buiten"
+
+msgid "Lifestyle"
+msgstr "Levensstijl"
+
+msgid "Output Style"
+msgstr "Outputstijl"
+
+msgid "Model Shoot"
+msgstr "Modelshoot"
+
+msgid "Flat Lay"
+msgstr "Flat lay"
+
+msgid "Ghost Mannequin"
+msgstr "Ghost mannequin"
+
+msgid "Prompt (Optional)"
+msgstr "Prompt (Optioneel)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "Voeg specifieke instructies toe (optioneel)"
+
+msgid "Generate"
+msgstr "Genereren"
+
+msgid "Download"
+msgstr "Downloaden"
+
+msgid "Generated Output"
+msgstr "Gegenereerde output"
+
+msgid "Ready to generate"
+msgstr "Klaar om te genereren"
+
+msgid "Generating Magic..."
+msgstr "Magie genereren..."
+
+msgid "Add to Cart"
+msgstr "Toevoegen aan winkelwagentje"
+
+msgid "AI Analyst"
+msgstr "AI-analist"
+
+msgid "AI Store Analyst"
+msgstr "AI-winkelanalist"
+
+msgid "WooCommerce Intelligence"
+msgstr "WooCommerce Intelligence"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "Directe verkoopinzichten, voorspellende intelligentie en diepgaande analyses aangedreven door AI."
+
+msgid "Active AI Provider"
+msgstr "Actieve AI-leverancier"
+
+msgid "Ready to analyze your store"
+msgstr "Klaar om je winkel te analyseren"
+
+msgid "Clear Conversation History"
+msgstr "Gespreksgeschiedenis wissen"
+
+msgid "Reset Chat"
+msgstr "Chat resetten"
+
+msgid "Ask a question"
+msgstr "Stel een vraag"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "Vraag naar verkopen, best verkopende producten, klanten, trends…"
+
+msgid "Send question"
+msgstr "Vraag verzenden"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "Druk op Enter ↵ om te verzenden • Shift + Enter voor een nieuwe regel"
+
+msgid "Store Insights"
+msgstr "Winkelinzichten"
+
+msgid "AI Growth Recommendation"
+msgstr "AI-groeivoorstel"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "Recente winkelbestellingen en prestaties analyseren..."
+
+msgid "Performance Overview"
+msgstr "Prestatieoverzicht"
+
+msgid "Last 30 Days"
+msgstr "Laatste 30 dagen"
+
+msgid "Revenue Trend"
+msgstr "Omzettrend"
+
+msgid "Top Products by Revenue"
+msgstr "Topproducten op basis van omzet"
+
+msgid "The requested analysis is not available."
+msgstr "De aangevraagde analyse is niet beschikbaar."
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "Er zijn geen kwalificerende bestellingen gevonden in de laatste 30 dagen. Controleer eerst het verkeer, afrekenfouten en instellingen voor orderstatus."
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "Average order value is down %s%%. Test bundles using the products-bought-together report."
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s leidt de recente omzet. Combineer het met vaak gekochte producten en geef de bundel prominent weer."
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "Bekijk recente klanten, kortingsbonnen en verkoopkanalen om de duidelijkste volgende groeikans te vinden."
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "Configureer je OpenAI of Google Gemini API-sleutel in AI Try-On &amp; AI-instellingen."
+
+msgid "Google Gemini request failed."
+msgstr "Google Gemini-verzoek mislukt."
+
+msgid "OpenAI request failed."
+msgstr "OpenAI-verzoek mislukt."
+
+msgid "Which period performed best?"
+msgstr "Welke periode presteerde het beste?"
+
+msgid "Show the top products during the strongest period."
+msgstr "Toon de topproducten tijdens de sterkste periode."
+
+msgid "Compare this trend with the previous period."
+msgstr "Vergelijk deze trend met de vorige periode."
+
+msgid "Show the sales trend for the same period."
+msgstr "Toon de verkooptrend voor dezelfde periode."
+
+msgid "Compare these products with the previous period."
+msgstr "Vergelijk deze producten met de vorige periode."
+
+msgid "Summarize sales for this period."
+msgstr "Samenvatten van verkopen voor deze periode."
+
+msgid "Show this period as a sales graph."
+msgstr "Toon deze periode als een verkoopgrafiek."
+
+msgid "Which products sold best during this period?"
+msgstr "Welke producten verkochten het beste tijdens deze periode?"
+
+msgid "Compare this with the preceding period."
+msgstr "Vergelijk dit met de voorgaande periode."
+
+msgid "What were total sales in the last 30 days?"
+msgstr "Wat waren de totale verkopen in de laatste 30 dagen?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "Toon de maandelijkse verkooptrend voor het afgelopen jaar."
+
+msgid "What are my top 10 products this year?"
+msgstr "Wat zijn mijn top 10 producten dit jaar?"
+
+msgid "Sales trend"
+msgstr "Verkooptrend"
+
+msgid "Top products by revenue"
+msgstr "Topproducten op basis van omzet"
+
+msgid "Coupon-attributed revenue"
+msgstr "Omzet toegeschreven aan kortingsbonnen"
+
+msgid "Most valuable customers"
+msgstr "Meest waardevolle klanten"
+
+msgid "Product profit"
+msgstr "Productwinst"
+
+msgid "Product revenue"
+msgstr "Productomzet"
+
+msgid "Revenue by channel"
+msgstr "Omzet per kanaal"
+
+msgid "Frequently bought together"
+msgstr "Vaak samen gekocht"
+
+msgid "Gemini settings"
+msgstr "Gemini-instellingen"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "Gemini-hulp"
+
+msgid "Enable Gemini AI"
+msgstr "Gemini AI inschakelen"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(als je alleen resultaten van Gemini wilt, schakel dan Site Search uit in Instellingen-&gt;Startmenu)"
+
+msgid "Context awareness"
+msgstr "Contextbewustzijn"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "Schakel pagina-aanbevelingen in met Gemini-resultaat"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "Selecteer POSTTYPE(S) om op te nemen met zoekresultaten"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "Krijg je API-sleutel van https://aistudio.google.com/app/apikey."
+
+msgid "It requires a paid Gemini API plan"
+msgstr "Het vereist een betaald Gemini API-plan"
+
+msgid "Gemini Model"
+msgstr "Gemini Model"
+
+msgid "Fetch Models"
+msgstr "Haal modellen op"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Selecteer uw Gemini-model. Klik op \"Haal modellen op\" om de lijst bij te werken als u zojuist uw API-sleutel hebt toegevoegd."
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "Selecteer alstublieft uw betaalde model; niet alle modellen op de lijst zijn mogelijk beschikbaar voor gratis plannen."
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "Uw prompt die moet worden toegevoegd vóór de gebruikersquery voor aangepaste resultaten (optioneel)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "Uw prompt die aan het einde van de gebruikersquery moet worden toegevoegd voor aangepaste resultaten (optioneel)"
+
+msgid "Save settings"
+msgstr "Instellingen opslaan"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "Fijn afstemmen VS GPT-assistenten VS RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "We raden aan om GPT-assistenten of RAG te gebruiken in plaats van fijn afstemmen, aangezien fijn afstemmen veel goed geformatteerde gegevens vereist en GPT-assistenten gemakkelijker in te stellen zijn. U kunt nog steeds uw websitegegevens gebruiken om de bot te trainen."
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "Hoe RAG in deze plugin te gebruiken:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "Schakel RAG in vanuit het instellingenpaneel"
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "Klik op de knop “Alle geselecteerde bronnen insluiten”, nadat u de bronnen hebt geselecteerd van de"
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(Optioneel) Upload PDF- of CSV-bestanden voor insluiting"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "Het systeem slaat insluitingen automatisch op in de database"
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "Gebruikersvragen worden nu beantwoord met behulp van de kennisbasis van uw site"
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "U moet de OpenAI API-sleutel, AI-model en systeemopdracht configureren onder de hoofdinstellingen van OpenAI"
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "U kunt op elk moment inhoud bijwerken of opnieuw insluiten zonder opnieuw te trainen."
+
+msgid "Getting Started with gemini"
+msgstr "Aan de slag met Gemini"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "Gemini is een uniforme interface of aggregator voor LLM's. U kunt kiezen uit honderden verschillende AI-modellen van OpenAI tot Deepseek of Claude om AI-antwoorden te krijgen."
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "Alles wat u hoeft te doen is de Gemini API-sleutel toe te voegen en een Gemini-model te selecteren."
+
+msgid "Grab your API key from"
+msgstr "Pak uw API-sleutel van"
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "Zorg ervoor dat DialogFlow en OpenAI zijn uitgeschakeld als u wilt dat Gemini werkt."
+
+msgid "Failed in Security check"
+msgstr "Mislukt in beveiligingscontrole"
+
+msgid "Unauthorized user"
+msgstr "Niet-geautoriseerde gebruiker"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "Beveiligingscontrole mislukt. Niet-geautoriseerd verzoek."
+
+msgid "API Key is required"
+msgstr "API-sleutel is vereist"
+
+msgid "Security check failed"
+msgstr "Beveiligingscontrole mislukt"
+
+msgid "Unauthorized access"
+msgstr "Niet-geautoriseerde toegang"
+
+msgid "Settings updated successfully"
+msgstr "Instellingen succesvol bijgewerkt"
+
+msgid "View Detail"
+msgstr "Bekijk details"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI heeft enkele van de oudere modellen uitgeschakeld. Gebruik alstublieft GPT 3.5 of 4 om fijn af te stemmen. U moet de dataset bijwerken en opnieuw fijn afstemmen. Raadpleeg de helpsectie voor details."
+
+msgid "OpenAI settings"
+msgstr "OpenAI-instellingen"
+
+msgid "Training Model"
+msgstr "Trainingsmodel"
+
+msgid "GPT Assistant"
+msgstr "GPT-assistent"
+
+msgid "Fine Tune with Website Data"
+msgstr "Fijn afstemmen met websitegegevens"
+
+msgid "AI Image Generator"
+msgstr "AI-afbeeldinggenerator"
+
+msgid "AI Article Generator"
+msgstr "AI-artikelgenerator"
+
+msgid "GPT Assistant is available with the "
+msgstr "GPT-assistent is beschikbaar met de "
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro Professional"
+
+msgid " and "
+msgstr " en "
+
+msgid "Master"
+msgstr "Master"
+
+msgid " Licenses"
+msgstr " Licenties"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "Fijn afstemmen VS GPT-assistenten:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "We raden aan om GPT-assistenten te gebruiken in plaats van fijn afstemmen, aangezien fijn afstemmen veel goed geformatteerde gegevens vereist en GPT-assistenten gemakkelijker in te stellen zijn. U kunt nog steeds uw websitegegevens gebruiken om de bot te trainen."
+
+msgid "Setting up GPT Assistants:"
+msgstr "GPT-assistenten instellen:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "Ga naar het tabblad GPT-training met websitegegevens. Selecteer alle posttypes die u nodig heeft en druk op de knop Gegevens converteren voor assistent. Zodra dit is gedaan, downloadt u het gegevensbestand in JSON-indeling."
+
+msgid "Go to "
+msgstr "Ga naar "
+
+msgid "Assistants playground"
+msgstr "Speelplaats voor assistenten"
+
+msgid " and create a new Assistant"
+msgstr " en maak een nieuwe assistent"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "Upload het JSON-bestand dat u hebt gedownload en geef de GPT een instructie die vergelijkbaar is met de onderstaande, maar pas deze aan voor uw website-URL:"
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "Uw naam is Carry. U bent een chatbot-assistent voor de website "
+
+msgid "https://www.quantumcloud.net. "
+msgstr "https://www.quantumcloud.net."
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "Gebruik de websitegegevens en het geüploade bestand om vragen van onze websitegebruikers te beantwoorden."
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "Kopieer de ID van de assistent en plak deze onder het tabblad GPT-assistenten onder de OpenAI-instellingen op uw website. U bent klaar. Als u credits heeft gekocht van het OpenAI API-platform, zal het beginnen te werken."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "U kunt verschillende GPT-assistenten op verschillende pagina's gebruiken met chatbot-widgets. Plak deze voorbeeldshortcode en vervang de assistent-ID indien nodig: Bijv: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Please check this article for step by step guide."
+msgstr "Controleer dit artikel voor een stapsgewijze handleiding."
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "Aangepaste resultaten verkrijgen van de AI-diensten"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "De best mogelijke aangepaste resultaten die u kunt krijgen van AI-diensten is door de OpenAI GPT-assistent te gebruiken, die u in staat stelt documenten en uw websitegegevens (gegenereerd door onze Pro-versies) te uploaden. U kunt echter nog steeds aangepaste resultaten krijgen door een gedetailleerde prompt te schrijven. Onder de sectie Systeemopdracht in het OpenAI-instellingengebied (er is ook een promptsectie voor andere AI-diensten) kunt u een gedetailleerde prompt schrijven die details bevat over uw diensten, producten, hoe u contact met u kunt opnemen, of iets anders dat relevant is om aangepaste resultaten te krijgen. Tot 3000 woorden is prima. Dit zou voldoende moeten zijn voor de meeste kleine tot middelgrote websites."
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "Controleer dit artikel"
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "voor meer details over hoe u aangepaste resultaten van OpenAI kunt krijgen."
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "Upgrade naar WoowbotPro Professional of de Master-licentie om GPT-assistent te gebruiken."
+
+msgid "Getting Started with OpenAI"
+msgstr "Aan de slag met OpenAI"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI heeft onlangs hun API-betalingsbeleid gewijzigd. U moet "
+
+msgid "pre-purchase API credits"
+msgstr "API-credits vooraf kopen"
+
+msgid " now. Go to "
+msgstr " nu. Ga naar "
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/"
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "en voeg credits toe aan uw API-account. Verhoog vervolgens de gebruikslimiet."
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "Zodra u de OpenAI API-sleutel toevoegt, zou deze al moeten beginnen te werken voor algemene vragen. Open een nieuw browservenster in incognitomodus en test door te vragen: \"Wat is de hoofdstad van Rusland?\""
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "Zorg ervoor dat DialogFlow is uitgeschakeld als u wilt dat OpenAI werkt."
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "Fijn afstemmen VS GPT-assistenten VS RAG"
+
+msgid "GPT Assistants:"
+msgstr "GPT-assistenten:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "Hoe een OpenAI API-sleutel te krijgen"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "De OpenAI API gebruikt API-sleutels voor authenticatie. Bezoek uw API-sleutels-pagina om de API-sleutel op te halen die u in uw verzoeken zult gebruiken. Vergeet niet dat uw API-sleutel een geheim is! Deel het niet met anderen of stel het bloot in client-side code (browsers, apps). Productieverzoeken moeten via uw eigen backend-server worden geleid waar uw API-sleutel veilig kan worden geladen vanuit een omgevingsvariabele of sleutelbeheerdienst."
+
+msgid "You can generate the API key from here: "
+msgstr "U kunt de API-sleutel hier genereren: "
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys."
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "Training of fijn afstemmen van OpenAI"
+
+msgid "To train OpenAI"
+msgstr "Om OpenAI te trainen"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr "a. Om een model te trainen of fijn af te stemmen, moet u eerst:"
+
+msgid "Gather the necessary data you want to train with"
+msgstr "De benodigde gegevens verzamelen die u wilt gebruiken voor training"
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "De gegevens correct formatteren volgens de vereisten van de OpenAI API (download voorbeeldgegevensformaat om te zien hoe het werkt). Een dataset moet minimaal 500 rijen hebben om nuttige resultaten te bieden. Volgens de documentatie van OpenAI worden 3.000 en 5.000 rijen aanbevolen."
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "Upload de gegevens naar OpenAI in .JSONL-indeling"
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "Train een bestaand OpenAI-model (selecteer vanaf de pagina Bot OpenAI-instellingen) met uw gegevens"
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr "b. Zodra u uw JSONL-bestand klaar heeft, gaat u naar de sectie Trainingsmodel. Upload uw trainingsbestand in .JSONL-indeling."
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "c. Zodra u uw trainingsbestand uploadt, retourneert het een bestand-ID en de training begint zodra u op de knop FT-model maken klikt. Stel een suffix in (om het model later zelf te herkennen) en het basismodel in de pop-up en maak aan."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Zodra de training is voltooid en het bestand klaar is, retourneert het het fijn afgestemde model. Het wordt vermeld onder de lijst met fijn afgestemde modellen, de status wordt weergegeven als \"Geslaagd\" en u krijgt ook een FT (fijn afgestemde) model-ID (om naar de instellingenpagina te kopiëren)."
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "e. U kunt meerdere fijn afgestemde modellen maken volgens de bovenstaande procedure. Kopieer de fijn afgestemde model-ID die u wilt gebruiken."
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "f. Ga naar de hoofdpagina van de Bot OpenAI-instellingen en plak de fijn afgestemde model-ID in het veld Aangepast fijn afgestemd model en sla op. Nu zal de bot beginnen te reageren op basis van de trainingsgegevens."
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "h. Om uw gegevensmodel voor GPT3.5/4 voor te bereiden:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "U moet eerst een jsonl-bestand maken zoals het onderstaande formaat"
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "Elke prompt en voltooiing moet op één regel staan"
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "Fijn afstemmen bestandformaat met GPT 3.5/4"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"U bent een assistent die af en toe woorden verkeerd spelt\" },{ \"role\": \"user\", \"content\": \"Vertel me een verhaal.\" }, { \"role\": \"assistant\", \"content\": \"Op een dag ging een student naar school.\" }]}"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "Klik met de rechtermuisknop en sla het voorbeeld jsonl-bestand op voor fijn afstemmen met GPT 3.5/4"
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "Om OpenAI in te sluiten"
+
+msgid "Important points about fine tuning"
+msgstr "Belangrijke punten over fijn afstemmen"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Voor betere resultaten heeft u minimaal 500+ prompts nodig. Anders zal OpenAI het antwoord mengen met algemene kennis. Ook moeten de prompts zo beschrijvend mogelijk zijn. Volg het FAQ-type formaat met beschrijvende vragen en antwoorden. Voorbeeldprompt: In plaats van alleen \"Vintage Denim Jacket\" kunt u schrijven \"Waarom zou iemand onze Vintage Denim Jacket moeten dragen?\"."
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "Als uw voltooiing kort is zoals hieronder of rond de 100 woorden, houd de Max Tokens-waarde op 200. Pas de instellingen voor Temperatuur, Aanwezigheidsboete en Frequentieboete aan totdat u resultaten krijgt die u leuk vindt."
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "Als u fijn afstemt met websitegegevens, zal de bot de posttitels als prompts gebruiken. Als de titels van pagina's/posts niet beschrijvend zijn, krijgt u mogelijk geen goede resultaten. In dat geval kunt u het JSONL-bestand van de pagina Trainingsmodel downloaden en de prompts verbeteren. Fijn afstemmen opnieuw."
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "Houd de sitezoekfunctie uitgeschakeld in Instellingen-&gt;Startmenu, zodat de bot geen antwoorden uit de sitezoekfunctie haalt. Log alstublieft uit en weer in, zodat onze instellingen niet worden overschreven."
+
+msgid "How to Optimize Fine Tuning"
+msgstr "Hoe Fine Tuning te Optimaliseren"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "Volg de volgende stappen voor betere resultaten bij fine-tuning:"
+
+msgid "Set a lower value for Temperature"
+msgstr "Stel een lagere waarde in voor Temperatuur"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "Gebruik een hogere waarde voor de Aanwezigheidsboete en Frequentieboete."
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "Gebruik indien mogelijk het Curie-model als uw basismodel bij het maken van het aangepaste model."
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "Gebruik max token afhankelijk van uw prompt en voltooiingen. Als u een hogere waarde voor max token gebruikt, zal de AI meer informatie genereren die irrelevant kan zijn voor uw context. Hetzelfde geldt voor de lagere max token. Als u een te lage waarde voor max token kiest, wordt uw data ingekort of krijgt u fouten."
+
+msgid "Presence Penalty"
+msgstr "Aanwezigheidsboete"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "Nummer tussen -2.0 en 2.0. Positieve waarden straffen nieuwe tokens op basis van of ze tot nu toe in de tekst zijn verschenen, waardoor de kans van het model om over nieuwe onderwerpen te praten toeneemt."
+
+msgid "Frequency Penalty"
+msgstr "Frequentieboete"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "Nummer tussen -2.0 en 2.0. Positieve waarden straffen nieuwe tokens op basis van hun bestaande frequentie in de tekst tot nu toe, waardoor de kans van het model om dezelfde zin letterlijk te herhalen afneemt."
+
+msgid "Temperature"
+msgstr "Temperatuur"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "Een van de belangrijkste instellingen heet temperatuur. Wanneer de temperatuur boven 0 is, resulteert het indienen van dezelfde prompt elke keer in verschillende voltooiingen. Vergeet niet dat het model voorspelt welke tekst het meest waarschijnlijk volgt op de tekst die eraan voorafgaat. Temperatuur is een waarde tussen 0 en 1 die u in wezen laat bepalen hoe zeker het model moet zijn bij het maken van deze voorspellingen. Het verlagen van de temperatuur betekent dat het minder risico's zal nemen, en de voltooiingen zullen nauwkeuriger en deterministisch zijn. Het verhogen van de temperatuur resulteert in meer diverse voltooiingen."
+
+msgid "My OpenAI does not work"
+msgstr "Mijn OpenAI werkt niet"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "Controleer alstublieft uw instellingen (d.w.z.: API-sleutels, Max token, enz.). Afhankelijk van het gebruikte model (GPT3 had maximaal 4000) kunnen verzoeken tot 4097 tokens gebruiken die gedeeld worden tussen prompt en voltooiing. Als uw prompt 4000 tokens is, kan uw voltooiing maximaal 97 tokens zijn. Controleer ook of de dialogflow inactief is. Dialogflow en OpenAI werken niet samen."
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "U kunt meerdere fijn afgestelde modellen maken op basis van uw berichttypen en pagina's. U kunt uw trainingsgegevens downloaden als een JSONL-bestand om te bewerken en deze vervolgens uploaden in hetzelfde proces als andere bestanden (zie hierboven voor instructies). U kunt het ook uploaden door op de knop `Uploaden als FT-model` te klikken. Vervolgens kunt u een fijn afgesteld model maken vanuit het tabblad Trainingsmodel."
+
+msgid "Fine tuning and training is available with the "
+msgstr "Fine tuning en training zijn beschikbaar met de "
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro Professional"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "Het vereist een betaald OpenAI API-plan"
+
+msgid "Enable OpenAI"
+msgstr "Schakel OpenAI in"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(als u alleen resultaten van OpenAI wilt, wordt de standaard productzoekfunctie uitgeschakeld)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "Streaming inschakelen (stream AI-antwoorden in realtime terwijl ze worden gegenereerd)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "OpenAI Productkaarten inschakelen"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(Toon relevante productkaarten binnen AI-antwoorden om de verkoop te verhogen.)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "Schakel WordPress-pagina-aanbevelingen in met GPT-resultaten (de links worden voorgesteld door WordPress en niet door AI)"
+
+msgid "Api key"
+msgstr "API-sleutel"
+
+msgid "OpenAI Model"
+msgstr "OpenAI-model"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-Mini"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-Nano"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-Mini"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-Nano"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-Mini"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 turbo"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "Systeemopdracht (Gebruik het om ChatGPT instructies te geven over hoe te gedragen). U kunt hier een gedetailleerde prompt schrijven die details over uw diensten, producten en hoe u contact met u kunt opnemen of iets relevants om te krijgen bevat."
+
+msgid "Customized Results"
+msgstr "Aangepaste resultaten"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". Tot 3000 woorden is prima."
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "U bent een behulpzame assistent. Wees beknopt en relevant in uw antwoorden en introduceer geen nieuw onderwerp."
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "Om de toon en het karakter van de ChatBot in te stellen, stelt u een systeembericht in volgens uw behoefte."
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Voorbeeld: U bent een behulpzame assistent. Wees beknopt en relevant in uw antwoorden en introduceer geen nieuw onderwerp."
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "Prompt die aan het einde van de gebruikersquery moet worden toegevoegd (optioneel)"
+
+msgid "Content for the response"
+msgstr "Inhoud voor het antwoord"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "Gevarenzone (u ontvangt mogelijk geen antwoorden van AI als de zoekwoorden niet goed zijn ingesteld. Verwijder zoekwoorden als u problemen ondervindt)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "Verbind alleen met OpenAI wanneer de gebruikersquery een van de volgende door komma's gescheiden zoekwoorden bevat"
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "Verbind alleen met OpenAI wanneer de gebruikersquery GEEN van de volgende door komma's gescheiden zoekwoorden bevat"
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "Vraag OpenAI om te antwoorden wanneer de vraag relevant is voor de bovenstaande zoekwoorden (het inschakelen van deze optie zal de nauwkeurigheid verbeteren, maar het zal OpenAI-tokens gebruiken)"
+
+msgid "Check Connection  "
+msgstr "Controleer verbinding"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "Sla eerst de instellingen op en druk vervolgens op de knop Controleer verbinding"
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**Als OpenAI niet reageert en de bot gewoon aan het laden is, heeft u waarschijnlijk uw OpenAI-gebruikslimiet bereikt. Koop vooraf credits om de OpenAI API te gebruiken en verhoog de gebruikslimiet. U kunt credits aan uw API-account toevoegen door de "
+
+msgid "billing page."
+msgstr "factureringspagina."
+
+msgid "How to reduce cost "
+msgstr "Hoe kosten te verlagen"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "en geld te besparen op de kosten van de OpenAI API voor uw ChatBot."
+
+msgid "success"
+msgstr "succes"
+
+msgid "error"
+msgstr "fout"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "RAG kan niet worden ingeschakeld zonder een API-sleutel."
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "Schakel RAG in de instellingen in om RAG-gerelateerde opties op te slaan."
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "OpenAI API-sleutel is leeg. Sla alstublieft eerst uw API-sleutel op."
+
+msgid "Congrats! You are connected to AI."
+msgstr "Gefeliciteerd! U bent verbonden met AI."
+
+msgid "Success"
+msgstr "Succes"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "Verbinding met OpenAI mislukt. Controleer uw API-sleutel en instellingen."
+
+msgid "Invalid product ID"
+msgstr "Ongeldig product-ID"
+
+msgid "Product not found"
+msgstr "Product niet gevonden"
+
+msgid "Insufficient permissions"
+msgstr "Onvoldoende machtigingen"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "AI-configuratie succesvol opgeslagen."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Plan de cron-taak voor elke rol als deze nog niet is gepland);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule evenement om de gebruikte limiet te resetten\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Zorg ervoor dat de cron-functies van WordPress beschikbaar zijn\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "Limiet overschreden. Probeer het later opnieuw."
+
+msgid "More WordPress Goodies for You!"
+msgstr "Meer WordPress-lekkernijen voor jou!"
+
+msgid "Support"
+msgstr "Ondersteuning"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "Bekijk enkele van onze andere werken die uw website beter kunnen maken"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "Al onze Pro Versie-gebruikers krijgen Premium, gegarandeerde snelle, één-op-één prioriteitsondersteuning."
+
+msgid "Get Priority Support "
+msgstr "Krijg prioriteitsondersteuning"
+
+msgid "Online KnowledgeBase"
+msgstr "Online Kennisbank"
+
+msgid "Get Support for Free Version"
+msgstr "Krijg ondersteuning voor de gratis versie"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Probleem bij het verwerken van uw formulierindieningsverzoek! Onze excuses voor het ongemak.<br> Stuur een e-mail naar <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> met feedback. We nemen zo snel mogelijk contact met u op!"
+
+msgid "Please fill up all the requried form fields."
+msgstr "Vul alstublieft alle vereiste formulier velden in."
+
+msgid "Invalid email address."
+msgstr "Ongeldig e-mailadres."
+
+msgid "Support Request Details:"
+msgstr "Ondersteuningsverzoekdetails:"
+
+msgid "Sent Via the Plugin"
+msgstr "Verzonden via de plugin"
+
+msgid "Mail sent from:"
+msgstr "E-mail verzonden van:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "E-mail gegenereerd op:"
+
+msgid "From Plugin Support Page:"
+msgstr "Van de plugin ondersteuningspagina:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "Uw e-mail is succesvol verzonden. Bedankt!"
+
+msgid "By %s"
+msgstr "Door %s"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "Installeer %s nu"
+
+msgid "Install Now"
+msgstr "Nu installeren"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "Kan niet installeren"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "Update %s nu"
+
+msgid "Update Now"
+msgstr "Nu updaten"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "Kan niet updaten"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "Actief"
+
+msgid "Activate"
+msgstr "Activeren"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "Activeer %s"
+
+msgid "Network Activate"
+msgstr "Netwerk activeren"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "Netwerk activeer %s"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+msgid "More Details"
+msgstr "Meer details"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Deze plugin werkt niet met jouw versies van WordPress en PHP."
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Werk WordPress bij</a>, en <a href=\"%2$s\">leer meer over het bijwerken van PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Werk WordPress bij</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Leer meer over het bijwerken van PHP</a>."
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "Deze plugin werkt niet met jouw versie van WordPress."
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "Deze plugin werkt niet met jouw versie van PHP."
+
+msgid "Live Preview"
+msgstr "Live Voorbeeld"
+
+msgid "Update To Pro"
+msgstr "Upgrade naar Pro"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "Aan de slag met WoowBot is onmiddellijk. Alles wat je hoeft te doen is de plugin installeren en activeren."
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "Je kunt je eigen ChatBot-pictogram uploaden vanuit het WoowBot-paneel -&gt; Sectie Iconen."
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "Je kunt ook een aangepast Agent-pictogram uploaden in de pro-versie."
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "In de lite-versie zijn er een paar taalinstellingen die je kunt aanpassen aan jouw behoeften. De standaardtalen zijn prima voor winkels die de Engelse taal gebruiken. Maar je kunt de botreacties letterlijk in elke taal veranderen!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "Gebruik het aangepaste CSS-paneel als je enkele kleuren of lettertype-instellingen binnen WoowBot wilt aanpassen."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "Krijg de #1 ChatBot voor WooCommerce – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "Krijg geavanceerde AI-functies, klantretargeting en meer met WoowBot Pro"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "Krijg nu de WoowBot Pro!"
+
+msgid "Crafted By:"
+msgstr "Gemaakt door:"
+
+msgid "Web Design Company"
+msgstr "Webdesignbedrijf"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "WoowBot Controlepaneel"
+
+msgid "WoowBot Panel"
+msgstr "WoowBot Paneel"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "OR"
+msgstr "OF"
+
+msgid " Get the Professional Version Now!"
+msgstr "Krijg nu de Professionele Versie!"
+
+msgid "General settings"
+msgstr "Algemene instellingen"
+
+msgid "WoowBot ICONS"
+msgstr "WoowBot ICONEN"
+
+msgid "Language Center"
+msgstr "Taalcentrum"
+
+msgid "Custom CSS"
+msgstr "Aangepaste CSS"
+
+msgid "Emails Will be Sent to"
+msgstr "E-mails worden verzonden naar"
+
+msgid "From Email Address"
+msgstr "Van E-mailadres"
+
+msgid "Disable WoowBot"
+msgstr "Schakel WoowBot uit"
+
+msgid "Disable WoowBot to Load"
+msgstr "Schakel WoowBot uit om te laden"
+
+msgid "Enable Product details from AI"
+msgstr "Schakel productdetails van AI in"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "Schakel WooWBot uit op mobiele apparaten"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "Schakel WoowBot uit om te laden op mobiele apparaten"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "Overschrijf de positie van het WoowBot-pictogram"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "Van rechts in px"
+
+msgid "From Bottom In px"
+msgstr "Van onder in px"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "Aantal producten dat moet worden weergegeven in zoekresultaten. ('-1' voor alle producten)."
+
+msgid "Page controller"
+msgstr "Pagina-controller"
+
+msgid "Show on Home Page"
+msgstr "Toon op de startpagina"
+
+msgid "YES"
+msgstr "JA"
+
+msgid "NO"
+msgstr "NEE"
+
+msgid "Show on blog posts"
+msgstr "Toon op blogberichten"
+
+msgid "Show on  pages"
+msgstr "Toon op pagina's"
+
+msgid "All Pages"
+msgstr "Alle pagina's"
+
+msgid "Selected Pages Only "
+msgstr "Alleen geselecteerde pagina's"
+
+msgid "Exclude from Custom Post"
+msgstr "Uitsluiten van aangepaste berichten"
+
+msgid "Icon - 0"
+msgstr "Pictogram - 0"
+
+msgid "Icon - 1"
+msgstr "Pictogram - 1"
+
+msgid "Icon - 2"
+msgstr "Pictogram - 2"
+
+msgid "Icon - 3"
+msgstr "Pictogram - 3"
+
+msgid "Icon - 4"
+msgstr "Pictogram - 4"
+
+msgid "Icon - 5"
+msgstr "Pictogram - 5"
+
+msgid "Icon - 6"
+msgstr "Pictogram - 6"
+
+msgid "Icon - 7"
+msgstr "Pictogram - 7"
+
+msgid "Icon -9"
+msgstr "Pictogram - 9"
+
+msgid "Icon - 10"
+msgstr "Pictogram - 10"
+
+msgid "Icon - 11"
+msgstr "Pictogram - 11"
+
+msgid "Icon - 12"
+msgstr "Pictogram - 12"
+
+msgid "Icon - 13"
+msgstr "Pictogram - 13"
+
+msgid "Icon - 14"
+msgstr "Pictogram - 14"
+
+msgid "Custom Icon"
+msgstr "Aangepast pictogram"
+
+msgid "Upload custom Floating Icon"
+msgstr "Upload aangepast drijvend pictogram"
+
+msgid "Upload Custom Icon"
+msgstr "Upload aangepast pictogram"
+
+msgid " Woobot Agent Image"
+msgstr "Woobot Agent Afbeelding"
+
+msgid "Default Agent"
+msgstr "Standaard Agent"
+
+msgid "Custom Agent"
+msgstr "Aangepaste Agent"
+
+msgid "Custom Agent Icon"
+msgstr "Aangepast Agent-pictogram"
+
+msgid "Upload Agent Icon"
+msgstr "Upload Agent-pictogram"
+
+msgid "Custom Backgroud"
+msgstr "Achtergrond aanpassen"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "Verander de achtergrondafbeelding van het berichtenbord (behalve mini-modus)."
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "Upload achtergrond voor het berichtenbord (ideale afbeeldingsgrootte 350px X 550px)."
+
+msgid "Upload  background."
+msgstr "Upload achtergrond."
+
+msgid "Custom message board background"
+msgstr "Aangepaste achtergrond voor het berichtenbord"
+
+msgid "Message setting for"
+msgstr "Berichtinstelling voor"
+
+msgid "Identity"
+msgstr "Identiteit"
+
+msgid "Your Company or Website Name"
+msgstr "Jouw bedrijf of website naam"
+
+msgid "Agent name"
+msgstr "Agent naam"
+
+msgid "has joined the conversation"
+msgstr "is bij het gesprek gekomen"
+
+msgid "Greetings"
+msgstr "Groeten"
+
+msgid "Welcome to "
+msgstr "Welkom bij "
+
+msgid "Hi There! May I know your name?"
+msgstr "Hallo! Mag ik jouw naam weten?"
+
+msgid "I am "
+msgstr "Ik ben "
+
+msgid "Nice to meet you"
+msgstr "Leuk je te ontmoeten"
+
+msgid "Message settings for"
+msgstr "Berichtinstellingen voor"
+
+msgid "Editor Box"
+msgstr "Editor Box"
+
+msgid "is typing..."
+msgstr "is aan het typen..."
+
+msgid "Send a message"
+msgstr "Stuur een bericht"
+
+msgid "Products Search"
+msgstr "Producten zoeken"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "Ik ben hier om het product te vinden dat je nodig hebt. Waar ben je naar op zoek?"
+
+msgid "if products found"
+msgstr "als producten gevonden zijn"
+
+msgid "If no matching products is found"
+msgstr "Als er geen overeenkomende producten zijn gevonden"
+
+msgid "Can you be more specific?"
+msgstr "Kun je specifieker zijn?"
+
+msgid "Product Search"
+msgstr "Product zoeken"
+
+msgid "Catalog"
+msgstr "Catalogus"
+
+msgid "Send Us Email"
+msgstr "Stuur ons een e-mail"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "Je kunt onze uitgebreide catalogus doorbladeren. Kies gewoon een categorie hieronder"
+
+msgid "Too many choices? Let's try another search term"
+msgstr "Te veel keuzes? Laten we een andere zoekterm proberen"
+
+msgid "Email has been sent successfully"
+msgstr "E-mail is succesvol verzonden"
+
+msgid "Please provide your email address"
+msgstr "Geef je e-mailadres op"
+
+msgid "Please write you message"
+msgstr "Schrijf je bericht"
+
+msgid "You can paste or write your custom css here."
+msgstr "Je kunt hier je aangepaste css plakken of schrijven."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "Krijg de #1 ChatBot voor WooCommerce – WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro is een WooCommerce Shopping ChatBot die kan helpen je winkelverkoop merkbaar te verhogen. Klanten kunnen vloeiend met de Bot converseren – dankzij de integratie met Google‘s Dialogflow, producten zoeken en direct vanuit de chatinterface aan het winkelwagentje toevoegen, ondersteuning krijgen en meer!"
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "De Onsite Retargeting helpt je conversieratio-optimalisatie door speciale aanbiedingen en coupons te tonen bij Exit Intent, tijdsinterval of pagina scroll-down. Volg klantconversies met statistieken om erachter te komen of klanten hun winkelwagentjes verlaten. Krijg meer verkopen!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "Krijg nu de WoowBot Pro en verhoog de verkopen!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "Meertalige Addon (**nieuw)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "Voeg ondersteuning voor meerdere talen toe voor je ChatBot. Gebruikers kunnen de taal op elk moment wijzigen via het dropdownmenu. Beheerders kunnen de standaardtaal selecteren. Ondersteunt alle belangrijke talen. Verbind met verschillende Dialogflow-agenten voor verschillende talen"
+
+msgid "Voice Message AddOn (**new)"
+msgstr "Stembericht AddOn (**nieuw)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "Laat je klanten een stembericht opnemen vanuit de ChatBot-interface. Stemberichten worden in de backend opgeslagen om op elk moment te beluisteren. Ondersteunt spraak naar tekst met behulp van de Google API. Compatibel met alle moderne browsers. Mooie moderne gebruikersinterface"
+
+msgid "Extended UI Addon"
+msgstr "Uitgebreide UI Addon"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "Geef je geliefde ChatBot een facelift. Kies uit 2 extra moderne, stijlvolle en behoorlijk fancy sjablonen! Deze nieuwe sjablonen zullen je websitebezoekers zeker verbazen! Nieuwe laadeffecten en uitgebreide kleur aanpassingsopties zijn beschikbaar!"
+
+msgid "Simple Text Responses Pro"
+msgstr "Eenvoudige Tekstreacties Pro"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "Maak eenvoudig tekstgebaseerde reacties voor je klantvragen met de CSV export/import functie. STR Pro ondersteunt categorieën voor eenvoudige tekstreacties voor de backend en frontend. HTML visuele editor om je ChatBot-antwoorden te formatteren en stopwoorden te verwijderen voor betere zoekmatching."
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "Onderhandelings ChatBot voor WoowBot"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "Doe nu je aanbod met de Onderhandelings ChatBot. Win meer klanten met slimme prijsnegotiaties. Laat je klanten een aanbod doen op je prijs. Onderhandel over een minimumprijs die door jou per product is ingesteld. Vang klanten terwijl ze een hoge koopintentie hebben. De knop 'Doe je aanbod' wordt alleen weergegeven op de productpagina die je voor de minimumprijs hebt ingesteld."
+
+msgid "Conversational Form Builder"
+msgstr "Conversational Form Builder"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "Creëer voorwaardelijke gesprekken en formulieren voor een native WordPress ChatBot-ervaring. Bouw Standaardformulieren, Dynamische formulieren met voorwaardelijke velden, Rekenkundige tools, Afspraakboekingen, enz. Wordt geleverd met 7 kant-en-klare sjablonen. Slaat formuliergegevens op in de database, automatische reacties, voorwaardelijke velden, variabelen, opgeslagen revisies en meer!"
+
+msgid "Export Import Settings"
+msgstr "Instellingen Exporteren Importeren"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "Gebruik je WoowbotPro op meerdere websites? Dan kan deze handige kleine addon van pas komen. Deze addon stelt je in staat om je instellingen te exporteren en ze weer in een andere site te importeren of als back-up te bewaren. Zeer nuttig voor het overdragen van de instellingen van het Taalcentrum, wat een handvol kan zijn met veel opties. Pak het nu!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "Messenger ChatBot Addon"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "Gebruik de Woowbot op je website als een hub om klantvragen op FB-pagina en Messenger te beantwoorden"
+
+msgid "Extended Search"
+msgstr "Uitgebreide Zoekfunctie"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "Verleng de zoekkracht van WPBot om bijna elk aangepast berichttype, inclusief WooCommerce, op te nemen"
+
+msgid "ChatBot Session Save Addon"
+msgstr "ChatBot Sessie Opslaan Addon"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "Deze AddOn slaat de chat sessies van de gebruiker op en helpt je de bot te verfijnen voor betere ondersteuning en prestaties."
+
+msgid "LiveChat Addon"
+msgstr "LiveChat Addon"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "Live menselijke chat geïntegreerd met WPBot"
+
+msgid "White Label WPBot"
+msgstr "White Label WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "Vervang het QuantumCloud-logo en de branding door die van jou. Geschikt voor ontwikkelaars en bureaus die geïnteresseerd zijn in het aanbieden van ChatBot-diensten voor hun klanten."
+
+msgid "Mailing List Integration AddOn"
+msgstr "Mailinglijst Integratie AddOn"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "Mailinglijstintegratie is de ChatBot-addon die je in staat stelt verbinding te maken met je Mailchimp- en Zapier-accounts. Je kunt nieuwe abonnees aan je Mailchimp-lijsten toevoegen vanuit de ChatBot en ze afmelden. Je kunt ook een nieuwe Zap op je Zapier-account maken en verbinding maken met deze addon."
+
+msgid "WoowBot Master Theme"
+msgstr "WoowBot Master Thema"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "Krijg een WoowBot Powered Thema!"
+
+msgid "Save Settings"
+msgstr "Instellingen Opslaan"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**Pro Tip: Wil je WoowBot echt intelligent maken met"
+
+msgid "AI and Natural Language Processing?"
+msgstr "AI en natuurlijke taalverwerking?"
+
+msgid "Upgrade to the Pro version"
+msgstr "Upgrade naar de Pro-versie"
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**Pro Tip: WoowBot Pro is geïntegreerd met"
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT en DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**Pro Tip: "
+
+msgid "Use ChatGPT to"
+msgstr "Gebruik ChatGPT om"
+
+msgid "answer  questions and provide real customer support"
+msgstr "vragen te beantwoorden en echte klantenondersteuning te bieden"
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**Pro Tip: Voltooien je klanten geen bestellingen? Ontdek het met de"
+
+msgid "Customer Conversion report"
+msgstr "Klantconversierapport"
+
+msgid "in the Pro version"
+msgstr "in de Pro-versie"
+
+msgid "**Pro Tip:"
+msgstr "**Pro Tip:"
+
+msgid "Use WoowBot Pro to"
+msgstr "Gebruik WoowBot Pro om"
+
+msgid "provide live chat suport to your customers!"
+msgstr "live chat ondersteuning te bieden aan je klanten!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**Pro Tip: Maak gebruik van Onsite Retargeting voor"
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "Exit Intent of Scroll down Popups"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "met WoowBot Pro. Verhoog de verkopen met 50% of meer!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**Pro Tip: Het instellen van WoowBot Pro is eenvoudig en snel!"
+
+msgid "Plug and Play"
+msgstr "Plug and Play"
+
+msgid "No complex bot training required!"
+msgstr "Geen complexe bottraining vereist!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**Pro Tip: WoowBot Pro integreert met"
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "en meer om je klanten de ondersteuning te geven die ze verdienen. Verhoog de klanttevredenheid!"

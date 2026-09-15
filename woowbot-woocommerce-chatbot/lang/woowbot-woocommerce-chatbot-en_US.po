@@ -1,0 +1,2037 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-14 11:10+0000\n"
+"PO-Revision-Date: 2026-09-14 11:10+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: English (US) (English (United States))\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+
+msgid "Sorry to see you go"
+msgstr "Sorry to see you go"
+
+msgid "Found a Bug"
+msgstr "Found a Bug"
+
+msgid "Need More Features"
+msgstr "Need More Features"
+
+msgid "Deactivating Temporarily"
+msgstr "Deactivating Temporarily"
+
+msgid "Upgrading to Pro"
+msgstr "Upgrading to Pro"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "Please provide email so we can contact with bug fixes"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "Please provide some details so we can improve the plugin"
+
+msgid "Submitting form"
+msgstr "Submitting form"
+
+msgid "Expand chat window"
+msgstr "Expand chat window"
+
+msgid "Conversations with"
+msgstr "Conversations with"
+
+msgid "Close chat window"
+msgstr "Close chat window"
+
+msgid "Send a message."
+msgstr "Send a message."
+
+msgid "Support Request Details"
+msgstr "Support Request Details"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Subject"
+msgstr "Subject"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "User Agent"
+msgstr "User Agent"
+
+msgid "IP Address"
+msgstr "IP Address"
+
+msgid "Mail Generated on"
+msgstr "Mail Generated on"
+
+msgid "Click for Product Details"
+msgstr "Click for Product Details"
+
+msgid "AI Settings"
+msgstr "AI Settings"
+
+msgid "selected"
+msgstr "selected"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "Gemini"
+
+msgid "Grok"
+msgstr "Grok"
+
+msgid "Knowledge Base (RAG)"
+msgstr "Knowledge Base (RAG)"
+
+msgid "AI Wizard"
+msgstr "AI Wizard"
+
+msgid "Common AI Settings"
+msgstr "Common AI Settings"
+
+msgid "Rate Limit"
+msgstr "Rate Limit"
+
+msgid "Other Common Settings"
+msgstr "Other Common Settings"
+
+msgid "Enable Rate Limiting"
+msgstr "Enable Rate Limiting"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+
+msgid "Set the rate limit for each user role:"
+msgstr "Set the rate limit for each user role:"
+
+msgid "Rate limit for %s"
+msgstr "Rate limit for %s"
+
+msgid "Timeframe:"
+msgstr "Timeframe:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "48 Hours"
+msgstr "48 Hours"
+
+msgid "24 Hours"
+msgstr "24 Hours"
+
+msgid "12 Hours"
+msgstr "12 Hours"
+
+msgid "6 Hours"
+msgstr "6 Hours"
+
+msgid "Rate limit for Guest Users"
+msgstr "Rate limit for Guest Users"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "Please connect to an AI service like OpenAI or Gemini before embedding."
+
+msgid "Check this Tutorial for more details."
+msgstr "Check this Tutorial for more details."
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+
+msgid "AI Try-On Configurations"
+msgstr "AI Try-On Configurations"
+
+msgid "General Settings"
+msgstr "General Settings"
+
+msgid "Prompts"
+msgstr "Prompts"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "Configure all your AI Try-On settings in one place."
+
+msgid "Enable Try-On Button"
+msgstr "Enable Try-On Button"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Show the \"Try On with AI\" button on single product pages"
+
+msgid "Require Login"
+msgstr "Require Login"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "Show the Try-On feature for logged-in users only"
+
+msgid "Show Add to Cart Button"
+msgstr "Show Add to Cart Button"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Show the 'Add to Cart' button in the Try-On modal footer"
+
+msgid "Daily Generation Limit"
+msgstr "Daily Generation Limit"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "e.g. 5 (Leave blank for unlimited)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+
+msgid "Try-On Button Position"
+msgstr "Try-On Button Position"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Inside Product Summary"
+msgstr "Inside Product Summary"
+
+msgid "Before Cart"
+msgstr "Before Cart"
+
+msgid "Above Add to Cart Form"
+msgstr "Above Add to Cart Form"
+
+msgid "After Cart"
+msgstr "After Cart"
+
+msgid "Below Add to Cart Form"
+msgstr "Below Add to Cart Form"
+
+msgid "Before Meta"
+msgstr "Before Meta"
+
+msgid "Above Categories/Tags"
+msgstr "Above Categories/Tags"
+
+msgid "After Meta"
+msgstr "After Meta"
+
+msgid "Below Categories/Tags"
+msgstr "Below Categories/Tags"
+
+msgid "Below Summary"
+msgstr "Below Summary"
+
+msgid "At bottom of product details"
+msgstr "At bottom of product details"
+
+msgid "Above Summary"
+msgstr "Above Summary"
+
+msgid "At very top of product details"
+msgstr "At very top of product details"
+
+msgid "Try-On Button Icon"
+msgstr "Try-On Button Icon"
+
+msgid "Sparkles"
+msgstr "Sparkles"
+
+msgid "Magic Wand"
+msgstr "Magic Wand"
+
+msgid "Shirt"
+msgstr "Shirt"
+
+msgid "No Icon"
+msgstr "No Icon"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "Select an emoji icon to display before the button text."
+
+msgid "Try with your photo Button Text"
+msgstr "Try with your photo Button Text"
+
+msgid "The text displayed on the frontend button."
+msgstr "The text displayed on the frontend button."
+
+msgid "Default Video Duration"
+msgstr "Default Video Duration"
+
+msgid "(Pro Feature)"
+msgstr "(Pro Feature)"
+
+msgid "4 Seconds"
+msgstr "4 Seconds"
+
+msgid "Standard generation"
+msgstr "Standard generation"
+
+msgid "8 Seconds"
+msgstr "8 Seconds"
+
+msgid "Extended generation"
+msgstr "Extended generation"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "Select the length of the generated video. (Available in Pro)"
+
+msgid "Video Resolution"
+msgstr "Video Resolution"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "Standard Definition"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "High Definition"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "Select the resolution for generated videos. (Available in Pro)"
+
+msgid "Image Size"
+msgstr "Image Size"
+
+msgid "1024x1024 (Square)"
+msgstr "1024x1024 (Square)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "DALL-E 2, DALL-E 3, Gemini"
+
+msgid "1024x1792 (Portrait)"
+msgstr "1024x1792 (Portrait)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "DALL-E 3, Gemini"
+
+msgid "1792x1024 (Landscape)"
+msgstr "1792x1024 (Landscape)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "Select the aspect ratio / size for AI generated images."
+
+msgid "Google Gemini Base Prompt"
+msgstr "Google Gemini Base Prompt"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+
+msgid "Reset to Default"
+msgstr "Reset to Default"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "Gemini Veo Video Base Prompt"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+
+msgid "OpenAI Base Prompt"
+msgstr "OpenAI Base Prompt"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+
+msgid "Final Prompt Structure Builder"
+msgstr "Final Prompt Structure Builder"
+
+msgid "Use placeholders:"
+msgstr "Use placeholders:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "to structure how the final combined prompt is sent."
+
+msgid "Quick Start Guide"
+msgstr "Quick Start Guide"
+
+msgid "Welcome to"
+msgstr "Welcome to"
+
+msgid "WooCommerce AI Try-On"
+msgstr "WooCommerce AI Try-On"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+
+msgid "Pro Tip:"
+msgstr "Pro Tip:"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+
+msgid "1. Customer Experience"
+msgstr "1. Customer Experience"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+
+msgid "2. The Generation Process"
+msgstr "2. The Generation Process"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+
+msgid "3. Image vs Video"
+msgstr "3. Image vs Video"
+
+msgid "Images:"
+msgstr "Images:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+
+msgid "Videos:"
+msgstr "Videos:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+
+msgid "API Keys & Configuration"
+msgstr "API Keys &amp; Configuration"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "Before the Try-On button will function, you must configure your AI providers."
+
+msgid "Important:"
+msgstr "Important:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+
+msgid "Getting a Google Gemini Key"
+msgstr "Getting a Google Gemini Key"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+
+msgid "Getting an OpenAI Key"
+msgstr "Getting an OpenAI Key"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+
+msgid "Need Support?"
+msgstr "Need Support?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+
+msgid "Contact Support &rarr;"
+msgstr "Contact Support &rarr;"
+
+msgid "Useful Links"
+msgstr "Useful Links"
+
+msgid "Google AI Studio"
+msgstr "Google AI Studio"
+
+msgid "OpenAI Developer Platform"
+msgstr "OpenAI Developer Platform"
+
+msgid "WooCommerce Docs"
+msgstr "WooCommerce Docs"
+
+msgid "Save Configurations"
+msgstr "Save Configurations"
+
+msgid "AI API Configuration"
+msgstr "AI API Configuration"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "Configure API keys, models, and generation settings."
+
+msgid "Image Generation AI Provider"
+msgstr "Image Generation AI Provider"
+
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgid "OpenAI Integration Settings"
+msgstr "OpenAI Integration Settings"
+
+msgid "OpenAI API Key"
+msgstr "OpenAI API Key"
+
+msgid "Test Connection"
+msgstr "Test Connection"
+
+msgid "OpenAI Image Model"
+msgstr "OpenAI Image Model"
+
+msgid "Verify"
+msgstr "Verify"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "Select the OpenAI model for image generation."
+
+msgid "Google Gemini Integration Settings"
+msgstr "Google Gemini Integration Settings"
+
+msgid "Powered by Veo for Video"
+msgstr "Powered by Veo for Video"
+
+msgid "Gemini API Key"
+msgstr "Gemini API Key"
+
+msgid "Gemini Image Model"
+msgstr "Gemini Image Model"
+
+msgid "Select the Gemini model for image generation."
+msgstr "Select the Gemini model for image generation."
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "Gemini Video Model (Google Veo)"
+
+msgid " ( Recommended )"
+msgstr " ( Recommended )"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "Select the Google Veo model for video try-on generation. (Available in Pro)"
+
+msgid "API Key is empty."
+msgstr "API Key is empty."
+
+msgid "Connection successful!"
+msgstr "Connection successful!"
+
+msgid "API Error: "
+msgstr "API Error: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "Connection failed (HTTP %1$s). Details: %2$s"
+
+msgid "API Error"
+msgstr "API Error"
+
+msgid "Missing API key or model."
+msgstr "Missing API key or model."
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "Generation failed. (HTTP %s)"
+
+msgid "Model verified successfully."
+msgstr "Model verified successfully."
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "Model verification failed. (HTTP %s)"
+
+msgid "Invalid provider."
+msgstr "Invalid provider."
+
+msgid "OpenAI API Request Failed: "
+msgstr "OpenAI API Request Failed: "
+
+msgid "Generation execution failure. %s"
+msgstr "Generation execution failure. %s"
+
+msgid "OpenAI Error: "
+msgstr "OpenAI Error: "
+
+msgid "Gemini API Request Failed: "
+msgstr "Gemini API Request Failed: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "Gemini generation stopped. Reason: "
+
+msgid "Unknown Gemini Error."
+msgstr "Unknown Gemini Error."
+
+msgid "Gemini API Error: "
+msgstr "Gemini API Error: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "You have reached your daily limit for AI generations. Please try again tomorrow."
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "API Configuration missing. Contact store administrator."
+
+msgid "No media data provided."
+msgstr "No media data provided."
+
+msgid "Invalid base64 data."
+msgstr "Invalid base64 data."
+
+msgid "Failed to decode base64."
+msgstr "Failed to decode base64."
+
+msgid "Saved to Media Library!"
+msgstr "Saved to Media Library!"
+
+msgid "Failed to save base64 media."
+msgstr "Failed to save base64 media."
+
+msgid "Failed to download media from URL."
+msgstr "Failed to download media from URL."
+
+msgid "Failed to save downloaded media."
+msgstr "Failed to save downloaded media."
+
+msgid "Invalid media format."
+msgstr "Invalid media format."
+
+msgid "Reset!"
+msgstr "Reset!"
+
+msgid "Please enter an API key first."
+msgstr "Please enter an API key first."
+
+msgid "Testing connection..."
+msgstr "Testing connection..."
+
+msgid "Error: "
+msgstr "Error: "
+
+msgid "Unknown error"
+msgstr "Unknown error"
+
+msgid "Request failed: "
+msgstr "Request failed: "
+
+msgid "Please select a model first."
+msgstr "Please select a model first."
+
+msgid "Verifying..."
+msgstr "Verifying..."
+
+msgid "Testing..."
+msgstr "Testing..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "Verified! Model accepts this modality."
+
+msgid "AJAX request failed."
+msgstr "AJAX request failed."
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "Recommended (Optimal speed &amp; pricing rate)"
+
+msgid "Processing..."
+msgstr "Processing..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "Generating Video (This may take up to 5 minutes)..."
+
+msgid "Status Check Error: "
+msgstr "Status Check Error: "
+
+msgid "Execution Error: "
+msgstr "Execution Error: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "An unexpected infrastructure communication failure occurred."
+
+msgid "No media available to download."
+msgstr "No media available to download."
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "Only images/videos can be saved to the Media Library."
+
+msgid "Saving..."
+msgstr "Saving..."
+
+msgid "Saved!"
+msgstr "Saved!"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Error saving media."
+msgstr "Error saving media."
+
+msgid "Network error."
+msgstr "Network error."
+
+msgid "Adding..."
+msgstr "Adding..."
+
+msgid "You must be logged in to use this feature."
+msgstr "You must be logged in to use this feature."
+
+msgid "AI Product Generation"
+msgstr "AI Product Generation"
+
+msgid "Original Image"
+msgstr "Original Image"
+
+msgid "Original Product"
+msgstr "Original Product"
+
+msgid "Upload Image"
+msgstr "Upload Image"
+
+msgid "Generate Image"
+msgstr "Generate Image"
+
+msgid "Background Preference"
+msgstr "Background Preference"
+
+msgid "Studio"
+msgstr "Studio"
+
+msgid "Outdoor"
+msgstr "Outdoor"
+
+msgid "Lifestyle"
+msgstr "Lifestyle"
+
+msgid "Output Style"
+msgstr "Output Style"
+
+msgid "Model Shoot"
+msgstr "Model Shoot"
+
+msgid "Flat Lay"
+msgstr "Flat Lay"
+
+msgid "Ghost Mannequin"
+msgstr "Ghost Mannequin"
+
+msgid "Prompt (Optional)"
+msgstr "Prompt (Optional)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "Add any specific instructions (optional)"
+
+msgid "Generate"
+msgstr "Generate"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "Generated Output"
+msgstr "Generated Output"
+
+msgid "Ready to generate"
+msgstr "Ready to generate"
+
+msgid "Generating Magic..."
+msgstr "Generating Magic..."
+
+msgid "Add to Cart"
+msgstr "Add to Cart"
+
+msgid "AI Analyst"
+msgstr "AI Analyst"
+
+msgid "AI Store Analyst"
+msgstr "AI Store Analyst"
+
+msgid "WooCommerce Intelligence"
+msgstr "WooCommerce Intelligence"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+
+msgid "Active AI Provider"
+msgstr "Active AI Provider"
+
+msgid "Ready to analyze your store"
+msgstr "Ready to analyze your store"
+
+msgid "Clear Conversation History"
+msgstr "Clear Conversation History"
+
+msgid "Reset Chat"
+msgstr "Reset Chat"
+
+msgid "Ask a question"
+msgstr "Ask a question"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "Ask about sales, best-selling products, customers, trends…"
+
+msgid "Send question"
+msgstr "Send question"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "Press Enter ↵ to send • Shift + Enter for new line"
+
+msgid "Store Insights"
+msgstr "Store Insights"
+
+msgid "AI Growth Recommendation"
+msgstr "AI Growth Recommendation"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "Analyzing recent store orders and performance…"
+
+msgid "Performance Overview"
+msgstr "Performance Overview"
+
+msgid "Last 30 Days"
+msgstr "Last 30 Days"
+
+msgid "Revenue Trend"
+msgstr "Revenue Trend"
+
+msgid "Top Products by Revenue"
+msgstr "Top Products by Revenue"
+
+msgid "The requested analysis is not available."
+msgstr "The requested analysis is not available."
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "Average order value is down %s%%. Test bundles using the products-bought-together report."
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "Please configure your OpenAI or Google Gemini API key in AI Try-On &amp; AI Settings."
+
+msgid "Google Gemini request failed."
+msgstr "Google Gemini request failed."
+
+msgid "OpenAI request failed."
+msgstr "OpenAI request failed."
+
+msgid "Which period performed best?"
+msgstr "Which period performed best?"
+
+msgid "Show the top products during the strongest period."
+msgstr "Show the top products during the strongest period."
+
+msgid "Compare this trend with the previous period."
+msgstr "Compare this trend with the previous period."
+
+msgid "Show the sales trend for the same period."
+msgstr "Show the sales trend for the same period."
+
+msgid "Compare these products with the previous period."
+msgstr "Compare these products with the previous period."
+
+msgid "Summarize sales for this period."
+msgstr "Summarize sales for this period."
+
+msgid "Show this period as a sales graph."
+msgstr "Show this period as a sales graph."
+
+msgid "Which products sold best during this period?"
+msgstr "Which products sold best during this period?"
+
+msgid "Compare this with the preceding period."
+msgstr "Compare this with the preceding period."
+
+msgid "What were total sales in the last 30 days?"
+msgstr "What were total sales in the last 30 days?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "Show the monthly sales trend for the last year."
+
+msgid "What are my top 10 products this year?"
+msgstr "What are my top 10 products this year?"
+
+msgid "Sales trend"
+msgstr "Sales trend"
+
+msgid "Top products by revenue"
+msgstr "Top products by revenue"
+
+msgid "Coupon-attributed revenue"
+msgstr "Coupon-attributed revenue"
+
+msgid "Most valuable customers"
+msgstr "Most valuable customers"
+
+msgid "Product profit"
+msgstr "Product profit"
+
+msgid "Product revenue"
+msgstr "Product revenue"
+
+msgid "Revenue by channel"
+msgstr "Revenue by channel"
+
+msgid "Frequently bought together"
+msgstr "Frequently bought together"
+
+msgid "Gemini settings"
+msgstr "Gemini settings"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "Gemini Help"
+
+msgid "Enable Gemini AI"
+msgstr "Enable Gemini AI"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(if you want results from Gemini only, disable Site Search from Settings-&gt;Start Menu)"
+
+msgid "Context awareness"
+msgstr "Context awareness"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "Enable page suggestions with Gemini Result"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "Select POST TYPE(s) to include with search results"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "Get your API key from https://aistudio.google.com/app/apikey. "
+
+msgid "It requires a paid Gemini API plan"
+msgstr "It requires a paid Gemini API plan"
+
+msgid "Gemini Model"
+msgstr "Gemini Model"
+
+msgid "Fetch Models"
+msgstr "Fetch Models"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "Please select your paid model; not all models on the list may be available for free plans."
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+
+msgid "Save settings"
+msgstr "Save settings"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "Fine Tuning VS GPT Assistants VS RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "We suggest using GPT Assistants or RAG instead of Fine Tuning, as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "How to Use RAG in This Plugin:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "Enable RAG from the settings panel"
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "Click “Embed All Selected Sources” button, after selecting the sources from the"
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(Optional) Upload PDFs or CSV files for embedding"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "The system automatically stores embeddings in the database"
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "User questions will now be answered using your site’s knowledge base"
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "You need to configure the OpenAI API key, AI Model, and System Command under the main OpenAI Settings"
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "You can update or re-embed content at any time without retraining."
+
+msgid "Getting Started with gemini"
+msgstr "Getting Started with Gemini"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "Gemini is a unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "All you have to do is add the Gemini API Key and select a Gemini Model."
+
+msgid "Grab your API key from"
+msgstr "Grab your API key from"
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "Please make sure that DialogFlow and OpenAI are disabled if you want Gemini to work."
+
+msgid "Failed in Security check"
+msgstr "Failed in Security check"
+
+msgid "Unauthorized user"
+msgstr "Unauthorized user"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "Security check failed. Unauthorized request."
+
+msgid "API Key is required"
+msgstr "API Key is required"
+
+msgid "Security check failed"
+msgstr "Security check failed"
+
+msgid "Unauthorized access"
+msgstr "Unauthorized access"
+
+msgid "Settings updated successfully"
+msgstr "Settings updated successfully"
+
+msgid "View Detail"
+msgstr "View Detail"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+
+msgid "OpenAI settings"
+msgstr "OpenAI settings"
+
+msgid "Training Model"
+msgstr "Training Model"
+
+msgid "GPT Assistant"
+msgstr "GPT Assistant"
+
+msgid "Fine Tune with Website Data"
+msgstr "Fine Tune with Website Data"
+
+msgid "AI Image Generator"
+msgstr "AI Image Generator"
+
+msgid "AI Article Generator"
+msgstr "AI Article Generator"
+
+msgid "GPT Assistant is available with the "
+msgstr "GPT Assistant is available with the "
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro Professional"
+
+msgid " and "
+msgstr " and "
+
+msgid "Master"
+msgstr "Master"
+
+msgid " Licenses"
+msgstr " Licenses"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "Fine Tuning VS GPT Assistants:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "We suggest using GPT Assistants instead of Fine Tuning, as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+
+msgid "Setting up GPT Assistants:"
+msgstr "Setting up GPT Assistants:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format."
+
+msgid "Go to "
+msgstr "Go to "
+
+msgid "Assistants playground"
+msgstr "Assistants playground"
+
+msgid " and create a new Assistant"
+msgstr " and create a new Assistant"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "Upload the JSON file you downloaded and give the GPT an instruction similar to the one below but customize it to your website URL:"
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "Your name is Carry. You are a ChatBot assistant for the website "
+
+msgid "https://www.quantumcloud.net. "
+msgstr "https://www.quantumcloud.net. "
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "Use the website data and the uploaded file to answer any questions from our website users."
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "Copy the Assistant's ID and paste it under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Please check this article for step by step guide."
+msgstr "Please check this article for a step-by-step guide."
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "Getting Customized Results from the AI Services"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant, which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in the OpenAI Settings area (there is a prompt section for other AI services as well), you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "Check this article"
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "for more details about how to get Customized Results from OpenAI."
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+
+msgid "Getting Started with OpenAI"
+msgstr "Getting Started with OpenAI"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI has changed their API billing policy lately. You have to "
+
+msgid "pre-purchase API credits"
+msgstr "pre-purchase API credits"
+
+msgid " now. Go to "
+msgstr " now. Go to "
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/ "
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "and add credits to your API account. Then increase the usage limit."
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "Please make sure DialogFlow is disabled if you want OpenAI to work."
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "Fine Tuning VS GPT Assistants VS RAG"
+
+msgid "GPT Assistants:"
+msgstr "GPT Assistants:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "How to get an OpenAI API Key"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests. Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+
+msgid "You can generate the API key from here: "
+msgstr "You can generate the API key from here: "
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys. "
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "Training or Fine Tuning OpenAI"
+
+msgid "To train OpenAI"
+msgstr "To train OpenAI"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr ""
+"a. To train or fine-tune a model, first you need to:\n"
+"                "
+
+msgid "Gather the necessary data you want to train with"
+msgstr "Gather the necessary data you want to train with."
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "Upload the data to OpenAI in .JSONL format."
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "Train an existing OpenAI model (select from the Bot OpenAI settings page) with your data."
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "c. Once you upload your training file, it will return a file ID and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Once the training is done and the file is ready, it will return the fine-tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT (Fine Tuned) Model ID (to copy to the settings page)."
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "h. To prepare your data model for GPT3.5/4:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "First you need to create a JSONL file like the format below."
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "Each prompt and completion should be in a single line."
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "Fine tuning file format with GPT 3.5/4"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to school.\" }]}"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "Right-click and Save the Example JSONL file for Fine Tuning with GPT 3.5/4."
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "To Embed OpenAI"
+
+msgid "Important points about fine tuning"
+msgstr "Important points about fine-tuning"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why should one wear our Vintage Denim Jacket?\"."
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "If your completion is short like below or around 100 words, keep the Max Tokens value at 200. Tweak the Temperature, Presence Penalty, and Frequency Penalty settings until you get results that you like."
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "If you are fine-tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive, you will not get good results. In such cases, you can download the JSONL file from the Training Model page and improve the prompts. Then fine-tune again."
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "Keep the Site search disabled from Settings-&gt;Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+
+msgid "How to Optimize Fine Tuning"
+msgstr "How to Optimize Fine Tuning"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "To get better results from fine-tuning please follow the following steps:"
+
+msgid "Set a lower value for Temperature"
+msgstr "Set a lower value for Temperature"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "Use a higher value for the Presence Penalty and Frequency penalty."
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "If possible use the Curie model as your base model when you create the custom model."
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+
+msgid "Presence Penalty"
+msgstr "Presence Penalty"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+
+msgid "Frequency Penalty"
+msgstr "Frequency Penalty"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+
+msgid "Temperature"
+msgstr "Temperature"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "One of the most important settings is called temperature. When the temperature is above 0, submitting the same prompt results in different completions each time. Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+
+msgid "My OpenAI does not work"
+msgstr "My OpenAI does not work"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "Please check your settings (i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+
+msgid "Fine tuning and training is available with the "
+msgstr "Fine tuning and training is available with the "
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro Professional"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "It requires a paid OpenAI API plan"
+
+msgid "Enable OpenAI"
+msgstr "Enable OpenAI"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(if you want results from OpenAI only, it will disable default product Search)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "Enable Streaming (stream AI responses in real-time as they are generated)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "Enable OpenAI Product Cards"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(Display relevant product cards inside AI responses to increase sales.)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+
+msgid "Api key"
+msgstr "Api key"
+
+msgid "OpenAI Model"
+msgstr "OpenAI Model"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-Mini"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-Nano"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-Mini"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-Nano"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-Mini"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 turbo"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+
+msgid "Customized Results"
+msgstr "Customized Results"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". Upto 3000 words is fine."
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "To set the ChatBot's tone and character set a system message according to your need"
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "Prompt to be Appended at the End of the User Query (Optional)"
+
+msgid "Content for the response"
+msgstr "Content for the response"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+
+msgid "Check Connection  "
+msgstr "Check Connection"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "Save the Settings first and then press the Check Connection button"
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+
+msgid "billing page."
+msgstr "billing page."
+
+msgid "How to reduce cost "
+msgstr "How to reduce cost"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "and save money on OpenAI API cost for your ChatBot."
+
+msgid "success"
+msgstr "success"
+
+msgid "error"
+msgstr "error"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "RAG cannot be enabled without an API key."
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "Please enable RAG in settings to save RAG related options."
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "OpenAI API key is empty. Please save your API key first."
+
+msgid "Congrats! You are connected to AI."
+msgstr "Congrats! You are connected to AI."
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "Connection to OpenAI failed. Please check your API key and settings."
+
+msgid "Invalid product ID"
+msgstr "Invalid product ID"
+
+msgid "Product not found"
+msgstr "Product not found"
+
+msgid "Insufficient permissions"
+msgstr "Insufficient permissions"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "AI Setup configuration saved successfully."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "Rate limit exceeded. Please try again later."
+
+msgid "More WordPress Goodies for You!"
+msgstr "More WordPress Goodies for You!"
+
+msgid "Support"
+msgstr "Support"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "Check Out Some of Our Other Works that Might Make Your Website Better"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+
+msgid "Get Priority Support "
+msgstr "Get Priority Support"
+
+msgid "Online KnowledgeBase"
+msgstr "Online KnowledgeBase"
+
+msgid "Get Support for Free Version"
+msgstr "Get Support for Free Version"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+
+msgid "Please fill up all the requried form fields."
+msgstr "Please fill up all the required form fields."
+
+msgid "Invalid email address."
+msgstr "Invalid email address."
+
+msgid "Support Request Details:"
+msgstr "Support Request Details:"
+
+msgid "Sent Via the Plugin"
+msgstr "Sent Via the Plugin"
+
+msgid "Mail sent from:"
+msgstr "Mail sent from:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "Mail Generated on:"
+
+msgid "From Plugin Support Page:"
+msgstr "From Plugin Support Page:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "Your email was sent successfully. Thanks!"
+
+msgid "By %s"
+msgstr "By %s"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "Install %s now"
+
+msgid "Install Now"
+msgstr "Install Now"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "Cannot Install"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "Update %s now"
+
+msgid "Update Now"
+msgstr "Update Now"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "Cannot Update"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "Active"
+
+msgid "Activate"
+msgstr "Activate"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "Activate %s"
+
+msgid "Network Activate"
+msgstr "Network Activate"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "Network Activate %s"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Installed"
+
+msgid "More Details"
+msgstr "More Details"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "This plugin doesn’t work with your versions of WordPress and PHP."
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Please update WordPress</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Learn more about updating PHP</a>."
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "This plugin doesn’t work with your version of WordPress."
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "This plugin doesn’t work with your version of PHP."
+
+msgid "Live Preview"
+msgstr "Live Preview"
+
+msgid "Update To Pro"
+msgstr "Update To Pro"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "You can upload your own ChatBot icon from WoowBot panel-&gt;Icons section."
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "You can also upload a custom Agent icon in the pro version."
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "Get the #1 ChatBot for WooCommerce – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "Get the WoowBot Pro Now!"
+
+msgid "Crafted By:"
+msgstr "Crafted By:"
+
+msgid "Web Design Company"
+msgstr "Web Design Company"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "WoowBot Control Panel"
+
+msgid "WoowBot Panel"
+msgstr "WoowBot Panel"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"
+
+msgid "OR"
+msgstr "OR"
+
+msgid " Get the Professional Version Now!"
+msgstr " Get the Professional Version Now!"
+
+msgid "General settings"
+msgstr "General settings"
+
+msgid "WoowBot ICONS"
+msgstr "WoowBot ICONS"
+
+msgid "Language Center"
+msgstr "Language Center"
+
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+msgid "Emails Will be Sent to"
+msgstr "Emails Will be Sent to"
+
+msgid "From Email Address"
+msgstr "From Email Address"
+
+msgid "Disable WoowBot"
+msgstr "Disable WoowBot"
+
+msgid "Disable WoowBot to Load"
+msgstr "Disable WoowBot to Load"
+
+msgid "Enable Product details from AI"
+msgstr "Enable Product details from AI"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "Disable WooWBot on Mobile Device"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "Disable WoowBot to Load on Mobile Device"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "Override WoowBot Icon's Position"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "From Right In px"
+
+msgid "From Bottom In px"
+msgstr "From Bottom In px"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "Number of products to show in search results. ( '-1' for all products )."
+
+msgid "Page controller"
+msgstr "Page controller"
+
+msgid "Show on Home Page"
+msgstr "Show on Home Page"
+
+msgid "YES"
+msgstr "YES"
+
+msgid "NO"
+msgstr "NO"
+
+msgid "Show on blog posts"
+msgstr "Show on blog posts"
+
+msgid "Show on  pages"
+msgstr "Show on  pages"
+
+msgid "All Pages"
+msgstr "All Pages"
+
+msgid "Selected Pages Only "
+msgstr "Selected Pages Only "
+
+msgid "Exclude from Custom Post"
+msgstr "Exclude from Custom Post"
+
+msgid "Icon - 0"
+msgstr "Icon - 0"
+
+msgid "Icon - 1"
+msgstr "Icon - 1"
+
+msgid "Icon - 2"
+msgstr "Icon - 2"
+
+msgid "Icon - 3"
+msgstr "Icon - 3"
+
+msgid "Icon - 4"
+msgstr "Icon - 4"
+
+msgid "Icon - 5"
+msgstr "Icon - 5"
+
+msgid "Icon - 6"
+msgstr "Icon - 6"
+
+msgid "Icon - 7"
+msgstr "Icon - 7"
+
+msgid "Icon -9"
+msgstr "Icon -9"
+
+msgid "Icon - 10"
+msgstr "Icon - 10"
+
+msgid "Icon - 11"
+msgstr "Icon - 11"
+
+msgid "Icon - 12"
+msgstr "Icon - 12"
+
+msgid "Icon - 13"
+msgstr "Icon - 13"
+
+msgid "Icon - 14"
+msgstr "Icon - 14"
+
+msgid "Custom Icon"
+msgstr "Custom Icon"
+
+msgid "Upload custom Floating Icon"
+msgstr "Upload custom Floating Icon"
+
+msgid "Upload Custom Icon"
+msgstr "Upload Custom Icon"
+
+msgid " Woobot Agent Image"
+msgstr " Woobot Agent Image"
+
+msgid "Default Agent"
+msgstr "Default Agent"
+
+msgid "Custom Agent"
+msgstr "Custom Agent"
+
+msgid "Custom Agent Icon"
+msgstr "Custom Agent Icon"
+
+msgid "Upload Agent Icon"
+msgstr "Upload Agent Icon"
+
+msgid "Custom Backgroud"
+msgstr "Custom Backgroud"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "Change the  message board background image (except mini mode)."
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "Upload  message board background (Ideal image size 350px X 550px)."
+
+msgid "Upload  background."
+msgstr "Upload  background."
+
+msgid "Custom message board background"
+msgstr "Custom message board background"
+
+msgid "Message setting for"
+msgstr "Message setting for"
+
+msgid "Identity"
+msgstr "Identity"
+
+msgid "Your Company or Website Name"
+msgstr "Your Company or Website Name"
+
+msgid "Agent name"
+msgstr "Agent name"
+
+msgid "has joined the conversation"
+msgstr "has joined the conversation"
+
+msgid "Greetings"
+msgstr "Greetings"
+
+msgid "Welcome to "
+msgstr "Welcome to "
+
+msgid "Hi There! May I know your name?"
+msgstr "Hi There! May I know your name?"
+
+msgid "I am "
+msgstr "I am "
+
+msgid "Nice to meet you"
+msgstr "Nice to meet you"
+
+msgid "Message settings for"
+msgstr "Message settings for"
+
+msgid "Editor Box"
+msgstr "Editor Box"
+
+msgid "is typing..."
+msgstr "is typing..."
+
+msgid "Send a message"
+msgstr "Send a message"
+
+msgid "Products Search"
+msgstr "Products Search"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "I am here to find you the product you need. What are you shopping for"
+
+msgid "if products found"
+msgstr "if products found"
+
+msgid "If no matching products is found"
+msgstr "If no matching products is found"
+
+msgid "Can you be more specific?"
+msgstr "Can you be more specific?"
+
+msgid "Product Search"
+msgstr "Product Search"
+
+msgid "Catalog"
+msgstr "Catalog"
+
+msgid "Send Us Email"
+msgstr "Send Us Email"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "You can browse our extensive catalog. Just pick a category from below"
+
+msgid "Too many choices? Let's try another search term"
+msgstr "Too many choices? Let's try another search term"
+
+msgid "Email has been sent successfully"
+msgstr "Email has been sent successfully"
+
+msgid "Please provide your email address"
+msgstr "Please provide your email address"
+
+msgid "Please write you message"
+msgstr "Please write your message"
+
+msgid "You can paste or write your custom css here."
+msgstr "You can paste or write your custom css here."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro is a WooCommerce Shopping ChatBot that can help increase your store sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its integration with Google‘s Dialogflow, search and add products to the cart directly from the chat interface, get support and more!"
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "The Onsite Retargeting helps your conversion rate optimization by showing special offers and coupons on exit intent, time interval or page scroll-down. Track customer conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "Get the WoowBot Pro now and increase sales!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "Multi Language Addon (**new)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "Add multiple language support for your ChatBot. Users can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+
+msgid "Voice Message AddOn (**new)"
+msgstr "Voice Message AddOn (**new)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all modern browsers. Beautiful modern user interface"
+
+msgid "Extended UI Addon"
+msgstr "Extended UI Addon"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and extensive color customization options are available!"
+
+msgid "Simple Text Responses Pro"
+msgstr "Simple Text Responses Pro"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "Create text-based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search matching."
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "Bargaining ChatBot for WoowBot"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "Make your offer now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+
+msgid "Conversational Form Builder"
+msgstr "Conversational Form Builder"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "Create conditional conversations and forms for a native WordPress ChatBot experience. Build standard forms, dynamic forms with conditional fields, calculators, appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+
+msgid "Export Import Settings"
+msgstr "Export Import Settings"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a backup. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "Messenger ChatBot Addon"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "Utilize the Woowbot on your website as a hub to respond to customer questions on FB Page &amp; Messenger"
+
+msgid "Extended Search"
+msgstr "Extended Search"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "Extend WPBot’s search power to include almost any custom post type including WooCommerce"
+
+msgid "ChatBot Session Save Addon"
+msgstr "ChatBot Session Save Addon"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "This AddOn saves the user chat sessions and helps you fine-tune the bot for better support and performance."
+
+msgid "LiveChat Addon"
+msgstr "LiveChat Addon"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "Live human chat integrated with WPBot"
+
+msgid "White Label WPBot"
+msgstr "White Label WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "Replace the QuantumCloud logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+
+msgid "Mailing List Integration AddOn"
+msgstr "Mailing List Integration AddOn"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier account and connect with this addon."
+
+msgid "WoowBot Master Theme"
+msgstr "WoowBot Master Theme"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "Get a WoowBot powered theme!"
+
+msgid "Save Settings"
+msgstr "Save Settings"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**Pro Tip: Want to make WoowBot really intelligent with"
+
+msgid "AI and Natural Language Processing?"
+msgstr "AI and natural language processing?"
+
+msgid "Upgrade to the Pro version"
+msgstr "Upgrade to the Pro version"
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**Pro Tip: WoowBot Pro is integrated with"
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT and DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**Pro Tip: "
+
+msgid "Use ChatGPT to"
+msgstr "Use ChatGPT to"
+
+msgid "answer  questions and provide real customer support"
+msgstr "answer questions and provide real customer support"
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**Pro Tip: Are your customers not completing orders? Find out with the"
+
+msgid "Customer Conversion report"
+msgstr "Customer conversion report"
+
+msgid "in the Pro version"
+msgstr "in the Pro version"
+
+msgid "**Pro Tip:"
+msgstr "**Pro Tip:"
+
+msgid "Use WoowBot Pro to"
+msgstr "Use WoowBot Pro to"
+
+msgid "provide live chat suport to your customers!"
+msgstr "provide live chat support to your customers!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**Pro Tip: Utilize onsite retargeting for"
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "Exit intent or scroll down popups"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "with WoowBot Pro. Increase sales by 50% or more!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**Pro Tip: Setting up WoowBot Pro is easy and quick!"
+
+msgid "Plug and Play"
+msgstr "Plug and play"
+
+msgid "No complex bot training required!"
+msgstr "No complex bot training required!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**Pro Tip: WoowBot Pro integrates with"
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "and more to give your customers the support they deserve. Increase customer satisfaction!"

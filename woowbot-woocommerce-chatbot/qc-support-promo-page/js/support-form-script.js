@@ -1,4 +1,4 @@
-﻿(function($) {
+(function($) {
     'use strict';
 
 	jQuery(document).ready(function($){
@@ -88,16 +88,51 @@
 
 		$( window ).on( "load", function() {
 
-
-				
 			var data = {
-				'action': 'qcld_recommend_support_function_ajax',
+				'action': 'qcld_recommend_support_function_first_woowbot_ajax',
 				'security': qcld_wpbot_free_ajax_nonce
 			};
 
 	        jQuery.post(qcld_wpbot_free_ajaxurl, data, function (response) {
 
-	           	$('.qc-woowbot-free-support').find('.qcld-plugins-lists').html(response);
+	           	//$('.qc-woowbot-support').find('.qcld-plugins-lists').html(response);
+
+	           	$('.qc-woowbot-support').find('.qcld-plugins-lists').prepend(response);
+
+				var data = {
+					'action': 'qcld_recommend_support_function_second_woowbot_ajax',
+					'security': qcld_wpbot_free_ajax_nonce
+				};
+
+				jQuery.post(qcld_wpbot_free_ajaxurl, data, function (response) {
+
+					$('.qc-woowbot-support').find('.qcld-plugins-lists').find('.recommended-plugins').last().after(response);
+
+					var data = {
+						'action': 'qcld_recommend_support_function_third_woowbot_ajax',
+						'security': qcld_wpbot_free_ajax_nonce
+					};
+
+					jQuery.post(qcld_wpbot_free_ajaxurl, data, function (response) {
+
+						$('.qc-woowbot-support').find('.qcld-plugins-lists').find('.recommended-plugins').last().after(response);
+						//$('.qcld-plugins-loading').remove();
+
+						var data = {
+							'action': 'qcld_recommend_support_function_four_woowbot_ajax',
+							'security': qcld_wpbot_free_ajax_nonce
+						};
+
+						jQuery.post(qcld_wpbot_free_ajaxurl, data, function (response) {
+
+							$('.qc-woowbot-support').find('.qcld-plugins-lists').find('.recommended-plugins').last().after(response);
+							$('.qcld-plugins-loading').remove();
+
+			        	});
+
+		        	});
+
+	        	});
 
 	        });
 

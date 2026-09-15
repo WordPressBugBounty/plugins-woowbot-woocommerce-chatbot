@@ -1,33 +1,33 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 <div class="row g-0">
         <div class="form-check form-switch my-4">
-            <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_ai_enabled">
+            <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="is_ai_enabled">
             <label class="form-check-label" for="is_ai_enabled">
             <?php  esc_html_e( 'Enable OpenAI','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php  esc_html_e( '(if you want results from OpenAI only, It will disable default product Search)','woowbot-woocommerce-chatbot'); ?></span>
             </label>
         </div>
         <div class="mb-3">
             <div class="form-check form-switch my-4">
-                <input class="form-check-input" type="checkbox" <?php echo ( get_option( 'qcld_openai_stream_enabled',) == '1' ) ? esc_attr( 'checked', 'woowbot-woocommerce-chatbot' ) : ''; ?> role="switch" value="" id="is_stream_enabled">
+                <input class="form-check-input" type="checkbox" <?php echo ( get_option( 'qcld_openai_stream_enabled' ) == '1' ) ? 'checked' : ''; ?> role="switch" value="" id="is_stream_enabled">
                 <label class="form-check-label" for="is_stream_enabled">
                     <?php esc_html_e( 'Enable Streaming (stream AI responses in real-time as they are generated)', 'woowbot-woocommerce-chatbot' ); ?>
                 </label>
             </div>
         </div>
         <div class="form-check form-switch my-4">
-            <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcldai_product_card_enable') == 1) ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_product_card_enabled">
+            <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcldai_product_card_enable') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="is_product_card_enabled">
             <label class="form-check-label" for="is_product_card_enabled">
             <?php  esc_html_e( 'Enable OpenAI Product Cards','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php  esc_html_e( '(Display relevant product cards inside AI responses to increase sales.)','woowbot-woocommerce-chatbot'); ?></span>
             </label>
         </div>
         <div class="form-check form-switch my-4">
-            <input class="form-check-input" type="checkbox" <?php echo (get_option('context_awareness_enabled') == '1') ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_context_awareness_enabled">
+            <input class="form-check-input" type="checkbox" <?php echo (get_option('context_awareness_enabled') == '1') ? 'checked' : ''; ?>  role="switch" value="" id="is_context_awareness_enabled">
             <label class="form-check-label" for="is_context_awareness_enabled">
             <?php  esc_html_e( 'Context awareness','woowbot-woocommerce-chatbot'); ?>
             </label>
         </div>
         <div class="form-check form-switch my-4">
-            <input class="form-check-input" type="checkbox" <?php echo (get_option('page_suggestion_enabled') == '1') ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_page_suggestion_enabled">
+            <input class="form-check-input" type="checkbox" <?php echo (get_option('page_suggestion_enabled') == '1') ? 'checked' : ''; ?>  role="switch" value="" id="is_page_suggestion_enabled">
             <label class="form-check-label" for="is_page_suggestion_enabled">
             <?php  esc_html_e( 'Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)','woowbot-woocommerce-chatbot'); ?>
             </label>
@@ -50,14 +50,14 @@
                                 ?>
                                 <div class="form-check form-check-inline">
                                     <input
-                                        id="site_search_posttypes_<?php echo esc_html( $post_type->name ); ?>"
+                                        id="site_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>"
                                         type="checkbox"
                                         name="site_search_posttypes[]"
-                                        value="<?php echo esc_html( $post_type->name ); ?>"
+                                        value="<?php echo esc_attr( $post_type->name ); ?>"
                                         <?php echo (($is_pro) ? 'disabled' : ''); ?>
                                        
                                         <?php echo ((get_option('qcld_openai_relevant_post') != '') && in_array($post_type->name, get_option('qcld_openai_relevant_post'))) ? 'checked' : ''; ?>>
-                                    <label class="form-check-label <?php echo ($is_pro ? 'pro-locked' : ''); ?>" for="site_search_posttypes_<?php echo esc_html( $post_type->name ); ?>">
+                                    <label class="form-check-label <?php echo ($is_pro ? 'pro-locked' : ''); ?>" for="site_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>">
                                         <?php echo esc_html( $post_type->name ); ?>
                                       
                                     </label>
@@ -74,8 +74,8 @@
         
 		<!-- /POST TYPE -->
         <div class="mb-3 form-check">
-                <label for="api_key" class="form-label"><?php esc_html_e( 'Api key','chatbot');?></label>
-                <input type="password" class="form-control" id="api_key" name="api_key" placeholder="Api key" value="<?php echo esc_attr(get_option( 'qcld_open_ai_api_key')); ?>">
+                <label for="api_key" class="form-label"><?php esc_html_e( 'Api key', 'woowbot-woocommerce-chatbot');?></label>
+                <input type="password" class="form-control" id="api_key" name="api_key" placeholder="<?php echo esc_attr__( 'Api key', 'woowbot-woocommerce-chatbot' ); ?>" value="<?php echo esc_attr(get_option( 'qcld_open_ai_api_key')); ?>">
                 <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
         </div>
         <div class="qcld-wpbot-pricing-filter-form-check">
@@ -83,56 +83,56 @@
          <div class="mb-3 form-check">
             <label for="max_tokens" id="openai_engines" class="form-label"><?php esc_html_e( 'OpenAI Model','woowbot-woocommerce-chatbot');?></label>
             <select class="form-select" aria-label="Default select example" name="openai_engines" id="openai_engines">
-                <option value="gpt-5-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-5-mini') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-5-Mini','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-5-nano" <?php echo ((get_option( 'openai_engines') == 'gpt-5-nano') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-5-Nano','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-5" <?php echo ((get_option( 'openai_engines') == 'gpt-5') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-5','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4.1-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1-mini') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4.1-Mini','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4.1-nano" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1-nano') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4.1-Nano','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4.1" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4.1','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4o-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-4o-mini') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4o-Mini','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4o" <?php echo ((get_option( 'openai_engines') == 'gpt-4o') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4o','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4-turbo" <?php echo ((get_option( 'openai_engines') == 'gpt-4-turbo') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'gpt-4-turbo','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-4" <?php echo ((get_option( 'openai_engines') == 'gpt-4') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-4','woowbot-woocommerce-chatbot');?></option>
-                <option value="gpt-3.5-turbo" <?php echo ((get_option( 'openai_engines') == 'gpt-3.5-turbo') ? esc_attr('selected') : '') ; ?>><?php esc_html_e( 'GPT-3 turbo','woowbot-woocommerce-chatbot'); ?></option>
+                <option value="gpt-5-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-5-mini') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-5-Mini','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-5-nano" <?php echo ((get_option( 'openai_engines') == 'gpt-5-nano') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-5-Nano','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-5" <?php echo ((get_option( 'openai_engines') == 'gpt-5') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-5','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4.1-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1-mini') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4.1-Mini','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4.1-nano" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1-nano') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4.1-Nano','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4.1" <?php echo ((get_option( 'openai_engines') == 'gpt-4.1') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4.1','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4o-mini" <?php echo ((get_option( 'openai_engines') == 'gpt-4o-mini') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4o-Mini','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4o" <?php echo ((get_option( 'openai_engines') == 'gpt-4o') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4o','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4-turbo" <?php echo ((get_option( 'openai_engines') == 'gpt-4-turbo') ? 'selected' : '') ; ?>><?php esc_html_e( 'gpt-4-turbo','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-4" <?php echo ((get_option( 'openai_engines') == 'gpt-4') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-4','woowbot-woocommerce-chatbot');?></option>
+                <option value="gpt-3.5-turbo" <?php echo ((get_option( 'openai_engines') == 'gpt-3.5-turbo') ? 'selected' : '') ; ?>><?php esc_html_e( 'GPT-3 turbo','woowbot-woocommerce-chatbot'); ?></option>
             </select>
         </div> 
         
         <div class="mb-3 form-check">
-            <label for="qcld_openai_system_content"><?php esc_attr_e( 'System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get','woowbot-woocommerce-chatbot');?> <span class="qcls_openAI_customized"><?php esc_attr_e( 'Customized Results','woowbot-woocommerce-chatbot');?></span> <?php esc_attr_e( '. Upto 3000 words is fine.','woowbot-woocommerce-chatbot');?> 
+            <label for="qcld_openai_system_content"><?php esc_html_e( 'System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get','woowbot-woocommerce-chatbot');?> <span class="qcls_openAI_customized"><?php esc_html_e( 'Customized Results','woowbot-woocommerce-chatbot');?></span> <?php esc_html_e( '. Upto 3000 words is fine.','woowbot-woocommerce-chatbot');?> 
 
             <br><br>
-            <?php esc_attr_e( '**','woowbot-woocommerce-chatbot');?>
+            <?php esc_html_e( '**','woowbot-woocommerce-chatbot');?>
              <a href="https://woowbot.pro/docs/knowledgebase/how-wpbot-chatbot-free-users-can-get-customized-results-from-the-chatbot-how-to-train-the-chatbot/#customize" class="qcls_openAI_customized_link" target="_blank">
-            <?php esc_attr_e( 'Check this article','woowbot-woocommerce-chatbot');?>
+            <?php esc_html_e( 'Check this article','woowbot-woocommerce-chatbot');?>
             </a> 
             
-            <?php esc_attr_e( 'for more details abou how to get Customized Results from OpenAI.','woowbot-woocommerce-chatbot');?>
+            <?php esc_html_e( 'for more details abou how to get Customized Results from OpenAI.','woowbot-woocommerce-chatbot');?>
               <br>   
         
         </label>
-            <textarea type="text" class="form-control" id="qcld_openai_system_content" placeholder="<?php echo esc_attr('You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic.','woowbot-woocommerce-chatbot'); ?>"><?php  echo esc_html( get_option( 'qcld_openai_system_content')); ?></textarea>
+            <textarea type="text" class="form-control" id="qcld_openai_system_content" placeholder="<?php echo esc_attr__('You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic.','woowbot-woocommerce-chatbot'); ?>"><?php  echo esc_html( get_option( 'qcld_openai_system_content')); ?></textarea>
             <label><small><?php esc_html_e("To set the ChatBot's tone and character set a system message according to your need",'woowbot-woocommerce-chatbot'); ?></small></label></br>
             <label><small><?php esc_html_e("Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic.",'woowbot-woocommerce-chatbot'); ?></small></label>
         </div>
         <div class="mb-3 form-check">
-            <label for="qcld_openai_append_content"><?php esc_attr_e( 'Prompt to be Appended at the End of the User Query (Optional)','woowbot-woocommerce-chatbot');?></label>
-            <textarea type="text" class="form-control" id="qcld_openai_append_content" placeholder="<?php echo esc_attr('Content for the response'); ?>"><?php  echo esc_html( get_option( 'qcld_openai_append_content')); ?></textarea>
+            <label for="qcld_openai_append_content"><?php esc_html_e( 'Prompt to be Appended at the End of the User Query (Optional)','woowbot-woocommerce-chatbot');?></label>
+            <textarea type="text" class="form-control" id="qcld_openai_append_content" placeholder="<?php echo esc_attr__('Content for the response', 'woowbot-woocommerce-chatbot'); ?>"><?php  echo esc_html( get_option( 'qcld_openai_append_content')); ?></textarea>
 
         </div>
         <div class="alert alert-warning"> 
-           <p> <?php echo esc_html('Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )'); ?></p>
+           <p> <?php esc_html_e('Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )', 'woowbot-woocommerce-chatbot'); ?></p>
         </div>
          <div class="mb-3 form-check">
-            <label for="qcld_openai_include_keyword"><?php esc_attr_e( 'Connect to OpenAI only when user query includes one of the following Comma Separated Keywords','woowbot-woocommerce-chatbot');?></label>
+            <label for="qcld_openai_include_keyword"><?php esc_html_e( 'Connect to OpenAI only when user query includes one of the following Comma Separated Keywords','woowbot-woocommerce-chatbot');?></label>
             <textarea type="text" class="form-control" id="qcld_openai_include_keyword"><?php echo esc_attr( get_option( 'openai_include_keyword')); ?></textarea>
         </div>
          <div class="mb-3 form-check">
-            <label for="qcld_openai_exclude_keyword"><?php esc_attr_e( 'Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords','woowbot-woocommerce-chatbot');?></label>
+            <label for="qcld_openai_exclude_keyword"><?php esc_html_e( 'Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords','woowbot-woocommerce-chatbot');?></label>
             <textarea type="text" class="form-control" id="qcld_openai_exclude_keyword"><?php  echo esc_attr( get_option( 'openai_exclude_keyword')); ?></textarea>
         </div>
         <div class="mb-3">
             <div class="form-check form-switch my-4">
-                <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_relevant_enabled') == 1) ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="is_relevant_enabled">
+                <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_relevant_enabled') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="is_relevant_enabled">
                 <label class="form-check-label" for="is_relevant_enabled">
                 <?php  esc_html_e( 'Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)','woowbot-woocommerce-chatbot'); ?>
                 </label>
@@ -143,13 +143,13 @@
             <a class="btn btn-success" id="save_setting"><?php esc_html_e( 'Save settings','woowbot-woocommerce-chatbot');?></a>
         </div>
         <div class="mb-3 form-check">
-            <a class="btn btn-warning" id="qcld_check_connection"><?php esc_html_e( 'Check Connection  ','woowbot-woocommerce-chatbot');?><i class="dashicons dashicons-image-rotate" id="rotationloader"></i></a> <?php echo esc_html('Save the Settings first and then press the Check Connection button'); ?><br/>
+            <a class="btn btn-warning" id="qcld_check_connection"><?php esc_html_e( 'Check Connection  ','woowbot-woocommerce-chatbot');?><i class="dashicons dashicons-image-rotate" id="rotationloader"></i></a> <?php esc_html_e('Save the Settings first and then press the Check Connection button', 'woowbot-woocommerce-chatbot'); ?><br/>
             <div id="qcld_openAI_trubleshooter"></div>
         </div>
         <div class="alert alert-danger"> 
-           <p> <?php echo esc_html('**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the '); ?> <a href="https://platform.openai.com/account/billing"><?php echo esc_html('billing page.'); ?></a></p>
+           <p> <?php esc_html_e('**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the ', 'woowbot-woocommerce-chatbot'); ?> <a href="https://platform.openai.com/account/billing" target="_blank"><?php esc_html_e('billing page.', 'woowbot-woocommerce-chatbot'); ?></a></p>
            <p>
-           <a href="https://woowbot.pro/docs/knowledgebase/how-to-save-money-and-reduce-openai-api-cost-for-your-chatbot/"> <?php echo esc_html('How to reduce cost '); ?></a><?php echo esc_html('and save money on OpenAI API cost for your ChatBot.'); ?>
+           <a href="https://woowbot.pro/docs/knowledgebase/how-to-save-money-and-reduce-openai-api-cost-for-your-chatbot/" target="_blank"> <?php esc_html_e('How to reduce cost ', 'woowbot-woocommerce-chatbot'); ?></a><?php esc_html_e('and save money on OpenAI API cost for your ChatBot.', 'woowbot-woocommerce-chatbot'); ?>
         </p>
         </div>
 </div>

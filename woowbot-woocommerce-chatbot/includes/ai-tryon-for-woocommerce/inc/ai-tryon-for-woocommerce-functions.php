@@ -40,7 +40,7 @@ function qcld_woo_chatbot_inject_tryon_button() {
     echo '<div class="qcld_woo_chatbot-button-wrapper">';
     if ( $is_restricted ) {
         $login_url = esc_url( wp_login_url( get_permalink() ) );
-        echo '<button type="button" class="button alt" onclick="alert(\'' . esc_js(esc_html('You must be logged in to use this feature.', 'ai-tryon-for-woocommerce')) . '\'); window.location.href=\'' . esc_url($login_url) . '\';">' . wp_kses_post($full_btn_text) . '</button>';
+        echo '<button type="button" class="button alt" onclick="alert(\'' . esc_js(esc_html__('You must be logged in to use this feature.', 'woowbot-woocommerce-chatbot')) . '\'); window.location.href=\'' . esc_url($login_url) . '\';">' . wp_kses_post($full_btn_text) . '</button>';
     } else {
         echo '<button type="button" id="qcld_woo_chatbot-open-modal-btn" class="button alt" data-product-title="' . esc_attr( $product->get_name() ) . '" data-product-image="' . esc_url( $image_url ) . '">' . wp_kses_post($full_btn_text) . '</button>';
     }
@@ -57,19 +57,19 @@ function qcld_woo_chatbot_render_modal_html() {
     <div id="qcld_woo_chatbot-tryon-modal" class="qcld_woo_chatbot-modal-overlay">
         <div class="qcld_woo_chatbot-modal-content">
             <div class="qcld_woo_chatbot-modal-header">
-                <h2><?php esc_html_e( 'AI Product Generation', 'ai-tryon-for-woocommerce' ); ?></h2>
+                <h2><?php esc_html_e( 'AI Product Generation', 'woowbot-woocommerce-chatbot' ); ?></h2>
                 <span class="qcld_woo_chatbot-close-modal">&times;</span>
             </div>
             
             <div class="qcld_woo_chatbot-modal-body">
                 <!-- Left Column -->
                 <div class="qcld_woo_chatbot-modal-col qcld_woo_chatbot-col-left">
-                    <h3><?php esc_html_e( 'Original Image', 'ai-tryon-for-woocommerce' ); ?></h3>
+                    <h3><?php esc_html_e( 'Original Image', 'woowbot-woocommerce-chatbot' ); ?></h3>
                     <div class="qcld_woo_chatbot-original-images">
-                        <img id="qcld_woo_chatbot-modal-product-image" src="" alt="<?php esc_attr_e( 'Original Product', 'ai-tryon-for-woocommerce' ); ?>" style="display: none;" />
+                        <img id="qcld_woo_chatbot-modal-product-image" src="" alt="<?php esc_attr_e( 'Original Product', 'woowbot-woocommerce-chatbot' ); ?>" style="display: none;" />
                         <div class="qcld_woo_chatbot-image-placeholder" id="qcld_woo_chatbot-modal-second-image-placeholder">
                             <span class="dashicons dashicons-plus-alt2" style="font-size: 24px; width: 24px; height: 24px; margin-bottom: 5px;"></span>
-                            <br><?php esc_html_e( 'Upload Image', 'ai-tryon-for-woocommerce' ); ?>
+                            <br><?php esc_html_e( 'Upload Image', 'woowbot-woocommerce-chatbot' ); ?>
                         </div>
                         <input type="file" id="qcld_woo_chatbot-second-image-upload" accept="image/*" style="display:none;" />
                     </div>
@@ -78,49 +78,49 @@ function qcld_woo_chatbot_render_modal_html() {
                 <!-- Middle Column -->
                 <div class="qcld_woo_chatbot-modal-col qcld_woo_chatbot-col-middle">
                     <div class="qcld_woo_chatbot-tabs">
-                        <button class="qcld_woo_chatbot-tab active" data-type="image"><?php esc_html_e( 'Generate Image', 'ai-tryon-for-woocommerce' ); ?></button>
+                        <button class="qcld_woo_chatbot-tab active" data-type="image"><?php esc_html_e( 'Generate Image', 'woowbot-woocommerce-chatbot' ); ?></button>
                     </div>
 
                     <!-- Image Form Fields -->
                     <div id="qcld_woo_chatbot-form-image" class="qcld_woo_chatbot-tab-content active">
                         <div class="qcld_woo_chatbot-form-group">
-                            <label for="qcld_woo_chatbot-bg-preference"><?php esc_html_e( 'Background Preference', 'ai-tryon-for-woocommerce' ); ?></label>
+                            <label for="qcld_woo_chatbot-bg-preference"><?php esc_html_e( 'Background Preference', 'woowbot-woocommerce-chatbot' ); ?></label>
                             <select id="qcld_woo_chatbot-bg-preference">
-                                <option value="Studio"><?php esc_html_e( 'Studio', 'ai-tryon-for-woocommerce' ); ?></option>
-                                <option value="Outdoor"><?php esc_html_e( 'Outdoor', 'ai-tryon-for-woocommerce' ); ?></option>
-                                <option value="Lifestyle"><?php esc_html_e( 'Lifestyle', 'ai-tryon-for-woocommerce' ); ?></option>
+                                <option value="Studio"><?php esc_html_e( 'Studio', 'woowbot-woocommerce-chatbot' ); ?></option>
+                                <option value="Outdoor"><?php esc_html_e( 'Outdoor', 'woowbot-woocommerce-chatbot' ); ?></option>
+                                <option value="Lifestyle"><?php esc_html_e( 'Lifestyle', 'woowbot-woocommerce-chatbot' ); ?></option>
                             </select>
                         </div>
                         <div class="qcld_woo_chatbot-form-group">
-                            <label for="qcld_woo_chatbot-output-style"><?php esc_html_e( 'Output Style', 'ai-tryon-for-woocommerce' ); ?></label>
+                            <label for="qcld_woo_chatbot-output-style"><?php esc_html_e( 'Output Style', 'woowbot-woocommerce-chatbot' ); ?></label>
                             <select id="qcld_woo_chatbot-output-style">
-                                <option value="Model Shoot"><?php esc_html_e( 'Model Shoot', 'ai-tryon-for-woocommerce' ); ?></option>
-                                <option value="Flat Lay"><?php esc_html_e( 'Flat Lay', 'ai-tryon-for-woocommerce' ); ?></option>
-                                <option value="Ghost Mannequin"><?php esc_html_e( 'Ghost Mannequin', 'ai-tryon-for-woocommerce' ); ?></option>
+                                <option value="Model Shoot"><?php esc_html_e( 'Model Shoot', 'woowbot-woocommerce-chatbot' ); ?></option>
+                                <option value="Flat Lay"><?php esc_html_e( 'Flat Lay', 'woowbot-woocommerce-chatbot' ); ?></option>
+                                <option value="Ghost Mannequin"><?php esc_html_e( 'Ghost Mannequin', 'woowbot-woocommerce-chatbot' ); ?></option>
                             </select>
                         </div>
 
                     </div>
 
                     <div class="qcld_woo_chatbot-form-group">
-                        <label for="qcld_woo_chatbot-prompt"><?php esc_html_e( 'Prompt (Optional)', 'ai-tryon-for-woocommerce' ); ?></label>
-                        <textarea id="qcld_woo_chatbot-prompt" placeholder="<?php esc_attr_e( 'Add any specific instructions (optional)', 'ai-tryon-for-woocommerce' ); ?>"></textarea>
+                        <label for="qcld_woo_chatbot-prompt"><?php esc_html_e( 'Prompt (Optional)', 'woowbot-woocommerce-chatbot' ); ?></label>
+                        <textarea id="qcld_woo_chatbot-prompt" placeholder="<?php esc_attr_e( 'Add any specific instructions (optional)', 'woowbot-woocommerce-chatbot' ); ?>"></textarea>
                     </div>
 
                     <div class="qcld_woo_chatbot-action-buttons">
-                        <button id="qcld_woo_chatbot-submit-generation" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-primary"><?php esc_html_e( 'Generate', 'ai-tryon-for-woocommerce' ); ?></button>
-                        <button id="qcld_woo_chatbot-download-btn" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-secondary" style="display:none;"><?php esc_html_e( 'Download', 'ai-tryon-for-woocommerce' ); ?></button>
+                        <button id="qcld_woo_chatbot-submit-generation" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-primary"><?php esc_html_e( 'Generate', 'woowbot-woocommerce-chatbot' ); ?></button>
+                        <button id="qcld_woo_chatbot-download-btn" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-secondary" style="display:none;"><?php esc_html_e( 'Download', 'woowbot-woocommerce-chatbot' ); ?></button>
                     </div>
                 </div>
 
                 <!-- Right Column -->
                 <div class="qcld_woo_chatbot-modal-col qcld_woo_chatbot-col-right">
-                    <div class="qcld_woo_chatbot-output-header"><?php esc_html_e( 'Generated Output', 'ai-tryon-for-woocommerce' ); ?></div>
+                    <div class="qcld_woo_chatbot-output-header"><?php esc_html_e( 'Generated Output', 'woowbot-woocommerce-chatbot' ); ?></div>
                     <div class="qcld_woo_chatbot-response-canvas" style="position:relative;">
-                        <div id="qcld_woo_chatbot-result-placeholder"><?php esc_html_e( 'Ready to generate', 'ai-tryon-for-woocommerce' ); ?></div>
+                        <div id="qcld_woo_chatbot-result-placeholder"><?php esc_html_e( 'Ready to generate', 'woowbot-woocommerce-chatbot' ); ?></div>
                         <div id="qcld_woo_chatbot-loading-spinner" class="qcld_woo_chatbot-hidden">
                             <div class="qcld_woo_chatbot-spinner-circle"></div>
-                            <div class="qcld_woo_chatbot-spinner-text"><?php esc_html_e( 'Generating Magic...', 'ai-tryon-for-woocommerce' ); ?></div>
+                            <div class="qcld_woo_chatbot-spinner-text"><?php esc_html_e( 'Generating Magic...', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <div id="qcld_woo_chatbot-result-display"></div>
                     </div>
@@ -128,7 +128,7 @@ function qcld_woo_chatbot_render_modal_html() {
                     <?php if ( get_option('qcld_woo_chatbot_modal_add_to_cart_btn_enabled', '1') === '1' ) : ?>
                     <div class="qcld_woo_chatbot-modal-footer-actions">
                         <button type="button" id="qcld_woo_chatbot-modal-add-to-cart-btn" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-primary">
-                            <span class="dashicons dashicons-cart"></span> <?php esc_html_e( 'Add to Cart', 'ai-tryon-for-woocommerce' ); ?>
+                            <span class="dashicons dashicons-cart"></span> <?php esc_html_e( 'Add to Cart', 'woowbot-woocommerce-chatbot' ); ?>
                         </button>
                     </div>
                     <?php endif; ?>

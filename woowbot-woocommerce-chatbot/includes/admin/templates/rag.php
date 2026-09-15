@@ -63,7 +63,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             EXECUTION BUTTON
         ============================ -->
             <div class="wrap my-4">
-                <p style="color: red"> <b><?php esc_html_e('Please connect to an AI service like OpenAI or Gemini before embedding. ', 'woowbot-woocommerce-chatbot'); ?></b><b><a target="_blank" href="https://woowbot.pro/docs/knowledgebase/how-to-use-an-embedded-vector-database-and-rag-to-get-customized-responses-from-ai/"><?php esc_html_e('Check this Tutorial for more details.', 'woowbot-woocommerce-chatbot'); ?></a></b></p>
+                <p style="color: red"> <b><?php esc_html_e('Please connect to an AI service like OpenAI or Gemini before embedding. ', 'woowbot-woocommerce-chatbot'); ?></b><b><a target="_blank" href="<?php echo esc_url('https://woowbot.pro/docs/knowledgebase/how-to-use-an-embedded-vector-database-and-rag-to-get-customized-responses-from-ai/'); ?>"><?php esc_html_e('Check this Tutorial for more details.', 'woowbot-woocommerce-chatbot'); ?></a></b></p>
                 <form method="post" id="rag_embed_form">
                     <input type="hidden" name="embed_all_sources" value="1">
                     <button type="button" id="rag_embed_btn" class="button button-primary">Embed All Selected Sources</button>
@@ -313,17 +313,21 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                     <?php
             $table_name = $table_rag_documents;
             
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended
             $search_query = isset($_GET['s']) ? sanitize_text_field(wp_unslash($_GET['s'])) : '';
             
             if ($search_query) {
                 $like = '%' . $wpdb->esc_like($search_query) . '%';
                 $safe_table = esc_sql( $table_name );
-                $total_items = $wpdb->get_var($wpdb->prepare("SELECT COUNT(id) FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s", $like, $like)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                $total_items = $wpdb->get_var($wpdb->prepare("SELECT COUNT(id) FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s", $like, $like));
             } else {
                 $safe_table = esc_sql( $table_name );
-                $total_items = $wpdb->get_var("SELECT COUNT(id) FROM {$safe_table}"); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                $total_items = $wpdb->get_var("SELECT COUNT(id) FROM {$safe_table}");
             }
             $items_per_page = 50;
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended
             $page = isset($_GET['paged']) ? absint(wp_unslash($_GET['paged'])) : 1;
             $offset = ($page - 1) * $items_per_page;
             $total_pages = ceil($total_items / $items_per_page);
@@ -331,17 +335,19 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             $pagination_args = array(
                 'base' => add_query_arg(array('paged' => '%#%', 's' => $search_query), '?page=chatbot_ai_setting') . '#ai-knowledge-base-tab#rag-database',
                 'format' => '',
-                'prev_text' => __('&laquo;'),
-                'next_text' => __('&raquo;'),
+                'prev_text' => __('&laquo;', 'woowbot-woocommerce-chatbot'),
+                'next_text' => __('&raquo;', 'woowbot-woocommerce-chatbot'),
                 'total' => $total_pages,
                 'current' => $page,
                 'type' => 'plain',
             );
            
             if ($total_pages > 1) {
-                echo '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) ) . '</span>';
-                echo wp_kses_post( paginate_links($pagination_args) );
-                echo '</div>';
+                /* translators: %s: Number of items. */
+                $displaying_num_text = sprintf( _n( '%s item', '%s items', $total_items, 'woowbot-woocommerce-chatbot' ), number_format_i18n( $total_items ) );
+                echo wp_kses_post( '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( $displaying_num_text ) . '</span>' );
+                echo wp_kses_post( paginate_links( $pagination_args ) );
+                echo wp_kses_post( '</div>' );
             }
             ?>
 
@@ -364,10 +370,12 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                 if ($search_query) {
                     $like = '%' . $wpdb->esc_like($search_query) . '%';
                     $safe_table = esc_sql( $table_name );
-                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s ORDER BY created_at DESC LIMIT %d OFFSET %d", $like, $like, $items_per_page, $offset)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                    // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} WHERE title LIKE %s OR content LIKE %s ORDER BY created_at DESC LIMIT %d OFFSET %d", $like, $like, $items_per_page, $offset));
                 } else {
                     $safe_table = esc_sql( $table_name );
-                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} ORDER BY created_at DESC LIMIT %d OFFSET %d", $items_per_page, $offset)); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                    // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                    $documents = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$safe_table} ORDER BY created_at DESC LIMIT %d OFFSET %d", $items_per_page, $offset));
                 }
 
                 if ($documents) {
@@ -406,9 +414,11 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
         <div class="tablenav bottom">
             <?php
             if ($total_pages > 1) {
-                echo '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( sprintf(_n('%s item', '%s items', $total_items), number_format_i18n($total_items)) ) . '</span>';
-                echo wp_kses_post( paginate_links($pagination_args) );
-                echo '</div>';
+                /* translators: %s: Number of items. */
+                $displaying_num_text = sprintf( _n( '%s item', '%s items', $total_items, 'woowbot-woocommerce-chatbot' ), number_format_i18n( $total_items ) );
+                echo wp_kses_post( '<div class="tablenav-pages"><span class="displaying-num">' . esc_html( $displaying_num_text ) . '</span>' );
+                echo wp_kses_post( paginate_links( $pagination_args ) );
+                echo wp_kses_post( '</div>' );
             }
             ?>
             <br class="clear">

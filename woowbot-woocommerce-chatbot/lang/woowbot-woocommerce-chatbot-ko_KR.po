@@ -1,0 +1,2037 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-14 11:52+0000\n"
+"PO-Revision-Date: 2026-09-14 11:52+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: 한국어 (Korean)\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "플러그인 정보를 감지할 수 없습니다. 이는 아마도 플러그인 메인 파일에 코드를 포함하지 않았기 때문입니다."
+
+msgid "Sorry to see you go"
+msgstr "안녕히 가세요"
+
+msgid "Found a Bug"
+msgstr "버그 발견"
+
+msgid "Need More Features"
+msgstr "더 많은 기능이 필요합니다"
+
+msgid "Deactivating Temporarily"
+msgstr "일시적으로 비활성화 중"
+
+msgid "Upgrading to Pro"
+msgstr "프로로 업그레이드 중"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "버그 수정 사항을 연락할 수 있도록 이메일을 제공해 주세요"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "플러그인을 개선할 수 있도록 몇 가지 세부정보를 제공해 주세요"
+
+msgid "Submitting form"
+msgstr "양식 제출 중"
+
+msgid "Expand chat window"
+msgstr "채팅 창 확장"
+
+msgid "Conversations with"
+msgstr "와의 대화"
+
+msgid "Close chat window"
+msgstr "채팅 창 닫기"
+
+msgid "Send a message."
+msgstr "메시지 보내기."
+
+msgid "Support Request Details"
+msgstr "지원 요청 세부정보"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Email"
+msgstr "이메일"
+
+msgid "Subject"
+msgstr "제목"
+
+msgid "Message"
+msgstr "메시지"
+
+msgid "Page"
+msgstr "페이지"
+
+msgid "User Agent"
+msgstr "사용자 에이전트"
+
+msgid "IP Address"
+msgstr "IP 주소"
+
+msgid "Mail Generated on"
+msgstr "생성된 메일"
+
+msgid "Click for Product Details"
+msgstr "제품 세부정보 클릭"
+
+msgid "AI Settings"
+msgstr "AI 설정"
+
+msgid "selected"
+msgstr "선택됨"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "Gemini"
+
+msgid "Grok"
+msgstr "Grok"
+
+msgid "Knowledge Base (RAG)"
+msgstr "지식 베이스 (RAG)"
+
+msgid "AI Wizard"
+msgstr "AI 마법사"
+
+msgid "Common AI Settings"
+msgstr "일반 AI 설정"
+
+msgid "Rate Limit"
+msgstr "요청 제한"
+
+msgid "Other Common Settings"
+msgstr "기타 일반 설정"
+
+msgid "Enable Rate Limiting"
+msgstr "요청 제한 활성화"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "특정 기간 내에 특정 역할의 각 사용자가 OpenAI API에 요청할 수 있는 최대 요청 수를 설정합니다. 필드를 비워 두거나 0으로 설정하면 무제한 요청이 가능합니다."
+
+msgid "Set the rate limit for each user role:"
+msgstr "각 사용자 역할에 대한 요청 제한 설정:"
+
+msgid "Rate limit for %s"
+msgstr "%s에 대한 요청 제한"
+
+msgid "Timeframe:"
+msgstr "시간대:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "48 Hours"
+msgstr "48시간"
+
+msgid "24 Hours"
+msgstr "24시간"
+
+msgid "12 Hours"
+msgstr "12시간"
+
+msgid "6 Hours"
+msgstr "6시간"
+
+msgid "Rate limit for Guest Users"
+msgstr "게스트 사용자에 대한 요청 제한"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "임베딩하기 전에 OpenAI 또는 Gemini와 같은 AI 서비스에 연결해 주세요."
+
+msgid "Check this Tutorial for more details."
+msgstr "자세한 내용은 이 튜토리얼을 확인하세요."
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>WooCommerce용 AI Try-On 애드온</strong>은 WooCommerce가 설치되고 활성화되어야 합니다. 플러그인의 기능은 WooCommerce가 활성화될 때까지 작동하지 않습니다."
+
+msgid "AI Try-On Configurations"
+msgstr "AI Try-On 구성"
+
+msgid "General Settings"
+msgstr "일반 설정"
+
+msgid "Prompts"
+msgstr "프롬프트"
+
+msgid "Help"
+msgstr "도움"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "모든 AI Try-On 설정을 한 곳에서 구성하세요."
+
+msgid "Enable Try-On Button"
+msgstr "Try-On 버튼 활성화"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "단일 제품 페이지에 \"AI로 Try On\" 버튼 표시"
+
+msgid "Require Login"
+msgstr "로그인 필요"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "로그인한 사용자에게만 Try-On 기능 표시"
+
+msgid "Show Add to Cart Button"
+msgstr "장바구니에 추가 버튼 표시"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Try-On 모달 바닥에 '장바구니에 추가' 버튼 표시"
+
+msgid "Daily Generation Limit"
+msgstr "일일 생성 한도"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "예: 5 (무제한을 위해 비워 두세요)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "세션당 + IP당 24시간 내 이미지 및 비디오 생성 제한. 비워 두거나 0으로 설정하면 무제한입니다."
+
+msgid "Try-On Button Position"
+msgstr "Try-On 버튼 위치"
+
+msgid "Default"
+msgstr "기본값"
+
+msgid "Inside Product Summary"
+msgstr "제품 요약 내"
+
+msgid "Before Cart"
+msgstr "장바구니 앞"
+
+msgid "Above Add to Cart Form"
+msgstr "장바구니 추가 양식 위"
+
+msgid "After Cart"
+msgstr "장바구니 뒤"
+
+msgid "Below Add to Cart Form"
+msgstr "장바구니 추가 양식 아래"
+
+msgid "Before Meta"
+msgstr "메타 앞"
+
+msgid "Above Categories/Tags"
+msgstr "카테고리/태그 위"
+
+msgid "After Meta"
+msgstr "메타 뒤"
+
+msgid "Below Categories/Tags"
+msgstr "카테고리/태그 아래"
+
+msgid "Below Summary"
+msgstr "요약 아래"
+
+msgid "At bottom of product details"
+msgstr "제품 세부정보 하단"
+
+msgid "Above Summary"
+msgstr "요약 위"
+
+msgid "At very top of product details"
+msgstr "제품 세부정보 최상단"
+
+msgid "Try-On Button Icon"
+msgstr "Try-On 버튼 아이콘"
+
+msgid "Sparkles"
+msgstr "반짝임"
+
+msgid "Magic Wand"
+msgstr "마법 지팡이"
+
+msgid "Shirt"
+msgstr "셔츠"
+
+msgid "No Icon"
+msgstr "아이콘 없음"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "버튼 텍스트 앞에 표시할 이모지 아이콘을 선택하세요."
+
+msgid "Try with your photo Button Text"
+msgstr "사진으로 시도하기 버튼 텍스트"
+
+msgid "The text displayed on the frontend button."
+msgstr "프론트엔드 버튼에 표시되는 텍스트."
+
+msgid "Default Video Duration"
+msgstr "기본 비디오 길이"
+
+msgid "(Pro Feature)"
+msgstr "(프로 기능)"
+
+msgid "4 Seconds"
+msgstr "4초"
+
+msgid "Standard generation"
+msgstr "표준 생성"
+
+msgid "8 Seconds"
+msgstr "8초"
+
+msgid "Extended generation"
+msgstr "확장 생성"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "생성된 비디오의 길이를 선택하세요. (프로에서 사용 가능)"
+
+msgid "Video Resolution"
+msgstr "비디오 해상도"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "표준 해상도"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "고화질"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "생성된 비디오의 해상도를 선택하세요. (Pro에서 사용 가능)"
+
+msgid "Image Size"
+msgstr "이미지 크기"
+
+msgid "1024x1024 (Square)"
+msgstr "1024x1024 (정사각형)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "DALL-E 2, DALL-E 3, Gemini"
+
+msgid "1024x1792 (Portrait)"
+msgstr "1024x1792 (세로)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "DALL-E 3, Gemini"
+
+msgid "1792x1024 (Landscape)"
+msgstr "1792x1024 (가로)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "AI로 생성된 이미지의 종횡비/크기를 선택하세요."
+
+msgid "Google Gemini Base Prompt"
+msgstr "Google Gemini 기본 프롬프트"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "Google Gemini에 전송되는 기본 지침을 사용자 정의하세요. 사용자의 입력은 자동으로 추가됩니다."
+
+msgid "Reset to Default"
+msgstr "기본값으로 재설정"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "Gemini Veo 비디오 기본 프롬프트"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "Veo 비디오 생성을 위한 기본 지침을 사용자 정의하세요. 사용자의 입력은 자동으로 추가됩니다. (Pro에서 사용 가능)"
+
+msgid "OpenAI Base Prompt"
+msgstr "OpenAI 기본 프롬프트"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "OpenAI에 전송되는 기본 지침을 사용자 정의하세요. 사용자의 입력은 자동으로 추가됩니다."
+
+msgid "Final Prompt Structure Builder"
+msgstr "최종 프롬프트 구조 빌더"
+
+msgid "Use placeholders:"
+msgstr "자리 표시자 사용:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "최종 결합된 프롬프트가 전송되는 방식을 구조화합니다."
+
+msgid "Quick Start Guide"
+msgstr "빠른 시작 가이드"
+
+msgid "Welcome to"
+msgstr "환영합니다."
+
+msgid "WooCommerce AI Try-On"
+msgstr "WooCommerce AI 가상 착용"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "이 플러그인은 고객이 최첨단 생성 AI를 사용하여 제품을 가상으로 착용해 볼 수 있게 합니다."
+
+msgid "Pro Tip:"
+msgstr "프로 팁:"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "\"Try On\" 버튼의 위치와 텍스트를 <strong>일반 설정</strong> 탭에서 완전히 사용자 정의할 수 있습니다!"
+
+msgid "1. Customer Experience"
+msgstr "1. 고객 경험"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "고객이 Try-On 버튼을 클릭하면 프리미엄 모달 인터페이스가 슬라이드 업됩니다. 고객은 쉽게 드래그 앤 드롭하거나 자신의 참조 사진을 업로드할 수 있습니다. 또한 사용자 정의 시나리오 지침을 추가할 수 있는 텍스트 상자가 있습니다 (예: <em>\"현대적인 커피숍에 서 있는\"</em>)."
+
+msgid "2. The Generation Process"
+msgstr "2. 생성 과정"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "Generate를 클릭하면 플러그인이 <strong>제품 이미지</strong>, <strong>고객이 업로드한 이미지</strong>, 그리고 <strong>시나리오 텍스트</strong>를 가져와 <em>최종 프롬프트 구조 빌더</em>를 사용하여 결합합니다 (프롬프트 탭에서 찾을 수 있습니다)."
+
+msgid "3. Image vs Video"
+msgstr "3. 이미지 대 비디오"
+
+msgid "Images:"
+msgstr "이미지:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "Google Gemini (Imagen 3) 또는 OpenAI (DALL-E 3)에 의해 즉시 생성됩니다."
+
+msgid "Videos:"
+msgstr "비디오:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "Google의 최첨단 <strong>Veo</strong> 모델에 의해 독점적으로 구동됩니다. 비디오 생성에는 몇 분이 걸릴 수 있습니다. 플러그인은 Google의 서버를 백그라운드에서 지속적으로 폴링하여 고객이 페이지를 떠나지 않고도 실시간 상태 업데이트를 볼 수 있도록 부드럽게 처리합니다."
+
+msgid "API Keys & Configuration"
+msgstr "API 키 및 구성"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "Try-On 버튼이 작동하려면 AI 공급자를 구성해야 합니다."
+
+msgid "Important:"
+msgstr "중요:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "AI 설정 탭에서 선택한 모델 옆의 <strong>확인</strong> 버튼을 클릭하여 API 키가 액세스 권한이 있는지 확인해야 합니다."
+
+msgid "Getting a Google Gemini Key"
+msgstr "Google Gemini 키 받기"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Google의 Gemini 모델(Imagen 3 및 Veo 포함)은 Google AI Studio에서 API 키가 필요합니다. <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>를 방문하여 무료 API 키를 받을 수 있습니다."
+
+msgid "Getting an OpenAI Key"
+msgstr "OpenAI 키 받기"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAI의 모델(DALL-E 3와 같은)은 유료 OpenAI 플랫폼 계정이 필요합니다. <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API 키</a>에서 키를 생성할 수 있습니다."
+
+msgid "Need Support?"
+msgstr "지원이 필요하신가요?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "플러그인에 문제가 발생하거나 기능 요청이 있는 경우 지원 데스크에 문의해 주세요."
+
+msgid "Contact Support &rarr;"
+msgstr "지원 문의 &rarr;"
+
+msgid "Useful Links"
+msgstr "유용한 링크"
+
+msgid "Google AI Studio"
+msgstr "Google AI Studio"
+
+msgid "OpenAI Developer Platform"
+msgstr "OpenAI 개발자 플랫폼"
+
+msgid "WooCommerce Docs"
+msgstr "WooCommerce 문서"
+
+msgid "Save Configurations"
+msgstr "구성 저장"
+
+msgid "AI API Configuration"
+msgstr "AI API 구성"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "API 키, 모델 및 생성 설정을 구성합니다."
+
+msgid "Image Generation AI Provider"
+msgstr "이미지 생성 AI 공급자"
+
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgid "OpenAI Integration Settings"
+msgstr "OpenAI 통합 설정"
+
+msgid "OpenAI API Key"
+msgstr "OpenAI API 키"
+
+msgid "Test Connection"
+msgstr "연결 테스트"
+
+msgid "OpenAI Image Model"
+msgstr "OpenAI 이미지 모델"
+
+msgid "Verify"
+msgstr "확인"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "이미지 생성을 위한 OpenAI 모델을 선택하세요."
+
+msgid "Google Gemini Integration Settings"
+msgstr "Google Gemini 통합 설정"
+
+msgid "Powered by Veo for Video"
+msgstr "비디오를 위한 Veo에 의해 구동됩니다."
+
+msgid "Gemini API Key"
+msgstr "Gemini API 키"
+
+msgid "Gemini Image Model"
+msgstr "Gemini 이미지 모델"
+
+msgid "Select the Gemini model for image generation."
+msgstr "이미지 생성을 위한 Gemini 모델을 선택하세요."
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "Gemini 비디오 모델 (Google Veo)"
+
+msgid " ( Recommended )"
+msgstr " (추천)"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "비디오 가상 착용 생성을 위한 Google Veo 모델을 선택하세요. (Pro에서 사용 가능)"
+
+msgid "API Key is empty."
+msgstr "API 키가 비어 있습니다."
+
+msgid "Connection successful!"
+msgstr "연결 성공!"
+
+msgid "API Error: "
+msgstr "API 오류: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "연결 실패 (HTTP %1$s). 세부정보: %2$s"
+
+msgid "API Error"
+msgstr "API 오류"
+
+msgid "Missing API key or model."
+msgstr "API 키 또는 모델이 누락되었습니다."
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "생성 실패. (HTTP %s)"
+
+msgid "Model verified successfully."
+msgstr "모델이 성공적으로 확인되었습니다."
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "모델 확인 실패. (HTTP %s)"
+
+msgid "Invalid provider."
+msgstr "유효하지 않은 공급자."
+
+msgid "OpenAI API Request Failed: "
+msgstr "OpenAI API 요청 실패: "
+
+msgid "Generation execution failure. %s"
+msgstr "생성 실행 실패. %s"
+
+msgid "OpenAI Error: "
+msgstr "OpenAI 오류: "
+
+msgid "Gemini API Request Failed: "
+msgstr "Gemini API 요청 실패: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "Gemini 생성 중지. 이유: "
+
+msgid "Unknown Gemini Error."
+msgstr "알 수 없는 Gemini 오류."
+
+msgid "Gemini API Error: "
+msgstr "Gemini API 오류: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "AI 생성의 일일 한도에 도달했습니다. 내일 다시 시도해 주세요."
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "API 구성이 누락되었습니다. 상점 관리자에게 문의하세요."
+
+msgid "No media data provided."
+msgstr "제공된 미디어 데이터가 없습니다."
+
+msgid "Invalid base64 data."
+msgstr "유효하지 않은 base64 데이터."
+
+msgid "Failed to decode base64."
+msgstr "base64 디코드 실패."
+
+msgid "Saved to Media Library!"
+msgstr "미디어 라이브러리에 저장되었습니다!"
+
+msgid "Failed to save base64 media."
+msgstr "base64 미디어 저장 실패."
+
+msgid "Failed to download media from URL."
+msgstr "URL에서 미디어 다운로드 실패."
+
+msgid "Failed to save downloaded media."
+msgstr "다운로드된 미디어 저장 실패."
+
+msgid "Invalid media format."
+msgstr "유효하지 않은 미디어 형식."
+
+msgid "Reset!"
+msgstr "재설정!"
+
+msgid "Please enter an API key first."
+msgstr "먼저 API 키를 입력하세요."
+
+msgid "Testing connection..."
+msgstr "연결 테스트 중..."
+
+msgid "Error: "
+msgstr "오류: "
+
+msgid "Unknown error"
+msgstr "알 수 없는 오류"
+
+msgid "Request failed: "
+msgstr "요청 실패: "
+
+msgid "Please select a model first."
+msgstr "먼저 모델을 선택하세요."
+
+msgid "Verifying..."
+msgstr "검증 중..."
+
+msgid "Testing..."
+msgstr "테스트 중..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "검증 완료! 모델이 이 모달리티를 수용합니다."
+
+msgid "AJAX request failed."
+msgstr "AJAX 요청 실패."
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "추천 (최적의 속도 및 가격)"
+
+msgid "Processing..."
+msgstr "처리 중..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "비디오 생성 중 (최대 5분 소요될 수 있습니다) ..."
+
+msgid "Status Check Error: "
+msgstr "상태 확인 오류: "
+
+msgid "Execution Error: "
+msgstr "실행 오류: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "예기치 않은 인프라 통신 오류가 발생했습니다."
+
+msgid "No media available to download."
+msgstr "다운로드할 미디어가 없습니다."
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "이미지/비디오만 미디어 라이브러리에 저장할 수 있습니다."
+
+msgid "Saving..."
+msgstr "저장 중..."
+
+msgid "Saved!"
+msgstr "저장됨!"
+
+msgid "Error"
+msgstr "오류"
+
+msgid "Error saving media."
+msgstr "미디어 저장 오류."
+
+msgid "Network error."
+msgstr "네트워크 오류."
+
+msgid "Adding..."
+msgstr "추가 중..."
+
+msgid "You must be logged in to use this feature."
+msgstr "이 기능을 사용하려면 로그인해야 합니다."
+
+msgid "AI Product Generation"
+msgstr "AI 제품 생성"
+
+msgid "Original Image"
+msgstr "원본 이미지"
+
+msgid "Original Product"
+msgstr "원본 제품"
+
+msgid "Upload Image"
+msgstr "이미지 업로드"
+
+msgid "Generate Image"
+msgstr "이미지 생성"
+
+msgid "Background Preference"
+msgstr "배경 선호도"
+
+msgid "Studio"
+msgstr "스튜디오"
+
+msgid "Outdoor"
+msgstr "야외"
+
+msgid "Lifestyle"
+msgstr "라이프스타일"
+
+msgid "Output Style"
+msgstr "출력 스타일"
+
+msgid "Model Shoot"
+msgstr "모델 촬영"
+
+msgid "Flat Lay"
+msgstr "플랫 레이"
+
+msgid "Ghost Mannequin"
+msgstr "유령 마네킹"
+
+msgid "Prompt (Optional)"
+msgstr "프롬프트 (선택 사항)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "특정 지침을 추가하세요 (선택 사항)"
+
+msgid "Generate"
+msgstr "생성"
+
+msgid "Download"
+msgstr "다운로드"
+
+msgid "Generated Output"
+msgstr "생성된 출력"
+
+msgid "Ready to generate"
+msgstr "생성할 준비 완료"
+
+msgid "Generating Magic..."
+msgstr "마법 생성 중..."
+
+msgid "Add to Cart"
+msgstr "장바구니에 추가"
+
+msgid "AI Analyst"
+msgstr "AI 분석가"
+
+msgid "AI Store Analyst"
+msgstr "AI 스토어 분석가"
+
+msgid "WooCommerce Intelligence"
+msgstr "WooCommerce 인텔리전스"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "AI로 구동되는 즉각적인 판매 통찰력, 예측 인텔리전스 및 심층 분석."
+
+msgid "Active AI Provider"
+msgstr "활성 AI 제공자"
+
+msgid "Ready to analyze your store"
+msgstr "스토어 분석 준비 완료"
+
+msgid "Clear Conversation History"
+msgstr "대화 기록 지우기"
+
+msgid "Reset Chat"
+msgstr "채팅 초기화"
+
+msgid "Ask a question"
+msgstr "질문하기"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "판매, 베스트셀러 제품, 고객, 트렌드에 대해 질문하세요..."
+
+msgid "Send question"
+msgstr "질문 보내기"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "전송하려면 Enter ↵를 누르세요 • 새 줄을 위해 Shift + Enter"
+
+msgid "Store Insights"
+msgstr "스토어 통찰력"
+
+msgid "AI Growth Recommendation"
+msgstr "AI 성장 추천"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "최근 스토어 주문 및 성과 분석 중..."
+
+msgid "Performance Overview"
+msgstr "성과 개요"
+
+msgid "Last 30 Days"
+msgstr "지난 30일"
+
+msgid "Revenue Trend"
+msgstr "수익 추세"
+
+msgid "Top Products by Revenue"
+msgstr "수익 기준 상위 제품"
+
+msgid "The requested analysis is not available."
+msgstr "요청한 분석을 사용할 수 없습니다."
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "지난 30일 동안 적격 주문이 발견되지 않았습니다. 먼저 트래픽, 체크아웃 오류 및 주문 상태 설정을 확인하세요."
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "주문이 %s%% 감소했습니다. 트래픽 및 재구매 고객 회복에 집중하세요; 분석가에게 가장 가능성이 높은 고객을 물어보세요."
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "평균 주문 가치가 %s%% 감소했습니다. 함께 구매한 제품 보고서를 사용하여 번들을 테스트하세요."
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s가 최근 수익을 이끌고 있습니다. 자주 구매되는 제품과 짝지어 번들을 눈에 띄게 표시하세요."
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "최근 고객, 쿠폰 및 판매 채널을 검토하여 가장 명확한 성장 기회를 찾으세요."
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "AI Try-On 및 AI 설정에서 OpenAI 또는 Google Gemini API 키를 구성하세요."
+
+msgid "Google Gemini request failed."
+msgstr "Google Gemini 요청 실패."
+
+msgid "OpenAI request failed."
+msgstr "OpenAI 요청 실패."
+
+msgid "Which period performed best?"
+msgstr "어떤 기간이 가장 성과가 좋았나요?"
+
+msgid "Show the top products during the strongest period."
+msgstr "가장 강력한 기간 동안 상위 제품을 보여주세요."
+
+msgid "Compare this trend with the previous period."
+msgstr "이 추세를 이전 기간과 비교하세요."
+
+msgid "Show the sales trend for the same period."
+msgstr "동일한 기간의 판매 추세를 보여주세요."
+
+msgid "Compare these products with the previous period."
+msgstr "이 제품들을 이전 기간과 비교하세요."
+
+msgid "Summarize sales for this period."
+msgstr "이 기간의 판매를 요약하세요."
+
+msgid "Show this period as a sales graph."
+msgstr "이 기간을 판매 그래프로 보여주세요."
+
+msgid "Which products sold best during this period?"
+msgstr "이 기간 동안 어떤 제품이 가장 잘 팔렸나요?"
+
+msgid "Compare this with the preceding period."
+msgstr "이것을 이전 기간과 비교하세요."
+
+msgid "What were total sales in the last 30 days?"
+msgstr "지난 30일 동안 총 판매액은 얼마였나요?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "지난 1년 동안의 월별 판매 추세를 보여주세요."
+
+msgid "What are my top 10 products this year?"
+msgstr "올해의 상위 10개 제품은 무엇인가요?"
+
+msgid "Sales trend"
+msgstr "판매 추세"
+
+msgid "Top products by revenue"
+msgstr "수익 기준 상위 제품"
+
+msgid "Coupon-attributed revenue"
+msgstr "쿠폰 기여 수익"
+
+msgid "Most valuable customers"
+msgstr "가장 가치 있는 고객"
+
+msgid "Product profit"
+msgstr "제품 이익"
+
+msgid "Product revenue"
+msgstr "제품 수익"
+
+msgid "Revenue by channel"
+msgstr "채널별 수익"
+
+msgid "Frequently bought together"
+msgstr "자주 함께 구매됨"
+
+msgid "Gemini settings"
+msgstr "Gemini 설정"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "Gemini 도움말"
+
+msgid "Enable Gemini AI"
+msgstr "Gemini AI 활성화"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(Gemini에서만 결과를 원하면 설정-&gt;시작 메뉴에서 사이트 검색을 비활성화하세요)"
+
+msgid "Context awareness"
+msgstr "맥락 인식"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "Gemini 결과로 페이지 제안을 활성화하세요"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "검색 결과에 포함할 POST TYPE(s)을 선택하세요"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "https://aistudio.google.com/app/apikey에서 API 키를 받으세요."
+
+msgid "It requires a paid Gemini API plan"
+msgstr "유료 Gemini API 플랜이 필요합니다."
+
+msgid "Gemini Model"
+msgstr "제미니 모델"
+
+msgid "Fetch Models"
+msgstr "모델 가져오기"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "제미니 모델을 선택하세요. API 키를 방금 추가한 경우 \"모델 가져오기\"를 클릭하여 목록을 업데이트하세요."
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "유료 모델을 선택하세요. 목록의 모든 모델이 무료 요금제에서 사용할 수 있는 것은 아닙니다."
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "사용자 쿼리에 대한 맞춤형 결과를 추가하기 위한 프롬프트 (선택 사항)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "사용자 쿼리 끝에 추가할 맞춤형 결과를 위한 프롬프트 (선택 사항)"
+
+msgid "Save settings"
+msgstr "설정 저장"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "미세 조정 VS GPT 어시스턴트 VS RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "미세 조정은 많은 형식이 올바른 데이터가 필요하므로 GPT 어시스턴트나 RAG를 사용하는 것이 좋습니다. GPT 어시스턴트는 설정하기가 더 쉽습니다. 여전히 웹사이트 데이터를 사용하여 봇을 훈련할 수 있습니다."
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "이 플러그인에서 RAG 사용하기:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "설정 패널에서 RAG를 활성화하세요."
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "소스를 선택한 후 “선택한 모든 소스 삽입” 버튼을 클릭하세요."
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(선택 사항) 삽입할 PDF 또는 CSV 파일 업로드"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "시스템이 자동으로 데이터베이스에 임베딩을 저장합니다."
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "이제 사용자 질문은 귀하의 사이트 지식 기반을 사용하여 답변됩니다."
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "OpenAI API 키, AI 모델 및 시스템 명령을 기본 OpenAI 설정에서 구성해야 합니다."
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "언제든지 콘텐츠를 업데이트하거나 다시 임베드할 수 있으며 재훈련할 필요가 없습니다."
+
+msgid "Getting Started with gemini"
+msgstr "제미니 시작하기"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "제미니는 LLM을 위한 통합 인터페이스 또는 집계기입니다. OpenAI에서 Deepseek 또는 Claude까지 수백 가지 AI 모델 중에서 선택하여 AI 응답을 받을 수 있습니다."
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "제미니 API 키를 추가하고 제미니 모델을 선택하기만 하면 됩니다."
+
+msgid "Grab your API key from"
+msgstr "API 키를 가져오세요."
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "제미니가 작동하려면 DialogFlow와 OpenAI가 비활성화되어 있는지 확인하세요."
+
+msgid "Failed in Security check"
+msgstr "보안 검사 실패"
+
+msgid "Unauthorized user"
+msgstr "권한이 없는 사용자"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "보안 검사 실패. 권한이 없는 요청입니다."
+
+msgid "API Key is required"
+msgstr "API 키가 필요합니다."
+
+msgid "Security check failed"
+msgstr "보안 검사 실패"
+
+msgid "Unauthorized access"
+msgstr "권한이 없는 접근"
+
+msgid "Settings updated successfully"
+msgstr "설정이 성공적으로 업데이트되었습니다."
+
+msgid "View Detail"
+msgstr "상세 보기"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI는 일부 오래된 모델을 비활성화했습니다. 미세 조정을 위해 GPT 3.5 또는 4를 사용하세요. 데이터 세트를 업데이트하고 다시 미세 조정해야 합니다. 자세한 내용은 도움말 섹션을 확인하세요."
+
+msgid "OpenAI settings"
+msgstr "OpenAI 설정"
+
+msgid "Training Model"
+msgstr "모델 훈련"
+
+msgid "GPT Assistant"
+msgstr "GPT 어시스턴트"
+
+msgid "Fine Tune with Website Data"
+msgstr "웹사이트 데이터로 미세 조정"
+
+msgid "AI Image Generator"
+msgstr "AI 이미지 생성기"
+
+msgid "AI Article Generator"
+msgstr "AI 기사 생성기"
+
+msgid "GPT Assistant is available with the "
+msgstr "GPT 어시스턴트는 "
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro Professional"
+
+msgid " and "
+msgstr " 및 "
+
+msgid "Master"
+msgstr "마스터"
+
+msgid " Licenses"
+msgstr " 라이센스"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "미세 조정 VS GPT 어시스턴트:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "미세 조정은 많은 형식이 올바른 데이터가 필요하므로 GPT 어시스턴트를 사용하는 것이 좋습니다. 여전히 웹사이트 데이터를 사용하여 봇을 훈련할 수 있습니다."
+
+msgid "Setting up GPT Assistants:"
+msgstr "GPT 어시스턴트 설정:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "웹사이트 데이터로 GPT 훈련 탭으로 이동하세요. 필요한 모든 게시물 유형을 선택하고 어시스턴트를 위한 데이터 변환 버튼을 누르세요. 완료되면 JSON 형식으로 데이터 파일을 다운로드하세요."
+
+msgid "Go to "
+msgstr "어시스턴트 놀이터로 이동하세요."
+
+msgid "Assistants playground"
+msgstr " 및 새 어시스턴트를 생성하세요."
+
+msgid " and create a new Assistant"
+msgstr "다운로드한 JSON 파일을 업로드하고 아래와 유사한 지침을 GPT에 제공하되 웹사이트 URL에 맞게 사용자 정의하세요:"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "당신의 이름은 캐리입니다. 당신은 웹사이트 "
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "https://www.quantumcloud.net. "
+
+msgid "https://www.quantumcloud.net. "
+msgstr "의 챗봇 어시스턴트입니다."
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "웹사이트 데이터와 업로드한 파일을 사용하여 웹사이트 사용자로부터의 질문에 답변하세요."
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "어시스턴트 ID를 복사하여 웹사이트의 OpenAI 설정에서 GPT 어시스턴트 탭 아래에 붙여넣으세요. 완료되었습니다. OpenAI API 플랫폼에서 크레딧을 구매한 경우 작동을 시작합니다."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "다른 페이지에서 챗봇 위젯으로 다양한 GPT 어시스턴트를 사용할 수 있습니다. 이 샘플 단축코드를 붙여넣고 필요에 따라 어시스턴트 ID를 교체하세요: 예: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Please check this article for step by step guide."
+msgstr "단계별 가이드를 보려면 이 기사를 확인하세요."
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "AI 서비스에서 맞춤형 결과 얻기"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "AI 서비스에서 얻을 수 있는 최상의 맞춤형 결과는 문서와 웹사이트 데이터를 업로드할 수 있는 OpenAI GPT 어시스턴트를 사용하는 것입니다(우리의 프로 버전에서 생성됨). 그러나 자세한 프롬프트를 작성하여 여전히 맞춤형 결과를 얻을 수 있습니다. OpenAI 설정 영역의 시스템 명령 섹션(다른 AI 서비스에도 프롬프트 섹션이 있음)에서 서비스, 제품, 연락처 방법 또는 맞춤형 결과를 얻기 위해 관련된 모든 세부 정보를 포함하는 자세한 프롬프트를 작성할 수 있습니다. 최대 3000단어면 충분합니다. 이는 대부분의 소규모에서 중간 규모 웹사이트에 충분할 것입니다."
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "이 기사를 확인하세요."
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "OpenAI에서 맞춤형 결과를 얻는 방법에 대한 자세한 내용은."
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "WoowbotPro Professional 또는 마스터 라이센스로 업그레이드하여 GPT 어시스턴트를 사용하세요."
+
+msgid "Getting Started with OpenAI"
+msgstr "OpenAI 시작하기"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI는 최근 API 청구 정책을 변경했습니다. 이제 "
+
+msgid "pre-purchase API credits"
+msgstr "API 크레딧을 미리 구매해야 합니다."
+
+msgid " now. Go to "
+msgstr " 지금. "
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/ "
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "로 가서 API 계정에 크레딧을 추가하세요. 그런 다음 사용 한도를 늘리세요."
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "OpenAI API 키를 추가하면 일반 질문에 대해 이미 작동하기 시작해야 합니다. 시크릿 모드에서 새 브라우저 창을 열고 \"러시아의 수도는 무엇인가요?\"라고 물어보세요."
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "OpenAI가 작동하려면 DialogFlow가 비활성화되어 있는지 확인하세요."
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "미세 조정 VS GPT 어시스턴트 VS RAG"
+
+msgid "GPT Assistants:"
+msgstr "GPT 어시스턴트:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "OpenAI API 키를 얻는 방법"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "OpenAI API는 인증을 위해 API 키를 사용합니다. 요청에 사용할 API 키를 검색하려면 API 키 페이지를 방문하세요. API 키는 비밀입니다! 다른 사람과 공유하거나 클라이언트 측 코드(브라우저, 앱)에 노출하지 마세요. 프로덕션 요청은 API 키를 환경 변수 또는 키 관리 서비스에서 안전하게 로드할 수 있는 자체 백엔드 서버를 통해 라우팅해야 합니다."
+
+msgid "You can generate the API key from here: "
+msgstr "여기에서 API 키를 생성할 수 있습니다: "
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys. "
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "OpenAI 훈련 또는 미세 조정"
+
+msgid "To train OpenAI"
+msgstr "OpenAI를 훈련시키기 위해"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr ""
+"a. 모델을 훈련하거나 미세 조정하려면, 먼저 다음을 수행해야 합니다:\n"
+"                "
+
+msgid "Gather the necessary data you want to train with"
+msgstr "훈련할 필요한 데이터를 수집하세요."
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "OpenAI API 요구 사항에 따라 데이터를 올바르게 형식화하세요(작동 방식을 보려면 샘플 데이터 형식을 다운로드하세요). 데이터 세트는 유용한 결과를 제공하기 위해 최소 500행이 필요합니다. OpenAI 문서에 따르면 3,000행 및 5,000행이 권장됩니다."
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "데이터를 .JSONL 형식으로 OpenAI에 업로드하세요."
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "귀하의 데이터로 기존 OpenAI 모델을 훈련하세요(봇 OpenAI 설정 페이지에서 선택하세요)."
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+"b. JSONL 파일이 준비되면 훈련 모델 섹션으로 이동하세요.\n"
+"                훈련 파일을 .JSONL 형식으로 업로드하세요."
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "c. 훈련 파일을 업로드하면 파일 ID가 반환되며, \"FT 모델 생성\" 버튼을 클릭하면 훈련이 시작됩니다. 모델을 나중에 인식할 수 있도록 접미사를 설정하고 팝업에서 기본 모델을 선택하여 생성하세요."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. 훈련이 완료되고 파일이 준비되면 미세 조정된 모델이 반환됩니다. 미세 조정된 모델 목록에 나열되며 상태는 \"성공\"으로 표시되고 FT(미세 조정) 모델 ID도 받게 됩니다(설정 페이지에 복사)."
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "e. 위 절차를 따라 여러 개의 미세 조정된 모델을 생성할 수 있습니다. 사용하려는 미세 조정된 모델 ID를 복사하세요."
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "f. 기본 봇 OpenAI 설정 페이지로 이동하여 미세 조정된 모델 ID를 사용자 정의 미세 조정 모델 필드에 붙여넣고 저장하세요. 이제 봇이 훈련 데이터에 따라 응답하기 시작합니다."
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "h. GPT3.5/4를 위한 데이터 모델 준비:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "먼저 아래 형식과 같은 jsonl 파일을 생성해야 합니다."
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "각 프롬프트와 완료는 한 줄에 있어야 합니다."
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "GPT 3.5/4의 미세 조정 파일 형식"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"당신은 가끔 단어를 잘못 쓰는 어시스턴트입니다.\" },{ \"role\": \"user\", \"content\": \"이야기를 들려주세요.\" }, { \"role\": \"assistant\", \"content\": \"어느 날 한 학생이 학교에 갔습니다.\" }]}"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "오른쪽 클릭하고 GPT 3.5/4로 미세 조정하기 위한 예제 jsonl 파일을 저장하세요."
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "OpenAI 삽입하기"
+
+msgid "Important points about fine tuning"
+msgstr "미세 조정에 대한 중요한 사항"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "더 나은 결과를 얻으려면 최소 500개 이상의 프롬프트가 필요합니다. 그렇지 않으면 OpenAI가 응답을 일반 지식과 혼합할 것입니다. 또한 프롬프트는 가능한 한 설명적이어야 합니다. 설명적인 질문과 답변으로 FAQ 형식을 따르세요. 예시 프롬프트: 단순히 \"빈티지 데님 재킷\" 대신 \"왜 우리의 빈티지 데님 재킷을 입어야 하나요?\"라고 쓸 수 있습니다."
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "완료가 짧거나 100단어 정도인 경우 최대 토큰 값을 200으로 유지하세요. 원하는 결과를 얻을 때까지 온도, 존재 패널티 및 빈도 패널티 설정을 조정하세요."
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "웹사이트 데이터로 미세 조정하는 경우, 봇은 게시물 제목을 프롬프트로 사용합니다. 페이지/게시물 제목이 설명적이지 않으면 좋은 결과를 얻지 못할 것입니다. 이러한 경우 훈련 모델 페이지에서 JSONL 파일을 다운로드하여 프롬프트를 개선한 후 다시 미세 조정하세요."
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "사이트 검색을 비활성화하려면 설정-&gt;시작 메뉴에서 비활성화하세요. 이렇게 하면 봇이 사이트 검색에서 답변을 가져오지 않습니다. 설정이 덮어쓰여지지 않도록 로그아웃한 후 다시 로그인하세요."
+
+msgid "How to Optimize Fine Tuning"
+msgstr "미세 조정 최적화 방법"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "미세 조정에서 더 나은 결과를 얻으려면 다음 단계를 따르세요:"
+
+msgid "Set a lower value for Temperature"
+msgstr "온도 값을 낮게 설정하세요"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "존재 패널티와 빈도 패널티의 값을 높게 설정하세요."
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "가능하다면 사용자 정의 모델을 만들 때 기본 모델로 Curie 모델을 사용하세요."
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "프롬프트와 완료에 따라 최대 토큰을 사용하세요. 최대 토큰의 값을 높게 설정하면 AI가 귀하의 맥락과 관련이 없을 수 있는 더 많은 정보를 생성합니다. 최대 토큰을 너무 낮게 설정하면 데이터가 짧아지거나 오류가 발생할 수 있습니다."
+
+msgid "Presence Penalty"
+msgstr "존재 패널티"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "-2.0과 2.0 사이의 숫자입니다. 양수 값은 텍스트에 나타나는지 여부에 따라 새로운 토큰에 패널티를 부여하여 모델이 새로운 주제에 대해 이야기할 가능성을 높입니다."
+
+msgid "Frequency Penalty"
+msgstr "빈도 패널티"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "-2.0과 2.0 사이의 숫자입니다. 양수 값은 텍스트에서 기존 빈도에 따라 새로운 토큰에 패널티를 부여하여 모델이 동일한 내용을 반복할 가능성을 줄입니다."
+
+msgid "Temperature"
+msgstr "온도"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "가장 중요한 설정 중 하나는 온도라고 합니다. 온도가 0보다 높으면 동일한 프롬프트를 제출할 때마다 다른 완료 결과가 생성됩니다. 모델은 이전 텍스트에 따라 가장 가능성이 높은 텍스트를 예측합니다. 온도는 0과 1 사이의 값으로, 모델이 이러한 예측을 할 때 얼마나 자신감을 가져야 하는지를 제어합니다. 온도를 낮추면 위험을 덜 감수하게 되어 완료 결과가 더 정확하고 결정적이 됩니다. 온도를 높이면 더 다양한 완료 결과가 생성됩니다."
+
+msgid "My OpenAI does not work"
+msgstr "내 OpenAI가 작동하지 않습니다"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "설정을 확인하세요(예: API 키, 최대 토큰 등). 사용된 모델에 따라(GPT3는 최대 4000) 요청은 프롬프트와 완료 간에 공유되는 최대 4097 토큰을 사용할 수 있습니다. 프롬프트가 4000 토큰이면 완료는 최대 97 토큰이 될 수 있습니다. 또한 다이얼로그플로우가 비활성화되어 있는지 확인하세요. 다이얼로그플로우와 OpenAI는 함께 작동하지 않습니다."
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "게시물 유형 및 페이지에 따라 여러 개의 미세 조정 모델을 만들 수 있습니다. 훈련 데이터를 JSONL 파일로 다운로드하여 수정한 후 다른 파일과 동일한 프로세스로 업로드할 수 있습니다(위의 지침 참조). 또한 `FT 모델로 업로드` 버튼을 클릭하여 업로드할 수 있습니다. 그런 다음 훈련 모델 탭에서 미세 조정 모델을 만들 수 있습니다."
+
+msgid "Fine tuning and training is available with the "
+msgstr "미세 조정 및 훈련은 다음과 함께 사용할 수 있습니다."
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro Professional"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "유료 OpenAI API 요금제가 필요합니다"
+
+msgid "Enable OpenAI"
+msgstr "OpenAI 활성화"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(OpenAI에서만 결과를 원하면 기본 제품 검색이 비활성화됩니다)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "스트리밍 활성화(실시간으로 생성되는 AI 응답 스트리밍)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "OpenAI 제품 카드 활성화"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(AI 응답 내에 관련 제품 카드를 표시하여 판매를 증가시킵니다.)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "GPT 결과로 WordPress 페이지 제안 활성화(링크는 WordPress에서 제안하며 AI가 아닙니다)"
+
+msgid "Api key"
+msgstr "API 키"
+
+msgid "OpenAI Model"
+msgstr "OpenAI 모델"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-Mini"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-Nano"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-Mini"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-Nano"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-Mini"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 turbo"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "시스템 명령(ChatGPT에게 행동 지시를 내리는 데 사용). 서비스, 제품 및 연락처에 대한 세부정보를 포함하는 자세한 프롬프트를 여기에 작성할 수 있습니다."
+
+msgid "Customized Results"
+msgstr "맞춤형 결과"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". 최대 3000 단어는 괜찮습니다."
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "당신은 유용한 도우미입니다. 답변에서 간결하고 관련성 있게 유지하며 새로운 주제를 도입하지 마세요."
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "ChatBot의 톤과 캐릭터를 설정하려면 필요에 따라 시스템 메시지를 설정하세요."
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "예: 당신은 유용한 도우미입니다. 답변에서 간결하고 관련성 있게 유지하며 새로운 주제를 도입하지 마세요."
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "사용자 쿼리 끝에 추가할 프롬프트(선택 사항)"
+
+msgid "Content for the response"
+msgstr "응답 내용"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "위험 구역(키워드가 제대로 설정되지 않으면 AI로부터 응답을 받지 못할 수 있습니다. 문제가 발생하면 키워드를 제거하세요)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "사용자 쿼리에 다음의 쉼표로 구분된 키워드 중 하나가 포함될 때만 OpenAI에 연결하세요."
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "사용자 쿼리에 다음의 쉼표로 구분된 키워드 중 하나가 포함되지 않을 때만 OpenAI에 연결하세요."
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "질문이 위의 키워드와 관련이 있을 때 OpenAI에 응답하도록 요청하세요(이 옵션을 활성화하면 정확성이 향상되지만 OpenAI 토큰을 사용합니다)"
+
+msgid "Check Connection  "
+msgstr "연결 확인"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "먼저 설정을 저장한 후 연결 확인 버튼을 누르세요."
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**OpenAI가 응답하지 않고 봇이 로딩 중인 경우, OpenAI 사용 한도에 도달했을 가능성이 높습니다. OpenAI API를 사용하기 위해 크레딧을 미리 구매하고 사용 한도를 늘리세요. API 계정에 크레딧을 추가하려면 다음을 방문하세요."
+
+msgid "billing page."
+msgstr "청구 페이지."
+
+msgid "How to reduce cost "
+msgstr "비용 절감 방법"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "및 ChatBot의 OpenAI API 비용을 절감하세요."
+
+msgid "success"
+msgstr "성공"
+
+msgid "error"
+msgstr "오류"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "API 키 없이 RAG를 활성화할 수 없습니다."
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "RAG 관련 옵션을 저장하려면 설정에서 RAG를 활성화하세요."
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "OpenAI API 키가 비어 있습니다. 먼저 API 키를 저장하세요."
+
+msgid "Congrats! You are connected to AI."
+msgstr "축하합니다! AI에 연결되었습니다."
+
+msgid "Success"
+msgstr "성공"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "OpenAI에 연결하지 못했습니다. API 키와 설정을 확인하세요."
+
+msgid "Invalid product ID"
+msgstr "유효하지 않은 제품 ID"
+
+msgid "Product not found"
+msgstr "제품을 찾을 수 없습니다"
+
+msgid "Insufficient permissions"
+msgstr "권한이 부족합니다"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "AI 설정 구성이 성공적으로 저장되었습니다."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// 각 역할에 대해 크론 작업을 예약합니다. 이미 예약되지 않은 경우);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // 사용된 비율 제한 카운트를 재설정하기 위한 wpshedule 이벤트\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// WordPress 크론 함수가 사용 가능한지 확인\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "비율 제한 초과. 나중에 다시 시도하세요."
+
+msgid "More WordPress Goodies for You!"
+msgstr "더 많은 WordPress 상품을 만나보세요!"
+
+msgid "Support"
+msgstr "지원"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "웹사이트를 개선할 수 있는 다른 작업을 확인하세요"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "모든 프로 버전 사용자는 프리미엄, 보장된 빠른 1:1 우선 지원을 받습니다."
+
+msgid "Get Priority Support "
+msgstr "우선 지원 받기"
+
+msgid "Online KnowledgeBase"
+msgstr "온라인 지식베이스"
+
+msgid "Get Support for Free Version"
+msgstr "무료 버전 지원 받기"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "양식 제출 요청 처리 중 문제가 발생했습니다! 불편을 드려 죄송합니다.<br> 피드백이 있으시면 <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span>으로 이메일을 보내주세요. 즉시 연락드리겠습니다!"
+
+msgid "Please fill up all the requried form fields."
+msgstr "모든 필수 양식 필드를 작성하세요."
+
+msgid "Invalid email address."
+msgstr "유효하지 않은 이메일 주소입니다."
+
+msgid "Support Request Details:"
+msgstr "지원 요청 세부정보:"
+
+msgid "Sent Via the Plugin"
+msgstr "플러그인을 통해 전송됨"
+
+msgid "Mail sent from:"
+msgstr "보낸 메일:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "메일 생성일:"
+
+msgid "From Plugin Support Page:"
+msgstr "플러그인 지원 페이지에서:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "귀하의 이메일이 성공적으로 전송되었습니다. 감사합니다!"
+
+msgid "By %s"
+msgstr "%s에 의해"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "%s 지금 설치하기"
+
+msgid "Install Now"
+msgstr "지금 설치"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "설치할 수 없습니다"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "%s 지금 업데이트하기"
+
+msgid "Update Now"
+msgstr "지금 업데이트"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "업데이트할 수 없습니다"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "활성화됨"
+
+msgid "Activate"
+msgstr "활성화"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "%s 활성화하기"
+
+msgid "Network Activate"
+msgstr "네트워크 활성화"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "%s 네트워크 활성화하기"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "설치됨"
+
+msgid "More Details"
+msgstr "자세히 보기"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "이 플러그인은 귀하의 WordPress 및 PHP 버전과 호환되지 않습니다."
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">WordPress를 업데이트하세요</a>, 그리고 <a href=\"%2$s\">PHP 업데이트에 대해 더 알아보세요</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">WordPress를 업데이트하세요</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">PHP 업데이트에 대해 더 알아보세요</a>."
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "이 플러그인은 귀하의 WordPress 버전과 호환되지 않습니다."
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "이 플러그인은 귀하의 PHP 버전과 호환되지 않습니다."
+
+msgid "Live Preview"
+msgstr "실시간 미리보기"
+
+msgid "Update To Pro"
+msgstr "프로 버전으로 업데이트"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "WoowBot을 시작하는 것은 즉시 가능합니다. 플러그인을 설치하고 활성화하기만 하면 됩니다."
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "WoowBot 패널-&gt;아이콘 섹션에서 자신의 ChatBot 아이콘을 업로드할 수 있습니다."
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "프로 버전에서는 사용자 정의 에이전트 아이콘도 업로드할 수 있습니다."
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "라이트 버전에서는 필요에 맞게 사용자 정의할 수 있는 몇 가지 언어 설정이 있습니다. 기본 언어는 영어를 사용하는 상점에 적합합니다. 그러나 봇 응답을 실제로 어떤 언어로든 변경할 수 있습니다!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "WoowBot 내부의 색상이나 글꼴 설정을 조정해야 하는 경우 사용자 정의 CSS 패널을 사용하세요."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "WooCommerce를 위한 #1 ChatBot – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "WoowBot Pro로 고급 AI 기능, 고객 리타겟팅 등을 이용하세요"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "지금 WoowBot Pro를 받으세요!"
+
+msgid "Crafted By:"
+msgstr "제작:"
+
+msgid "Web Design Company"
+msgstr "웹 디자인 회사"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "WoowBot 제어판"
+
+msgid "WoowBot Panel"
+msgstr "WoowBot 패널"
+
+msgid "Yes"
+msgstr "예"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "OR"
+msgstr "또는"
+
+msgid " Get the Professional Version Now!"
+msgstr "지금 전문 버전을 받으세요!"
+
+msgid "General settings"
+msgstr "일반 설정"
+
+msgid "WoowBot ICONS"
+msgstr "WoowBot 아이콘"
+
+msgid "Language Center"
+msgstr "언어 센터"
+
+msgid "Custom CSS"
+msgstr "사용자 정의 CSS"
+
+msgid "Emails Will be Sent to"
+msgstr "이메일이 전송될 주소"
+
+msgid "From Email Address"
+msgstr "보낸 사람 이메일 주소"
+
+msgid "Disable WoowBot"
+msgstr "WoowBot 비활성화"
+
+msgid "Disable WoowBot to Load"
+msgstr "WoowBot 로드 비활성화"
+
+msgid "Enable Product details from AI"
+msgstr "AI로부터 제품 세부정보 활성화"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "모바일 장치에서 WooWBot 비활성화"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "모바일 장치에서 WoowBot 로드 비활성화"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "WoowBot 아이콘의 위치 재정의"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "오른쪽에서 px 단위"
+
+msgid "From Bottom In px"
+msgstr "아래에서 px 단위"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "검색 결과에 표시할 제품 수. ('-1'은 모든 제품을 의미합니다)."
+
+msgid "Page controller"
+msgstr "페이지 컨트롤러"
+
+msgid "Show on Home Page"
+msgstr "홈페이지에 표시"
+
+msgid "YES"
+msgstr "예"
+
+msgid "NO"
+msgstr "아니오"
+
+msgid "Show on blog posts"
+msgstr "블로그 게시물에 표시"
+
+msgid "Show on  pages"
+msgstr "페이지에 표시"
+
+msgid "All Pages"
+msgstr "모든 페이지"
+
+msgid "Selected Pages Only "
+msgstr "선택한 페이지만"
+
+msgid "Exclude from Custom Post"
+msgstr "사용자 정의 게시물에서 제외"
+
+msgid "Icon - 0"
+msgstr "아이콘 - 0"
+
+msgid "Icon - 1"
+msgstr "아이콘 - 1"
+
+msgid "Icon - 2"
+msgstr "아이콘 - 2"
+
+msgid "Icon - 3"
+msgstr "아이콘 - 3"
+
+msgid "Icon - 4"
+msgstr "아이콘 - 4"
+
+msgid "Icon - 5"
+msgstr "아이콘 - 5"
+
+msgid "Icon - 6"
+msgstr "아이콘 - 6"
+
+msgid "Icon - 7"
+msgstr "아이콘 - 7"
+
+msgid "Icon -9"
+msgstr "아이콘 - 9"
+
+msgid "Icon - 10"
+msgstr "아이콘 - 10"
+
+msgid "Icon - 11"
+msgstr "아이콘 - 11"
+
+msgid "Icon - 12"
+msgstr "아이콘 - 12"
+
+msgid "Icon - 13"
+msgstr "아이콘 - 13"
+
+msgid "Icon - 14"
+msgstr "아이콘 - 14"
+
+msgid "Custom Icon"
+msgstr "사용자 정의 아이콘"
+
+msgid "Upload custom Floating Icon"
+msgstr "사용자 정의 플로팅 아이콘 업로드"
+
+msgid "Upload Custom Icon"
+msgstr "사용자 정의 아이콘 업로드"
+
+msgid " Woobot Agent Image"
+msgstr "Woobot 에이전트 이미지"
+
+msgid "Default Agent"
+msgstr "기본 에이전트"
+
+msgid "Custom Agent"
+msgstr "사용자 정의 에이전트"
+
+msgid "Custom Agent Icon"
+msgstr "사용자 정의 에이전트 아이콘"
+
+msgid "Upload Agent Icon"
+msgstr "에이전트 아이콘 업로드"
+
+msgid "Custom Backgroud"
+msgstr "사용자 정의 배경"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "메시지 보드 배경 이미지를 변경하세요 (미니 모드 제외)."
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "메시지 보드 배경 업로드 (이상적인 이미지 크기 350px X 550px)."
+
+msgid "Upload  background."
+msgstr "배경 업로드."
+
+msgid "Custom message board background"
+msgstr "사용자 정의 메시지 보드 배경"
+
+msgid "Message setting for"
+msgstr "다음에 대한 메시지 설정"
+
+msgid "Identity"
+msgstr "아이덴티티"
+
+msgid "Your Company or Website Name"
+msgstr "귀하의 회사 또는 웹사이트 이름"
+
+msgid "Agent name"
+msgstr "에이전트 이름"
+
+msgid "has joined the conversation"
+msgstr "대화에 참여했습니다"
+
+msgid "Greetings"
+msgstr "인사"
+
+msgid "Welcome to "
+msgstr "환영합니다 "
+
+msgid "Hi There! May I know your name?"
+msgstr "안녕하세요! 이름을 알려주실 수 있나요?"
+
+msgid "I am "
+msgstr "저는 "
+
+msgid "Nice to meet you"
+msgstr "만나서 반갑습니다"
+
+msgid "Message settings for"
+msgstr "다음에 대한 메시지 설정"
+
+msgid "Editor Box"
+msgstr "편집기 상자"
+
+msgid "is typing..."
+msgstr "타이핑 중..."
+
+msgid "Send a message"
+msgstr "메시지 전송"
+
+msgid "Products Search"
+msgstr "제품 검색"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "필요한 제품을 찾기 위해 여기 있습니다. 무엇을 쇼핑하고 계신가요?"
+
+msgid "if products found"
+msgstr "제품이 발견되면"
+
+msgid "If no matching products is found"
+msgstr "일치하는 제품이 발견되지 않으면"
+
+msgid "Can you be more specific?"
+msgstr "좀 더 구체적으로 말씀해 주실 수 있나요?"
+
+msgid "Product Search"
+msgstr "제품 검색"
+
+msgid "Catalog"
+msgstr "카탈로그"
+
+msgid "Send Us Email"
+msgstr "이메일 보내기"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "광범위한 카탈로그를 탐색할 수 있습니다. 아래에서 카테고리를 선택하세요."
+
+msgid "Too many choices? Let's try another search term"
+msgstr "선택지가 너무 많으신가요? 다른 검색어를 시도해 보세요."
+
+msgid "Email has been sent successfully"
+msgstr "이메일이 성공적으로 전송되었습니다."
+
+msgid "Please provide your email address"
+msgstr "이메일 주소를 입력해 주세요."
+
+msgid "Please write you message"
+msgstr "메시지를 작성해 주세요."
+
+msgid "You can paste or write your custom css here."
+msgstr "여기에 사용자 정의 CSS를 붙여넣거나 작성할 수 있습니다."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "WooCommerce를 위한 #1 챗봇 – WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro는 매출을 눈에 띄게 증가시킬 수 있는 WooCommerce 쇼핑 챗봇입니다. 쇼핑객들은 Bot과 유창하게 대화할 수 있으며, Google의 Dialogflow와 통합되어 채팅 인터페이스에서 직접 제품을 검색하고 장바구니에 추가하며 지원을 받을 수 있습니다."
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "사이트 내 리타게팅은 종료 의도, 시간 간격 또는 페이지 스크롤 다운 시 특별 제안 및 쿠폰을 표시하여 전환율 최적화를 도와줍니다. 고객 전환을 통계로 추적하여 쇼핑객들이 장바구니를 포기하는지 확인하세요. 더 많은 판매를 얻으세요!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "지금 WoowBot Pro를 구입하고 판매를 증가시키세요!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "다국어 애드온 (**새로운 기능)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "챗봇에 다국어 지원을 추가하세요. 사용자는 언제든지 드롭다운 메뉴에서 언어를 변경할 수 있습니다. 관리자는 기본 언어를 선택할 수 있습니다. 모든 주요 언어를 지원합니다. 다양한 언어에 대해 서로 다른 Dialogflow 에이전트와 연결하세요."
+
+msgid "Voice Message AddOn (**new)"
+msgstr "음성 메시지 애드온 (**새로운 기능)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "고객이 챗봇 인터페이스에서 음성 메시지를 녹음할 수 있도록 허용합니다. 음성 메시지는 백엔드에 저장되어 언제든지 들을 수 있습니다. Google API를 사용하여 음성을 텍스트로 변환합니다. 모든 최신 브라우저와 호환됩니다. 아름답고 현대적인 사용자 인터페이스."
+
+msgid "Extended UI Addon"
+msgstr "확장된 UI 애드온"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "사랑하는 챗봇의 외관을 바꿔보세요. 2개의 추가 현대적이고 세련된 템플릿 중에서 선택하세요! 이 새로운 템플릿은 웹사이트 방문자들을 놀라게 할 것입니다! 새로운 로더 효과와 광범위한 색상 사용자 정의 옵션이 제공됩니다!"
+
+msgid "Simple Text Responses Pro"
+msgstr "간단한 텍스트 응답 Pro"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "CSV 내보내기/가져오기 기능으로 고객 문의에 대한 텍스트 기반 응답을 쉽게 생성하세요. STR Pro는 백엔드 및 프론트엔드에서 간단한 텍스트 응답을 위한 카테고리를 지원합니다. 챗봇 응답을 형식화하고 더 나은 검색 일치를 위해 불용어를 제거하는 HTML 비주얼 편집기."
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "WoowBot을 위한 협상 챗봇"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "협상 챗봇으로 지금 제안을 하세요. 스마트 가격 협상을 통해 더 많은 고객을 유치하세요. 고객이 가격에 대해 제안을 할 수 있도록 허용합니다. 제품별로 설정한 최소 가격을 협상하세요. 구매 의사가 높은 쇼핑객을 포착하세요. 제안하기 버튼은 최소 가격을 설정한 제품의 단일 페이지에서만 표시됩니다."
+
+msgid "Conversational Form Builder"
+msgstr "대화형 양식 빌더"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "네이티브 WordPress 챗봇 경험을 위한 조건부 대화 및 양식을 생성하세요. 표준 양식, 조건부 필드가 있는 동적 양식, 계산기, 예약 등을 만듭니다. 7개의 준비된 템플릿이 내장되어 있습니다. 양식 데이터를 데이터베이스에 저장하고, 자동 응답, 조건부 필드, 변수, 저장된 수정 사항 등을 지원합니다!"
+
+msgid "Export Import Settings"
+msgstr "설정 내보내기/가져오기"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "여러 웹사이트에서 WoowbotPro를 사용하고 계신가요? 그렇다면 이 유용한 애드온이 도움이 될 수 있습니다. 이 애드온을 사용하면 설정을 내보내고 다른 사이트로 가져올 수 있으며, 백업을 유지할 수도 있습니다. 많은 옵션이 있는 언어 센터 설정을 포팅하는 데 매우 유용합니다. 지금 가져가세요!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "메신저 챗봇 애드온"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "웹사이트에서 Woowbot을 허브로 활용하여 FB 페이지 및 메신저에서 고객 질문에 응답하세요."
+
+msgid "Extended Search"
+msgstr "확장 검색"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "WPBot의 검색 기능을 확장하여 WooCommerce를 포함한 거의 모든 사용자 정의 게시물 유형을 포함하세요."
+
+msgid "ChatBot Session Save Addon"
+msgstr "챗봇 세션 저장 애드온"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "이 애드온은 사용자 채팅 세션을 저장하고 더 나은 지원 및 성능을 위해 봇을 미세 조정하는 데 도움을 줍니다."
+
+msgid "LiveChat Addon"
+msgstr "라이브챗 애드온"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "WPBot과 통합된 라이브 인간 채팅"
+
+msgid "White Label WPBot"
+msgstr "화이트 라벨 WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "QuantumCloud 로고와 브랜딩을 귀하의 것으로 교체하세요. 고객에게 챗봇 서비스를 제공하려는 개발자 및 에이전시에 적합합니다."
+
+msgid "Mailing List Integration AddOn"
+msgstr "메일링 리스트 통합 애드온"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "메일링 리스트 통합은 Mailchimp 및 Zapier 계정과 연결할 수 있는 챗봇 애드온입니다. 챗봇에서 Mailchimp 리스트에 새로운 구독자를 추가하고 구독을 취소할 수 있습니다. Zapier 계정에서 새로운 Zap을 생성하고 이 애드온과 연결할 수도 있습니다."
+
+msgid "WoowBot Master Theme"
+msgstr "WoowBot 마스터 테마"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "WoowBot 기반 테마를 가져가세요!"
+
+msgid "Save Settings"
+msgstr "설정 저장"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**전문가 팁: WoowBot을 정말 똑똑하게 만들고 싶으신가요?"
+
+msgid "AI and Natural Language Processing?"
+msgstr "AI 및 자연어 처리와 함께?"
+
+msgid "Upgrade to the Pro version"
+msgstr "프로 버전으로 업그레이드하세요."
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**전문가 팁: WoowBot Pro는 다음과 통합되어 있습니다."
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT 및 DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**전문가 팁: "
+
+msgid "Use ChatGPT to"
+msgstr "ChatGPT를 사용하여"
+
+msgid "answer  questions and provide real customer support"
+msgstr "질문에 답변하고 실제 고객 지원을 제공합니다."
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**전문가 팁: 고객이 주문을 완료하지 않나요? 다음을 통해 확인하세요."
+
+msgid "Customer Conversion report"
+msgstr "고객 전환 보고서"
+
+msgid "in the Pro version"
+msgstr "프로 버전에서"
+
+msgid "**Pro Tip:"
+msgstr "**전문가 팁:"
+
+msgid "Use WoowBot Pro to"
+msgstr "WoowBot Pro를 사용하여"
+
+msgid "provide live chat suport to your customers!"
+msgstr "고객에게 라이브 채팅 지원을 제공합니다!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**전문가 팁: 사이트 내 리타게팅을 활용하세요."
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "종료 의도 또는 스크롤 다운 팝업을 위해"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "with WoowBot Pro. Increase sales by 50% or more!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**전문가 팁: WoowBot Pro 설정은 쉽고 빠릅니다!"
+
+msgid "Plug and Play"
+msgstr "플러그 앤 플레이"
+
+msgid "No complex bot training required!"
+msgstr "복잡한 봇 교육이 필요하지 않습니다!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**전문가 팁: WoowBot Pro는 다음과 통합됩니다."
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "및 기타 여러 플랫폼에서 고객이 받을 자격이 있는 지원을 제공합니다. 고객 만족도를 높이세요!"

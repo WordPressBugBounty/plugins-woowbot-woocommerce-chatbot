@@ -1,0 +1,2033 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-14 11:45+0000\n"
+"PO-Revision-Date: 2026-09-14 11:45+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: Русский (Russian)\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "Не удается обнаружить информацию о плагине. Это, вероятно, связано с тем, что вы не включили код в основной файл плагина."
+
+msgid "Sorry to see you go"
+msgstr "Жаль видеть вас уходящим"
+
+msgid "Found a Bug"
+msgstr "Обнаружена ошибка"
+
+msgid "Need More Features"
+msgstr "Нужны дополнительные функции"
+
+msgid "Deactivating Temporarily"
+msgstr "Временно отключение"
+
+msgid "Upgrading to Pro"
+msgstr "Переход на Pro"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "Пожалуйста, укажите электронную почту, чтобы мы могли связаться с вами по исправлениям ошибок"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "Пожалуйста, предоставьте некоторые детали, чтобы мы могли улучшить плагин"
+
+msgid "Submitting form"
+msgstr "Отправка формы"
+
+msgid "Expand chat window"
+msgstr "Развернуть окно чата"
+
+msgid "Conversations with"
+msgstr "Беседы с"
+
+msgid "Close chat window"
+msgstr "Закрыть окно чата"
+
+msgid "Send a message."
+msgstr "Отправить сообщение."
+
+msgid "Support Request Details"
+msgstr "Детали запроса поддержки"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Email"
+msgstr "Электронная почта"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Page"
+msgstr "Страница"
+
+msgid "User Agent"
+msgstr "Пользовательский агент"
+
+msgid "IP Address"
+msgstr "IP-адрес"
+
+msgid "Mail Generated on"
+msgstr "Почта сгенерирована"
+
+msgid "Click for Product Details"
+msgstr "Нажмите для подробностей о продукте"
+
+msgid "AI Settings"
+msgstr "Настройки ИИ"
+
+msgid "selected"
+msgstr "выбрано"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "Gemini"
+
+msgid "Grok"
+msgstr "Grok"
+
+msgid "Knowledge Base (RAG)"
+msgstr "База знаний (RAG)"
+
+msgid "AI Wizard"
+msgstr "Мастер ИИ"
+
+msgid "Common AI Settings"
+msgstr "Общие настройки ИИ"
+
+msgid "Rate Limit"
+msgstr "Лимит запросов"
+
+msgid "Other Common Settings"
+msgstr "Другие общие настройки"
+
+msgid "Enable Rate Limiting"
+msgstr "Включить ограничение запросов"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "Установите максимальное количество запросов, которые каждый пользователь определенной роли может сделать к API OpenAI за определенный период. Оставьте поле пустым или установите 0 для неограниченного количества запросов."
+
+msgid "Set the rate limit for each user role:"
+msgstr "Установите лимит запросов для каждой роли пользователя:"
+
+msgid "Rate limit for %s"
+msgstr "Лимит запросов для %s"
+
+msgid "Timeframe:"
+msgstr "Период:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "48 Hours"
+msgstr "48 часов"
+
+msgid "24 Hours"
+msgstr "24 часа"
+
+msgid "12 Hours"
+msgstr "12 часов"
+
+msgid "6 Hours"
+msgstr "6 часов"
+
+msgid "Rate limit for Guest Users"
+msgstr "Лимит запросов для гостей"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "Пожалуйста, подключитесь к службе ИИ, такой как OpenAI или Gemini, перед встраиванием."
+
+msgid "Check this Tutorial for more details."
+msgstr "Проверьте этот учебник для получения дополнительных деталей."
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>Дополнение AI Try-On для WooCommerce</strong> требует установки и активации WooCommerce. Функции плагина не будут работать, пока WooCommerce не активен."
+
+msgid "AI Try-On Configurations"
+msgstr "Настройки AI Try-On"
+
+msgid "General Settings"
+msgstr "Общие настройки"
+
+msgid "Prompts"
+msgstr "Подсказки"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "Настройте все ваши настройки AI Try-On в одном месте."
+
+msgid "Enable Try-On Button"
+msgstr "Включить кнопку Пробовать"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Показать кнопку \"Попробовать с ИИ\" на страницах отдельных продуктов"
+
+msgid "Require Login"
+msgstr "Требовать входа"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "Показать функцию Пробовать только для вошедших пользователей"
+
+msgid "Show Add to Cart Button"
+msgstr "Показать кнопку Добавить в корзину"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Показать кнопку 'Добавить в корзину' в нижнем колонтитуле модального окна Пробовать"
+
+msgid "Daily Generation Limit"
+msgstr "Лимит генерации в день"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "например, 5 (Оставьте пустым для неограниченного)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "Ограничьте генерацию изображений и видео на сеанс + IP за 24 часа. Оставьте пустым или 0 для неограниченного."
+
+msgid "Try-On Button Position"
+msgstr "Позиция кнопки Пробовать"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Inside Product Summary"
+msgstr "Внутри сводки продукта"
+
+msgid "Before Cart"
+msgstr "Перед корзиной"
+
+msgid "Above Add to Cart Form"
+msgstr "Над формой Добавить в корзину"
+
+msgid "After Cart"
+msgstr "После корзины"
+
+msgid "Below Add to Cart Form"
+msgstr "Под формой Добавить в корзину"
+
+msgid "Before Meta"
+msgstr "Перед метаданными"
+
+msgid "Above Categories/Tags"
+msgstr "Над категориями/метками"
+
+msgid "After Meta"
+msgstr "После метаданных"
+
+msgid "Below Categories/Tags"
+msgstr "Под категориями/метками"
+
+msgid "Below Summary"
+msgstr "Под сводкой"
+
+msgid "At bottom of product details"
+msgstr "Внизу деталей продукта"
+
+msgid "Above Summary"
+msgstr "Над сводкой"
+
+msgid "At very top of product details"
+msgstr "В самом верху деталей продукта"
+
+msgid "Try-On Button Icon"
+msgstr "Иконка кнопки Пробовать"
+
+msgid "Sparkles"
+msgstr "Искры"
+
+msgid "Magic Wand"
+msgstr "Волшебная палочка"
+
+msgid "Shirt"
+msgstr "Рубашка"
+
+msgid "No Icon"
+msgstr "Без иконки"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "Выберите иконку эмодзи для отображения перед текстом кнопки."
+
+msgid "Try with your photo Button Text"
+msgstr "Текст кнопки Попробовать с вашим фото"
+
+msgid "The text displayed on the frontend button."
+msgstr "Текст, отображаемый на кнопке на фронтенде."
+
+msgid "Default Video Duration"
+msgstr "Длительность видео по умолчанию"
+
+msgid "(Pro Feature)"
+msgstr "(Функция Pro)"
+
+msgid "4 Seconds"
+msgstr "4 секунды"
+
+msgid "Standard generation"
+msgstr "Стандартная генерация"
+
+msgid "8 Seconds"
+msgstr "8 секунд"
+
+msgid "Extended generation"
+msgstr "Расширенная генерация"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "Выберите длину сгенерированного видео. (Доступно в Pro)"
+
+msgid "Video Resolution"
+msgstr "Разрешение видео"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "Стандартное разрешение"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "Высокое разрешение"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "Выберите разрешение для создаваемых видео. (Доступно в Pro)"
+
+msgid "Image Size"
+msgstr "Размер изображения"
+
+msgid "1024x1024 (Square)"
+msgstr "1024x1024 (Квадрат)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "DALL-E 2, DALL-E 3, Gemini"
+
+msgid "1024x1792 (Portrait)"
+msgstr "1024x1792 (Портрет)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "DALL-E 3, Gemini"
+
+msgid "1792x1024 (Landscape)"
+msgstr "1792x1024 (Ландшафт)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "Выберите соотношение сторон / размер для изображений, созданных ИИ."
+
+msgid "Google Gemini Base Prompt"
+msgstr "Базовый запрос Google Gemini"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "Настройте базовые инструкции, отправляемые в Google Gemini. Ввод пользователя будет автоматически добавлен."
+
+msgid "Reset to Default"
+msgstr "Сбросить на умолчание"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "Базовый запрос Gemini Veo Video"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "Настройте базовые инструкции для генерации видео Veo. Ввод пользователя будет автоматически добавлен. (Доступно в Pro)"
+
+msgid "OpenAI Base Prompt"
+msgstr "Базовый запрос OpenAI"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "Настройте базовые инструкции, отправляемые в OpenAI. Ввод пользователя будет автоматически добавлен."
+
+msgid "Final Prompt Structure Builder"
+msgstr "Конструктор финальной структуры запроса"
+
+msgid "Use placeholders:"
+msgstr "Используйте плейсхолдеры:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "для структурирования того, как отправляется финальный комбинированный запрос."
+
+msgid "Quick Start Guide"
+msgstr "Руководство по быстрому старту"
+
+msgid "Welcome to"
+msgstr "Добро пожаловать в"
+
+msgid "WooCommerce AI Try-On"
+msgstr "WooCommerce AI Примерка"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "Этот плагин позволяет вашим клиентам виртуально примерять ваши продукты с использованием передового генеративного ИИ."
+
+msgid "Pro Tip:"
+msgstr "Совет профессионала:"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "Вы можете полностью настроить положение и текст кнопки \"Примерка\" на вкладке <strong>Общие настройки</strong>!"
+
+msgid "1. Customer Experience"
+msgstr "1. Опыт клиента"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Когда клиент нажимает кнопку Примерки, появляется премиум модальное окно. Они могут легко перетаскивать или загружать фото себя. У них также есть текстовое поле для добавления пользовательских инструкций сценария (например, <em>\"Стоя в современном кафе\"</em>)."
+
+msgid "2. The Generation Process"
+msgstr "2. Процесс генерации"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "Как только они нажимают Генерировать, плагин берет <strong>Изображение продукта</strong>, <strong>Загруженное изображение клиента</strong> и их <strong>Текст сценария</strong> и комбинирует их с помощью <em>Конструктора финальной структуры запроса</em> (находится на вкладке Запросы)."
+
+msgid "3. Image vs Video"
+msgstr "3. Изображение против видео"
+
+msgid "Images:"
+msgstr "Изображения:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "Создаются мгновенно либо Google Gemini (Imagen 3), либо OpenAI (DALL-E 3)."
+
+msgid "Videos:"
+msgstr "Видео:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "Работает исключительно на основе передовой модели <strong>Veo</strong> от Google. Генерация видео может занять несколько минут. Плагин обрабатывает это плавно, постоянно опрашивая серверы Google в фоновом режиме, позволяя клиенту видеть обновления статуса в реальном времени, не покидая страницу."
+
+msgid "API Keys & Configuration"
+msgstr "API Ключи и Конфигурация"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "Перед тем как кнопка Примерки будет работать, вы должны настроить своих поставщиков ИИ."
+
+msgid "Important:"
+msgstr "Важно:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "Вы должны нажать кнопку <strong>Проверить</strong> рядом с выбранными моделями на вкладке Настройки ИИ, чтобы подтвердить, что ваш API ключ имеет доступ."
+
+msgid "Getting a Google Gemini Key"
+msgstr "Получение ключа Google Gemini"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Модели Gemini от Google (включая Imagen 3 и Veo) требуют API ключа от Google AI Studio. Вы можете получить бесплатный API ключ, посетив <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+
+msgid "Getting an OpenAI Key"
+msgstr "Получение ключа OpenAI"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "Модели OpenAI (такие как DALL-E 3) требуют платной учетной записи платформы OpenAI. Вы можете сгенерировать ключ на <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+
+msgid "Need Support?"
+msgstr "Нужна поддержка?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "Если у вас возникли проблемы с плагином или есть запросы на функции, пожалуйста, свяжитесь с нашей службой поддержки."
+
+msgid "Contact Support &rarr;"
+msgstr "Связаться с поддержкой &rarr;"
+
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+msgid "Google AI Studio"
+msgstr "Google AI Studio"
+
+msgid "OpenAI Developer Platform"
+msgstr "Платформа разработчика OpenAI"
+
+msgid "WooCommerce Docs"
+msgstr "Документация WooCommerce"
+
+msgid "Save Configurations"
+msgstr "Сохранить конфигурации"
+
+msgid "AI API Configuration"
+msgstr "Конфигурация API ИИ"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "Настройте API ключи, модели и настройки генерации."
+
+msgid "Image Generation AI Provider"
+msgstr "Поставщик ИИ для генерации изображений"
+
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgid "OpenAI Integration Settings"
+msgstr "Настройки интеграции OpenAI"
+
+msgid "OpenAI API Key"
+msgstr "API ключ OpenAI"
+
+msgid "Test Connection"
+msgstr "Проверить соединение"
+
+msgid "OpenAI Image Model"
+msgstr "Модель изображения OpenAI"
+
+msgid "Verify"
+msgstr "Проверить"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "Выберите модель OpenAI для генерации изображений."
+
+msgid "Google Gemini Integration Settings"
+msgstr "Настройки интеграции Google Gemini"
+
+msgid "Powered by Veo for Video"
+msgstr "Работает на основе Veo для видео"
+
+msgid "Gemini API Key"
+msgstr "API ключ Gemini"
+
+msgid "Gemini Image Model"
+msgstr "Модель изображения Gemini"
+
+msgid "Select the Gemini model for image generation."
+msgstr "Выберите модель Gemini для генерации изображений."
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "Модель видео Gemini (Google Veo)"
+
+msgid " ( Recommended )"
+msgstr " ( Рекомендуется )"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "Выберите модель Google Veo для генерации видео примерки. (Доступно в Pro)"
+
+msgid "API Key is empty."
+msgstr "API ключ пуст."
+
+msgid "Connection successful!"
+msgstr "Соединение успешно!"
+
+msgid "API Error: "
+msgstr "Ошибка API: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "Не удалось подключиться (HTTP %1$s). Подробности: %2$s"
+
+msgid "API Error"
+msgstr "Ошибка API"
+
+msgid "Missing API key or model."
+msgstr "Отсутствует API ключ или модель."
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "Генерация не удалась. (HTTP %s)"
+
+msgid "Model verified successfully."
+msgstr "Модель успешно проверена."
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "Проверка модели не удалась. (HTTP %s)"
+
+msgid "Invalid provider."
+msgstr "Неверный поставщик."
+
+msgid "OpenAI API Request Failed: "
+msgstr "Запрос API OpenAI не удался: "
+
+msgid "Generation execution failure. %s"
+msgstr "Ошибка выполнения генерации. %s"
+
+msgid "OpenAI Error: "
+msgstr "Ошибка OpenAI: "
+
+msgid "Gemini API Request Failed: "
+msgstr "Запрос API Gemini не удался: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "Генерация Gemini остановлена. Причина: "
+
+msgid "Unknown Gemini Error."
+msgstr "Неизвестная ошибка Gemini."
+
+msgid "Gemini API Error: "
+msgstr "Ошибка API Gemini: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "Вы достигли своего дневного лимита на генерации ИИ. Пожалуйста, попробуйте снова завтра."
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "Отсутствует конфигурация API. Свяжитесь с администратором магазина."
+
+msgid "No media data provided."
+msgstr "Данные медиа не предоставлены."
+
+msgid "Invalid base64 data."
+msgstr "Неверные данные base64."
+
+msgid "Failed to decode base64."
+msgstr "Не удалось декодировать base64."
+
+msgid "Saved to Media Library!"
+msgstr "Сохранено в медиатеку!"
+
+msgid "Failed to save base64 media."
+msgstr "Не удалось сохранить медиа base64."
+
+msgid "Failed to download media from URL."
+msgstr "Не удалось загрузить медиа по URL."
+
+msgid "Failed to save downloaded media."
+msgstr "Не удалось сохранить загруженное медиа."
+
+msgid "Invalid media format."
+msgstr "Неверный формат медиа."
+
+msgid "Reset!"
+msgstr "Сбросить!"
+
+msgid "Please enter an API key first."
+msgstr "Пожалуйста, сначала введите API ключ."
+
+msgid "Testing connection..."
+msgstr "Тестирование соединения..."
+
+msgid "Error: "
+msgstr "Ошибка: "
+
+msgid "Unknown error"
+msgstr "Неизвестная ошибка"
+
+msgid "Request failed: "
+msgstr "Запрос не удался: "
+
+msgid "Please select a model first."
+msgstr "Пожалуйста, сначала выберите модель."
+
+msgid "Verifying..."
+msgstr "Проверка..."
+
+msgid "Testing..."
+msgstr "Тестирование..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "Проверено! Модель принимает эту модальность."
+
+msgid "AJAX request failed."
+msgstr "Ошибка AJAX-запроса."
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "Рекомендуется (оптимальная скорость и цена)"
+
+msgid "Processing..."
+msgstr "Обработка..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "Генерация видео (это может занять до 5 минут)..."
+
+msgid "Status Check Error: "
+msgstr "Ошибка проверки статуса: "
+
+msgid "Execution Error: "
+msgstr "Ошибка выполнения: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "Произошла неожиданная ошибка связи с инфраструктурой."
+
+msgid "No media available to download."
+msgstr "Нет доступных медиа для загрузки."
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "Только изображения/видео могут быть сохранены в медиабиблиотеке."
+
+msgid "Saving..."
+msgstr "Сохранение..."
+
+msgid "Saved!"
+msgstr "Сохранено!"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Error saving media."
+msgstr "Ошибка при сохранении медиа."
+
+msgid "Network error."
+msgstr "Ошибка сети."
+
+msgid "Adding..."
+msgstr "Добавление..."
+
+msgid "You must be logged in to use this feature."
+msgstr "Вы должны войти в систему, чтобы использовать эту функцию."
+
+msgid "AI Product Generation"
+msgstr "Генерация продукта ИИ"
+
+msgid "Original Image"
+msgstr "Оригинальное изображение"
+
+msgid "Original Product"
+msgstr "Оригинальный продукт"
+
+msgid "Upload Image"
+msgstr "Загрузить изображение"
+
+msgid "Generate Image"
+msgstr "Сгенерировать изображение"
+
+msgid "Background Preference"
+msgstr "Предпочтение фона"
+
+msgid "Studio"
+msgstr "Студия"
+
+msgid "Outdoor"
+msgstr "На улице"
+
+msgid "Lifestyle"
+msgstr "Стиль жизни"
+
+msgid "Output Style"
+msgstr "Стиль вывода"
+
+msgid "Model Shoot"
+msgstr "Съемка модели"
+
+msgid "Flat Lay"
+msgstr "Плоская укладка"
+
+msgid "Ghost Mannequin"
+msgstr "Призрак манекена"
+
+msgid "Prompt (Optional)"
+msgstr "Запрос (необязательно)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "Добавьте любые конкретные инструкции (необязательно)"
+
+msgid "Generate"
+msgstr "Сгенерировать"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "Generated Output"
+msgstr "Сгенерированный вывод"
+
+msgid "Ready to generate"
+msgstr "Готово к генерации"
+
+msgid "Generating Magic..."
+msgstr "Генерация магии..."
+
+msgid "Add to Cart"
+msgstr "Добавить в корзину"
+
+msgid "AI Analyst"
+msgstr "Аналитик ИИ"
+
+msgid "AI Store Analyst"
+msgstr "Аналитик магазина ИИ"
+
+msgid "WooCommerce Intelligence"
+msgstr "Интеллект WooCommerce"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "Мгновенные аналитические данные о продажах, предсказательный интеллект и глубокая аналитика на основе ИИ."
+
+msgid "Active AI Provider"
+msgstr "Активный поставщик ИИ"
+
+msgid "Ready to analyze your store"
+msgstr "Готово к анализу вашего магазина"
+
+msgid "Clear Conversation History"
+msgstr "Очистить историю беседы"
+
+msgid "Reset Chat"
+msgstr "Сбросить чат"
+
+msgid "Ask a question"
+msgstr "Задайте вопрос"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "Спросите о продажах, самых продаваемых продуктах, клиентах, трендах..."
+
+msgid "Send question"
+msgstr "Отправить вопрос"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "Нажмите Enter ↵ для отправки • Shift + Enter для новой строки"
+
+msgid "Store Insights"
+msgstr "Аналитика магазина"
+
+msgid "AI Growth Recommendation"
+msgstr "Рекомендация по росту ИИ"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "Анализ недавних заказов и производительности магазина..."
+
+msgid "Performance Overview"
+msgstr "Обзор производительности"
+
+msgid "Last 30 Days"
+msgstr "Последние 30 дней"
+
+msgid "Revenue Trend"
+msgstr "Тенденция доходов"
+
+msgid "Top Products by Revenue"
+msgstr "Топ-продукты по доходам"
+
+msgid "The requested analysis is not available."
+msgstr "Запрашиваемый анализ недоступен."
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "В последние 30 дней не найдено подходящих заказов. Сначала проверьте трафик, ошибки оформления заказа и настройки статуса заказа."
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "Заказы упали на %s%%. Сосредоточьтесь на восстановлении трафика и повторных покупателях; спросите аналитика, какие клиенты с наибольшей вероятностью вернутся."
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "Средняя стоимость заказа упала на %s%%. Протестируйте комплекты, используя отчет о совместных покупках."
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s ведет недавний доход. Сочетайте его с часто покупаемыми продуктами и выделяйте комплект."
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "Просмотрите недавних клиентов, купоны и каналы продаж, чтобы найти наиболее очевидную возможность для роста."
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "Пожалуйста, настройте свой ключ API OpenAI или Google Gemini в AI Try-On и AI Settings."
+
+msgid "Google Gemini request failed."
+msgstr "Запрос Google Gemini не удался."
+
+msgid "OpenAI request failed."
+msgstr "Запрос OpenAI не удался."
+
+msgid "Which period performed best?"
+msgstr "Какой период показал лучшие результаты?"
+
+msgid "Show the top products during the strongest period."
+msgstr "Показать топ-продукты за самый сильный период."
+
+msgid "Compare this trend with the previous period."
+msgstr "Сравнить эту тенденцию с предыдущим периодом."
+
+msgid "Show the sales trend for the same period."
+msgstr "Показать тенденцию продаж за тот же период."
+
+msgid "Compare these products with the previous period."
+msgstr "Сравнить эти продукты с предыдущим периодом."
+
+msgid "Summarize sales for this period."
+msgstr "Суммировать продажи за этот период."
+
+msgid "Show this period as a sales graph."
+msgstr "Показать этот период в виде графика продаж."
+
+msgid "Which products sold best during this period?"
+msgstr "Какие продукты продавались лучше всего в этот период?"
+
+msgid "Compare this with the preceding period."
+msgstr "Сравнить это с предыдущим периодом."
+
+msgid "What were total sales in the last 30 days?"
+msgstr "Каковы общие продажи за последние 30 дней?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "Показать месячную тенденцию продаж за последний год."
+
+msgid "What are my top 10 products this year?"
+msgstr "Каковы мои 10 лучших продуктов в этом году?"
+
+msgid "Sales trend"
+msgstr "Тенденция продаж"
+
+msgid "Top products by revenue"
+msgstr "Топ-продукты по доходам"
+
+msgid "Coupon-attributed revenue"
+msgstr "Доход, приписываемый купонам"
+
+msgid "Most valuable customers"
+msgstr "Самые ценные клиенты"
+
+msgid "Product profit"
+msgstr "Прибыль от продукта"
+
+msgid "Product revenue"
+msgstr "Доход от продукта"
+
+msgid "Revenue by channel"
+msgstr "Доход по каналам"
+
+msgid "Frequently bought together"
+msgstr "Часто покупаемые вместе"
+
+msgid "Gemini settings"
+msgstr "Настройки Gemini"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "Помощь Gemini"
+
+msgid "Enable Gemini AI"
+msgstr "Включить ИИ Gemini"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(если вы хотите получать результаты только от Gemini, отключите поиск по сайту в Настройки-&gt;Главное меню)"
+
+msgid "Context awareness"
+msgstr "Осведомленность о контексте"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "Включить предложения страниц с результатами Gemini"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "Выберите тип(ы) ПОСТА для включения в результаты поиска"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "Получите свой ключ API по адресу https://aistudio.google.com/app/apikey."
+
+msgid "It requires a paid Gemini API plan"
+msgstr "Это требует платного плана API Gemini"
+
+msgid "Gemini Model"
+msgstr "Модель Gemini"
+
+msgid "Fetch Models"
+msgstr "Получить модели"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Выберите вашу модель Gemini. Нажмите \"Получить модели\", чтобы обновить список, если вы только что добавили ваш API-ключ."
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "Пожалуйста, выберите вашу платную модель, все модели в списке могут быть недоступны для бесплатных тарифов."
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "Ваш запрос, который будет добавлен перед запросом пользователя для получения индивидуальных результатов (необязательно)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "Ваш запрос, который будет добавлен в конце запроса пользователя для получения индивидуальных результатов (необязательно)"
+
+msgid "Save settings"
+msgstr "Сохранить настройки"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "Тонкая настройка VS GPT Ассистенты VS RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "Мы рекомендуем использовать GPT Ассистентов или RAG вместо тонкой настройки, так как тонкая настройка требует много правильно отформатированных данных, а GPT Ассистенты проще настраивать. Вы все равно можете использовать данные вашего сайта для обучения бота."
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "Как использовать RAG в этом плагине:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "Включите RAG в панели настроек"
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "Нажмите кнопку \"Встроить все выбранные источники\" после выбора источников из"
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(Необязательно) Загрузите PDF или CSV файлы для встраивания"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "Система автоматически сохраняет встраивания в базе данных"
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "Вопросы пользователей теперь будут отвечены с использованием базы знаний вашего сайта"
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "Вам нужно настроить API-ключ OpenAI, AI модель и системную команду в основных настройках OpenAI"
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "Вы можете обновлять или повторно встраивать контент в любое время без повторного обучения."
+
+msgid "Getting Started with gemini"
+msgstr "Начало работы с Gemini"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "Gemini — это унифицированный интерфейс или агрегатор для LLM. Вы можете выбрать из сотен различных AI моделей от OpenAI до Deepseek или Claude, чтобы получить AI ответы."
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "Вам нужно всего лишь добавить API-ключ Gemini и выбрать модель Gemini."
+
+msgid "Grab your API key from"
+msgstr "Получите ваш API-ключ от"
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "Пожалуйста, убедитесь, что DialogFlow и OpenAI отключены, если вы хотите, чтобы Gemini работал."
+
+msgid "Failed in Security check"
+msgstr "Не удалось пройти проверку безопасности"
+
+msgid "Unauthorized user"
+msgstr "Неавторизованный пользователь"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "Проверка безопасности не прошла. Неавторизованный запрос."
+
+msgid "API Key is required"
+msgstr "API-ключ обязателен"
+
+msgid "Security check failed"
+msgstr "Проверка безопасности не прошла"
+
+msgid "Unauthorized access"
+msgstr "Неавторизованный доступ"
+
+msgid "Settings updated successfully"
+msgstr "Настройки успешно обновлены"
+
+msgid "View Detail"
+msgstr "Просмотреть детали"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI отключил некоторые старые модели. Пожалуйста, используйте GPT 3.5 или 4 для тонкой настройки. Вам нужно обновить набор данных и снова провести тонкую настройку. Пожалуйста, проверьте раздел помощи для получения подробностей."
+
+msgid "OpenAI settings"
+msgstr "Настройки OpenAI"
+
+msgid "Training Model"
+msgstr "Обучающая модель"
+
+msgid "GPT Assistant"
+msgstr "GPT Ассистент"
+
+msgid "Fine Tune with Website Data"
+msgstr "Тонкая настройка с данными сайта"
+
+msgid "AI Image Generator"
+msgstr "Генератор изображений AI"
+
+msgid "AI Article Generator"
+msgstr "Генератор статей AI"
+
+msgid "GPT Assistant is available with the "
+msgstr "GPT Ассистент доступен с"
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro Professional"
+
+msgid " and "
+msgstr " и "
+
+msgid "Master"
+msgstr "Мастер"
+
+msgid " Licenses"
+msgstr " Лицензии"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "Тонкая настройка VS GPT Ассистенты:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "Мы рекомендуем использовать GPT Ассистентов вместо тонкой настройки, так как тонкая настройка требует много правильно отформатированных данных, а GPT Ассистенты проще настраивать. Вы все равно можете использовать данные вашего сайта для обучения бота."
+
+msgid "Setting up GPT Assistants:"
+msgstr "Настройка GPT Ассистентов:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "Перейдите на вкладку обучения GPT с данными сайта. Выберите все типы постов, которые вам нужны, и нажмите кнопку \"Конвертировать данные для Ассистента\". После завершения загрузите файл данных в формате JSON."
+
+msgid "Go to "
+msgstr "Перейдите к"
+
+msgid "Assistants playground"
+msgstr "площадке Ассистентов"
+
+msgid " and create a new Assistant"
+msgstr " и создайте нового Ассистента"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "Загрузите JSON-файл, который вы скачали, и дайте GPT инструкцию, аналогичную приведенной ниже, но адаптируйте ее под URL вашего сайта:"
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "Ваше имя — Кэрри. Вы — ассистент ChatBot для сайта "
+
+msgid "https://www.quantumcloud.net. "
+msgstr "https://www.quantumcloud.net."
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "Используйте данные сайта и загруженный файл, чтобы отвечать на любые вопросы пользователей нашего сайта."
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "Скопируйте ID Ассистента и вставьте его в вкладке GPT Ассистентов в настройках OpenAI на вашем сайте. Вы закончили. Если вы приобрели кредиты на платформе OpenAI API, он начнет работать."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "Вы можете использовать разных GPT Ассистентов на разных страницах с виджетами чат-ботов. Вставьте этот пример шорткода и замените ID Ассистента по мере необходимости: Пример: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Please check this article for step by step guide."
+msgstr "Пожалуйста, проверьте эту статью для пошагового руководства."
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "Получение индивидуальных результатов от AI-сервисов"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "Лучшие индивидуальные результаты, которые вы можете получить от AI-сервисов, — это использование GPT Ассистента OpenAI, который позволяет вам загружать документы и данные вашего сайта (сгенерированные нашими профессиональными версиями). Тем не менее, вы все равно можете получить индивидуальные результаты, написав подробный запрос. В разделе системной команды в области настроек OpenAI (также есть раздел запросов для других AI-сервисов) вы можете написать подробный запрос, который включает информацию о ваших услугах, продуктах, как с вами связаться или любую другую информацию, относящуюся к получению индивидуальных результатов. До 3000 слов будет достаточно. Этого должно быть достаточно для большинства небольших и средних сайтов."
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "Проверьте эту статью"
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "для получения дополнительной информации о том, как получить индивидуальные результаты от OpenAI."
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "Обновите до WoowbotPro Professional или лицензии Мастера, чтобы использовать GPT Ассистента."
+
+msgid "Getting Started with OpenAI"
+msgstr "Начало работы с OpenAI"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI недавно изменила свою политику выставления счетов за API. Вам нужно"
+
+msgid "pre-purchase API credits"
+msgstr "предварительно приобрести кредиты API"
+
+msgid " now. Go to "
+msgstr " сейчас. Перейдите на"
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/"
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "и добавьте кредиты на свой API-аккаунт. Затем увеличьте лимит использования."
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "После добавления API-ключа OpenAI он должен начать работать для общих вопросов. Откройте новое окно браузера в режиме инкогнито и протестируйте, задав вопрос \"Какова столица России?\""
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "Пожалуйста, убедитесь, что DialogFlow отключен, если вы хотите, чтобы OpenAI работал."
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "Тонкая настройка VS GPT Ассистенты VS RAG"
+
+msgid "GPT Assistants:"
+msgstr "GPT Ассистенты:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "Как получить API-ключ OpenAI"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "API OpenAI использует API-ключи для аутентификации. Посетите страницу ваших API-ключей, чтобы получить API-ключ, который вы будете использовать в своих запросах. Помните, что ваш API-ключ является секретом! Не делитесь им с другими и не раскрывайте его в любом клиентском коде (браузерах, приложениях). Производственные запросы должны проходить через ваш собственный сервер, где ваш API-ключ может быть безопасно загружен из переменной окружения или службы управления ключами."
+
+msgid "You can generate the API key from here: "
+msgstr "Вы можете сгенерировать API-ключ отсюда: "
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys."
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "Обучение или тонкая настройка OpenAI"
+
+msgid "To train OpenAI"
+msgstr "Чтобы обучить OpenAI"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr "а. Чтобы обучить или тонко настроить модель, сначала вам нужно:"
+
+msgid "Gather the necessary data you want to train with"
+msgstr "Собрать необходимые данные, с которыми вы хотите обучать"
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "Правильно отформатировать данные в соответствии с требованиями API OpenAI (скачайте образец формата данных, чтобы увидеть, как это работает). Набор данных должен содержать как минимум 500 строк, чтобы предоставить полезные результаты. Согласно документации OpenAI, рекомендуется количество строк от 3000 до 5000."
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "Загрузите данные в OpenAI в формате .JSONL"
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "Обучите существующую модель OpenAI (выберите на странице настроек Bot OpenAI) с вашими данными"
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr "б. Как только у вас будет готов файл JSONL, перейдите в раздел обучающей модели. Загрузите ваш файл обучения в формате .JSONL."
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "в. После загрузки вашего файла обучения он вернет идентификатор файла, и обучение начнется, как только вы нажмете кнопку \"Создать FT модель\". Установите суффикс (чтобы позже распознать модель) и базовую модель в всплывающем окне и создайте."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "г. После завершения обучения и готовности файла он вернет тонко настроенную модель. Она будет перечислена в списке тонко настроенных моделей, статус будет показан как \"Успешно\", и вы также получите идентификатор модели FT (для копирования на страницу настроек)."
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "д. Вы можете создать несколько тонко настроенных моделей, следуя вышеуказанной процедуре. Скопируйте идентификатор тонко настроенной модели, которую вы хотите использовать."
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "е. Перейдите на главную страницу настроек Bot OpenAI и вставьте идентификатор тонко настроенной модели в поле пользовательской тонко настроенной модели и сохраните. Теперь бот начнет отвечать в соответствии с данными обучения."
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "ж. Чтобы подготовить вашу модель данных для GPT3.5/4:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "Сначала вам нужно создать файл jsonl, как формат ниже"
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "Каждый запрос и завершение должны быть в одной строке"
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "Формат файла тонкой настройки с GPT 3.5/4"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Вы ассистент, который иногда делает опечатки\" },{ \"role\": \"user\", \"content\": \"Расскажи мне историю.\" }, { \"role\": \"assistant\", \"content\": \"Однажды студент пошел в школу.\" }]}"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "Щелкните правой кнопкой мыши и сохраните пример jsonl файла для тонкой настройки с GPT 3.5/4"
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "Чтобы встроить OpenAI"
+
+msgid "Important points about fine tuning"
+msgstr "Важные моменты о тонкой настройке"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Для получения лучших результатов вам нужно как минимум 500+ запросов. В противном случае OpenAI будет смешивать ответ с общими знаниями. Кроме того, запросы должны быть как можно более описательными. Следуйте формату типа FAQ с описательными вопросами и ответами. Пример запроса: вместо просто \"Винтажная джинсовая куртка\" вы можете написать \"Почему стоит носить нашу винтажную джинсовую куртку?\"."
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "Если ваше завершение короткое, как ниже или около 100 слов, держите значение Max Tokens 200. Настройте параметры Температуры, Штрафа за присутствие и Штрафа за частоту, пока не получите результаты, которые вам нравятся."
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "Если вы проводите тонкую настройку с данными сайта, бот будет использовать заголовки постов в качестве запросов. Если заголовки страниц/постов не описательные, вы не получите хороших результатов. В таких случаях вы можете скачать файл JSONL со страницы обучающей модели и улучшить запросы. Затем проведите тонкую настройку снова."
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "Отключите поиск по сайту в Настройки-&gt;Главное меню, чтобы бот не получал ответы из поиска по сайту. Пожалуйста, выйдите из системы и войдите снова, чтобы наши настройки не были перезаписаны."
+
+msgid "How to Optimize Fine Tuning"
+msgstr "Как оптимизировать тонкую настройку"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "Чтобы получить лучшие результаты от тонкой настройки, пожалуйста, выполните следующие шаги:"
+
+msgid "Set a lower value for Temperature"
+msgstr "Установите более низкое значение для Температуры"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "Используйте более высокое значение для Штрафа за присутствие и Штрафа за частоту."
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "Если возможно, используйте модель Curie в качестве базовой модели при создании пользовательской модели."
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "Используйте максимальное количество токенов в зависимости от вашего запроса и завершений. Если вы используете более высокое значение максимального токена, ИИ создаст больше информации, которая может быть неуместной для вашего контекста. То же самое касается более низкого максимального токена. Если вы выбрали слишком низкое значение для максимального токена, то это может обрезать ваши данные или вызывать ошибки."
+
+msgid "Presence Penalty"
+msgstr "Штраф за присутствие"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "Число от -2.0 до 2.0. Положительные значения штрафуют новые токены в зависимости от того, появляются ли они в тексте до сих пор, увеличивая вероятность того, что модель будет говорить о новых темах."
+
+msgid "Frequency Penalty"
+msgstr "Штраф за частоту"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "Число от -2.0 до 2.0. Положительные значения штрафуют новые токены в зависимости от их существующей частоты в тексте до сих пор, уменьшая вероятность того, что модель будет повторять одну и ту же строку дословно."
+
+msgid "Temperature"
+msgstr "Температура"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "Одной из самых важных настроек является температура. Когда температура выше 0, отправка одного и того же запроса приводит к различным завершениям каждый раз. Помните, что модель предсказывает, какой текст с наибольшей вероятностью будет следовать за предыдущим текстом. Температура — это значение от 0 до 1, которое по сути позволяет вам контролировать, насколько уверенной должна быть модель при составлении этих предсказаний. Понижение температуры означает, что она будет рисковать меньше, и завершения будут более точными и детерминированными. Увеличение температуры приведет к более разнообразным завершениям."
+
+msgid "My OpenAI does not work"
+msgstr "Мой OpenAI не работает"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "Пожалуйста, проверьте ваши настройки (т.е.: ключи API, максимальный токен и т.д.). В зависимости от модели (GPT3 максимум 4000), запросы могут использовать до 4097 токенов, разделенных между запросом и завершением. Если ваш запрос составляет 4000 токенов, ваше завершение может составлять максимум 97 токенов. Также проверьте, что dialogflow неактивен. Dialogflow и OpenAI не работают вместе."
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "Вы можете создать несколько моделей с тонкой настройкой на основе ваших типов постов и страниц. Вы можете скачать ваши обучающие данные в формате JSONL для изменения, а затем загрузить их в том же процессе, что и другие файлы (см. выше для инструкций). Также вы можете загрузить их, нажав кнопку `Загрузить как FT модель`."
+
+msgid "Fine tuning and training is available with the "
+msgstr "Тонкая настройка и обучение доступны с"
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro Professional"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "Требуется платный план API OpenAI"
+
+msgid "Enable OpenAI"
+msgstr "Включить OpenAI"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(если вы хотите получать результаты только от OpenAI, это отключит поиск по умолчанию)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "Включить потоковую передачу (потоковые ответы ИИ в реальном времени по мере их генерации)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "Включить карточки продуктов OpenAI"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(Отображать соответствующие карточки продуктов внутри ответов ИИ для увеличения продаж.)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "Включить предложения страниц WordPress с результатами GPT (ссылки предлагаются WordPress, а не ИИ)"
+
+msgid "Api key"
+msgstr "Ключ API"
+
+msgid "OpenAI Model"
+msgstr "Модель OpenAI"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-Mini"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-Nano"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-Mini"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-Nano"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-Mini"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 turbo"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "Команда системы (используйте ее, чтобы указать ChatGPT, как себя вести). Вы можете написать здесь подробный запрос, который включает детали о ваших услугах, продуктах и том, как с вами связаться или что-либо, что имеет отношение к получению"
+
+msgid "Customized Results"
+msgstr "Настроенные результаты"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". Максимум 3000 слов — это нормально."
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Вы полезный помощник. Будьте краткими и актуальными в своих ответах и не вводите новые темы."
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "Чтобы установить тон и характер ChatBot, установите системное сообщение в соответствии с вашими потребностями"
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Пример: Вы полезный помощник. Будьте краткими и актуальными в своих ответах и не вводите новые темы."
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "Запрос, который будет добавлен в конце запроса пользователя (необязательно)"
+
+msgid "Content for the response"
+msgstr "Содержимое для ответа"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "Опасная зона (вы можете не получить никаких ответов от ИИ, если ключевые слова не установлены правильно. Удалите ключевые слова, если у вас возникают проблемы)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "Подключаться к OpenAI только тогда, когда запрос пользователя включает одно из следующих ключевых слов, разделенных запятыми"
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "Подключаться к OpenAI только тогда, когда запрос пользователя НЕ включает одно из следующих ключевых слов, разделенных запятыми"
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "Попросите OpenAI ответить, когда вопрос относится к вышеуказанным ключевым словам (включение этой опции улучшит точность, но будет использовать токены OpenAI)"
+
+msgid "Check Connection  "
+msgstr "Проверить соединение"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "Сначала сохраните настройки, а затем нажмите кнопку Проверить соединение"
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**Если OpenAI не отвечает и бот просто загружает, то, вероятно, вы достигли предела использования OpenAI. Пожалуйста, предоплатите кредит для использования API OpenAI и увеличьте лимит использования. Вы можете добавить кредиты на свой аккаунт API, посетив"
+
+msgid "billing page."
+msgstr "страницу выставления счетов."
+
+msgid "How to reduce cost "
+msgstr "Как снизить затраты"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "и сэкономить деньги на стоимости API OpenAI для вашего ChatBot."
+
+msgid "success"
+msgstr "успех"
+
+msgid "error"
+msgstr "ошибка"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "RAG не может быть включен без ключа API."
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "Пожалуйста, включите RAG в настройках, чтобы сохранить параметры, связанные с RAG."
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "Ключ API OpenAI пуст. Пожалуйста, сначала сохраните свой ключ API."
+
+msgid "Congrats! You are connected to AI."
+msgstr "Поздравляем! Вы подключены к ИИ."
+
+msgid "Success"
+msgstr "Успех"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "Соединение с OpenAI не удалось. Пожалуйста, проверьте свой ключ API и настройки."
+
+msgid "Invalid product ID"
+msgstr "Неверный идентификатор продукта"
+
+msgid "Product not found"
+msgstr "Продукт не найден"
+
+msgid "Insufficient permissions"
+msgstr "Недостаточно прав"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "Конфигурация настройки ИИ успешно сохранена."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Запланировать задачу cron для каждой роли, если она еще не запланирована);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule событие для сброса счетчиков использованных лимитов\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Убедитесь, что функции cron WordPress доступны\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "Превышен лимит частоты. Пожалуйста, попробуйте позже."
+
+msgid "More WordPress Goodies for You!"
+msgstr "Больше полезных функций WordPress для вас!"
+
+msgid "Support"
+msgstr "Поддержка"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "Посмотрите некоторые из наших других работ, которые могут улучшить ваш сайт"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "Все пользователи нашей профессиональной версии получают премиум, гарантированную быструю, приоритетную поддержку один на один."
+
+msgid "Get Priority Support "
+msgstr "Получить приоритетную поддержку"
+
+msgid "Online KnowledgeBase"
+msgstr "Онлайн база знаний"
+
+msgid "Get Support for Free Version"
+msgstr "Получить поддержку для бесплатной версии"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Проблема с обработкой вашего запроса на отправку формы! Приносим извинения за неудобства.<br> Пожалуйста, напишите на <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> с любыми отзывами. Мы свяжемся с вами сразу же!"
+
+msgid "Please fill up all the requried form fields."
+msgstr "Пожалуйста, заполните все обязательные поля формы."
+
+msgid "Invalid email address."
+msgstr "Неверный адрес электронной почты."
+
+msgid "Support Request Details:"
+msgstr "Детали запроса на поддержку:"
+
+msgid "Sent Via the Plugin"
+msgstr "Отправлено через плагин"
+
+msgid "Mail sent from:"
+msgstr "Почта отправлена с:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "Почта сгенерирована:"
+
+msgid "From Plugin Support Page:"
+msgstr "Со страницы поддержки плагина:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "Ваше письмо было успешно отправлено. Спасибо!"
+
+msgid "By %s"
+msgstr "От %s"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "Установите %s сейчас"
+
+msgid "Install Now"
+msgstr "Установить сейчас"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "Не удается установить"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "Обновите %s сейчас"
+
+msgid "Update Now"
+msgstr "Обновить сейчас"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "Не удается обновить"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "Активно"
+
+msgid "Activate"
+msgstr "Активировать"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "Активировать %s"
+
+msgid "Network Activate"
+msgstr "Сетевое активирование"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "Сетевое активирование %s"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Установлено"
+
+msgid "More Details"
+msgstr "Подробнее"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Этот плагин не работает с вашими версиями WordPress и PHP."
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Пожалуйста, обновите WordPress</a>, а затем <a href=\"%2$s\">узнайте больше об обновлении PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Пожалуйста, обновите WordPress</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Узнайте больше об обновлении PHP</a>."
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "Этот плагин не работает с вашей версией WordPress."
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "Этот плагин не работает с вашей версией PHP."
+
+msgid "Live Preview"
+msgstr "Живой просмотр"
+
+msgid "Update To Pro"
+msgstr "Обновить до Pro"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "Начать работу с WoowBot очень просто. Все, что вам нужно сделать, это установить и активировать плагин."
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "Вы можете загрузить свой собственный значок ChatBot из панели WoowBot -&gt; раздел Иконки."
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "Вы также можете загрузить пользовательский значок агента в профессиональной версии."
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "В легкой версии есть несколько языковых настроек, которые вы можете настроить под свои нужды. Стандартные языки подходят для магазинов, использующих английский язык. Но вы можете изменить ответы бота буквально на любой язык!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "Используйте панель пользовательского CSS, если вам нужно изменить некоторые цвета или настройки шрифта внутри WoowBot."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "Получите #1 ChatBot для WooCommerce – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "Получите расширенные функции ИИ, повторное привлечение клиентов и многое другое с WoowBot Pro"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "Получите WoowBot Pro сейчас!"
+
+msgid "Crafted By:"
+msgstr "Создано:"
+
+msgid "Web Design Company"
+msgstr "Веб-дизайн компания"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "Панель управления WoowBot"
+
+msgid "WoowBot Panel"
+msgstr "Панель WoowBot"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "OR"
+msgstr "ИЛИ"
+
+msgid " Get the Professional Version Now!"
+msgstr "Получите профессиональную версию сейчас!"
+
+msgid "General settings"
+msgstr "Общие настройки"
+
+msgid "WoowBot ICONS"
+msgstr "ИКОНКИ WoowBot"
+
+msgid "Language Center"
+msgstr "Языковой центр"
+
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+msgid "Emails Will be Sent to"
+msgstr "Электронные письма будут отправлены на"
+
+msgid "From Email Address"
+msgstr "Электронный адрес отправителя"
+
+msgid "Disable WoowBot"
+msgstr "Отключить WoowBot"
+
+msgid "Disable WoowBot to Load"
+msgstr "Отключить загрузку WoowBot"
+
+msgid "Enable Product details from AI"
+msgstr "Включить детали продукта от ИИ"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "Отключить WooWBot на мобильном устройстве"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "Отключить загрузку WoowBot на мобильном устройстве"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "Переопределить позицию значка WoowBot"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "С права в пикселях"
+
+msgid "From Bottom In px"
+msgstr "Снизу в пикселях"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "Количество продуктов, отображаемых в результатах поиска. ( '-1' для всех продуктов )."
+
+msgid "Page controller"
+msgstr "Контроллер страниц"
+
+msgid "Show on Home Page"
+msgstr "Показать на главной странице"
+
+msgid "YES"
+msgstr "ДА"
+
+msgid "NO"
+msgstr "НЕТ"
+
+msgid "Show on blog posts"
+msgstr "Показать на блогах"
+
+msgid "Show on  pages"
+msgstr "Показать на страницах"
+
+msgid "All Pages"
+msgstr "Все страницы"
+
+msgid "Selected Pages Only "
+msgstr "Только выбранные страницы"
+
+msgid "Exclude from Custom Post"
+msgstr "Исключить из пользовательского поста"
+
+msgid "Icon - 0"
+msgstr "Значок - 0"
+
+msgid "Icon - 1"
+msgstr "Значок - 1"
+
+msgid "Icon - 2"
+msgstr "Значок - 2"
+
+msgid "Icon - 3"
+msgstr "Значок - 3"
+
+msgid "Icon - 4"
+msgstr "Значок - 4"
+
+msgid "Icon - 5"
+msgstr "Значок - 5"
+
+msgid "Icon - 6"
+msgstr "Значок - 6"
+
+msgid "Icon - 7"
+msgstr "Значок - 7"
+
+msgid "Icon -9"
+msgstr "Значок - 9"
+
+msgid "Icon - 10"
+msgstr "Значок - 10"
+
+msgid "Icon - 11"
+msgstr "Значок - 11"
+
+msgid "Icon - 12"
+msgstr "Значок - 12"
+
+msgid "Icon - 13"
+msgstr "Значок - 13"
+
+msgid "Icon - 14"
+msgstr "Значок - 14"
+
+msgid "Custom Icon"
+msgstr "Пользовательский значок"
+
+msgid "Upload custom Floating Icon"
+msgstr "Загрузить пользовательский плавающий значок"
+
+msgid "Upload Custom Icon"
+msgstr "Загрузить пользовательский значок"
+
+msgid " Woobot Agent Image"
+msgstr "Изображение агента Woobot"
+
+msgid "Default Agent"
+msgstr "Стандартный агент"
+
+msgid "Custom Agent"
+msgstr "Пользовательский агент"
+
+msgid "Custom Agent Icon"
+msgstr "Пользовательский значок агента"
+
+msgid "Upload Agent Icon"
+msgstr "Загрузить значок агента"
+
+msgid "Custom Backgroud"
+msgstr "Пользовательский фон"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "Измените фоновое изображение доски сообщений (кроме мини-режима)."
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "Загрузить фон доски сообщений (идеальный размер изображения 350px X 550px)."
+
+msgid "Upload  background."
+msgstr "Загрузить фон."
+
+msgid "Custom message board background"
+msgstr "Пользовательский фон доски сообщений"
+
+msgid "Message setting for"
+msgstr "Настройки сообщений для"
+
+msgid "Identity"
+msgstr "Идентичность"
+
+msgid "Your Company or Website Name"
+msgstr "Ваше название компании или веб-сайта"
+
+msgid "Agent name"
+msgstr "Имя агента"
+
+msgid "has joined the conversation"
+msgstr "присоединился к разговору"
+
+msgid "Greetings"
+msgstr "Приветствия"
+
+msgid "Welcome to "
+msgstr "Добро пожаловать в "
+
+msgid "Hi There! May I know your name?"
+msgstr "Привет! Могу я узнать ваше имя?"
+
+msgid "I am "
+msgstr "Я "
+
+msgid "Nice to meet you"
+msgstr "Приятно познакомиться"
+
+msgid "Message settings for"
+msgstr "Настройки сообщений для"
+
+msgid "Editor Box"
+msgstr "Поле редактора"
+
+msgid "is typing..."
+msgstr "печатает..."
+
+msgid "Send a message"
+msgstr "Отправить сообщение"
+
+msgid "Products Search"
+msgstr "Поиск продуктов"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "Я здесь, чтобы найти вам нужный продукт. Что вы ищете?"
+
+msgid "if products found"
+msgstr "если найдены продукты"
+
+msgid "If no matching products is found"
+msgstr "Если не найдено подходящих продуктов"
+
+msgid "Can you be more specific?"
+msgstr "Можете уточнить?"
+
+msgid "Product Search"
+msgstr "Поиск продукта"
+
+msgid "Catalog"
+msgstr "Каталог"
+
+msgid "Send Us Email"
+msgstr "Отправьте нам электронное письмо"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "Вы можете просмотреть наш обширный каталог. Просто выберите категорию ниже"
+
+msgid "Too many choices? Let's try another search term"
+msgstr "Слишком много вариантов? Давайте попробуем другой поисковый запрос"
+
+msgid "Email has been sent successfully"
+msgstr "Электронное письмо успешно отправлено"
+
+msgid "Please provide your email address"
+msgstr "Пожалуйста, укажите свой адрес электронной почты"
+
+msgid "Please write you message"
+msgstr "Пожалуйста, напишите ваше сообщение"
+
+msgid "You can paste or write your custom css here."
+msgstr "Вы можете вставить или написать свой пользовательский CSS здесь."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "Получите #1 ChatBot для WooCommerce – WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro – это ChatBot для покупок в WooCommerce, который может помочь значительно увеличить ваши продажи. Покупатели могут свободно общаться с ботом благодаря интеграции с Google Dialogflow, искать и добавлять товары в корзину прямо из интерфейса чата, получать поддержку и многое другое!"
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "Onsite Retargeting помогает оптимизировать вашу конверсию, показывая специальные предложения и купоны при намерении выхода, временном интервале или прокрутке страницы. Отслеживайте конверсии клиентов с помощью статистики, чтобы узнать, покидают ли покупатели корзины. Получите больше продаж!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "Получите WoowBot Pro сейчас и увеличьте продажи!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "Многоязычное дополнение (**новое)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "Добавьте поддержку нескольких языков для вашего ChatBot. Пользователь может менять язык из выпадающего меню в любое время. Администратор может выбрать язык по умолчанию. Поддерживает все основные языки. Подключайтесь к различным агентам Dialogflow для разных языков"
+
+msgid "Voice Message AddOn (**new)"
+msgstr "Дополнение для голосовых сообщений (**новое)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "Позвольте вашим клиентам записывать голосовые сообщения из интерфейса ChatBot. Голосовые сообщения сохраняются на сервере для прослушивания в любое время. Поддерживает преобразование речи в текст с использованием Google API. Совместимо со всеми современными браузерами. Красивый современный пользовательский интерфейс"
+
+msgid "Extended UI Addon"
+msgstr "Дополнение для расширенного интерфейса"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "Подарите вашему любимому ChatBot новый облик. Выберите из 2 дополнительных современных, стильных и довольно шикарных шаблонов! Эти новые шаблоны обязательно впечатлят ваших посетителей сайта! Новый эффект загрузки и обширные возможности настройки цвета доступны!"
+
+msgid "Simple Text Responses Pro"
+msgstr "Профессиональные текстовые ответы"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "Создавайте текстовые ответы на запросы клиентов легко с функцией экспорта/импорта CSV. STR Pro поддерживает категории для простых текстовых ответов как на заднем, так и на переднем плане. HTML визуальный редактор для форматирования ответов вашего ChatBot и удаления стоп-слов для лучшего поиска."
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "Торговый ChatBot для WoowBot"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "Сделайте ваше предложение сейчас с Торговым ChatBot. Привлекайте больше клиентов с помощью умных ценовых переговоров. Позвольте вашим клиентам делать предложения по вашей цене. Ведите переговоры о минимальной цене, установленной вами для каждого продукта. Захватывайте покупателей, когда они имеют высокое намерение купить. Кнопка «Сделать предложение» будет отображаться только на странице отдельного продукта, для которого вы установили минимальную цену."
+
+msgid "Conversational Form Builder"
+msgstr "Конструктор разговорных форм"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "Создавайте условные разговоры и формы для нативного опыта ChatBot в WordPress. Создавайте стандартные формы, динамические формы с условными полями, калькуляторы, бронирование встреч и т.д. Поставляется с 7 готовыми шаблонами. Сохраняет данные формы в базе данных, автоответ, условные поля, переменные, сохраненные версии и многое другое!"
+
+msgid "Export Import Settings"
+msgstr "Экспорт/Импорт настроек"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "Используете WoowbotPro на нескольких сайтах? Тогда это полезное дополнение может пригодиться. Это дополнение позволяет экспортировать ваши настройки и импортировать их обратно на другой сайт или если вы просто хотите сохранить резервную копию. Очень полезно для переноса настроек языкового центра, которые могут быть сложными с множеством опций. Получите его сейчас!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "Дополнение для Messenger ChatBot"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "Используйте Woowbot на вашем сайте как центр для ответов на вопросы клиентов на странице FB и Messenger"
+
+msgid "Extended Search"
+msgstr "Расширенный поиск"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "Расширьте возможности поиска WPBot, чтобы включить почти любой пользовательский тип записи, включая WooCommerce"
+
+msgid "ChatBot Session Save Addon"
+msgstr "Дополнение для сохранения сессий ChatBot"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "Это дополнение сохраняет пользовательские сессии чата и помогает вам настроить бота для лучшей поддержки и производительности."
+
+msgid "LiveChat Addon"
+msgstr "Дополнение для LiveChat"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "Живой чат с человеком, интегрированный с WPBot"
+
+msgid "White Label WPBot"
+msgstr "White Label WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "Замените логотип и брендинг QuantumCloud на свои. Подходит для разработчиков и агентств, заинтересованных в предоставлении услуг ChatBot для своих клиентов."
+
+msgid "Mailing List Integration AddOn"
+msgstr "Интеграция с почтовым списком"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "Интеграция с почтовым списком – это дополнение ChatBot, которое позволяет вам подключаться к вашим аккаунтам Mailchimp и Zapier. Вы можете добавлять новых подписчиков в ваши списки Mailchimp из ChatBot и отписывать их. Вы также можете создать новый Zap в вашем аккаунте Zapier и подключиться к этому дополнению."
+
+msgid "WoowBot Master Theme"
+msgstr "Мастер-тема WoowBot"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "Получите тему на базе WoowBot!"
+
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**Совет профессионала: хотите сделать WoowBot действительно умным с"
+
+msgid "AI and Natural Language Processing?"
+msgstr "ИИ и обработкой естественного языка?"
+
+msgid "Upgrade to the Pro version"
+msgstr "Обновите до профессиональной версии"
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**Совет профессионала: WoowBot Pro интегрирован с"
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT и DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**Совет профессионала: "
+
+msgid "Use ChatGPT to"
+msgstr "Используйте ChatGPT для"
+
+msgid "answer  questions and provide real customer support"
+msgstr "ответа на вопросы и предоставления реальной поддержки клиентам"
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**Совет профессионала: ваши клиенты не завершают заказы? Узнайте с помощью"
+
+msgid "Customer Conversion report"
+msgstr "отчета о конверсии клиентов"
+
+msgid "in the Pro version"
+msgstr "в профессиональной версии"
+
+msgid "**Pro Tip:"
+msgstr "**Совет профессионала:"
+
+msgid "Use WoowBot Pro to"
+msgstr "Используйте WoowBot Pro для"
+
+msgid "provide live chat suport to your customers!"
+msgstr "предоставления поддержки в режиме реального времени вашим клиентам!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**Совет профессионала: используйте Onsite Retargeting для"
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "намерения выхода или всплывающих окон при прокрутке"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "with WoowBot Pro. Increase sales by 50% or more!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**Совет профессионала: настройка WoowBot Pro проста и быстра!"
+
+msgid "Plug and Play"
+msgstr "Подключите и работайте"
+
+msgid "No complex bot training required!"
+msgstr "Не требуется сложного обучения бота!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**Совет профессионала: WoowBot Pro интегрируется с"
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "и другими, чтобы предоставить вашим клиентам поддержку, которую они заслуживают. Увеличьте удовлетворенность клиентов!"

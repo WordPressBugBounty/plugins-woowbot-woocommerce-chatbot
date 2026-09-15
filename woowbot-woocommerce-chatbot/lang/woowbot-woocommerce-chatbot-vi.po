@@ -1,0 +1,2033 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-14 12:15+0000\n"
+"PO-Revision-Date: 2026-09-14 12:15+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: Tiếng Việt (Vietnamese)\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "Chúng tôi không thể phát hiện thông tin plugin nào. Điều này có thể là do bạn chưa bao gồm mã trong tệp chính của plugin."
+
+msgid "Sorry to see you go"
+msgstr "Rất tiếc khi thấy bạn rời đi"
+
+msgid "Found a Bug"
+msgstr "Tìm thấy lỗi"
+
+msgid "Need More Features"
+msgstr "Cần thêm tính năng"
+
+msgid "Deactivating Temporarily"
+msgstr "Tạm thời vô hiệu hóa"
+
+msgid "Upgrading to Pro"
+msgstr "Nâng cấp lên Pro"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "Vui lòng cung cấp email để chúng tôi có thể liên hệ với bạn về các bản sửa lỗi"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "Vui lòng cung cấp một số chi tiết để chúng tôi có thể cải thiện plugin"
+
+msgid "Submitting form"
+msgstr "Đang gửi biểu mẫu"
+
+msgid "Expand chat window"
+msgstr "Mở rộng cửa sổ trò chuyện"
+
+msgid "Conversations with"
+msgstr "Cuộc trò chuyện với"
+
+msgid "Close chat window"
+msgstr "Đóng cửa sổ trò chuyện"
+
+msgid "Send a message."
+msgstr "Gửi một tin nhắn."
+
+msgid "Support Request Details"
+msgstr "Chi tiết yêu cầu hỗ trợ"
+
+msgid "Name"
+msgstr "Tên"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Subject"
+msgstr "Chủ đề"
+
+msgid "Message"
+msgstr "Tin nhắn"
+
+msgid "Page"
+msgstr "Trang"
+
+msgid "User Agent"
+msgstr "User Agent"
+
+msgid "IP Address"
+msgstr "Địa chỉ IP"
+
+msgid "Mail Generated on"
+msgstr "Email được tạo vào"
+
+msgid "Click for Product Details"
+msgstr "Nhấp để xem chi tiết sản phẩm"
+
+msgid "AI Settings"
+msgstr "Cài đặt AI"
+
+msgid "selected"
+msgstr "đã chọn"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "Gemini"
+
+msgid "Grok"
+msgstr "Grok"
+
+msgid "Knowledge Base (RAG)"
+msgstr "Cơ sở kiến thức (RAG)"
+
+msgid "AI Wizard"
+msgstr "Trợ lý AI"
+
+msgid "Common AI Settings"
+msgstr "Cài đặt AI chung"
+
+msgid "Rate Limit"
+msgstr "Giới hạn tỷ lệ"
+
+msgid "Other Common Settings"
+msgstr "Cài đặt chung khác"
+
+msgid "Enable Rate Limiting"
+msgstr "Bật giới hạn tỷ lệ"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "Đặt số yêu cầu tối đa mà mỗi người dùng của một vai trò cụ thể có thể thực hiện đến API OpenAI trong một khoảng thời gian nhất định. Để trống hoặc đặt thành 0 để không giới hạn yêu cầu."
+
+msgid "Set the rate limit for each user role:"
+msgstr "Đặt giới hạn tỷ lệ cho mỗi vai trò người dùng:"
+
+msgid "Rate limit for %s"
+msgstr "Giới hạn tỷ lệ cho %s"
+
+msgid "Timeframe:"
+msgstr "Khung thời gian:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "48 Hours"
+msgstr "48 Giờ"
+
+msgid "24 Hours"
+msgstr "24 Giờ"
+
+msgid "12 Hours"
+msgstr "12 Giờ"
+
+msgid "6 Hours"
+msgstr "6 Giờ"
+
+msgid "Rate limit for Guest Users"
+msgstr "Giới hạn tỷ lệ cho người dùng khách"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "Vui lòng kết nối với dịch vụ AI như OpenAI hoặc Gemini trước khi nhúng."
+
+msgid "Check this Tutorial for more details."
+msgstr "Kiểm tra hướng dẫn này để biết thêm chi tiết."
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>Addon AI Try-On cho WooCommerce</strong> yêu cầu WooCommerce được cài đặt và hoạt động. Các tính năng của plugin sẽ không hoạt động cho đến khi WooCommerce được kích hoạt."
+
+msgid "AI Try-On Configurations"
+msgstr "Cấu hình AI Try-On"
+
+msgid "General Settings"
+msgstr "Cài đặt chung"
+
+msgid "Prompts"
+msgstr "Lời nhắc"
+
+msgid "Help"
+msgstr "Giúp đỡ"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "Cấu hình tất cả các cài đặt AI Try-On của bạn ở một nơi."
+
+msgid "Enable Try-On Button"
+msgstr "Bật nút Try-On"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Hiển thị nút \"Thử với AI\" trên các trang sản phẩm đơn"
+
+msgid "Require Login"
+msgstr "Yêu cầu đăng nhập"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "Hiển thị tính năng Try-On chỉ cho người dùng đã đăng nhập"
+
+msgid "Show Add to Cart Button"
+msgstr "Hiển thị nút Thêm vào giỏ hàng"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Hiển thị nút 'Thêm vào giỏ hàng' ở chân modal Try-On"
+
+msgid "Daily Generation Limit"
+msgstr "Giới hạn tạo hàng ngày"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "ví dụ: 5 (Để trống để không giới hạn)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "Giới hạn tạo hình ảnh và video mỗi phiên + IP trong 24 giờ. Để trống hoặc 0 để không giới hạn."
+
+msgid "Try-On Button Position"
+msgstr "Vị trí nút Try-On"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "Inside Product Summary"
+msgstr "Trong tóm tắt sản phẩm"
+
+msgid "Before Cart"
+msgstr "Trước giỏ hàng"
+
+msgid "Above Add to Cart Form"
+msgstr "Trên biểu mẫu Thêm vào giỏ hàng"
+
+msgid "After Cart"
+msgstr "Sau giỏ hàng"
+
+msgid "Below Add to Cart Form"
+msgstr "Dưới biểu mẫu Thêm vào giỏ hàng"
+
+msgid "Before Meta"
+msgstr "Trước meta"
+
+msgid "Above Categories/Tags"
+msgstr "Trên danh mục/nhãn"
+
+msgid "After Meta"
+msgstr "Sau meta"
+
+msgid "Below Categories/Tags"
+msgstr "Dưới danh mục/nhãn"
+
+msgid "Below Summary"
+msgstr "Dưới tóm tắt"
+
+msgid "At bottom of product details"
+msgstr "Ở dưới cùng của chi tiết sản phẩm"
+
+msgid "Above Summary"
+msgstr "Trên tóm tắt"
+
+msgid "At very top of product details"
+msgstr "Ở rất trên cùng của chi tiết sản phẩm"
+
+msgid "Try-On Button Icon"
+msgstr "Biểu tượng nút Try-On"
+
+msgid "Sparkles"
+msgstr "Những viên kim cương"
+
+msgid "Magic Wand"
+msgstr "Đũa thần"
+
+msgid "Shirt"
+msgstr "Áo sơ mi"
+
+msgid "No Icon"
+msgstr "Không có biểu tượng"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "Chọn một biểu tượng emoji để hiển thị trước văn bản nút."
+
+msgid "Try with your photo Button Text"
+msgstr "Văn bản nút Thử với ảnh của bạn"
+
+msgid "The text displayed on the frontend button."
+msgstr "Văn bản hiển thị trên nút ở giao diện người dùng."
+
+msgid "Default Video Duration"
+msgstr "Thời gian video mặc định"
+
+msgid "(Pro Feature)"
+msgstr "(Tính năng Pro)"
+
+msgid "4 Seconds"
+msgstr "4 Giây"
+
+msgid "Standard generation"
+msgstr "Tạo tiêu chuẩn"
+
+msgid "8 Seconds"
+msgstr "8 Giây"
+
+msgid "Extended generation"
+msgstr "Tạo mở rộng"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "Chọn độ dài của video được tạo. (Có sẵn trong Pro)"
+
+msgid "Video Resolution"
+msgstr "Độ phân giải video"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "Độ phân giải tiêu chuẩn"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "Độ phân giải cao"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "Chọn độ phân giải cho video được tạo. (Có sẵn trong Pro)"
+
+msgid "Image Size"
+msgstr "Kích thước hình ảnh"
+
+msgid "1024x1024 (Square)"
+msgstr "1024x1024 (Hình vuông)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "DALL-E 2, DALL-E 3, Gemini"
+
+msgid "1024x1792 (Portrait)"
+msgstr "1024x1792 (Dọc)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "DALL-E 3, Gemini"
+
+msgid "1792x1024 (Landscape)"
+msgstr "1792x1024 (Ngang)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "Chọn tỷ lệ khung hình / kích thước cho hình ảnh được tạo bằng AI."
+
+msgid "Google Gemini Base Prompt"
+msgstr "Google Gemini Base Prompt"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "Tùy chỉnh các hướng dẫn cơ bản gửi đến Google Gemini. Đầu vào của người dùng sẽ được thêm vào tự động."
+
+msgid "Reset to Default"
+msgstr "Đặt lại về mặc định"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "Gemini Veo Video Base Prompt"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "Tùy chỉnh các hướng dẫn cơ bản cho việc tạo video Veo. Đầu vào của người dùng sẽ được thêm vào tự động. (Có sẵn trong Pro)"
+
+msgid "OpenAI Base Prompt"
+msgstr "OpenAI Base Prompt"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "Tùy chỉnh các hướng dẫn cơ bản gửi đến OpenAI. Đầu vào của người dùng sẽ được thêm vào tự động."
+
+msgid "Final Prompt Structure Builder"
+msgstr "Trình tạo cấu trúc Prompt cuối cùng"
+
+msgid "Use placeholders:"
+msgstr "Sử dụng các dấu chấm:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "để cấu trúc cách mà prompt kết hợp cuối cùng được gửi."
+
+msgid "Quick Start Guide"
+msgstr "Hướng dẫn bắt đầu nhanh"
+
+msgid "Welcome to"
+msgstr "Chào mừng đến với"
+
+msgid "WooCommerce AI Try-On"
+msgstr "WooCommerce AI Try-On"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "Plugin này cho phép khách hàng của bạn thử nghiệm sản phẩm của bạn một cách ảo bằng công nghệ AI sinh tạo tiên tiến."
+
+msgid "Pro Tip:"
+msgstr "Mẹo Pro:"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "Bạn có thể tùy chỉnh hoàn toàn vị trí và văn bản của nút \"Thử nghiệm\" trong tab <strong>Cài đặt chung</strong>!"
+
+msgid "1. Customer Experience"
+msgstr "1. Trải nghiệm của khách hàng"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Khi một khách hàng nhấp vào nút Thử nghiệm, một giao diện modal cao cấp sẽ xuất hiện. Họ có thể dễ dàng kéo và thả hoặc tải lên một bức ảnh tham khảo của chính mình. Họ cũng có một ô văn bản để thêm các hướng dẫn kịch bản tùy chỉnh (ví dụ: <em>\"Đứng trong một quán cà phê hiện đại\"</em>)."
+
+msgid "2. The Generation Process"
+msgstr "2. Quy trình tạo"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "Khi họ nhấp vào Tạo, plugin sẽ lấy <strong>Hình ảnh sản phẩm</strong>, <strong>Hình ảnh đã tải lên của khách hàng</strong>, và <strong>Văn bản kịch bản</strong> của họ, và kết hợp chúng bằng cách sử dụng <em>Trình tạo cấu trúc Prompt cuối cùng</em> (tìm thấy trong tab Prompts)."
+
+msgid "3. Image vs Video"
+msgstr "3. Hình ảnh so với Video"
+
+msgid "Images:"
+msgstr "Hình ảnh:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "Được tạo ngay lập tức bởi Google Gemini (Imagen 3) hoặc OpenAI (DALL-E 3)."
+
+msgid "Videos:"
+msgstr "Video:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "Chỉ được cung cấp bởi mô hình <strong>Veo</strong> tiên tiến của Google. Việc tạo video có thể mất vài phút. Plugin xử lý điều này một cách khéo léo bằng cách liên tục kiểm tra máy chủ của Google trong nền, cho phép khách hàng thấy các cập nhật trạng thái theo thời gian thực mà không cần rời khỏi trang."
+
+msgid "API Keys & Configuration"
+msgstr "Khóa API &amp; Cấu hình"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "Trước khi nút Thử nghiệm hoạt động, bạn phải cấu hình các nhà cung cấp AI của mình."
+
+msgid "Important:"
+msgstr "Quan trọng:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "Bạn phải nhấp vào nút <strong>Xác minh</strong> bên cạnh các mô hình đã chọn của bạn trong tab Cài đặt AI để xác nhận rằng khóa API của bạn đã được cấp quyền."
+
+msgid "Getting a Google Gemini Key"
+msgstr "Lấy khóa Google Gemini"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Các mô hình Gemini của Google (bao gồm Imagen 3 và Veo) yêu cầu một khóa API từ Google AI Studio. Bạn có thể nhận một khóa API miễn phí bằng cách truy cập <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+
+msgid "Getting an OpenAI Key"
+msgstr "Lấy khóa OpenAI"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "Các mô hình của OpenAI (như DALL-E 3) yêu cầu một tài khoản nền tảng OpenAI trả phí. Bạn có thể tạo một khóa tại <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+
+msgid "Need Support?"
+msgstr "Cần hỗ trợ?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "Nếu bạn gặp sự cố với plugin hoặc có yêu cầu tính năng, vui lòng liên hệ với bộ phận hỗ trợ của chúng tôi."
+
+msgid "Contact Support &rarr;"
+msgstr "Liên hệ hỗ trợ &rarr;"
+
+msgid "Useful Links"
+msgstr "Liên kết hữu ích"
+
+msgid "Google AI Studio"
+msgstr "Google AI Studio"
+
+msgid "OpenAI Developer Platform"
+msgstr "Nền tảng phát triển OpenAI"
+
+msgid "WooCommerce Docs"
+msgstr "Tài liệu WooCommerce"
+
+msgid "Save Configurations"
+msgstr "Lưu cấu hình"
+
+msgid "AI API Configuration"
+msgstr "Cấu hình API AI"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "Cấu hình khóa API, mô hình và cài đặt tạo."
+
+msgid "Image Generation AI Provider"
+msgstr "Nhà cung cấp AI tạo hình ảnh"
+
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgid "OpenAI Integration Settings"
+msgstr "Cài đặt tích hợp OpenAI"
+
+msgid "OpenAI API Key"
+msgstr "Khóa API OpenAI"
+
+msgid "Test Connection"
+msgstr "Kiểm tra kết nối"
+
+msgid "OpenAI Image Model"
+msgstr "Mô hình hình ảnh OpenAI"
+
+msgid "Verify"
+msgstr "Xác minh"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "Chọn mô hình OpenAI cho việc tạo hình ảnh."
+
+msgid "Google Gemini Integration Settings"
+msgstr "Cài đặt tích hợp Google Gemini"
+
+msgid "Powered by Veo for Video"
+msgstr "Được cung cấp bởi Veo cho Video"
+
+msgid "Gemini API Key"
+msgstr "Khóa API Gemini"
+
+msgid "Gemini Image Model"
+msgstr "Mô hình hình ảnh Gemini"
+
+msgid "Select the Gemini model for image generation."
+msgstr "Chọn mô hình Gemini cho việc tạo hình ảnh."
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "Mô hình video Gemini (Google Veo)"
+
+msgid " ( Recommended )"
+msgstr " ( Được khuyến nghị )"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "Chọn mô hình Google Veo cho việc tạo video thử nghiệm. (Có sẵn trong Pro)"
+
+msgid "API Key is empty."
+msgstr "Khóa API trống."
+
+msgid "Connection successful!"
+msgstr "Kết nối thành công!"
+
+msgid "API Error: "
+msgstr "Lỗi API: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "Kết nối thất bại (HTTP %1$s). Chi tiết: %2$s"
+
+msgid "API Error"
+msgstr "Lỗi API"
+
+msgid "Missing API key or model."
+msgstr "Thiếu khóa API hoặc mô hình."
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "Tạo thất bại. (HTTP %s)"
+
+msgid "Model verified successfully."
+msgstr "Mô hình đã được xác minh thành công."
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "Xác minh mô hình thất bại. (HTTP %s)"
+
+msgid "Invalid provider."
+msgstr "Nhà cung cấp không hợp lệ."
+
+msgid "OpenAI API Request Failed: "
+msgstr "Yêu cầu API OpenAI thất bại: "
+
+msgid "Generation execution failure. %s"
+msgstr "Thất bại trong việc thực hiện tạo. %s"
+
+msgid "OpenAI Error: "
+msgstr "Lỗi OpenAI: "
+
+msgid "Gemini API Request Failed: "
+msgstr "Yêu cầu API Gemini thất bại: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "Tạo Gemini đã dừng lại. Lý do: "
+
+msgid "Unknown Gemini Error."
+msgstr "Lỗi Gemini không xác định."
+
+msgid "Gemini API Error: "
+msgstr "Lỗi API Gemini: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "Bạn đã đạt giới hạn hàng ngày cho việc tạo AI. Vui lòng thử lại vào ngày mai."
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "Cấu hình API bị thiếu. Liên hệ với quản trị viên cửa hàng."
+
+msgid "No media data provided."
+msgstr "Không có dữ liệu phương tiện nào được cung cấp."
+
+msgid "Invalid base64 data."
+msgstr "Dữ liệu base64 không hợp lệ."
+
+msgid "Failed to decode base64."
+msgstr "Không thể giải mã base64."
+
+msgid "Saved to Media Library!"
+msgstr "Đã lưu vào Thư viện phương tiện!"
+
+msgid "Failed to save base64 media."
+msgstr "Không thể lưu phương tiện base64."
+
+msgid "Failed to download media from URL."
+msgstr "Không thể tải phương tiện từ URL."
+
+msgid "Failed to save downloaded media."
+msgstr "Không thể lưu phương tiện đã tải."
+
+msgid "Invalid media format."
+msgstr "Định dạng phương tiện không hợp lệ."
+
+msgid "Reset!"
+msgstr "Đặt lại!"
+
+msgid "Please enter an API key first."
+msgstr "Vui lòng nhập khóa API trước."
+
+msgid "Testing connection..."
+msgstr "Đang kiểm tra kết nối..."
+
+msgid "Error: "
+msgstr "Lỗi: "
+
+msgid "Unknown error"
+msgstr "Lỗi không xác định"
+
+msgid "Request failed: "
+msgstr "Yêu cầu không thành công: "
+
+msgid "Please select a model first."
+msgstr "Vui lòng chọn một mẫu trước."
+
+msgid "Verifying..."
+msgstr "Đang xác minh..."
+
+msgid "Testing..."
+msgstr "Đang kiểm tra..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "Đã xác minh! Mẫu chấp nhận phương thức này."
+
+msgid "AJAX request failed."
+msgstr "Yêu cầu AJAX không thành công."
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "Được khuyến nghị (Tốc độ &amp; giá cả tối ưu)"
+
+msgid "Processing..."
+msgstr "Đang xử lý..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "Đang tạo Video (Điều này có thể mất tới 5 phút)..."
+
+msgid "Status Check Error: "
+msgstr "Lỗi kiểm tra trạng thái: "
+
+msgid "Execution Error: "
+msgstr "Lỗi thực thi: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "Đã xảy ra lỗi giao tiếp hạ tầng không mong muốn."
+
+msgid "No media available to download."
+msgstr "Không có phương tiện nào để tải xuống."
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "Chỉ có hình ảnh/video mới có thể được lưu vào Thư viện phương tiện."
+
+msgid "Saving..."
+msgstr "Đang lưu..."
+
+msgid "Saved!"
+msgstr "Đã lưu!"
+
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Error saving media."
+msgstr "Lỗi khi lưu phương tiện."
+
+msgid "Network error."
+msgstr "Lỗi mạng."
+
+msgid "Adding..."
+msgstr "Đang thêm..."
+
+msgid "You must be logged in to use this feature."
+msgstr "Bạn phải đăng nhập để sử dụng tính năng này."
+
+msgid "AI Product Generation"
+msgstr "Tạo sản phẩm AI"
+
+msgid "Original Image"
+msgstr "Hình ảnh gốc"
+
+msgid "Original Product"
+msgstr "Sản phẩm gốc"
+
+msgid "Upload Image"
+msgstr "Tải lên hình ảnh"
+
+msgid "Generate Image"
+msgstr "Tạo hình ảnh"
+
+msgid "Background Preference"
+msgstr "Tùy chọn nền"
+
+msgid "Studio"
+msgstr "Studio"
+
+msgid "Outdoor"
+msgstr "Ngoài trời"
+
+msgid "Lifestyle"
+msgstr "Phong cách sống"
+
+msgid "Output Style"
+msgstr "Phong cách đầu ra"
+
+msgid "Model Shoot"
+msgstr "Chụp mẫu"
+
+msgid "Flat Lay"
+msgstr "Bố cục phẳng"
+
+msgid "Ghost Mannequin"
+msgstr "Mannequin ma"
+
+msgid "Prompt (Optional)"
+msgstr "Lời nhắc (Tùy chọn)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "Thêm bất kỳ hướng dẫn cụ thể nào (tùy chọn)"
+
+msgid "Generate"
+msgstr "Tạo"
+
+msgid "Download"
+msgstr "Tải xuống"
+
+msgid "Generated Output"
+msgstr "Đầu ra đã tạo"
+
+msgid "Ready to generate"
+msgstr "Sẵn sàng để tạo"
+
+msgid "Generating Magic..."
+msgstr "Đang tạo phép thuật..."
+
+msgid "Add to Cart"
+msgstr "Thêm vào giỏ hàng"
+
+msgid "AI Analyst"
+msgstr "Phân tích viên AI"
+
+msgid "AI Store Analyst"
+msgstr "Phân tích viên cửa hàng AI"
+
+msgid "WooCommerce Intelligence"
+msgstr "WooCommerce Intelligence"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "Thông tin bán hàng tức thì, trí tuệ dự đoán và phân tích sâu được hỗ trợ bởi AI."
+
+msgid "Active AI Provider"
+msgstr "Nhà cung cấp AI hoạt động"
+
+msgid "Ready to analyze your store"
+msgstr "Sẵn sàng phân tích cửa hàng của bạn"
+
+msgid "Clear Conversation History"
+msgstr "Xóa lịch sử trò chuyện"
+
+msgid "Reset Chat"
+msgstr "Đặt lại trò chuyện"
+
+msgid "Ask a question"
+msgstr "Hỏi một câu hỏi"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "Hỏi về doanh số, sản phẩm bán chạy nhất, khách hàng, xu hướng…"
+
+msgid "Send question"
+msgstr "Gửi câu hỏi"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "Nhấn Enter ↵ để gửi • Shift + Enter để xuống dòng mới"
+
+msgid "Store Insights"
+msgstr "Thông tin cửa hàng"
+
+msgid "AI Growth Recommendation"
+msgstr "Khuyến nghị tăng trưởng AI"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "Đang phân tích đơn hàng và hiệu suất cửa hàng gần đây..."
+
+msgid "Performance Overview"
+msgstr "Tổng quan hiệu suất"
+
+msgid "Last 30 Days"
+msgstr "30 ngày qua"
+
+msgid "Revenue Trend"
+msgstr "Xu hướng doanh thu"
+
+msgid "Top Products by Revenue"
+msgstr "Sản phẩm hàng đầu theo doanh thu"
+
+msgid "The requested analysis is not available."
+msgstr "Phân tích yêu cầu không có sẵn."
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "Không tìm thấy đơn hàng đủ điều kiện trong 30 ngày qua. Kiểm tra lưu lượng truy cập, lỗi thanh toán và cài đặt trạng thái đơn hàng trước."
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "Đơn hàng giảm %s%%. Tập trung vào việc phục hồi lưu lượng truy cập và khách hàng quay lại; hỏi nhà phân tích xem khách hàng nào có khả năng quay lại nhất."
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "Giá trị đơn hàng trung bình giảm %s%%. Kiểm tra các gói sử dụng báo cáo sản phẩm đã mua cùng nhau."
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s dẫn đầu doanh thu gần đây. Kết hợp nó với các sản phẩm thường xuyên được mua và nổi bật gói đó."
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "Xem xét khách hàng gần đây, phiếu giảm giá và kênh bán hàng để tìm cơ hội tăng trưởng rõ ràng nhất."
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "Vui lòng cấu hình khóa API OpenAI hoặc Google Gemini của bạn trong AI Try-On &amp; Cài đặt AI."
+
+msgid "Google Gemini request failed."
+msgstr "Yêu cầu Google Gemini không thành công."
+
+msgid "OpenAI request failed."
+msgstr "Yêu cầu OpenAI không thành công."
+
+msgid "Which period performed best?"
+msgstr "Thời gian nào có hiệu suất tốt nhất?"
+
+msgid "Show the top products during the strongest period."
+msgstr "Hiển thị các sản phẩm hàng đầu trong thời gian mạnh nhất."
+
+msgid "Compare this trend with the previous period."
+msgstr "So sánh xu hướng này với thời gian trước."
+
+msgid "Show the sales trend for the same period."
+msgstr "Hiển thị xu hướng doanh số cho cùng một thời gian."
+
+msgid "Compare these products with the previous period."
+msgstr "So sánh các sản phẩm này với thời gian trước."
+
+msgid "Summarize sales for this period."
+msgstr "Tóm tắt doanh số cho thời gian này."
+
+msgid "Show this period as a sales graph."
+msgstr "Hiển thị thời gian này dưới dạng biểu đồ doanh số."
+
+msgid "Which products sold best during this period?"
+msgstr "Sản phẩm nào bán chạy nhất trong thời gian này?"
+
+msgid "Compare this with the preceding period."
+msgstr "So sánh điều này với thời gian trước."
+
+msgid "What were total sales in the last 30 days?"
+msgstr "Tổng doanh số trong 30 ngày qua là bao nhiêu?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "Hiển thị xu hướng doanh số hàng tháng trong năm qua."
+
+msgid "What are my top 10 products this year?"
+msgstr "10 sản phẩm hàng đầu của tôi trong năm nay là gì?"
+
+msgid "Sales trend"
+msgstr "Xu hướng doanh số"
+
+msgid "Top products by revenue"
+msgstr "Sản phẩm hàng đầu theo doanh thu"
+
+msgid "Coupon-attributed revenue"
+msgstr "Doanh thu từ phiếu giảm giá"
+
+msgid "Most valuable customers"
+msgstr "Khách hàng có giá trị nhất"
+
+msgid "Product profit"
+msgstr "Lợi nhuận sản phẩm"
+
+msgid "Product revenue"
+msgstr "Doanh thu sản phẩm"
+
+msgid "Revenue by channel"
+msgstr "Doanh thu theo kênh"
+
+msgid "Frequently bought together"
+msgstr "Thường xuyên mua cùng nhau"
+
+msgid "Gemini settings"
+msgstr "Cài đặt Gemini"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "Trợ giúp Gemini"
+
+msgid "Enable Gemini AI"
+msgstr "Bật AI Gemini"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(nếu bạn muốn kết quả chỉ từ Gemini, hãy tắt Tìm kiếm trang từ Cài đặt-&gt;Menu bắt đầu)"
+
+msgid "Context awareness"
+msgstr "Nhận thức ngữ cảnh"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "Bật gợi ý trang với Kết quả Gemini"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "Chọn LOẠI BÀI ĐĂNG để bao gồm trong kết quả tìm kiếm"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "Lấy khóa API của bạn từ https://aistudio.google.com/app/apikey."
+
+msgid "It requires a paid Gemini API plan"
+msgstr "Nó yêu cầu một kế hoạch API Gemini trả phí"
+
+msgid "Gemini Model"
+msgstr "Mô hình Gemini"
+
+msgid "Fetch Models"
+msgstr "Lấy mô hình"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Chọn mô hình Gemini của bạn. Nhấn \"Lấy mô hình\" để cập nhật danh sách nếu bạn vừa thêm khóa API của mình."
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "Vui lòng chọn mô hình trả phí của bạn, tất cả các mô hình trong danh sách có thể không có sẵn cho các gói miễn phí."
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "Lời nhắc của bạn sẽ được thêm trước truy vấn của người dùng để có kết quả tùy chỉnh (Tùy chọn)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "Lời nhắc của bạn sẽ được thêm vào cuối truy vấn của người dùng để có kết quả tùy chỉnh (Tùy chọn)"
+
+msgid "Save settings"
+msgstr "Lưu cài đặt"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "Tinh chỉnh so với Trợ lý GPT so với RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "Chúng tôi đề xuất sử dụng Trợ lý GPT hoặc RAG thay vì Tinh chỉnh vì Tinh chỉnh yêu cầu nhiều dữ liệu được định dạng chính xác và Trợ lý GPT dễ thiết lập hơn. Bạn vẫn có thể sử dụng dữ liệu trang web của mình để đào tạo bot."
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "Cách sử dụng RAG trong Plugin này:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "Kích hoạt RAG từ bảng cài đặt"
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "Nhấn nút “Nhúng tất cả các nguồn đã chọn”, sau khi chọn các nguồn từ"
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(Tùy chọn) Tải lên các tệp PDF hoặc CSV để nhúng"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "Hệ thống tự động lưu trữ nhúng trong cơ sở dữ liệu"
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "Câu hỏi của người dùng sẽ được trả lời bằng cách sử dụng cơ sở kiến thức của trang web của bạn"
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "Bạn cần cấu hình khóa API OpenAI, Mô hình AI và Lệnh Hệ thống dưới cài đặt OpenAI chính"
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "Bạn có thể cập nhật hoặc nhúng lại nội dung bất cứ lúc nào mà không cần đào tạo lại."
+
+msgid "Getting Started with gemini"
+msgstr "Bắt đầu với Gemini"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "Gemini là một giao diện thống nhất hoặc bộ tổng hợp cho LLMs. Bạn có thể chọn từ hàng trăm mô hình AI khác nhau từ OpenAI đến Deepseek hoặc Claude để nhận phản hồi AI."
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "Tất cả những gì bạn cần làm là thêm Khóa API Gemini và chọn một Mô hình Gemini."
+
+msgid "Grab your API key from"
+msgstr "Lấy khóa API của bạn từ"
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "Vui lòng đảm bảo rằng DialogFlow, OpenAI đã bị vô hiệu hóa nếu bạn muốn Gemini hoạt động."
+
+msgid "Failed in Security check"
+msgstr "Kiểm tra bảo mật không thành công"
+
+msgid "Unauthorized user"
+msgstr "Người dùng không được phép"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "Kiểm tra bảo mật không thành công. Yêu cầu không được phép."
+
+msgid "API Key is required"
+msgstr "Khóa API là bắt buộc"
+
+msgid "Security check failed"
+msgstr "Kiểm tra bảo mật không thành công"
+
+msgid "Unauthorized access"
+msgstr "Truy cập không được phép"
+
+msgid "Settings updated successfully"
+msgstr "Cài đặt đã được cập nhật thành công"
+
+msgid "View Detail"
+msgstr "Xem chi tiết"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI đã vô hiệu hóa một số mô hình cũ. Vui lòng sử dụng GPT 3.5 hoặc 4 để Tinh chỉnh. Bạn cần cập nhật tập dữ liệu và Tinh chỉnh lại. Vui lòng kiểm tra phần Trợ giúp để biết chi tiết."
+
+msgid "OpenAI settings"
+msgstr "Cài đặt OpenAI"
+
+msgid "Training Model"
+msgstr "Mô hình đào tạo"
+
+msgid "GPT Assistant"
+msgstr "Trợ lý GPT"
+
+msgid "Fine Tune with Website Data"
+msgstr "Tinh chỉnh với dữ liệu trang web"
+
+msgid "AI Image Generator"
+msgstr "Trình tạo hình ảnh AI"
+
+msgid "AI Article Generator"
+msgstr "Trình tạo bài viết AI"
+
+msgid "GPT Assistant is available with the "
+msgstr "Trợ lý GPT có sẵn với"
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro Professional"
+
+msgid " and "
+msgstr "và"
+
+msgid "Master"
+msgstr "Chủ"
+
+msgid " Licenses"
+msgstr "Giấy phép"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "Tinh chỉnh so với Trợ lý GPT:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "Chúng tôi đề xuất sử dụng Trợ lý GPT thay vì Tinh chỉnh vì Tinh chỉnh yêu cầu nhiều dữ liệu được định dạng chính xác và Trợ lý GPT dễ thiết lập hơn. Bạn vẫn có thể sử dụng dữ liệu trang web của mình để đào tạo bot."
+
+msgid "Setting up GPT Assistants:"
+msgstr "Thiết lập Trợ lý GPT:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "Đi đến tab đào tạo GPT với dữ liệu trang web. Chọn tất cả các loại bài viết bạn cần và nhấn nút Chuyển đổi dữ liệu cho Trợ lý. Khi hoàn tất, tải xuống tệp dữ liệu ở định dạng JSON."
+
+msgid "Go to "
+msgstr "Đi đến"
+
+msgid "Assistants playground"
+msgstr "sân chơi Trợ lý"
+
+msgid " and create a new Assistant"
+msgstr "và tạo một Trợ lý mới"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "Tải lên tệp JSON mà bạn đã tải xuống và cung cấp cho GPT một hướng dẫn tương tự như bên dưới nhưng tùy chỉnh theo URL trang web của bạn:"
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "Tên của bạn là Carry. Bạn là một trợ lý ChatBot cho trang web"
+
+msgid "https://www.quantumcloud.net. "
+msgstr "https://www.quantumcloud.net."
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "Sử dụng dữ liệu trang web và tệp đã tải lên để trả lời bất kỳ câu hỏi nào từ người dùng trang web của chúng tôi."
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "Sao chép ID của Trợ lý và dán vào tab Trợ lý GPT dưới cài đặt OpenAI trên trang web của bạn. Bạn đã hoàn tất. Nếu bạn đã mua tín dụng từ nền tảng API OpenAI, nó sẽ bắt đầu hoạt động."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "Bạn có thể sử dụng các Trợ lý GPT khác nhau trên các trang khác nhau với các Widget chatbot. Dán đoạn mã ngắn mẫu này và thay thế ID Trợ lý theo nhu cầu: Ví dụ: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Please check this article for step by step guide."
+msgstr "Vui lòng kiểm tra bài viết này để biết hướng dẫn từng bước."
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "Nhận kết quả tùy chỉnh từ các dịch vụ AI"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "Kết quả tùy chỉnh tốt nhất bạn có thể nhận được từ các dịch vụ AI là sử dụng Trợ lý GPT OpenAI cho phép bạn tải lên tài liệu và dữ liệu trang web của bạn (được tạo bởi các phiên bản Pro của chúng tôi). Tuy nhiên, bạn vẫn có thể nhận được kết quả tùy chỉnh bằng cách viết một lời nhắc chi tiết. Dưới phần Lệnh Hệ thống trong khu vực cài đặt OpenAI (có một phần lời nhắc cho các dịch vụ AI khác cũng vậy) bạn có thể viết một lời nhắc chi tiết bao gồm thông tin về dịch vụ, sản phẩm của bạn, cách liên hệ với bạn, hoặc bất cứ điều gì liên quan để có kết quả tùy chỉnh. Tối đa 3000 từ là đủ. Điều này nên đủ cho hầu hết các trang web nhỏ đến vừa."
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "Kiểm tra bài viết này"
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "để biết thêm chi tiết về cách nhận kết quả tùy chỉnh từ OpenAI."
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "Nâng cấp lên WoowbotPro Professional hoặc Giấy phép Chủ để sử dụng Trợ lý GPT."
+
+msgid "Getting Started with OpenAI"
+msgstr "Bắt đầu với OpenAI"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI đã thay đổi chính sách thanh toán API gần đây. Bạn phải"
+
+msgid "pre-purchase API credits"
+msgstr "mua trước tín dụng API"
+
+msgid " now. Go to "
+msgstr "bây giờ. Đi đến"
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/"
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "và thêm tín dụng vào tài khoản API của bạn. Sau đó, tăng giới hạn sử dụng."
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "Khi bạn thêm khóa API OpenAI, nó sẽ bắt đầu hoạt động cho các câu hỏi chung. Mở một cửa sổ trình duyệt mới ở chế độ ẩn danh và kiểm tra bằng cách hỏi \"Thủ đô của Nga là gì?\""
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "Vui lòng đảm bảo rằng DialogFlow đã bị vô hiệu hóa nếu bạn muốn OpenAI hoạt động"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "Tinh chỉnh so với Trợ lý GPT so với RAG"
+
+msgid "GPT Assistants:"
+msgstr "Trợ lý GPT:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "Cách nhận Khóa API OpenAI"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "API OpenAI sử dụng khóa API để xác thực. Truy cập trang Khóa API của bạn để lấy khóa API mà bạn sẽ sử dụng trong các yêu cầu của mình. Hãy nhớ rằng khóa API của bạn là bí mật! Đừng chia sẻ nó với người khác hoặc tiết lộ nó trong bất kỳ mã phía khách hàng nào (trình duyệt, ứng dụng). Các yêu cầu sản xuất phải được định tuyến qua máy chủ backend của riêng bạn, nơi khóa API của bạn có thể được tải một cách an toàn từ biến môi trường hoặc dịch vụ quản lý khóa."
+
+msgid "You can generate the API key from here: "
+msgstr "Bạn có thể tạo khóa API từ đây:"
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys."
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "Đào tạo hoặc Tinh chỉnh OpenAI"
+
+msgid "To train OpenAI"
+msgstr "Để đào tạo OpenAI"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr "a. Để đào tạo hoặc tinh chỉnh một mô hình, trước tiên bạn cần:"
+
+msgid "Gather the necessary data you want to train with"
+msgstr "Thu thập dữ liệu cần thiết mà bạn muốn đào tạo"
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "Định dạng dữ liệu đúng theo yêu cầu của API OpenAI (Tải xuống mẫu định dạng dữ liệu để xem cách nó hoạt động). Một tập dữ liệu nên có ít nhất 500 hàng để cung cấp kết quả hữu ích. Theo tài liệu của OpenAI, số lượng 3.000 và 5.000 hàng được khuyến nghị."
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "Tải dữ liệu lên OpenAI ở định dạng .JSONL"
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "Đào tạo một mô hình OpenAI hiện có (chọn từ trang cài đặt Bot OpenAI) với dữ liệu của bạn"
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr "b. Khi bạn đã sẵn sàng tệp JSONL của mình, vui lòng đi đến phần mô hình đào tạo. Tải tệp đào tạo của bạn lên ở định dạng .JSONL."
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "c. Khi bạn tải tệp đào tạo của mình lên, nó sẽ trả về một ID tệp và việc đào tạo sẽ bắt đầu khi bạn nhấn nút Tạo Mô hình FT. Đặt một hậu tố (để nhận diện mô hình sau này) và mô hình cơ sở trong cửa sổ bật lên và tạo."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Khi việc đào tạo hoàn tất và tệp đã sẵn sàng, nó sẽ trả về mô hình đã được tinh chỉnh. Nó sẽ được liệt kê dưới Danh sách Mô hình Đã Tinh Chỉnh, trạng thái sẽ được hiển thị là \"Thành công\" và bạn cũng sẽ nhận được một ID Mô hình FT (để sao chép vào trang cài đặt)."
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "e. Bạn có thể tạo nhiều mô hình Đã Tinh Chỉnh theo quy trình trên. Sao chép ID Mô hình Đã Tinh Chỉnh mà bạn muốn sử dụng."
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "f. Đi đến trang cài đặt Bot OpenAI chính và dán ID Mô hình Đã Tinh Chỉnh vào trường Mô hình Tinh Chỉnh Tùy Chỉnh và lưu. Bây giờ bot sẽ bắt đầu phản hồi theo dữ liệu Đào tạo."
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "h. Để chuẩn bị mô hình dữ liệu của bạn cho GPT3.5/4:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "Trước tiên bạn cần tạo một tệp jsonl như định dạng dưới đây"
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "Mỗi lời nhắc và hoàn thành nên ở trên một dòng duy nhất"
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "Định dạng tệp tinh chỉnh với GPT 3.5/4"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Bạn là một trợ lý thường xuyên viết sai chính tả\" },{ \"role\": \"user\", \"content\": \"Kể cho tôi một câu chuyện.\" }, { \"role\": \"assistant\", \"content\": \"Một ngày nọ, một sinh viên đã đến trường.\" }]}"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "Nhấp chuột phải và Lưu tệp jsonl mẫu cho Tinh Chỉnh với GPT 3.5/4"
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "Để nhúng OpenAI"
+
+msgid "Important points about fine tuning"
+msgstr "Những điểm quan trọng về tinh chỉnh"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Để có kết quả tốt hơn, bạn cần ít nhất 500+ lời nhắc. Nếu không, OpenAI sẽ trộn lẫn phản hồi với kiến thức chung. Ngoài ra, các lời nhắc nên càng mô tả càng tốt. Theo định dạng kiểu câu hỏi thường gặp với các câu hỏi và câu trả lời mô tả. Ví dụ lời nhắc: Thay vì chỉ \"Áo khoác denim cổ điển\" bạn có thể viết \"Tại sao mọi người nên mặc Áo khoác denim cổ điển của chúng tôi?\"."
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "Nếu hoàn thành của bạn ngắn như bên dưới hoặc khoảng 100 từ, giữ giá trị Max Tokens là 200. Điều chỉnh các cài đặt Nhiệt độ, Hình phạt Hiện diện và Hình phạt Tần suất cho đến khi bạn nhận được kết quả mà bạn thích."
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "Nếu bạn đang Tinh chỉnh với dữ liệu trang web, Bot sẽ sử dụng tiêu đề Bài viết làm lời nhắc. Nếu tiêu đề Trang/Bài viết không mô tả, bạn sẽ không nhận được kết quả tốt. Trong trường hợp như vậy, bạn có thể tải xuống tệp JSONL từ trang Mô hình Đào tạo và cải thiện các lời nhắc. Sau đó, tinh chỉnh lại."
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "Giữ chức năng tìm kiếm trên trang web bị vô hiệu hóa từ Cài đặt-&gt;Menu Bắt đầu để bot không mang lại câu trả lời từ tìm kiếm trên trang web. Vui lòng đăng xuất và đăng nhập lại để các cài đặt của chúng tôi không bị ghi đè."
+
+msgid "How to Optimize Fine Tuning"
+msgstr "Cách Tối Ưu Hóa Điều Chỉnh Tinh Vi"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "Để có kết quả tốt hơn từ việc điều chỉnh tinh vi, vui lòng làm theo các bước sau:"
+
+msgid "Set a lower value for Temperature"
+msgstr "Đặt giá trị thấp hơn cho Nhiệt độ"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "Sử dụng giá trị cao hơn cho Hình phạt Sự hiện diện và hình phạt Tần suất."
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "Nếu có thể, hãy sử dụng mô hình Curie làm mô hình cơ sở khi bạn tạo mô hình tùy chỉnh."
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "Sử dụng số token tối đa tùy thuộc vào lời nhắc và hoàn thành của bạn. Nếu bạn sử dụng giá trị cao hơn của token tối đa, AI sẽ tạo ra nhiều thông tin hơn có thể không liên quan đến ngữ cảnh của bạn. Điều tương tự đối với token tối đa thấp hơn. Nếu bạn chọn giá trị quá thấp cho token tối đa thì nó sẽ cắt ngắn dữ liệu của bạn hoặc gây ra lỗi."
+
+msgid "Presence Penalty"
+msgstr "Hình phạt Sự hiện diện"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "Số giữa -2.0 và 2.0. Các giá trị dương sẽ phạt các token mới dựa trên việc chúng xuất hiện trong văn bản cho đến nay, làm tăng khả năng của mô hình để nói về các chủ đề mới."
+
+msgid "Frequency Penalty"
+msgstr "Hình phạt Tần suất"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "Số giữa -2.0 và 2.0. Các giá trị dương sẽ phạt các token mới dựa trên tần suất hiện tại của chúng trong văn bản cho đến nay, làm giảm khả năng của mô hình để lặp lại cùng một dòng một cách chính xác."
+
+msgid "Temperature"
+msgstr "Nhiệt độ"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "Một trong những cài đặt quan trọng nhất được gọi là nhiệt độ. Khi nhiệt độ trên 0, việc gửi cùng một lời nhắc sẽ dẫn đến các hoàn thành khác nhau mỗi lần. Hãy nhớ rằng mô hình dự đoán văn bản nào có khả năng nhất sẽ theo sau văn bản trước đó. Nhiệt độ là một giá trị giữa 0 và 1 cho phép bạn kiểm soát mức độ tự tin của mô hình khi đưa ra những dự đoán này. Giảm nhiệt độ có nghĩa là nó sẽ ít rủi ro hơn, và các hoàn thành sẽ chính xác và xác định hơn. Tăng nhiệt độ sẽ dẫn đến các hoàn thành đa dạng hơn."
+
+msgid "My OpenAI does not work"
+msgstr "My OpenAI không hoạt động"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "Vui lòng kiểm tra cài đặt của bạn (ví dụ: Khóa API, Token tối đa, v.v.). Tùy thuộc vào mô hình (GPT3 tối đa 4000) được sử dụng, các yêu cầu có thể sử dụng tối đa 4097 token chia sẻ giữa lời nhắc và hoàn thành. Nếu lời nhắc của bạn là 4000 token, hoàn thành của bạn có thể tối đa là 97 token. Cũng hãy kiểm tra xem dialogflow có đang không hoạt động không. Dialogflow và OpenAI không hoạt động cùng nhau."
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "Bạn có thể tạo nhiều mô hình Tinh chỉnh Dựa trên các loại bài viết và trang của bạn. Bạn có thể tải xuống dữ liệu đào tạo của mình dưới dạng tệp JSONL để sửa đổi và sau đó tải lên theo cùng một quy trình như các tệp khác (xem hướng dẫn ở trên). Ngoài ra, bạn có thể tải lên bằng cách nhấp vào nút `Tải lên dưới dạng Mô hình FT`."
+
+msgid "Fine tuning and training is available with the "
+msgstr "Việc điều chỉnh tinh vi và đào tạo có sẵn với"
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro Chuyên Nghiệp"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "Nó yêu cầu một gói API OpenAI trả phí"
+
+msgid "Enable OpenAI"
+msgstr "Kích hoạt OpenAI"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(nếu bạn muốn có kết quả chỉ từ OpenAI, nó sẽ vô hiệu hóa tìm kiếm sản phẩm mặc định)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "Kích hoạt Streaming (phát trực tiếp phản hồi AI theo thời gian thực khi chúng được tạo ra)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "Kích hoạt Thẻ Sản Phẩm OpenAI"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(Hiển thị các thẻ sản phẩm liên quan trong phản hồi AI để tăng doanh số bán hàng.)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "Kích hoạt gợi ý trang WordPress với Kết quả GPT (các liên kết được gợi ý bởi WordPress chứ không phải AI)"
+
+msgid "Api key"
+msgstr "Khóa API"
+
+msgid "OpenAI Model"
+msgstr "Mô hình OpenAI"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-Mini"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-Nano"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-Mini"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-Nano"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-Mini"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 turbo"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "Lệnh Hệ Thống (Sử dụng nó để Hướng dẫn ChatGPT cách cư xử). Bạn có thể viết một lời nhắc chi tiết ở đây bao gồm thông tin về dịch vụ, sản phẩm của bạn và cách liên hệ với bạn hoặc bất kỳ điều gì liên quan để có được"
+
+msgid "Customized Results"
+msgstr "Kết quả Tùy chỉnh"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". Tối đa 3000 từ là ổn."
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Bạn là một Trợ lý hữu ích. Hãy ngắn gọn và liên quan trong câu trả lời của bạn và không giới thiệu chủ đề mới."
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "Để thiết lập tông và tính cách của ChatBot, hãy đặt một thông điệp hệ thống theo nhu cầu của bạn"
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "Ví dụ: Bạn là một Trợ lý hữu ích. Hãy ngắn gọn và liên quan trong câu trả lời của bạn và không giới thiệu chủ đề mới."
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "Lời nhắc sẽ được thêm vào cuối truy vấn của người dùng (Tùy chọn)"
+
+msgid "Content for the response"
+msgstr "Nội dung cho phản hồi"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "Khu vực Nguy hiểm (bạn có thể không nhận được bất kỳ phản hồi nào từ AI nếu các từ khóa không được thiết lập đúng cách. Xóa từ khóa nếu bạn gặp vấn đề)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "Kết nối với OpenAI chỉ khi truy vấn của người dùng bao gồm một trong các Từ khóa Ngăn Cách Bằng Dấu Phẩy sau đây"
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "Kết nối với OpenAI chỉ khi truy vấn của người dùng KHÔNG bao gồm một trong các Từ khóa Ngăn Cách Bằng Dấu Phẩy sau đây"
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "Yêu cầu OpenAI trả lời khi câu hỏi liên quan đến các từ khóa trên (Kích hoạt tùy chọn này sẽ cải thiện độ chính xác nhưng sẽ sử dụng Token OpenAI)"
+
+msgid "Check Connection  "
+msgstr "Kiểm tra Kết nối"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "Lưu cài đặt trước và sau đó nhấn nút Kiểm tra Kết nối"
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**Nếu OpenAI không phản hồi và bot chỉ đang tải, thì có thể bạn đã đạt giới hạn sử dụng OpenAI. Vui lòng mua trước tín dụng để sử dụng API OpenAI và tăng giới hạn sử dụng. Bạn có thể thêm tín dụng vào tài khoản API của mình bằng cách truy cập trang"
+
+msgid "billing page."
+msgstr "thanh toán."
+
+msgid "How to reduce cost "
+msgstr "Cách giảm chi phí"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "và tiết kiệm tiền cho chi phí API OpenAI cho ChatBot của bạn."
+
+msgid "success"
+msgstr "thành công"
+
+msgid "error"
+msgstr "lỗi"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "RAG không thể được kích hoạt mà không có khóa API."
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "Vui lòng kích hoạt RAG trong cài đặt để lưu các tùy chọn liên quan đến RAG."
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "Khóa API OpenAI trống. Vui lòng lưu khóa API của bạn trước."
+
+msgid "Congrats! You are connected to AI."
+msgstr "Chúc mừng! Bạn đã kết nối với AI."
+
+msgid "Success"
+msgstr "Thành công"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "Kết nối với OpenAI thất bại. Vui lòng kiểm tra khóa API và cài đặt của bạn."
+
+msgid "Invalid product ID"
+msgstr "ID sản phẩm không hợp lệ"
+
+msgid "Product not found"
+msgstr "Sản phẩm không tìm thấy"
+
+msgid "Insufficient permissions"
+msgstr "Quyền truy cập không đủ"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "Cấu hình thiết lập AI đã được lưu thành công."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Lên lịch công việc cron cho mỗi vai trò nếu chưa được lên lịch);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // sự kiện wpshedule để đặt lại số lần sử dụng giới hạn tỷ lệ\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Đảm bảo các chức năng cron của WordPress có sẵn\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "Giới hạn tỷ lệ đã vượt quá. Vui lòng thử lại sau."
+
+msgid "More WordPress Goodies for You!"
+msgstr "Nhiều Tính Năng WordPress Hấp Dẫn Cho Bạn!"
+
+msgid "Support"
+msgstr "Hỗ trợ"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "Khám Phá Một Số Tác Phẩm Khác Của Chúng Tôi Có Thể Làm Cho Trang Web Của Bạn Tốt Hơn"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "Tất cả người dùng Phiên bản Pro của chúng tôi đều nhận được Hỗ trợ Ưu tiên, Đảm bảo Nhanh chóng, Một kèm Một."
+
+msgid "Get Priority Support "
+msgstr "Nhận Hỗ trợ Ưu tiên"
+
+msgid "Online KnowledgeBase"
+msgstr "Cơ sở Kiến thức Trực tuyến"
+
+msgid "Get Support for Free Version"
+msgstr "Nhận Hỗ trợ cho Phiên bản Miễn phí"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Có vấn đề trong việc xử lý yêu cầu gửi biểu mẫu của bạn! Xin lỗi vì sự bất tiện.<br> Vui lòng gửi email đến <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> với bất kỳ phản hồi nào. Chúng tôi sẽ phản hồi bạn ngay lập tức!"
+
+msgid "Please fill up all the requried form fields."
+msgstr "Vui lòng điền tất cả các trường biểu mẫu bắt buộc."
+
+msgid "Invalid email address."
+msgstr "Địa chỉ email không hợp lệ."
+
+msgid "Support Request Details:"
+msgstr "Chi tiết Yêu cầu Hỗ trợ:"
+
+msgid "Sent Via the Plugin"
+msgstr "Gửi qua Plugin"
+
+msgid "Mail sent from:"
+msgstr "Email được gửi từ:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "Email được tạo vào:"
+
+msgid "From Plugin Support Page:"
+msgstr "Từ Trang Hỗ trợ Plugin:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "Email của bạn đã được gửi thành công. Cảm ơn bạn!"
+
+msgid "By %s"
+msgstr "Bởi %s"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "Cài đặt %s ngay bây giờ"
+
+msgid "Install Now"
+msgstr "Cài đặt ngay"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "Không thể cài đặt"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "Cập nhật %s ngay bây giờ"
+
+msgid "Update Now"
+msgstr "Cập nhật ngay"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "Không thể cập nhật"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "Đã kích hoạt"
+
+msgid "Activate"
+msgstr "Kích hoạt"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "Kích hoạt %s"
+
+msgid "Network Activate"
+msgstr "Kích hoạt Mạng"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "Kích hoạt Mạng %s"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Đã cài đặt"
+
+msgid "More Details"
+msgstr "Chi tiết hơn"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Plugin này không hoạt động với phiên bản WordPress và PHP của bạn."
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Vui lòng cập nhật WordPress</a>, và sau đó <a href=\"%2$s\">tìm hiểu thêm về việc cập nhật PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Vui lòng cập nhật WordPress</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Tìm hiểu thêm về việc cập nhật PHP</a>."
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "Plugin này không hoạt động với phiên bản WordPress của bạn."
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "Plugin này không hoạt động với phiên bản PHP của bạn."
+
+msgid "Live Preview"
+msgstr "Xem trước trực tiếp"
+
+msgid "Update To Pro"
+msgstr "Cập nhật lên phiên bản Pro"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "Bắt đầu với WoowBot là ngay lập tức. Tất cả những gì bạn cần làm là cài đặt và kích hoạt plugin."
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "Bạn có thể tải lên biểu tượng ChatBot của riêng bạn từ bảng điều khiển WoowBot-&gt;Phần Biểu tượng."
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "Bạn cũng có thể tải lên biểu tượng Đại lý tùy chỉnh trong phiên bản pro."
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "Trong phiên bản lite có một vài cài đặt ngôn ngữ mà bạn có thể tùy chỉnh theo nhu cầu của mình. Các ngôn ngữ mặc định là phù hợp cho các cửa hàng sử dụng tiếng Anh. Nhưng bạn có thể thay đổi phản hồi của bot sang bất kỳ ngôn ngữ nào!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "Sử dụng bảng CSS tùy chỉnh nếu bạn cần điều chỉnh một số màu sắc hoặc cài đặt phông chữ bên trong WoowBot."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "Nhận ChatBot số 1 cho WooCommerce – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "Nhận các tính năng AI nâng cao, tái tiếp thị khách hàng và nhiều hơn nữa với WoowBot Pro"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "Nhận WoowBot Pro ngay bây giờ!"
+
+msgid "Crafted By:"
+msgstr "Được chế tác bởi:"
+
+msgid "Web Design Company"
+msgstr "Công ty Thiết kế Web"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "Bảng điều khiển WoowBot"
+
+msgid "WoowBot Panel"
+msgstr "Bảng điều khiển WoowBot"
+
+msgid "Yes"
+msgstr "Có"
+
+msgid "No"
+msgstr "Không"
+
+msgid "OR"
+msgstr "HOẶC"
+
+msgid " Get the Professional Version Now!"
+msgstr " Nhận phiên bản chuyên nghiệp ngay bây giờ!"
+
+msgid "General settings"
+msgstr "Cài đặt chung"
+
+msgid "WoowBot ICONS"
+msgstr "BIỂU TƯỢNG WoowBot"
+
+msgid "Language Center"
+msgstr "Trung tâm Ngôn ngữ"
+
+msgid "Custom CSS"
+msgstr "CSS tùy chỉnh"
+
+msgid "Emails Will be Sent to"
+msgstr "Email sẽ được gửi đến"
+
+msgid "From Email Address"
+msgstr "Địa chỉ Email gửi từ"
+
+msgid "Disable WoowBot"
+msgstr "Vô hiệu hóa WoowBot"
+
+msgid "Disable WoowBot to Load"
+msgstr "Vô hiệu hóa WoowBot để tải"
+
+msgid "Enable Product details from AI"
+msgstr "Kích hoạt chi tiết sản phẩm từ AI"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "Vô hiệu hóa WooWBot trên thiết bị di động"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "Vô hiệu hóa WoowBot để tải trên thiết bị di động"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "Ghi đè vị trí biểu tượng WoowBot"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "Từ bên phải trong px"
+
+msgid "From Bottom In px"
+msgstr "Từ dưới cùng trong px"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "Số lượng sản phẩm hiển thị trong kết quả tìm kiếm. ( '-1' cho tất cả sản phẩm )."
+
+msgid "Page controller"
+msgstr "Bảng điều khiển trang"
+
+msgid "Show on Home Page"
+msgstr "Hiển thị trên Trang Chủ"
+
+msgid "YES"
+msgstr "CÓ"
+
+msgid "NO"
+msgstr "KHÔNG"
+
+msgid "Show on blog posts"
+msgstr "Hiển thị trên bài viết blog"
+
+msgid "Show on  pages"
+msgstr "Hiển thị trên các trang"
+
+msgid "All Pages"
+msgstr "Tất cả các trang"
+
+msgid "Selected Pages Only "
+msgstr "Chỉ các trang đã chọn"
+
+msgid "Exclude from Custom Post"
+msgstr "Loại trừ khỏi Bài viết Tùy chỉnh"
+
+msgid "Icon - 0"
+msgstr "Biểu tượng - 0"
+
+msgid "Icon - 1"
+msgstr "Biểu tượng - 1"
+
+msgid "Icon - 2"
+msgstr "Biểu tượng - 2"
+
+msgid "Icon - 3"
+msgstr "Biểu tượng - 3"
+
+msgid "Icon - 4"
+msgstr "Biểu tượng - 4"
+
+msgid "Icon - 5"
+msgstr "Biểu tượng - 5"
+
+msgid "Icon - 6"
+msgstr "Biểu tượng - 6"
+
+msgid "Icon - 7"
+msgstr "Biểu tượng - 7"
+
+msgid "Icon -9"
+msgstr "Biểu tượng -9"
+
+msgid "Icon - 10"
+msgstr "Biểu tượng - 10"
+
+msgid "Icon - 11"
+msgstr "Biểu tượng - 11"
+
+msgid "Icon - 12"
+msgstr "Biểu tượng - 12"
+
+msgid "Icon - 13"
+msgstr "Biểu tượng - 13"
+
+msgid "Icon - 14"
+msgstr "Biểu tượng - 14"
+
+msgid "Custom Icon"
+msgstr "Biểu tượng Tùy chỉnh"
+
+msgid "Upload custom Floating Icon"
+msgstr "Tải lên Biểu tượng Nổi Tùy chỉnh"
+
+msgid "Upload Custom Icon"
+msgstr "Tải lên Biểu tượng Tùy chỉnh"
+
+msgid " Woobot Agent Image"
+msgstr "Hình ảnh Đại lý Woobot"
+
+msgid "Default Agent"
+msgstr "Đại lý Mặc định"
+
+msgid "Custom Agent"
+msgstr "Đại lý Tùy chỉnh"
+
+msgid "Custom Agent Icon"
+msgstr "Biểu tượng Đại lý Tùy chỉnh"
+
+msgid "Upload Agent Icon"
+msgstr "Tải lên Biểu tượng Đại lý"
+
+msgid "Custom Backgroud"
+msgstr "Nền Tùy chỉnh"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "Thay đổi hình ảnh nền bảng tin nhắn (trừ chế độ mini)."
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "Tải lên nền bảng tin nhắn (Kích thước hình ảnh lý tưởng 350px X 550px)."
+
+msgid "Upload  background."
+msgstr "Tải lên nền."
+
+msgid "Custom message board background"
+msgstr "Nền bảng tin nhắn Tùy chỉnh"
+
+msgid "Message setting for"
+msgstr "Cài đặt tin nhắn cho"
+
+msgid "Identity"
+msgstr "Danh tính"
+
+msgid "Your Company or Website Name"
+msgstr "Tên Công ty hoặc Trang web của bạn"
+
+msgid "Agent name"
+msgstr "Tên đại lý"
+
+msgid "has joined the conversation"
+msgstr "đã tham gia cuộc trò chuyện"
+
+msgid "Greetings"
+msgstr "Lời chào"
+
+msgid "Welcome to "
+msgstr "Chào mừng đến với "
+
+msgid "Hi There! May I know your name?"
+msgstr "Xin chào! Tôi có thể biết tên của bạn không?"
+
+msgid "I am "
+msgstr "Tôi là "
+
+msgid "Nice to meet you"
+msgstr "Rất vui được gặp bạn"
+
+msgid "Message settings for"
+msgstr "Cài đặt tin nhắn cho"
+
+msgid "Editor Box"
+msgstr "Hộp biên tập"
+
+msgid "is typing..."
+msgstr "đang gõ..."
+
+msgid "Send a message"
+msgstr "Gửi một tin nhắn"
+
+msgid "Products Search"
+msgstr "Tìm kiếm sản phẩm"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "Tôi ở đây để tìm cho bạn sản phẩm bạn cần. Bạn đang mua sắm gì?"
+
+msgid "if products found"
+msgstr "nếu tìm thấy sản phẩm"
+
+msgid "If no matching products is found"
+msgstr "Nếu không tìm thấy sản phẩm phù hợp"
+
+msgid "Can you be more specific?"
+msgstr "Bạn có thể cụ thể hơn không?"
+
+msgid "Product Search"
+msgstr "Tìm kiếm sản phẩm"
+
+msgid "Catalog"
+msgstr "Danh mục"
+
+msgid "Send Us Email"
+msgstr "Gửi Email cho Chúng Tôi"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "Bạn có thể duyệt qua danh mục phong phú của chúng tôi. Chỉ cần chọn một danh mục từ bên dưới"
+
+msgid "Too many choices? Let's try another search term"
+msgstr "Quá nhiều lựa chọn? Hãy thử một từ khóa tìm kiếm khác"
+
+msgid "Email has been sent successfully"
+msgstr "Email đã được gửi thành công"
+
+msgid "Please provide your email address"
+msgstr "Vui lòng cung cấp địa chỉ email của bạn"
+
+msgid "Please write you message"
+msgstr "Vui lòng viết tin nhắn của bạn"
+
+msgid "You can paste or write your custom css here."
+msgstr "Bạn có thể dán hoặc viết CSS tùy chỉnh của bạn ở đây."
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "Nhận ChatBot #1 cho WooCommerce – WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro là một ChatBot Mua Sắm WooCommerce có thể giúp tăng doanh số cửa hàng của bạn một cách rõ rệt. Người mua có thể trò chuyện một cách trôi chảy với Bot – nhờ vào sự tích hợp với Dialogflow của Google, tìm kiếm và thêm sản phẩm vào giỏ hàng trực tiếp từ giao diện trò chuyện, nhận hỗ trợ và nhiều hơn nữa!"
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "Chức năng Retargeting Tại Chỗ giúp tối ưu hóa tỷ lệ chuyển đổi của bạn bằng cách hiển thị các ưu đãi và phiếu giảm giá đặc biệt khi có ý định thoát, theo khoảng thời gian hoặc cuộn trang. Theo dõi chuyển đổi của khách hàng với thống kê để tìm hiểu xem người mua có bỏ giỏ hàng hay không. Tăng doanh số bán hàng!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "Nhận WoowBot Pro ngay bây giờ và Tăng Doanh Số!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "Tiện ích Đa Ngôn Ngữ (**mới)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "Thêm hỗ trợ nhiều ngôn ngữ cho ChatBot của bạn. Người dùng có thể thay đổi ngôn ngữ từ menu thả xuống bất cứ lúc nào. Quản trị viên có thể chọn ngôn ngữ mặc định. Hỗ trợ tất cả các ngôn ngữ chính. Kết nối với các tác nhân Dialogflow khác nhau cho các ngôn ngữ khác nhau"
+
+msgid "Voice Message AddOn (**new)"
+msgstr "Tiện ích Tin Nhắn Giọng Nói (**mới)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "Cho phép khách hàng của bạn ghi âm tin nhắn giọng nói từ giao diện ChatBot. Tin nhắn giọng nói được lưu trong backend để nghe bất cứ lúc nào. Hỗ trợ chuyển đổi giọng nói thành văn bản bằng API của Google. Tương thích với tất cả các Trình duyệt Hiện đại. Giao diện Người dùng hiện đại đẹp mắt"
+
+msgid "Extended UI Addon"
+msgstr "Tiện ích Giao Diện Mở Rộng"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "Mang đến cho ChatBot yêu thích của bạn một diện mạo mới. Chọn từ 2 mẫu hiện đại, bóng bẩy và khá sang trọng! Những mẫu mới này chắc chắn sẽ làm hài lòng khách truy cập trang web của bạn! Hiệu ứng tải mới và nhiều tùy chọn tùy chỉnh màu sắc phong phú có sẵn!"
+
+msgid "Simple Text Responses Pro"
+msgstr "Phản Hồi Văn Bản Đơn Giản Pro"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "Tạo phản hồi dựa trên văn bản cho các câu hỏi của khách hàng một cách dễ dàng với tính năng xuất/nhập CSV. STR Pro hỗ trợ các danh mục cho phản hồi văn bản đơn giản cho backend và frontend. Trình chỉnh sửa HTML trực quan để định dạng các phản hồi của ChatBot và loại bỏ các từ dừng để tìm kiếm tốt hơn."
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "ChatBot Đàm Phán cho WoowBot"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "Đưa ra Đề Nghị của Bạn Ngay với ChatBot Đàm Phán. Giành được nhiều khách hàng hơn với các cuộc đàm phán giá thông minh. Cho phép khách hàng của bạn đưa ra đề nghị về giá của bạn. Đàm phán một mức giá tối thiểu do bạn đặt cho từng sản phẩm. Nắm bắt người mua khi họ có ý định mua cao. Nút Đưa ra Đề Nghị của bạn chỉ hiển thị trên trang sản phẩm đơn mà bạn đã đặt mức giá tối thiểu."
+
+msgid "Conversational Form Builder"
+msgstr "Trình Tạo Biểu Mẫu Đàm Thoại"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "Tạo các cuộc trò chuyện và biểu mẫu có điều kiện cho trải nghiệm ChatBot WordPress bản địa. Xây dựng Biểu mẫu Tiêu chuẩn, Biểu mẫu Động với các trường điều kiện, Máy tính, Đặt lịch hẹn, v.v. Đi kèm với 7 mẫu sẵn có được tích hợp sẵn. Lưu dữ liệu biểu mẫu vào cơ sở dữ liệu, phản hồi tự động, các trường điều kiện, biến, phiên bản đã lưu và nhiều hơn nữa!"
+
+msgid "Export Import Settings"
+msgstr "Xuất Nhập Cài Đặt"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "Sử dụng WoowbotPro trên nhiều trang web? Vậy thì tiện ích nhỏ này có thể hữu ích. Tiện ích này cho phép bạn xuất cài đặt của mình và nhập lại vào một trang khác hoặc nếu bạn chỉ muốn giữ một bản sao lưu. Rất hữu ích cho việc chuyển cài đặt Trung tâm Ngôn ngữ, điều này có thể khá phức tạp với nhiều tùy chọn. Nhận ngay bây giờ!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "Tiện ích ChatBot Messenger"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "Sử dụng Woowbot trên trang web của bạn như một trung tâm để trả lời các câu hỏi của khách hàng trên Trang FB &amp; Messenger"
+
+msgid "Extended Search"
+msgstr "Tìm Kiếm Mở Rộng"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "Mở rộng sức mạnh tìm kiếm của WPBot để bao gồm hầu như bất kỳ Loại Bài Đăng Tùy Chỉnh nào bao gồm WooCommerce"
+
+msgid "ChatBot Session Save Addon"
+msgstr "Tiện ích Lưu Phiên ChatBot"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "Tiện ích này lưu các phiên trò chuyện của người dùng và giúp bạn tinh chỉnh bot để hỗ trợ và hiệu suất tốt hơn."
+
+msgid "LiveChat Addon"
+msgstr "Tiện ích LiveChat"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "Trò chuyện trực tiếp với con người tích hợp với WPBot"
+
+msgid "White Label WPBot"
+msgstr "Thương Hiệu Trắng WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "Thay thế Logo và thương hiệu QuantumCloud bằng của bạn. Phù hợp cho các nhà phát triển và đại lý quan tâm đến việc cung cấp dịch vụ ChatBot cho khách hàng của họ."
+
+msgid "Mailing List Integration AddOn"
+msgstr "Tiện ích Tích Hợp Danh Sách Gửi Thư"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "Tích hợp Danh sách Gửi Thư là tiện ích ChatBot cho phép bạn kết nối với tài khoản Mailchimp và Zapier của bạn. Bạn có thể thêm người đăng ký mới vào Danh sách Mailchimp của bạn từ ChatBot và hủy đăng ký họ. Bạn cũng có thể tạo Zap mới trên Tài khoản Zapier của bạn và kết nối với tiện ích này."
+
+msgid "WoowBot Master Theme"
+msgstr "Chủ Đề WoowBot Master"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "Nhận một Chủ Đề được hỗ trợ bởi WoowBot!"
+
+msgid "Save Settings"
+msgstr "Lưu Cài Đặt"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**Mẹo Pro: Muốn làm cho WoowBot thực sự thông minh với"
+
+msgid "AI and Natural Language Processing?"
+msgstr "AI và Xử Lý Ngôn Ngữ Tự Nhiên?"
+
+msgid "Upgrade to the Pro version"
+msgstr "Nâng cấp lên phiên bản Pro"
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**Mẹo Pro: WoowBot Pro được tích hợp với"
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT và DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**Mẹo Pro: "
+
+msgid "Use ChatGPT to"
+msgstr "Sử dụng ChatGPT để"
+
+msgid "answer  questions and provide real customer support"
+msgstr "trả lời câu hỏi và cung cấp hỗ trợ khách hàng thực sự"
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**Mẹo Pro: Khách hàng của bạn có không hoàn tất đơn hàng? Tìm hiểu với"
+
+msgid "Customer Conversion report"
+msgstr "báo cáo Chuyển Đổi Khách Hàng"
+
+msgid "in the Pro version"
+msgstr "trong phiên bản Pro"
+
+msgid "**Pro Tip:"
+msgstr "**Mẹo Pro:"
+
+msgid "Use WoowBot Pro to"
+msgstr "Sử dụng WoowBot Pro để"
+
+msgid "provide live chat suport to your customers!"
+msgstr "cung cấp hỗ trợ trò chuyện trực tiếp cho khách hàng của bạn!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**Mẹo Pro: Sử dụng Retargeting Tại Chỗ cho"
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "Ý định Thoát hoặc Popup Cuộn xuống"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "with WoowBot Pro. Increase sales by 50% or more!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**Mẹo Pro: Thiết lập WoowBot pro rất dễ dàng và nhanh chóng!"
+
+msgid "Plug and Play"
+msgstr "Cắm và Chạy"
+
+msgid "No complex bot training required!"
+msgstr "Không cần đào tạo bot phức tạp!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**Mẹo Pro: WoowBot pro tích hợp với"
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "và nhiều hơn nữa để cung cấp cho khách hàng của bạn sự hỗ trợ mà họ xứng đáng. Tăng sự hài lòng của khách hàng!"

@@ -68,13 +68,15 @@ if(!class_exists('qcld_wpopenai_addons')){
             add_action('wp_ajax_nopriv_qcld_stream_openai', [$this, 'qcld_stream_openai_callback']);
             add_action('wp_ajax_wpbot_wizard_save', array($this, 'wpbot_wizard_save_callback'));
             add_action('wp_ajax_wpbot_wizard_verify_key', array($this, 'wpbot_wizard_verify_key_callback'));
+            add_action('wp_ajax_openai_troubleshooting', [$this, 'openai_troubleshooting']);
 
             if( (get_option('enable_product_details_from_ai') == 1) && (get_option('qcld_openai_enabled') == 1) && (get_option('qcld_open_ai_api_key') != '' ) ){
                  add_action('wp_ajax_qcld_woo_get_product_details', [$this, 'qcld_woo_get_product_details']);
                  add_action('wp_ajax_nopriv_qcld_woo_get_product_details', [$this, 'qcld_woo_get_product_details']);
             }
-            add_action('wp_ajax_openai_troubleshooting',[$this,'openai_troubleshooting']);
-            if (is_admin() && !empty($_GET["page"]) && (($_GET["page"] == "openai-panel_dashboard") || ($_GET["page"] == "openai-panel_file") || ($_GET["page"] == "openai-panel_help"))) {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+            $page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
+            if ( is_admin() && in_array( $page, array( 'openai-panel_dashboard', 'openai-panel_file', 'openai-panel_help' ), true ) ) {
                 add_action('admin_enqueue_scripts', array($this, 'qcld_wb_chatbot_admin_scripts'));
             }
      
@@ -293,7 +295,7 @@ if(!class_exists('qcld_wpopenai_addons')){
         }
 
         public function qcld_openai_response_callback() {
-              if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'wp_chatbot' ) ) {
+              if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'wp_chatbot' ) ) {
                 
                     wp_send_json_error([
                         'status'  => 'error',
@@ -305,7 +307,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                 $response['message'] ='A preset message';
                 $OpenAI =  new qcld_wp_OpenAI();
                 $gptkeyword = [];
-                $keyword = sanitize_text_field($_POST['keyword']);
+                $keyword = isset($_POST['keyword']) ? sanitize_text_field( wp_unslash( $_POST['keyword'] ) ) : '';
                 $relevant_pagelink = $this->relevant_pagelink($keyword);
 
                 // Build context-aware system instructions
@@ -343,7 +345,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                     // Try to get from referrer first
                     $ref = wp_get_referer();
                     if ( ! $ref && isset($_SERVER['HTTP_REFERER']) ) {
-                        $ref = esc_url_raw( $_SERVER['HTTP_REFERER'] );
+                        $ref = esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) );
                     }
                     
                     if ( $ref ) {
@@ -358,7 +360,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                             $page_summary = wp_trim_words( $text_content, 120, '…' );
                         } else {
                             // If not a post/page, try to extract title from URL or use current page
-                            $parsed_url = parse_url( $ref );
+                            $parsed_url = wp_parse_url( $ref );
                             if ( isset($parsed_url['path']) ) {
                                 $path = trim($parsed_url['path'], '/');
                                 if ( ! empty($path) ) {
@@ -380,9 +382,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                         }
                     } else {
                         // Fallback to current page info.
-                        $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
-                        $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
-                        $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+                        $scheme = is_ssl() ? 'https' : 'http';
+                        $host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '';
+                        $request_uri = isset($_SERVER['REQUEST_URI']) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
                         $current_url = esc_url_raw($scheme . '://' . $host . $request_uri);
                         
                         if ( is_singular() ) {
@@ -489,60 +491,61 @@ if(!class_exists('qcld_wpopenai_addons')){
             //}
         }
         public function openai_settings_option_callback() {
-		    $nonce =  sanitize_text_field($_POST['nonce']);
+		    $nonce = isset( $_POST['nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
             if (! wp_verify_nonce($nonce,'ajax_object')) {
                 wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot')));
                 wp_die();
-
-            }else{
+            } elseif ( ! current_user_can( 'manage_options' ) ) {
+                wp_send_json( array( 'success' => false, 'msg' => esc_html__( 'Unauthorized user', 'woowbot-woocommerce-chatbot' ) ) );
+                wp_die();
+            } else {
                
-                $api_key = sanitize_text_field($_POST['api_key']);
-                $openai_engines = sanitize_text_field($_POST['openai_engines']);
+                $api_key = isset( $_POST['api_key'] ) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
+                $openai_engines = isset( $_POST['openai_engines'] ) ? sanitize_text_field( wp_unslash( $_POST['openai_engines'] ) ) : '';
 
-                $qcld_openai_prompt =  isset( $_POST['qcld_openai_prompt'] ) ? sanitize_text_field($_POST['qcld_openai_prompt']) : '';
+                $qcld_openai_prompt = isset( $_POST['qcld_openai_prompt'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_prompt'] ) ) : '';
                 
 
-                $max_tokens = sanitize_text_field($_POST['max_tokens']);
-                $qcld_openai_suffix = (!empty($_POST['qcld_openai_suffix'])) ? sanitize_text_field($_POST['qcld_openai_suffix']) : '';
+                $max_tokens = isset( $_POST['max_tokens'] ) ? sanitize_text_field( wp_unslash( $_POST['max_tokens'] ) ) : '';
+                $qcld_openai_suffix = ! empty( $_POST['qcld_openai_suffix'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_suffix'] ) ) : '';
 
-                $qcld_openai_custom_model = isset( $_POST['qcld_openai_custom_model'] ) ?  sanitize_text_field($_POST['qcld_openai_custom_model']) : '';
+                $qcld_openai_custom_model = isset( $_POST['qcld_openai_custom_model'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_custom_model'] ) ) : '';
 
                 
 
-                $frequency_penalty = sanitize_text_field($_POST['frequency_penalty']);
-                $presence_penalty = sanitize_text_field($_POST['presence_penalty']);
-                $temperature = sanitize_text_field($_POST['temperature']);
-                $qcld_openai_enabled = sanitize_text_field($_POST['qcld_openai_enabled']);
+                $frequency_penalty = isset( $_POST['frequency_penalty'] ) ? sanitize_text_field( wp_unslash( $_POST['frequency_penalty'] ) ) : '';
+                $presence_penalty = isset( $_POST['presence_penalty'] ) ? sanitize_text_field( wp_unslash( $_POST['presence_penalty'] ) ) : '';
+                $temperature = isset( $_POST['temperature'] ) ? sanitize_text_field( wp_unslash( $_POST['temperature'] ) ) : '';
+                $qcld_openai_enabled = isset( $_POST['qcld_openai_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_enabled'] ) ) : '';
                 
-                $suggestion_enabled = sanitize_text_field($_POST['is_page_suggestion_enabled']);
-                $context_awareness_enabled = sanitize_text_field($_POST['is_context_awareness_enabled']);
-                $is_page_rag_enabled = sanitize_text_field($_POST['is_page_rag_enabled']);
-                $is_product_card_enabled = sanitize_text_field($_POST['is_product_card_enabled']);
+                $suggestion_enabled = isset( $_POST['is_page_suggestion_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_page_suggestion_enabled'] ) ) : '';
+                $context_awareness_enabled = isset( $_POST['is_context_awareness_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_context_awareness_enabled'] ) ) : '';
+                $is_page_rag_enabled = isset( $_POST['is_page_rag_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_page_rag_enabled'] ) ) : '';
+                $is_product_card_enabled = isset( $_POST['is_product_card_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_product_card_enabled'] ) ) : '';
 
 
-                $is_relevant_enabled = sanitize_text_field($_POST['is_relevant_enabled']);
-                $file_id = (!empty($_POST['file_id'])) ? sanitize_text_field($_POST['file_id']) : '';
+                $is_relevant_enabled = isset( $_POST['is_relevant_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_relevant_enabled'] ) ) : '';
+                $file_id = ! empty( $_POST['file_id'] ) ? sanitize_text_field( wp_unslash( $_POST['file_id'] ) ) : '';
 
-                $qcld_openai_prompt_custom = isset( $_POST['qcld_openai_prompt_custom'] ) ? sanitize_text_field($_POST['qcld_openai_prompt_custom']) : '';
+                $qcld_openai_prompt_custom = isset( $_POST['qcld_openai_prompt_custom'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_prompt_custom'] ) ) : '';
            
                 $openai_post_types = array();
-                if (isset($_POST['openai_post_type'])) {
-                    $raw_post_types = wp_unslash($_POST['openai_post_type']);
-                    if (is_array($raw_post_types)) {
-                        $openai_post_types = array_map('sanitize_text_field', $raw_post_types);
+                if ( isset( $_POST['openai_post_type'] ) ) {
+                    if ( is_array( $_POST['openai_post_type'] ) ) {
+                        $openai_post_types = array_map( 'sanitize_text_field', wp_unslash( $_POST['openai_post_type'] ) );
                     } else {
-                        $openai_post_types = sanitize_text_field($raw_post_types);
+                        $openai_post_types = sanitize_text_field( wp_unslash( $_POST['openai_post_type'] ) );
                     }
                 }
                 update_option('qcld_openai_relevant_post', $openai_post_types);
                 
-                $conversation_continuity = sanitize_text_field($_POST['conversation_continuity']);
-				$qcld_openai_system_content = sanitize_text_field($_POST['qcld_openai_system_content']);
-                $qcld_openai_append_content = sanitize_text_field($_POST['qcld_openai_append_content']);
+                $conversation_continuity = isset( $_POST['conversation_continuity'] ) ? sanitize_text_field( wp_unslash( $_POST['conversation_continuity'] ) ) : '';
+				$qcld_openai_system_content = isset( $_POST['qcld_openai_system_content'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_system_content'] ) ) : '';
+                $qcld_openai_append_content = isset( $_POST['qcld_openai_append_content'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_openai_append_content'] ) ) : '';
 
 				/* Customized by Kadir on 05-12-2023 : To set empty value for API field */
-                $disable_ss = isset( $_POST['disable_ss'] ) ? sanitize_text_field( $_POST['disable_ss'] ) : ''; 
+                $disable_ss = isset( $_POST['disable_ss'] ) ? sanitize_text_field( wp_unslash( $_POST['disable_ss'] ) ) : ''; 
                 $is_stream_enabled = isset($_POST['is_stream_enabled']) ? sanitize_text_field(wp_unslash($_POST['is_stream_enabled'])) : '0';
                 update_option('qcld_openai_stream_enabled', $is_stream_enabled);
                 if($api_key  != ''){
@@ -597,9 +600,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                 if($file_id  != ''){
                     update_option('file_id',$file_id);
                 }
-                $openai_include_keyword = sanitize_text_field($_POST['openai_include_keyword']);
+                $openai_include_keyword = isset( $_POST['openai_include_keyword'] ) ? sanitize_text_field( wp_unslash( $_POST['openai_include_keyword'] ) ) : '';
                 update_option('openai_include_keyword',$openai_include_keyword);
-                $openai_exclude_keyword = sanitize_text_field($_POST['openai_exclude_keyword']);
+                $openai_exclude_keyword = isset( $_POST['openai_exclude_keyword'] ) ? sanitize_text_field( wp_unslash( $_POST['openai_exclude_keyword'] ) ) : '';
                 update_option('openai_exclude_keyword',$openai_exclude_keyword);
 				
 				
@@ -662,18 +665,22 @@ if(!class_exists('qcld_wpopenai_addons')){
                 wp_die();
             }
             if( (get_option('is_page_rag_enabled') == '1' && get_option('qcld_open_ai_api_key')) || (get_option('qcld_gemini_rag_enabled') == '1' && get_option('qcld_gemini_api_key'))){
-                $rag_embed_pages = sanitize_text_field($_POST['rag_embed_pages'] ?? 0);
-                $rag_embed_posts = sanitize_text_field($_POST['rag_embed_posts'] ?? 0);
-                $rag_embed_str = sanitize_text_field($_POST['rag_embed_str'] ?? 0);
-                $rag_auto_sync_enabled = sanitize_text_field($_POST['rag_auto_sync_enabled'] ?? 0);
+                $rag_embed_pages = isset($_POST['rag_embed_pages']) ? sanitize_text_field( wp_unslash( $_POST['rag_embed_pages'] ) ) : 0;
+                $rag_embed_posts = isset($_POST['rag_embed_posts']) ? sanitize_text_field( wp_unslash( $_POST['rag_embed_posts'] ) ) : 0;
+                $rag_embed_str = isset($_POST['rag_embed_str']) ? sanitize_text_field( wp_unslash( $_POST['rag_embed_str'] ) ) : 0;
+                $rag_auto_sync_enabled = isset($_POST['rag_auto_sync_enabled']) ? sanitize_text_field( wp_unslash( $_POST['rag_auto_sync_enabled'] ) ) : 0;
             
-                $rag_embed_cpts = isset($_POST['rag_embed_cpts']) ? $_POST['rag_embed_cpts'] : [];
-                if(is_array($rag_embed_cpts)){
-                    $rag_embed_cpts = array_map('sanitize_text_field', $rag_embed_cpts);
+                $rag_embed_cpts = array();
+                if ( isset($_POST['rag_embed_cpts']) ) {
+                    if ( is_array($_POST['rag_embed_cpts']) ) {
+                        $rag_embed_cpts = array_map( 'sanitize_text_field', wp_unslash( $_POST['rag_embed_cpts'] ) );
+                    } else {
+                        $rag_embed_cpts = sanitize_text_field( wp_unslash( $_POST['rag_embed_cpts'] ) );
+                    }
                 }
 
                 if (isset($_POST['is_page_rag_enabled'])) {
-                    $is_rag_enabled = sanitize_text_field($_POST['is_page_rag_enabled']);
+                    $is_rag_enabled = sanitize_text_field( wp_unslash( $_POST['is_page_rag_enabled'] ) );
                     update_option('is_page_rag_enabled', $is_rag_enabled);
                     if($is_rag_enabled == 1){
                         update_option('is_asst_enabled', 0);
@@ -699,7 +706,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 		}
         public function qcld_update_settings_option_callback(){
             // Verify nonce for CSRF protection
-            $nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+            $nonce = isset($_POST['nonce']) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
             if (!wp_verify_nonce($nonce, 'ajax_object')) {
                 wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
                 wp_die();
@@ -766,12 +773,14 @@ if(!class_exists('qcld_wpopenai_addons')){
             return $msg;
         }
 		public function openai_troubleshooting() {
-			$nonce  = sanitize_text_field( $_POST['nonce'] );
+			$nonce  = isset( $_POST['nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 			$OpenAI = new qcld_wp_OpenAI();
 			if ( ! wp_verify_nonce( $nonce, 'ajax_object' ) ) {
 				wp_send_json(
 					array(
 						'success' => false,
+						'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
+						'icon'    => 'error',
 						'msg'     => esc_html__( 'Failed in Security check', 'woowbot-woocommerce-chatbot' ),
 					)
 				);
@@ -781,11 +790,26 @@ if(!class_exists('qcld_wpopenai_addons')){
 				wp_send_json(
 					array(
 						'success' => false,
+						'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
+						'icon'    => 'error',
 						'msg'     => esc_html__( 'Unauthorized user', 'woowbot-woocommerce-chatbot' ),
 					)
 				);
 				wp_die();
 			} else {
+				$api_key = get_option( 'qcld_open_ai_api_key' );
+				if ( empty( $api_key ) ) {
+					wp_send_json(
+						array(
+							'success' => false,
+							'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => 'error',
+							'msg'     => esc_html__( 'OpenAI API key is empty. Please save your API key first.', 'woowbot-woocommerce-chatbot' ),
+						)
+					);
+					wp_die();
+				}
+
 				$gptkeyword = array();
 				array_push(
 					$gptkeyword,
@@ -797,42 +821,52 @@ if(!class_exists('qcld_wpopenai_addons')){
 				$res = $OpenAI->gptcomplete(
 					$gptkeyword
 				);
-               
-				if ( empty( json_decode( $res )->error ) ) {
-					$mess = json_decode( $res );
-                    if(isset($mess->output[0]->content[0]->text)){
-					    $msg  = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[0]->content[0]->text );
-                    }else{
-                        $msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[1]->content[0]->text );;
-                    }
-					wp_send_json(
-						array(
-							'success' => true,
-							'title'   => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
-							'icon'    => esc_html__( 'success', 'woowbot-woocommerce-chatbot' ),
-							'msg'     => esc_html( $msg ),
-						)
-					);
-				} else {
+
+				$mess = json_decode( $res );
+				if ( ! empty( $mess ) && empty( $mess->error ) ) {
+					$msg = '';
+					if ( isset( $mess->output[0]->content[0]->text ) ) {
+						$msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[0]->content[0]->text );
+					} elseif ( isset( $mess->output[1]->content[0]->text ) ) {
+						$msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->output[1]->content[0]->text );
+					} elseif ( isset( $mess->choices[0]->message->content ) ) {
+						$msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->choices[0]->message->content );
+					} elseif ( isset( $mess->choices[0]->text ) ) {
+						$msg = preg_replace( "/\r\n|\r|\n/", '<br/>', $mess->choices[0]->text );
+					}
+
+					if ( empty( $msg ) ) {
+						$msg = esc_html__( 'Congrats! You are connected to AI.', 'woowbot-woocommerce-chatbot' );
+					}
 
 					wp_send_json(
 						array(
 							'success' => true,
+							'title'   => esc_html__( 'Success', 'woowbot-woocommerce-chatbot' ),
+							'icon'    => 'success',
+							'msg'     => esc_html( $msg ),
+						)
+					);
+				} else {
+					$error_msg = isset( $mess->error->message ) ? $mess->error->message : esc_html__( 'Connection to OpenAI failed. Please check your API key and settings.', 'woowbot-woocommerce-chatbot' );
+					wp_send_json(
+						array(
+							'success' => false,
 							'title'   => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
-							'icon'    => esc_html__( 'error', 'woowbot-woocommerce-chatbot' ),
-							'msg'     => esc_html( json_decode( $res )->error->message ),
+							'icon'    => 'error',
+							'msg'     => esc_html( $error_msg ),
 						)
 					);
 				}
 			}
 		}
         public function qcld_woo_get_product_details() {
-            $nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+            $nonce = isset($_POST['nonce']) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
             if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
                 wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
                 wp_die();
             }
-            $product_id = isset($_POST['product_id']) ? intval($_POST['product_id']) : 0;
+            $product_id = isset($_POST['product_id']) ? intval( wp_unslash( $_POST['product_id'] ) ) : 0;
             if ($product_id <= 0) {
                 wp_send_json_error(array('message' => esc_html__('Invalid product ID', 'woowbot-woocommerce-chatbot')));
                 wp_die();
@@ -874,7 +908,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                     // Try to get from referrer first
                     $ref = wp_get_referer();
                     if ( ! $ref && isset($_SERVER['HTTP_REFERER']) ) {
-                        $ref = esc_url_raw( $_SERVER['HTTP_REFERER'] );
+                        $ref = esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) );
                     }
                     
                     if ( $ref ) {
@@ -889,7 +923,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                             $page_summary = wp_trim_words( $text_content, 120, '…' );
                         } else {
                             // If not a post/page, try to extract title from URL or use current page
-                            $parsed_url = parse_url( $ref );
+                            $parsed_url = wp_parse_url( $ref );
                             if ( isset($parsed_url['path']) ) {
                                 $path = trim($parsed_url['path'], '/');
                                 if ( ! empty($path) ) {
@@ -911,9 +945,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                         }
                     } else {
                         // Fallback to current page info.
-                        $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
-                        $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
-                        $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+                        $scheme = is_ssl() ? 'https' : 'http';
+                        $host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '';
+                        $request_uri = isset($_SERVER['REQUEST_URI']) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
                         $current_url = esc_url_raw($scheme . '://' . $host . $request_uri);
                         
                         if ( is_singular() ) {
@@ -996,8 +1030,10 @@ if(!class_exists('qcld_wpopenai_addons')){
             if ( function_exists( 'apache_setenv' ) ) {
                 @apache_setenv( 'no-gzip', 1 ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
             }
-            @ini_set( 'zlib.output_compression', 0 ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
-            @ini_set( 'implicit_flush', 1 ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+            // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged, Squiz.PHP.DiscouragedFunctions.Discouraged
+            @ini_set( 'zlib.output_compression', 0 );
+            // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged, Squiz.PHP.DiscouragedFunctions.Discouraged
+            @ini_set( 'implicit_flush', 1 );
             while ( ob_get_level() ) {
                 ob_end_clean();
             }
@@ -1005,6 +1041,9 @@ if(!class_exists('qcld_wpopenai_addons')){
             header( 'Content-Type: text/event-stream' );
             header( 'Cache-Control: no-cache' );
             header( 'Connection: keep-alive' );
+            header( 'X-Accel-Buffering: no' );
+            echo ":" . str_repeat( " ", 1024 ) . "\n\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+            flush();
 
             $api_key = trim( get_option( 'qcld_open_ai_api_key' ) );
             $keyword = isset( $_POST['keyword'] ) ? sanitize_text_field( wp_unslash( $_POST['keyword'] ) ) : '';
@@ -1036,7 +1075,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                 if ( $site_desc ) { $context_bits[] = 'Tagline: ' . $site_desc; }
                 $ref = wp_get_referer();
                 if ( ! $ref && isset( $_SERVER['HTTP_REFERER'] ) ) {
-                    $ref = esc_url_raw( $_SERVER['HTTP_REFERER'] );
+                    $ref = esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) );
                 }
                 if ( $ref ) {
                     $context_bits[] = 'URL: ' . $ref;
@@ -1070,6 +1109,7 @@ if(!class_exists('qcld_wpopenai_addons')){
                 'messages' => $messages,
                 'stream'   => true,
             ] );
+            // phpcs:disable WordPress.WP.AlternativeFunctions.curl_curl_init, WordPress.WP.AlternativeFunctions.curl_curl_setopt, WordPress.WP.AlternativeFunctions.curl_curl_exec, WordPress.WP.AlternativeFunctions.curl_curl_errno, WordPress.WP.AlternativeFunctions.curl_curl_error, WordPress.WP.AlternativeFunctions.curl_curl_close
             $ch = curl_init( 'https://api.openai.com/v1/chat/completions' );
             curl_setopt( $ch, CURLOPT_POST, true );
             curl_setopt( $ch, CURLOPT_HTTPHEADER, $headers );
@@ -1078,7 +1118,6 @@ if(!class_exists('qcld_wpopenai_addons')){
             curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, false );
             curl_setopt( $ch, CURLOPT_WRITEFUNCTION, function ( $ch, $chunk ) {
                 echo $chunk; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-                echo "\n: " . str_repeat( ' ', 1024 ) . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                 flush();
                 return strlen( $chunk );
             } );
@@ -1088,12 +1127,13 @@ if(!class_exists('qcld_wpopenai_addons')){
                 flush();
             }
             curl_close( $ch );
+            // phpcs:enable WordPress.WP.AlternativeFunctions.curl_curl_init, WordPress.WP.AlternativeFunctions.curl_curl_setopt, WordPress.WP.AlternativeFunctions.curl_curl_exec, WordPress.WP.AlternativeFunctions.curl_curl_errno, WordPress.WP.AlternativeFunctions.curl_curl_error, WordPress.WP.AlternativeFunctions.curl_curl_close
             do_action( 'qcld_openai_user_rate_cal', 1 );
             exit;
         }
         public function wpbot_wizard_save_callback()
 		{
-			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+			$nonce = isset($_POST['nonce']) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
 			if (! wp_verify_nonce($nonce, 'wp_chatbot')) {
 				wp_send_json_error(esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot'));
@@ -1105,7 +1145,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 				wp_die();
 			}
 
-			$is_skipped = isset($_POST['is_skipped']) ? intval($_POST['is_skipped']) : 0;
+			$is_skipped = isset($_POST['is_skipped']) ? intval( wp_unslash( $_POST['is_skipped'] ) ) : 0;
 			
 			if ($is_skipped) {
 				wp_send_json_success();
@@ -1113,8 +1153,8 @@ if(!class_exists('qcld_wpopenai_addons')){
 			}
 
 			// 1. Save AI Provider and API key
-			$provider = isset($_POST['ai_provider']) ? sanitize_text_field($_POST['ai_provider']) : '';
-			$api_key  = isset($_POST['api_key']) ? sanitize_text_field($_POST['api_key']) : '';
+			$provider = isset($_POST['ai_provider']) ? sanitize_text_field( wp_unslash( $_POST['ai_provider'] ) ) : '';
+			$api_key  = isset($_POST['api_key']) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
 
 			if ($provider === 'openai') {
 				update_option('qcld_open_ai_api_key', $api_key);
@@ -1160,13 +1200,13 @@ if(!class_exists('qcld_wpopenai_addons')){
 			}
 
 			// 6. Embed sources
-			$rag_embed_pages = isset($_POST['rag_embed_pages']) ? intval($_POST['rag_embed_pages']) : 0;
+			$rag_embed_pages = isset($_POST['rag_embed_pages']) ? intval( wp_unslash( $_POST['rag_embed_pages'] ) ) : 0;
 			update_option('rag_embed_pages', $rag_embed_pages);
 
-			$rag_embed_posts = isset($_POST['rag_embed_posts']) ? intval($_POST['rag_embed_posts']) : 0;
+			$rag_embed_posts = isset($_POST['rag_embed_posts']) ? intval( wp_unslash( $_POST['rag_embed_posts'] ) ) : 0;
 			update_option('rag_embed_posts', $rag_embed_posts);
 
-			$rag_embed_cpts = isset($_POST['rag_embed_cpts']) ? array_map('sanitize_text_field', $_POST['rag_embed_cpts']) : array();
+			$rag_embed_cpts = isset($_POST['rag_embed_cpts']) && is_array($_POST['rag_embed_cpts']) ? array_map('sanitize_text_field', wp_unslash($_POST['rag_embed_cpts'])) : array();
 			update_option('rag_embed_cpts', $rag_embed_cpts);
 
 			// Mark wizard as completed permanently in DB
@@ -1178,7 +1218,7 @@ if(!class_exists('qcld_wpopenai_addons')){
 
 		public function wpbot_wizard_verify_key_callback()
 		{
-			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+			$nonce = isset($_POST['nonce']) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
 			if (! wp_verify_nonce($nonce, 'wp_chatbot')) {
 				wp_send_json_error(esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot'));
@@ -1190,8 +1230,8 @@ if(!class_exists('qcld_wpopenai_addons')){
 				wp_die();
 			}
 
-			$provider = isset($_POST['ai_provider']) ? sanitize_text_field($_POST['ai_provider']) : '';
-			$api_key  = isset($_POST['api_key']) ? sanitize_text_field($_POST['api_key']) : '';
+			$provider = isset($_POST['ai_provider']) ? sanitize_text_field( wp_unslash( $_POST['ai_provider'] ) ) : '';
+			$api_key  = isset($_POST['api_key']) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
 
 			if ($provider === 'openai') {
 				$url = 'https://api.openai.com/v1/models';

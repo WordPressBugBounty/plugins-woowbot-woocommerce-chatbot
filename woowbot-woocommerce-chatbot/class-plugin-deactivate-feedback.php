@@ -39,7 +39,7 @@ if( ! class_exists( 'Wp_Usage_Feedback') ) {
 			$_include_goodbye_form=true) {
 
 			$this->plugin_file = $_plugin_file;
-			$this->home_url = 'plugins@quantumcloud.com';
+			$this->home_url = 'plugins@quantumcloud.net';
 			$this->plugin_name = basename( $this->plugin_file, '.php' );
 
 			$this->require_optin = $_require_optin;
@@ -270,7 +270,7 @@ if( ! class_exists( 'Wp_Usage_Feedback') ) {
 				$html .= '</div><!-- .wpb-goodbye-options -->';
 			}
 			$html .= '</div><!-- .wpb-goodbye-form-body -->';
-			$html .= '<p class="deactivating-spinner"><span class="spinner"></span> ' . __( 'Submitting form', 'wpbot-plugin' ) . '</p>';
+			$html .= '<p class="deactivating-spinner"><span class="spinner"></span> ' . __( 'Submitting form', 'woowbot-woocommerce-chatbot' ) . '</p>';
 			?>
 			<div class="wpb-goodbye-form-bg"></div>
 			<style type="text/css">
@@ -412,7 +412,7 @@ if( ! class_exists( 'Wp_Usage_Feedback') ) {
 			check_ajax_referer( 'wpbot_goodbye_form', 'security' );
 
 			if( isset( $_POST['details'] ) ) {
-				$details = sanitize_text_field( $_POST['details'] );
+				$details = sanitize_text_field( wp_unslash( $_POST['details'] ) );
 				update_option( 'wpbot_deactivation_details_' . $this->plugin_name, $details );
 			}
 

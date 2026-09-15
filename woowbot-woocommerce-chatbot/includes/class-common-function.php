@@ -68,7 +68,8 @@ class Qcld_WoowBot_Common_Functions {
                 $search_term = '%' . $wpdb->esc_like( $q ) . '%';
                 $query = "SELECT ID FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type IN ($placeholders) AND (post_title LIKE %s OR post_content LIKE %s) ORDER BY post_date DESC LIMIT 5";
                 $args = array_merge( $post_type_array, array( $search_term, $search_term ) );
-                $post_ids = $wpdb->get_col( $wpdb->prepare( $query, ...$args ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+                $post_ids = $wpdb->get_col( $wpdb->prepare( $query, ...$args ) );
 
                 if ( ! empty( $post_ids ) ) {
                     foreach ( $post_ids as $post_id ) {
@@ -91,14 +92,14 @@ class Qcld_WoowBot_Common_Functions {
 
         $table = $wpdb->prefix . 'wpbot_chat_report';
 
-        $user_id        = intval(wp_unslash($_POST['user_id']));
-        $conversation_id= intval(wp_unslash($_POST['conversation_id']));
-        $message        = sanitize_text_field(wp_unslash($_POST['message']));
-        $feedback       = sanitize_text_field(wp_unslash($_POST['feedback'])); // "like" or "dislike"
-        $meta_info      = sanitize_textarea_field(wp_unslash($_POST['meta_info']));
+        $user_id        = isset($_POST['user_id']) ? intval(wp_unslash($_POST['user_id'])) : 0;
+        $conversation_id= isset($_POST['conversation_id']) ? intval(wp_unslash($_POST['conversation_id'])) : 0;
+        $message        = isset($_POST['message']) ? sanitize_text_field(wp_unslash($_POST['message'])) : '';
+        $feedback       = isset($_POST['feedback']) ? sanitize_text_field(wp_unslash($_POST['feedback'])) : ''; // "like" or "dislike"
+        $meta_info      = isset($_POST['meta_info']) ? sanitize_textarea_field(wp_unslash($_POST['meta_info'])) : '';
         $date           = current_time('mysql');
 
-        $inserted = $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
+        $inserted = $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
             $table,
             array(
                 'user_id'         => $user_id,
@@ -128,11 +129,11 @@ class Qcld_WoowBot_Common_Functions {
             global $wpdb;
             $table_report = $wpdb->prefix . 'wpbot_chat_report';
 
-            $email       = sanitize_email(wp_unslash($_POST['email']));
-            $message     = sanitize_textarea_field(wp_unslash($_POST['message']));
-            $report_text = sanitize_textarea_field(wp_unslash($_POST['report_text']));
+            $email       = isset($_POST['email']) ? sanitize_email(wp_unslash($_POST['email'])) : '';
+            $message     = isset($_POST['message']) ? sanitize_textarea_field(wp_unslash($_POST['message'])) : '';
+            $report_text = isset($_POST['report_text']) ? sanitize_textarea_field(wp_unslash($_POST['report_text'])) : '';
 
-            $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
+            $wpdb->insert( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
                 $table_report,
                 [
                     'user_id'   => get_current_user_id(), // or match from wpbot_user.
@@ -229,16 +230,20 @@ class Qcld_WoowBot_Common_Functions {
 			$qlcd_wp_chatbot_ai_rate_limiting_message = qcld_wb_woowbot_func_str_replace(
 				maybe_unserialize(get_option('qlcd_wp_chatbot_ai_rate_limiting_message', true))
 			);
+			$default_message = esc_html__( 'Rate limit exceeded. Please try again later.', 'woowbot-woocommerce-chatbot' );
+			$rate_limiting_message = ( is_array( $qlcd_wp_chatbot_ai_rate_limiting_message ) && ! empty( $qlcd_wp_chatbot_ai_rate_limiting_message[0] ) )
+				? esc_html( $qlcd_wp_chatbot_ai_rate_limiting_message[0] )
+				: $default_message;
+
 			if (get_option('qcld_openai_stream_enabled') == 1) {
 				$response = array(
 					'status'  => 'error',
-					'message' => esc_html__((is_array($qlcd_wp_chatbot_ai_rate_limiting_message) && !empty($qlcd_wp_chatbot_ai_rate_limiting_message[0]) ? $qlcd_wp_chatbot_ai_rate_limiting_message[0] : 'Rate limit exceeded. Please try again later.'), 'woowbot-woocommerce-chatbot'),
-
+					'message' => $rate_limiting_message,
 				);
 			} else {
 				$response = array(
 					'status'  => 'success',
-					'message' => esc_html__((is_array($qlcd_wp_chatbot_ai_rate_limiting_message) && !empty($qlcd_wp_chatbot_ai_rate_limiting_message[0]) ? $qlcd_wp_chatbot_ai_rate_limiting_message[0] : 'Rate limit exceeded. Please try again later.'), 'woowbot-woocommerce-chatbot'),
+					'message' => $rate_limiting_message,
 				);
 			}
 			if (is_user_logged_in()) {
@@ -331,7 +336,8 @@ class Qcld_WoowBot_Common_Functions {
 					// we will store the time when the guest_id was created in session
 					$timeframe = get_option('rate_limit_timeframe_guest', true);
 					$timeframe = intval($timeframe) * 3600; // convert hours to seconds
-					if (isset($_SESSION['guest_id_time'][$session_id]) && (time() - $_SESSION['guest_id_time'][$session_id]) > $timeframe) {
+					$guest_id_time = isset($_SESSION['guest_id_time'][$session_id]) ? intval($_SESSION['guest_id_time'][$session_id]) : 0;
+					if ($guest_id_time > 0 && (time() - $guest_id_time) > $timeframe) {
 						unset($_SESSION['guest_id']);
 						unset($_SESSION['guest_id_time']);
 					}

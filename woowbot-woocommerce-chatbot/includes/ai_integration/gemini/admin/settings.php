@@ -13,8 +13,8 @@
             <div class="row gx-0">
                 <div class="mb-3">
                     <div class="form-check form-switch my-4">
-                        <input class="form-check-input" type="checkbox" <?php echo (get_option('qcld_gemini_enabled') == 1) ? esc_attr('checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="<?php esc_attr_e('qcld_gemini_enabled','woowbot-woocommerce-chatbot'); ?>">
-                        <label class="form-check-label" for="<?php esc_attr_e('qcld_gemini_enabled','woowbot-woocommerce-chatbot'); ?>">
+                        <input class="form-check-input" type="checkbox" <?php echo (get_option('qcld_gemini_enabled') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="qcld_gemini_enabled">
+                        <label class="form-check-label" for="qcld_gemini_enabled">
                         <?php esc_html_e('Enable Gemini AI','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php esc_html_e('(if you want results from Gemini only, disable Site Search from Settings->Start Menu)','woowbot-woocommerce-chatbot'); ?></span>
                         </label>
                     </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="row gx-0">
                 <div class="form-check form-switch my-4">
-                    <input class="form-check-input" type="checkbox" <?php echo (get_option('gemeni_context_awareness_enabled') == '1') ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="gemini_is_context_awareness_enabled">
+                    <input class="form-check-input" type="checkbox" <?php echo (get_option('gemeni_context_awareness_enabled') == '1') ? 'checked' : ''; ?>  role="switch" value="" id="gemini_is_context_awareness_enabled">
                     <label class="form-check-label" for="gemini_is_context_awareness_enabled">
                     <?php  esc_html_e( 'Context awareness','woowbot-woocommerce-chatbot'); ?>
                     </label>
@@ -32,8 +32,8 @@
             <div class="row gx-0">
                 <div class="mb-3">
                     <div class="form-check form-switch my-4">
-                        <input class="form-check-input" type="checkbox" <?php echo (get_option('qcld_gemini_page_suggestion_enabled') == '1') ? esc_attr( 'checked','woowbot-woocommerce-chatbot') :'';?>  role="switch" value="" id="qcld_gemini_page_suggestion_enabled">
-                        <label class="form-check-label" for="<?php esc_attr_e( 'qcld_gemini_page_suggestion_enabled','woowbot-woocommerce-chatbot'); ?>">
+                        <input class="form-check-input" type="checkbox" <?php echo (get_option('qcld_gemini_page_suggestion_enabled') == '1') ? 'checked' : ''; ?>  role="switch" value="" id="qcld_gemini_page_suggestion_enabled">
+                        <label class="form-check-label" for="qcld_gemini_page_suggestion_enabled">
                         <?php  esc_html_e( 'Enable page suggestions with Gemini Result','woowbot-woocommerce-chatbot'); ?>
                         </label>
                     </div>
@@ -54,14 +54,14 @@
                                         ?>
                                         <div class="form-check form-check-inline">
                                             <input
-                                                id="site_gemini_search_posttypes_<?php echo esc_html( $post_type->name ); ?>"
+                                                id="site_gemini_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>"
                                                 type="checkbox"
                                                 name="site_gemini_search_posttypes[]"
-                                                value="<?php echo esc_html( $post_type->name ); ?>"
+                                                value="<?php echo esc_attr( $post_type->name ); ?>"
                                                 <?php echo (($is_pro) ? 'disabled' : ''); ?>
                                                 
                                                 <?php echo ((get_option('qcld_openai_relevant_post') != '') && in_array($post_type->name, get_option('qcld_openai_relevant_post'))) ? 'checked' : ''; ?>>
-                                            <label class="form-check-label <?php echo ($is_pro ? 'pro-locked' : ''); ?>" for="site_gemini_search_posttypes_<?php echo esc_html( $post_type->name ); ?>">
+                                            <label class="form-check-label <?php echo ($is_pro ? 'pro-locked' : ''); ?>" for="site_gemini_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>">
                                                 <?php echo esc_html( $post_type->name ); ?>
                                             
                                             </label>
@@ -173,7 +173,7 @@
                 <div class="wp-chatbot-gemini-help">
                     <div id="panelsStayOpen-headingZero-gemini">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#panelsStayOpen-collapseZero-gemini" aria-expanded="true" aria-controls="panelsStayOpen-collapseZero-gemini">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#panelsStayOpen-collapseZero-gemini" aria-expanded="false" aria-controls="panelsStayOpen-collapseZero-gemini">
                                 <?php esc_html_e( 'Getting Started with gemini','woowbot-woocommerce-chatbot');?>
                             </button>
                         </h2>

@@ -65,7 +65,9 @@ if(!class_exists('qcld_wpgemini_addons')){
             add_action('wp_ajax_qcld_gemini_settings_option', [$this, 'qcld_gemini_settings_option_callback']);
             add_action('wp_ajax_qcld_gemini_get_model_list', [$this, 'qcld_gemini_get_model_list_callback']);
 
-            if (is_admin() && !empty($_GET["page"]) && (($_GET["page"] == "openai-panel_dashboard") || ($_GET["page"] == "openai-panel_file") || ($_GET["page"] == "openai-panel_help"))) {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+            $page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
+            if ( is_admin() && in_array( $page, array( 'openai-panel_dashboard', 'openai-panel_file', 'openai-panel_help' ), true ) ) {
                 add_action('admin_enqueue_scripts', array($this, 'qcld_wb_chatbot_admin_scripts'));
             }
 			if( (get_option('enable_product_details_from_ai') == 1) && (get_option('qcld_gemini_enabled') == 1) && (get_option('qcld_gemini_api_key') != '' ) ){
@@ -114,7 +116,7 @@ if(!class_exists('qcld_wpgemini_addons')){
             require_once( QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . "includes/class-common-function.php" );
         }
         public function qcld_gemini_settings_option_callback() {
-                $nonce = sanitize_text_field($_POST['nonce']);
+                $nonce = isset( $_POST['nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
                 if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
                     wp_send_json(array('success' => false, 'msg' => esc_html__('Failed in Security check', 'woowbot-woocommerce-chatbot')));
                     wp_die();
@@ -122,14 +124,14 @@ if(!class_exists('qcld_wpgemini_addons')){
 					wp_send_json( array( 'success' => false, 'msg' => esc_html__( 'Unauthorized user', 'woowbot-woocommerce-chatbot' ) ) );
 					wp_die();
 				} else {
-                    $gemini_api_key = sanitize_text_field($_POST['gemini_api_key']);
-                    $gemini_enabled = sanitize_text_field($_POST['gemini_enabled']);
-                    $gemini_model = sanitize_text_field($_POST['gemini_model']);
-                    $qcld_gemini_page_suggestion_enabled = sanitize_text_field($_POST['qcld_gemini_page_suggestion_enabled']);
-                    $gemini_is_context_awareness_enabled = sanitize_text_field($_POST['gemini_is_context_awareness_enabled']);
-					$is_product_card_enabled = sanitize_text_field($_POST['is_product_card_enabled']);
-                    $qcld_gemini_append_content = sanitize_text_field($_POST['qcld_gemini_append_content']) ?? '';
-                    $qcld_gemini_prepend_content = sanitize_text_field($_POST['qcld_gemini_prepend_content']) ?? '';
+                    $gemini_api_key                      = isset( $_POST['gemini_api_key'] ) ? sanitize_text_field( wp_unslash( $_POST['gemini_api_key'] ) ) : '';
+                    $gemini_enabled                      = isset( $_POST['gemini_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['gemini_enabled'] ) ) : '';
+                    $gemini_model                        = isset( $_POST['gemini_model'] ) ? sanitize_text_field( wp_unslash( $_POST['gemini_model'] ) ) : '';
+                    $qcld_gemini_page_suggestion_enabled = isset( $_POST['qcld_gemini_page_suggestion_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_gemini_page_suggestion_enabled'] ) ) : '';
+                    $gemini_is_context_awareness_enabled = isset( $_POST['gemini_is_context_awareness_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['gemini_is_context_awareness_enabled'] ) ) : '';
+					$is_product_card_enabled             = isset( $_POST['is_product_card_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_product_card_enabled'] ) ) : '';
+                    $qcld_gemini_append_content          = isset( $_POST['qcld_gemini_append_content'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_gemini_append_content'] ) ) : '';
+                    $qcld_gemini_prepend_content         = isset( $_POST['qcld_gemini_prepend_content'] ) ? sanitize_text_field( wp_unslash( $_POST['qcld_gemini_prepend_content'] ) ) : '';
                     update_option('qcld_gemini_api_key', $gemini_api_key);
                     update_option('qcld_gemini_enabled', $gemini_enabled);
                     update_option('qcld_gemini_model', $gemini_model);
@@ -144,15 +146,14 @@ if(!class_exists('qcld_wpgemini_addons')){
                     update_option('qcld_gemini_page_suggestion_enabled', $qcld_gemini_page_suggestion_enabled);
                     update_option('gemeni_context_awareness_enabled', $gemini_is_context_awareness_enabled);
                     $openai_post_types = array();
-                    if (isset($_POST['openai_post_type'])) {
-                        $raw_post_types = wp_unslash($_POST['openai_post_type']);
-                        if (is_array($raw_post_types)) {
-                            $openai_post_types = array_map('sanitize_text_field', $raw_post_types);
+                    if ( isset( $_POST['openai_post_type'] ) ) {
+                        if ( is_array( $_POST['openai_post_type'] ) ) {
+                            $openai_post_types = array_map( 'sanitize_text_field', wp_unslash( $_POST['openai_post_type'] ) );
                         } else {
-                            $openai_post_types = sanitize_text_field($raw_post_types);
+                            $openai_post_types = sanitize_text_field( wp_unslash( $_POST['openai_post_type'] ) );
                         }
                     }
-                    $is_page_rag_enabled = sanitize_text_field($_POST['is_page_rag_enabled']);
+                    $is_page_rag_enabled = isset( $_POST['is_page_rag_enabled'] ) ? sanitize_text_field( wp_unslash( $_POST['is_page_rag_enabled'] ) ) : '';
                     update_option('qcld_openai_relevant_post', $openai_post_types);
                     update_option('is_page_rag_enabled', $is_page_rag_enabled);
                     update_option('qcld_gemini_append_content', $qcld_gemini_append_content);
@@ -188,9 +189,9 @@ if(!class_exists('qcld_wpgemini_addons')){
 					$result = wp_remote_post($api_url, $args);
 					$result = json_decode(wp_remote_retrieve_body($result), true);
 					if( $result['error'] ?? false ) {
-						wp_send_json( array( 'status' => 'error', 'msg' => esc_html__( $result['error']['message'], 'chatbot' ) ) );
+						wp_send_json( array( 'status' => 'error', 'msg' => esc_html( $result['error']['message'] ) ) );
 					} elseif ( $result['candidates'] ?? false ) {
-						wp_send_json( array( 'status' => 'success', 'msg' => esc_html__(  $result['candidates'][0]['content']['parts'][0]['text'], 'chatbot' ) ) );
+						wp_send_json( array( 'status' => 'success', 'msg' => esc_html( $result['candidates'][0]['content']['parts'][0]['text'] ) ) );
 					}
 					
 					wp_die();
@@ -200,7 +201,7 @@ if(!class_exists('qcld_wpgemini_addons')){
                 wp_die();
         }
 		public function qcld_gemini_response_callback() {
-			if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'wp_chatbot' ) ) {
+			if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'wp_chatbot' ) ) {
 				wp_send_json_error([
 					'status'  => 'error',
 					'message' => esc_html__( 'Security check failed. Unauthorized request.', 'woowbot-woocommerce-chatbot' )
@@ -211,7 +212,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 				do_action('rate_limit_checker');
 			}
 			$gemini_api_key   = get_option( 'qcld_gemini_api_key' );
-			$keyword          = isset($_POST['keyword']) ? sanitize_text_field($_POST['keyword']) : '';
+			$keyword          = isset($_POST['keyword']) ? sanitize_text_field( wp_unslash( $_POST['keyword'] ) ) : '';
 
 			$relevant_pagelink = Qcld_WoowBot_Common_Functions::qcpd_relevant_pagelink( $keyword );
 			$relevant_pagelink = array_slice( $relevant_pagelink, 0, 5, true );
@@ -250,7 +251,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 				// Try to get from referrer first
 				$ref = wp_get_referer();
 				if ( ! $ref && isset($_SERVER['HTTP_REFERER']) ) {
-					$ref = esc_url_raw( $_SERVER['HTTP_REFERER'] );
+					$ref = esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) );
 				}
 				
 				if ( $ref ) {
@@ -259,7 +260,8 @@ if(!class_exists('qcld_wpgemini_addons')){
 					// Try to get post/page by URL, fallback to query param if needed.
 					$post_id = url_to_postid( $ref );
 					if ( ! $post_id && isset( $_GET['p'] ) ) {
-						$post_id = intval( $_GET['p'] );
+						// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+						$post_id = intval( wp_unslash( $_GET['p'] ) );
 					}
 					if ( $post_id ) {
 						$page_title = get_the_title( $post_id );
@@ -268,7 +270,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 						$page_summary = wp_trim_words( $text_content, 120, '…' );
 					} else {
 						// If not a post/page, try to extract title from URL or use current page
-						$parsed_url = parse_url( $ref );
+						$parsed_url = wp_parse_url( $ref );
 						if ( isset($parsed_url['path']) ) {
 							$path = trim($parsed_url['path'], '/');
 							if ( ! empty($path) ) {
@@ -290,11 +292,11 @@ if(!class_exists('qcld_wpgemini_addons')){
 					}
 				} else {
 					// Fallback to current page info.
-					$scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http");
+					$scheme = is_ssl() ? 'https' : 'http';
 
 					// Sanitize HTTP_HOST and REQUEST_URI from $_SERVER.
-					$sanitized_host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field($_SERVER['HTTP_HOST']) : '';
-					$sanitized_request_uri = isset($_SERVER['REQUEST_URI']) ? esc_url_raw($_SERVER['REQUEST_URI']) : '';
+					$sanitized_host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '';
+					$sanitized_request_uri = isset($_SERVER['REQUEST_URI']) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
 
 					// Construct the URL with sanitized components.
 					$current_url_temp = $scheme . '://' . $sanitized_host . $sanitized_request_uri;
@@ -456,41 +458,44 @@ if(!class_exists('qcld_wpgemini_addons')){
 		}
 
 		public function qcld_gemini_get_model_list_callback() {
-			$nonce = sanitize_text_field( $_POST['nonce'] );
+			$nonce = isset( $_POST['nonce'] ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 			if ( ! wp_verify_nonce( $nonce, 'wp_chatbot' ) ) {
 				wp_send_json_error( array( 'msg' => esc_html__( 'Failed in Security check', 'woowbot-woocommerce-chatbot' ) ) );
 			}
 
-			$api_key = sanitize_text_field( $_POST['api_key'] );
+			$api_key = isset( $_POST['api_key'] ) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
 			if ( empty( $api_key ) ) {
 				wp_send_json_error( array( 'msg' => esc_html__( 'API Key is required', 'woowbot-woocommerce-chatbot' ) ) );
 			}
 
-			$url = "https://generativelanguage.googleapis.com/v1beta/models?key=" . $api_key;
-			$ch = curl_init();
-			curl_setopt( $ch, CURLOPT_URL, $url );
-			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-			curl_setopt( $ch, CURLOPT_TIMEOUT, 30 );
-			$response = curl_exec( $ch );
-			$http_code = curl_getinfo( $ch, CURLINFO_HTTP_CODE );
-			curl_close( $ch );
+			$url      = 'https://generativelanguage.googleapis.com/v1beta/models?key=' . $api_key;
+			$response = wp_remote_get( $url, array(
+				'timeout' => 30,
+			) );
+
+			if ( is_wp_error( $response ) ) {
+				wp_send_json_error( array( 'msg' => $response->get_error_message() ) );
+			}
+
+			$http_code     = wp_remote_retrieve_response_code( $response );
+			$response_body = wp_remote_retrieve_body( $response );
 
 			if ( $http_code !== 200 ) {
-				$error_data = json_decode( $response, true );
-				$error_msg = isset( $error_data['error']['message'] ) ? $error_data['error']['message'] : 'Failed to fetch models';
+				$error_data = json_decode( $response_body, true );
+				$error_msg  = isset( $error_data['error']['message'] ) ? $error_data['error']['message'] : 'Failed to fetch models';
 				wp_send_json_error( array( 'msg' => $error_msg ) );
 			}
 
-			$data = json_decode( $response, true );
+			$data   = json_decode( $response_body, true );
 			$models = array();
-			if ( isset( $data['models'] ) ) {
+			if ( isset( $data['models'] ) && is_array( $data['models'] ) ) {
 				foreach ( $data['models'] as $model ) {
-					if ( in_array( 'generateContent', $model['supportedGenerationMethods'] ) ) {
+					if ( isset( $model['supportedGenerationMethods'] ) && is_array( $model['supportedGenerationMethods'] ) && in_array( 'generateContent', $model['supportedGenerationMethods'], true ) ) {
 						// Clean model name (models/gemini-pro -> gemini-pro)
-						$name = str_replace( 'models/', '', $model['name'] );
+						$name     = str_replace( 'models/', '', $model['name'] );
 						$models[] = array(
-							'id' => $name,
-							'name' => $model['displayName']
+							'id'   => $name,
+							'name' => isset( $model['displayName'] ) ? $model['displayName'] : $name,
 						);
 					}
 				}
@@ -500,7 +505,7 @@ if(!class_exists('qcld_wpgemini_addons')){
 		}
         public function qcld_update_settings_option_callback(){
 			// Verify nonce for CSRF protection
-			$nonce = isset($_POST['nonce']) ? sanitize_text_field($_POST['nonce']) : '';
+			$nonce = isset($_POST['nonce']) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 			if (!wp_verify_nonce($nonce, 'wp_chatbot')) {
 				wp_send_json_error(array('message' => esc_html__('Security check failed', 'woowbot-woocommerce-chatbot')));
 				wp_die();

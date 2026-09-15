@@ -273,7 +273,7 @@ jQuery(function ($) {
             var wildCardCheck = localStorage.getItem("wildCard");
 
             var qcld_woow_boot_user_init_name = localStorage.getItem("qcld_woow_boot_user_init_name");
-            console.log(userHitNum);
+            //console.log(userHitNum);
             if (event.which == 13) {
                 event.preventDefault();
                 if( userHitNum == 10 ){
@@ -1228,7 +1228,7 @@ jQuery(function ($) {
             setTimeout(function(){
                 var html = '<span class="woobot_product_search qcld-chatbot-button" type="button" >'+ $.parseJSON(response).message +'</span>';
                 //scroll at the last message.
-                console.log(html);
+                //console.log(html);
                 $("#woo-chatbot-messages-container li:last").css({'background-color': 'transparent','border':'none'}).html("<div>"+html +"</div>");
                 $('.woo-chatbot-ball-inner').animate({ scrollTop: $('#woo-chatbot-messages-container').prop("scrollHeight")}, 'slow');
                 enable_message_editor()
@@ -1455,7 +1455,7 @@ jQuery(function ($) {
         var i = 0;
         function type() {
             if (i < text.length) {
-                console.log($target, 'Typing char:', text.charAt(i));
+                //console.log($target, 'Typing char:', text.charAt(i));
                 $target.append(document.createTextNode(text.charAt(i)));
                 i++;
                 setTimeout(type, speed);
@@ -1560,8 +1560,21 @@ jQuery(function ($) {
                                 if (!isTyping && queue.length === 0) { finalize(); }
                                 return;
                             }
+                            if (jsonStr.indexOf('[ERROR]') === 0) {
+                                var errorMsg = jsonStr.replace(/^\[ERROR\]\s*/, '');
+                                queue.push(errorMsg);
+                                streamEnded = true;
+                                processQueue();
+                                return;
+                            }
                             try {
                                 var parsed  = JSON.parse(jsonStr);
+                                if (parsed.error && parsed.error.message) {
+                                    queue.push(parsed.error.message);
+                                    streamEnded = true;
+                                    processQueue();
+                                    return;
+                                }
                                 var content = '';
                                 if (parsed.choices && parsed.choices[0] && parsed.choices[0].delta) {
                                     content = parsed.choices[0].delta.content || '';
@@ -1579,12 +1592,19 @@ jQuery(function ($) {
                         }
                     }
                     read();
-                }).catch(function(err) { console.error('Stream read error:', err); });
+                }).catch(function(err) {
+                    console.error('Stream read error:', err);
+                    streamEnded = true;
+                    if (!isTyping && queue.length === 0) { finalize(); }
+                });
             }
 
             read();
         })
-        .catch(function(err) { console.error('Stream fetch error:', err); });
+        .catch(function(err) {
+            console.error('Stream fetch error:', err);
+            finalize();
+        });
     }
 
 });

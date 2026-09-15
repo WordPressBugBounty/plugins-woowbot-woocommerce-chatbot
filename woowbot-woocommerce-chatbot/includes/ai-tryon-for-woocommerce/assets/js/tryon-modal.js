@@ -1,4 +1,4 @@
-﻿jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
     var $modal = $('#qcld_woo_chatbot-tryon-modal');
     var currentProductName = '';
     var currentProductImage = '';

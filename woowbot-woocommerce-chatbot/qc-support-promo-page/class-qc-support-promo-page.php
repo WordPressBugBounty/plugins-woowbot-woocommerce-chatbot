@@ -1,5 +1,5 @@
 <?php
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined('ABSPATH') or die("You can't access this file directly.");
 /*
 * QuantumCloud Promo + Support Page
 * Revised On: 18-10-2023
@@ -12,25 +12,25 @@ if ( ! defined( 'qcld_wpbot_free_support_path' ) ) {
 if ( ! defined( 'qcld_wpbot_free_support_url' ) )
     define('qcld_wpbot_free_support_url', plugin_dir_url( __FILE__ ) );
 
-if ( ! defined( 'qcld_support_img_url' ) )
-    define('qcld_support_img_url', qcld_wpbot_free_support_url . "/images" );
+if ( ! defined( 'qcld_wpbot_free_img_url' ) )
+    define('qcld_wpbot_free_img_url', qcld_wpbot_free_support_url . "/images" );
 
 
 /*Callback function to add the menu */
-function qcld_wowbot_free_show_promo_page_callback_func(){
+function qcld_wpbot_free_show_promo_page_callback_func(){
 
     add_submenu_page(
         "woowbot",
-        esc_html__('More WordPress Goodies for You!'),
-        esc_html__('Support'),
+        esc_html__('More WordPress Goodies for You!', 'woowbot-woocommerce-chatbot'),
+        esc_html__('Support', 'woowbot-woocommerce-chatbot'),
         'manage_options',
         "qcpro-promo-page-woowbot-support",
-        'qcld_wowbot_free_promo_support_page_callback_func'
+        'qcld_wpbot_free_promo_support_page_callback_func'
     );
     
 } //show_promo_page_callback_func
 
-add_action( 'admin_menu', 'qcld_wowbot_free_show_promo_page_callback_func', 10 );
+add_action( 'admin_menu', 'qcld_wpbot_free_show_promo_page_callback_func', 10 );
 
 
 /*******************************
@@ -42,19 +42,22 @@ if ( ! function_exists( 'qcld_wpbot_free_include_promo_page_scripts' ) ) {
 	function qcld_wpbot_free_include_promo_page_scripts( ) {   
 
 
-        if( isset($_GET["page"]) && !empty($_GET["page"]) && (   $_GET["page"] == "qcpro-promo-page-woowbot-support"  ) ){
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+        $page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
 
-            wp_enqueue_style( 'qcld-support-fontawesome-css', qcld_wpbot_free_support_url . "css/font-awesome.min.css");                              
-            wp_enqueue_style( 'qcld-support-style-css', qcld_wpbot_free_support_url . "css/style.css");
+        if ( 'qcpro-promo-page-woowbot-support' === $page ){
+
+                                         
+            wp_enqueue_style( 'qcld-support-style-css', qcld_wpbot_free_support_url . "css/style.css", array(), QCLD_WOOCHATBOT_VERSION );
 
             wp_enqueue_script( 'jquery' );
             wp_enqueue_script( 'jquery-ui-core');
             wp_enqueue_script( 'jquery-ui-tabs' );
-            wp_enqueue_script( 'jquery-custom-form-processor', qcld_wpbot_free_support_url . 'js/support-form-script.js',  array('jquery', 'jquery-ui-core','jquery-ui-tabs') );
+            wp_enqueue_script( 'jquery-woowbot-form-processor', qcld_wpbot_free_support_url . 'js/support-form-script.js',  array('jquery', 'jquery-ui-core','jquery-ui-tabs'), QCLD_WOOCHATBOT_VERSION, true );
 
-            wp_add_inline_script( 'jquery-custom-form-processor', 
+            wp_add_inline_script( 'jquery-woowbot-form-processor', 
                                     'var qcld_wpbot_free_ajaxurl    = "' . admin_url('admin-ajax.php') . '";
-                                    var qcld_wpbot_free_ajax_nonce  = "'. wp_create_nonce( 'qc-clr' ).'";   
+                                    var qcld_wpbot_free_ajax_nonce  = "'. wp_create_nonce( 'woowbot-woocommerce-chatbot' ).'";   
                                 ', 'before');
             
         }
@@ -70,67 +73,45 @@ if ( ! function_exists( 'qcld_wpbot_free_include_promo_page_scripts' ) ) {
 
 include_once qcld_wpbot_free_support_path . '/qc-clr-recommendbot-support-plugin.php';
 
-if ( ! function_exists( 'qcld_wowbot_free_promo_support_page_callback_func' ) ) {
+if ( ! function_exists( 'qcld_wpbot_free_promo_support_page_callback_func' ) ) {
 
-	function qcld_wowbot_free_promo_support_page_callback_func() {
+	function qcld_wpbot_free_promo_support_page_callback_func() {
 		
 ?>
 
 
-        <div class="qc-woowbot-free-support qcld-support-new-page">
+        <div class="wrap">
+            <h2><?php esc_html_e('Support', 'woowbot-woocommerce-chatbot'); ?></h2>
+        <div class="qc-woowbot-support qcld-support-new-page">
             <div class="support-btn-main justify-content-center">
                 <div class="col text-center">
-                    <h2 class="py-3"><?php esc_html_e('Check Out Some of Our Other Works that Might Make Your Website Better', 'qc-clr'); ?></h2>
-                    <h5><?php esc_html_e('All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support.', 'qc-clr'); ?></h5>
+                    <h2 class="py-3"><?php esc_html_e('Check Out Some of Our Other Works that Might Make Your Website Better', 'woowbot-woocommerce-chatbot'); ?></h2>
+                    <h5><?php esc_html_e('All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support.', 'woowbot-woocommerce-chatbot'); ?></h5>
                     <div class="support-btn">
-                        <a class="premium-support" href="<?php echo esc_url('https://qc.turbopowers.com/'); ?>" target="_blank"><?php esc_html_e('Get Priority Support ', 'qc-clr'); ?></a>
-                        <a style="width:282px" class="premium-support" href="<?php echo esc_url('https://www.quantumcloud.com/resources/kb-sections/woowbot-chatbot/'); ?>" target="_blank"><?php esc_html_e('Online KnowledgeBase', 'qc-clr'); ?></a>
+                        <a class="premium-support" href="<?php echo esc_url('https://qc.turbopowers.com/'); ?>" target="_blank"><?php esc_html_e('Get Priority Support ', 'woowbot-woocommerce-chatbot'); ?></a>
+                        <a style="width:282px" class="premium-support" href="<?php echo esc_url('https://www.quantumcloud.net/resources/kb-sections/woowbot-chatbot/'); ?>" target="_blank"><?php esc_html_e('Online KnowledgeBase', 'woowbot-woocommerce-chatbot'); ?></a>
                     </div>
                 </div>
             
                 <div class="qc-column-12" >
                     <div class="support-btn">
                         
-                        <a class="premium-support premium-support-free" href="<?php echo esc_url('https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/','qc-clr') ?>" target="_blank"><?php esc_html_e('Get Support for Free Version','qc-clr') ?></a>
+                        <a class="premium-support premium-support-free" href="<?php echo esc_url('https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/') ?>" target="_blank"><?php esc_html_e('Get Support for Free Version', 'woowbot-woocommerce-chatbot') ?></a>
                     </div>
                 </div>
             </div>
             
             <div class="qcld-plugins-lists">
                 <div class="qcld-plugins-loading">
-                    <img src="<?php echo esc_url(QCLD_WOOCHATBOT_PLUGIN_URL.'images/loading.gif'); ?>">
-                    
+                    <img src="<?php echo esc_url(qcld_wpbot_free_img_url); ?>/loading.gif" alt="loading">
                 </div>
             </div>
         </div>
-		
-        <style>
+        </div>
+			
 
-            div#promotion-wpchatbots {
-                max-width: inherit;
-                margin-left: 0;
-                border: none;
-            }
-            body .qc-review-notice{
-                padding: 15px 15px 15px 0 !important;
-                background-color: #ffffff !important;
-                border-radius: 5px !important;
-                margin: 20px 20px 0 0 !important;
-                border-left: 4px solid transparent !important;
-                box-shadow: 0px 4px 6px 1px #ebebeb !important;
-                margin-bottom: 12px !important;
-            }
-            body .qc-review-text h3 {
-                color: #000000 !important;
-            }
-            body .qc-review-text p {
-                color: #000000 !important;
-            }
+    
 
-  
-
-        </style>
-		
 <?php
             
        
@@ -147,25 +128,24 @@ if( !function_exists('qcld_wpbot_free_process_qc_promo_form') ){
 
     function qcld_wpbot_free_process_qc_promo_form(){
 
-        check_ajax_referer( 'qc-clr', 'security');
+        check_ajax_referer( 'woowbot-woocommerce-chatbot', 'security');
         
         $data['status']   = 'failed';
-        $data['message']  = esc_html__('Problem in processing your form submission request! Apologies for the inconveniences.<br> 
-Please email to <span style="color:#22A0C9;font-weight:bold !important;font-size:14px "> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!', 'qc-clr');
+        $data['message']  = wp_kses_post( __( 'Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style="color:#22A0C9;font-weight:bold !important;font-size:14px "> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!', 'woowbot-woocommerce-chatbot' ) );
 
-        $name         = isset($_POST['post_name']) ? trim(sanitize_text_field($_POST['post_name'])) : '';
-        $email        = isset($_POST['post_email']) ? trim(sanitize_email($_POST['post_email'])) : '';
-        $subject      = isset($_POST['post_subject']) ? trim(sanitize_text_field($_POST['post_subject'])) : '';
-        $message      = isset($_POST['post_message']) ? trim(sanitize_text_field($_POST['post_message'])) : '';
-        $plugin_name  = isset($_POST['post_plugin_name']) ? trim(sanitize_text_field($_POST['post_plugin_name'])) : '';
+        $name         = isset($_POST['post_name']) ? trim(sanitize_text_field(wp_unslash($_POST['post_name']))) : '';
+        $email        = isset($_POST['post_email']) ? trim(sanitize_email(wp_unslash($_POST['post_email']))) : '';
+        $subject      = isset($_POST['post_subject']) ? trim(sanitize_text_field(wp_unslash($_POST['post_subject']))) : '';
+        $message      = isset($_POST['post_message']) ? trim(sanitize_text_field(wp_unslash($_POST['post_message']))) : '';
+        $plugin_name  = isset($_POST['post_plugin_name']) ? trim(sanitize_text_field(wp_unslash($_POST['post_plugin_name']))) : '';
 
         if( $name == "" || $email == "" || $subject == "" || $message == "" )
         {
-            $data['message'] = esc_html('Please fill up all the requried form fields.', 'qc-clr');
+            $data['message'] = esc_html__('Please fill up all the requried form fields.', 'woowbot-woocommerce-chatbot');
         }
         else if ( filter_var($email, FILTER_VALIDATE_EMAIL) === false ) 
         {
-            $data['message'] = esc_html('Invalid email address.', 'qc-clr');
+            $data['message'] = esc_html__('Invalid email address.', 'woowbot-woocommerce-chatbot');
         }
         else
         {
@@ -174,25 +154,25 @@ Please email to <span style="color:#22A0C9;font-weight:bold !important;font-size
 
             $bodyContent = "";
                 
-            $bodyContent .= "<p><strong>".esc_html('Support Request Details:', 'qc-clr')."</strong></p><hr>";
+            $bodyContent .= "<p><strong>".esc_html__('Support Request Details:', 'woowbot-woocommerce-chatbot')."</strong></p><hr>";
 
-            $bodyContent .= "<p>".esc_html('Name', 'qc-clr')." : ".$name."</p>";
-            $bodyContent .= "<p>".esc_html('Email', 'qc-clr')." : ".$email."</p>";
-            $bodyContent .= "<p>".esc_html('Subject', 'qc-clr')." : ".$subject."</p>";
-            $bodyContent .= "<p>".esc_html('Message', 'qc-clr')." : ".$message."</p>";
+            $bodyContent .= "<p>".esc_html__('Name', 'woowbot-woocommerce-chatbot')." : ".esc_html($name)."</p>";
+            $bodyContent .= "<p>".esc_html__('Email', 'woowbot-woocommerce-chatbot')." : ".esc_html($email)."</p>";
+            $bodyContent .= "<p>".esc_html__('Subject', 'woowbot-woocommerce-chatbot')." : ".esc_html($subject)."</p>";
+            $bodyContent .= "<p>".esc_html__('Message', 'woowbot-woocommerce-chatbot')." : ".esc_html($message)."</p>";
 
-            $bodyContent .= "<p>".esc_html('Sent Via the Plugin', 'qc-clr')." : ".$plugin_name."</p>";
+            $bodyContent .= "<p>".esc_html__('Sent Via the Plugin', 'woowbot-woocommerce-chatbot')." : ".esc_html($plugin_name)."</p>";
 
-            $bodyContent .="<p></p><p>".esc_html('Mail sent from:', 'qc-clr')." <strong>".get_bloginfo('name')."</strong>, ".esc_html('URL:', 'qc-clr')." [".get_bloginfo('url')."].</p>";
-            $bodyContent .="<p>".esc_html('Mail Generated on:', 'qc-clr')." " . date("F j, Y, g:i a") . "</p>";           
+            $bodyContent .="<p></p><p>".esc_html__('Mail sent from:', 'woowbot-woocommerce-chatbot')." <strong>".esc_html(get_bloginfo('name'))."</strong>, ".esc_html__('URL:', 'woowbot-woocommerce-chatbot')." [".esc_url(get_bloginfo('url'))."].</p>";
+            $bodyContent .="<p>".esc_html__('Mail Generated on:', 'woowbot-woocommerce-chatbot')." " . gmdate("F j, Y, g:i a") . "</p>";           
             
             $toEmail = "quantumcloud@gmail.com"; //Receivers email address
             //$toEmail = "qc.kadir@gmail.com"; //Receivers email address
 
             //Extract Domain
             $url = get_site_url();
-            $url = parse_url($url);
-            $domain = $url['host'];
+            $url = wp_parse_url($url);
+            $domain = isset($url['host']) ? $url['host'] : '';
             
 
             $fakeFromEmailAddress = "wordpress@" . $domain;
@@ -201,26 +181,23 @@ Please email to <span style="color:#22A0C9;font-weight:bold !important;font-size
             $body = $bodyContent;
             $headers = array();
             $headers[] = 'Content-Type: text/html; charset=UTF-8';
-            $headers[] = 'From: '.esc_attr($name, 'qc-clr').' <'.esc_attr($fakeFromEmailAddress, 'qc-clr').'>';
-            $headers[] = 'Reply-To: '.esc_attr($name, 'qc-clr').' <'.esc_attr($email, 'qc-clr').'>';
+            $headers[] = 'From: '.esc_attr($name).' <'.esc_attr($fakeFromEmailAddress).'>';
+            $headers[] = 'Reply-To: '.esc_attr($name).' <'.esc_attr($email).'>';
 
-            $finalSubject = esc_html('From Plugin Support Page:', 'qc-clr')." " . esc_attr($subject, 'qc-clr');
+            $finalSubject = esc_html__('From Plugin Support Page:', 'woowbot-woocommerce-chatbot')." " . esc_attr($subject);
             
             $result = wp_mail( $to, $finalSubject, $body, $headers );
 
             if( $result )
             {
                 $data['status'] = 'success';
-                $data['message'] = esc_html__('Your email was sent successfully. Thanks!', 'qc-clr');
+                $data['message'] = esc_html__('Your email was sent successfully. Thanks!', 'woowbot-woocommerce-chatbot');
             }
 
         }
 
         ob_clean();
 
-        
-        echo json_encode($data);
-    
-        die();
+        wp_send_json($data);
     }
 }

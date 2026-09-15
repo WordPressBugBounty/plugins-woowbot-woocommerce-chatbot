@@ -1,0 +1,2907 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Chatbot - WoowBot 4.9.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot\n"
+"POT-Creation-Date: 2026-09-14 11:58+0000\n"
+"PO-Revision-Date: 2026-09-14 11:58+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: English <support@quantumcloud.net>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+"X-Domain: woowbot-woocommerce-chatbot\n"
+
+#: class-plugin-deactivate-feedback.php:130
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:219
+msgid "Sorry to see you go"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:222
+msgid "Found a Bug"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:223
+msgid "Need More Features"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:224
+msgid "Deactivating Temporarily"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:225
+msgid "Upgrading to Pro"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:228
+msgid "Please provide email so we can contact with bug fixes"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:229
+msgid "Please provide some details so we can improve the plugin"
+msgstr ""
+
+#: class-plugin-deactivate-feedback.php:273
+msgid "Submitting form"
+msgstr ""
+
+#: functions.php:52
+msgid "Expand chat window"
+msgstr ""
+
+#: functions.php:53 qcld-woowbot.php:877
+msgid "Conversations with"
+msgstr ""
+
+#: functions.php:55
+msgid "Close chat window"
+msgstr ""
+
+#: functions.php:64
+msgid "Send a message."
+msgstr ""
+
+#: functions.php:375
+msgid "Support Request Details"
+msgstr ""
+
+#: functions.php:376 qc-support-promo-page/class-qc-support-promo-page.php:159
+msgid "Name"
+msgstr ""
+
+#: functions.php:377 qc-support-promo-page/class-qc-support-promo-page.php:160
+msgid "Email"
+msgstr ""
+
+#: functions.php:378 qc-support-promo-page/class-qc-support-promo-page.php:161
+msgid "Subject"
+msgstr ""
+
+#: functions.php:379 qc-support-promo-page/class-qc-support-promo-page.php:162
+msgid "Message"
+msgstr ""
+
+#: functions.php:380
+msgid "Page"
+msgstr ""
+
+#: functions.php:381
+msgid "User Agent"
+msgstr ""
+
+#: functions.php:382
+msgid "IP Address"
+msgstr ""
+
+#: functions.php:383
+msgid "Mail Generated on"
+msgstr ""
+
+#: functions.php:413
+msgid "Click for Product Details"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:41
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:365
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:52
+#: includes/ai_integration/ai-admin.php:15
+#: includes/ai_integration/ai-admin.php:25 qcld-woowbot.php:144
+#: qcld-woowbot.php:145
+msgid "AI Settings"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:44
+#: includes/admin/templates/ai-admin.php:45
+#: includes/admin/templates/ai-admin.php:46
+#: includes/admin/templates/ai-admin.php:47
+#: includes/ai_integration/ai-admin.php:28
+#: includes/ai_integration/ai-admin.php:29
+msgid "selected"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:44
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:394
+#: includes/ai_integration/ai-admin.php:28
+msgid "OpenAI"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:45
+msgid "OpenRouter"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:46
+#: includes/ai_integration/ai-admin.php:29
+msgid "Gemini"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:47
+msgid "Grok"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:50
+#: includes/ai_integration/ai-admin.php:32
+msgid "Knowledge Base (RAG)"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:53
+#: includes/ai_integration/ai-admin.php:36
+msgid "AI Wizard"
+msgstr ""
+
+#: includes/admin/templates/ai-admin.php:56
+#: includes/ai_integration/ai-admin.php:39
+msgid "Common AI Settings"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:22
+msgid "Rate Limit"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:23
+msgid "Other Common Settings"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:31
+msgid "Enable Rate Limiting"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:37
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:44
+msgid "Set the rate limit for each user role:"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:64
+msgid "Rate limit for %s"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:72
+#: includes/admin/templates/common-ai-settings.php:75
+#: includes/admin/templates/common-ai-settings.php:105
+#: includes/admin/templates/common-ai-settings.php:107
+msgid "Timeframe:"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:79
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:80
+#: includes/admin/templates/common-ai-settings.php:111
+msgid "48 Hours"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:81
+#: includes/admin/templates/common-ai-settings.php:112
+msgid "24 Hours"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:82
+#: includes/admin/templates/common-ai-settings.php:114
+msgid "12 Hours"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:83
+#: includes/admin/templates/common-ai-settings.php:113
+msgid "6 Hours"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:97
+msgid "Rate limit for Guest Users"
+msgstr ""
+
+#: includes/admin/templates/common-ai-settings.php:100
+msgid "rate_limit_guest"
+msgstr ""
+
+#: includes/admin/templates/rag.php:66
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr ""
+
+#: includes/admin/templates/rag.php:66
+msgid "Check this Tutorial for more details."
+msgstr ""
+
+#: includes/admin/templates/rag.php:338
+msgid "&laquo;"
+msgstr ""
+
+#: includes/admin/templates/rag.php:339
+msgid "&raquo;"
+msgstr ""
+
+#: includes/admin/templates/rag.php:347 includes/admin/templates/rag.php:418
+msgid "%s item"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/ai-tryon-for-woocommerce.php:42
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:28
+msgid "AI Try-On Configurations"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:39
+msgid "General Settings"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:40
+msgid "Prompts"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:41
+#: includes/ai_integration/openai/admin/admin_ui2.php:14
+#: qcld-woowbot-info-page.php:17 qcld-woowbot-info-page.php:18
+#: qcld-woowbot-info-page.php:136 qcld-woowbot-info-page.php:140
+msgid "Help"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:43
+msgid "Configure all your AI Try-On settings in one place."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:51
+msgid "Enable Try-On Button"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:58
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:63
+msgid "Require Login"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:70
+msgid "Show the Try-On feature for logged-in users only"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:75
+msgid "Show Add to Cart Button"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:82
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:87
+msgid "Daily Generation Limit"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:89
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:91
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:95
+msgid "Try-On Button Position"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:100
+msgid "Default"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:100
+msgid "Inside Product Summary"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:101
+msgid "Before Cart"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:101
+msgid "Above Add to Cart Form"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:102
+msgid "After Cart"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:102
+msgid "Below Add to Cart Form"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:103
+msgid "Before Meta"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:103
+msgid "Above Categories/Tags"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:104
+msgid "After Meta"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:104
+msgid "Below Categories/Tags"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:105
+msgid "Below Summary"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:105
+msgid "At bottom of product details"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:106
+msgid "Above Summary"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:106
+msgid "At very top of product details"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:126
+msgid "Try-On Button Icon"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:132
+msgid "Sparkles"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:133
+msgid "Magic Wand"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:134
+msgid "Shirt"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:135
+msgid "No Icon"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:151
+msgid "Select an emoji icon to display before the button text."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:155
+msgid "Try with your photo Button Text"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:159
+msgid "The text displayed on the frontend button."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:165
+msgid "Default Video Duration"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:165
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:191
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:260
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:508
+msgid "(Pro Feature)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:170
+msgid "4 Seconds"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:170
+msgid "Standard generation"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:171
+msgid "8 Seconds"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:171
+msgid "Extended generation"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:187
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:191
+msgid "Video Resolution"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:196
+msgid "720p"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:196
+msgid "Standard Definition"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:197
+msgid "1080p"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:197
+msgid "High Definition"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:213
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:217
+msgid "Image Size"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:222
+msgid "1024x1024 (Square)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:222
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:223
+msgid "1024x1792 (Portrait)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:223
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:224
+msgid "DALL-E 3, Gemini"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:224
+msgid "1792x1024 (Landscape)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:241
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:251
+msgid "Google Gemini Base Prompt"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:254
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:255
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:264
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:273
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:282
+msgid "Reset to Default"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:260
+msgid "Gemini Veo Video Base Prompt"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:263
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:269
+msgid "OpenAI Base Prompt"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:272
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:278
+msgid "Final Prompt Structure Builder"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:281
+msgid "Use placeholders:"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:281
+msgid "to structure how the final combined prompt is sent."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:292
+msgid "Quick Start Guide"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:293
+msgid "Welcome to"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:293
+msgid "WooCommerce AI Try-On"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:293
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:296
+msgid "Pro Tip:"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:296
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:299
+msgid "1. Customer Experience"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:300
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:302
+msgid "2. The Generation Process"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:303
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:305
+msgid "3. Image vs Video"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:306
+msgid "Images:"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:306
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:307
+msgid "Videos:"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:307
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:311
+msgid "API Keys & Configuration"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:312
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:315
+msgid "Important:"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:315
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:318
+msgid "Getting a Google Gemini Key"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:319
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:321
+msgid "Getting an OpenAI Key"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:322
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:328
+msgid "Need Support?"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:329
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:330
+msgid "Contact Support &rarr;"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:334
+msgid "Useful Links"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:336
+msgid "Google AI Studio"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:337
+msgid "OpenAI Developer Platform"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:338
+msgid "WooCommerce Docs"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:351
+msgid "Save Configurations"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:372
+msgid "AI API Configuration"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:373
+msgid "Configure API keys, models, and generation settings."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:379
+msgid "Image Generation AI Provider"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:387
+msgid "Google Gemini"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:402
+msgid "OpenAI Integration Settings"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:405
+msgid "OpenAI API Key"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:421
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:477
+msgid "Test Connection"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:427
+msgid "OpenAI Image Model"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:445
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:501
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:536
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:24
+msgid "Verify"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:448
+msgid "Select the OpenAI model for image generation."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:456
+msgid "Google Gemini Integration Settings"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:457
+msgid "Powered by Veo for Video"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:461
+#: includes/ai_integration/gemini/admin/settings.php:82
+msgid "Gemini API Key"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:483
+msgid "Gemini Image Model"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:504
+msgid "Select the Gemini model for image generation."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:508
+msgid "Gemini Video Model (Google Veo)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:523
+msgid " ( Recommended )"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-admin.php:539
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:11
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:83
+msgid "API Key is empty."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:63
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:159
+msgid "Connection successful!"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:66
+msgid "API Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:71
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:101
+msgid "API Error"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:175
+msgid "Missing API key or model."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:205
+msgid "Generation failed. (HTTP %s)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:220
+msgid "Model verified successfully."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:224
+msgid "Model verification failed. (HTTP %s)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:228
+msgid "Invalid provider."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:298
+msgid "OpenAI API Request Failed: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:314
+msgid "Generation execution failure. %s"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:315
+msgid "OpenAI Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:369
+msgid "Gemini API Request Failed: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:388
+msgid "Gemini generation stopped. Reason: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:390
+msgid "Unknown Gemini Error."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:391
+msgid "Gemini API Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:416
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:435
+msgid "API Configuration missing. Contact store administrator."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:469
+msgid "No media data provided."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:479
+msgid "Invalid base64 data."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:490
+msgid "Failed to decode base64."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:513
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:538
+msgid "Saved to Media Library!"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:516
+msgid "Failed to save base64 media."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:520
+msgid "Failed to download media from URL."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:536
+msgid "Failed to save downloaded media."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-ajax.php:540
+msgid "Invalid media format."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:15
+msgid "Reset!"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:16
+msgid "Please enter an API key first."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:17
+msgid "Testing connection..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:18
+msgid "Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:19
+msgid "Unknown error"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:20
+msgid "Request failed: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:21
+msgid "Please select a model first."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:22
+msgid "Verifying..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:23
+msgid "Testing..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:25
+msgid "Verified! Model accepts this modality."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:26
+msgid "AJAX request failed."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:27
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:44
+msgid "Processing..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:45
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:46
+msgid "Status Check Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:47
+msgid "Execution Error: "
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:48
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:49
+msgid "No media available to download."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:50
+msgid "Only images/videos can be saved to the Media Library."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:51
+msgid "Saving..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:52
+msgid "Saved!"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:53
+#: includes/ai_integration/openai/qcld-bot-openai.php:649
+#: includes/ai_integration/openai/qcld-bot-openai.php:782
+#: includes/ai_integration/openai/qcld-bot-openai.php:793
+#: includes/ai_integration/openai/qcld-bot-openai.php:805
+#: includes/ai_integration/openai/qcld-bot-openai.php:855
+msgid "Error"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:54
+msgid "Error saving media."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:55
+msgid "Network error."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-assets.php:56
+msgid "Adding..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:43
+msgid "You must be logged in to use this feature."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:60
+msgid "AI Product Generation"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:67
+msgid "Original Image"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:69
+msgid "Original Product"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:72
+msgid "Upload Image"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:81
+msgid "Generate Image"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:87
+msgid "Background Preference"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:89
+msgid "Studio"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:90
+msgid "Outdoor"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:91
+msgid "Lifestyle"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:95
+msgid "Output Style"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:97
+msgid "Model Shoot"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:98
+msgid "Flat Lay"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:99
+msgid "Ghost Mannequin"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:106
+msgid "Prompt (Optional)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:107
+msgid "Add any specific instructions (optional)"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:111
+msgid "Generate"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:112
+msgid "Download"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:118
+msgid "Generated Output"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:120
+msgid "Ready to generate"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:123
+msgid "Generating Magic..."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/inc/ai-tryon-for-woocommerce-functions.php:131
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:556
+#: includes/ai_integration/openai/qcld-bot-openai.php:763
+msgid "Add to Cart"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:11
+msgid "AI Analyst"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:28
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:41
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:68
+msgid "AI Store Analyst"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:35
+msgid "WooCommerce Intelligence"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:43
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:46
+msgid "Active AI Provider"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:69
+msgid "Ready to analyze your store"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:72
+msgid "Clear Conversation History"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:74
+msgid "Reset Chat"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:84
+msgid "Ask a question"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:86
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:87
+msgid "Send question"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:92
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:100
+msgid "Store Insights"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:107
+msgid "AI Growth Recommendation"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:109
+msgid "Analyzing recent store orders and performance…"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:115
+msgid "Performance Overview"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:116
+msgid "Last 30 Days"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:128
+msgid "Revenue Trend"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:136
+msgid "Top Products by Revenue"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:34
+msgid "The requested analysis is not available."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:278
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:281
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:284
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:287
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-analytics.php:289
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:31
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:76
+msgid "Google Gemini request failed."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:206
+msgid "OpenAI request failed."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:284
+msgid "Which period performed best?"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:285
+msgid "Show the top products during the strongest period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:286
+msgid "Compare this trend with the previous period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:291
+msgid "Show the sales trend for the same period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:292
+msgid "Compare these products with the previous period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:293
+msgid "Summarize sales for this period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:298
+msgid "Show this period as a sales graph."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:299
+msgid "Which products sold best during this period?"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:300
+msgid "Compare this with the preceding period."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:304
+msgid "What were total sales in the last 30 days?"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:305
+msgid "Show the monthly sales trend for the last year."
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:306
+msgid "What are my top 10 products this year?"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:315
+msgid "Sales trend"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:324
+msgid "Top products by revenue"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:331
+msgid "Coupon-attributed revenue"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:332
+msgid "Most valuable customers"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:333
+msgid "Product profit"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:333
+msgid "Product revenue"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:334
+msgid "Revenue by channel"
+msgstr ""
+
+#: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-openai.php:335
+msgid "Frequently bought together"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:5
+msgid "Gemini settings"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:6
+#: includes/ai_integration/openai/admin/admin_ui2.php:8
+msgid "RAG"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:7
+msgid "Gemini Help"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:18
+msgid "Enable Gemini AI"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:18
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:27
+#: includes/ai_integration/openai/admin/settings.php:26
+msgid "Context awareness"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:37
+msgid "Enable page suggestions with Gemini Result"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:43
+#: includes/ai_integration/openai/admin/settings.php:38
+msgid "Select POST TYPE(s) to include with search results"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:84
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:84
+#: includes/ai_integration/gemini/admin/settings.php:133
+msgid "It requires a paid Gemini API plan"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:89
+msgid "Gemini Model"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:101
+msgid "Fetch Models"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:103
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:103
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:110
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:118
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:125
+#: includes/ai_integration/gemini/admin/settings.php:144
+#: includes/ai_integration/openai/admin/openai-rag.php:23
+#: includes/ai_integration/openai/admin/settings.php:143
+msgid "Save settings"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:149
+#: includes/ai_integration/openai/admin/openai-rag.php:29
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:151
+#: includes/ai_integration/openai/admin/help.php:59
+#: includes/ai_integration/openai/admin/openai-rag.php:31
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:154
+#: includes/ai_integration/openai/admin/openai-rag.php:34
+msgid "How to Use RAG in This Plugin:"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:156
+#: includes/ai_integration/openai/admin/help.php:168
+#: includes/ai_integration/openai/admin/help.php:172
+#: includes/ai_integration/openai/admin/openai-rag.php:36
+msgid "Enable RAG from the settings panel"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:157
+#: includes/ai_integration/openai/admin/help.php:173
+#: includes/ai_integration/openai/admin/openai-rag.php:37
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:158
+#: includes/ai_integration/openai/admin/help.php:174
+#: includes/ai_integration/openai/admin/openai-rag.php:38
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:159
+#: includes/ai_integration/openai/admin/help.php:175
+#: includes/ai_integration/openai/admin/openai-rag.php:39
+msgid "The system automatically stores embeddings in the database"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:160
+#: includes/ai_integration/openai/admin/help.php:176
+#: includes/ai_integration/openai/admin/openai-rag.php:40
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:161
+#: includes/ai_integration/openai/admin/help.php:177
+#: includes/ai_integration/openai/admin/openai-rag.php:41
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:163
+#: includes/ai_integration/openai/admin/help.php:182
+#: includes/ai_integration/openai/admin/openai-rag.php:43
+msgid "You can update or re-embed content at any time without retraining."
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:177
+msgid "Getting Started with gemini"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:183
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:184
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:185
+msgid "Grab your API key from"
+msgstr ""
+
+#: includes/ai_integration/gemini/admin/settings.php:186
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:121
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:463
+#: includes/ai_integration/openai/qcld-bot-openai.php:497
+#: includes/ai_integration/openai/qcld-bot-openai.php:784
+#: includes/ai_integration/openai/qcld-bot-openai.php:1139
+#: includes/ai_integration/openai/qcld-bot-openai.php:1224
+msgid "Failed in Security check"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:124
+#: includes/ai_integration/openai/qcld-bot-openai.php:500
+#: includes/ai_integration/openai/qcld-bot-openai.php:795
+msgid "Unauthorized user"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:207
+#: includes/ai_integration/openai/qcld-bot-openai.php:302
+msgid "Security check failed. Unauthorized request."
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:468
+msgid "API Key is required"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:510
+#: includes/ai_integration/openai/qcld-bot-openai.php:664
+#: includes/ai_integration/openai/qcld-bot-openai.php:711
+#: includes/ai_integration/openai/qcld-bot-openai.php:866
+msgid "Security check failed"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:516
+#: includes/ai_integration/openai/qcld-bot-openai.php:717
+msgid "Unauthorized access"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:525
+#: includes/ai_integration/openai/qcld-bot-openai.php:726
+msgid "Settings updated successfully"
+msgstr ""
+
+#: includes/ai_integration/gemini/qcld-bot-gemini.php:558
+#: includes/ai_integration/openai/qcld-bot-openai.php:765
+msgid "View Detail"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:4
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:7
+msgid "OpenAI settings"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:9
+msgid "Training Model"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:10
+msgid "GPT Assistant"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:11
+#: includes/ai_integration/openai/admin/help.php:287
+msgid "Fine Tune with Website Data"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:12
+msgid "AI Image Generator"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/admin_ui2.php:13
+msgid "AI Article Generator"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:4
+#: includes/ai_integration/openai/admin/content_writer.php:4
+#: includes/ai_integration/openai/admin/data_post_converter.php:4
+#: includes/ai_integration/openai/admin/files.php:4
+msgid "GPT Assistant is available with the "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:5
+#: includes/ai_integration/openai/admin/content_writer.php:5
+#: includes/ai_integration/openai/admin/data_post_converter.php:5
+#: includes/ai_integration/openai/admin/files.php:5
+msgid "WoowBot Pro Professional"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:6
+#: includes/ai_integration/openai/admin/content_writer.php:6
+#: includes/ai_integration/openai/admin/data_post_converter.php:6
+#: includes/ai_integration/openai/admin/files.php:6
+#: includes/ai_integration/openai/admin/img_generator.php:6
+msgid " and "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:7
+#: includes/ai_integration/openai/admin/content_writer.php:7
+#: includes/ai_integration/openai/admin/data_post_converter.php:7
+#: includes/ai_integration/openai/admin/files.php:7
+#: includes/ai_integration/openai/admin/img_generator.php:7
+msgid "Master"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:8
+#: includes/ai_integration/openai/admin/content_writer.php:8
+#: includes/ai_integration/openai/admin/data_post_converter.php:8
+#: includes/ai_integration/openai/admin/files.php:8
+#: includes/ai_integration/openai/admin/img_generator.php:8
+msgid " Licenses"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:12
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:14
+#: includes/ai_integration/openai/admin/help.php:75
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:17
+#: includes/ai_integration/openai/admin/help.php:78
+msgid "Setting up GPT Assistants:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:19
+#: includes/ai_integration/openai/admin/help.php:80
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:20
+#: includes/ai_integration/openai/admin/help.php:81
+msgid "Go to "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:20
+#: includes/ai_integration/openai/admin/help.php:81
+msgid "Assistants playground"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:20
+#: includes/ai_integration/openai/admin/help.php:81
+msgid " and create a new Assistant"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:21
+#: includes/ai_integration/openai/admin/help.php:82
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:22
+#: includes/ai_integration/openai/admin/help.php:83
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:22
+#: includes/ai_integration/openai/admin/help.php:83
+msgid "https://www.quantumcloud.net. "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:22
+#: includes/ai_integration/openai/admin/help.php:83
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:24
+#: includes/ai_integration/openai/admin/help.php:85
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:25
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/assistant.php:27
+msgid "Please check this article for step by step guide."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:7
+msgid "Getting Customized Results from the AI Services"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:14
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:17
+#: includes/ai_integration/openai/admin/settings.php:104
+msgid "**"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:18
+#: includes/ai_integration/openai/admin/settings.php:106
+msgid "Check this article"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:21
+#: includes/ai_integration/openai/admin/settings.php:109
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:25
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:33
+msgid "Getting Started with OpenAI"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:40
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:40
+msgid "pre-purchase API credits"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:40
+msgid " now. Go to "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:40
+msgid "https://platform.openai.com/account/billing/ "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:40
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:43
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:44
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:52
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:68
+msgid "GPT Assistants:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:97
+msgid "How to get an OpenAI API Key"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:103
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:104
+msgid "You can generate the API key from here: "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:104
+msgid "https://platform.openai.com/api-keys. "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:116
+msgid "Training or Fine Tuning OpenAI"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:123
+msgid "To train OpenAI"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:125
+msgid ""
+"a. To train or fine tune a model, 1st you need to:\n"
+"                "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:128
+msgid "Gather the necessary data you want to train with"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:129
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:130
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:131
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:134
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:136
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:137
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:138
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:139
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:141
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:143
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:144
+msgid "Each prompt and completion should be in a single line"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:148
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:149
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:152
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:160
+msgid "OpenAI RAG"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:167
+msgid "To Embed OpenAI"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:191
+msgid "Important points about fine tuning"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:197
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:198
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:199
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:200
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:209
+msgid "How to Optimize Fine Tuning"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:215
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:217
+msgid "Set a lower value for Temperature"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:218
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:219
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:220
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:229
+msgid "Presence Penalty"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:235
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:243
+msgid "Frequency Penalty"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:249
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:259
+msgid "Temperature"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:265
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:273
+msgid "My OpenAI does not work"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:279
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/help.php:293
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/img_generator.php:4
+msgid "Fine tuning and training is available with the "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/img_generator.php:5
+msgid "WoowbotPro Professional"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/openai-rag.php:11
+#: includes/ai_integration/openai/admin/settings.php:79
+msgid "It requires a paid OpenAI API plan"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:6
+msgid "Enable OpenAI"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:6
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:13
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:20
+msgid "Enable OpenAI Product Cards"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:20
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:32
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:77
+#: includes/ai_integration/openai/admin/settings.php:78
+msgid "Api key"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:84
+msgid "OpenAI Model"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:86
+msgid "GPT-5-Mini"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:87
+msgid "GPT-5-Nano"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:88
+msgid "GPT-5"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:89
+msgid "GPT-4.1-Mini"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:90
+msgid "GPT-4.1-Nano"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:91
+msgid "GPT-4.1"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:92
+msgid "GPT-4o-Mini"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:93
+msgid "GPT-4o"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:94
+msgid "gpt-4-turbo"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:95
+msgid "GPT-4"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:96
+msgid "GPT-3 turbo"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:101
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:101
+msgid "Customized Results"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:101
+msgid ". Upto 3000 words is fine."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:113
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:114
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:115
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:118
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:119
+msgid "Content for the response"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:123
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:126
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:130
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:137
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:146
+msgid "Check Connection  "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:146
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:150
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:150
+msgid "billing page."
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:152
+msgid "How to reduce cost "
+msgstr ""
+
+#: includes/ai_integration/openai/admin/settings.php:152
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:639
+#: includes/ai_integration/openai/qcld-bot-openai.php:640
+msgid "success"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:650
+msgid "error"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:700
+msgid "RAG cannot be enabled without an API key."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:702
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:807
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:839
+msgid "Congrats! You are connected to AI."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:845
+msgid "Success"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:851
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:871
+msgid "Invalid product ID"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:876
+msgid "Product not found"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:1144
+#: includes/ai_integration/openai/qcld-bot-openai.php:1229
+msgid "Insufficient permissions"
+msgstr ""
+
+#: includes/ai_integration/openai/qcld-bot-openai.php:1215
+msgid "AI Setup configuration saved successfully."
+msgstr ""
+
+#: includes/class-common-function.php:198
+msgid ""
+"session_schedules_rate_limit_' . $role ),\n"
+"\t\t\t\t);\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
+"\t\t\t}\n"
+"\t\t\treturn $schedules;\n"
+"\t\t}\n"
+"        // wpshedule event to reset the rate limit used counts\n"
+"\t\tpublic function schedule_rate_limit_reset_events()\n"
+"\t\t{\n"
+"\t\t\t// Ensure WordPress cron functions are available\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+
+#: includes/class-common-function.php:233
+msgid "Rate limit exceeded. Please try again later."
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:24
+msgid "More WordPress Goodies for You!"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:25
+#: qc-support-promo-page/class-qc-support-promo-page.php:84
+msgid "Support"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:88
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:89
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:91
+msgid "Get Priority Support "
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:92
+msgid "Online KnowledgeBase"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:99
+msgid "Get Support for Free Version"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:134
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:144
+msgid "Please fill up all the requried form fields."
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:148
+msgid "Invalid email address."
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:157
+msgid "Support Request Details:"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:164
+msgid "Sent Via the Plugin"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:166
+msgid "Mail sent from:"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:166
+msgid "URL:"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:167
+msgid "Mail Generated on:"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:187
+msgid "From Plugin Support Page:"
+msgstr ""
+
+#: qc-support-promo-page/class-qc-support-promo-page.php:194
+msgid "Your email was sent successfully. Thanks!"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:123
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:472
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:853
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1268
+#: qcld-recommendbot-plugin.php:77
+msgid "By %s"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:147
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:496
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:877
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1292
+#: qcld-recommendbot-plugin.php:101
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:149
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:498
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:879
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1294
+#: qcld-recommendbot-plugin.php:103
+msgid "Install Now"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:154
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:503
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:884
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1299
+#: qcld-recommendbot-plugin.php:108
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:169
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:518
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:899
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1314
+#: qcld-recommendbot-plugin.php:123
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:171
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:520
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:901
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1316
+#: qcld-recommendbot-plugin.php:125
+msgid "Update Now"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:176
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:525
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:906
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1321
+#: qcld-recommendbot-plugin.php:130
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:187
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:536
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:917
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1332
+#: qcld-recommendbot-plugin.php:141
+msgctxt "plugin"
+msgid "Active"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:190
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:539
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:920
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1335
+#: qcld-recommendbot-plugin.php:144
+msgid "Activate"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:192
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:541
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:922
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1337
+#: qcld-recommendbot-plugin.php:146
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:203
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:552
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:933
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1348
+#: qcld-recommendbot-plugin.php:157
+msgid "Network Activate"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:205
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:554
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:935
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1350
+#: qcld-recommendbot-plugin.php:159
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:218
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:567
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:948
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1363
+#: qcld-recommendbot-plugin.php:172
+msgctxt "plugin"
+msgid "Installed"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:227
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:576
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:957
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1372
+msgid "More Details"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:251
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:600
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:981
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1396
+#: qcld-recommendbot-plugin.php:207
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:255
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:604
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:985
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1400
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:263
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:279
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:612
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:628
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:993
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1009
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1408
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1424
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:269
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:288
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:618
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:637
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:999
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1018
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1414
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1433
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:275
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:624
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1005
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1420
+#: qcld-recommendbot-plugin.php:231
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:284
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:633
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1014
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1429
+#: qcld-recommendbot-plugin.php:240
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:321
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:670
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1051
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1466
+msgid "Live Preview"
+msgstr ""
+
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:324
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:673
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1054
+#: qc-support-promo-page/qc-clr-recommendbot-support-plugin.php:1469
+msgid "Update To Pro"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:142
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr ""
+
+#: qcld-woowbot-info-page.php:145
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr ""
+
+#: qcld-woowbot-info-page.php:148
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr ""
+
+#: qcld-woowbot-info-page.php:151
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:153
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr ""
+
+#: qcld-woowbot-info-page.php:156
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:157
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:163
+msgid "Get the WoowBot Pro Now!"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:172
+msgid "Crafted By:"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:172
+msgid "Web Design Company"
+msgstr ""
+
+#: qcld-woowbot-info-page.php:173
+msgid "QuantumCloud"
+msgstr ""
+
+#: qcld-woowbot.php:136 qcld-woowbot.php:347 qcld-woowbot.php:353
+msgid "WoowBot Control Panel"
+msgstr ""
+
+#: qcld-woowbot.php:137
+msgid "WoowBot Panel"
+msgstr ""
+
+#: qcld-woowbot.php:302
+msgid "Yes"
+msgstr ""
+
+#: qcld-woowbot.php:303
+msgid "No"
+msgstr ""
+
+#: qcld-woowbot.php:304
+msgid "OR"
+msgstr ""
+
+#: qcld-woowbot.php:355
+msgid " Get the Professional Version Now!"
+msgstr ""
+
+#: qcld-woowbot.php:362
+msgid "General settings"
+msgstr ""
+
+#: qcld-woowbot.php:364
+msgid "WoowBot ICONS"
+msgstr ""
+
+#: qcld-woowbot.php:365
+msgid "Language Center"
+msgstr ""
+
+#: qcld-woowbot.php:366
+msgid "Custom CSS"
+msgstr ""
+
+#: qcld-woowbot.php:377
+msgid "Emails Will be Sent to"
+msgstr ""
+
+#: qcld-woowbot.php:403
+msgid "From Email Address"
+msgstr ""
+
+#: qcld-woowbot.php:415
+msgid "Disable WoowBot"
+msgstr ""
+
+#: qcld-woowbot.php:419
+msgid "Disable WoowBot to Load"
+msgstr ""
+
+#: qcld-woowbot.php:425 qcld-woowbot.php:429
+msgid "Enable Product details from AI"
+msgstr ""
+
+#: qcld-woowbot.php:435
+msgid "Disable WooWBot on Mobile Device"
+msgstr ""
+
+#: qcld-woowbot.php:439
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr ""
+
+#: qcld-woowbot.php:448
+msgid "Override WoowBot Icon's Position"
+msgstr ""
+
+#: qcld-woowbot.php:454
+msgid "120"
+msgstr ""
+
+#: qcld-woowbot.php:458
+msgid "50"
+msgstr ""
+
+#: qcld-woowbot.php:464
+msgid "From Right In px"
+msgstr ""
+
+#: qcld-woowbot.php:469
+msgid "From Bottom In px"
+msgstr ""
+
+#: qcld-woowbot.php:476
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr ""
+
+#: qcld-woowbot.php:484
+msgid "Page controller"
+msgstr ""
+
+#: qcld-woowbot.php:489
+msgid "Show on Home Page"
+msgstr ""
+
+#: qcld-woowbot.php:497 qcld-woowbot.php:518
+msgid "YES"
+msgstr ""
+
+#: qcld-woowbot.php:503 qcld-woowbot.php:524
+msgid "NO"
+msgstr ""
+
+#: qcld-woowbot.php:510
+msgid "Show on blog posts"
+msgstr ""
+
+#: qcld-woowbot.php:531
+msgid "Show on  pages"
+msgstr ""
+
+#: qcld-woowbot.php:539
+msgid "All Pages"
+msgstr ""
+
+#: qcld-woowbot.php:545
+msgid "Selected Pages Only "
+msgstr ""
+
+#: qcld-woowbot.php:574
+msgid "Exclude from Custom Post"
+msgstr ""
+
+#: qcld-woowbot.php:618
+msgid "Icon - 0"
+msgstr ""
+
+#: qcld-woowbot.php:624
+msgid "Icon - 1"
+msgstr ""
+
+#: qcld-woowbot.php:629
+msgid "Icon - 2"
+msgstr ""
+
+#: qcld-woowbot.php:634
+msgid "Icon - 3"
+msgstr ""
+
+#: qcld-woowbot.php:639
+msgid "Icon - 4"
+msgstr ""
+
+#: qcld-woowbot.php:644
+msgid "Icon - 5"
+msgstr ""
+
+#: qcld-woowbot.php:649
+msgid "Icon - 6"
+msgstr ""
+
+#: qcld-woowbot.php:654
+msgid "Icon - 7"
+msgstr ""
+
+#: qcld-woowbot.php:664
+msgid "Icon -9"
+msgstr ""
+
+#: qcld-woowbot.php:669
+msgid "Icon - 10"
+msgstr ""
+
+#: qcld-woowbot.php:674
+msgid "Icon - 11"
+msgstr ""
+
+#: qcld-woowbot.php:679
+msgid "Icon - 12"
+msgstr ""
+
+#: qcld-woowbot.php:684
+msgid "Icon - 13"
+msgstr ""
+
+#: qcld-woowbot.php:689
+msgid "Icon - 14"
+msgstr ""
+
+#: qcld-woowbot.php:702
+msgid "Custom Icon"
+msgstr ""
+
+#: qcld-woowbot.php:712
+msgid "Upload custom Floating Icon"
+msgstr ""
+
+#: qcld-woowbot.php:718
+msgid "Upload Custom Icon"
+msgstr ""
+
+#: qcld-woowbot.php:727
+msgid " Woobot Agent Image"
+msgstr ""
+
+#: qcld-woowbot.php:737
+msgid "Default Agent"
+msgstr ""
+
+#: qcld-woowbot.php:754
+msgid "Custom Agent"
+msgstr ""
+
+#: qcld-woowbot.php:767
+msgid "Custom Agent Icon"
+msgstr ""
+
+#: qcld-woowbot.php:772
+msgid "Upload Agent Icon"
+msgstr ""
+
+#: qcld-woowbot.php:784
+msgid "Custom Backgroud"
+msgstr ""
+
+#: qcld-woowbot.php:789
+msgid "Change the  message board background image (except mini mode)."
+msgstr ""
+
+#: qcld-woowbot.php:800
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr ""
+
+#: qcld-woowbot.php:814
+msgid "Upload  background."
+msgstr ""
+
+#: qcld-woowbot.php:821
+msgid "Custom message board background"
+msgstr ""
+
+#: qcld-woowbot.php:837 qcld-woowbot.php:852
+msgid "Message setting for"
+msgstr ""
+
+#: qcld-woowbot.php:837
+msgid "Identity"
+msgstr ""
+
+#: qcld-woowbot.php:839
+msgid "Your Company or Website Name"
+msgstr ""
+
+#: qcld-woowbot.php:843
+msgid "Agent name"
+msgstr ""
+
+#: qcld-woowbot.php:847
+msgid "has joined the conversation"
+msgstr ""
+
+#: qcld-woowbot.php:852
+msgid "Greetings"
+msgstr ""
+
+#: qcld-woowbot.php:854
+msgid "Welcome to "
+msgstr ""
+
+#: qcld-woowbot.php:858
+msgid "Hi There! May I know your name?"
+msgstr ""
+
+#: qcld-woowbot.php:862
+msgid "I am "
+msgstr ""
+
+#: qcld-woowbot.php:866
+msgid "Nice to meet you"
+msgstr ""
+
+#: qcld-woowbot.php:875 qcld-woowbot.php:894
+msgid "Message settings for"
+msgstr ""
+
+#: qcld-woowbot.php:875
+msgid "Editor Box"
+msgstr ""
+
+#: qcld-woowbot.php:881
+msgid "is typing..."
+msgstr ""
+
+#: qcld-woowbot.php:885
+msgid "Send a message"
+msgstr ""
+
+#: qcld-woowbot.php:894
+msgid "Products Search"
+msgstr ""
+
+#: qcld-woowbot.php:896
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr ""
+
+#: qcld-woowbot.php:900
+msgid "if products found"
+msgstr ""
+
+#: qcld-woowbot.php:904
+msgid "If no matching products is found"
+msgstr ""
+
+#: qcld-woowbot.php:908
+msgid "Can you be more specific?"
+msgstr ""
+
+#: qcld-woowbot.php:912
+msgid "Product Search"
+msgstr ""
+
+#: qcld-woowbot.php:916
+msgid "Catalog"
+msgstr ""
+
+#: qcld-woowbot.php:920
+msgid "Send Us Email"
+msgstr ""
+
+#: qcld-woowbot.php:924
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr ""
+
+#: qcld-woowbot.php:928
+msgid "Too many choices? Let's try another search term"
+msgstr ""
+
+#: qcld-woowbot.php:932
+msgid "Email has been sent successfully"
+msgstr ""
+
+#: qcld-woowbot.php:936
+msgid "Please provide your email address"
+msgstr ""
+
+#: qcld-woowbot.php:940
+msgid "Please write you message"
+msgstr ""
+
+#: qcld-woowbot.php:951
+msgid "You can paste or write your custom css here."
+msgstr ""
+
+#: qcld-woowbot.php:977
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr ""
+
+#: qcld-woowbot.php:979
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr ""
+
+#: qcld-woowbot.php:981
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr ""
+
+#: qcld-woowbot.php:983
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr ""
+
+#: qcld-woowbot.php:995
+msgid "Multi Language Addon (**new)"
+msgstr ""
+
+#: qcld-woowbot.php:996
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr ""
+
+#: qcld-woowbot.php:1008
+msgid "Voice Message AddOn (**new)"
+msgstr ""
+
+#: qcld-woowbot.php:1009
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr ""
+
+#: qcld-woowbot.php:1021
+msgid "Extended UI Addon"
+msgstr ""
+
+#: qcld-woowbot.php:1022
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr ""
+
+#: qcld-woowbot.php:1034
+msgid "Simple Text Responses Pro"
+msgstr ""
+
+#: qcld-woowbot.php:1035
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr ""
+
+#: qcld-woowbot.php:1047
+msgid "Bargaining ChatBot for WoowBot"
+msgstr ""
+
+#: qcld-woowbot.php:1048
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr ""
+
+#: qcld-woowbot.php:1060
+msgid "Conversational Form Builder"
+msgstr ""
+
+#: qcld-woowbot.php:1061
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr ""
+
+#: qcld-woowbot.php:1074
+msgid "Export Import Settings"
+msgstr ""
+
+#: qcld-woowbot.php:1075
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr ""
+
+#: qcld-woowbot.php:1088
+msgid "Messenger ChatBot Addon"
+msgstr ""
+
+#: qcld-woowbot.php:1089
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr ""
+
+#: qcld-woowbot.php:1102
+msgid "Extended Search"
+msgstr ""
+
+#: qcld-woowbot.php:1103
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr ""
+
+#: qcld-woowbot.php:1116
+msgid "ChatBot Session Save Addon"
+msgstr ""
+
+#: qcld-woowbot.php:1117
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr ""
+
+#: qcld-woowbot.php:1130
+msgid "LiveChat Addon"
+msgstr ""
+
+#: qcld-woowbot.php:1131
+msgid "Live Human Chat integrated with WPBot"
+msgstr ""
+
+#: qcld-woowbot.php:1144
+msgid "White Label WPBot"
+msgstr ""
+
+#: qcld-woowbot.php:1145
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr ""
+
+#: qcld-woowbot.php:1158
+msgid "Mailing List Integration AddOn"
+msgstr ""
+
+#: qcld-woowbot.php:1159
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr ""
+
+#: qcld-woowbot.php:1175
+msgid "WoowBot Master Theme"
+msgstr ""
+
+#: qcld-woowbot.php:1176
+msgid "Get a WoowBot Powered Theme!"
+msgstr ""
+
+#: qcld-woowbot.php:1253
+msgid "Save Settings"
+msgstr ""
+
+#: qcld-woowbot.php:1795
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr ""
+
+#: qcld-woowbot.php:1795
+msgid "AI and Natural Language Processing?"
+msgstr ""
+
+#: qcld-woowbot.php:1795
+msgid "Upgrade to the Pro version"
+msgstr ""
+
+#: qcld-woowbot.php:1796
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr ""
+
+#: qcld-woowbot.php:1796
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr ""
+
+#: qcld-woowbot.php:1797
+msgid "**Pro Tip: "
+msgstr ""
+
+#: qcld-woowbot.php:1797
+msgid "Use ChatGPT to"
+msgstr ""
+
+#: qcld-woowbot.php:1797
+msgid "answer  questions and provide real customer support"
+msgstr ""
+
+#: qcld-woowbot.php:1798
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr ""
+
+#: qcld-woowbot.php:1798
+msgid "Customer Conversion report"
+msgstr ""
+
+#: qcld-woowbot.php:1798
+msgid "in the Pro version"
+msgstr ""
+
+#: qcld-woowbot.php:1799
+msgid "**Pro Tip:"
+msgstr ""
+
+#: qcld-woowbot.php:1799
+msgid "Use WoowBot Pro to"
+msgstr ""
+
+#: qcld-woowbot.php:1799
+msgid "provide live chat suport to your customers!"
+msgstr ""
+
+#: qcld-woowbot.php:1800
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr ""
+
+#: qcld-woowbot.php:1800
+msgid "Exit Intent or Scroll down Popups"
+msgstr ""
+
+#: qcld-woowbot.php:1800
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr ""
+
+#: qcld-woowbot.php:1801
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr ""
+
+#: qcld-woowbot.php:1801
+msgid "Plug and Play"
+msgstr ""
+
+#: qcld-woowbot.php:1801
+msgid "No complex bot training required!"
+msgstr ""
+
+#: qcld-woowbot.php:1802
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr ""
+
+#: qcld-woowbot.php:1802
+msgid "Facebook, Instagram, Telegram"
+msgstr ""
+
+#: qcld-woowbot.php:1802
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr ""

@@ -8,7 +8,7 @@ function qcld_woo_chatbot_test_openai_connection() {
     $api_key = isset( $_POST['api_key'] ) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
     
     if ( empty( $api_key ) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'API Key is empty.', 'ai-tryon-for-woocommerce' ) ) );
+        wp_send_json_error( array( 'message' => esc_html__('API Key is empty.', 'woowbot-woocommerce-chatbot') ) );
     }
 
     $response = wp_remote_get( 'https://api.openai.com/v1/models', array(
@@ -60,14 +60,15 @@ function qcld_woo_chatbot_test_openai_connection() {
         
         update_option( 'qcld_woo_chatbot_openai_available_image_models', $image_models );
         update_option( 'qcld_woo_chatbot_openai_available_video_models', $video_models );
-        wp_send_json_success( array( 'message' => esc_html( 'Connection successful!', 'ai-tryon-for-woocommerce' ), 'image_models' => $image_models, 'video_models' => $video_models ) );
+        wp_send_json_success( array( 'message' => esc_html__('Connection successful!', 'woowbot-woocommerce-chatbot'), 'image_models' => $image_models, 'video_models' => $video_models ) );
     } else {
         if ( isset($data['error']['message']) ) {
-            wp_send_json_error( array( 'message' => esc_html( 'API Error: ', 'ai-tryon-for-woocommerce' ) . $data['error']['message'] ) );
+            wp_send_json_error( array( 'message' => esc_html__('API Error: ', 'woowbot-woocommerce-chatbot') . $data['error']['message'] ) );
         } else {
             $status_code = wp_remote_retrieve_response_code( $response );
             $raw_body = wp_remote_retrieve_body( $response );
-            wp_send_json_error( array( 'message' => sprintf( esc_html( 'Connection failed (HTTP %s). Details: %s', 'ai-tryon-for-woocommerce' ), $status_code, esc_html(substr($raw_body, 0, 200)) ) ) );
+            /* translators: 1: HTTP status code, 2: Response body details */
+            wp_send_json_error( array( 'message' => sprintf( esc_html__('Connection failed (HTTP %1$s). Details: %2$s', 'woowbot-woocommerce-chatbot'), $status_code, esc_html(substr($raw_body, 0, 200)) ) ) );
         }
     }
 }
@@ -79,7 +80,7 @@ function qcld_woo_chatbot_test_gemini_connection() {
     $api_key = isset( $_POST['api_key'] ) ? sanitize_text_field( wp_unslash( $_POST['api_key'] ) ) : '';
     
     if ( empty( $api_key ) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'API Key is empty.', 'ai-tryon-for-woocommerce' ) ) );
+        wp_send_json_error( array( 'message' => esc_html__('API Key is empty.', 'woowbot-woocommerce-chatbot') ) );
     }
 
     // Call ModelService.ListModels
@@ -97,7 +98,7 @@ function qcld_woo_chatbot_test_gemini_connection() {
     $data = json_decode( $body, true );
 
     if ( isset( $data['error'] ) ) {
-        $msg = isset($data['error']['message']) ? $data['error']['message'] : esc_html( 'API Error', 'ai-tryon-for-woocommerce' );
+        $msg = isset($data['error']['message']) ? $data['error']['message'] : esc_html__('API Error', 'woowbot-woocommerce-chatbot');
         wp_send_json_error( array( 'message' => $msg ) );
     }
 
@@ -155,7 +156,7 @@ function qcld_woo_chatbot_test_gemini_connection() {
     update_option( 'qcld_woo_chatbot_gemini_available_video_models', $video_models );
     
     wp_send_json_success( array( 
-        'message'       => esc_html( 'Connection successful!', 'ai-tryon-for-woocommerce' ), 
+        'message'       => esc_html__('Connection successful!', 'woowbot-woocommerce-chatbot'), 
         'image_models'  => $image_models,
         'video_models'  => $video_models
     ) );
@@ -171,7 +172,7 @@ function qcld_woo_chatbot_verify_model_capability() {
     $api_key            = isset($_POST['api_key']) ? sanitize_text_field(wp_unslash($_POST['api_key'])) : '';
 
     if (empty($api_key) || empty($model)) {
-        wp_send_json_error(array('message' => esc_html( 'Missing API key or model.', 'ai-tryon-for-woocommerce' )));
+        wp_send_json_error(array('message' => esc_html__('Missing API key or model.', 'woowbot-woocommerce-chatbot')));
     }
     
     // phpcs:ignore Squiz.PHP.DiscouragedFunctions.Discouraged
@@ -200,7 +201,8 @@ function qcld_woo_chatbot_verify_model_capability() {
         if ( isset( $body['data'][0]['url'] ) || isset( $body['data'][0]['b64_json'] ) ) {
             wp_send_json_success();
         } else {
-            $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html( 'Generation failed. (HTTP %s)', 'ai-tryon-for-woocommerce' ), wp_remote_retrieve_response_code($response) );
+            /* translators: %s: HTTP response code */
+            $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html__('Generation failed. (HTTP %s)', 'woowbot-woocommerce-chatbot'), wp_remote_retrieve_response_code($response) );
             wp_send_json_error( array( 'message' => $msg ) );
         }
     } elseif ( $provider === 'gemini' ) {
@@ -215,14 +217,15 @@ function qcld_woo_chatbot_verify_model_capability() {
 
         $code = wp_remote_retrieve_response_code($response);
         if ( $code == 200 ) {
-            wp_send_json_success(array('message' => esc_html( 'Model verified successfully.', 'ai-tryon-for-woocommerce' )));
+            wp_send_json_success(array('message' => esc_html__('Model verified successfully.', 'woowbot-woocommerce-chatbot')));
         } else {
             $body = json_decode( wp_remote_retrieve_body( $response ), true );
-            $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html( 'Model verification failed. (HTTP %s)', 'ai-tryon-for-woocommerce' ), $code );
+            /* translators: %s: HTTP response code */
+            $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html__('Model verification failed. (HTTP %s)', 'woowbot-woocommerce-chatbot'), $code );
             wp_send_json_error( array( 'message' => $msg ) );
         }
     } else {
-        wp_send_json_error(array('message' => esc_html( 'Invalid provider.', 'ai-tryon-for-woocommerce' )));
+        wp_send_json_error(array('message' => esc_html__('Invalid provider.', 'woowbot-woocommerce-chatbot')));
     }
 }
 
@@ -292,7 +295,7 @@ function qcld_woo_chatbot_execute_openai_image_generation( $final_prompt, $api_k
     ));
 
     if ( is_wp_error( $response ) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'OpenAI API Request Failed: ', 'ai-tryon-for-woocommerce' ) . $response->get_error_message() ) );
+        wp_send_json_error( array( 'message' => esc_html__('OpenAI API Request Failed: ', 'woowbot-woocommerce-chatbot') . $response->get_error_message() ) );
     }
 
     $body = json_decode( wp_remote_retrieve_body( $response ), true );
@@ -307,8 +310,9 @@ function qcld_woo_chatbot_execute_openai_image_generation( $final_prompt, $api_k
         $html = '<img src="' . $data_uri . '" alt="AI Try On Render Outcome" class="qcld_woo_chatbot-output-media" />';
         wp_send_json_success( array( 'html' => $html ) );
     } else {
-        $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html( 'Generation execution failure. %s', 'ai-tryon-for-woocommerce' ), wp_remote_retrieve_response_code($response) );
-        wp_send_json_error( array( 'message' => esc_html( 'OpenAI Error: ', 'ai-tryon-for-woocommerce' ) . $msg ) );
+        /* translators: %s: HTTP response code */
+        $msg = isset($body['error']['message']) ? $body['error']['message'] : sprintf( esc_html__('Generation execution failure. %s', 'woowbot-woocommerce-chatbot'), wp_remote_retrieve_response_code($response) );
+        wp_send_json_error( array( 'message' => esc_html__('OpenAI Error: ', 'woowbot-woocommerce-chatbot') . $msg ) );
     }
 }
 
@@ -362,7 +366,7 @@ function qcld_woo_chatbot_execute_gemini_image_generation( $final_prompt, $api_k
     ));
 
     if ( is_wp_error( $response ) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'Gemini API Request Failed: ', 'ai-tryon-for-woocommerce' ) . $response->get_error_message() ) );
+        wp_send_json_error( array( 'message' => esc_html__('Gemini API Request Failed: ', 'woowbot-woocommerce-chatbot') . $response->get_error_message() ) );
     }
 
     $body = json_decode( wp_remote_retrieve_body( $response ), true );
@@ -381,10 +385,10 @@ function qcld_woo_chatbot_execute_gemini_image_generation( $final_prompt, $api_k
         }
         wp_send_json_success( array( 'html' => $html ) );
     } elseif ( isset($body['candidates'][0]['finishReason']) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'Gemini generation stopped. Reason: ', 'ai-tryon-for-woocommerce' ) . $body['candidates'][0]['finishReason'] ) );
+        wp_send_json_error( array( 'message' => esc_html__('Gemini generation stopped. Reason: ', 'woowbot-woocommerce-chatbot') . $body['candidates'][0]['finishReason'] ) );
     } else {
-        $msg = isset($body['error']['message']) ? $body['error']['message'] : esc_html( 'Unknown Gemini Error.', 'ai-tryon-for-woocommerce' );
-        wp_send_json_error( array( 'message' => esc_html( 'Gemini API Error: ', 'ai-tryon-for-woocommerce' ) . $msg ) );
+        $msg = isset($body['error']['message']) ? $body['error']['message'] : esc_html__('Unknown Gemini Error.', 'woowbot-woocommerce-chatbot');
+        wp_send_json_error( array( 'message' => esc_html__('Gemini API Error: ', 'woowbot-woocommerce-chatbot') . $msg ) );
     }
 }
 
@@ -409,7 +413,7 @@ function qcld_woo_chatbot_handle_generation_backend() {
         }
         
         if ( $current_count >= $limit_val ) {
-            wp_send_json_error( array( 'message' => esc_html( 'You have reached your daily limit for AI generations. Please try again tomorrow.', 'ai-tryon-for-woocommerce' ) ) );
+            wp_send_json_error( array( 'message' => esc_html__('You have reached your daily limit for AI generations. Please try again tomorrow.', 'woowbot-woocommerce-chatbot') ) );
         }
         
         set_transient($transient_name, $current_count + 1, DAY_IN_SECONDS);
@@ -428,7 +432,7 @@ function qcld_woo_chatbot_handle_generation_backend() {
     $model   = qcld_woo_chatbot_get_appropriate_model( $provider, $generation_type );
 
     if ( empty( $api_key ) ) {
-        wp_send_json_error( array( 'message' => esc_html( 'API Configuration missing. Contact store administrator.', 'ai-tryon-for-woocommerce' ) ) );
+        wp_send_json_error( array( 'message' => esc_html__('API Configuration missing. Contact store administrator.', 'woowbot-woocommerce-chatbot') ) );
     }
 
     $product_image = isset($_POST['product_image']) ? sanitize_textarea_field( wp_unslash( $_POST['product_image'] ) ) : '';
@@ -462,7 +466,7 @@ function qcld_woo_chatbot_save_media_to_library() {
     $media_data = isset($_POST['media_data']) ? sanitize_textarea_field( wp_unslash( $_POST['media_data'] ) ) : '';
     
     if ( empty($media_data) ) {
-        wp_send_json_error( array('message' => esc_html( 'No media data provided.', 'ai-tryon-for-woocommerce' )) );
+        wp_send_json_error( array('message' => esc_html__('No media data provided.', 'woowbot-woocommerce-chatbot')) );
     }
 
     require_once( ABSPATH . 'wp-admin/includes/image.php' );
@@ -472,7 +476,7 @@ function qcld_woo_chatbot_save_media_to_library() {
     if ( stripos($media_data, 'data:image') === 0 || stripos($media_data, 'data:video') === 0 ) {
         preg_match('/data:((image|video)\/[^;]+);base64,(.+)/', $media_data, $matches);
         if ( count($matches) !== 4 ) {
-            wp_send_json_error( array('message' => esc_html( 'Invalid base64 data.', 'ai-tryon-for-woocommerce' )) );
+            wp_send_json_error( array('message' => esc_html__('Invalid base64 data.', 'woowbot-woocommerce-chatbot')) );
         }
         $mime = $matches[1];
         $type = $matches[2];
@@ -483,7 +487,7 @@ function qcld_woo_chatbot_save_media_to_library() {
         
         $decoded = base64_decode($base64);
         if ( !$decoded ) {
-            wp_send_json_error( array('message' => esc_html( 'Failed to decode base64.', 'ai-tryon-for-woocommerce' )) );
+            wp_send_json_error( array('message' => esc_html__('Failed to decode base64.', 'woowbot-woocommerce-chatbot')) );
         }
         
         $filename = 'qcld_woo_chatbot-generated-' . time() . '.' . $ext;
@@ -506,14 +510,14 @@ function qcld_woo_chatbot_save_media_to_library() {
             if ( ! is_wp_error( $attachment_id ) ) {
                 $attach_data = wp_generate_attachment_metadata( $attachment_id, $upload_file['file'] );
                 wp_update_attachment_metadata( $attachment_id, $attach_data );
-                wp_send_json_success( array('message' => esc_html( 'Saved to Media Library!', 'ai-tryon-for-woocommerce' )) );
+                wp_send_json_success( array('message' => esc_html__('Saved to Media Library!', 'woowbot-woocommerce-chatbot')) );
             }
         }
-        wp_send_json_error( array('message' => esc_html( 'Failed to save base64 media.', 'ai-tryon-for-woocommerce' )) );
+        wp_send_json_error( array('message' => esc_html__('Failed to save base64 media.', 'woowbot-woocommerce-chatbot')) );
     } else if ( filter_var($media_data, FILTER_VALIDATE_URL) ) {
         $tmp = download_url( $media_data );
         if ( is_wp_error( $tmp ) ) {
-            wp_send_json_error( array('message' => esc_html( 'Failed to download media from URL.', 'ai-tryon-for-woocommerce' )) );
+            wp_send_json_error( array('message' => esc_html__('Failed to download media from URL.', 'woowbot-woocommerce-chatbot')) );
         }
         
         $mime = wp_check_filetype($tmp);
@@ -529,10 +533,10 @@ function qcld_woo_chatbot_save_media_to_library() {
         $attachment_id = media_handle_sideload( $file_array, 0 );
         if ( is_wp_error($attachment_id) ) {
             @wp_delete_file($file_array['tmp_name']);
-            wp_send_json_error( array('message' => esc_html( 'Failed to save downloaded media.', 'ai-tryon-for-woocommerce' )) );
+            wp_send_json_error( array('message' => esc_html__('Failed to save downloaded media.', 'woowbot-woocommerce-chatbot')) );
         }
-        wp_send_json_success( array('message' => esc_html( 'Saved to Media Library!', 'ai-tryon-for-woocommerce' )) );
+        wp_send_json_success( array('message' => esc_html__('Saved to Media Library!', 'woowbot-woocommerce-chatbot')) );
     } else {
-        wp_send_json_error( array('message' => esc_html( 'Invalid media format.', 'ai-tryon-for-woocommerce' )) );
+        wp_send_json_error( array('message' => esc_html__('Invalid media format.', 'woowbot-woocommerce-chatbot')) );
     }
 }

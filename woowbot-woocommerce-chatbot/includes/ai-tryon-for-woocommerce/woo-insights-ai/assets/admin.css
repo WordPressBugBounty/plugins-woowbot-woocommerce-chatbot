@@ -1,0 +1,908 @@
+/* ==========================================================================
+   AI Store Analyst - Modern Professional Dashboard Styles
+   ========================================================================== */
+
+:root {
+	--wia-primary: #2563eb;
+	--wia-primary-hover: #1d4ed8;
+	--wia-primary-light: #eff6ff;
+	--wia-primary-border: #bfdbfe;
+	
+	--wia-bg-page: #f8fafc;
+	--wia-bg-card: #ffffff;
+	--wia-bg-muted: #f1f5f9;
+	--wia-bg-subtle: #f8fafc;
+	
+	--wia-border: #e2e8f0;
+	--wia-border-focus: #3b82f6;
+	
+	--wia-text-heading: #0f172a;
+	--wia-text-body: #334155;
+	--wia-text-muted: #64748b;
+	--wia-text-light: #94a3b8;
+	
+	--wia-success: #10b981;
+	--wia-success-bg: #ecfdf5;
+	--wia-danger: #ef4444;
+	--wia-danger-bg: #fef2f2;
+	
+	--wia-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--wia-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+	--wia-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+	--wia-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+	
+	--wia-radius-sm: 6px;
+	--wia-radius-md: 10px;
+	--wia-radius-lg: 14px;
+	--wia-radius-xl: 18px;
+	
+	--wia-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Wrapper & Reset */
+.qcld-wia-wrap {
+	box-sizing: border-box;
+    font-family: var(--wia-font);
+    color: var(--wia-text-body);
+    margin: 0px 0px 20px 0px;
+    max-width: 100%;
+}
+
+.qcld-wia-wrap * {
+	box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   Top Header Banner
+   -------------------------------------------------------------------------- */
+.qcld-wia-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	border: 1px solid var(--wia-border);
+	border-radius: var(--wia-radius-lg);
+	padding: 22px 28px;
+	margin-bottom: 24px;
+	box-shadow: var(--wia-shadow-sm);
+	position: relative;
+	overflow: hidden;
+}
+
+.qcld-wia-header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: linear-gradient(90deg, #2563eb, #7c3aed, #06b6d4);
+}
+
+.qcld-wia-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--wia-primary-light);
+	color: var(--wia-primary);
+	border: 1px solid var(--wia-primary-border);
+	border-radius: 20px;
+	padding: 3px 10px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.qcld-wia-title {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--wia-text-heading);
+	margin: 0 0 6px 0;
+	line-height: 1.2;
+}
+
+.qcld-wia-title-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+	color: #ffffff;
+	border-radius: var(--wia-radius-md);
+	box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.qcld-wia-subtitle {
+	font-size: 14px;
+	color: var(--wia-text-muted);
+	margin: 0;
+	line-height: 1.5;
+}
+
+.qcld-wia-header-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.qcld-wia-provider-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: #f8fafc;
+	border: 1px solid var(--wia-border);
+	border-radius: 30px;
+	padding: 6px 14px;
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--wia-text-heading);
+}
+
+.qcld-wia-live-dot {
+	width: 8px;
+	height: 8px;
+	background-color: var(--wia-success);
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+	animation: wia-pulse 2s infinite;
+}
+
+@keyframes wia-pulse {
+	0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+	70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Modern Buttons */
+.qcld-wia-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 8px 16px;
+	border-radius: var(--wia-radius-md);
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: 1px solid transparent;
+	line-height: 1.4;
+}
+
+.qcld-wia-btn-outline {
+	background: #ffffff;
+	border-color: var(--wia-border);
+	color: var(--wia-text-heading);
+}
+
+.qcld-wia-btn-outline:hover {
+	background: var(--wia-bg-subtle);
+	border-color: #cbd5e1;
+	color: var(--wia-primary);
+}
+
+.qcld-wia-btn-ghost {
+	background: transparent;
+	border: 1px solid transparent;
+	color: var(--wia-text-muted);
+	padding: 6px 12px;
+	font-size: 12px;
+}
+
+.qcld-wia-btn-ghost:hover {
+	background: #f1f5f9;
+	color: var(--wia-text-heading);
+}
+
+/* Preload & Spinner effects for Reset button */
+#qcld-wia-clear {
+	position: relative;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#qcld-wia-clear svg {
+	transition: transform 0.3s ease;
+}
+
+#qcld-wia-clear:hover:not(.is-loading):not(.is-success) svg {
+	transform: rotate(-45deg);
+}
+
+#qcld-wia-clear.is-loading {
+	pointer-events: none;
+	background: var(--wia-primary-light);
+	color: var(--wia-primary);
+	border-color: var(--wia-primary-border);
+}
+
+#qcld-wia-clear.is-loading svg {
+	animation: qcld-wia-spin 0.75s linear infinite;
+	color: var(--wia-primary);
+}
+
+#qcld-wia-clear.is-success {
+	color: var(--wia-success);
+	background: var(--wia-success-bg);
+	border-color: rgba(16, 185, 129, 0.3);
+}
+
+@keyframes qcld-wia-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(-360deg); }
+}
+
+/* Chat container smooth fade during reset */
+.qcld-wia-chat {
+	transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.qcld-wia-chat.is-resetting {
+	opacity: 0.4;
+	filter: blur(1.5px);
+	pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Layout Grid
+   -------------------------------------------------------------------------- */
+.qcld-wia-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 380px;
+	gap: 24px;
+	align-items: start;
+}
+
+.qcld-wia-card {
+	background: var(--wia-bg-card);
+	border: 1px solid var(--wia-border);
+	border-radius: var(--wia-radius-lg);
+	box-shadow: var(--wia-shadow-sm);
+	overflow: hidden;
+	transition: box-shadow 0.2s ease;
+}
+
+.qcld-wia-card:hover {
+	box-shadow: var(--wia-shadow-md);
+}
+
+/* --------------------------------------------------------------------------
+   Main Chat Interface
+   -------------------------------------------------------------------------- */
+.qcld-wia-chat-shell {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 220px);
+	min-height: 620px;
+	background: #ffffff;
+}
+
+.qcld-wia-chat-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 20px;
+	background: #ffffff;
+	border-bottom: 1px solid var(--wia-border);
+}
+
+.qcld-wia-toolbar-info {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.qcld-wia-bot-avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+	color: #ffffff;
+}
+
+.qcld-wia-toolbar-title {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--wia-text-heading);
+	line-height: 1.2;
+}
+
+.qcld-wia-toolbar-status {
+	font-size: 11px;
+	color: var(--wia-text-muted);
+	margin-top: 2px;
+}
+
+/* Chat Messages Area */
+.qcld-wia-chat {
+	flex: 1;
+	overflow-y: auto;
+	padding: 24px;
+	background: #f8fafc;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.qcld-wia-chat::-webkit-scrollbar {
+	width: 6px;
+}
+.qcld-wia-chat::-webkit-scrollbar-track {
+	background: transparent;
+}
+.qcld-wia-chat::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 4px;
+}
+.qcld-wia-chat::-webkit-scrollbar-thumb:hover {
+	background: #94a3b8;
+}
+
+/* Message Rows */
+.qcld-wia-msg-row {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	max-width: 88%;
+}
+
+.qcld-wia-msg-row.qcld-wia-row-assistant {
+	align-self: flex-start;
+}
+
+.qcld-wia-msg-row.qcld-wia-row-user {
+	align-self: flex-end;
+	flex-direction: row-reverse;
+}
+
+.qcld-wia-avatar {
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.qcld-wia-avatar-bot {
+	background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+	color: #ffffff;
+	box-shadow: 0 2px 5px rgba(37, 99, 235, 0.2);
+}
+
+.qcld-wia-avatar-user {
+	background: #1e293b;
+	color: #ffffff;
+	box-shadow: 0 2px 5px rgba(30, 41, 59, 0.2);
+}
+
+.qcld-wia-bubble {
+	border-radius: var(--wia-radius-lg);
+	padding: 14px 18px;
+	font-size: 14px;
+	line-height: 1.6;
+	word-break: break-word;
+	box-shadow: var(--wia-shadow-sm);
+}
+
+.qcld-wia-row-assistant .qcld-wia-bubble {
+	background: #ffffff;
+	color: var(--wia-text-heading);
+	border: 1px solid var(--wia-border);
+	border-top-left-radius: 4px;
+}
+
+.qcld-wia-row-user .qcld-wia-bubble {
+	background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+	color: #ffffff;
+	border: none;
+	border-top-right-radius: 4px;
+	font-weight: 500;
+}
+
+/* Rich Markdown Copy Styling */
+.qcld-wia-copy {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.qcld-wia-copy p {
+	margin: 0 0 10px 0;
+}
+
+.qcld-wia-copy p:last-child {
+	margin-bottom: 0;
+}
+
+.qcld-wia-copy h2, .qcld-wia-copy h3, .qcld-wia-copy h4 {
+	color: var(--wia-text-heading);
+	margin: 14px 0 6px 0;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.qcld-wia-copy h2:first-child, .qcld-wia-copy h3:first-child, .qcld-wia-copy h4:first-child {
+	margin-top: 0;
+}
+
+.qcld-wia-copy ul, .qcld-wia-copy ol {
+	margin: 8px 0 12px 20px;
+	padding: 0;
+}
+
+.qcld-wia-copy li {
+	margin-bottom: 4px;
+}
+
+.qcld-wia-copy strong {
+	color: #0f172a;
+	font-weight: 700;
+}
+
+.qcld-wia-copy code {
+	background: #f1f5f9;
+	color: #0f172a;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-family: monospace;
+}
+
+.qcld-wia-copy table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 12px 0;
+	font-size: 13px;
+}
+
+.qcld-wia-copy th, .qcld-wia-copy td {
+	padding: 8px 12px;
+	border: 1px solid var(--wia-border);
+	text-align: left;
+}
+
+.qcld-wia-copy th {
+	background: #f8fafc;
+	font-weight: 600;
+}
+
+/* Suggestions Chips */
+.qcld-wia-suggestions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.qcld-wia-suggestion {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #f8fafc;
+	border: 1px solid #cbd5e1;
+	border-radius: 20px;
+	color: var(--wia-text-heading);
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	padding: 6px 14px;
+	text-align: left;
+	transition: all 0.2s ease;
+}
+
+.qcld-wia-suggestion:hover {
+	background: var(--wia-primary-light);
+	border-color: var(--wia-primary);
+	color: var(--wia-primary);
+	transform: translateY(-1px);
+	box-shadow: var(--wia-shadow-sm);
+}
+
+/* Typing Wave Animation */
+.qcld-wia-typing-indicator {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 6px 4px;
+}
+
+.qcld-wia-typing-dot {
+	width: 7px;
+	height: 7px;
+	background: #3b82f6;
+	border-radius: 50%;
+	animation: wia-dot-bounce 1.4s infinite ease-in-out both;
+}
+
+.qcld-wia-typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.qcld-wia-typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes wia-dot-bounce {
+	0%, 80%, 100% { transform: scale(0); opacity: 0.4; }
+	40% { transform: scale(1); opacity: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   Input Container & Form
+   -------------------------------------------------------------------------- */
+.qcld-wia-input-container {
+	background: #ffffff;
+	border-top: 1px solid var(--wia-border);
+	padding: 16px 20px;
+}
+
+.qcld-wia-form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.qcld-wia-input-wrap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #f8fafc;
+	border: 1px solid var(--wia-border);
+	border-radius: var(--wia-radius-lg);
+	padding: 6px 10px 6px 14px;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qcld-wia-input-wrap:focus-within {
+	background: #ffffff;
+	border-color: var(--wia-primary);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.qcld-wia-input-wrap textarea {
+	flex: 1;
+	border: none !important;
+	background: transparent !important;
+	outline: none !important;
+	box-shadow: none !important;
+	padding: 6px 0 !important;
+	font-size: 14px !important;
+	font-family: var(--wia-font) !important;
+	color: var(--wia-text-heading) !important;
+	resize: none;
+	min-height: 24px;
+	max-height: 120px;
+	line-height: 1.5;
+}
+
+.qcld-wia-input-wrap textarea::placeholder {
+	color: var(--wia-text-light);
+}
+
+.qcld-wia-send-btn {
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 38px;
+	height: 38px;
+	border-radius: var(--wia-radius-md);
+	background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+.qcld-wia-send-btn:hover:not(:disabled) {
+	background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+	transform: scale(1.04);
+	box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+}
+
+.qcld-wia-send-btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.qcld-wia-input-footer {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 11px;
+	color: var(--wia-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar & Insights
+   -------------------------------------------------------------------------- */
+.qcld-wia-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+/* Tip Highlight Card */
+.qcld-wia-tip-card {
+	background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+	border: 1px solid #334155;
+	color: #ffffff;
+	padding: 18px 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.qcld-wia-tip-card::after {
+	content: "";
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+	pointer-events: none;
+}
+
+.qcld-wia-tip-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.qcld-wia-tip-icon {
+	color: #60a5fa;
+	display: flex;
+	align-items: center;
+}
+
+.qcld-wia-tip-tag {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #93c5fd;
+}
+
+.qcld-wia-tip-body {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.55;
+	color: #f1f5f9;
+	margin: 0;
+}
+
+/* Sidebar Headings */
+.qcld-wia-card-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 20px 12px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.qcld-wia-card-head h3 {
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--wia-text-heading);
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.qcld-wia-period-badge {
+	font-size: 10px;
+	font-weight: 600;
+	color: var(--wia-text-muted);
+	background: var(--wia-bg-muted);
+	padding: 2px 8px;
+	border-radius: 12px;
+}
+
+/* 30-Day Metrics Grid */
+.qcld-wia-metrics-grid {
+	display: grid;
+	gap: 10px;
+	padding: 16px 20px;
+}
+
+.qcld-wia-metric-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #f8fafc;
+	border: 1px solid var(--wia-border);
+	border-radius: var(--wia-radius-md);
+	padding: 12px 14px;
+	transition: background 0.2s ease;
+}
+
+.qcld-wia-metric-item:hover {
+	background: #f1f5f9;
+}
+
+.qcld-wia-metric-info {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.qcld-wia-metric-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--wia-text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.qcld-wia-metric-val {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--wia-text-heading);
+	line-height: 1.2;
+}
+
+.qcld-wia-metric-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 3px 8px;
+	border-radius: 12px;
+}
+
+.qcld-wia-badge-up {
+	background: var(--wia-success-bg);
+	color: var(--wia-success);
+}
+
+.qcld-wia-badge-down {
+	background: var(--wia-danger-bg);
+	color: var(--wia-danger);
+}
+
+/* Skeleton Loading */
+.qcld-wia-metric-skeleton {
+	height: 52px;
+	background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+	background-size: 200% 100%;
+	border-radius: var(--wia-radius-md);
+	animation: wia-skeleton-shimmer 1.5s infinite;
+}
+
+@keyframes wia-skeleton-shimmer {
+	0% { background-position: 200% 0; }
+	100% { background-position: -200% 0; }
+}
+
+/* Chart Cards */
+.qcld-wia-chart-body {
+	padding: 14px 16px;
+}
+
+.qcld-wia-chart {
+	background: #ffffff;
+	border: 1px solid var(--wia-border);
+	border-radius: var(--wia-radius-md);
+	padding: 14px;
+	margin-top: 14px;
+}
+
+.qcld-wia-chart-body .qcld-wia-chart {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-top: 0;
+}
+
+.qcld-wia-chart h3 {
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--wia-text-heading);
+	margin: 0 0 10px 0;
+}
+
+.qcld-wia-chart svg {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+
+.qcld-wia-grid {
+	stroke: #e2e8f0;
+	stroke-width: 1;
+	stroke-dasharray: 4, 4;
+}
+
+.qcld-wia-axis {
+	fill: #64748b;
+	font-size: 10px;
+	font-family: var(--wia-font);
+}
+
+.qcld-wia-bar {
+	fill: #3b82f6;
+	rx: 4px;
+	transition: fill 0.2s ease;
+}
+
+.qcld-wia-bar:hover {
+	fill: #1d4ed8;
+}
+
+.qcld-wia-line {
+	fill: none;
+	stroke: #2563eb;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.qcld-wia-area {
+	fill: url(#wiaAreaGradient);
+	opacity: 0.25;
+}
+
+.qcld-wia-dot {
+	fill: #ffffff;
+	stroke: #2563eb;
+	stroke-width: 2.5;
+	transition: r 0.2s ease, stroke-width 0.2s ease;
+	cursor: pointer;
+}
+
+.qcld-wia-dot:hover {
+	r: 6;
+	stroke: #1d4ed8;
+	stroke-width: 3;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Design
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+	.qcld-wia-layout {
+		grid-template-columns: 1fr;
+	}
+	.qcld-wia-sidebar {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.qcld-wia-tip-card {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 782px) {
+	.qcld-wia-wrap {
+		margin: 10px 10px 20px 0;
+	}
+	.qcld-wia-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+		padding: 18px;
+	}
+	.qcld-wia-sidebar {
+		grid-template-columns: 1fr;
+	}
+	.qcld-wia-chat-shell {
+		height: 520px;
+	}
+	.qcld-wia-msg-row {
+		max-width: 95%;
+	}
+}
+

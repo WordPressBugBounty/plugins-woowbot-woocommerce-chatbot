@@ -1,4 +1,4 @@
-﻿jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
 
     // Tab Switching Logic
     $('.qcld_woo_chatbot-tab-link').on('click', function(e) {

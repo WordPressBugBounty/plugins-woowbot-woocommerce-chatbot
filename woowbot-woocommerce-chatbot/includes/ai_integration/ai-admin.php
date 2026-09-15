@@ -11,6 +11,8 @@ $show_wizard_automatically = $no_ai_active;
 require_once QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . '/includes/admin/templates/wizard-popup.php';
 
 ?>
+<div class="wrap">
+    <h1><?php esc_html_e( 'AI Settings', 'woowbot-woocommerce-chatbot');?></h1>
 <div class="qcl-openai">
     <div class=" gx-0">
 
@@ -20,11 +22,11 @@ require_once QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . '/includes/admin/templates/w
               
                         <div class="col-auto me-auto ai-settings-title-container">
                          
-                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=chatbot_ai_setting' ) ); ?>"><h4><?php esc_html_e( 'AI Settings','chatbot');?></h4></a> 
+                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=chatbot_ai_setting' ) ); ?>"><h4><?php esc_html_e( 'AI Settings', 'woowbot-woocommerce-chatbot');?></h4></a> 
                             <div class="qcld-ai-settings-top-rght">
                             <select id="ai-provider-selector" class="form-select ai-settings-selector">
-                                <option value="openai" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'OpenAI','chatbot')?></option>
-                                <option value="gemini" <?php echo (get_option( 'qcld_gemini_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'Gemini','chatbot')?></option>
+                                <option value="openai" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'OpenAI', 'woowbot-woocommerce-chatbot')?></option>
+                                <option value="gemini" <?php echo (get_option( 'qcld_gemini_enabled') == 1) ? esc_attr( 'selected') :'';?> ><?php echo esc_html__( 'Gemini', 'woowbot-woocommerce-chatbot')?></option>
                             </select>
                             <div class="col-auto ai-settings-title-container">
                                 <button id="ai-knowledge-base-tab" class="qcld-btn-primary" link="page=chatbot_ai_setting#ai-knowledge-base-tab"><?php esc_html_e( 'Knowledge Base (RAG)', 'woowbot-woocommerce-chatbot' ); ?></button>     

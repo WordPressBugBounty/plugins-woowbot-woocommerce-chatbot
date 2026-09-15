@@ -12,22 +12,22 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 		
 		//Public variables, these can be overrides using instance callback
 
-		public $upgrade_link = "https://www.quantumcloud.com";
-		public $link_color = "#FCB214";
-		public $link_text = "Upgrade to Pro";
-		public $link_class = "";
-		public $link_target = "_blank";
+		public $upgrade_link 	= "https://www.quantumcloud.net";
+		public $link_color 		= "#FCB214";
+		public $link_text 		= "Upgrade to Pro";
+		public $link_class 		= "";
+		public $link_target 	= "_blank";
 		
-		public $plugin_slug = ""; //Exact plugin folder name
+		public $plugin_slug 	= ""; //Exact plugin folder name
 		public $plugin_main_file = ""; //Exact file name with extension of primary file
 		public $plugin_menu_slug = ""; //Parent menu slug of the plugin
 		
 		public $plugin_slug_plus_file = "";
 
 		//Turn on or off the hooks, use false to off
-		public $show_with_action_links = true; //in plugin.php page
-		public $show_with_meta_links = true; //in plugin.php page
-		public $show_with_plugin_menu = true; //inside parent menu of the plugin
+		public $show_with_action_links 	= true; //in plugin.php page
+		public $show_with_meta_links 	= true; //in plugin.php page
+		public $show_with_plugin_menu 	= true; //inside parent menu of the plugin
 		
 		//Contructor - Set defaults 
 		function __construct()
@@ -98,7 +98,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 		function func_show_upgrade_link_with_action_links( $links )
 		{
 			$links = array_merge( $links, array(
-				'<a title="'.$this->link_text.'" class="'.$this->link_class.'" style="font-weight: bold; color: '.$this->link_color.';" href="' . esc_url( $this->upgrade_link ) . '" target="'.$this->link_target.'">' . $this->link_text . '</a>'
+				'<a title="'.esc_attr($this->link_text).'" class="'.esc_attr($this->link_class).'" style="font-weight: bold; color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" target="'.esc_attr($this->link_target).'">' . esc_html($this->link_text, 'woowbot-woocommerce-chatbot') . '</a>'
 			) );
 			
 			return $links;
@@ -135,7 +135,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 			if ( strpos( $file, "$this->plugin_main_file" ) !== false ) {
 			
 				$new_links = array(
-					'<a class="'.$this->link_class.'" style="font-weight: bold; color: '.$this->link_color.';" href="' . esc_url( $this->upgrade_link ) . '" title="'.$this->link_text.'" target="'.$this->link_target.'">' . $this->link_text . '</a>'
+					'<a class="'.esc_attr($this->link_class).'" style="font-weight: bold; color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" title="'.esc_attr($this->link_text).'" target="'.esc_attr($this->link_target).'">' . esc_html($this->link_text, 'woowbot-woocommerce-chatbot') . '</a>'
 				);
 				
 				$links = array_merge( $links, $new_links );
@@ -173,7 +173,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 		     return;
 		    }
 
-		    $link_text = '<span class="qc-up-pro-link" style="font-weight: bold; padding: 5px; background: #2271B1; border-radius: 4px; line-height: 27px; padding: 3px 10px; color: '.$this->link_color.'">'.$this->link_text.'</span>';
+		    $link_text = '<span class="qc-up-pro-link" style="font-weight: bold; padding: 5px; background: #2271B1; border-radius: 4px; line-height: 27px; padding: 3px 10px; color: '.esc_attr($this->link_color).'">'.esc_html($this->link_text, 'woowbot-woocommerce-chatbot').'</span>';
 			if($current_user->roles[0]!='subscriber')
 				$submenu["$this->plugin_menu_slug"][402] = array( $link_text, 'activate_plugins' , $this->upgrade_link );
 

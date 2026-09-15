@@ -163,17 +163,29 @@ $(document).ready(function () {
                 data:    ({action  : 'openai_troubleshooting',nonce:ajax_object.ajax_nonce}),
                 success: function(data){
                     var datas = typeof data === 'string' ? JSON.parse(data) : data;
-                    $('#result').html(datas);
+                    if(typeof datas !== 'object' || datas === null) {
+                        datas = { title: 'Response', msg: data, icon: 'info' };
+                    }
                     Swal.fire({
-                        title: datas.title,
-                        html: datas.msg,
+                        title: datas.title || (datas.success ? 'Success' : 'Error'),
+                        html: datas.msg || '',
                         width: 450,
-                        icon: datas.icon,
+                        icon: datas.icon || (datas.success ? 'success' : 'error'),
                         confirmButtonText: 'Got it',
                         customClass: 'connection-modal',
-                    })
+                    });
                     jQuery('#rotationloader').css('display','none'); 
-                //   location.reload();
+                },
+                error: function(xhr, status, error) {
+                    Swal.fire({
+                        title: 'Error',
+                        html: error || 'An error occurred while testing the connection.',
+                        width: 450,
+                        icon: 'error',
+                        confirmButtonText: 'Got it',
+                        customClass: 'connection-modal',
+                    });
+                    jQuery('#rotationloader').css('display','none'); 
                 }
             });
         })
