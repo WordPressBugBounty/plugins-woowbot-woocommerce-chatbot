@@ -12,42 +12,10 @@ if(!function_exists('woo_chatbot_load_footer_html')){
     function woo_chatbot_load_footer_html()
     { ?>
         <?php if (get_option('disable_woo_chatbot') != 1  && woo_chatbot_load_controlling()==true): ?>
-        <style>
-            <?php  if(get_option('woo_chatbot_custom_css')!=""){echo esc_attr( get_option('woo_chatbot_custom_css') ); }  ?>
-                <?php
-
-                if (get_option('qcld_woo_chatbot_change_bg') == 1) {
-                    if (get_option('qcld_woo_chatbot_board_bg_path') != ""){
-
-                        $qcld_woo_chatbot_board_bg_path = get_option('qcld_woo_chatbot_board_bg_path');
-
-                        ?>
-
-                            #woo-chatbot-ball-container:before {
-                                background-image: url(<?php echo esc_url( $qcld_woo_chatbot_board_bg_path );?>) !important;
-                                background-size: cover !important;
-                                background-position: center center !important;
-                                content: "";
-                                position: absolute;
-                                inset: 0;
-                                filter: blur(6px);
-                                z-index: 0;
-                            }
-                            #woo-chatbot-ball-container {
-                                position: relative;
-                                overflow: hidden;
-                            }
-
-                        <?php
-                    }
-                }
-            ?>
-
-        </style>
         <div id="woo-chatbot-icon-container">
-            <div id="woo-chatbot-ball-wrapper" style="display:none">
+            <div id="woo-chatbot-ball-wrapper">
 
-                <div id="woo-chatbot-ball-container" style="display:none" class="woo-chatbot-ball-container">
+                <div id="woo-chatbot-ball-container" class="woo-chatbot-ball-container">
                     <div class="woo-chatbot-admin">
                         <button type="button" id="woo-chatbot-expand-toggle" aria-label="<?php esc_attr_e('Expand chat window', 'woowbot-woocommerce-chatbot'); ?>"></button>
                         <h4><?php if(get_option('qlcd_woo_chatbot_conversations_with')!=''){echo esc_attr( get_option('qlcd_woo_chatbot_conversations_with') );}else{  esc_html_e('Conversations with', 'woowbot-woocommerce-chatbot'); } ?></h4>

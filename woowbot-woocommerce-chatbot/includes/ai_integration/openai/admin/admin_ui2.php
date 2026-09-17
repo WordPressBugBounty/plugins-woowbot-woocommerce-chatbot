@@ -6,9 +6,7 @@
                     <ul class="nav nav-tabs">
                         <li ><a class="active" data-toggle="tab" href="#wp-chatbot-openai-settings"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('OpenAI settings', 'woowbot-woocommerce-chatbot'); ?></a></li>
                         <li><a data-toggle="tab" href="#wp-chatbot-openai-rag"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-generic"></i> </span><?php echo esc_html__('RAG', 'woowbot-woocommerce-chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-training-model"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-plugins-checked"></i> </span><?php echo esc_html__('Training Model', 'woowbot-woocommerce-chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-openai-assistants"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-admin-home"></i> </span><?php echo esc_html__('GPT Assistant', 'woowbot-woocommerce-chatbot'); ?></a></li>
-                        <li><a data-toggle="tab" href="#wp-chatbot-data_post_converter"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-database-add"></i> </span><?php echo esc_html__('Fine Tune with Website Data', 'woowbot-woocommerce-chatbot'); ?></a></li>
+                  
                         <li><a data-toggle="tab" href="#wp-chatbot-img_generator"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-gallery"></i> </span><?php echo esc_html__('AI Image Generator', 'woowbot-woocommerce-chatbot'); ?></a></li>
                         <li><a data-toggle="tab" href="#wp-chatbot-content_writer"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-format-status"></i> </span><?php echo esc_html__('AI Article Generator', 'woowbot-woocommerce-chatbot'); ?></a></li>
                         <li><a data-toggle="tab" href="#wp-chatbot-openai-help"><span class="wpwbot-admin-tab-icon "> <i class="dashicons dashicons-editor-help"></i> </span><?php echo esc_html__('Help', 'woowbot-woocommerce-chatbot'); ?></a></li>
@@ -22,21 +20,6 @@
                         <div id="wp-chatbot-openai-rag" class="tab-pane">
                             <?php 
                                 require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . 'includes/ai_integration/openai/admin/openai-rag.php');
-                            ?>
-                        </div>
-                        <div id="wp-chatbot-openai-training-model" class="tab-pane">
-                            <?php 
-                              require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . 'includes/ai_integration/openai/admin/files.php');
-                            ?>
-                        </div>
-                        <div id="wp-chatbot-openai-assistants" class="tab-pane">
-                            <?php 
-                               require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . 'includes/ai_integration/openai/admin/assistant.php');
-                            ?>
-                        </div>
-                        <div id="wp-chatbot-data_post_converter" class="tab-pane">
-                            <?php 
-                            require_once(QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH . 'includes/ai_integration/openai/admin/data_post_converter.php');
                             ?>
                         </div>
                         <div id="wp-chatbot-img_generator" class="tab-pane">
@@ -64,31 +47,31 @@
 
                         <div class="wp-chatbot-admingradient-color">
                             <img class="wp-chatbot-admin-banner" src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/template-sample.png' ); ?>" alt="">
-                                <h3 class="wp-chatbot-admincart-title">Upgrade To <span>Pro</span></h3>
+                                <h3 class="wp-chatbot-admincart-title"><?php esc_html_e( 'Upgrade To', 'woowbot-woocommerce-chatbot' ); ?> <span><?php esc_html_e( 'Pro', 'woowbot-woocommerce-chatbot' ); ?></span></h3>
                                 <ul class="feature-list">
 
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Core ChatBot Pro</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WooCommerce module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Chat Sessions and Histories</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended Search Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Simple text Responses Pro Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Conversational Forms Pro Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">OpenAI Pro Adv.(Training, Fine Tuning, Assistant)</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Live (Human) Chat Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Tavily Search API module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended UI Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WebHook & Mailing List Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">White Label Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">FaceBook Messenger Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WhatsApp through Twilio Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Multi Language Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Voice Message Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Telegram Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Priority Technical Support</li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Core ChatBot Pro', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WooCommerce module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Chat Sessions and Histories', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended Search Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Simple text Responses Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Conversational Forms Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'OpenAI Pro Adv.(Training, Fine Tuning, Assistant)', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Live (Human) Chat Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Tavily Search API module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended UI Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WebHook & Mailing List Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'White Label Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'FaceBook Messenger Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WhatsApp through Twilio Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Multi Language Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Voice Message Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Telegram Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Priority Technical Support', 'woowbot-woocommerce-chatbot' ); ?></li>
 
                                 </ul>
 
-                            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="https://woowbot.pro/pricing/">Upgrade to Pro <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>"" alt=""></a>
+                            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="<?php echo esc_url( 'https://woowbot.pro/pricing/');?>"><?php esc_html_e( 'Upgrade to Pro', 'woowbot-woocommerce-chatbot' ); ?> <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>" alt=""></a>
                         </div>
 
                         </div>

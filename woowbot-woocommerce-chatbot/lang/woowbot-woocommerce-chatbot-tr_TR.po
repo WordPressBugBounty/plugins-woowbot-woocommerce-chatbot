@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
 "Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
-"POT-Creation-Date: 2026-09-14 12:04+0000\n"
-"PO-Revision-Date: 2026-09-14 12:04+0000\n"
+"POT-Creation-Date: 2026-09-15 10:10+0000\n"
+"PO-Revision-Date: 2026-09-15 10:10+0000\n"
 "Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
 "Language-Team: Türkçe (Turkish)\n"
 "Language: tr_TR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
 
 msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
-msgstr "Eklenti bilgilerini tespit edemiyoruz. Bu muhtemelen eklenti ana dosyasına kodu dahil etmediğiniz içindir."
+msgstr "Eklenti bilgilerini tespit edemiyoruz. Bu muhtemelen eklenti ana dosyasına kodu eklememiş olmanızdan kaynaklanıyor."
 
 msgid "Sorry to see you go"
 msgstr "Gitmenizi görmek üzücü"
@@ -31,10 +31,10 @@ msgid "Upgrading to Pro"
 msgstr "Pro'ya Yükseltiliyor"
 
 msgid "Please provide email so we can contact with bug fixes"
-msgstr "Hata düzeltmeleri için iletişim kurabilmemiz için lütfen e-posta sağlayın"
+msgstr "Lütfen e-posta adresinizi verin, böylece hata düzeltmeleri için sizinle iletişime geçebiliriz"
 
 msgid "Please provide some details so we can improve the plugin"
-msgstr "Eklentiyi geliştirebilmemiz için lütfen bazı ayrıntılar sağlayın"
+msgstr "Lütfen eklentiyi geliştirebilmemiz için bazı detaylar verin"
 
 msgid "Submitting form"
 msgstr "Form gönderiliyor"
@@ -43,16 +43,16 @@ msgid "Expand chat window"
 msgstr "Sohbet penceresini genişlet"
 
 msgid "Conversations with"
-msgstr "Şu kişilerle sohbet ediliyor"
+msgstr "ile sohbetler"
 
 msgid "Close chat window"
 msgstr "Sohbet penceresini kapat"
 
 msgid "Send a message."
-msgstr "Mesaj gönder."
+msgstr "Bir mesaj gönder."
 
 msgid "Support Request Details"
-msgstr "Destek Talep Ayrıntıları"
+msgstr "Destek Talep Detayları"
 
 msgid "Name"
 msgstr "İsim"
@@ -79,7 +79,7 @@ msgid "Mail Generated on"
 msgstr "Mail Şu Tarihte Oluşturuldu"
 
 msgid "Click for Product Details"
-msgstr "Ürün Ayrıntıları için tıklayın"
+msgstr "Ürün Detayları için Tıklayın"
 
 msgid "AI Settings"
 msgstr "AI Ayarları"
@@ -129,8 +129,8 @@ msgstr "%s için hız sınırı"
 msgid "Timeframe:"
 msgstr "Zaman Aralığı:"
 
-msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
-msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+msgid "rate_limit_timeframe_' . $role_key ); ?>\\"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\\"
 
 msgid "48 Hours"
 msgstr "48 Saat"
@@ -154,7 +154,7 @@ msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
 msgstr "Gömmeden önce OpenAI veya Gemini gibi bir AI hizmetine bağlanın."
 
 msgid "Check this Tutorial for more details."
-msgstr "Daha fazla ayrıntı için bu Eğitimi kontrol edin."
+msgstr "Daha fazla detay için bu Eğitimi kontrol edin."
 
 msgid "&laquo;"
 msgstr "&laquo;"
@@ -162,8 +162,11 @@ msgstr "&laquo;"
 msgid "&raquo;"
 msgstr "&raquo;"
 
+msgid "%s item"
+msgstr "%s öğe"
+
 msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
-msgstr "<strong>WooCommerce için AI Deneme Eklentisi</strong>, WooCommerce'in kurulu ve aktif olmasını gerektirir. Eklentinin özellikleri, WooCommerce aktif olana kadar çalışmayacaktır."
+msgstr "<strong>WooCommerce için AI Deneme Eklentisi</strong> WooCommerce'in kurulu ve aktif olmasını gerektirir. Eklentinin özellikleri, WooCommerce aktif olana kadar çalışmayacaktır."
 
 msgid "AI Try-On Configurations"
 msgstr "AI Deneme Yapılandırmaları"
@@ -175,136 +178,136 @@ msgid "Prompts"
 msgstr "İstekler"
 
 msgid "Help"
-msgstr "Tüm AI Deneme ayarlarınızı tek bir yerde yapılandırın."
+msgstr "Yardım"
 
 msgid "Configure all your AI Try-On settings in one place."
-msgstr "Deneme Butonunu Etkinleştir"
+msgstr "Tüm AI Deneme ayarlarınızı tek bir yerde yapılandırın."
 
 msgid "Enable Try-On Button"
-msgstr "Tekil ürün sayfalarında \"AI ile Deneyin\" butonunu göster"
+msgstr "Deneme Butonunu Etkinleştir"
 
-msgid "Show the \"Try On with AI\" button on single product pages"
-msgstr "Giriş Gerektir"
+msgid "Show the \\"
+msgstr "Gösterin \\"
 
 msgid "Require Login"
-msgstr "Deneme özelliğini yalnızca giriş yapmış kullanıcılar için göster"
+msgstr "Giriş Gerektir"
 
 msgid "Show the Try-On feature for logged-in users only"
-msgstr "Sepete Ekle Butonunu Göster"
+msgstr "Deneme özelliğini yalnızca giriş yapmış kullanıcılar için göster"
 
 msgid "Show Add to Cart Button"
-msgstr "Deneme modal altbilgisinde 'Sepete Ekle' butonunu göster"
+msgstr "Sepete Ekle Butonunu Göster"
 
 msgid "Show the 'Add to Cart' button in the Try-On modal footer"
-msgstr "Günlük Üretim Limiti"
+msgstr "Deneme modali alt kısmında 'Sepete Ekle' butonunu göster"
 
 msgid "Daily Generation Limit"
-msgstr "örn. 5 (sınırsız için boş bırakın)"
+msgstr "Günlük Üretim Limiti"
 
 msgid "e.g. 5 (Leave blank for unlimited)"
-msgstr "Her oturum + IP başına 24 saat içinde görüntü ve video üretimini sınırlayın. Boş bırakın veya sınırsız için 0 olarak ayarlayın."
+msgstr "örn. 5 (sınırsız için boş bırakın)"
 
 msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
-msgstr "Deneme Butonu Pozisyonu"
+msgstr "Her oturum + IP başına 24 saat içinde görüntü ve video üretimini sınırlayın. Boş bırakın veya sınırsız için 0 olarak ayarlayın."
 
 msgid "Try-On Button Position"
-msgstr "Varsayılan"
+msgstr "Deneme Butonu Pozisyonu"
 
 msgid "Default"
-msgstr "Ürün Özeti İçinde"
+msgstr "Varsayılan"
 
 msgid "Inside Product Summary"
-msgstr "Sepetten Önce"
+msgstr "Ürün Özeti İçinde"
 
 msgid "Before Cart"
-msgstr "Sepete Ekle Formunun Üstünde"
+msgstr "Sepetten Önce"
 
 msgid "Above Add to Cart Form"
-msgstr "Sepetten Sonra"
+msgstr "Sepete Ekle Formunun Üstünde"
 
 msgid "After Cart"
-msgstr "Sepete Ekle Formunun Altında"
+msgstr "Sepetten Sonra"
 
 msgid "Below Add to Cart Form"
-msgstr "Meta'dan Önce"
+msgstr "Sepete Ekle Formunun Altında"
 
 msgid "Before Meta"
-msgstr "Kategoriler/Etiketler Üstünde"
+msgstr "Meta'dan Önce"
 
 msgid "Above Categories/Tags"
-msgstr "Meta'dan Sonra"
+msgstr "Kategoriler/Etiketler Üzerinde"
 
 msgid "After Meta"
-msgstr "Kategoriler/Etiketler Altında"
+msgstr "Meta'dan Sonra"
 
 msgid "Below Categories/Tags"
-msgstr "Özetin Altında"
+msgstr "Kategoriler/Etiketler Altında"
 
 msgid "Below Summary"
-msgstr "Ürün ayrıntılarının en altında"
+msgstr "Özetin Altında"
 
 msgid "At bottom of product details"
-msgstr "Özetin Üstünde"
+msgstr "Ürün detaylarının en altında"
 
 msgid "Above Summary"
-msgstr "Ürün ayrıntılarının en üstünde"
+msgstr "Özetin Üstünde"
 
 msgid "At very top of product details"
-msgstr "Deneme Butonu İkonu"
+msgstr "Ürün detaylarının en üstünde"
 
 msgid "Try-On Button Icon"
-msgstr "Parıltılar"
+msgstr "Deneme Butonu İkonu"
 
 msgid "Sparkles"
-msgstr "Sihirli Değnek"
+msgstr "Parlaklıklar"
 
 msgid "Magic Wand"
-msgstr "Gömlek"
+msgstr "Sihirli Değnek"
 
 msgid "Shirt"
-msgstr "İkon Yok"
+msgstr "Gömlek"
 
 msgid "No Icon"
-msgstr "Buton metninin önünde görüntülenecek bir emoji ikonu seçin."
+msgstr "İkon Yok"
 
 msgid "Select an emoji icon to display before the button text."
-msgstr "Fotoğrafınızla Deneyin Buton Metni"
+msgstr "Buton metninin önünde görüntülenecek bir emoji ikonu seçin."
 
 msgid "Try with your photo Button Text"
-msgstr "Ön uç butonunda görüntülenen metin."
+msgstr "Fotoğrafınızla Deneyin Buton Metni"
 
 msgid "The text displayed on the frontend button."
-msgstr "Varsayılan Video Süresi"
+msgstr "Ön uç butonunda görüntülenen metin."
 
 msgid "Default Video Duration"
-msgstr "(Pro Özelliği)"
+msgstr "Varsayılan Video Süresi"
 
 msgid "(Pro Feature)"
-msgstr "4 Saniye"
+msgstr "(Pro Özelliği)"
 
 msgid "4 Seconds"
-msgstr "Standart üretim"
+msgstr "4 Saniye"
 
 msgid "Standard generation"
-msgstr "8 Saniye"
+msgstr "Standart üretim"
 
 msgid "8 Seconds"
-msgstr "Genişletilmiş üretim"
+msgstr "8 Saniye"
 
 msgid "Extended generation"
-msgstr "Üretilen videonun uzunluğunu seçin. (Pro'da mevcut)"
+msgstr "Genişletilmiş üretim"
 
 msgid "Select the length of the generated video. (Available in Pro)"
-msgstr "Video Çözünürlüğü"
+msgstr "Üretilen videonun uzunluğunu seçin. (Pro'da mevcut)"
 
 msgid "Video Resolution"
-msgstr "720p"
+msgstr "Video Çözünürlüğü"
 
 msgid "720p"
-msgstr "Standart Tanım"
+msgstr "720p"
 
 msgid "Standard Definition"
-msgstr "1080p"
+msgstr "Standart Tanım"
 
 msgid "1080p"
 msgstr "1080p"
@@ -381,20 +384,20 @@ msgstr "Bu eklenti, müşterilerinizin en son nesil AI teknolojisi ile ürünler
 msgid "Pro Tip:"
 msgstr "Pro İpucu:"
 
-msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
-msgstr "\"Deneme\" butonunun konumunu ve metnini <strong>Genel Ayarlar</strong> sekmesinde tamamen özelleştirebilirsiniz!"
+msgid "You can completely customize the \\"
+msgstr "Tamamen özelleştirebilirsiniz \\"
 
 msgid "1. Customer Experience"
 msgstr "1. Müşteri Deneyimi"
 
-msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
-msgstr "Bir müşteri Deneme butonuna tıkladığında, premium bir modal arayüz açılır. Kendilerinin referans fotoğrafını kolayca sürükleyip bırakabilir veya yükleyebilirler. Ayrıca özel senaryo talimatları eklemek için bir metin kutuları vardır (örneğin, <em>\"Modern bir kahve dükkanında duruyor\"</em>)."
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\\"
+msgstr "Bir müşteri Deneme butonuna tıkladığında, premium bir modal arayüz açılır. Kendilerine ait bir referans fotoğrafını kolayca sürükleyip bırakabilir veya yükleyebilirler. Ayrıca özel senaryo talimatları eklemek için bir metin kutuları vardır (örneğin, <em>\\"
 
 msgid "2. The Generation Process"
 msgstr "2. Oluşturma Süreci"
 
 msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
-msgstr "Oluştur'a tıkladıklarında, eklenti <strong>Ürün Görseli</strong>, <strong>Müşterinin Yüklediği Görsel</strong> ve <strong>Senaryo metni</strong> alır ve bunları <em>Son İstek Yapısı Oluşturucu</em> kullanarak birleştirir (İstekler sekmesinde bulunur)."
+msgstr "Üret butonuna tıkladıklarında, eklenti <strong>Ürün Görseli</strong>, <strong>Müşterinin Yüklediği Görsel</strong> ve <strong>Senaryo metni</strong> alır ve bunları <em>Son İstek Yapısı Oluşturucu</em> kullanarak birleştirir (İstekler sekmesinde bulunur)."
 
 msgid "3. Image vs Video"
 msgstr "3. Görüntü vs Video"
@@ -403,13 +406,13 @@ msgid "Images:"
 msgstr "Görüntüler:"
 
 msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
-msgstr "Google Gemini (Imagen 3) veya OpenAI (DALL-E 3) tarafından anında üretilir."
+msgstr "Google Gemini (Imagen 3) veya OpenAI (DALL-E 3) tarafından anında oluşturulur."
 
 msgid "Videos:"
 msgstr "Videolar:"
 
 msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
-msgstr "Sadece Google'ın en son <strong>Veo</strong> modeli tarafından desteklenmektedir. Video oluşturma birkaç dakika sürebilir. Eklenti, arka planda Google'ın sunucularını sürekli olarak kontrol ederek bunu zarif bir şekilde yönetir ve müşterinin sayfayı terk etmeden gerçek zamanlı durum güncellemelerini görmesini sağlar."
+msgstr "Sadece Google'ın en son <strong>Veo</strong> modeli tarafından desteklenmektedir. Video oluşturma birkaç dakika sürebilir. Eklenti, arka planda Google'ın sunucularını sürekli olarak kontrol ederek, müşterinin sayfayı terk etmeden gerçek zamanlı durum güncellemelerini görmesini sağlar."
 
 msgid "API Keys & Configuration"
 msgstr "API Anahtarları ve Yapılandırma"
@@ -426,17 +429,17 @@ msgstr "API anahtarınızın erişimi olduğunu doğrulamak için AI Ayarları s
 msgid "Getting a Google Gemini Key"
 msgstr "Google Gemini Anahtarı Alma"
 
-msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
-msgstr "Google'ın Gemini modelleri (Imagen 3 ve Veo dahil) Google AI Studio'dan bir API anahtarı gerektirir. Ücretsiz bir API anahtarı almak için <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>'nu ziyaret edebilirsiniz."
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\\"
+msgstr "Google'ın Gemini modelleri (Imagen 3 ve Veo dahil) Google AI Studio'dan bir API anahtarı gerektirir. Ücretsiz bir API anahtarını almak için &lt;a href=\\"
 
 msgid "Getting an OpenAI Key"
 msgstr "OpenAI Anahtarı Alma"
 
-msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
-msgstr "OpenAI'nın modelleri (DALL-E 3 gibi) ücretli bir OpenAI platform hesabı gerektirir. Bir anahtar oluşturmak için <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Anahtarları</a>'nı ziyaret edebilirsiniz."
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\\"
+msgstr "OpenAI'nın modelleri (DALL-E 3 gibi) ücretli bir OpenAI platform hesabı gerektirir. Bir anahtar oluşturmak için &lt;a href=\\"
 
 msgid "Need Support?"
-msgstr "Destek mi İhtiyacınız Var?"
+msgstr "Destek mi İstiyorsunuz?"
 
 msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
 msgstr "Eklenti ile ilgili sorun yaşıyorsanız veya özellik talepleriniz varsa, lütfen destek masamızla iletişime geçin."
@@ -523,7 +526,7 @@ msgid "API Error: "
 msgstr "API Hatası: "
 
 msgid "Connection failed (HTTP %1$s). Details: %2$s"
-msgstr "Bağlantı başarısız oldu (HTTP %1$s). Ayrıntılar: %2$s"
+msgstr "Bağlantı başarısız (HTTP %1$s). Ayrıntılar: %2$s"
 
 msgid "API Error"
 msgstr "API Hatası"
@@ -709,7 +712,7 @@ msgid "Flat Lay"
 msgstr "Düz Yerleştirme"
 
 msgid "Ghost Mannequin"
-msgstr "Hayalet Manken"
+msgstr "Hayalet Mannequin"
 
 msgid "Prompt (Optional)"
 msgstr "İstek (Opsiyonel)"
@@ -735,7 +738,7 @@ msgstr "Büyü Üretiliyor..."
 msgid "Add to Cart"
 msgstr "Sepete Ekle"
 
-msgid "AI Analyst"
+msgid "AI Business Analyst"
 msgstr "AI Analisti"
 
 msgid "AI Store Analyst"
@@ -760,10 +763,10 @@ msgid "Reset Chat"
 msgstr "Sohbeti Sıfırla"
 
 msgid "Ask a question"
-msgstr "Bir soru sor"
+msgstr "Bir soru sorun"
 
 msgid "Ask about sales, best-selling products, customers, trends…"
-msgstr "Satışlar, en çok satan ürünler, müşteriler, trendler hakkında sor..."
+msgstr "Satışlar, en çok satan ürünler, müşteriler, trendler hakkında sorun..."
 
 msgid "Send question"
 msgstr "Soruyu gönder"
@@ -787,7 +790,7 @@ msgid "Last 30 Days"
 msgstr "Son 30 Gün"
 
 msgid "Revenue Trend"
-msgstr "Gelir Eğilimi"
+msgstr "Gelir Trendi"
 
 msgid "Top Products by Revenue"
 msgstr "Gelire Göre En İyi Ürünler"
@@ -799,19 +802,19 @@ msgid "No qualifying orders were found in the last 30 days. Check traffic, check
 msgstr "Son 30 günde nitelikli sipariş bulunamadı. Öncelikle trafiği, ödeme hatalarını ve sipariş durumu ayarlarını kontrol edin."
 
 msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
-msgstr "Siparişler %s%% azaldı. Trafiği ve tekrar satın alanları geri kazanmaya odaklanın; analiste hangi müşterilerin geri dönme olasılığının en yüksek olduğunu sorun."
+msgstr "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
 
 msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
-msgstr "Ortalama sipariş değeri %s%% azaldı. Birlikte satın alınan ürünler raporunu kullanarak paketleri test edin."
+msgstr "Average order value is down %s%%. Test bundles using the products-bought-together report."
 
 msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
-msgstr "%s son geliri yönlendiriyor. Bunu sıkça satın alınan ürünlerle eşleştirin ve paketi öne çıkarın."
+msgstr "%s son gelirleri yönlendiriyor. Bunu sıkça satın alınan ürünlerle eşleştirin ve paketi öne çıkarın."
 
 msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
-msgstr "En son müşterileri, kuponları ve satış kanallarını gözden geçirerek en net büyüme fırsatını bulun."
+msgstr "En net bir sonraki büyüme fırsatını bulmak için son müşterileri, kuponları ve satış kanallarını gözden geçirin."
 
 msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
-msgstr "Lütfen OpenAI veya Google Gemini API anahtarınızı AI Denemesi &amp; AI Ayarları'nda yapılandırın."
+msgstr "Lütfen OpenAI veya Google Gemini API anahtarınızı AI Deneme ve AI Ayarları'nda yapılandırın."
 
 msgid "Google Gemini request failed."
 msgstr "Google Gemini isteği başarısız oldu."
@@ -826,10 +829,10 @@ msgid "Show the top products during the strongest period."
 msgstr "En güçlü dönemdeki en iyi ürünleri göster."
 
 msgid "Compare this trend with the previous period."
-msgstr "Bu eğilimi önceki dönemle karşılaştır."
+msgstr "Bu trendi önceki dönemle karşılaştır."
 
 msgid "Show the sales trend for the same period."
-msgstr "Aynı dönem için satış eğilimini göster."
+msgstr "Aynı dönem için satış trendini göster."
 
 msgid "Compare these products with the previous period."
 msgstr "Bu ürünleri önceki dönemle karşılaştır."
@@ -850,19 +853,19 @@ msgid "What were total sales in the last 30 days?"
 msgstr "Son 30 günde toplam satışlar neydi?"
 
 msgid "Show the monthly sales trend for the last year."
-msgstr "Son yıl için aylık satış eğilimini göster."
+msgstr "Son bir yıl için aylık satış trendini göster."
 
 msgid "What are my top 10 products this year?"
 msgstr "Bu yılki en iyi 10 ürünüm nedir?"
 
 msgid "Sales trend"
-msgstr "Satış eğilimi"
+msgstr "Satış trendi"
 
 msgid "Top products by revenue"
 msgstr "Gelire göre en iyi ürünler"
 
 msgid "Coupon-attributed revenue"
-msgstr "Kupon atıf geliri"
+msgstr "Kuponla atfedilen gelir"
 
 msgid "Most valuable customers"
 msgstr "En değerli müşteriler"
@@ -874,7 +877,7 @@ msgid "Product revenue"
 msgstr "Ürün geliri"
 
 msgid "Revenue by channel"
-msgstr "Kanal bazında gelir"
+msgstr "Kanala göre gelir"
 
 msgid "Frequently bought together"
 msgstr "Sıkça birlikte satın alınanlar"
@@ -886,7 +889,7 @@ msgid "RAG"
 msgstr "RAG"
 
 msgid "Gemini Help"
-msgstr "Gemini Yardımı"
+msgstr "Gemini Yardım"
 
 msgid "Enable Gemini AI"
 msgstr "Gemini AI'yi etkinleştir"
@@ -907,40 +910,40 @@ msgid "Get your API key from https://aistudio.google.com/app/apikey. "
 msgstr "API anahtarınızı https://aistudio.google.com/app/apikey adresinden alın."
 
 msgid "It requires a paid Gemini API plan"
-msgstr "Ücretli bir Gemini API planı gerektirir"
+msgstr "Bu, ücretli bir Gemini API planı gerektirir."
 
 msgid "Gemini Model"
-msgstr "Gemini Modeli"
+msgstr "İkiz Model"
 
 msgid "Fetch Models"
 msgstr "Modelleri Getir"
 
-msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
-msgstr "Gemini modelinizi seçin. API anahtarınızı yeni eklediyseniz listeyi güncellemek için \"Modelleri Getir\"e tıklayın."
+msgid "Select your Gemini model. Click \\"
+msgstr "İkiz modelinizi seçin. Tıklayın \\"
 
 msgid "Please select a your paid model all model on the list are might not be available for free plans"
-msgstr "Lütfen ücretli modelinizi seçin, listedeki tüm modeller ücretsiz planlar için mevcut olmayabilir"
+msgstr "Lütfen listede bulunan tüm modellerin ücretsiz planlar için mevcut olmayabileceğini göz önünde bulundurarak, ücretli modelinizi seçin."
 
 msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
-msgstr "Özelleştirilmiş sonuçlar için Kullanıcı Sorgusundan önce Eklenecek İsteğiniz (Opsiyonel)"
+msgstr "Özelleştirilmiş Sonuçlar için Kullanıcı Sorgusundan Önce Eklenmesi Gereken İsteğiniz (Opsiyonel)"
 
 msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
-msgstr "Özelleştirilmiş sonuçlar için Kullanıcı Sorgusunun Sonuna Eklenecek İsteğiniz (Opsiyonel)"
+msgstr "Özelleştirilmiş Sonuçlar için Kullanıcı Sorgusunun Sonuna Eklenmesi Gereken İsteğiniz (Opsiyonel)"
 
 msgid "Save settings"
-msgstr "Ayarları kaydet"
+msgstr "Ayarları Kaydet"
 
 msgid "Fine Tuning VS GPT Assistants VS RAG:"
 msgstr "İnce Ayar VS GPT Asistanları VS RAG:"
 
 msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "İnce ayar yerine GPT Asistanları veya RAG kullanmanızı öneririz çünkü ince ayar, düzgün formatlanmış çok fazla veri gerektirir ve GPT Asistanları daha kolay kurulur. Yine de botu eğitmek için web sitenizin verilerini kullanabilirsiniz."
+msgstr "İnce Ayar yerine GPT Asistanları veya RAG kullanmanızı öneriyoruz çünkü İnce Ayar, düzgün formatlanmış çok fazla veri gerektirir ve GPT Asistanları daha kolay kurulur. Yine de botu eğitmek için web sitenizin verilerini kullanabilirsiniz."
 
 msgid "How to Use RAG in This Plugin:"
 msgstr "Bu Eklentide RAG Nasıl Kullanılır:"
 
 msgid "Enable RAG from the settings panel"
-msgstr "Ayarlar panelinden RAG'yi etkinleştirin"
+msgstr "Ayarlar panelinden RAG'ı etkinleştirin"
 
 msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
 msgstr "Kaynakları seçtikten sonra “Tüm Seçilen Kaynakları Göm” butonuna tıklayın."
@@ -955,40 +958,40 @@ msgid "User questions will now be answered using your site’s knowledge base"
 msgstr "Kullanıcı soruları artık sitenizin bilgi tabanı kullanılarak yanıtlanacaktır"
 
 msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
-msgstr "Ana OpenAI Ayarları altında OpenAI API anahtarını, AI Modelini ve Sistem Komutunu yapılandırmanız gerekiyor"
+msgstr "Ana OpenAI Ayarları altında OpenAI API anahtarını, AI Modelini ve Sistem Komutunu yapılandırmanız gerekiyor."
 
 msgid "You can update or re-embed content at any time without retraining."
-msgstr "İçeriği istediğiniz zaman güncelleyebilir veya yeniden gömebilirsiniz."
+msgstr "İstediğiniz zaman içeriği güncelleyebilir veya yeniden gömebilirsiniz."
 
 msgid "Getting Started with gemini"
-msgstr "Gemini ile Başlarken"
+msgstr "İkiz ile Başlarken"
 
 msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
-msgstr "Gemini, LLM'ler için birleşik bir Arayüz veya Toplayıcıdır. OpenAI'den Deepseek veya Claude'a kadar yüzlerce farklı AI modelinden seçim yapabilirsiniz."
+msgstr "İkiz, LLM'ler için birleşik bir Arayüz veya Toplayıcıdır. OpenAI'den Deepseek veya Claude'a kadar yüzlerce farklı AI modelinden seçim yapabilirsiniz."
 
 msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
-msgstr "Tek yapmanız gereken Gemini API Anahtarını eklemek ve bir Gemini Modeli seçmektir."
+msgstr "Tek yapmanız gereken İkiz API Anahtarını eklemek ve bir İkiz Modeli seçmektir."
 
 msgid "Grab your API key from"
 msgstr "API anahtarınızı buradan alın"
 
 msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
-msgstr "Gemini'nin çalışmasını istiyorsanız, lütfen DialogFlow ve OpenAI'nin devre dışı olduğundan emin olun."
+msgstr "İkiz'in çalışmasını istiyorsanız, DialogFlow ve OpenAI'nin devre dışı olduğundan emin olun."
 
 msgid "Failed in Security check"
-msgstr "Güvenlik kontrolünde başarısız"
+msgstr "Güvenlik kontrolünde başarısız oldu"
 
 msgid "Unauthorized user"
 msgstr "Yetkisiz kullanıcı"
 
 msgid "Security check failed. Unauthorized request."
-msgstr "Güvenlik kontrolü başarısız. Yetkisiz istek."
+msgstr "Güvenlik kontrolü başarısız oldu. Yetkisiz istek."
 
 msgid "API Key is required"
 msgstr "API Anahtarı gereklidir"
 
 msgid "Security check failed"
-msgstr "Güvenlik kontrolü başarısız"
+msgstr "Güvenlik kontrolü başarısız oldu"
 
 msgid "Unauthorized access"
 msgstr "Yetkisiz erişim"
@@ -1000,13 +1003,13 @@ msgid "View Detail"
 msgstr "Detayı Görüntüle"
 
 msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
-msgstr "OpenAI bazı eski modelleri devre dışı bıraktı. Lütfen ince ayar için GPT 3.5 veya 4 kullanın. Veri kümesini güncellemeniz ve tekrar ince ayar yapmanız gerekecek. Detaylar için Yardım bölümünü kontrol edin."
+msgstr "OpenAI bazı eski modelleri devre dışı bıraktı. İnce ayar yapmak için lütfen GPT 3.5 veya 4 kullanın. Veri kümesini güncellemeniz ve yeniden ince ayar yapmanız gerekecek. Detaylar için Yardım bölümünü kontrol edin."
 
 msgid "OpenAI settings"
 msgstr "OpenAI ayarları"
 
 msgid "Training Model"
-msgstr "Model Eğitimi"
+msgstr "Eğitim Modeli"
 
 msgid "GPT Assistant"
 msgstr "GPT Asistanı"
@@ -1030,7 +1033,7 @@ msgid " and "
 msgstr " ve "
 
 msgid "Master"
-msgstr "Master"
+msgstr "Usta"
 
 msgid " Licenses"
 msgstr " Lisansları"
@@ -1039,13 +1042,13 @@ msgid "Fine Tuning VS GPT Assistants:"
 msgstr "İnce Ayar VS GPT Asistanları:"
 
 msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "İnce ayar yerine GPT Asistanları kullanmanızı öneririz çünkü ince ayar, düzgün formatlanmış çok fazla veri gerektirir ve GPT Asistanları daha kolay kurulur. Yine de botu eğitmek için web sitenizin verilerini kullanabilirsiniz."
+msgstr "İnce Ayar yerine GPT Asistanları kullanmanızı öneriyoruz çünkü İnce Ayar, düzgün formatlanmış çok fazla veri gerektirir ve GPT Asistanları daha kolay kurulur. Yine de botu eğitmek için web sitenizin verilerini kullanabilirsiniz."
 
 msgid "Setting up GPT Assistants:"
-msgstr "GPT Asistanlarını Ayarlamak:"
+msgstr "GPT Asistanlarını Kurmak:"
 
 msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
-msgstr "Web Sitesi Verileri ile GPT eğitimi sekmesine gidin. Gerekli olan tüm Gönderi türlerini seçin ve Asistan için Verileri Dönüştür butonuna basın. İşlem tamamlandığında, verileri JSON formatında indirin"
+msgstr "Web Sitesi Verileri ile GPT eğitim sekmesine gidin. İhtiyacınız olan tüm Gönderi türlerini seçin ve Asistan için Verileri Dönüştür butonuna basın. İşlem tamamlandığında, verileri JSON formatında indirin."
 
 msgid "Go to "
 msgstr "Git "
@@ -1054,13 +1057,13 @@ msgid "Assistants playground"
 msgstr "Asistanlar oyun alanı"
 
 msgid " and create a new Assistant"
-msgstr " ve yeni bir Asistan oluştur"
+msgstr " ve yeni bir Asistan oluşturun"
 
 msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
 msgstr "İndirdiğiniz JSON dosyasını yükleyin ve GPT'ye aşağıdaki gibi bir Talimat verin ancak web sitenizin URL'sine göre özelleştirin:"
 
 msgid "Your name is Carry. You are a ChatBot assistant for the website "
-msgstr "Adınız Carry. Siz "
+msgstr "Adınız Carry. Siz, "
 
 msgid "https://www.quantumcloud.net. "
 msgstr "https://www.quantumcloud.net. "
@@ -1071,17 +1074,17 @@ msgstr "Web sitesi verilerini ve yüklenen dosyayı kullanarak web sitesi kullan
 msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
 msgstr "Asistanların ID'sini kopyalayın ve web sitenizdeki OpenAI ayarları altında GPT Asistanları sekmesine yapıştırın. İşlem tamamlandı. OpenAI API platformundan kredi satın aldıysanız, çalışmaya başlayacaktır."
 
-msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
-msgstr "Farklı sayfalarda chatbot Widget'ları ile farklı GPT Asistanları kullanabilirsiniz. Bu örnek kısa kodu yapıştırın ve Asistan ID'sini gerektiği gibi değiştirin: Örnek: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\\"
+msgstr "Farklı sayfalarda farklı GPT Asistanlarını chatbot Widget'ları ile kullanabilirsiniz. Bu örnek kısa kodu yapıştırın ve Asistan ID'sini gerektiği gibi değiştirin: Ör: [chatbot-widget hud_design=\\"
 
 msgid "Please check this article for step by step guide."
-msgstr "Adım adım kılavuz için lütfen bu makaleyi kontrol edin."
+msgstr "Adım adım kılavuz için bu makaleyi kontrol edin."
 
 msgid "Getting Customized Results from the AI Services"
 msgstr "AI Hizmetlerinden Özelleştirilmiş Sonuçlar Alma"
 
 msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
-msgstr "AI hizmetlerinden alabileceğiniz en iyi özelleştirilmiş sonuç, belgeleri ve web sitenizin verilerini yüklemenize olanak tanıyan OpenAI GPT Asistanını kullanmaktır (Pro sürümlerimiz tarafından üretilmiştir). Ancak, ayrıntılı bir istem yazarak da özelleştirilmiş sonuçlar alabilirsiniz. OpenAI Ayarları alanındaki Sistem Komutu bölümünde (diğer AI hizmetleri için de bir istem bölümü vardır) hizmetleriniz, ürünleriniz, sizinle nasıl iletişime geçileceği veya özelleştirilmiş sonuçlar almak için ilgili herhangi bir şeyi içeren ayrıntılı bir istem yazabilirsiniz. 3000 kelimeye kadar yeterlidir. Bu, çoğu küçük ve orta ölçekli web siteleri için yeterli olmalıdır."
+msgstr "AI hizmetlerinden alabileceğiniz en iyi özelleştirilmiş sonuç, belgeleri ve web siteniz verilerini (Pro sürümlerimiz tarafından üretilen) yüklemenize olanak tanıyan OpenAI GPT Asistanını kullanmaktır. Ancak, ayrıntılı bir istem yazarak da özelleştirilmiş sonuçlar alabilirsiniz. OpenAI Ayarları alanındaki Sistem Komutu bölümünde (diğer AI hizmetleri için de bir istem bölümü vardır) hizmetleriniz, ürünleriniz, sizinle nasıl iletişim kurulacağı veya özelleştirilmiş sonuçlar almak için ilgili herhangi bir ayrıntıyı içeren ayrıntılı bir istem yazabilirsiniz. 3000 kelimeye kadar uygundur. Bu, çoğu küçük ve orta ölçekli web siteleri için yeterli olmalıdır."
 
 msgid "**"
 msgstr "**"
@@ -1090,19 +1093,19 @@ msgid "Check this article"
 msgstr "Bu makaleyi kontrol edin"
 
 msgid "for more details abou how to get Customized Results from OpenAI."
-msgstr "Özelleştirilmiş Sonuçlar Almak için OpenAI'den daha fazla ayrıntı için."
+msgstr "Özelleştirilmiş Sonuçlar Alma hakkında daha fazla bilgi için."
 
 msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
-msgstr "GPT Asistanını kullanmak için WoowbotPro Profesyonel veya Master Lisansına yükseltin."
+msgstr "GPT Asistanını kullanmak için WoowbotPro Profesyonel veya Usta Lisansına yükseltin."
 
 msgid "Getting Started with OpenAI"
 msgstr "OpenAI ile Başlarken"
 
 msgid "OpenAI has changed their API billing policy lately. You have to "
-msgstr "OpenAI son zamanlarda API faturalama politikasını değiştirdi. Öncelikle "
+msgstr "OpenAI son zamanlarda API faturalama politikasını değiştirdi. Önceden "
 
 msgid "pre-purchase API credits"
-msgstr "API kredilerini önceden satın almanız gerekiyor"
+msgstr "API kredisi satın almanız gerekiyor"
 
 msgid " now. Go to "
 msgstr " şimdi. Git "
@@ -1113,11 +1116,11 @@ msgstr "https://platform.openai.com/account/billing/ "
 msgid "and add credits to your API account. Then increase the usage limit."
 msgstr "ve API hesabınıza kredi ekleyin. Ardından kullanım limitini artırın."
 
-msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
-msgstr "OpenAI API anahtarını eklediğinizde, genel sorular için çalışmaya başlamalıdır. Gizli modda yeni bir tarayıcı penceresi açın ve \"Rusya'nın başkenti nedir?\" diye sorarak test edin."
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \\"
+msgstr "OpenAI API anahtarını ekledikten sonra, genel sorular için çalışmaya başlamalıdır. Gizli modda yeni bir tarayıcı penceresi açın ve \\"
 
 msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
-msgstr "OpenAI'nin çalışmasını istiyorsanız, lütfen DialogFlow'un devre dışı olduğundan emin olun"
+msgstr "OpenAI'nin çalışmasını istiyorsanız, DialogFlow'un devre dışı olduğundan emin olun."
 
 msgid "Fine Tuning VS GPT Assistants VS RAG"
 msgstr "İnce Ayar VS GPT Asistanları VS RAG"
@@ -1126,10 +1129,10 @@ msgid "GPT Assistants:"
 msgstr "GPT Asistanları:"
 
 msgid "How to get an OpenAI API Key"
-msgstr "OpenAI API Anahtarı nasıl alınır"
+msgstr "OpenAI API Anahtarı Nasıl Alınır"
 
 msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
-msgstr "OpenAI API, kimlik doğrulama için API anahtarları kullanır. İsteklerinizde kullanacağınız API anahtarını almak için API Anahtarları sayfanıza gidin. API anahtarınızın bir sır olduğunu unutmayın! Başkalarıyla paylaşmayın veya herhangi bir istemci tarafı kodunda (tarayıcılar, uygulamalar) açığa çıkarmayın. Üretim istekleri, API anahtarınızın güvenli bir şekilde bir ortam değişkeninden veya anahtar yönetim hizmetinden yükleneceği kendi arka uç sunucunuz üzerinden yönlendirilmelidir."
+msgstr "OpenAI API, kimlik doğrulama için API anahtarları kullanır. İsteklerinizde kullanacağınız API anahtarını almak için API Anahtarları sayfanıza gidin. API anahtarınızın bir sır olduğunu unutmayın! Başkalarıyla paylaşmayın veya istemci tarafı kodunda (tarayıcılar, uygulamalar) ifşa etmeyin. Üretim istekleri, API anahtarınızın güvenli bir şekilde bir ortam değişkeni veya anahtar yönetim hizmetinden yüklenebileceği kendi arka uç sunucunuz üzerinden yönlendirilmelidir."
 
 msgid "You can generate the API key from here: "
 msgstr "API anahtarını buradan oluşturabilirsiniz: "
@@ -1138,17 +1141,10 @@ msgid "https://platform.openai.com/api-keys. "
 msgstr "https://platform.openai.com/api-keys. "
 
 msgid "Training or Fine Tuning OpenAI"
-msgstr "OpenAI'yi Eğitme veya İnce Ayar Yapma"
+msgstr "OpenAI'yi Eğitmek veya İnce Ayar Yapmak"
 
 msgid "To train OpenAI"
 msgstr "OpenAI'yi eğitmek için"
-
-msgid ""
-"a. To train or fine tune a model, 1st you need to:\n"
-"                "
-msgstr ""
-"a. Bir modeli eğitmek veya ince ayar yapmak için öncelikle şunları yapmalısınız:\n"
-"                "
 
 msgid "Gather the necessary data you want to train with"
 msgstr "Eğitmek istediğiniz gerekli verileri toplayın"
@@ -1162,24 +1158,17 @@ msgstr "Verileri OpenAI'ye .JSONL formatında yükleyin"
 msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
 msgstr "Verilerinizi kullanarak mevcut bir OpenAI modelini (Bot OpenAI ayarları sayfasından seçin) eğitin"
 
-msgid ""
-"b. Once you have your JSONL file ready, please go to the Training model section.\n"
-"                Upload your training file in .JSONL format."
-msgstr ""
-"b. JSONL dosyanız hazır olduğunda, lütfen Eğitim modeli bölümüne gidin.\n"
-"                Eğitim dosyanızı .JSONL formatında yükleyin."
-
 msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
-msgstr "c. Eğitim dosyanızı yüklediğinizde, bir dosya kimliği dönecek ve Eğitim FT Modeli oluştur butonuna tıkladığınızda eğitim başlayacaktır. Modeli daha sonra tanımak için bir ek (suffix) ve açılış modelini popup'ta ayarlayın ve oluşturun."
+msgstr "c. Eğitim dosyanızı yükledikten sonra, bir dosya kimliği dönecek ve Eğitim FT Modeli oluştur butonuna tıkladığınızda eğitim başlayacaktır. Kendinizi daha sonra tanımak için bir ek isim belirleyin ve açılır pencerede temel modeli oluşturun."
 
-msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
-msgstr "d. Eğitim tamamlandığında ve dosya hazır olduğunda, ince ayar yapılmış model dönecektir. İnce Ayar Yapılmış Modeller Listesi altında listelenecek, durumu \"Başarılı\" olarak gösterilecek ve ayrıca ayarlar sayfasına kopyalamak için bir FT (İnce Ayar Yapılmış) Model ID'si alacaksınız."
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \\"
+msgstr "d. Eğitim tamamlandığında ve dosya hazır olduğunda, ince ayar yapılmış model dönecektir. İnce Ayar Modelleri Listesi altında listelenecek, durumu \\"
 
 msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
-msgstr "e. Yukarıdaki prosedürü takip ederek birden fazla İnce Ayar Yapılmış model oluşturabilirsiniz. Kullanmak istediğiniz İnce Ayar Yapılmış model ID'sini kopyalayın."
+msgstr "e. Yukarıdaki prosedürü izleyerek birden fazla İnce Ayar modeli oluşturabilirsiniz. Kullanmak istediğiniz İnce Ayar modelinin kimliğini kopyalayın."
 
 msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
-msgstr "f. Ana Bot OpenAI ayarları sayfasına gidin ve İnce Ayar Yapılmış model ID'sini Özel İnce Ayar Yapılmış Model alanına yapıştırın ve kaydedin. Artık bot, Eğitim verilerine göre yanıt vermeye başlayacaktır."
+msgstr "f. Ana Bot OpenAI ayarları sayfasına gidin ve İnce Ayar Modeli alanına İnce Ayar model kimliğini yapıştırın ve kaydedin. Artık bot, Eğitim verilerine göre yanıt vermeye başlayacaktır."
 
 msgid "h. To Prepare your data model for GPT3.5/4:"
 msgstr "h. GPT3.5/4 için veri modelinizi hazırlamak için:"
@@ -1188,13 +1177,13 @@ msgid "1st you need to create a jsonl file like the formate below"
 msgstr "Öncelikle aşağıdaki formata benzer bir jsonl dosyası oluşturmanız gerekiyor"
 
 msgid "Each prompt and completion should be in a single line"
-msgstr "Her istem ve tamamlanma tek bir satırda olmalıdır"
+msgstr "Her istem ve tamamlayıcı tek bir satırda olmalıdır"
 
 msgid "Fine tuning file format with GPT 3.5/4"
-msgstr "GPT 3.5/4 ile ince ayar dosyası formatı"
+msgstr "İnce ayar dosya formatı GPT 3.5/4 ile"
 
-msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
-msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Bazen kelimeleri yanlış yazan bir asistansınız\" },{ \"role\": \"user\", \"content\": \"Bana bir hikaye anlat.\" }, { \"role\": \"assistant\", \"content\": \"Bir gün bir öğrenci okula gitti.\" }]}"
+msgid "{ \\"
+msgstr "{ \\"
 
 msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
 msgstr "İnce Ayar için Örnek jsonl dosyasını sağ tıklayıp kaydedin."
@@ -1208,62 +1197,62 @@ msgstr "OpenAI'yi Gömme"
 msgid "Important points about fine tuning"
 msgstr "İnce ayar ile ilgili önemli noktalar"
 
-msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
-msgstr "Daha iyi sonuçlar için en az 500+ isteme ihtiyacınız var. Aksi takdirde, OpenAI yanıtı genel bilgi ile karıştıracaktır. Ayrıca, istemler mümkün olduğunca açıklayıcı olmalıdır. Açıklayıcı sorular ve cevaplar ile SSS formatını takip edin. Örnek istem: Sadece \"Vintage Denim Ceket\" yerine \"Neden Vintage Denim Ceketimizi giymelisiniz?\" yazabilirsiniz."
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \\"
+msgstr "Daha iyi sonuçlar almak için en az 500+ isteme ihtiyacınız var. Aksi takdirde, OpenAI yanıtı genel bilgi ile karıştıracaktır. Ayrıca, istemler mümkün olduğunca açıklayıcı olmalıdır. Açıklayıcı sorular ve cevaplarla SSS türü formatı izleyin. Örnek istem: Sadece \\"
 
 msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
-msgstr "Tamamlamanız aşağıdaki gibi kısa veya 100 kelime civarında ise, Max Tokens değerini 200 tutun. İstediğiniz sonuçları elde edene kadar Sıcaklık, Varlık Cezası ve Frekans cezası ayarlarını ayarlayın."
+msgstr "Tamamlayıcınız aşağıdaki gibi kısa veya yaklaşık 100 kelimeyse, Max Tokens değerini 200 tutun. İstediğiniz sonuçları elde edene kadar Sıcaklık, Varlık Cezası ve Sıklık cezası ayarlarını ayarlayın."
 
 msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
-msgstr "Eğer web sitesi verileri ile ince ayar yapıyorsanız, Bot, Post başlıklarını istemler olarak kullanacaktır. Eğer Sayfa/Post başlıkları açıklayıcı değilse, iyi sonuçlar alamazsınız. Böyle bir durumda, Eğitim Modeli sayfasından JSONL dosyasını indirebilir ve istemleri geliştirebilirsiniz. Sonra tekrar ince ayar yapın."
+msgstr "Web sitesi verileri ile ince ayar yapıyorsanız, Bot, Gönderi başlıklarını istem olarak kullanacaktır. Sayfa/Gönderi başlıkları açıklayıcı değilse, iyi sonuçlar alamazsınız. Böyle durumlarda, Eğitim Modeli sayfasından JSONL dosyasını indirip istemleri geliştirebilirsiniz. Sonra tekrar ince ayar yapın."
 
 msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
-msgstr "Site aramasını Ayarlar-&gt;Başlangıç Menüsü'nden devre dışı bırakın, böylece bot site aramasından cevaplar getirmesin. Lütfen çıkış yapın ve ayarlarımızın üzerine yazılmaması için tekrar giriş yapın."
+msgstr "Botun site aramasından yanıt getirmemesi için Ayarlar-&gt;Başlangıç Menüsü'nden Site aramasını devre dışı bırakın. Lütfen ayarlarımızın üzerine yazılmaması için çıkış yapıp tekrar giriş yapın."
 
 msgid "How to Optimize Fine Tuning"
-msgstr "İnce Ayar Nasıl Optimize Edilir"
+msgstr "İnce Ayarı Optimize Etme"
 
 msgid "To get better results from fine-tuning please follow the following steps:"
-msgstr "İnce ayardan daha iyi sonuçlar almak için lütfen aşağıdaki adımları izleyin:"
+msgstr "Daha iyi sonuçlar almak için lütfen aşağıdaki adımları izleyin:"
 
 msgid "Set a lower value for Temperature"
 msgstr "Sıcaklık için daha düşük bir değer ayarlayın"
 
 msgid "Use a higher value for the Presence Penalty and Frequency penalty."
-msgstr "Varlık Cezası ve Frekans cezası için daha yüksek bir değer kullanın."
+msgstr "Mevcudiyet Cezası ve Frekans cezası için daha yüksek bir değer kullanın."
 
 msgid "If possible use the Curie model as your base model when you create the custom model."
 msgstr "Mümkünse, özel modelinizi oluştururken temel model olarak Curie modelini kullanın."
 
 msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
-msgstr "İstemlerinize ve tamamlamalarınıza bağlı olarak maksimum token kullanın. Eğer maksimum token için daha yüksek bir değer kullanırsanız, AI bağlamınıza alakasız daha fazla bilgi oluşturacaktır. Daha düşük maksimum token için de aynı durum geçerlidir. Eğer maksimum token için çok düşük bir değer seçerseniz, verilerinizi kısaltabilir veya hatalar alabilirsiniz."
+msgstr "İsteğinize ve tamamlamalarınıza bağlı olarak maksimum token kullanın. Eğer maksimum token için daha yüksek bir değer kullanırsanız, AI daha fazla bilgi oluşturur ki bu da bağlamınıza alakasız olabilir. Daha düşük maksimum token için de aynı durum geçerlidir. Eğer maksimum token için çok düşük bir değer seçerseniz, verilerinizi kısaltır veya hatalar verir."
 
 msgid "Presence Penalty"
-msgstr "Varlık Cezası"
+msgstr "Mevcudiyet Cezası"
 
 msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
-msgstr "Metin içinde şimdiye kadar göründüklerine bağlı olarak yeni token'ları cezalandıran pozitif değerler, modelin yeni konular hakkında konuşma olasılığını artırır."
+msgstr "-2.0 ile 2.0 arasında bir sayı. Pozitif değerler, metinde şimdiye kadar yer alan yeni token'ları cezalandırır, modelin yeni konular hakkında konuşma olasılığını artırır."
 
 msgid "Frequency Penalty"
 msgstr "Frekans Cezası"
 
 msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
-msgstr "Metin içinde şimdiye kadar mevcut frekanslarına bağlı olarak yeni token'ları cezalandıran pozitif değerler, modelin aynı satırı kelimesi kelimesine tekrar etme olasılığını azaltır."
+msgstr "-2.0 ile 2.0 arasında bir sayı. Pozitif değerler, metinde şimdiye kadar mevcut frekanslarına dayanarak yeni token'ları cezalandırır, modelin aynı satırı kelimesi kelimesine tekrar etme olasılığını azaltır."
 
 msgid "Temperature"
 msgstr "Sıcaklık"
 
 msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
-msgstr "En önemli ayarlardan biri sıcaklık olarak adlandırılır. Sıcaklık 0'ın üzerindeyken, aynı istemi göndermek her seferinde farklı tamamlamalarla sonuçlanır. Modelin, öncesindeki metnin ardından hangi metnin gelme olasılığını tahmin ettiğini unutmayın. Sıcaklık, bu tahminleri yaparken modelin ne kadar kendine güvenmesi gerektiğini kontrol etmenizi sağlayan 0 ile 1 arasında bir değerdir. Sıcaklığı düşürmek, daha az risk alacağı anlamına gelir ve tamamlamalar daha doğru ve belirleyici olacaktır. Sıcaklığı artırmak, daha çeşitli tamamlamalarla sonuçlanır."
+msgstr "En önemli ayarlardan biri sıcaklık olarak adlandırılır. Sıcaklık 0'ın üzerindeyken, aynı isteği göndermek her seferinde farklı tamamlamalarla sonuçlanır. Modelin, öncesindeki metnin ardından hangi metnin gelme olasılığını tahmin ettiğini unutmayın. Sıcaklık, bu tahminleri yaparken modelin ne kadar güvenilir olacağını kontrol etmenizi sağlayan 0 ile 1 arasında bir değerdir. Sıcaklığı düşürmek, daha az risk alacağı anlamına gelir ve tamamlamalar daha doğru ve belirleyici olur. Sıcaklığı artırmak, daha çeşitli tamamlamalarla sonuçlanır."
 
 msgid "My OpenAI does not work"
 msgstr "Benim OpenAI çalışmıyor"
 
 msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
-msgstr "Lütfen ayarlarınızı kontrol edin (örn: Api anahtarları, Maksimum token vb.). Kullanılan modele bağlı olarak (GPT3 maksimum 4000 idi), istekler, istem ve tamamlamalar arasında paylaşılan 4097 token'a kadar kullanabilir. Eğer isteminiz 4000 token ise, tamamlamanız en fazla 97 token olabilir. Ayrıca, dialogflow'un etkin olmadığını kontrol edin. Dialogflow ve OpenAI birlikte çalışmaz."
+msgstr "Lütfen ayarlarınızı kontrol edin (yani: Api anahtarları, Maksimum token vb.). Kullanılan modele bağlı olarak (GPT3 maksimum 4000'di), istekler, istem ve tamamlamalar arasında paylaşılan 4097 token'a kadar kullanabilir. Eğer isteğiniz 4000 token ise, tamamlamanız en fazla 97 token olabilir. Ayrıca, dialogflow'un etkin olmadığını kontrol edin. Dialogflow ve OpenAI birlikte çalışmaz."
 
 msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
-msgstr "Post türleriniz ve sayfalarınıza dayalı olarak birden fazla İnce Ayar modeli oluşturabilirsiniz. Eğitim verilerinizi düzenlemek için JSONL dosyası olarak indirebilir ve ardından yukarıdaki talimatlara göre diğer dosyalarla aynı süreçte yükleyebilirsiniz. Ayrıca, `FT Model Olarak Yükle` butonuna tıklayarak da yükleyebilirsiniz. Ardından Eğitim Modeli sekmesinden bir İnce Ayar modeli oluşturabilirsiniz."
+msgstr "Gönderi türleriniz ve sayfalarınıza dayalı olarak birden fazla İnce Ayar modeli oluşturabilirsiniz. Eğitim verilerinizi değiştirmek için bir JSONL dosyası olarak indirebilir ve ardından yukarıdaki talimatlarla aynı işlemle yükleyebilirsiniz. Ayrıca, `FT Modeli Olarak Yükle` butonuna tıklayarak yükleyebilirsiniz. Ardından Eğitim Modeli sekmesinden bir İnce Ayar modeli oluşturabilirsiniz."
 
 msgid "Fine tuning and training is available with the "
 msgstr "İnce ayar ve eğitim, "
@@ -1275,7 +1264,7 @@ msgid "It requires a paid OpenAI API plan"
 msgstr "Ücretli bir OpenAI API planı gerektirir"
 
 msgid "Enable OpenAI"
-msgstr "OpenAI'yi Etkinleştir"
+msgstr "OpenAI'yi etkinleştir"
 
 msgid "(if you want results from OpenAI only, It will disable default product Search)"
 msgstr "(Eğer yalnızca OpenAI'den sonuçlar istiyorsanız, varsayılan ürün Aramasını devre dışı bırakacaktır)"
@@ -1332,31 +1321,31 @@ msgid "GPT-3 turbo"
 msgstr "GPT-3 turbo"
 
 msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
-msgstr "Sistem Komutu (ChatGPT'ye nasıl davranması gerektiğini talimat vermek için kullanın). Buraya hizmetleriniz, ürünleriniz ve sizinle nasıl iletişim kurulacağı hakkında ayrıntılı bir istem yazabilirsiniz veya ilgili herhangi bir şeyi ekleyebilirsiniz."
+msgstr "Sistem Komutu (ChatGPT'ye nasıl davranacağını talimat vermek için kullanın). Buraya hizmetleriniz, ürünleriniz ve sizinle nasıl iletişim kurulacağı hakkında detayları içeren bir isteği yazabilirsiniz veya ilgili herhangi bir şeyi ekleyebilirsiniz."
 
 msgid "Customized Results"
 msgstr "Özelleştirilmiş Sonuçlar"
 
 msgid ". Upto 3000 words is fine."
-msgstr ". 3000 kelimeye kadar uygundur."
+msgstr ". 3000 kelimeye kadar sorun yok."
 
 msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
-msgstr "Siz yardımcı bir Asistan'sınız. Cevaplarınızda özlü ve ilgili olun ve yeni bir konu tanıtmayın."
+msgstr "Siz yardımcı bir Asistan'sınız. Cevaplarınızda özlü ve ilgili olun ve yeni bir konu tanıtmaktan kaçının."
 
 msgid "To set the ChatBot's tone and character set a system message according to your need"
-msgstr "ChatBot'un tonunu ve karakterini ayarlamak için ihtiyacınıza göre bir sistem mesajı ayarlayın"
+msgstr "ChatBot'un tonunu ve karakterini ayarlamak için ihtiyaçlarınıza göre bir sistem mesajı ayarlayın"
 
 msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
-msgstr "Örnek: Siz yardımcı bir Asistan'sınız. Cevaplarınızda özlü ve ilgili olun ve yeni bir konu tanıtmayın."
+msgstr "Örnek: Siz yardımcı bir Asistan'sınız. Cevaplarınızda özlü ve ilgili olun ve yeni bir konu tanıtmaktan kaçının."
 
 msgid "Prompt to be Appended at the End of the User Query (Optional)"
-msgstr "Kullanıcı Sorgusunun Sonuna Eklenmesi Gereken İstem (İsteğe Bağlı)"
+msgstr "Kullanıcı Sorgusunun Sonuna Eklenmesi Gereken İstek (İsteğe Bağlı)"
 
 msgid "Content for the response"
-msgstr "Cevap için içerik"
+msgstr "Yanıt için içerik"
 
 msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
-msgstr "Tehlikeli Bölge (Anahtar kelimeler doğru ayarlanmazsa AI'dan hiç yanıt alamayabilirsiniz. Sorun yaşarsanız anahtar kelimeleri kaldırın)"
+msgstr "Tehlikeli Bölge (Anahtar kelimeler doğru ayarlanmadığında AI'dan yanıt alamayabilirsiniz. Sorun yaşarsanız anahtar kelimeleri kaldırın)"
 
 msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
 msgstr "Kullanıcı sorgusu aşağıdaki Virgülle Ayrılmış Anahtar Kelimelerden birini içerdiğinde yalnızca OpenAI'ye bağlanın"
@@ -1365,7 +1354,7 @@ msgid "Connect to OpenAI only when user query does NOT include one of the follow
 msgstr "Kullanıcı sorgusu aşağıdaki Virgülle Ayrılmış Anahtar Kelimelerden birini içermediğinde yalnızca OpenAI'ye bağlanın"
 
 msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
-msgstr "Soru yukarıdaki Anahtar Kelimelerle ilgili olduğunda OpenAI'den yanıt istemek (Bu seçeneği etkinleştirmek doğruluğu artırır ancak OpenAI Token'larını kullanır)"
+msgstr "Yukarıdaki Anahtar Kelimelerle ilgili bir soru olduğunda OpenAI'den yanıt istemek (Bu seçeneği etkinleştirmek doğruluğu artırır ancak OpenAI Token'larını kullanır)"
 
 msgid "Check Connection  "
 msgstr "Bağlantıyı Kontrol Et"
@@ -1374,7 +1363,7 @@ msgid "Save the Settings first and then press the Check Connection button"
 msgstr "Önce Ayarları kaydedin ve ardından Bağlantıyı Kontrol Et butonuna basın"
 
 msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
-msgstr "**Eğer OpenAI geri dönüş yapmıyorsa ve bot sadece yükleniyorsa, muhtemelen OpenAI kullanım limitinize ulaştınız. OpenAI API'sini kullanmak ve Kullanım limitinizi artırmak için lütfen önceden kredi satın alın. API hesabınıza kredi eklemek için "
+msgstr "**Eğer OpenAI yanıt vermiyorsa ve bot sadece yükleniyorsa, muhtemelen OpenAI kullanım limitinize ulaştınız. OpenAI API'sini kullanmak için önceden kredi satın almanız ve Kullanım limitinizi artırmanız gerekir. API hesabınıza kredi eklemek için "
 
 msgid "billing page."
 msgstr "faturalama sayfasını ziyaret edin."
@@ -1383,7 +1372,7 @@ msgid "How to reduce cost "
 msgstr "Maliyeti nasıl azaltırım"
 
 msgid "and save money on OpenAI API cost for your ChatBot."
-msgstr "ve ChatBot'unuz için OpenAI API maliyetinde nasıl tasarruf edebilirim."
+msgstr "ve ChatBot'unuz için OpenAI API maliyetinde tasarruf edin."
 
 msgid "success"
 msgstr "başarı"
@@ -1392,16 +1381,16 @@ msgid "error"
 msgstr "hata"
 
 msgid "RAG cannot be enabled without an API key."
-msgstr "API anahtarı olmadan RAG etkinleştirilemez."
+msgstr "RAG, bir API anahtarı olmadan etkinleştirilemez."
 
 msgid "Please enable RAG in settings to save RAG related options."
-msgstr "RAG ile ilgili seçenekleri kaydetmek için lütfen ayarlarda RAG'yi etkinleştirin."
+msgstr "RAG ile ilgili seçenekleri kaydetmek için ayarlarda RAG'yi etkinleştirin."
 
 msgid "OpenAI API key is empty. Please save your API key first."
 msgstr "OpenAI API anahtarı boş. Lütfen önce API anahtarınızı kaydedin."
 
 msgid "Congrats! You are connected to AI."
-msgstr "Tebrikler! AI'ye bağlandınız."
+msgstr "Tebrikler! AI ile bağlantı kurdunuz."
 
 msgid "Success"
 msgstr "Başarı"
@@ -1421,45 +1410,20 @@ msgstr "Yetersiz izinler"
 msgid "AI Setup configuration saved successfully."
 msgstr "AI Kurulum yapılandırması başarıyla kaydedildi."
 
-msgid ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event to reset the rate limit used counts\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Ensure WordPress cron functions are available\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-msgstr ""
-"oran_limit_aşımı_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Her rol için cron işini planlayın, eğer zaten planlanmamışsa);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // oran limitini sıfırlamak için olayları planlayın\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// WordPress cron işlevlerinin mevcut olduğundan emin olun\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-
 msgid "Rate limit exceeded. Please try again later."
-msgstr "Oran limiti aşıldı. Lütfen daha sonra tekrar deneyin."
+msgstr "Hız sınırı aşıldı. Lütfen daha sonra tekrar deneyin."
 
 msgid "More WordPress Goodies for You!"
-msgstr "Sizin İçin Daha Fazla WordPress Ürünü!"
+msgstr "Sizin için Daha Fazla WordPress İyiliği!"
 
 msgid "Support"
 msgstr "Destek"
 
 msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
-msgstr "Web sitenizi daha iyi hale getirebilecek diğer çalışmalarımızı kontrol edin"
+msgstr "Web sitenizi daha iyi hale getirebilecek Diğer Çalışmalarımızı Göz Atın"
 
 msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
-msgstr "Tüm Pro Versiyon kullanıcılarımız Premium, Garantili Hızlı, Birinci Sınıf Destek alır."
+msgstr "Tüm Pro Versiyon kullanıcılarımız Premium, Garantili Hızlı, Tek Tek Öncelikli Destek alır."
 
 msgid "Get Priority Support "
 msgstr "Öncelikli Destek Alın"
@@ -1470,8 +1434,8 @@ msgstr "Çevrimiçi Bilgi Tabanı"
 msgid "Get Support for Free Version"
 msgstr "Ücretsiz Sürüm için Destek Alın"
 
-msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
-msgstr "Form gönderim isteğinizi işlerken bir sorun oluştu! Verdiğimiz rahatsızlıktan dolayı özür dileriz.<br> Herhangi bir geri bildirim için lütfen <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> adresine e-posta gönderin. Size hemen geri döneceğiz!"
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\\"
+msgstr "Form gönderim isteğinizi işleme alırken sorun! Verdiğimiz rahatsızlıktan dolayı özür dileriz.<br> Lütfen e-posta gönderin &lt;span style=\\"
 
 msgid "Please fill up all the requried form fields."
 msgstr "Lütfen tüm gerekli form alanlarını doldurun."
@@ -1483,7 +1447,7 @@ msgid "Support Request Details:"
 msgstr "Destek Talep Detayları:"
 
 msgid "Sent Via the Plugin"
-msgstr "Eklenti aracılığıyla gönderildi"
+msgstr "Eklenti üzerinden gönderildi"
 
 msgid "Mail sent from:"
 msgstr "Gönderilen Mail:"
@@ -1492,7 +1456,7 @@ msgid "URL:"
 msgstr "URL:"
 
 msgid "Mail Generated on:"
-msgstr "Mail Oluşturulduğu Tarih:"
+msgstr "Mail Üretildi:"
 
 msgid "From Plugin Support Page:"
 msgstr "Eklenti Destek Sayfasından:"
@@ -1501,7 +1465,7 @@ msgid "Your email was sent successfully. Thanks!"
 msgstr "E-postanız başarıyla gönderildi. Teşekkürler!"
 
 msgid "By %s"
-msgstr "%s tarafından"
+msgstr "Tarafından %s"
 
 msgctxt "plugin"
 msgid "Install %s now"
@@ -1553,14 +1517,8 @@ msgstr "Daha Fazla Detay"
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "Bu eklenti, WordPress ve PHP sürümlerinizle çalışmıyor."
 
-msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
-msgstr "<a href=\"%1$s\">Lütfen WordPress'i güncelleyin</a>, ardından <a href=\"%2$s\">PHP'yi güncelleme hakkında daha fazla bilgi edinin</a>."
-
-msgid "<a href=\"%s\">Please update WordPress</a>."
-msgstr "<a href=\"%s\">Lütfen WordPress'i güncelleyin</a>."
-
-msgid "<a href=\"%s\">Learn more about updating PHP</a>."
-msgstr "<a href=\"%s\">PHP'yi güncelleme hakkında daha fazla bilgi edinin</a>."
+msgid "<a href=\\"
+msgstr "&lt;a href=\\"
 
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr "Bu eklenti, WordPress sürümünüzle çalışmıyor."
@@ -1575,31 +1533,31 @@ msgid "Update To Pro"
 msgstr "Pro'ya Güncelle"
 
 msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
-msgstr "WoowBot ile başlamak anlık. Tek yapmanız gereken eklentiyi yüklemek ve etkinleştirmektir."
+msgstr "WoowBot ile başlamak anlık. Tek yapmanız gereken eklentiyi yükleyip etkinleştirmek."
 
 msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
-msgstr "Kendi ChatBot simgenizi WoowBot panelinden-&gt;Simge bölümünden yükleyebilirsiniz."
+msgstr "WoowBot panelinden kendi ChatBot simgenizi Yükleyebilirsiniz -&gt; Simge bölümünden."
 
 msgid "You can also upload a custom Agent icon in the pro version."
 msgstr "Pro versiyonunda özel bir Ajan simgesi de yükleyebilirsiniz."
 
 msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
-msgstr "Lite versiyonunda ihtiyaçlarınıza göre özelleştirebileceğiniz birkaç dil ayarı vardır. Varsayılan diller, İngilizce dilini kullanan mağazalar için uygundur. Ancak bot yanıtlarını kelime kelime herhangi bir dile değiştirebilirsiniz!"
+msgstr "Lite versiyonunda ihtiyaçlarınıza göre özelleştirebileceğiniz birkaç dil ayarı vardır. Varsayılan diller, İngilizce dilini kullanan mağazalar için uygundur. Ancak bot yanıtlarını kelimenin tam anlamıyla herhangi bir dile değiştirebilirsiniz!"
 
 msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
-msgstr "WoowBot içinde bazı renkleri veya yazı tipi ayarlarını ayarlamak için özel CSS panelini kullanın."
+msgstr "WoowBot içindeki bazı renkleri veya yazı tipi ayarlarını ayarlamak için özel CSS panelini kullanın."
 
 msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
-msgstr "WooCommerce için #1 ChatBot'u alın – WoowBot"
+msgstr "#1 WooCommerce ChatBot'u alın – WoowBot"
 
 msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
-msgstr "Gelişmiş AI Özellikleri, Müşteri Yeniden Hedefleme ve daha fazlasını WoowBot Pro ile edinin"
+msgstr "Gelişmiş AI Özellikleri, Müşteri Yeniden Hedefleme ve daha fazlasını WoowBot Pro ile alın"
 
 msgid "Get the WoowBot Pro Now!"
 msgstr "WoowBot Pro'yu şimdi alın!"
 
 msgid "Crafted By:"
-msgstr "Hazırlayan:"
+msgstr "Tarafından Hazırlanan:"
 
 msgid "Web Design Company"
 msgstr "Web Tasarım Şirketi"
@@ -1629,7 +1587,7 @@ msgid "General settings"
 msgstr "Genel ayarlar"
 
 msgid "WoowBot ICONS"
-msgstr "WoowBot SİMGELERİ"
+msgstr "WoowBot SIMGELERİ"
 
 msgid "Language Center"
 msgstr "Dil Merkezi"
@@ -1674,7 +1632,7 @@ msgid "From Bottom In px"
 msgstr "Alttan px cinsinden"
 
 msgid "Number of products to show in search results. ( '-1' for all products )."
-msgstr "Arama sonuçlarında gösterilecek ürün sayısı. (Tüm ürünler için '-1')."
+msgstr "Arama sonuçlarında gösterilecek ürün sayısı. ('-1' tüm ürünler için)."
 
 msgid "Page controller"
 msgstr "Sayfa kontrolörü"
@@ -1698,7 +1656,7 @@ msgid "All Pages"
 msgstr "Tüm Sayfalar"
 
 msgid "Selected Pages Only "
-msgstr "Sadece Seçili Sayfalar"
+msgstr "Sadece Seçilen Sayfalar"
 
 msgid "Exclude from Custom Post"
 msgstr "Özel Yazıdan Hariç Tut"
@@ -1749,13 +1707,13 @@ msgid "Custom Icon"
 msgstr "Özel Simge"
 
 msgid "Upload custom Floating Icon"
-msgstr "Özel Yüzen Simge Yükle"
+msgstr "Özel Yüzen Simge Yükleyin"
 
 msgid "Upload Custom Icon"
-msgstr "Özel Simge Yükle"
+msgstr "Özel Simge Yükleyin"
 
 msgid " Woobot Agent Image"
-msgstr "Woobot Ajan Resmi"
+msgstr "Woobot Ajan Görseli"
 
 msgid "Default Agent"
 msgstr "Varsayılan Ajan"
@@ -1767,7 +1725,7 @@ msgid "Custom Agent Icon"
 msgstr "Özel Ajan Simgesi"
 
 msgid "Upload Agent Icon"
-msgstr "Ajan Simgesini Yükle"
+msgstr "Ajan Simgesini Yükleyin"
 
 msgid "Custom Backgroud"
 msgstr "Özel Arka Plan"
@@ -1776,7 +1734,7 @@ msgid "Change the  message board background image (except mini mode)."
 msgstr "Mesaj panosu arka plan resmini değiştirin (mini mod hariç)."
 
 msgid "Upload  message board background (Ideal image size 350px X 550px)."
-msgstr "Mesaj panosu arka planını yükleyin (Ideal resim boyutu 350px X 550px)."
+msgstr "Mesaj panosu arka planını yükleyin (İdeal resim boyutu 350px X 550px)."
 
 msgid "Upload  background."
 msgstr "Arka planı yükleyin."
@@ -1818,7 +1776,7 @@ msgid "Message settings for"
 msgstr "Mesaj ayarları için"
 
 msgid "Editor Box"
-msgstr "Editör Kutusu"
+msgstr "Düzenleyici Kutusu"
 
 msgid "is typing..."
 msgstr "yazıyor..."
@@ -1830,13 +1788,13 @@ msgid "Products Search"
 msgstr "Ürün Arama"
 
 msgid "I am here to find you the product you need. What are you shopping for"
-msgstr "İhtiyacınız olan ürünü bulmak için buradayım. Ne satın alıyorsunuz?"
+msgstr "İhtiyacınız olan ürünü bulmak için buradayım. Ne satın alıyorsunuz"
 
 msgid "if products found"
-msgstr "ürünler bulunduğunda"
+msgstr "eğer ürün bulunursa"
 
 msgid "If no matching products is found"
-msgstr "Eşleşen ürün bulunmadığında"
+msgstr "Eşleşen ürün bulunamazsa"
 
 msgid "Can you be more specific?"
 msgstr "Daha spesifik olabilir misiniz?"
@@ -1848,10 +1806,10 @@ msgid "Catalog"
 msgstr "Katalog"
 
 msgid "Send Us Email"
-msgstr "Bize E-posta Gönder"
+msgstr "Bize E-posta Gönderin"
 
 msgid "You can browse our extensive catalog. Just pick a category from below"
-msgstr "Geniş katalogumuzu inceleyebilirsiniz. Aşağıdan bir kategori seçin"
+msgstr "Geniş katalogumuzu göz atabilirsiniz. Aşağıdan bir kategori seçin"
 
 msgid "Too many choices? Let's try another search term"
 msgstr "Çok fazla seçenek mi? Başka bir arama terimi deneyelim"
@@ -1869,13 +1827,13 @@ msgid "You can paste or write your custom css here."
 msgstr "Buraya özel CSS'inizi yapıştırabilir veya yazabilirsiniz."
 
 msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
-msgstr "#1 WooCommerce ChatBot'u alın – WoowBot Pro"
+msgstr "WooCommerce için #1 ChatBot'u alın – WoowBot Pro"
 
 msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
-msgstr "WoowBot Pro, mağazanızın satışlarını belirgin bir şekilde artırmaya yardımcı olabilecek bir WooCommerce Alışveriş ChatBot'udur. Alıcılar, Google'ın Dialogflow ile entegrasyonu sayesinde Bot ile akıcı bir şekilde sohbet edebilir, sohbet arayüzünden ürünleri arayabilir ve sepete ekleyebilir, destek alabilir ve daha fazlasını yapabilir!"
+msgstr "WoowBot Pro, mağaza satışlarınızı belirgin bir şekilde artırmaya yardımcı olabilecek bir WooCommerce Alışveriş ChatBot'udur. Alışveriş yapanlar, Google'ın Dialogflow ile entegrasyonu sayesinde Bot ile akıcı bir şekilde sohbet edebilir, sohbet arayüzünden doğrudan ürünleri arayıp sepete ekleyebilir, destek alabilir ve daha fazlasını yapabilir!"
 
 msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
-msgstr "Yerinde Yeniden Hedefleme, Çıkış Niyeti, zaman aralığı veya sayfa kaydırma ile özel teklifler ve kuponlar göstererek dönüşüm oranı optimizasyonunuza yardımcı olur. Müşteri Dönüşümlerini istatistiklerle takip edin ve alıcıların sepetleri terk edip etmediğini öğrenin. Daha fazla satış elde edin!"
+msgstr "Yerinde Yeniden Hedefleme, Çıkış Niyeti, zaman aralığı veya sayfa kaydırma ile özel teklifler ve kuponlar göstererek dönüşüm oranı optimizasyonunuza yardımcı olur. Müşteri Dönüşümlerini istatistiklerle takip edin ve alışveriş yapanların sepeti terk edip etmediğini öğrenin. Daha fazla satış elde edin!"
 
 msgid "Get the WoowBot Pro Now and Increase Sales!"
 msgstr "WoowBot Pro'yu şimdi alın ve satışları artırın!"
@@ -1884,55 +1842,55 @@ msgid "Multi Language Addon (**new)"
 msgstr "Çok Dilli Eklenti (**yeni)"
 
 msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
-msgstr "ChatBot'unuz için birden fazla dil desteği ekleyin. Kullanıcı, her zaman açılır menüden dili değiştirebilir. Yönetici varsayılan dili seçebilir. Tüm ana dilleri destekler. Farklı diller için farklı Dialogflow ajanları ile bağlantı kurun"
+msgstr "ChatBot'unuz için birden fazla dil desteği ekleyin. Kullanıcı, her zaman açılır menüden dili değiştirebilir. Yönetici varsayılan dili seçebilir. Tüm ana dilleri destekler. Farklı diller için farklı Dialogflow ajanları ile bağlantı kurun."
 
 msgid "Voice Message AddOn (**new)"
 msgstr "Sesli Mesaj Eklentisi (**yeni)"
 
 msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
-msgstr "Müşterilerinizin ChatBot arayüzünden sesli mesaj kaydetmelerine izin verin. Sesli mesajlar, her zaman dinlemek için arka planda kaydedilir. Google API kullanarak sesli metne destek verir. Tüm Modern Tarayıcılarla uyumludur. Güzel modern Kullanıcı Arayüzü"
+msgstr "Müşterilerinize ChatBot arayüzünden sesli mesaj kaydetme imkanı tanıyın. Sesli mesajlar, her zaman dinlemek için arka planda kaydedilir. Google API kullanarak konuşmayı metne dönüştürür. Tüm Modern Tarayıcılarla uyumludur. Güzel modern Kullanıcı Arayüzü."
 
 msgid "Extended UI Addon"
 msgstr "Genişletilmiş UI Eklentisi"
 
 msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
-msgstr "Sevdiğiniz ChatBot'a bir makyaj yapın. 2 ek modern, şık ve oldukça şatafatlı şablondan birini seçin! Bu yeni şablonlar, web sitenizin ziyaretçilerini kesinlikle etkileyecek! Yeni yükleme efekti ve kapsamlı renk özelleştirme seçenekleri mevcuttur!"
+msgstr "Sevdiğiniz ChatBot'a bir makyaj yapın. 2 ek modern, şık ve oldukça şatafatlı şablondan birini seçin! Bu yeni şablonlar, web siteniz ziyaretçilerini kesinlikle etkileyecek! Yeni yükleme efekti ve kapsamlı renk özelleştirme seçenekleri mevcuttur!"
 
 msgid "Simple Text Responses Pro"
 msgstr "Basit Metin Yanıtları Pro"
 
 msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
-msgstr "Müşteri sorgularınız için metin tabanlı yanıtlar oluşturun, CSV dışa aktarma/içeri aktarma özelliği ile kolayca. STR Pro, arka uç ve ön uç için Basit metin yanıtları için kategorileri destekler. ChatBot yanıtlarınızı biçimlendirmek için HTML görsel editörü ve daha iyi arama eşleşmesi için durdurma kelimelerini kaldırma özelliği sunar."
+msgstr "Müşteri talepleriniz için metin tabanlı yanıtlar oluşturun, CSV dışa aktarma/içeri aktarma özelliği ile kolayca yapın. STR Pro, arka uç ve ön uç için Basit metin yanıtları için kategorileri destekler. ChatBot yanıtlarınızı biçimlendirmek için HTML görsel editörü ve daha iyi arama eşleşmesi için durdurma kelimelerini kaldırma."
 
 msgid "Bargaining ChatBot for WoowBot"
 msgstr "Pazarlık ChatBot'u için WoowBot"
 
 msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
-msgstr "Pazarlık ChatBot'u ile Teklifinizi Şimdi Yapın. Akıllı fiyat müzakereleri ile daha fazla müşteri kazanın. Müşterilerinize fiyatınız üzerinde teklif verme imkanı tanıyın. Ürün bazında sizin belirlediğiniz minimum fiyatı müzakere edin. Alıcıları satın alma niyetinin yüksek olduğu anlarda yakalayın. Teklifinizi Yap butonu, minimum fiyatı belirlediğiniz ürünün tekil sayfasında yalnızca gösterilecektir."
+msgstr "Pazarlık ChatBot'u ile Teklifinizi Şimdi Yapın. Akıllı fiyat müzakereleri ile daha fazla müşteri kazanın. Müşterilerinize fiyatınız üzerinde teklif verme imkanı tanıyın. Ürün bazında sizin belirlediğiniz minimum fiyatla müzakere edin. Alışveriş yapanları satın alma niyetlerinin yüksek olduğu anlarda yakalayın. Teklifinizi Yap butonu, minimum fiyat belirlediğiniz ürün tek sayfasında yalnızca gösterilecektir."
 
 msgid "Conversational Form Builder"
 msgstr "Sohbet Formu Oluşturucu"
 
 msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
-msgstr "Yerel bir WordPress ChatBot deneyimi için koşullu sohbetler ve formlar oluşturun. Standart Formlar, koşullu alanlara sahip Dinamik Formlar, Hesaplayıcılar, Randevu rezervasyonu vb. ile birlikte gelir. 7 hazır şablon ile birlikte gelir. Form verilerini veritabanına kaydeder, otomatik yanıt, koşullu alanlar, değişkenler, kaydedilmiş revizyonlar ve daha fazlasını içerir!"
+msgstr "Yerel bir WordPress ChatBot deneyimi için koşullu sohbetler ve formlar oluşturun. Standart Formlar, koşullu alanlarla Dinamik Formlar, Hesaplayıcılar, Randevu rezervasyonu vb. ile birlikte gelir. 7 hazır şablon içerir. Form verilerini veritabanına kaydeder, otomatik yanıt, koşullu alanlar, değişkenler, kaydedilmiş revizyonlar ve daha fazlasını sağlar!"
 
 msgid "Export Import Settings"
-msgstr "Ayarları Dışa Aktar/Içe Aktar"
+msgstr "Ayarları Dışa Aktar/Içeri Aktar"
 
 msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
-msgstr "WoowbotPro'yu birden fazla web sitesinde mi kullanıyorsunuz? O zaman bu pratik küçük eklenti işinize yarayabilir. Bu eklenti, ayarlarınızı dışa aktarmanıza ve başka bir sitede geri içe aktarmanıza veya sadece bir yedek tutmak istiyorsanız kullanmanıza olanak tanır. Birçok seçeneği olan Dil merkezi ayarlarını taşımak için çok yardımcıdır. Şimdi alın!"
+msgstr "WoowbotPro'yu birden fazla web sitesinde mi kullanıyorsunuz? O zaman bu pratik küçük eklenti işinize yarayabilir. Bu eklenti, ayarlarınızı dışa aktarmanıza ve başka bir siteye geri içe aktarmanıza veya sadece bir yedek tutmanıza olanak tanır. Birçok seçeneği olan Dil merkezi ayarlarını taşımak için çok yardımcıdır. Şimdi alın!"
 
 msgid "Messenger ChatBot Addon"
 msgstr "Messenger ChatBot Eklentisi"
 
 msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
-msgstr "Woowbot'u web sitenizde, FB Sayfası ve Messenger'daki müşteri sorularına yanıt vermek için bir merkez olarak kullanın"
+msgstr "Woowbot'u web sitenizde, FB Sayfası ve Messenger'da müşteri sorularına yanıt vermek için bir merkez olarak kullanın."
 
 msgid "Extended Search"
 msgstr "Genişletilmiş Arama"
 
 msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
-msgstr "WPBot'un arama gücünü, WooCommerce dahil hemen hemen her Özel Gönderi Türünü içerecek şekilde genişletin"
+msgstr "WPBot'un arama gücünü, WooCommerce dahil hemen hemen her Özel Gönderi Türünü içerecek şekilde genişletin."
 
 msgid "ChatBot Session Save Addon"
 msgstr "ChatBot Oturumunu Kaydet Eklentisi"
@@ -1950,13 +1908,13 @@ msgid "White Label WPBot"
 msgstr "Beyaz Etiket WPBot"
 
 msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
-msgstr "QuantumCloud logosunu ve markasını kendi logonuzla ve markanızla değiştirin. Müşterilerine ChatBot hizmetleri sunmak isteyen geliştiriciler ve ajanslar için uygundur."
+msgstr "QuantumCloud logosunu ve markasını kendi logonuzla değiştirin. Müşterilerine ChatBot hizmetleri sunmak isteyen geliştiriciler ve ajanslar için uygundur."
 
 msgid "Mailing List Integration AddOn"
 msgstr "Posta Listesi Entegrasyonu Eklentisi"
 
 msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
-msgstr "Posta Listesi Entegrasyonu, Mailchimp ve Zapier hesaplarınızla bağlantı kurmanıza olanak tanıyan ChatBot eklentisidir. ChatBot'tan Mailchimp Listelerinize yeni aboneler ekleyebilir ve abonelikten çıkarabilirsiniz. Ayrıca Zapier Hesabınızda yeni bir Zap oluşturabilir ve bu eklenti ile bağlantı kurabilirsiniz."
+msgstr "Posta Listesi Entegrasyonu, Mailchimp ve Zapier hesaplarınızla bağlantı kurmanıza olanak tanıyan ChatBot eklentisidir. ChatBot'tan Mailchimp Listelerinize yeni aboneler ekleyebilir ve abonelikten çıkarabilirsiniz. Ayrıca, Zapier Hesabınızda yeni bir Zap oluşturabilir ve bu eklenti ile bağlantı kurabilirsiniz."
 
 msgid "WoowBot Master Theme"
 msgstr "WoowBot Ana Tema"
@@ -1968,7 +1926,7 @@ msgid "Save Settings"
 msgstr "Ayarları Kaydet"
 
 msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
-msgstr "**Pro İpucu: WoowBot'u Gerçekten zeki yapmak ister misiniz"
+msgstr "**Pro İpucu: WoowBot'u Gerçekten zeki yapmak ister misiniz?"
 
 msgid "AI and Natural Language Processing?"
 msgstr "Yapay Zeka ve Doğal Dil İşleme ile?"
@@ -1980,7 +1938,7 @@ msgid "**Pro Tip: WoowBot Pro is integrated with"
 msgstr "**Pro İpucu: WoowBot Pro,"
 
 msgid "OpenAI ChatGPT and DialogFlow AI"
-msgstr "OpenAI ChatGPT ve DialogFlow AI ile entegre edilmiştir"
+msgstr "OpenAI ChatGPT ve DialogFlow AI ile entegre edilmiştir."
 
 msgid "**Pro Tip: "
 msgstr "**Pro İpucu: "
@@ -1995,7 +1953,7 @@ msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
 msgstr "**Pro İpucu: Müşterileriniz siparişleri tamamlamıyor mu? Bunu öğrenin"
 
 msgid "Customer Conversion report"
-msgstr "Müşteri Dönüşüm raporunda"
+msgstr "Müşteri Dönüşüm raporu ile"
 
 msgid "in the Pro version"
 msgstr "pro sürümünde"
@@ -2013,7 +1971,7 @@ msgid "**Pro Tip: Utilize Onsite Retargeting for"
 msgstr "**Pro İpucu: Yerinde Yeniden Hedeflemeyi kullanın"
 
 msgid "Exit Intent or Scroll down Popups"
-msgstr "Çıkış Niyeti veya Kaydırma Pop-up'ları için"
+msgstr "Çıkış Niyeti veya Kaydırma Popupları için"
 
 msgid "with WoowBot Pro. Increase sales by 50% or more!"
 msgstr "with WoowBot Pro. Increase sales by 50% or more!"
@@ -2031,7 +1989,118 @@ msgid "**Pro Tip: WoowBot pro integrates with"
 msgstr "**Pro İpucu: WoowBot pro,"
 
 msgid "Facebook, Instagram, Telegram"
-msgstr "Facebook, Instagram, Telegram"
+msgstr "Facebook, Instagram, Telegram ile entegre olur"
 
 msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
-msgstr "ve daha fazlası ile müşterilerinize hak ettikleri desteği vermek için entegre edilir. Müşteri memnuniyetini artırın!"
+msgstr "ve daha fazlası, müşterilerinize hak ettikleri desteği vermek için. Müşteri memnuniyetini artırın!"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Tekil ürün sayfalarında \"AI ile Deneyin\" butonunu gösterin"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "\"Deneyin\" butonunun konumunu ve metnini <strong>Genel Ayarlar</strong> sekmesinde tamamen özelleştirebilirsiniz!"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Bir müşteri Deneyin butonuna tıkladığında, premium bir modal arayüz açılır. Kendilerinin bir referans fotoğrafını kolayca sürükleyip bırakabilir veya yükleyebilirler. Ayrıca özel senaryo talimatları eklemek için bir metin kutuları vardır (örneğin, <em>\"Modern bir kahve dükkanında duruyor\"</em>)."
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Google'ın Gemini modelleri (Imagen 3 ve Veo dahil) Google AI Studio'dan bir API anahtarı gerektirir. Ücretsiz bir API anahtarı almak için <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>'nu ziyaret edebilirsiniz."
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAI'nin modelleri (DALL-E 3 gibi) ücretli bir OpenAI platformu hesabı gerektirir. Bir anahtar oluşturmak için <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Anahtarları</a>'nı ziyaret edebilirsiniz."
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Gemini modelinizi seçin. API anahtarınızı eklediyseniz listeyi güncellemek için \"Modelleri Al\" butonuna tıklayın."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "Chatbot Widget'ları ile farklı sayfalarda farklı GPT Asistanları kullanabilirsiniz. Bu örnek kısa kodu yapıştırın ve Asistan ID'sini gerektiği gibi değiştirin: Örnek: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "OpenAI API anahtarını eklediğinizde, genel sorular için çalışmaya başlamalıdır. Gizli modda yeni bir tarayıcı penceresi açın ve \"Rusya'nın başkenti nedir?\" diye sorarak test edin."
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:
+\n"
+"                "
+msgstr ""
+"a. Bir modeli eğitmek veya ince ayar yapmak için önce şunları yapmalısınız:
+\n"
+"                "
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+"b. JSONL dosyanız hazır olduğunda, lütfen Eğitim modeli bölümüne gidin.
+\n"
+"                Eğitim dosyanızı .JSONL formatında yükleyin."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Eğitim tamamlandığında ve dosya hazır olduğunda, ince ayar yapılmış modeli döndürecektir. İnce Ayar Yapılmış Modeller Listesi altında listelenecek, durumu \"Başarılı\" olarak gösterilecek ve ayrıca ayarlar sayfasına kopyalamak için bir FT (İnce Ayar Yapılmış) Model ID'si alacaksınız."
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Yanlış yazım yapan bir asistanınız.\" },{ \"role\": \"user\", \"content\": \"Bana bir hikaye anlat.\" }, { \"role\": \"assistant\", \"content\": \"Bir gün bir öğrenci okula gitti.\" }]}"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Daha iyi sonuçlar için en az 500+ isteme ihtiyacınız var. Aksi takdirde, OpenAI yanıtı genel bilgi ile karıştıracaktır. Ayrıca, istemlerin mümkün olduğunca açıklayıcı olması gerekir. Açıklayıcı sorular ve yanıtlarla SSS türü formatı izleyin. Örnek istem: Sadece \"Vintage Denim Ceket\" yerine \"Neden Vintage Denim Ceketimizi giymelisiniz?\" yazabilirsiniz."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Her rol için cron işini planlayın, eğer zaten planlanmamışsa);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // oran limitini sıfırlamak için olayı planlayın
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// WordPress cron işlevlerinin mevcut olduğundan emin olun
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Form gönderim isteğinizi işlerken bir sorun oluştu! Verdiğimiz rahatsızlıklar için özür dileriz.<br> Herhangi bir geri bildirim için lütfen <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> adresine e-posta gönderin. Size hemen geri döneceğiz!"
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Lütfen WordPress'i güncelleyin</a>, ardından <a href=\"%2$s\">PHP'yi güncelleme hakkında daha fazla bilgi edinin</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Lütfen WordPress'i güncelleyin</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">PHP'yi güncelleme hakkında daha fazla bilgi edinin</a>."

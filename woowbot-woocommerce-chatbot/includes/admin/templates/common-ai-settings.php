@@ -9,14 +9,6 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
 // $wpchatbot_license_valid            = 'starter';
 
 ?>
-<style>
-.qcl-openai .qcld-row {
-    margin-right: 0;
-    margin-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-</style>
     <div class="qcl-openai">
         <h2 class="nav-tab-wrapper">
             <a href="#qcld-rag-settings-tab" class="nav-tab"><?php esc_html_e('Rate Limit', 'woowbot-woocommerce-chatbot'); ?></a>
@@ -38,15 +30,13 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                     </p>	
                 </div>
                     <hr>
-                 <div class="qcld-row g-0">
-                    <div id="rate_limit_settings" <?php echo ( get_option( 'is_rate_limiting_enabled' ) != 1 ) ? 'style="display:none;"' : ''; ?>>	
-                        <p class="text-muted">
-                            <?php esc_html_e( 'Set the rate limit for each user role:', 'woowbot-woocommerce-chatbot'); ?>
-                        </p>										
-                    </div>	
-                </div>
-                <div id="rate_limit_settings" <?php echo ( get_option( 'is_rate_limiting_enabled' ) != 1 ) ? 'style="display:none;"' : ''; ?>>	</div> 
-                	    <?php 
+                 <div id="rate_limit_settings" class="<?php echo ( get_option( 'is_rate_limiting_enabled' ) != 1 ) ? 'qcld-hidden' : ''; ?>">
+                     <div class="qcld-row g-0">
+                         <p class="text-muted">
+                             <?php esc_html_e( 'Set the rate limit for each user role:', 'woowbot-woocommerce-chatbot'); ?>
+                         </p>										
+                     </div>	
+                 	    <?php 
                             global $wp_roles;
                             // Check if the global object exists and has the roles property
                             if ( $wp_roles && property_exists( $wp_roles, 'roles' ) ) {
@@ -55,7 +45,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                                     $option_name = 'rate_limit_' . $role_key;
                                     $rate_limit_value = get_option( $option_name, '' );
                                     ?>
-                                    <div class="qcld-row mb-4" style="margin-bottom:20px;">
+                                    <div class="qcld-row mb-4 qcld-mb-20">
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="<?php echo esc_attr( $option_name ); ?>" class="form-label">
@@ -89,7 +79,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                                 }
                             }
                         ?>
-                        <div class="qcld-row mb-4" style="margin-bottom:20px;">
+                        <div class="qcld-row mb-4 qcld-mb-20">
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="<?php echo esc_attr( '' ); ?>" class="form-label">
@@ -116,10 +106,10 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                                 </div>	
                             </div>
                         </div>
-                            
+                 </div>   
             </div>
             <div class="wrap">
-                <button class="qcld-btn-primary" id="qcld_openai_rate_limit_save_setting">Save Settings</button>
+                <button class="qcld-btn-primary" id="qcld_openai_rate_limit_save_setting"><?php esc_html_e( 'Save Settings', 'woowbot-woocommerce-chatbot'); ?></button>
             </div>
         </div>
         <!-- <div id="qcld-other-common-tab" class="qcld-tab-content">

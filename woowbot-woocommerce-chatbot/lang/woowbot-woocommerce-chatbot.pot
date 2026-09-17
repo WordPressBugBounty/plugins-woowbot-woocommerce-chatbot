@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chatbot - WoowBot 4.9.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot\n"
-"POT-Creation-Date: 2026-09-14 11:58+0000\n"
-"PO-Revision-Date: 2026-09-14 11:58+0000\n"
+"POT-Creation-Date: 2026-09-15 09:30+0000\n"
+"PO-Revision-Date: 2026-09-15 09:30+0000\n"
 "Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
 "Language-Team: English <support@quantumcloud.net>\n"
 "Language: en\n"
@@ -1030,7 +1030,7 @@ msgid "Add to Cart"
 msgstr ""
 
 #: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:11
-msgid "AI Analyst"
+msgid "AI Business Analyst"
 msgstr ""
 
 #: includes/ai-tryon-for-woocommerce/woo-insights-ai/includes/class-wia-admin.php:28
@@ -1650,7 +1650,8 @@ msgstr ""
 
 #: includes/ai_integration/openai/admin/help.php:125
 msgid ""
-"a. To train or fine tune a model, 1st you need to:\n"
+"a. To train or fine tune a model, 1st you need to:
+\n"
 "                "
 msgstr ""
 
@@ -1672,7 +1673,8 @@ msgstr ""
 
 #: includes/ai_integration/openai/admin/help.php:134
 msgid ""
-"b. Once you have your JSONL file ready, please go to the Training model section.\n"
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
 "                Upload your training file in .JSONL format."
 msgstr ""
 
@@ -2018,16 +2020,26 @@ msgstr ""
 
 #: includes/class-common-function.php:198
 msgid ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event to reset the rate limit used counts\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Ensure WordPress cron functions are available\n"
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
 "\t\t\tif (! function_exists('wp_schedule_event"
 msgstr ""
 

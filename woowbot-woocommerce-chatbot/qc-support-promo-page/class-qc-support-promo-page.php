@@ -89,7 +89,7 @@ if ( ! function_exists( 'qcld_wpbot_free_promo_support_page_callback_func' ) ) {
                     <h5><?php esc_html_e('All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support.', 'woowbot-woocommerce-chatbot'); ?></h5>
                     <div class="support-btn">
                         <a class="premium-support" href="<?php echo esc_url('https://qc.turbopowers.com/'); ?>" target="_blank"><?php esc_html_e('Get Priority Support ', 'woowbot-woocommerce-chatbot'); ?></a>
-                        <a style="width:282px" class="premium-support" href="<?php echo esc_url('https://www.quantumcloud.net/resources/kb-sections/woowbot-chatbot/'); ?>" target="_blank"><?php esc_html_e('Online KnowledgeBase', 'woowbot-woocommerce-chatbot'); ?></a>
+                        <a class="premium-support premium-support-kb" href="<?php echo esc_url('https://www.quantumcloud.net/resources/kb-sections/woowbot-chatbot/'); ?>" target="_blank"><?php esc_html_e('Online KnowledgeBase', 'woowbot-woocommerce-chatbot'); ?></a>
                     </div>
                 </div>
             
@@ -131,7 +131,7 @@ if( !function_exists('qcld_wpbot_free_process_qc_promo_form') ){
         check_ajax_referer( 'woowbot-woocommerce-chatbot', 'security');
         
         $data['status']   = 'failed';
-        $data['message']  = wp_kses_post( __( 'Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style="color:#22A0C9;font-weight:bold !important;font-size:14px "> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!', 'woowbot-woocommerce-chatbot' ) );
+        $data['message']  = wp_kses_post( __( 'Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span class="qcld-support-email-highlight"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!', 'woowbot-woocommerce-chatbot' ) );
 
         $name         = isset($_POST['post_name']) ? trim(sanitize_text_field(wp_unslash($_POST['post_name']))) : '';
         $email        = isset($_POST['post_email']) ? trim(sanitize_email(wp_unslash($_POST['post_email']))) : '';

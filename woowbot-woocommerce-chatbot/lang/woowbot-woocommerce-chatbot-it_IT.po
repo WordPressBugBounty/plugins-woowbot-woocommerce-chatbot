@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
 "Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
-"POT-Creation-Date: 2026-09-14 11:20+0000\n"
-"PO-Revision-Date: 2026-09-14 11:20+0000\n"
+"POT-Creation-Date: 2026-09-15 09:44+0000\n"
+"PO-Revision-Date: 2026-09-15 09:44+0000\n"
 "Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
 "Language-Team: Italiano (Italian)\n"
 "Language: it_IT\n"
@@ -13,16 +13,16 @@ msgstr ""
 "X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
 
 msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
-msgstr "Non possiamo rilevare alcuna informazione sul plugin. Questo è probabilmente dovuto al fatto che non hai incluso il codice nel file principale del plugin."
+msgstr "Non riusciamo a rilevare alcuna informazione sul plugin. Questo è probabilmente dovuto al fatto che non hai incluso il codice nel file principale del plugin."
 
 msgid "Sorry to see you go"
-msgstr "Spiacente di vederti andare"
+msgstr "Spiacente vederti andare"
 
 msgid "Found a Bug"
 msgstr "Trovato un bug"
 
 msgid "Need More Features"
-msgstr "Necessiti di ulteriori funzionalità"
+msgstr "Necessiti di più funzionalità"
 
 msgid "Deactivating Temporarily"
 msgstr "Disattivazione temporanea"
@@ -79,7 +79,7 @@ msgid "Mail Generated on"
 msgstr "Email generata il"
 
 msgid "Click for Product Details"
-msgstr "Clicca per i dettagli del prodotto"
+msgstr "Clicca per dettagli sul prodotto"
 
 msgid "AI Settings"
 msgstr "Impostazioni AI"
@@ -115,13 +115,13 @@ msgid "Other Common Settings"
 msgstr "Altre impostazioni comuni"
 
 msgid "Enable Rate Limiting"
-msgstr "Abilita il limite di richiesta"
+msgstr "Abilita limitazione delle richieste"
 
 msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
-msgstr "Imposta il numero massimo di richieste che ogni utente di un determinato ruolo può effettuare all'API OpenAI in un periodo specifico. Lascia il campo vuoto o impostalo su 0 per richieste illimitate."
+msgstr "Imposta il numero massimo di richieste che ogni utente di un determinato ruolo può fare all'API OpenAI in un periodo specifico. Lascia il campo vuoto o impostalo su 0 per richieste illimitate."
 
 msgid "Set the rate limit for each user role:"
-msgstr "Imposta il limite di richiesta per ciascun ruolo utente:"
+msgstr "Imposta il limite di richiesta per ogni ruolo utente:"
 
 msgid "Rate limit for %s"
 msgstr "Limite di richiesta per %s"
@@ -129,8 +129,8 @@ msgstr "Limite di richiesta per %s"
 msgid "Timeframe:"
 msgstr "Intervallo di tempo:"
 
-msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
-msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+msgid "rate_limit_timeframe_' . $role_key ); ?>\\"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\\"
 
 msgid "48 Hours"
 msgstr "48 ore"
@@ -162,6 +162,9 @@ msgstr "&laquo;"
 msgid "&raquo;"
 msgstr "&raquo;"
 
+msgid "%s item"
+msgstr "%s elemento"
+
 msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
 msgstr "<strong>Addon AI Try-On per WooCommerce</strong> richiede che WooCommerce sia installato e attivo. Le funzionalità del plugin non funzioneranno finché WooCommerce non sarà attivo."
 
@@ -183,8 +186,8 @@ msgstr "Configura tutte le tue impostazioni AI Try-On in un unico posto."
 msgid "Enable Try-On Button"
 msgstr "Abilita il pulsante Try-On"
 
-msgid "Show the \"Try On with AI\" button on single product pages"
-msgstr "Mostra il pulsante \"Prova con AI\" nelle pagine dei singoli prodotti"
+msgid "Show the \\"
+msgstr "Mostra il \\"
 
 msgid "Require Login"
 msgstr "Richiedi accesso"
@@ -196,13 +199,13 @@ msgid "Show Add to Cart Button"
 msgstr "Mostra il pulsante Aggiungi al carrello"
 
 msgid "Show the 'Add to Cart' button in the Try-On modal footer"
-msgstr "Mostra il pulsante 'Aggiungi al carrello' nel footer del modal Try-On"
+msgstr "Mostra il pulsante 'Aggiungi al carrello' nel footer del modale Try-On"
 
 msgid "Daily Generation Limit"
 msgstr "Limite di generazione giornaliero"
 
 msgid "e.g. 5 (Leave blank for unlimited)"
-msgstr "ad es. 5 (Lascia vuoto per illimitato)"
+msgstr "es. 5 (Lascia vuoto per illimitato)"
 
 msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
 msgstr "Limita la generazione di immagini e video per sessione + IP per 24 ore. Lascia vuoto o 0 per illimitato."
@@ -334,7 +337,7 @@ msgid "1792x1024 (Landscape)"
 msgstr "1792x1024 (Paesaggio)"
 
 msgid "Select the aspect ratio / size for AI generated images."
-msgstr "Seleziona il rapporto d'aspetto / dimensione per le immagini generate dall'AI."
+msgstr "Seleziona il rapporto d'aspetto / dimensione per le immagini generate dall'IA."
 
 msgid "Google Gemini Base Prompt"
 msgstr "Google Gemini Base Prompt"
@@ -376,25 +379,25 @@ msgid "WooCommerce AI Try-On"
 msgstr "WooCommerce AI Try-On"
 
 msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
-msgstr "Questo plugin consente ai tuoi clienti di provare virtualmente i tuoi prodotti utilizzando l'AI generativa all'avanguardia."
+msgstr "Questo plugin consente ai tuoi clienti di provare virtualmente i tuoi prodotti utilizzando l'IA generativa all'avanguardia."
 
 msgid "Pro Tip:"
-msgstr "Suggerimento Pro:"
+msgstr "Consiglio Pro:"
 
-msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
-msgstr "Puoi personalizzare completamente la posizione e il testo del pulsante \"Prova\" nella scheda <strong>Impostazioni Generali</strong>!"
+msgid "You can completely customize the \\"
+msgstr "Puoi personalizzare completamente il \\"
 
 msgid "1. Customer Experience"
 msgstr "1. Esperienza del Cliente"
 
-msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
-msgstr "Quando un cliente clicca sul pulsante Prova, si apre un'interfaccia modale premium. Possono facilmente trascinare e rilasciare o caricare una foto di riferimento di se stessi. Hanno anche una casella di testo per aggiungere istruzioni personalizzate per lo scenario (ad es., <em>\"In piedi in un moderno caffè\"</em>)."
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\\"
+msgstr "Quando un cliente clicca sul pulsante Prova, un'interfaccia modale premium appare. Possono facilmente trascinare e rilasciare o caricare una foto di riferimento di se stessi. Hanno anche una casella di testo per aggiungere istruzioni personalizzate per lo scenario (ad es., <em>\\"
 
 msgid "2. The Generation Process"
 msgstr "2. Il Processo di Generazione"
 
 msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
-msgstr "Una volta cliccato su Genera, il plugin prende l'<strong>Immagine del Prodotto</strong>, l'<strong>Immagine Caricata dal Cliente</strong> e il loro <strong>Testo dello Scenario</strong>, e li combina utilizzando il <em>Costruttore della Struttura del Prompt Finale</em> (trovato nella scheda Prompts)."
+msgstr "Una volta che cliccano su Genera, il plugin prende l'<strong>Immagine del Prodotto</strong>, l'<strong>Immagine Caricata dal Cliente</strong> e il loro <strong>Testo dello Scenario</strong>, e li combina utilizzando il <em>Costruttore della Struttura del Prompt Finale</em> (trovato nella scheda Prompts)."
 
 msgid "3. Image vs Video"
 msgstr "3. Immagine vs Video"
@@ -409,37 +412,37 @@ msgid "Videos:"
 msgstr "Video:"
 
 msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
-msgstr "Alimentato esclusivamente dal modello all'avanguardia di Google <strong>Veo</strong>. La generazione di video può richiedere diversi minuti. Il plugin gestisce questo in modo elegante continuando a interrogare i server di Google in background, consentendo al cliente di vedere aggiornamenti di stato in tempo reale senza lasciare la pagina."
+msgstr "Alimentati esclusivamente dal modello all'avanguardia <strong>Veo</strong> di Google. La generazione di video può richiedere diversi minuti. Il plugin gestisce questo in modo elegante continuando a controllare i server di Google in background, consentendo al cliente di vedere aggiornamenti sullo stato in tempo reale senza lasciare la pagina."
 
 msgid "API Keys & Configuration"
-msgstr "Chiavi API &amp; Configurazione"
+msgstr "Chiavi API e Configurazione"
 
 msgid "Before the Try-On button will function, you must configure your AI providers."
-msgstr "Prima che il pulsante Prova funzioni, devi configurare i tuoi fornitori di AI."
+msgstr "Prima che il pulsante Prova funzioni, devi configurare i tuoi fornitori di IA."
 
 msgid "Important:"
 msgstr "Importante:"
 
 msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
-msgstr "Devi cliccare sul pulsante <strong>Verifica</strong> accanto ai modelli selezionati nella scheda Impostazioni AI per confermare che la tua chiave API abbia accesso."
+msgstr "Devi cliccare sul pulsante <strong>Verifica</strong> accanto ai modelli selezionati nella scheda Impostazioni IA per confermare che la tua chiave API abbia accesso."
 
 msgid "Getting a Google Gemini Key"
 msgstr "Ottenere una Chiave Google Gemini"
 
-msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
-msgstr "I modelli Gemini di Google (inclusi Imagen 3 e Veo) richiedono una chiave API da Google AI Studio. Puoi ottenere una chiave API gratuita visitando <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\\"
+msgstr "I modelli Gemini di Google (inclusi Imagen 3 e Veo) richiedono una chiave API da Google AI Studio. Puoi ottenere una chiave API gratuita visitando &lt;a href=\\"
 
 msgid "Getting an OpenAI Key"
 msgstr "Ottenere una Chiave OpenAI"
 
-msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
-msgstr "I modelli di OpenAI (come DALL-E 3) richiedono un account a pagamento sulla piattaforma OpenAI. Puoi generare una chiave su <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">Chiavi API OpenAI</a>."
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\\"
+msgstr "I modelli di OpenAI (come DALL-E 3) richiedono un account a pagamento sulla piattaforma OpenAI. Puoi generare una chiave su &lt;a href=\\"
 
 msgid "Need Support?"
 msgstr "Hai bisogno di supporto?"
 
 msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
-msgstr "Se stai riscontrando problemi con il plugin o hai richieste di funzionalità, ti preghiamo di contattare il nostro servizio di supporto."
+msgstr "Se stai riscontrando problemi con il plugin o hai richieste di funzionalità, ti preghiamo di contattare il nostro supporto."
 
 msgid "Contact Support &rarr;"
 msgstr "Contatta il Supporto &rarr;"
@@ -451,7 +454,7 @@ msgid "Google AI Studio"
 msgstr "Google AI Studio"
 
 msgid "OpenAI Developer Platform"
-msgstr "Piattaforma Sviluppatori OpenAI"
+msgstr "Piattaforma Sviluppatore OpenAI"
 
 msgid "WooCommerce Docs"
 msgstr "Documentazione WooCommerce"
@@ -460,13 +463,13 @@ msgid "Save Configurations"
 msgstr "Salva Configurazioni"
 
 msgid "AI API Configuration"
-msgstr "Configurazione API AI"
+msgstr "Configurazione API IA"
 
 msgid "Configure API keys, models, and generation settings."
 msgstr "Configura chiavi API, modelli e impostazioni di generazione."
 
 msgid "Image Generation AI Provider"
-msgstr "Fornitore AI per Generazione Immagini"
+msgstr "Fornitore di Generazione Immagini IA"
 
 msgid "Google Gemini"
 msgstr "Google Gemini"
@@ -529,7 +532,7 @@ msgid "API Error"
 msgstr "Errore API"
 
 msgid "Missing API key or model."
-msgstr "Chiave API o modello mancante."
+msgstr "Chiave API o modello mancanti."
 
 msgid "Generation failed. (HTTP %s)"
 msgstr "Generazione fallita. (HTTP %s)"
@@ -565,7 +568,7 @@ msgid "Gemini API Error: "
 msgstr "Errore API Gemini: "
 
 msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
-msgstr "Hai raggiunto il tuo limite giornaliero per le generazioni AI. Riprova domani."
+msgstr "Hai raggiunto il tuo limite giornaliero per le generazioni IA. Per favore riprova domani."
 
 msgid "API Configuration missing. Contact store administrator."
 msgstr "Configurazione API mancante. Contatta l'amministratore del negozio."
@@ -598,7 +601,7 @@ msgid "Reset!"
 msgstr "Ripristina!"
 
 msgid "Please enter an API key first."
-msgstr "Inserisci prima una chiave API."
+msgstr "Per favore inserisci prima una chiave API."
 
 msgid "Testing connection..."
 msgstr "Test connessione..."
@@ -610,7 +613,7 @@ msgid "Unknown error"
 msgstr "Errore sconosciuto"
 
 msgid "Request failed: "
-msgstr "Richiesta non riuscita: "
+msgstr "Richiesta fallita: "
 
 msgid "Please select a model first."
 msgstr "Seleziona prima un modello."
@@ -625,7 +628,7 @@ msgid "Verified! Model accepts this modality."
 msgstr "Verificato! Il modello accetta questa modalità."
 
 msgid "AJAX request failed."
-msgstr "Richiesta AJAX non riuscita."
+msgstr "Richiesta AJAX fallita."
 
 msgid "Recommended (Optimal speed & pricing rate)"
 msgstr "Consigliato (Velocità e tariffa ottimali)"
@@ -661,7 +664,7 @@ msgid "Error"
 msgstr "Errore"
 
 msgid "Error saving media."
-msgstr "Errore durante il salvataggio del media."
+msgstr "Errore nel salvataggio del media."
 
 msgid "Network error."
 msgstr "Errore di rete."
@@ -694,7 +697,7 @@ msgid "Studio"
 msgstr "Studio"
 
 msgid "Outdoor"
-msgstr "Esterno"
+msgstr "All'aperto"
 
 msgid "Lifestyle"
 msgstr "Stile di vita"
@@ -735,7 +738,7 @@ msgstr "Generazione magia..."
 msgid "Add to Cart"
 msgstr "Aggiungi al carrello"
 
-msgid "AI Analyst"
+msgid "AI Business Analyst"
 msgstr "Analista AI"
 
 msgid "AI Store Analyst"
@@ -757,7 +760,7 @@ msgid "Clear Conversation History"
 msgstr "Cancella cronologia conversazioni"
 
 msgid "Reset Chat"
-msgstr "Reimposta chat"
+msgstr "Ripristina chat"
 
 msgid "Ask a question"
 msgstr "Fai una domanda"
@@ -769,7 +772,7 @@ msgid "Send question"
 msgstr "Invia domanda"
 
 msgid "Press Enter ↵ to send • Shift + Enter for new line"
-msgstr "Premi Invio ↵ per inviare • Shift + Invio per nuova riga"
+msgstr "Premi Invio ↵ per inviare • Maiusc + Invio per nuova riga"
 
 msgid "Store Insights"
 msgstr "Informazioni sul negozio"
@@ -778,10 +781,10 @@ msgid "AI Growth Recommendation"
 msgstr "Raccomandazione di crescita AI"
 
 msgid "Analyzing recent store orders and performance…"
-msgstr "Analizzando gli ordini recenti e le performance del negozio…"
+msgstr "Analizzando gli ordini recenti del negozio e le prestazioni…"
 
 msgid "Performance Overview"
-msgstr "Panoramica delle performance"
+msgstr "Panoramica delle prestazioni"
 
 msgid "Last 30 Days"
 msgstr "Ultimi 30 giorni"
@@ -790,7 +793,7 @@ msgid "Revenue Trend"
 msgstr "Tendenza dei ricavi"
 
 msgid "Top Products by Revenue"
-msgstr "Prodotti top per ricavi"
+msgstr "Prodotti migliori per ricavi"
 
 msgid "The requested analysis is not available."
 msgstr "L'analisi richiesta non è disponibile."
@@ -802,7 +805,7 @@ msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask 
 msgstr "Gli ordini sono diminuiti del %s%%. Concentrati sul recupero del traffico e dei clienti abituali; chiedi all'analista quali clienti sono più propensi a tornare."
 
 msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
-msgstr "Il valore medio degli ordini è diminuito del %s%%. Prova i pacchetti utilizzando il rapporto sui prodotti acquistati insieme."
+msgstr "Il valore medio degli ordini è diminuito del %s%%. Testa i pacchetti utilizzando il report dei prodotti acquistati insieme."
 
 msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
 msgstr "%s guida i ricavi recenti. Abbinalo ai prodotti frequentemente acquistati e metti in evidenza il pacchetto."
@@ -814,16 +817,16 @@ msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI S
 msgstr "Configura la tua chiave API OpenAI o Google Gemini in AI Try-On e Impostazioni AI."
 
 msgid "Google Gemini request failed."
-msgstr "Richiesta Google Gemini non riuscita."
+msgstr "Richiesta Google Gemini fallita."
 
 msgid "OpenAI request failed."
-msgstr "Richiesta OpenAI non riuscita."
+msgstr "Richiesta OpenAI fallita."
 
 msgid "Which period performed best?"
 msgstr "Quale periodo ha performato meglio?"
 
 msgid "Show the top products during the strongest period."
-msgstr "Mostra i prodotti top durante il periodo più forte."
+msgstr "Mostra i prodotti migliori durante il periodo più forte."
 
 msgid "Compare this trend with the previous period."
 msgstr "Confronta questa tendenza con il periodo precedente."
@@ -835,7 +838,7 @@ msgid "Compare these products with the previous period."
 msgstr "Confronta questi prodotti con il periodo precedente."
 
 msgid "Summarize sales for this period."
-msgstr "Riassumi le vendite per questo periodo."
+msgstr "Riepiloga le vendite per questo periodo."
 
 msgid "Show this period as a sales graph."
 msgstr "Mostra questo periodo come un grafico delle vendite."
@@ -853,13 +856,13 @@ msgid "Show the monthly sales trend for the last year."
 msgstr "Mostra la tendenza mensile delle vendite per l'ultimo anno."
 
 msgid "What are my top 10 products this year?"
-msgstr "Quali sono i miei 10 prodotti top di quest'anno?"
+msgstr "Quali sono i miei 10 prodotti migliori di quest'anno?"
 
 msgid "Sales trend"
 msgstr "Tendenza delle vendite"
 
 msgid "Top products by revenue"
-msgstr "Prodotti top per ricavi"
+msgstr "Prodotti migliori per ricavi"
 
 msgid "Coupon-attributed revenue"
 msgstr "Ricavi attribuiti ai coupon"
@@ -868,10 +871,10 @@ msgid "Most valuable customers"
 msgstr "Clienti più preziosi"
 
 msgid "Product profit"
-msgstr "Profitto del prodotto"
+msgstr "Profitto prodotto"
 
 msgid "Product revenue"
-msgstr "Ricavi del prodotto"
+msgstr "Ricavi prodotto"
 
 msgid "Revenue by channel"
 msgstr "Ricavi per canale"
@@ -915,17 +918,17 @@ msgstr "Modello Gemini"
 msgid "Fetch Models"
 msgstr "Recupera modelli"
 
-msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
-msgstr "Seleziona il tuo modello Gemini. Clicca su \"Recupera modelli\" per aggiornare l'elenco se hai appena aggiunto la tua chiave API."
+msgid "Select your Gemini model. Click \\"
+msgstr "Seleziona il tuo modello Gemini. Clicca \\"
 
 msgid "Please select a your paid model all model on the list are might not be available for free plans"
-msgstr "Si prega di selezionare un modello a pagamento, tutti i modelli nell'elenco potrebbero non essere disponibili per i piani gratuiti."
+msgstr "Seleziona un modello a pagamento; tutti i modelli nella lista potrebbero non essere disponibili per i piani gratuiti"
 
 msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
-msgstr "Il tuo prompt da aggiungere prima della query dell'utente per risultati personalizzati (opzionale)"
+msgstr "Il tuo prompt da aggiungere prima della query dell'utente per risultati personalizzati (Opzionale)"
 
 msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
-msgstr "Il tuo prompt da aggiungere alla fine della query dell'utente per risultati personalizzati (opzionale)"
+msgstr "Il tuo prompt da aggiungere alla fine della query dell'utente per risultati personalizzati (Opzionale)"
 
 msgid "Save settings"
 msgstr "Salva impostazioni"
@@ -934,7 +937,7 @@ msgid "Fine Tuning VS GPT Assistants VS RAG:"
 msgstr "Fine Tuning VS Assistenti GPT VS RAG:"
 
 msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "Ti suggeriamo di utilizzare Assistenti GPT o RAG invece del Fine Tuning poiché il Fine Tuning richiede molti dati formattati correttamente e gli Assistenti GPT sono più facili da configurare. Puoi comunque utilizzare i dati del tuo sito web per addestrare il bot."
+msgstr "Suggeriamo di utilizzare Assistenti GPT o RAG invece di Fine Tuning poiché Fine Tuning richiede molti dati formattati correttamente e gli Assistenti GPT sono più facili da configurare. Puoi comunque utilizzare i dati del tuo sito per addestrare il bot."
 
 msgid "How to Use RAG in This Plugin:"
 msgstr "Come utilizzare RAG in questo plugin:"
@@ -949,25 +952,25 @@ msgid "(Optional) Upload PDFs or CSV files for embedding"
 msgstr "(Opzionale) Carica file PDF o CSV per l'incorporamento"
 
 msgid "The system automatically stores embeddings in the database"
-msgstr "Il sistema memorizza automaticamente gli embedding nel database"
+msgstr "Il sistema memorizza automaticamente gli incorporamenti nel database"
 
 msgid "User questions will now be answered using your site’s knowledge base"
-msgstr "Le domande degli utenti saranno ora risposte utilizzando la base di conoscenza del tuo sito."
+msgstr "Le domande degli utenti saranno ora risposte utilizzando la base di conoscenza del tuo sito"
 
 msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
-msgstr "Devi configurare la chiave API OpenAI, il modello AI e il comando di sistema nelle principali impostazioni di OpenAI."
+msgstr "Devi configurare la chiave API di OpenAI, il modello AI e il comando di sistema sotto le impostazioni principali di OpenAI"
 
 msgid "You can update or re-embed content at any time without retraining."
 msgstr "Puoi aggiornare o reincorporare contenuti in qualsiasi momento senza riaddestrare."
 
 msgid "Getting Started with gemini"
-msgstr "Iniziare con Gemini"
+msgstr "Iniziare con gemini"
 
 msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
 msgstr "Gemini è un'interfaccia unificata o aggregatore per LLM. Puoi scegliere tra centinaia di diversi modelli AI da OpenAI a Deepseek o Claude per ottenere risposte AI."
 
 msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
-msgstr "Tutto ciò che devi fare è aggiungere la chiave API Gemini e selezionare un modello Gemini."
+msgstr "Tutto ciò che devi fare è aggiungere la chiave API di Gemini e selezionare un modello Gemini."
 
 msgid "Grab your API key from"
 msgstr "Prendi la tua chiave API da"
@@ -976,19 +979,19 @@ msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini 
 msgstr "Assicurati che DialogFlow e OpenAI siano disabilitati se vuoi che Gemini funzioni."
 
 msgid "Failed in Security check"
-msgstr "Controllo di sicurezza fallito"
+msgstr "Controllo di sicurezza non riuscito"
 
 msgid "Unauthorized user"
 msgstr "Utente non autorizzato"
 
 msgid "Security check failed. Unauthorized request."
-msgstr "Controllo di sicurezza fallito. Richiesta non autorizzata."
+msgstr "Controllo di sicurezza non riuscito. Richiesta non autorizzata."
 
 msgid "API Key is required"
-msgstr "È richiesta la chiave API"
+msgstr "È richiesta una chiave API"
 
 msgid "Security check failed"
-msgstr "Controllo di sicurezza fallito"
+msgstr "Controllo di sicurezza non riuscito"
 
 msgid "Unauthorized access"
 msgstr "Accesso non autorizzato"
@@ -1000,7 +1003,7 @@ msgid "View Detail"
 msgstr "Visualizza dettagli"
 
 msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
-msgstr "OpenAI ha disabilitato alcuni dei modelli più vecchi. Si prega di utilizzare GPT 3.5 o 4 per il Fine Tuning. È necessario aggiornare il dataset e riaddestrare. Si prega di controllare la sezione Aiuto per ulteriori dettagli."
+msgstr "OpenAI ha disabilitato alcuni dei modelli più vecchi. Si prega di utilizzare GPT 3.5 o 4 per il Fine Tuning. È necessario aggiornare il dataset e riaddestrare. Controlla la sezione Aiuto per dettagli."
 
 msgid "OpenAI settings"
 msgstr "Impostazioni OpenAI"
@@ -1012,7 +1015,7 @@ msgid "GPT Assistant"
 msgstr "Assistente GPT"
 
 msgid "Fine Tune with Website Data"
-msgstr "Fine Tuning con dati del sito web"
+msgstr "Fine Tuning con dati del sito"
 
 msgid "AI Image Generator"
 msgstr "Generatore di immagini AI"
@@ -1039,49 +1042,49 @@ msgid "Fine Tuning VS GPT Assistants:"
 msgstr "Fine Tuning VS Assistenti GPT:"
 
 msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "Ti suggeriamo di utilizzare Assistenti GPT invece del Fine Tuning poiché il Fine Tuning richiede molti dati formattati correttamente e gli Assistenti GPT sono più facili da configurare. Puoi comunque utilizzare i dati del tuo sito web per addestrare il bot."
+msgstr "Suggeriamo di utilizzare Assistenti GPT invece di Fine Tuning poiché Fine Tuning richiede molti dati formattati correttamente e gli Assistenti GPT sono più facili da configurare. Puoi comunque utilizzare i dati del tuo sito per addestrare il bot."
 
 msgid "Setting up GPT Assistants:"
-msgstr "Configurare gli Assistenti GPT:"
+msgstr "Configurazione degli Assistenti GPT:"
 
 msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
-msgstr "Vai alla scheda di addestramento GPT con dati del sito web. Seleziona tutti i tipi di post di cui hai bisogno e premi il pulsante Converti dati per Assistente. Una volta completato, scarica il file di dati in formato JSON."
+msgstr "Vai alla scheda di addestramento GPT con dati del sito. Seleziona tutti i tipi di post di cui hai bisogno e premi il pulsante Converti dati per Assistente. Una volta completato, scarica il file dei dati in formato JSON"
 
 msgid "Go to "
 msgstr "Vai a "
 
 msgid "Assistants playground"
-msgstr "parco giochi degli assistenti"
+msgstr "parco giochi degli Assistenti"
 
 msgid " and create a new Assistant"
 msgstr " e crea un nuovo Assistente"
 
 msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
-msgstr "Carica il file JSON che hai scaricato e dai all'Assistente GPT un'istruzione simile a quella qui sotto, ma personalizzala con l'URL del tuo sito web:"
+msgstr "Carica il file JSON che hai scaricato e dai all'Assistente GPT un'istruzione simile a quella qui sotto, ma personalizzala con l'URL del tuo sito:"
 
 msgid "Your name is Carry. You are a ChatBot assistant for the website "
-msgstr "Il tuo nome è Carry. Sei un assistente ChatBot per il sito web "
+msgstr "Il tuo nome è Carry. Sei un assistente ChatBot per il sito "
 
 msgid "https://www.quantumcloud.net. "
-msgstr "https://www.quantumcloud.net."
+msgstr "https://www.quantumcloud.net. "
 
 msgid "Use the website data and the uploaded file to answer any questions from our website users."
-msgstr "Utilizza i dati del sito web e il file caricato per rispondere a qualsiasi domanda degli utenti del nostro sito."
+msgstr "Utilizza i dati del sito e il file caricato per rispondere a qualsiasi domanda degli utenti del nostro sito."
 
 msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
-msgstr "Copia l'ID degli Assistenti e incollalo sotto la scheda Assistenti GPT nelle impostazioni OpenAI del tuo sito. Hai finito. Se hai acquistato crediti dalla piattaforma API OpenAI, inizierà a funzionare."
+msgstr "Copia l'ID degli Assistenti e incollalo sotto la scheda Assistenti GPT nelle impostazioni di OpenAI sul tuo sito. Hai finito. Se hai acquistato crediti dalla piattaforma API di OpenAI, inizierà a funzionare."
 
-msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
-msgstr "Puoi utilizzare diversi Assistenti GPT su pagine diverse con i widget chatbot. Incolla questo shortcode di esempio e sostituisci l'ID dell'Assistente come necessario: Es: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\\"
+msgstr "Puoi utilizzare diversi Assistenti GPT su pagine diverse con i widget chatbot. Incolla questo shortcode di esempio e sostituisci l'ID dell'Assistente come necessario: Es: [chatbot-widget hud_design=\\"
 
 msgid "Please check this article for step by step guide."
-msgstr "Si prega di controllare questo articolo per una guida passo passo."
+msgstr "Controlla questo articolo per una guida passo passo."
 
 msgid "Getting Customized Results from the AI Services"
 msgstr "Ottenere risultati personalizzati dai servizi AI"
 
 msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
-msgstr "I migliori risultati personalizzati che puoi ottenere dai servizi AI è utilizzare l'Assistente GPT di OpenAI che ti consente di caricare documenti e i dati del tuo sito web (generati dalle nostre versioni Pro). Tuttavia, puoi comunque ottenere risultati personalizzati scrivendo un prompt dettagliato. Nella sezione Comando di sistema nell'area delle impostazioni di OpenAI (c'è una sezione di prompt per altri servizi AI) puoi scrivere un prompt dettagliato che include dettagli sui tuoi servizi, prodotti, come contattarti o qualsiasi cosa rilevante per ottenere risultati personalizzati. Fino a 3000 parole va bene. Questo dovrebbe essere sufficiente per la maggior parte dei siti web di piccole e medie dimensioni."
+msgstr "I migliori risultati personalizzati che puoi ottenere dai servizi AI è utilizzare l'Assistente GPT di OpenAI che ti consente di caricare documenti e i dati del tuo sito (generati dalle nostre versioni Pro). Tuttavia, puoi comunque ottenere risultati personalizzati scrivendo un prompt dettagliato. Nella sezione Comando di sistema nell'area delle impostazioni di OpenAI (c'è una sezione di prompt per altri servizi AI) puoi scrivere un prompt dettagliato che include dettagli sui tuoi servizi, prodotti, come contattarti o qualsiasi cosa rilevante per ottenere risultati personalizzati. Fino a 3000 parole va bene. Questo dovrebbe essere sufficiente per la maggior parte dei siti web di piccole e medie dimensioni."
 
 msgid "**"
 msgstr "**"
@@ -1099,7 +1102,7 @@ msgid "Getting Started with OpenAI"
 msgstr "Iniziare con OpenAI"
 
 msgid "OpenAI has changed their API billing policy lately. You have to "
-msgstr "OpenAI ha recentemente cambiato la propria politica di fatturazione API. Devi "
+msgstr "OpenAI ha recentemente cambiato la loro politica di fatturazione API. Devi "
 
 msgid "pre-purchase API credits"
 msgstr "pre-acquistare crediti API"
@@ -1111,13 +1114,13 @@ msgid "https://platform.openai.com/account/billing/ "
 msgstr "https://platform.openai.com/account/billing/ "
 
 msgid "and add credits to your API account. Then increase the usage limit."
-msgstr "e aggiungi crediti al tuo account API. Quindi aumenta il limite di utilizzo."
+msgstr "e aggiungi crediti al tuo account API. Poi aumenta il limite di utilizzo."
 
-msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
-msgstr "Una volta aggiunta la chiave API OpenAI, dovrebbe già iniziare a funzionare per domande generiche. Apri una nuova finestra del browser in modalità Incognito e prova a chiedere \"Qual è la capitale della Russia?\""
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \\"
+msgstr "Una volta aggiunta la chiave API di OpenAI, dovrebbe già iniziare a funzionare per domande generiche. Apri una nuova finestra del browser in modalità Incognito e prova a chiedere \\"
 
 msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
-msgstr "Assicurati che DialogFlow sia disabilitato se vuoi che OpenAI funzioni."
+msgstr "Assicurati che DialogFlow sia disabilitato se vuoi che OpenAI funzioni"
 
 msgid "Fine Tuning VS GPT Assistants VS RAG"
 msgstr "Fine Tuning VS Assistenti GPT VS RAG"
@@ -1126,16 +1129,16 @@ msgid "GPT Assistants:"
 msgstr "Assistenti GPT:"
 
 msgid "How to get an OpenAI API Key"
-msgstr "Come ottenere una chiave API OpenAI"
+msgstr "Come ottenere una chiave API di OpenAI"
 
 msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
-msgstr "L'API OpenAI utilizza chiavi API per l'autenticazione. Visita la tua pagina Chiavi API per recuperare la chiave API che utilizzerai nelle tue richieste. Ricorda che la tua chiave API è un segreto! Non condividerla con altri o esporla in alcun codice client-side (browser, app). Le richieste di produzione devono essere instradate attraverso il tuo server backend dove la tua chiave API può essere caricata in modo sicuro da una variabile di ambiente o da un servizio di gestione delle chiavi."
+msgstr "L'API di OpenAI utilizza chiavi API per l'autenticazione. Visita la tua pagina delle chiavi API per recuperare la chiave API che utilizzerai nelle tue richieste. Ricorda che la tua chiave API è un segreto! Non condividerla con altri o esporla in alcun codice lato client (browser, app). Le richieste di produzione devono essere instradate attraverso il tuo server backend dove la tua chiave API può essere caricata in modo sicuro da una variabile di ambiente o da un servizio di gestione delle chiavi."
 
 msgid "You can generate the API key from here: "
 msgstr "Puoi generare la chiave API da qui: "
 
 msgid "https://platform.openai.com/api-keys. "
-msgstr "https://platform.openai.com/api-keys."
+msgstr "https://platform.openai.com/api-keys. "
 
 msgid "Training or Fine Tuning OpenAI"
 msgstr "Addestramento o Fine Tuning di OpenAI"
@@ -1143,18 +1146,11 @@ msgstr "Addestramento o Fine Tuning di OpenAI"
 msgid "To train OpenAI"
 msgstr "Per addestrare OpenAI"
 
-msgid ""
-"a. To train or fine tune a model, 1st you need to:\n"
-"                "
-msgstr ""
-"a. Per addestrare o affinare un modello, prima devi:\n"
-"                "
-
 msgid "Gather the necessary data you want to train with"
-msgstr "Raccogliere i dati necessari con cui vuoi addestrare"
+msgstr "Raccogli i dati necessari che vuoi utilizzare per l'addestramento"
 
 msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
-msgstr "Formattare i dati correttamente secondo i requisiti dell'API OpenAI (scarica il formato di dati di esempio per vedere come funziona). Un dataset dovrebbe avere almeno 500 righe per offrire risultati utili. Secondo la documentazione di OpenAI, si raccomandano numeri di 3.000 e 5.000 righe."
+msgstr "Formatta i dati correttamente secondo i requisiti dell'API di OpenAI (Scarica il formato dei dati di esempio per vedere come funziona). Un dataset dovrebbe avere almeno 500 righe per offrire risultati utili. Secondo la documentazione di OpenAI, si raccomandano numeri di 3.000 e 5.000 righe."
 
 msgid "Upload the data to OpenAI in .JSONL format"
 msgstr "Carica i dati su OpenAI in formato .JSONL"
@@ -1162,39 +1158,32 @@ msgstr "Carica i dati su OpenAI in formato .JSONL"
 msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
 msgstr "Addestra un modello OpenAI esistente (seleziona dalla pagina delle impostazioni Bot OpenAI) con i tuoi dati"
 
-msgid ""
-"b. Once you have your JSONL file ready, please go to the Training model section.\n"
-"                Upload your training file in .JSONL format."
-msgstr ""
-"b. Una volta che hai il tuo file JSONL pronto, vai alla sezione Modello di addestramento.\n"
-"                Carica il tuo file di addestramento in formato .JSONL."
-
 msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
-msgstr "c. Una volta caricato il tuo file di addestramento, restituirà un ID file e l'addestramento inizierà una volta che clicchi sul pulsante Crea modello FT. Imposta un suffisso (per riconoscere il modello in seguito) e il modello di base nel popup e crea."
+msgstr "c. Una volta caricati i tuoi file di addestramento, restituirà un ID file e l'addestramento inizierà una volta che clicchi sul pulsante Crea modello FT. Imposta un suffisso (per riconoscere il modello in seguito) e il modello di base nel popup e crea."
 
-msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
-msgstr "d. Una volta completato l'addestramento e il file è pronto, restituirà il modello affinato. Sarà elencato sotto l'elenco dei modelli affinati, lo stato sarà mostrato come \"Riuscito\" e riceverai anche un ID modello FT (da copiare nella pagina delle impostazioni)."
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \\"
+msgstr "d. Una volta completato l'addestramento e il file è pronto, restituirà il modello fine-tuned. Sarà elencato sotto la lista dei modelli fine-tuned, lo stato sarà mostrato come \\"
 
 msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
-msgstr "e. Puoi creare più modelli affinati seguendo la procedura sopra. Copia l'ID del modello affinato che desideri utilizzare."
+msgstr "e. Puoi creare più modelli fine-tuned seguendo la procedura sopra. Copia l'ID del modello fine-tuned che vuoi utilizzare."
 
 msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
-msgstr "f. Vai alla pagina principale delle impostazioni Bot OpenAI e incolla l'ID del modello affinato nel campo Modello affinato personalizzato e salva. Ora il bot inizierà a rispondere in base ai dati di addestramento."
+msgstr "f. Vai alla pagina principale delle impostazioni Bot OpenAI e incolla l'ID del modello fine-tuned nel campo Modello fine-tuned personalizzato e salva. Ora il bot inizierà a rispondere secondo i dati di addestramento."
 
 msgid "h. To Prepare your data model for GPT3.5/4:"
 msgstr "h. Per preparare il tuo modello di dati per GPT3.5/4:"
 
 msgid "1st you need to create a jsonl file like the formate below"
-msgstr "Prima devi creare un file jsonl come il formato qui sotto"
+msgstr "Per prima cosa devi creare un file jsonl come il formato qui sotto"
 
 msgid "Each prompt and completion should be in a single line"
-msgstr "Ogni prompt e completamento dovrebbero essere su una singola riga"
+msgstr "Ogni prompt e completamento dovrebbe essere su una sola riga"
 
 msgid "Fine tuning file format with GPT 3.5/4"
 msgstr "Formato del file di fine tuning con GPT 3.5/4"
 
-msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
-msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Sei un assistente che occasionalmente sbaglia a scrivere le parole\" },{ \"role\": \"user\", \"content\": \"Raccontami una storia.\" }, { \"role\": \"assistant\", \"content\": \"Un giorno uno studente andò a scuola.\" }]}"
+msgid "{ \\"
+msgstr "{ \\"
 
 msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
 msgstr "Fai clic destro e salva il file di esempio jsonl per il Fine Tuning con GPT 3.5/4"
@@ -1208,23 +1197,23 @@ msgstr "Per incorporare OpenAI"
 msgid "Important points about fine tuning"
 msgstr "Punti importanti sul fine tuning"
 
-msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
-msgstr "Per risultati migliori, hai bisogno di almeno 500+ prompt. Altrimenti, OpenAI mescolerà la risposta con conoscenze generiche. Inoltre, i prompt dovrebbero essere il più descrittivi possibile. Segui il formato tipo FAQ con domande e risposte descrittive. Esempio di prompt: invece di \"Giacca di jeans vintage\" puoi scrivere \"Perché dovresti indossare la nostra giacca di jeans vintage?\"."
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \\"
+msgstr "Per risultati migliori, hai bisogno di almeno 500+ prompt. Altrimenti, OpenAI mescolerà la risposta con conoscenze generiche. Inoltre, i prompt dovrebbero essere il più descrittivi possibile. Segui il formato di tipo FAQ con domande e risposte descrittive. Esempio di prompt: Invece di semplicemente \\"
 
 msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
-msgstr "Se il tuo completamento è breve come quello qui sotto o intorno a 100 parole, mantieni il valore Max Tokens a 200. Modifica le impostazioni di Temperature, Presence Penalty e Frequency penalty fino a ottenere risultati che ti piacciono."
+msgstr "Se il tuo completamento è breve come qui sotto o intorno a 100 parole, mantieni il valore Max Tokens a 200. Modifica le impostazioni di Temperature, Presence Penalty e Frequency penalty fino a ottenere risultati che ti piacciono."
 
 msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
-msgstr "Se stai affinando con i dati del sito web, il Bot utilizzerà i titoli dei Post come prompt. Se i titoli delle Pagine/Post non sono descrittivi, non otterrai buoni risultati. In tal caso, puoi scaricare il file JSONL dalla pagina Modello di addestramento e migliorare i prompt. Poi affina di nuovo."
+msgstr "Se stai effettuando il fine tuning con dati del sito, il Bot utilizzerà i titoli dei Post come prompt. Se i titoli delle Pagine/Post non sono descrittivi, non otterrai buoni risultati. In tal caso, puoi scaricare il file JSONL dalla pagina del Modello di addestramento e migliorare i prompt. Poi riaddestra di nuovo."
 
 msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
-msgstr "Disabilita la ricerca del sito da Impostazioni-&gt;Menu di avvio in modo che il bot non porti risposte dalla ricerca del sito. Si prega di disconnettersi e riconnettersi affinché le nostre impostazioni non vengano sovrascritte."
+msgstr "Mantieni la ricerca del sito disabilitata da Impostazioni-&gt;Menu di avvio in modo che il bot non porti risposte dalla ricerca del sito. Si prega di disconnettersi e riconnettersi affinché le nostre impostazioni non vengano sovrascritte."
 
 msgid "How to Optimize Fine Tuning"
-msgstr "Come ottimizzare il fine-tuning"
+msgstr "Come ottimizzare il Fine Tuning"
 
 msgid "To get better results from fine-tuning please follow the following steps:"
-msgstr "Per ottenere risultati migliori dal fine-tuning, seguire i seguenti passaggi:"
+msgstr "Per ottenere risultati migliori dalla messa a punto, segui i seguenti passaggi:"
 
 msgid "Set a lower value for Temperature"
 msgstr "Imposta un valore più basso per la Temperatura"
@@ -1236,7 +1225,7 @@ msgid "If possible use the Curie model as your base model when you create the cu
 msgstr "Se possibile, utilizza il modello Curie come modello di base quando crei il modello personalizzato."
 
 msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
-msgstr "Utilizza il token massimo a seconda del tuo prompt e delle completazioni. Se utilizzi un valore più alto di token massimo, l'IA creerà più informazioni che potrebbero essere irrilevanti per il tuo contesto. Lo stesso vale per un token massimo più basso. Se scegli un valore troppo basso per il token massimo, i tuoi dati verranno troncati o verranno restituiti errori."
+msgstr "Usa il massimo dei token a seconda del tuo prompt e delle completazioni. Se usi un valore più alto di massimo token, l'IA creerà più informazioni che potrebbero essere irrilevanti per il tuo contesto. Lo stesso vale per il massimo token più basso. Se scegli un valore troppo basso per il massimo token, i tuoi dati verranno troncati o potrebbero verificarsi errori."
 
 msgid "Presence Penalty"
 msgstr "Penalità di Presenza"
@@ -1254,19 +1243,19 @@ msgid "Temperature"
 msgstr "Temperatura"
 
 msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
-msgstr "Una delle impostazioni più importanti è chiamata temperatura. Quando la temperatura è superiore a 0, l'invio dello stesso prompt produce completamenti diversi ogni volta. Ricorda che il modello prevede quale testo è più probabile che segua il testo precedente. La temperatura è un valore compreso tra 0 e 1 che ti consente di controllare quanto il modello dovrebbe essere sicuro quando fa queste previsioni. Abbassare la temperatura significa che prenderà meno rischi e i completamenti saranno più accurati e deterministici. Aumentare la temperatura porterà a completamenti più diversi."
+msgstr "Una delle impostazioni più importanti è chiamata temperatura. Quando la temperatura è superiore a 0, l'invio dello stesso prompt produce completamenti diversi ogni volta. Ricorda che il modello prevede quale testo è più probabile che segua il testo precedente. La temperatura è un valore compreso tra 0 e 1 che ti consente essenzialmente di controllare quanto il modello dovrebbe essere sicuro quando fa queste previsioni. Abbassare la temperatura significa che prenderà meno rischi e i completamenti saranno più accurati e deterministici. Aumentare la temperatura porterà a completamenti più diversi."
 
 msgid "My OpenAI does not work"
 msgstr "Il mio OpenAI non funziona"
 
 msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
-msgstr "Controlla le tue impostazioni (ad es.: chiavi API, token massimo, ecc.). A seconda del modello (GPT3 era massimo 4000) utilizzato, le richieste possono utilizzare fino a 4097 token condivisi tra prompt e completamento. Se il tuo prompt è di 4000 token, il tuo completamento può essere al massimo di 97 token. Controlla anche che il dialogflow sia inattivo. Dialogflow e OpenAI non funzionano insieme."
+msgstr "Controlla le tue impostazioni (cioè: chiavi Api, massimo token, ecc.). A seconda del modello (GPT3 era massimo 4000) utilizzato, le richieste possono utilizzare fino a 4097 token condivisi tra prompt e completamento. Se il tuo prompt è di 4000 token, il tuo completamento può essere al massimo di 97 token. Controlla anche che il dialogflow sia inattivo. Dialogflow e OpenAI non funzionano insieme."
 
 msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
-msgstr "Puoi creare più modelli fine-tuned in base ai tuoi tipi di post e pagine. Puoi scaricare i tuoi dati di addestramento come file JSONL per modificarli e poi caricarli nello stesso processo di altri file (vedi sopra per le istruzioni). Inoltre, puoi caricarli facendo clic sul pulsante `Carica come modello FT`."
+msgstr "Puoi creare più modelli Fine Tuned basati sui tuoi tipi di post e pagine. Puoi scaricare i tuoi dati di addestramento come file JSONL per modificarli e poi caricarli nello stesso processo di altri file (vedi sopra per le istruzioni). Inoltre, puoi caricarli facendo clic sul pulsante `Carica come modello FT`."
 
 msgid "Fine tuning and training is available with the "
-msgstr "Il fine-tuning e l'addestramento sono disponibili con il "
+msgstr "La messa a punto e l'addestramento sono disponibili con il "
 
 msgid "WoowbotPro Professional"
 msgstr "WoowbotPro Professionale"
@@ -1290,10 +1279,10 @@ msgid "(Display relevant product cards inside AI responses to increase sales.)"
 msgstr "(Mostra schede prodotto pertinenti all'interno delle risposte AI per aumentare le vendite.)"
 
 msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
-msgstr "Abilita suggerimenti di pagina WordPress con risultati GPT (i link sono suggeriti da WordPress e non dall'IA)"
+msgstr "Abilita i suggerimenti di pagina WordPress con i risultati GPT (i link sono suggeriti da WordPress e non dall'IA)"
 
 msgid "Api key"
-msgstr "Chiave API"
+msgstr "Chiave Api"
 
 msgid "OpenAI Model"
 msgstr "Modello OpenAI"
@@ -1344,7 +1333,7 @@ msgid "You are a helpful Assistant. Be concise and relevant in your answers and 
 msgstr "Sei un assistente utile. Sii conciso e pertinente nelle tue risposte e non introdurre nuovi argomenti."
 
 msgid "To set the ChatBot's tone and character set a system message according to your need"
-msgstr "Per impostare il tono e il carattere del ChatBot, imposta un messaggio di sistema secondo le tue necessità"
+msgstr "Per impostare il tono e il carattere del ChatBot, imposta un messaggio di sistema secondo le tue esigenze"
 
 msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
 msgstr "Esempio: Sei un assistente utile. Sii conciso e pertinente nelle tue risposte e non introdurre nuovi argomenti."
@@ -1356,7 +1345,7 @@ msgid "Content for the response"
 msgstr "Contenuto per la risposta"
 
 msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
-msgstr "Zona pericolosa (potresti non ricevere alcuna risposta dall'IA se le parole chiave non sono impostate correttamente. Rimuovi le parole chiave se riscontri problemi)"
+msgstr "Zona pericolosa (potresti non ricevere risposte dall'IA se le parole chiave non sono impostate correttamente. Rimuovi le parole chiave se hai problemi)"
 
 msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
 msgstr "Connettiti a OpenAI solo quando la query dell'utente include una delle seguenti parole chiave separate da virgola"
@@ -1421,33 +1410,8 @@ msgstr "Permessi insufficienti"
 msgid "AI Setup configuration saved successfully."
 msgstr "Configurazione dell'impostazione AI salvata con successo."
 
-msgid ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event to reset the rate limit used counts\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Ensure WordPress cron functions are available\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-msgstr ""
-"limite di rate session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Pianifica il lavoro cron per ogni ruolo se non è già pianificato);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // evento wpshedule per ripristinare i conteggi di utilizzo del limite di rate\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Assicurati che le funzioni cron di WordPress siano disponibili\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-
 msgid "Rate limit exceeded. Please try again later."
-msgstr "Limite di rate superato. Si prega di riprovare più tardi."
+msgstr "Limite di frequenza superato. Riprova più tardi."
 
 msgid "More WordPress Goodies for You!"
 msgstr "Altri buoni WordPress per te!"
@@ -1459,7 +1423,7 @@ msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
 msgstr "Scopri alcuni dei nostri altri lavori che potrebbero migliorare il tuo sito web"
 
 msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
-msgstr "Tutti i nostri utenti della versione Pro ricevono supporto prioritario, rapido e garantito."
+msgstr "Tutti i nostri utenti della versione Pro ricevono supporto prioritario, rapido e garantito uno a uno."
 
 msgid "Get Priority Support "
 msgstr "Ottieni supporto prioritario"
@@ -1470,8 +1434,8 @@ msgstr "KnowledgeBase online"
 msgid "Get Support for Free Version"
 msgstr "Ottieni supporto per la versione gratuita"
 
-msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
-msgstr "Problema nell'elaborazione della richiesta di invio del modulo! Ci scusiamo per gli inconvenienti.<br> Si prega di inviare un'email a <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> con eventuali feedback. Ti risponderemo subito!"
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\\"
+msgstr "Problema nell'elaborazione della tua richiesta di invio modulo! Ci scusiamo per gli inconvenienti.<br> Si prega di inviare un'email a &lt;span style=\\"
 
 msgid "Please fill up all the requried form fields."
 msgstr "Si prega di compilare tutti i campi obbligatori del modulo."
@@ -1553,14 +1517,8 @@ msgstr "Maggiori dettagli"
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "Questo plugin non funziona con le tue versioni di WordPress e PHP."
 
-msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
-msgstr "<a href=\"%1$s\">Aggiorna WordPress</a>, e poi <a href=\"%2$s\">scopri di più sull'aggiornamento di PHP</a>."
-
-msgid "<a href=\"%s\">Please update WordPress</a>."
-msgstr "<a href=\"%s\">Aggiorna WordPress</a>."
-
-msgid "<a href=\"%s\">Learn more about updating PHP</a>."
-msgstr "<a href=\"%s\">Scopri di più sull'aggiornamento di PHP</a>."
+msgid "<a href=\\"
+msgstr "&lt;a href=\\"
 
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr "Questo plugin non funziona con la tua versione di WordPress."
@@ -1575,7 +1533,7 @@ msgid "Update To Pro"
 msgstr "Aggiorna a Pro"
 
 msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
-msgstr "Iniziare con WoowBot è istantaneo. Tutto ciò che devi fare è installare e attivare il plugin."
+msgstr "Iniziare con WoowBot è immediato. Tutto ciò che devi fare è installare e attivare il plugin."
 
 msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
 msgstr "Puoi caricare la tua icona ChatBot dal pannello WoowBot -&gt; sezione Icone."
@@ -1596,7 +1554,7 @@ msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
 msgstr "Ottieni funzionalità AI avanzate, retargeting dei clienti e altro con WoowBot Pro"
 
 msgid "Get the WoowBot Pro Now!"
-msgstr "Ottieni subito WoowBot Pro!"
+msgstr "Ottieni ora WoowBot Pro!"
 
 msgid "Crafted By:"
 msgstr "Creato da:"
@@ -1647,7 +1605,7 @@ msgid "Disable WoowBot"
 msgstr "Disabilita WoowBot"
 
 msgid "Disable WoowBot to Load"
-msgstr "Disabilita WoowBot per il caricamento"
+msgstr "Disabilita il caricamento di WoowBot"
 
 msgid "Enable Product details from AI"
 msgstr "Abilita i dettagli del prodotto da AI"
@@ -1659,7 +1617,7 @@ msgid "Disable WoowBot to Load on Mobile Device"
 msgstr "Disabilita WoowBot per il caricamento su dispositivo mobile"
 
 msgid "Override WoowBot Icon's Position"
-msgstr "Sovrascrivi la posizione dell'icona WoowBot"
+msgstr "Sovrascrivi la posizione dell'icona di WoowBot"
 
 msgid "120"
 msgstr "120"
@@ -1674,13 +1632,13 @@ msgid "From Bottom In px"
 msgstr "Dal basso in px"
 
 msgid "Number of products to show in search results. ( '-1' for all products )."
-msgstr "Numero di prodotti da mostrare nei risultati di ricerca. ( '-1' per tutti i prodotti )."
+msgstr "Numero di prodotti da mostrare nei risultati di ricerca. ('-1' per tutti i prodotti)."
 
 msgid "Page controller"
 msgstr "Controllo pagina"
 
 msgid "Show on Home Page"
-msgstr "Mostra nella home page"
+msgstr "Mostra nella Home Page"
 
 msgid "YES"
 msgstr "SÌ"
@@ -1728,7 +1686,7 @@ msgid "Icon - 7"
 msgstr "Icona - 7"
 
 msgid "Icon -9"
-msgstr "Icona -9"
+msgstr "Icona - 9"
 
 msgid "Icon - 10"
 msgstr "Icona - 10"
@@ -1782,16 +1740,16 @@ msgid "Upload  background."
 msgstr "Carica sfondo."
 
 msgid "Custom message board background"
-msgstr "Sfondo personalizzato della bacheca dei messaggi"
+msgstr "Sfondo della bacheca dei messaggi personalizzato"
 
 msgid "Message setting for"
-msgstr "Impostazioni messaggio per"
+msgstr "Impostazione messaggio per"
 
 msgid "Identity"
 msgstr "Identità"
 
 msgid "Your Company or Website Name"
-msgstr "Il tuo nome aziendale o del sito web"
+msgstr "Il nome della tua azienda o sito web"
 
 msgid "Agent name"
 msgstr "Nome dell'agente"
@@ -1857,7 +1815,7 @@ msgid "Too many choices? Let's try another search term"
 msgstr "Troppe scelte? Proviamo un altro termine di ricerca"
 
 msgid "Email has been sent successfully"
-msgstr "L'email è stata inviata con successo"
+msgstr "Email inviata con successo"
 
 msgid "Please provide your email address"
 msgstr "Per favore fornisci il tuo indirizzo email"
@@ -1872,10 +1830,10 @@ msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
 msgstr "Ottieni il ChatBot #1 per WooCommerce – WoowBot Pro"
 
 msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
-msgstr "WoowBot Pro è un ChatBot per lo shopping di WooCommerce che può aiutare ad aumentare visibilmente le vendite del tuo negozio. Gli acquirenti possono conversare fluentemente con il Bot – grazie alla sua integrazione con il Dialogflow di Google, cercare e aggiungere prodotti al carrello direttamente dall'interfaccia di chat, ricevere supporto e altro!"
+msgstr "WoowBot Pro è un ChatBot per lo shopping su WooCommerce che può aiutarti ad aumentare visibilmente le vendite del tuo negozio. Gli acquirenti possono conversare fluentemente con il Bot, grazie alla sua integrazione con Dialogflow di Google, cercare e aggiungere prodotti al carrello direttamente dall'interfaccia della chat, ricevere supporto e altro ancora!"
 
 msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
-msgstr "Il Retargeting Onsite aiuta l'ottimizzazione del tasso di conversione mostrando offerte speciali e coupon all'uscita, in base a un intervallo di tempo o allo scorrimento della pagina. Monitora le conversioni dei clienti con statistiche per scoprire se gli acquirenti abbandonano i carrelli. Ottieni più vendite!"
+msgstr "Il Retargeting Onsite aiuta l'ottimizzazione del tasso di conversione mostrando offerte speciali e coupon in base all'intento di uscita, all'intervallo di tempo o allo scorrimento della pagina. Monitora le conversioni dei clienti con statistiche per scoprire se gli acquirenti abbandonano i carrelli. Ottieni più vendite!"
 
 msgid "Get the WoowBot Pro Now and Increase Sales!"
 msgstr "Ottieni WoowBot Pro ora e aumenta le vendite!"
@@ -1896,37 +1854,37 @@ msgid "Extended UI Addon"
 msgstr "Addon UI Estesa"
 
 msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
-msgstr "Dai un restyling al tuo amato ChatBot. Scegli tra 2 modelli aggiuntivi moderni, eleganti e piuttosto fantasiosi! Questi nuovi modelli sono sicuri di stupire i visitatori del tuo sito web! Nuovo effetto di caricamento e ampie opzioni di personalizzazione dei colori sono disponibili!"
+msgstr "Dai un nuovo look al tuo amato ChatBot. Scegli tra 2 modelli aggiuntivi moderni, eleganti e piuttosto fantasiosi! Questi nuovi modelli sono sicuri di stupire i visitatori del tuo sito web! Nuovo effetto di caricamento e ampie opzioni di personalizzazione dei colori sono disponibili!"
 
 msgid "Simple Text Responses Pro"
 msgstr "Risposte Testuali Semplici Pro"
 
 msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
-msgstr "Crea facilmente risposte basate su testo per le domande dei tuoi clienti con la funzione di esportazione/importazione CSV. STR Pro supporta categorie per risposte testuali semplici per il backend e il frontend. Editor visivo HTML per formattare le risposte del tuo ChatBot e rimuovere le parole di stop per una migliore corrispondenza di ricerca."
+msgstr "Crea facilmente risposte basate su testo per le domande dei tuoi clienti con la funzione di esportazione/importazione CSV. STR Pro supporta categorie per risposte testuali semplici per il backend e il frontend. Editor visivo HTML per formattare le risposte del tuo ChatBot e rimuovere le parole chiave per una migliore corrispondenza di ricerca."
 
 msgid "Bargaining ChatBot for WoowBot"
-msgstr "ChatBot per Contrattazione per WoowBot"
+msgstr "ChatBot di Contrattazione per WoowBot"
 
 msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
-msgstr "Fai la tua offerta ora con il ChatBot per Contrattazione. Vinci più clienti con negoziazioni di prezzo intelligenti. Consenti ai tuoi clienti di fare un'offerta sul tuo prezzo. Negozia un prezzo minimo impostato da te per prodotto. Cattura gli acquirenti mentre hanno un'alta intenzione di acquisto. Il pulsante Fai la tua offerta verrà mostrato solo nella pagina del prodotto singolo per cui hai impostato il prezzo minimo."
+msgstr "Fai la tua offerta ora con il ChatBot di Contrattazione. Vinci più clienti con negoziazioni di prezzo intelligenti. Consenti ai tuoi clienti di fare un'offerta sul tuo prezzo. Negozia un prezzo minimo impostato da te per prodotto. Cattura gli acquirenti mentre hanno un'alta intenzione di acquisto. Il pulsante Fai la tua offerta verrà mostrato solo sulla pagina del prodotto singolo per cui hai impostato il prezzo minimo."
 
 msgid "Conversational Form Builder"
 msgstr "Costruttore di Moduli Conversazionali"
 
 msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
-msgstr "Crea conversazioni e moduli condizionali per un'esperienza ChatBot nativa di WordPress. Crea moduli standard, moduli dinamici con campi condizionali, calcolatori, prenotazione appuntamenti, ecc. Viene fornito con 7 modelli pronti all'uso integrati. Salva i dati del modulo nel database, risposta automatica, campi condizionali, variabili, revisioni salvate e altro!"
+msgstr "Crea conversazioni e moduli condizionali per un'esperienza ChatBot nativa di WordPress. Crea moduli standard, moduli dinamici con campi condizionali, calcolatori, prenotazioni di appuntamenti, ecc. Viene fornito con 7 modelli pronti all'uso integrati. Salva i dati del modulo nel database, risposta automatica, campi condizionali, variabili, revisioni salvate e altro!"
 
 msgid "Export Import Settings"
 msgstr "Esporta Importa Impostazioni"
 
 msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
-msgstr "Utilizzi WoowbotPro su più siti web? Allora questo utile addon potrebbe tornarti utile. Questo addon ti consente di esportare le tue impostazioni e importarle in un altro sito o se desideri semplicemente mantenere un backup. Molto utile per il trasferimento delle impostazioni del centro lingue che possono essere complicate con molte opzioni. Prendilo ora!"
+msgstr "Utilizzi WoowbotPro su più siti web? Allora questo piccolo addon potrebbe tornarti utile. Questo addon ti consente di esportare le tue impostazioni e importarle in un altro sito o se vuoi semplicemente tenere un backup. Molto utile per trasferire le impostazioni del Centro Lingue che possono essere complicate con molte opzioni. Prendilo ora!"
 
 msgid "Messenger ChatBot Addon"
 msgstr "Addon ChatBot Messenger"
 
 msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
-msgstr "Utilizza Woowbot sul tuo sito web come hub per rispondere alle domande dei clienti sulla pagina FB e Messenger"
+msgstr "Utilizza Woowbot sul tuo sito web come hub per rispondere alle domande dei clienti su FB Page e Messenger"
 
 msgid "Extended Search"
 msgstr "Ricerca Estesa"
@@ -1944,19 +1902,19 @@ msgid "LiveChat Addon"
 msgstr "Addon LiveChat"
 
 msgid "Live Human Chat integrated with WPBot"
-msgstr "Chat dal Vivo con un Operatore Umano integrata con WPBot"
+msgstr "Chat dal Vivo con un Operatore Umano integrato con WPBot"
 
 msgid "White Label WPBot"
 msgstr "White Label WPBot"
 
 msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
-msgstr "Sostituisci il logo e il branding di QuantumCloud con i tuoi. Adatto per sviluppatori e agenzie interessate a fornire servizi ChatBot per i loro clienti."
+msgstr "Sostituisci il logo e il marchio di QuantumCloud con i tuoi. Adatto per sviluppatori e agenzie interessate a fornire servizi di ChatBot per i loro clienti."
 
 msgid "Mailing List Integration AddOn"
 msgstr "Addon Integrazione Mailing List"
 
 msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
-msgstr "L'integrazione della Mailing List è l'addon ChatBot che ti consente di connetterti ai tuoi account Mailchimp e Zapier. Puoi aggiungere nuovi iscritti alle tue liste Mailchimp dal ChatBot e disiscriverli. Puoi anche creare un nuovo Zap sul tuo account Zapier e connetterti con questo addon."
+msgstr "L'integrazione della Mailing List è l'addon ChatBot che ti consente di connetterti con i tuoi account Mailchimp e Zapier. Puoi aggiungere nuovi iscritti alle tue liste Mailchimp dal ChatBot e disiscriverli. Puoi anche creare nuovi Zap sul tuo account Zapier e connetterti con questo addon."
 
 msgid "WoowBot Master Theme"
 msgstr "Tema Master WoowBot"
@@ -1995,7 +1953,7 @@ msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
 msgstr "**Suggerimento Pro: I tuoi clienti non completano gli ordini? Scoprilo con il"
 
 msgid "Customer Conversion report"
-msgstr "report di Conversione Clienti"
+msgstr "rapporto di conversione dei clienti"
 
 msgid "in the Pro version"
 msgstr "nella versione Pro"
@@ -2013,7 +1971,7 @@ msgid "**Pro Tip: Utilize Onsite Retargeting for"
 msgstr "**Suggerimento Pro: Utilizza il Retargeting Onsite per"
 
 msgid "Exit Intent or Scroll down Popups"
-msgstr "Intento di Uscita o Popups di Scorrimento"
+msgstr "Intento di Uscita o Pop-up di Scorrimento"
 
 msgid "with WoowBot Pro. Increase sales by 50% or more!"
 msgstr "con WoowBot Pro. Aumenta le vendite del 50% o più!"
@@ -2034,4 +1992,109 @@ msgid "Facebook, Instagram, Telegram"
 msgstr "Facebook, Instagram, Telegram"
 
 msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
-msgstr "e altro per fornire ai tuoi clienti il supporto che meritano. Aumenta la soddisfazione del cliente!"
+msgstr "e altro per dare ai tuoi clienti il supporto che meritano. Aumenta la soddisfazione del cliente!"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Mostra il pulsante \"Prova con AI\" sulle pagine dei singoli prodotti"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "Puoi personalizzare completamente la posizione e il testo del pulsante \"Prova\" nella scheda <strong>Impostazioni Generali</strong>!"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Quando un cliente clicca sul pulsante Prova, un'interfaccia modale premium si solleva. Possono facilmente trascinare e rilasciare o caricare una foto di riferimento di se stessi. Hanno anche una casella di testo per aggiungere istruzioni personalizzate per lo scenario (ad es., <em>\"In piedi in un moderno caffè\"</em>)."
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "I modelli Gemini di Google (inclusi Imagen 3 e Veo) richiedono una chiave API da Google AI Studio. Puoi ottenere una chiave API gratuita visitando <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "I modelli di OpenAI (come DALL-E 3) richiedono un account a pagamento sulla piattaforma OpenAI. Puoi generare una chiave su <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">Chiavi API OpenAI</a>."
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Seleziona il tuo modello Gemini. Clicca su \"Recupera Modelli\" per aggiornare l'elenco se hai appena aggiunto la tua chiave API."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "Puoi utilizzare diversi Assistenti GPT su diverse pagine con i Widget del chatbot. Incolla questo shortcode di esempio e sostituisci l'ID dell'Assistente secondo necessità: Es: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "Una volta che aggiungi la chiave API di OpenAI, dovrebbe già iniziare a funzionare per domande generiche. Apri una nuova finestra del browser in modalità Incognito e prova a chiedere \"Qual è la capitale della Russia?\""
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:
+\n"
+"                "
+msgstr "a. Per addestrare o perfezionare un modello, prima devi:"
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
+"                Upload your training file in .JSONL format."
+msgstr "b. Una volta che hai il tuo file JSONL pronto, vai alla sezione Modello di Addestramento. Carica il tuo file di addestramento in formato .JSONL."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Una volta completato l'addestramento e il file è pronto, restituirà il modello perfezionato. Sarà elencato sotto l'elenco dei Modelli Perfezionati, lo stato sarà mostrato come \"Riuscito\" e riceverai anche un ID Modello FT (da copiare nella pagina delle impostazioni)."
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Sei un assistente che occasionalmente sbaglia a scrivere le parole\" },{ \"role\": \"user\", \"content\": \"Raccontami una storia.\" }, { \"role\": \"assistant\", \"content\": \"Un giorno uno studente andò a scuola.\" }]}"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Per risultati migliori, hai bisogno di almeno 500+ richieste. Altrimenti, OpenAI mescolerà la risposta con conoscenze generiche. Inoltre, le richieste dovrebbero essere il più descrittive possibile. Segui il formato delle FAQ con domande e risposte descrittive. Esempio di richiesta: invece di \"Giacca di Jeans Vintage\" puoi scrivere \"Perché dovresti indossare la nostra Giacca di Jeans Vintage?\"."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Pianifica il lavoro cron per ogni ruolo se non è già pianificato);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule evento per ripristinare i conteggi dei limiti di velocità utilizzati
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Assicurati che le funzioni cron di WordPress siano disponibili
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Problema nell'elaborazione della tua richiesta di invio del modulo! Ci scusiamo per gli inconvenienti.<br> Invia un'email a <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> con qualsiasi feedback. Ti risponderemo subito!"
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Per favore aggiorna WordPress</a>, e poi <a href=\"%2$s\">scopri di più su come aggiornare PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Per favore aggiorna WordPress</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Scopri di più su come aggiornare PHP</a>."

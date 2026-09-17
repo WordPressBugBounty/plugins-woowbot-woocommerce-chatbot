@@ -8,7 +8,7 @@ final class QCLD_WIA_Admin {
 	}
 
 	public static function menu() {
-		add_submenu_page( 'ai-tryon-for-woocommerce', __( 'AI Analyst', 'woowbot-woocommerce-chatbot' ), __( 'AI Analyst', 'woowbot-woocommerce-chatbot' ), 'manage_options', 'ai-woo-insights', array( __CLASS__, 'page' ) );
+		add_submenu_page( 'ai-tryon-for-woocommerce', __( 'AI Business Analyst', 'woowbot-woocommerce-chatbot' ), __( 'AI Business Analyst', 'woowbot-woocommerce-chatbot' ), 'manage_options', 'ai-woo-insights', array( __CLASS__, 'page' ) );
 	}
 
 	public static function assets( $hook ) {

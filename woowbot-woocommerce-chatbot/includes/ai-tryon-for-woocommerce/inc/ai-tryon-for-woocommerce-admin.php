@@ -17,8 +17,22 @@ function qcld_woo_chatbot_add_admin_menu() {
     add_menu_page( 'AI Studio Settings', $menu_name, 'manage_options', 'ai-tryon-for-woocommerce', 'qcld_woo_chatbot_ai_settings_page', $icon, 8 );
     
     // Submenus
-    add_submenu_page( 'ai-tryon-for-woocommerce', 'AI Settings', 'AI Settings', 'manage_options', 'ai-tryon-for-woocommerce', 'qcld_woo_chatbot_ai_settings_page' );
-    add_submenu_page( 'ai-tryon-for-woocommerce', 'FitRoom TryOn', 'FitRoom TryOn', 'manage_options', 'ai-tryon-for-woocommerce-ai', 'qcld_woo_chatbot_settings_page' );
+    add_submenu_page( 
+        'ai-tryon-for-woocommerce', 
+        esc_html('AI Settings', 'woowbot-woocommerce-chatbot' ), 
+        esc_html('AI Settings', 'woowbot-woocommerce-chatbot' ), 
+        'manage_options', 
+        'ai-tryon-for-woocommerce', 
+        'qcld_woo_chatbot_ai_settings_page' 
+    );
+    add_submenu_page( 
+        'ai-tryon-for-woocommerce', 
+        esc_html('FitRoom TryOn', 'woowbot-woocommerce-chatbot' ), 
+        esc_html('FitRoom TryOn', 'woowbot-woocommerce-chatbot' ), 
+        'manage_options', 
+        'ai-tryon-for-woocommerce-ai', 
+        'qcld_woo_chatbot_settings_page' 
+    );
 }
 
 function qcld_woo_chatbot_settings_page() {
@@ -40,7 +54,7 @@ function qcld_woo_chatbot_settings_page() {
                                 <a href="#prompts" class="qcld_woo_chatbot-tab-link" data-target="qcld_woo_chatbot-tab-prompts"><?php esc_html_e( 'Prompts', 'woowbot-woocommerce-chatbot' ); ?></a>
                                 <a href="#help" class="qcld_woo_chatbot-tab-link" data-target="qcld_woo_chatbot-tab-help"><?php esc_html_e( 'Help', 'woowbot-woocommerce-chatbot' ); ?></a>
                             </h2>
-                            <p style="margin-top: 15px;"><?php esc_html_e( 'Configure all your AI Try-On settings in one place.', 'woowbot-woocommerce-chatbot' ); ?></p>
+                            <p class="qcld_woo_chatbot-mt-15"><?php esc_html_e( 'Configure all your AI Try-On settings in one place.', 'woowbot-woocommerce-chatbot' ); ?></p>
                         </div>
                         <div class="qcld_woo_chatbot-card-body">
                             
@@ -86,7 +100,7 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-form-group">
                                     <label for="qcld_woo_chatbot_generation_limit"><?php esc_html_e( 'Daily Generation Limit', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <div class="qcld_woo_chatbot-input-action-group">
-                                        <input type="number" id="qcld_woo_chatbot_generation_limit" name="qcld_woo_chatbot_generation_limit" class="qcld_woo_chatbot-input-field" value="<?php echo esc_attr(get_option('qcld_woo_chatbot_generation_limit', '')); ?>" placeholder="<?php esc_attr_e( 'e.g. 5 (Leave blank for unlimited)', 'woowbot-woocommerce-chatbot' ); ?>" min="0" style="max-width: 200px;" />
+                                        <input type="number" id="qcld_woo_chatbot_generation_limit" name="qcld_woo_chatbot_generation_limit" class="qcld_woo_chatbot-input-field qcld_woo_chatbot-max-w-200" value="<?php echo esc_attr(get_option('qcld_woo_chatbot_generation_limit', '')); ?>" placeholder="<?php esc_attr_e( 'e.g. 5 (Leave blank for unlimited)', 'woowbot-woocommerce-chatbot' ); ?>" min="0" />
                                     </div>
                                     <span class="qcld_woo_chatbot-description"><?php esc_html_e( 'Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited.', 'woowbot-woocommerce-chatbot' ); ?></span>
                                 </div>
@@ -127,7 +141,7 @@ function qcld_woo_chatbot_settings_page() {
                                     <div class="qcld_woo_chatbot-radio-grid">
                                         <?php
                                         $saved_icon = get_option('qcld_woo_chatbot_button_icon', 'sparkles');
-                                        $magic_wand_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>';
+                                        $magic_wand_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qcld_woo_chatbot-svg-align"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>';
                                         $icons = [
                                             'sparkles' => ['icon' => '✨', 'title' => esc_html__('Sparkles', 'woowbot-woocommerce-chatbot')],
                                             'magic_wand' => ['icon' => $magic_wand_svg, 'title' => esc_html__('Magic Wand', 'woowbot-woocommerce-chatbot')],
@@ -139,7 +153,7 @@ function qcld_woo_chatbot_settings_page() {
                                                 $active_class = ($saved_icon === $val) ? 'active' : '';
                                                 echo '<label class="qcld_woo_chatbot-radio-card ' . esc_attr($active_class) . '">';
                                                 echo '<input type="radio" name="qcld_woo_chatbot_button_icon" value="' . esc_attr($val) . '" ' . checked($saved_icon, $val, false) . ' />';
-                                                echo '<span style="font-size: 20px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; width: 24px;">' . wp_kses_post($data['icon']) . '</span>';
+                                                echo '<span class="qcld_woo_chatbot-icon-badge">' . wp_kses_post($data['icon']) . '</span>';
                                                 echo '<div class="qcld_woo_chatbot-radio-info">';
                                                 echo '<strong>' . esc_attr($data['title']) . '</strong>';
                                                 echo '</div>';
@@ -148,7 +162,7 @@ function qcld_woo_chatbot_settings_page() {
                                         }
                                         ?>
                                     </div>
-                                    <span class="qcld_woo_chatbot-description" style="display:block; margin-top: 10px;"><?php esc_html_e( 'Select an emoji icon to display before the button text.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <span class="qcld_woo_chatbot-description qcld_woo_chatbot-mt-10"><?php esc_html_e( 'Select an emoji icon to display before the button text.', 'woowbot-woocommerce-chatbot' ); ?></span>
                                 </div>
 
                                 <div class="qcld_woo_chatbot-form-group">
@@ -162,13 +176,13 @@ function qcld_woo_chatbot_settings_page() {
                                 
 
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
-                                    <label><?php esc_html_e( 'Default Video Duration', 'woowbot-woocommerce-chatbot' ); ?> <span style="color:#ff9800; font-size:11px; font-weight:bold; margin-left:6px;"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
+                                    <label><?php esc_html_e( 'Default Video Duration', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
                                     <div class="qcld_woo_chatbot-radio-grid">
                                         <?php
                                         $selected_duration = get_option('qcld_woo_chatbot_video_duration', '4s');
                                         $durations = [
                                             '4s' => ['icon' => 'dashicons-clock', 'title' => esc_html__('4 Seconds', 'woowbot-woocommerce-chatbot'), 'desc' => esc_html__('Standard generation', 'woowbot-woocommerce-chatbot')],
-                                            '8s' => ['icon' => 'dashicons-update-alt', 'title' => esc_html__('8 Seconds', 'woowbot-woocommerce-chatbot'), 'desc' => esc_html__('Extended generation', 'woowbot-woocommerce-chatbot')]
+                                            '8s' => ['icon' => 'dashicons-update-alt', 'title' => esc_html__('Extended generation', 'woowbot-woocommerce-chatbot'), 'desc' => esc_html__('Extended generation', 'woowbot-woocommerce-chatbot')]
                                         ];
                                         if(!empty($durations)){
                                             foreach ($durations as $val => $data) {
@@ -188,7 +202,7 @@ function qcld_woo_chatbot_settings_page() {
                                 </div>
 
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
-                                    <label><?php esc_html_e( 'Video Resolution', 'woowbot-woocommerce-chatbot' ); ?> <span style="color:#ff9800; font-size:11px; font-weight:bold; margin-left:6px;"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
+                                    <label><?php esc_html_e( 'Video Resolution', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
                                     <div class="qcld_woo_chatbot-radio-grid">
                                         <?php
                                         $selected_resolution = get_option('qcld_woo_chatbot_video_resolution', '720p');
@@ -250,17 +264,17 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
                                     <label for="qcld_woo_chatbot_gemini_prompt"><?php esc_html_e( 'Google Gemini Base Prompt', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <textarea id="qcld_woo_chatbot_gemini_prompt" name="qcld_woo_chatbot_gemini_prompt" class="qcld_woo_chatbot-textarea-field" rows="3"><?php echo esc_textarea(get_option('qcld_woo_chatbot_gemini_prompt', 'Create a realistic virtual try-on image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance. Additional context: ')); ?></textarea>
-                                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 6px;">
-                                        <span class="qcld_woo_chatbot-description" style="margin-top: 0;"><?php esc_html_e( 'Customize the base instructions sent to Google Gemini. The user\'s input will be appended automatically.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <div class="qcld_woo_chatbot-card-row-flex">
+                                        <span class="qcld_woo_chatbot-description qcld_woo_chatbot-m-0"><?php esc_html_e( 'Customize the base instructions sent to Google Gemini. The user\'s input will be appended automatically.', 'woowbot-woocommerce-chatbot' ); ?></span>
                                         <a href="#" class="qcld_woo_chatbot-reset-prompt-btn" data-target="qcld_woo_chatbot_gemini_prompt" data-default="Create a realistic virtual try-on image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance. Additional context: "><?php esc_html_e( 'Reset to Default', 'woowbot-woocommerce-chatbot' ); ?></a>
                                     </div>
                                 </div>
 
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
-                                    <label for="qcld_woo_chatbot_veo_prompt"><?php esc_html_e( 'Gemini Veo Video Base Prompt', 'woowbot-woocommerce-chatbot' ); ?> <span style="color:#ff9800; font-size:11px; font-weight:bold; margin-left:6px;"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
+                                    <label for="qcld_woo_chatbot_veo_prompt"><?php esc_html_e( 'Gemini Veo Video Base Prompt', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
                                     <textarea id="qcld_woo_chatbot_veo_prompt" name="qcld_woo_chatbot_veo_prompt" class="qcld_woo_chatbot-textarea-field" rows="3" disabled><?php echo esc_textarea(get_option('qcld_woo_chatbot_veo_prompt', 'Create a realistic virtual try-on video based on this image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance.  ')); ?></textarea>
-                                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 6px;">
-                                        <span class="qcld_woo_chatbot-description" style="margin-top: 0;"><?php esc_html_e( 'Customize the base instructions for Veo video generation. The user\'s input will be appended automatically. (Available in Pro)', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <div class="qcld_woo_chatbot-card-row-flex">
+                                        <span class="qcld_woo_chatbot-description qcld_woo_chatbot-m-0"><?php esc_html_e( 'Customize the base instructions for Veo video generation. The user\'s input will be appended automatically. (Available in Pro)', 'woowbot-woocommerce-chatbot' ); ?></span>
                                         <a href="#" class="qcld_woo_chatbot-reset-prompt-btn" data-target="qcld_woo_chatbot_veo_prompt" data-default="Create a realistic virtual try-on video based on this image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance.  "><?php esc_html_e( 'Reset to Default', 'woowbot-woocommerce-chatbot' ); ?></a>
                                     </div>
                                 </div>
@@ -268,8 +282,8 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
                                     <label for="qcld_woo_chatbot_openai_system_prompt"><?php esc_html_e( 'OpenAI Base Prompt', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <textarea id="qcld_woo_chatbot_openai_system_prompt" name="qcld_woo_chatbot_openai_system_prompt" class="qcld_woo_chatbot-textarea-field" rows="3"><?php echo esc_textarea(get_option('qcld_woo_chatbot_openai_system_prompt', 'Create a realistic virtual try-on image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance. Additional context: ')); ?></textarea>
-                                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 6px;">
-                                        <span class="qcld_woo_chatbot-description" style="margin-top: 0;"><?php esc_html_e( 'Customize the base instructions sent to OpenAI. The user\'s input will be appended automatically.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <div class="qcld_woo_chatbot-card-row-flex">
+                                        <span class="qcld_woo_chatbot-description qcld_woo_chatbot-m-0"><?php esc_html_e( 'Customize the base instructions sent to OpenAI. The user\'s input will be appended automatically.', 'woowbot-woocommerce-chatbot' ); ?></span>
                                         <a href="#" class="qcld_woo_chatbot-reset-prompt-btn" data-target="qcld_woo_chatbot_openai_system_prompt" data-default="Create a realistic virtual try-on image. The first image is the product to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Keep a neutral background suitable for eCommerce. Do not change the model/user/customer face appearance. Additional context: "><?php esc_html_e( 'Reset to Default', 'woowbot-woocommerce-chatbot' ); ?></a>
                                     </div>
                                 </div>
@@ -277,8 +291,8 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
                                     <label for="qcld_woo_chatbot_build_generation_prompt"><?php esc_html_e( 'Final Prompt Structure Builder', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <textarea id="qcld_woo_chatbot_build_generation_prompt" name="qcld_woo_chatbot_build_generation_prompt" class="qcld_woo_chatbot-textarea-field" rows="3"><?php echo esc_textarea(get_option('qcld_woo_chatbot_build_generation_prompt', 'Product name: {product_name}. Product Image URL: {product_image_url}. Reference Image URL: {second_image_url}. Scenario instruction: {scenario}')); ?></textarea>
-                                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 6px;">
-                                        <span class="qcld_woo_chatbot-description" style="margin-top: 0;"><?php esc_html_e( 'Use placeholders:', 'woowbot-woocommerce-chatbot' ); ?> <code>{product_name}</code>, <code>{product_image_url}</code>, <code>{second_image_url}</code>, <code>{scenario}</code> <?php esc_html_e( 'to structure how the final combined prompt is sent.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <div class="qcld_woo_chatbot-card-row-flex">
+                                        <span class="qcld_woo_chatbot-description qcld_woo_chatbot-m-0"><?php esc_html_e( 'Use placeholders:', 'woowbot-woocommerce-chatbot' ); ?> <code>{product_name}</code>, <code>{product_image_url}</code>, <code>{second_image_url}</code>, <code>{scenario}</code> <?php esc_html_e( 'to structure how the final combined prompt is sent.', 'woowbot-woocommerce-chatbot' ); ?></span>
                                         <a href="#" class="qcld_woo_chatbot-reset-prompt-btn" data-target="qcld_woo_chatbot_build_generation_prompt" data-default="Product name: {product_name}. Product Image URL: {product_image_url}. Reference Image URL: {second_image_url}. Scenario instruction: {scenario}"><?php esc_html_e( 'Reset to Default', 'woowbot-woocommerce-chatbot' ); ?></a>
                                     </div>
                                 </div>
@@ -289,7 +303,7 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-help-grid">
                                     <div class="qcld_woo_chatbot-help-main">
                                         <div class="qcld_woo_chatbot-help-article">
-                                            <h3><span class="dashicons dashicons-welcome-learn-more" style="margin-top: 2px;"></span> <?php esc_html_e( 'Quick Start Guide', 'woowbot-woocommerce-chatbot' ); ?></h3>
+                                            <h3><span class="dashicons dashicons-welcome-learn-more qcld_woo_chatbot-mt-2"></span> <?php esc_html_e( 'Quick Start Guide', 'woowbot-woocommerce-chatbot' ); ?></h3>
                                             <p><?php esc_html_e( 'Welcome to', 'woowbot-woocommerce-chatbot' ); ?> <strong><?php esc_html_e( 'WooCommerce AI Try-On', 'woowbot-woocommerce-chatbot' ); ?></strong>. <?php esc_html_e( 'This plugin allows your customers to virtually try on your products using cutting edge generative AI.', 'woowbot-woocommerce-chatbot' ); ?></p>
                                             
                                             <div class="qcld_woo_chatbot-alert-box">
@@ -308,7 +322,7 @@ function qcld_woo_chatbot_settings_page() {
                                             </div>
 
                                             <div class="qcld_woo_chatbot-help-article">
-                                                <h3><span class="dashicons dashicons-admin-network" style="margin-top: 2px;"></span> <?php esc_html_e( 'API Keys & Configuration', 'woowbot-woocommerce-chatbot' ); ?></h3>
+                                                <h3><span class="dashicons dashicons-admin-network qcld_woo_chatbot-mt-2"></span> <?php esc_html_e( 'API Keys & Configuration', 'woowbot-woocommerce-chatbot' ); ?></h3>
                                                 <p><?php esc_html_e( 'Before the Try-On button will function, you must configure your AI providers.', 'woowbot-woocommerce-chatbot' ); ?></p>
                                                 
                                                 <div class="qcld_woo_chatbot-alert-box warning">
@@ -327,14 +341,14 @@ function qcld_woo_chatbot_settings_page() {
                                             <div class="qcld_woo_chatbot-help-sidebar-card">
                                                 <h4><span class="dashicons dashicons-editor-help"></span> <?php esc_html_e( 'Need Support?', 'woowbot-woocommerce-chatbot' ); ?></h4>
                                                 <p><?php esc_html_e( 'If you\'re experiencing issues with the plugin or have feature requests, please reach out to our support desk.', 'woowbot-woocommerce-chatbot' ); ?></p>
-                                                <p style="margin-bottom:0; margin-top:10px;"><a href="#"><?php esc_html_e( 'Contact Support &rarr;', 'woowbot-woocommerce-chatbot' ); ?></a></p>
+                                                <p class="qcld_woo_chatbot-mb-0 qcld_woo_chatbot-mt-10"><a href="#"><?php esc_html_e( 'Contact Support &rarr;', 'woowbot-woocommerce-chatbot' ); ?></a></p>
                                             </div>
 
                                             <div class="qcld_woo_chatbot-help-sidebar-card">
                                                 <h4><span class="dashicons dashicons-book"></span> <?php esc_html_e( 'Useful Links', 'woowbot-woocommerce-chatbot' ); ?></h4>
-                                                <ul style="margin-left: 0; padding-left: 0; list-style: none;">
-                                                    <li style="margin-bottom: 8px;"><a href="https://aistudio.google.com/" target="_blank"><?php esc_html_e( 'Google AI Studio', 'woowbot-woocommerce-chatbot' ); ?></a></li>
-                                                    <li style="margin-bottom: 8px;"><a href="https://platform.openai.com/" target="_blank"><?php esc_html_e( 'OpenAI Developer Platform', 'woowbot-woocommerce-chatbot' ); ?></a></li>
+                                                <ul class="qcld_woo_chatbot-clean-list">
+                                                    <li class="qcld_woo_chatbot-mb-8"><a href="https://aistudio.google.com/" target="_blank"><?php esc_html_e( 'Google AI Studio', 'woowbot-woocommerce-chatbot' ); ?></a></li>
+                                                    <li class="qcld_woo_chatbot-mb-8"><a href="https://platform.openai.com/" target="_blank"><?php esc_html_e( 'OpenAI Developer Platform', 'woowbot-woocommerce-chatbot' ); ?></a></li>
                                                     <li><a href="https://woocommerce.com/documentation/" target="_blank"><?php esc_html_e( 'WooCommerce Docs', 'woowbot-woocommerce-chatbot' ); ?></a></li>
                                                 </ul>
                                             </div>
@@ -405,7 +419,7 @@ function qcld_woo_chatbot_settings_page() {
                                     <label for="qcld_woo_chatbot_openai_api_key"><?php esc_html_e( 'OpenAI API Key', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <div class="qcld_woo_chatbot-input-action-group">
 
-                                        <?php 
+                                        <?php
 
                                         $qcld_woo_chatbot_openai_api_key = get_option('qcld_woo_chatbot_openai_api_key');
                                         if (class_exists('QCLD_Woo_Chatbot') && empty($qcld_woo_chatbot_openai_api_key) ) {
@@ -452,8 +466,8 @@ function qcld_woo_chatbot_settings_page() {
                             <!-- Gemini Settings Section -->
                             <div class="qcld_woo_chatbot-gemini-settings-row">
                                 <hr class="qcld_woo_chatbot-divider" />
-                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                                    <h3 class="qcld_woo_chatbot-section-title qcld_woo_chatbot-header-gemini" style="margin-bottom:0;"><?php esc_html_e( 'Google Gemini Integration Settings', 'woowbot-woocommerce-chatbot' ); ?></h3>
+                                <div class="qcld_woo_chatbot-section-header-flex">
+                                    <h3 class="qcld_woo_chatbot-section-title qcld_woo_chatbot-header-gemini qcld_woo_chatbot-mb-0"><?php esc_html_e( 'Google Gemini Integration Settings', 'woowbot-woocommerce-chatbot' ); ?></h3>
                                     <span class="qcld_woo_chatbot-badge"><?php esc_html_e( 'Powered by Veo for Video', 'woowbot-woocommerce-chatbot' ); ?></span>
                                 </div>
                                 
@@ -505,10 +519,10 @@ function qcld_woo_chatbot_settings_page() {
                                 </div>
 
                                 <div class="qcld_woo_chatbot-form-group">
-                                    <label for="qcld_woo_chatbot_gemini_video_model"><?php esc_html_e( 'Gemini Video Model (Google Veo)', 'woowbot-woocommerce-chatbot' ); ?> <span style="color:#ff9800; font-size:11px; font-weight:bold; margin-left:6px;"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
+                                    <label for="qcld_woo_chatbot_gemini_video_model"><?php esc_html_e( 'Gemini Video Model (Google Veo)', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
                                     <div class="qcld_woo_chatbot-input-action-group">
                                         <select id="qcld_woo_chatbot_gemini_video_model" name="qcld_woo_chatbot_gemini_video_model" class="qcld_woo_chatbot-select-field" disabled>
-                                            <?php 
+                                            <?php
                                             $saved_g_video = get_option('qcld_woo_chatbot_gemini_video_model', 'veo-3.1-generate-preview');
                                             $g_video_models = get_option('qcld_woo_chatbot_gemini_available_video_models', array());
                                             if (!is_array($g_video_models)) $g_video_models = array();

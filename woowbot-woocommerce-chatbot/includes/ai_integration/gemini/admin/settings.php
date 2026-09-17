@@ -15,7 +15,7 @@
                     <div class="form-check form-switch my-4">
                         <input class="form-check-input" type="checkbox" <?php echo (get_option('qcld_gemini_enabled') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="qcld_gemini_enabled">
                         <label class="form-check-label" for="qcld_gemini_enabled">
-                        <?php esc_html_e('Enable Gemini AI','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php esc_html_e('(if you want results from Gemini only, disable Site Search from Settings->Start Menu)','woowbot-woocommerce-chatbot'); ?></span>
+                        <?php esc_html_e('Enable Gemini AI','woowbot-woocommerce-chatbot'); ?><span class="qcld-red-text"> <?php esc_html_e('(if you want results from Gemini only, disable Site Search from Settings->Start Menu)','woowbot-woocommerce-chatbot'); ?></span>
                         </label>
                     </div>
                 </div>
@@ -58,10 +58,10 @@
                                                 type="checkbox"
                                                 name="site_gemini_search_posttypes[]"
                                                 value="<?php echo esc_attr( $post_type->name ); ?>"
-                                                <?php echo (($is_pro) ? 'disabled' : ''); ?>
+                                                <?php echo esc_attr(($is_pro) ? 'disabled' : ''); ?>
                                                 
                                                 <?php echo ((get_option('qcld_openai_relevant_post') != '') && in_array($post_type->name, get_option('qcld_openai_relevant_post'))) ? 'checked' : ''; ?>>
-                                            <label class="form-check-label <?php echo ($is_pro ? 'pro-locked' : ''); ?>" for="site_gemini_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>">
+                                            <label class="form-check-label <?php echo esc_attr($is_pro ? 'pro-locked' : ''); ?>" for="site_gemini_search_posttypes_<?php echo esc_attr( $post_type->name ); ?>">
                                                 <?php echo esc_html( $post_type->name ); ?>
                                             
                                             </label>
@@ -81,7 +81,7 @@
                 <div class="mb-3 form-check ">
                     <label for="qcld_gemini_api_key" class="form-label"><?php esc_html_e('Gemini API Key','woowbot-woocommerce-chatbot');?></label>
                     <input type="password" class="form-control" id="qcld_gemini_api_key" name="qcld_gemini_api_key" placeholder="Enter your Gemini API Key" value="<?php echo esc_attr(get_option('qcld_gemini_api_key')); ?>">
-                    <small class="form-text text-muted"><?php esc_html_e('Get your API key from https://aistudio.google.com/app/apikey. ','woowbot-woocommerce-chatbot'); ?></br><span style="color:red"><?php esc_html_e('It requires a paid Gemini API plan', 'woowbot-woocommerce-chatbot'); ?> </span></small>
+                    <small class="form-text text-muted"><?php esc_html_e('Get your API key from https://aistudio.google.com/app/apikey. ','woowbot-woocommerce-chatbot'); ?></br><span class="qcld-red-text"><?php esc_html_e('It requires a paid Gemini API plan', 'woowbot-woocommerce-chatbot'); ?> </span></small>
                 </div>
             </div>
             <div class="row gx-0">
@@ -100,7 +100,7 @@
                         </select>
                         <button type="button" class="btn btn-primary" id="qcld_gemini_fetch_models"><?php esc_html_e('Fetch Models', 'woowbot-woocommerce-chatbot'); ?></button>
                     </div>
-                    <small class="form-text text-muted"><?php esc_html_e('Select your Gemini model. Click "Fetch Models" to update the list if you just added your API key.','woowbot-woocommerce-chatbot'); ?><br><span style="color:red"><?php esc_html_e('Please select a your paid model all model on the list are might not be available for free plans', 'woowbot-woocommerce-chatbot'); ?> </span></small>
+                    <small class="form-text text-muted"><?php esc_html_e('Select your Gemini model. Click "Fetch Models" to update the list if you just added your API key.','woowbot-woocommerce-chatbot'); ?><br><span class="qcld-red-text"><?php esc_html_e('Please select a your paid model all model on the list are might not be available for free plans', 'woowbot-woocommerce-chatbot'); ?> </span></small>
                 </div>
             </div>
             <div class="row g-0"> 
@@ -108,15 +108,18 @@
                 <div class="row gx-0">
                     <div class="mb-3 form-check ">
                         <label for="qcld_gemini_prepend_content" class="form-label"><?php esc_html_e('Your Prompt to be Added before the User Query for Customized Results (Optional)','woowbot-woocommerce-chatbot');?></label>
-                        <input type="text" class="form-control" id="qcld_gemini_prepend_content" name="qcld_gemini_prepend_content" placeholder="Content for the response" value="<?php echo esc_attr( get_option('qcld_gemini_prepend_content') ); ?>">
+
+                        <textarea type="text" class="form-control" id="qcld_gemini_prepend_content" name="qcld_gemini_prepend_content" placeholder="<?php echo esc_attr__('Content for the response','woowbot-woocommerce-chatbot'); ?>"><?php echo esc_attr( get_option('qcld_gemini_prepend_content') ); ?></textarea>
                         
                     </div>
+
                 </div>
 
                 <div class="row gx-0">
                     <div class="mb-3 form-check ">
                         <label for="qcld_gemini_append_content" class="form-label"><?php esc_html_e('Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)','woowbot-woocommerce-chatbot');?></label>
-                        <input type="text" class="form-control" id="qcld_gemini_append_content" name="qcld_gemini_append_content" placeholder="Content for the response" value="<?php echo esc_attr( get_option('qcld_gemini_append_content') ); ?>">
+
+                        <textarea type="text" class="form-control" id="qcld_gemini_append_content" name="qcld_gemini_append_content" placeholder="<?php echo esc_attr__('Content for the response','woowbot-woocommerce-chatbot'); ?>"><?php echo esc_attr( get_option('qcld_gemini_append_content') ); ?></textarea>
                         
                     </div>
                 </div>
@@ -129,15 +132,15 @@
         <div id="wp-chatbot-gemini-rag" class="tab-pane">
             <div class="col-sm-12">
                 <div class="wrap">
-                    <h3>Gemini RAG Settings</h3>
-                    <p>If you enable RAG, you must configure the <a id="ai-knowledge-base-tab-gemini" href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>">Knowledgebase</a> for Post types and other data to embed. </p><span style="color:red"><?php esc_html_e('It requires a paid Gemini API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
+                    <h3><?php esc_html_e('Gemini RAG Settings','woowbot-woocommerce-chatbot');?></h3>
+                    <p><?php esc_html_e('If you enable RAG, you must configure the','woowbot-woocommerce-chatbot');?> <a id="ai-knowledge-base-tab-gemini" href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>"><?php esc_html_e('Knowledgebase','woowbot-woocommerce-chatbot');?></a> <?php esc_html_e('for Post types and other data to embed.','woowbot-woocommerce-chatbot');?> </p><span class="qcld-red-text"><?php esc_html_e('It requires a paid Gemini API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
                     <div class="form-check form-switch my-4">
                         <input class="form-check-input"
                             type="checkbox"
                             id="is_page_rag_enabled_gemini"
                             <?php echo (get_option('is_page_rag_enabled') == '1') ? 'checked' : ''; ?>>
                         <label class="form-check-label" for="is_page_rag_enabled_gemini">
-                            Enable RAG
+                            <?php esc_html_e('Enable RAG','woowbot-woocommerce-chatbot');?>
                         </label>
                     </div>
                     <div class="mb-3">
@@ -198,31 +201,31 @@
 
         <div class="wp-chatbot-admingradient-color">
             <img class="wp-chatbot-admin-banner" src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/template-sample.png' ); ?>" alt="">
-                <h3 class="wp-chatbot-admincart-title">Upgrade To <span>Pro</span></h3>
+                <h3 class="wp-chatbot-admincart-title"><?php esc_html_e( 'Upgrade To', 'woowbot-woocommerce-chatbot' ); ?> <span><?php esc_html_e( 'Pro', 'woowbot-woocommerce-chatbot' ); ?></span></h3>
                 <ul class="feature-list">
                         
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Core ChatBot Pro</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WooCommerce module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Chat Sessions and Histories</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended Search Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Simple text Responses Pro Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Conversational Forms Pro Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">OpenAI Pro Adv.(Training, Fine Tuning, Assistant)</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Live (Human) Chat Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Tavily Search API module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended UI Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WebHook & Mailing List Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">White Label Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">FaceBook Messenger Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WhatsApp through Twilio Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Multi Language Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Voice Message Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Telegram Module</li>
-                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Priority Technical Support</li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Core ChatBot Pro', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WooCommerce module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Chat Sessions and Histories', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended Search Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Simple text Responses Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Conversational Forms Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'OpenAI Pro Adv.(Training, Fine Tuning, Assistant)', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Live (Human) Chat Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Tavily Search API module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended UI Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WebHook & Mailing List Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'White Label Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'FaceBook Messenger Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WhatsApp through Twilio Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Multi Language Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Voice Message Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Telegram Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Priority Technical Support', 'woowbot-woocommerce-chatbot' ); ?></li>
 
                 </ul>
 
-            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="https://woowbot.pro/pricing/">Upgrade to Pro <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>"" alt=""></a>
+            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="<?php echo esc_url( 'https://woowbot.pro/pricing/');?>"><?php esc_html_e( 'Upgrade to Pro', 'woowbot-woocommerce-chatbot' ); ?> <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>" alt=""></a>
         </div>
 
         </div>

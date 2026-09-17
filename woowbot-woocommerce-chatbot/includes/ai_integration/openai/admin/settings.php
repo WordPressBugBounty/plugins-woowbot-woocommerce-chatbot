@@ -3,7 +3,7 @@
         <div class="form-check form-switch my-4">
             <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcld_openai_enabled') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="is_ai_enabled">
             <label class="form-check-label" for="is_ai_enabled">
-            <?php  esc_html_e( 'Enable OpenAI','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php  esc_html_e( '(if you want results from OpenAI only, It will disable default product Search)','woowbot-woocommerce-chatbot'); ?></span>
+            <?php  esc_html_e( 'Enable OpenAI','woowbot-woocommerce-chatbot'); ?><span class="qcld-red-text"> <?php  esc_html_e( '(if you want results from OpenAI only, It will disable default product Search)','woowbot-woocommerce-chatbot'); ?></span>
             </label>
         </div>
         <div class="mb-3">
@@ -17,7 +17,7 @@
         <div class="form-check form-switch my-4">
             <input class="form-check-input" type="checkbox" <?php echo (get_option( 'qcldai_product_card_enable') == 1) ? 'checked' : ''; ?>  role="switch" value="" id="is_product_card_enabled">
             <label class="form-check-label" for="is_product_card_enabled">
-            <?php  esc_html_e( 'Enable OpenAI Product Cards','woowbot-woocommerce-chatbot'); ?><span style="color:red"> <?php  esc_html_e( '(Display relevant product cards inside AI responses to increase sales.)','woowbot-woocommerce-chatbot'); ?></span>
+            <?php  esc_html_e( 'Enable OpenAI Product Cards','woowbot-woocommerce-chatbot'); ?><span class="qcld-red-text"> <?php  esc_html_e( '(Display relevant product cards inside AI responses to increase sales.)','woowbot-woocommerce-chatbot'); ?></span>
             </label>
         </div>
         <div class="form-check form-switch my-4">
@@ -76,7 +76,7 @@
         <div class="mb-3 form-check">
                 <label for="api_key" class="form-label"><?php esc_html_e( 'Api key', 'woowbot-woocommerce-chatbot');?></label>
                 <input type="password" class="form-control" id="api_key" name="api_key" placeholder="<?php echo esc_attr__( 'Api key', 'woowbot-woocommerce-chatbot' ); ?>" value="<?php echo esc_attr(get_option( 'qcld_open_ai_api_key')); ?>">
-                <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
+                <span class="qcld-red-text"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
         </div>
         <div class="qcld-wpbot-pricing-filter-form-check">
         </div>

@@ -15,9 +15,9 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
 
 
         <h2 class="nav-tab-wrapper">
-            <a href="#qcld-rag-settings-tab" class="nav-tab nav-tab-active"> Setting options</a>
-            <a href="#rag-sync" class="nav-tab">Sync and upload options</a>
-            <a href="#rag-database" class="nav-tab">KnowledgeBase Database</a>
+            <a href="#qcld-rag-settings-tab" class="nav-tab nav-tab-active"><?php esc_html_e('Setting options', 'woowbot-woocommerce-chatbot'); ?></a>
+            <a href="#rag-sync" class="nav-tab"><?php esc_html_e('Sync and upload options', 'woowbot-woocommerce-chatbot'); ?></a>
+            <a href="#rag-database" class="nav-tab"><?php esc_html_e('KnowledgeBase Database', 'woowbot-woocommerce-chatbot'); ?></a>
         </h2>
 
         <div id="qcld-rag-settings-tab" class="qcld-tab-content active">
@@ -25,27 +25,28 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
          EMBEDDING SOURCE OPTIONS
     ============================ -->
         <div class="wrap">
-                <h3>Choose Data Sources to Embed</h3>
+                <h3><?php esc_html_e('Choose Data Sources to Embed', 'woowbot-woocommerce-chatbot'); ?></h3>
 
                 <div class="mb-none">
                     <input type="checkbox" id="rag_embed_pages" <?php checked(get_option('rag_embed_pages'), '1'); ?>>
-                    <label for="rag_embed_pages">Pages</label>
+                    <label for="rag_embed_pages"><?php esc_html_e('Pages', 'woowbot-woocommerce-chatbot'); ?></label>
                 </div>
 
                 <div class="mb-none">
                     <input type="checkbox" id="rag_embed_posts" <?php checked(get_option('rag_embed_posts'), '1'); ?>>
-                    <label for="rag_embed_posts">Posts</label>
+                    <label for="rag_embed_posts"><?php esc_html_e('Posts', 'woowbot-woocommerce-chatbot'); ?></label>
                 </div>
                 <div class="mb-none">
                     <?php
                     $custom_post_types = get_post_types(['public' => true, '_builtin' => false], 'objects');
                     $selected_cpts = get_option('rag_embed_cpts', []);
                     ?>
-                    <label><strong>Custom Post Types:</strong></label><br>
+                    <label><strong><?php esc_html_e('Custom Post Types:', 'woowbot-woocommerce-chatbot'); ?></strong></label><br>
                     <div class="rag_embed_cpts_wrapper">
                         <?php
-                            $is_pro = !in_array($post_type->name, ['product']);
-                         foreach ($custom_post_types as $cpt): ?>
+                         foreach ($custom_post_types as $cpt): 
+                            $is_pro = !in_array($cpt->name, ['product']);
+                         ?>
                             <div class="rag_cpt_checkbox">
                                 <input type="checkbox" class="rag_embed_cpts_checkbox" 
                                     id="rag_cpt_<?php echo esc_attr($cpt->name); ?>" 
@@ -56,29 +57,29 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <p class="description">Select multiple custom post types to embed.</p>
+                    <p class="description"><?php esc_html_e('Select multiple custom post types to embed.', 'woowbot-woocommerce-chatbot'); ?></p>
                 </div>
         </div>
                 <!-- ===========================
             EXECUTION BUTTON
         ============================ -->
             <div class="wrap my-4">
-                <p style="color: red"> <b><?php esc_html_e('Please connect to an AI service like OpenAI or Gemini before embedding. ', 'woowbot-woocommerce-chatbot'); ?></b><b><a target="_blank" href="<?php echo esc_url('https://woowbot.pro/docs/knowledgebase/how-to-use-an-embedded-vector-database-and-rag-to-get-customized-responses-from-ai/'); ?>"><?php esc_html_e('Check this Tutorial for more details.', 'woowbot-woocommerce-chatbot'); ?></a></b></p>
+                <p class="qcld-red-text"> <b><?php esc_html_e('Please connect to an AI service like OpenAI or Gemini before embedding. ', 'woowbot-woocommerce-chatbot'); ?></b><b><a target="_blank" href="<?php echo esc_url('https://woowbot.pro/docs/knowledgebase/how-to-use-an-embedded-vector-database-and-rag-to-get-customized-responses-from-ai/'); ?>"><?php esc_html_e('Check this Tutorial for more details.', 'woowbot-woocommerce-chatbot'); ?></a></b></p>
                 <form method="post" id="rag_embed_form">
                     <input type="hidden" name="embed_all_sources" value="1">
-                    <button type="button" id="rag_embed_btn" class="button button-primary">Embed All Selected Sources</button>
+                    <button type="button" id="rag_embed_btn" class="button button-primary"><?php esc_html_e('Embed All Selected Sources', 'woowbot-woocommerce-chatbot'); ?></button>
                 </form>
 
                 <?php 
                     if (isset($_POST['embed_all_sources'])):
                         if( ( get_option( 'qcld_openai_enabled') == 1  && get_option('qcld_open_ai_api_key') ) || ( get_option('qcld_gemini_enabled') == 1 && get_option('qcld_gemini_api_key') ) || ( get_option('qcld_openrouter_enabled') == 1 && get_option('qcld_openrouter_api_key') ) ){
                 ?>
-                        <h3>Embedding started...</h3>
+                        <h3><?php esc_html_e('Embedding started...', 'woowbot-woocommerce-chatbot'); ?></h3>
                         <?php  Qcld_Bot_Rag::instance()->wp_rag_embed_all_sources(); ?>
                  <?php    }else{ ?>
-                    <Script>
-                    swal.fire('', 'Please connect to an AI service like OpenAI or Gemini with API key before embedding.', 'warning');
-                    </Script>
+                    <script>
+                    swal.fire('', '<?php echo esc_js( __('Please connect to an AI service like OpenAI or Gemini with API key before embedding.', 'woowbot-woocommerce-chatbot') ); ?>', 'warning');
+                    </script>
                 <?php 
                     }
                 endif;
@@ -88,7 +89,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             SAVE SETTINGS BUTTON
         ============================ -->
             <div class="wrap">
-                <button class="qcld-btn-primary" id="save_rag_setting">Save Settings</button>
+                <button class="qcld-btn-primary" id="save_rag_setting"><?php esc_html_e('Save Settings', 'woowbot-woocommerce-chatbot'); ?></button>
             </div>
         </div>
 
@@ -96,25 +97,34 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
         <div id="rag-sync" class="qcld-tab-content">
                         <?php if ( $wpchatbot_license_valid != 'master' && $wpchatbot_license_valid != 'professional'): ?>
                             <div class="wrap">
-                                <div style="background-color: #fee; border: 1px solid #c33; padding: 15px; margin: 20px 0; border-radius: 4px;">
-                                    <p style="color: #c33; font-weight: bold; margin: 0; font-size: 14px;">
-                                        These options are available with the WoowbotPro <a href="https://www.woowbot.pro/pricing/" target="_blank" style="color: #c33; text-decoration: underline;">Professional</a> and <a href="https://www.woowbot.pro/pricing/" target="_blank" style="color: #c33; text-decoration: underline;">Master</a> Licenses
+                                <div class="rag-warning-notice">
+                                    <p class="rag-warning-title">
+                                        <?php
+                                        /* translators: 1: Link to Professional pricing, 2: Link to Master pricing */
+                                        printf(
+                                            esc_html__( 'These options are available with the WoowbotPro %1$sProfessional%2$s and %3$sMaster%4$s Licenses', 'woowbot-woocommerce-chatbot' ),
+                                            '<a href="https://www.woowbot.pro/pricing/" target="_blank" class="rag-danger-link">',
+                                            '</a>',
+                                            '<a href="https://www.woowbot.pro/pricing/" target="_blank" class="rag-danger-link">',
+                                            '</a>'
+                                        );
+                                        ?>
                                     </p>
                                 </div>
                             </div>
                         <?php endif; ?>
                         
-                        <div style="<?php if ( $wpchatbot_license_valid != 'master' && $wpchatbot_license_valid != 'professional'){ echo 'opacity:0.5; pointer-events:none;'; } ?>">
+                        <div class="<?php if ( $wpchatbot_license_valid != 'master' && $wpchatbot_license_valid != 'professional'){ echo 'rag-restricted-disabled'; } ?>">
                                <!-- ===========================
                             SYNC SETTINGS
                         ============================ -->
                         <div class="wrap">
-                            <h3>Sync Settings</h3>
+                            <h3><?php esc_html_e('Sync Settings', 'woowbot-woocommerce-chatbot'); ?></h3>
 
                             <div class="mb-3">
                                 <input type="checkbox" id="rag_auto_sync_enabled" <?php checked(get_option('rag_auto_sync_enabled'), '1'); ?>>
-                                <label for="rag_auto_sync_enabled"><strong>Enable Auto Sync (on Save)</strong></label>
-                                <p class="description">Automatically update embeddings when a post or product is saved/updated.</p>
+                                <label for="rag_auto_sync_enabled"><strong><?php esc_html_e('Enable Auto Sync (on Save)', 'woowbot-woocommerce-chatbot'); ?></strong></label>
+                                <p class="description"><?php esc_html_e('Automatically update embeddings when a post or product is saved/updated.', 'woowbot-woocommerce-chatbot'); ?></p>
                             </div>
 
                         </div>
@@ -124,78 +134,68 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                             PDF UPLOAD (AJAX)
                         ============================ -->
                         <div class="wrap">
-                            <h3>Upload PDF for RAG</h3>
+                            <h3><?php esc_html_e('Upload PDF for RAG', 'woowbot-woocommerce-chatbot'); ?></h3>
 
                             <form id="rag-pdf-form">
                                 <input type="file" id="rag-pdf-files" name="rag_pdf[]" multiple accept="application/pdf" />
                                 <br>
-                                <button type="submit" class="button button-primary" id="rag-pdf-submit">Upload & Embed PDF</button>
-                                <span id="rag-pdf-status" style="margin-left: 10px;"></span>
+                                <button type="submit" class="button button-primary" id="rag-pdf-submit"><?php esc_html_e('Upload & Embed PDF', 'woowbot-woocommerce-chatbot'); ?></button>
+                                <span id="rag-pdf-status" class="rag-status-text"></span>
                             </form>
 
-                            <div id="rag-pdf-output" style="margin-top: 15px;"></div>
+                            <div id="rag-pdf-output" class="rag-output-text"></div>
                         </div>
 
                         <!-- ===========================
                             CSV UPLOAD (AJAX)
                         ============================ -->
                         <div class="wrap">
-                            <h3>Upload CSV Data for RAG</h3>
-                            <p>Upload CSV files with data to be embedded. Each row will be processed as a separate document. <a href="<?php echo esc_url( plugin_dir_url(__FILE__) . 'download/rag_test_data.csv' ); ?>">Download Test Data</a></p>
+                            <h3><?php esc_html_e('Upload CSV Data for RAG', 'woowbot-woocommerce-chatbot'); ?></h3>
+                            <p><?php esc_html_e('Upload CSV files with data to be embedded. Each row will be processed as a separate document.', 'woowbot-woocommerce-chatbot'); ?> <a href="<?php echo esc_url( plugin_dir_url(__FILE__) . 'download/rag_test_data.csv' ); ?>"><?php esc_html_e('Download Test Data', 'woowbot-woocommerce-chatbot'); ?></a></p>
 
                             <form id="rag-csv-form">
                                 <input type="file" id="rag-csv-files" name="rag_csv[]" multiple accept=".csv,text/csv" />
                                 <br>
-                                <button type="submit" class="button button-primary" id="rag-csv-submit">Upload & Embed CSV</button>
-                                <span id="rag-csv-status" style="margin-left: 10px;"></span>
+                                <button type="submit" class="button button-primary" id="rag-csv-submit"><?php esc_html_e('Upload & Embed CSV', 'woowbot-woocommerce-chatbot'); ?></button>
+                                <span id="rag-csv-status" class="rag-status-text"></span>
                             </form>
 
-                            <div id="rag-csv-output" style="margin-top: 15px;"></div>
+                            <div id="rag-csv-output" class="rag-output-text"></div>
                         </div>
 
                         <!-- ===========================
                             XAML UPLOAD (AJAX)
                         ============================ -->
                         <div class="wrap">
-                            <h3>Upload XML Data for RAG</h3>
-                            <p>Upload XML files with data to be embedded.</p>
+                            <h3><?php esc_html_e('Upload XML Data for RAG', 'woowbot-woocommerce-chatbot'); ?></h3>
+                            <p><?php esc_html_e('Upload XML files with data to be embedded.', 'woowbot-woocommerce-chatbot'); ?></p>
 
                             <form id="rag-xaml-form">
                                 <input type="file" id="rag-xaml-files" name="rag_xaml[]" multiple accept=".xaml,text/xml,application/xml" />
                                 <br>
-                                <button type="submit" class="button button-primary" id="rag-xaml-submit">Upload & Embed XML</button>
-                                <span id="rag-xaml-status" style="margin-left: 10px;"></span>
+                                <button type="submit" class="button button-primary" id="rag-xaml-submit"><?php esc_html_e('Upload & Embed XML', 'woowbot-woocommerce-chatbot'); ?></button>
+                                <span id="rag-xaml-status" class="rag-status-text"></span>
                             </form>
 
-                            <div id="rag-xaml-output" style="margin-top: 15px;"></div>
+                            <div id="rag-xaml-output" class="rag-output-text"></div>
                         </div>
 
                             <!-- ===========================
                             SITEMAP SUBMISSION
                         ============================ -->
                         <div class="wrap">
-                            <h3>Submit Sitemap for RAG</h3>
-                            <p>Enter your XML Sitemap URL to crawl and embed all pages.</p>
-                            <input type="url" id="botmaster_sitemap_url" class="regular-text" placeholder="https://example.com/sitemap.xml" style="width: 100%; max-width: 400px;">
-                            <button type="button" id="botmaster_submit_sitemap_btn" class="button button-primary">Process Sitemap</button>
-                            <div id="botmaster_sitemap_status" style="margin-top: 10px;"></div>
+                            <h3><?php esc_html_e('Submit Sitemap for RAG', 'woowbot-woocommerce-chatbot'); ?></h3>
+                            <p><?php esc_html_e('Enter your XML Sitemap URL to crawl and embed all pages.', 'woowbot-woocommerce-chatbot'); ?></p>
+                            <input type="url" id="botmaster_sitemap_url" class="regular-text rag-sitemap-input" placeholder="<?php esc_attr_e('https://example.com/sitemap.xml', 'woowbot-woocommerce-chatbot'); ?>">
+                            <button type="button" id="botmaster_submit_sitemap_btn" class="button button-primary"><?php esc_html_e('Process Sitemap', 'woowbot-woocommerce-chatbot'); ?></button>
+                            <div id="botmaster_sitemap_status" class="qcld-mt-10"></div>
                         </div>
                         </div>
                         
                         <div class="wrap">
-                            <button class="qcld-btn-primary" id="save_rag_setting">Save Settings</button>
+                            <button class="qcld-btn-primary" id="save_rag_setting"><?php esc_html_e('Save Settings', 'woowbot-woocommerce-chatbot'); ?></button>
                         </div>
         </div>
-
-                    <style>
-                .qcld-tab-content {
-                    display: none !important;
-                }
-
-                .qcld-tab-content.active {
-                    display: block !important;
-                }
-                    </style>
 
     <script>
     jQuery(document).ready(function($) {
@@ -204,11 +204,11 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             var statusDiv = $('#botmaster_sitemap_status');
             
             if (!sitemapUrl) {
-                alert('Please enter a Sitemap URL');
+                alert('<?php echo esc_js(__('Please enter a Sitemap URL', 'woowbot-woocommerce-chatbot')); ?>');
                 return;
             }
             
-            statusDiv.html('Processing... please wait.');
+            statusDiv.html('<?php echo esc_js(__('Processing... please wait.', 'woowbot-woocommerce-chatbot')); ?>');
             $(this).prop('disabled', true);
             
             $.post(ajaxurl, {
@@ -220,7 +220,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                 if (response.success) {
                     statusDiv.html('<div class="notice notice-success inline"><p>' + response.data.message + '</p></div>');
                 } else {
-                    statusDiv.html('<div class="notice notice-error inline"><p>Error: ' + response.data + '</p></div>');
+                    statusDiv.html('<div class="notice notice-error inline"><p><?php echo esc_js(__('Error: ', 'woowbot-woocommerce-chatbot')); ?>' + response.data + '</p></div>');
                 }
             });
         });
@@ -236,29 +236,29 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
          KNOWLEDGE BASE MANAGEMENT
     ============================ -->
     <div class="wrap">
-        <h3>Knowledge Base</h3>
+        <h3><?php esc_html_e('Knowledge Base', 'woowbot-woocommerce-chatbot'); ?></h3>
         
         <div class="tablenav top">
             <div class="alignleft actions bulkactions">
                 <select id="rag-bulk-action-selector">
-                    <option value="-1">Bulk Actions</option>
-                    <option value="delete">Delete</option>
+                    <option value="-1"><?php esc_html_e('Bulk Actions', 'woowbot-woocommerce-chatbot'); ?></option>
+                    <option value="delete"><?php esc_html_e('Delete', 'woowbot-woocommerce-chatbot'); ?></option>
                 </select>
-                <button type="button" id="rag-apply-bulk-action" class="button action">Apply</button>
+                <button type="button" id="rag-apply-bulk-action" class="button action"><?php esc_html_e('Apply', 'woowbot-woocommerce-chatbot'); ?></button>
             </div>
             <div class="alignleft actions">
-                <button type="button" id="rag-delete-all" class="button button-link-delete" style="margin-left: 10px;">Delete All</button>
+                <button type="button" id="rag-delete-all" class="button button-link-delete qcld-ml-10"><?php esc_html_e('Delete All', 'woowbot-woocommerce-chatbot'); ?></button>
            
             
-            <div class="alignright actions" style="margin-left: 10px;">
-                <form method="get" style="display:inline-block;" action="?page=chatbot_ai_setting#ai-knowledge-base-tab#rag-database">
+            <div class="alignright actions qcld-ml-10">
+                <form method="get" class="qcld-d-inline-block" action="?page=chatbot_ai_setting#ai-knowledge-base-tab#rag-database">
                     <input type="hidden" name="page" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['page'] ?? '' ) ) ); ?>">
                     <?php if (isset($_GET['post_type'])): ?>
                         <input type="hidden" name="post_type" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['post_type'] ) ) ); ?>">
                     <?php endif; ?>
-                    <p class="search-box" style="margin:0;">
-                        <input type="search" id="rag-search-input" name="s" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['s'] ?? '' ) ) ); ?>" placeholder="Search documents...">
-                        <input type="submit" id="search-submit" class="button" value="Search">
+                    <p class="search-box qcld-m-0">
+                        <input type="search" id="rag-search-input" name="s" value="<?php echo esc_attr( sanitize_text_field( wp_unslash( $_GET['s'] ?? '' ) ) ); ?>" placeholder="<?php esc_attr_e('Search documents...', 'woowbot-woocommerce-chatbot'); ?>">
+                        <input type="submit" id="search-submit" class="button" value="<?php esc_attr_e('Search', 'woowbot-woocommerce-chatbot'); ?>">
                     </p>
                 </form>
                 </div>
@@ -288,7 +288,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                 ) $charset;";
                 require_once ABSPATH . 'wp-admin/includes/upgrade.php';
                 dbDelta($sql_rag_documents);
-                echo '<div class="notice notice-success inline"><p>Database table created successfully.</p></div>';
+                echo '<div class="notice notice-success inline"><p>' . esc_html__('Database table created successfully.', 'woowbot-woocommerce-chatbot') . '</p></div>';
             }
 
             // Check if table exists
@@ -297,14 +297,22 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
             if (!$table_exists) {
                 ?>
                 <div class="wrap">
-                    <h3>Knowledge Base Database</h3>
+                    <h3><?php esc_html_e('Knowledge Base Database', 'woowbot-woocommerce-chatbot'); ?></h3>
                     <div class="notice notice-warning inline">
-                        <p>The <strong><?php echo esc_html($table_rag_documents); ?></strong> table does not exist. Please create it to start using the Knowledge Base.</p>
+                        <p>
+                            <?php
+                            /* translators: %s: Database table name */
+                            printf(
+                                esc_html__( 'The %s table does not exist. Please create it to start using the Knowledge Base.', 'woowbot-woocommerce-chatbot' ),
+                                '<strong>' . esc_html( $table_rag_documents ) . '</strong>'
+                            );
+                            ?>
+                        </p>
                     </div>
                     <form method="post">
                         <?php wp_nonce_field('rag_create_table_nonce'); ?>
                         <input type="hidden" name="rag_create_table" value="1">
-                        <button type="submit" class="button button-primary">Create Database Table</button>
+                        <button type="submit" class="button button-primary"><?php esc_html_e('Create Database Table', 'woowbot-woocommerce-chatbot'); ?></button>
                     </form>
                 </div>
                 <?php
@@ -357,12 +365,12 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                     <td id="cb" class="manage-column column-cb check-column">
                         <input type="checkbox" id="rag-select-all">
                     </td>
-                    <th>Title</th>
-                    <th>Content</th>
-                    <th>Source Type</th>
-                    <th>URL/File</th>
-                    <th>Status</th>
-                    <th>Actions</th>
+                    <th><?php esc_html_e('Title', 'woowbot-woocommerce-chatbot'); ?></th>
+                    <th><?php esc_html_e('Content', 'woowbot-woocommerce-chatbot'); ?></th>
+                    <th><?php esc_html_e('Source Type', 'woowbot-woocommerce-chatbot'); ?></th>
+                    <th><?php esc_html_e('URL/File', 'woowbot-woocommerce-chatbot'); ?></th>
+                    <th><?php esc_html_e('Status', 'woowbot-woocommerce-chatbot'); ?></th>
+                    <th><?php esc_html_e('Actions', 'woowbot-woocommerce-chatbot'); ?></th>
                 </tr>
             </thead>
             <tbody id="rag-knowledge-base-list">
@@ -387,7 +395,7 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                             </th>
                             <td><?php echo esc_html($doc->title); ?></td>
                             <td>
-                                <div style="max-height: 4.5em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; line-height: 1.5em; font-size: 13px; color: #666;">
+                                <div class="rag-doc-preview-text">
                                     <?php echo wp_kses_post($doc->content); ?>
                                 </div>
                             </td>
@@ -396,16 +404,16 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
                             <td><?php echo esc_html($doc->status); ?></td>
                             <td>
                                 <?php if (!in_array($doc->source_type, ['csv', 'xml', 'xaml','sitemap'])): ?>
-                                    <button class="button button-small rag-sync-doc" data-id="<?php echo esc_attr( $doc->id ); ?>" title="Re-sync data from source">Sync</button>
+                                    <button class="button button-small rag-sync-doc" data-id="<?php echo esc_attr( $doc->id ); ?>" title="<?php esc_attr_e('Re-sync data from source', 'woowbot-woocommerce-chatbot'); ?>"><?php esc_html_e('Sync', 'woowbot-woocommerce-chatbot'); ?></button>
                                 <?php endif; ?>
-                                <button class="button button-small rag-edit-doc" data-id="<?php echo esc_attr( $doc->id ); ?>">Edit</button>
-                                <button class="button button-small button-link-delete rag-delete-doc" data-id="<?php echo esc_attr( $doc->id ); ?>">Delete</button>
+                                <button class="button button-small rag-edit-doc" data-id="<?php echo esc_attr( $doc->id ); ?>"><?php esc_html_e('Edit', 'woowbot-woocommerce-chatbot'); ?></button>
+                                <button class="button button-small button-link-delete rag-delete-doc" data-id="<?php echo esc_attr( $doc->id ); ?>"><?php esc_html_e('Delete', 'woowbot-woocommerce-chatbot'); ?></button>
                             </td>
                         </tr>
                         <?php
                     }
                 } else {
-                    echo '<tr><td colspan="7">No documents found in knowledge base.</td></tr>';
+                    echo '<tr><td colspan="7">' . esc_html__('No documents found in knowledge base.', 'woowbot-woocommerce-chatbot') . '</td></tr>';
                 }
                 ?>
             </tbody>
@@ -428,22 +436,22 @@ $wpchatbot_license_valid            = get_option('wpchatbot_license_valid');
         </div>
 
     <!-- Edit Document Modal -->
-    <div id="rag-edit-modal" style="display:none; position:fixed; z-index:99999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
-        <div style="background:#fff; margin:10% auto; padding:20px; width:60%; border-radius:5px;">
-            <h4>Edit Knowledge Base Document</h4>
+    <div id="rag-edit-modal">
+        <div id="rag-edit-modal-content">
+            <h4><?php esc_html_e('Edit Knowledge Base Document', 'woowbot-woocommerce-chatbot'); ?></h4>
             <input type="hidden" id="edit-doc-id">
             <div class="mb-3">
-                <label>Title</label><br>
-                <input type="text" id="edit-doc-title" class="regular-text" style="width:100%;">
+                <label><?php esc_html_e('Title', 'woowbot-woocommerce-chatbot'); ?></label><br>
+                <input type="text" id="edit-doc-title" class="regular-text rag-full-width">
             </div>
             <div class="mb-3">
-                <label>Content</label><br>
-                <textarea id="edit-doc-content" rows="10" style="width:100%;"></textarea>
+                <label><?php esc_html_e('Content', 'woowbot-woocommerce-chatbot'); ?></label><br>
+                <textarea id="edit-doc-content" rows="10" class="rag-full-width"></textarea>
             </div>
-            <p class="description">Note: Updating content will re-generate embeddings.</p>
+            <p class="description"><?php esc_html_e('Note: Updating content will re-generate embeddings.', 'woowbot-woocommerce-chatbot'); ?></p>
             <div class="mt-3">
-                <button id="save-edit-doc" class="button button-primary">Save Changes</button>
-                <button id="close-edit-modal" class="button">Cancel</button>
+                <button id="save-edit-doc" class="button button-primary"><?php esc_html_e('Save Changes', 'woowbot-woocommerce-chatbot'); ?></button>
+                <button id="close-edit-modal" class="button"><?php esc_html_e('Cancel', 'woowbot-woocommerce-chatbot'); ?></button>
             </div>
         </div>
     </div>
@@ -459,7 +467,7 @@ jQuery(document).ready(function($) {
 		
 		var fileInput = $('#rag-pdf-files')[0];
 		if (!fileInput.files.length) {
-			alert('Please select PDF files to upload');
+			alert('<?php echo esc_js(__('Please select PDF files to upload', 'woowbot-woocommerce-chatbot')); ?>');
 			return;
 		}
 		
@@ -471,7 +479,7 @@ jQuery(document).ready(function($) {
 		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-pdf-submit').prop('disabled', true);
-		$('#rag-pdf-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');
+		$('#rag-pdf-status').html('<span class="spinner is-active qcld-spinner-no-float"></span> <?php echo esc_js(__('Uploading and processing...', 'woowbot-woocommerce-chatbot')); ?>');
 		$('#rag-pdf-output').html('');
 		
 		$.ajax({
@@ -483,18 +491,18 @@ jQuery(document).ready(function($) {
 			success: function(response) {
 				$('#rag-pdf-submit').prop('disabled', false);
 				if (response.success) {
-					$('#rag-pdf-status').html('<span style="color:green;">✓ Complete</span>');
+					$('#rag-pdf-status').html('<span class="rag-status-success">✓ <?php echo esc_js(__('Complete', 'woowbot-woocommerce-chatbot')); ?></span>');
 					$('#rag-pdf-output').html(response.data.output);
 					$('#rag-pdf-files').val('');
 				} else {
-					$('#rag-pdf-status').html('<span style="color:red;">✗ Error</span>');
-					$('#rag-pdf-output').html('<p style="color:red;">' + response.data.message + '</p>');
+					$('#rag-pdf-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+					$('#rag-pdf-output').html('<p class="qcld-red-text">' + response.data.message + '</p>');
 				}
 			},
 			error: function(xhr) {
 				$('#rag-pdf-submit').prop('disabled', false);
-				$('#rag-pdf-status').html('<span style="color:red;">✗ Error</span>');
-				$('#rag-pdf-output').html('<p style="color:red;">Upload failed. Please try again.</p>');
+				$('#rag-pdf-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+				$('#rag-pdf-output').html('<p class="qcld-red-text"><?php echo esc_js(__('Upload failed. Please try again.', 'woowbot-woocommerce-chatbot')); ?></p>');
 			}
 		});
 	});
@@ -505,7 +513,7 @@ jQuery(document).ready(function($) {
 		
 		var fileInput = $('#rag-csv-files')[0];
 		if (!fileInput.files.length) {
-			alert('Please select CSV files to upload');
+			alert('<?php echo esc_js(__('Please select CSV files to upload', 'woowbot-woocommerce-chatbot')); ?>');
 			return;
 		}
 		
@@ -517,7 +525,7 @@ jQuery(document).ready(function($) {
 		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-csv-submit').prop('disabled', true);
-		$('#rag-csv-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');
+		$('#rag-csv-status').html('<span class="spinner is-active qcld-spinner-no-float"></span> <?php echo esc_js(__('Uploading and processing...', 'woowbot-woocommerce-chatbot')); ?>');
 		$('#rag-csv-output').html('');
 		
 		$.ajax({
@@ -529,18 +537,18 @@ jQuery(document).ready(function($) {
 			success: function(response) {
 				$('#rag-csv-submit').prop('disabled', false);
 				if (response.success) {
-					$('#rag-csv-status').html('<span style="color:green;">✓ Complete</span>');
+					$('#rag-csv-status').html('<span class="rag-status-success">✓ <?php echo esc_js(__('Complete', 'woowbot-woocommerce-chatbot')); ?></span>');
 					$('#rag-csv-output').html(response.data.output);
 					$('#rag-csv-files').val('');
 				} else {
-					$('#rag-csv-status').html('<span style="color:red;">✗ Error</span>');
-					$('#rag-csv-output').html('<p style="color:red;">' + response.data.message + '</p>');
+					$('#rag-csv-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+					$('#rag-csv-output').html('<p class="qcld-red-text">' + response.data.message + '</p>');
 				}
 			},
 			error: function(xhr) {
 				$('#rag-csv-submit').prop('disabled', false);
-				$('#rag-csv-status').html('<span style="color:red;">✗ Error</span>');
-				$('#rag-csv-output').html('<p style="color:red;">Upload failed. Please try again.</p>');
+				$('#rag-csv-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+				$('#rag-csv-output').html('<p class="qcld-red-text"><?php echo esc_js(__('Upload failed. Please try again.', 'woowbot-woocommerce-chatbot')); ?></p>');
 			}
 		});
 	});
@@ -551,7 +559,7 @@ jQuery(document).ready(function($) {
 		
 		var fileInput = $('#rag-xaml-files')[0];
 		if (!fileInput.files.length) {
-			alert('Please select XAML files to upload');
+			alert('<?php echo esc_js(__('Please select XML files to upload', 'woowbot-woocommerce-chatbot')); ?>');
 			return;
 		}
 		
@@ -563,7 +571,7 @@ jQuery(document).ready(function($) {
 		formData.append('nonce', '<?php echo esc_attr( wp_create_nonce('rag_upload_nonce') ); ?>');
 		
 		$('#rag-xaml-submit').prop('disabled', true);
-		$('#rag-xaml-status').html('<span class="spinner is-active" style="float:none;"></span> Uploading and processing...');
+		$('#rag-xaml-status').html('<span class="spinner is-active qcld-spinner-no-float"></span> <?php echo esc_js(__('Uploading and processing...', 'woowbot-woocommerce-chatbot')); ?>');
 		$('#rag-xaml-output').html('');
 		
 		$.ajax({
@@ -575,18 +583,18 @@ jQuery(document).ready(function($) {
 			success: function(response) {
 				$('#rag-xaml-submit').prop('disabled', false);
 				if (response.success) {
-					$('#rag-xaml-status').html('<span style="color:green;">✓ Complete</span>');
+					$('#rag-xaml-status').html('<span class="rag-status-success">✓ <?php echo esc_js(__('Complete', 'woowbot-woocommerce-chatbot')); ?></span>');
 					$('#rag-xaml-output').html(response.data.output);
 					$('#rag-xaml-files').val('');
 				} else {
-					$('#rag-xaml-status').html('<span style="color:red;">✗ Error</span>');
-					$('#rag-xaml-output').html('<p style="color:red;">' + response.data.message + '</p>');
+					$('#rag-xaml-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+					$('#rag-xaml-output').html('<p class="qcld-red-text">' + response.data.message + '</p>');
 				}
 			},
 			error: function(xhr) {
 				$('#rag-xaml-submit').prop('disabled', false);
-				$('#rag-xaml-status').html('<span style="color:red;">✗ Error</span>');
-				$('#rag-xaml-output').html('<p style="color:red;">Upload failed. Please try again.</p>');
+				$('#rag-xaml-status').html('<span class="rag-status-error">✗ <?php echo esc_js(__('Error', 'woowbot-woocommerce-chatbot')); ?></span>');
+				$('#rag-xaml-output').html('<p class="qcld-red-text"><?php echo esc_js(__('Upload failed. Please try again.', 'woowbot-woocommerce-chatbot')); ?></p>');
 			}
 		});
 	});

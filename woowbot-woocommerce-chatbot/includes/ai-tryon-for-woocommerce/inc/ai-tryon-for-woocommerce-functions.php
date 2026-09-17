@@ -25,7 +25,7 @@ function qcld_woo_chatbot_inject_tryon_button() {
     
     $icon_html = '';
     if ($btn_icon_key === 'sparkles') $icon_html = '✨';
-    elseif ($btn_icon_key === 'magic_wand') $icon_html = '<svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>';
+    elseif ($btn_icon_key === 'magic_wand') $icon_html = '<svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qcld_woo_chatbot-btn-icon-svg"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>';
     elseif ($btn_icon_key === 'shirt') $icon_html = '👕';
     elseif ($btn_icon_key === 'âœ¨') $icon_html = '✨'; // backwards compatibility
     
@@ -66,12 +66,12 @@ function qcld_woo_chatbot_render_modal_html() {
                 <div class="qcld_woo_chatbot-modal-col qcld_woo_chatbot-col-left">
                     <h3><?php esc_html_e( 'Original Image', 'woowbot-woocommerce-chatbot' ); ?></h3>
                     <div class="qcld_woo_chatbot-original-images">
-                        <img id="qcld_woo_chatbot-modal-product-image" src="" alt="<?php esc_attr_e( 'Original Product', 'woowbot-woocommerce-chatbot' ); ?>" style="display: none;" />
+                        <img id="qcld_woo_chatbot-modal-product-image" src="" alt="<?php esc_attr_e( 'Original Product', 'woowbot-woocommerce-chatbot' ); ?>" class="qcld_woo_chatbot-hidden" />
                         <div class="qcld_woo_chatbot-image-placeholder" id="qcld_woo_chatbot-modal-second-image-placeholder">
-                            <span class="dashicons dashicons-plus-alt2" style="font-size: 24px; width: 24px; height: 24px; margin-bottom: 5px;"></span>
+                            <span class="dashicons dashicons-plus-alt2 qcld_woo_chatbot-placeholder-icon"></span>
                             <br><?php esc_html_e( 'Upload Image', 'woowbot-woocommerce-chatbot' ); ?>
                         </div>
-                        <input type="file" id="qcld_woo_chatbot-second-image-upload" accept="image/*" style="display:none;" />
+                        <input type="file" id="qcld_woo_chatbot-second-image-upload" accept="image/*" class="qcld_woo_chatbot-hidden" />
                     </div>
                 </div>
 
@@ -109,14 +109,14 @@ function qcld_woo_chatbot_render_modal_html() {
 
                     <div class="qcld_woo_chatbot-action-buttons">
                         <button id="qcld_woo_chatbot-submit-generation" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-primary"><?php esc_html_e( 'Generate', 'woowbot-woocommerce-chatbot' ); ?></button>
-                        <button id="qcld_woo_chatbot-download-btn" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-secondary" style="display:none;"><?php esc_html_e( 'Download', 'woowbot-woocommerce-chatbot' ); ?></button>
+                        <button id="qcld_woo_chatbot-download-btn" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-secondary qcld_woo_chatbot-hidden"><?php esc_html_e( 'Download', 'woowbot-woocommerce-chatbot' ); ?></button>
                     </div>
                 </div>
 
                 <!-- Right Column -->
                 <div class="qcld_woo_chatbot-modal-col qcld_woo_chatbot-col-right">
                     <div class="qcld_woo_chatbot-output-header"><?php esc_html_e( 'Generated Output', 'woowbot-woocommerce-chatbot' ); ?></div>
-                    <div class="qcld_woo_chatbot-response-canvas" style="position:relative;">
+                    <div class="qcld_woo_chatbot-response-canvas">
                         <div id="qcld_woo_chatbot-result-placeholder"><?php esc_html_e( 'Ready to generate', 'woowbot-woocommerce-chatbot' ); ?></div>
                         <div id="qcld_woo_chatbot-loading-spinner" class="qcld_woo_chatbot-hidden">
                             <div class="qcld_woo_chatbot-spinner-circle"></div>

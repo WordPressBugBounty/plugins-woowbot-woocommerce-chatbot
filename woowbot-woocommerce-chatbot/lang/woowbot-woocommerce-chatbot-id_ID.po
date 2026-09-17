@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
 "Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
-"POT-Creation-Date: 2026-09-14 12:09+0000\n"
-"PO-Revision-Date: 2026-09-14 12:09+0000\n"
+"POT-Creation-Date: 2026-09-15 10:16+0000\n"
+"PO-Revision-Date: 2026-09-15 10:16+0000\n"
 "Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
 "Language-Team: Bahasa Indonesia (Indonesian)\n"
 "Language: id_ID\n"
@@ -37,7 +37,7 @@ msgid "Please provide some details so we can improve the plugin"
 msgstr "Silakan berikan beberapa detail agar kami dapat meningkatkan plugin"
 
 msgid "Submitting form"
-msgstr "Mengirim formulir"
+msgstr "Mengirimkan formulir"
 
 msgid "Expand chat window"
 msgstr "Perluas jendela obrolan"
@@ -85,7 +85,7 @@ msgid "AI Settings"
 msgstr "Pengaturan AI"
 
 msgid "selected"
-msgstr "dipilih"
+msgstr "terpilih"
 
 msgid "OpenAI"
 msgstr "OpenAI"
@@ -103,7 +103,7 @@ msgid "Knowledge Base (RAG)"
 msgstr "Basis Pengetahuan (RAG)"
 
 msgid "AI Wizard"
-msgstr "Wizard AI"
+msgstr "AI Wizard"
 
 msgid "Common AI Settings"
 msgstr "Pengaturan AI Umum"
@@ -118,7 +118,7 @@ msgid "Enable Rate Limiting"
 msgstr "Aktifkan Pembatasan Permintaan"
 
 msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
-msgstr "Tetapkan jumlah maksimum permintaan yang dapat dilakukan setiap pengguna dengan peran tertentu ke API OpenAI dalam periode tertentu. Biarkan kolom kosong atau atur ke 0 untuk permintaan tanpa batas."
+msgstr "Tetapkan jumlah maksimum permintaan yang dapat dibuat setiap pengguna dengan peran tertentu ke API OpenAI dalam periode tertentu. Biarkan kolom kosong atau atur ke 0 untuk permintaan tanpa batas."
 
 msgid "Set the rate limit for each user role:"
 msgstr "Tetapkan batas permintaan untuk setiap peran pengguna:"
@@ -127,10 +127,10 @@ msgid "Rate limit for %s"
 msgstr "batas permintaan untuk %s"
 
 msgid "Timeframe:"
-msgstr "Rentang Waktu:"
+msgstr "Rentang waktu:"
 
-msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
-msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+msgid "rate_limit_timeframe_' . $role_key ); ?>\\"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\\"
 
 msgid "48 Hours"
 msgstr "48 Jam"
@@ -145,7 +145,7 @@ msgid "6 Hours"
 msgstr "6 Jam"
 
 msgid "Rate limit for Guest Users"
-msgstr "batas permintaan untuk Pengguna Tamu"
+msgstr "Batas permintaan untuk Pengguna Tamu"
 
 msgid "rate_limit_guest"
 msgstr "rate_limit_guest"
@@ -162,11 +162,14 @@ msgstr "&laquo;"
 msgid "&raquo;"
 msgstr "&raquo;"
 
+msgid "%s item"
+msgstr "%s item"
+
 msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
-msgstr "<strong>Addon Coba AI untuk WooCommerce</strong> memerlukan WooCommerce untuk diinstal dan aktif. Fitur plugin tidak akan berfungsi sampai WooCommerce aktif."
+msgstr "<strong>AI Try-On Addon untuk WooCommerce</strong> memerlukan WooCommerce untuk diinstal dan aktif. Fitur plugin tidak akan berfungsi sampai WooCommerce aktif."
 
 msgid "AI Try-On Configurations"
-msgstr "Konfigurasi Coba AI"
+msgstr "Konfigurasi AI Try-On"
 
 msgid "General Settings"
 msgstr "Pengaturan Umum"
@@ -178,25 +181,25 @@ msgid "Help"
 msgstr "Bantuan"
 
 msgid "Configure all your AI Try-On settings in one place."
-msgstr "Konfigurasikan semua pengaturan Coba AI Anda di satu tempat."
+msgstr "Konfigurasikan semua pengaturan AI Try-On Anda di satu tempat."
 
 msgid "Enable Try-On Button"
-msgstr "Aktifkan Tombol Coba"
+msgstr "Aktifkan Tombol Try-On"
 
-msgid "Show the \"Try On with AI\" button on single product pages"
-msgstr "Tampilkan tombol \"Coba Dengan AI\" di halaman produk tunggal"
+msgid "Show the \\"
+msgstr "Tampilkan \\"
 
 msgid "Require Login"
-msgstr "Mewajibkan Login"
+msgstr "Membutuhkan Login"
 
 msgid "Show the Try-On feature for logged-in users only"
-msgstr "Tampilkan fitur Coba hanya untuk pengguna yang sudah masuk"
+msgstr "Tampilkan fitur Try-On hanya untuk pengguna yang sudah masuk"
 
 msgid "Show Add to Cart Button"
 msgstr "Tampilkan Tombol Tambah ke Keranjang"
 
 msgid "Show the 'Add to Cart' button in the Try-On modal footer"
-msgstr "Tampilkan tombol 'Tambah ke Keranjang' di footer modal Coba"
+msgstr "Tampilkan tombol 'Tambah ke Keranjang' di footer modal Try-On"
 
 msgid "Daily Generation Limit"
 msgstr "Batas Generasi Harian"
@@ -208,7 +211,7 @@ msgid "Limit Image and Video generation per session + IP per 24 hours. Leave bla
 msgstr "Batasi generasi Gambar dan Video per sesi + IP per 24 jam. Biarkan kosong atau 0 untuk tanpa batas."
 
 msgid "Try-On Button Position"
-msgstr "Posisi Tombol Coba"
+msgstr "Posisi Tombol Try-On"
 
 msgid "Default"
 msgstr "Default"
@@ -253,7 +256,7 @@ msgid "At very top of product details"
 msgstr "Di bagian paling atas detail produk"
 
 msgid "Try-On Button Icon"
-msgstr "Ikon Tombol Coba"
+msgstr "Ikon Tombol Try-On"
 
 msgid "Sparkles"
 msgstr "Berkilau"
@@ -265,7 +268,7 @@ msgid "Shirt"
 msgstr "Kemeja"
 
 msgid "No Icon"
-msgstr "Tanpa Ikon"
+msgstr "Tidak Ada Ikon"
 
 msgid "Select an emoji icon to display before the button text."
 msgstr "Pilih ikon emoji untuk ditampilkan sebelum teks tombol."
@@ -349,7 +352,7 @@ msgid "Gemini Veo Video Base Prompt"
 msgstr "Gemini Veo Video Base Prompt"
 
 msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
-msgstr "Sesuaikan instruksi dasar untuk generasi video Veo. Input pengguna akan ditambahkan secara otomatis. (Tersedia di Pro)"
+msgstr "Sesuaikan instruksi dasar untuk pembuatan video Veo. Input pengguna akan ditambahkan secara otomatis. (Tersedia di Pro)"
 
 msgid "OpenAI Base Prompt"
 msgstr "OpenAI Base Prompt"
@@ -358,13 +361,13 @@ msgid "Customize the base instructions sent to OpenAI. The user's input will be 
 msgstr "Sesuaikan instruksi dasar yang dikirim ke OpenAI. Input pengguna akan ditambahkan secara otomatis."
 
 msgid "Final Prompt Structure Builder"
-msgstr "Pembangun Struktur Prompt Akhir"
+msgstr "Pembuat Struktur Prompt Akhir"
 
 msgid "Use placeholders:"
 msgstr "Gunakan placeholder:"
 
 msgid "to structure how the final combined prompt is sent."
-msgstr "untuk menyusun bagaimana prompt akhir yang digabungkan dikirim."
+msgstr "untuk menyusun bagaimana prompt gabungan akhir dikirim."
 
 msgid "Quick Start Guide"
 msgstr "Panduan Memulai Cepat"
@@ -381,20 +384,20 @@ msgstr "Plugin ini memungkinkan pelanggan Anda untuk mencoba produk Anda secara 
 msgid "Pro Tip:"
 msgstr "Tip Pro:"
 
-msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
-msgstr "Anda dapat sepenuhnya menyesuaikan posisi dan teks tombol \"Try On\" di tab <strong>Pengaturan Umum</strong>!"
+msgid "You can completely customize the \\"
+msgstr "Anda dapat sepenuhnya menyesuaikan \\"
 
 msgid "1. Customer Experience"
 msgstr "1. Pengalaman Pelanggan"
 
-msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
-msgstr "Ketika pelanggan mengklik tombol Try-On, antarmuka modal premium muncul. Mereka dapat dengan mudah menyeret dan menjatuhkan atau mengunggah foto referensi diri mereka. Mereka juga memiliki kotak teks untuk menambahkan instruksi skenario kustom (misalnya, <em>\"Berdiri di kafe modern\"</em>)."
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\\"
+msgstr "Ketika pelanggan mengklik tombol Coba, antarmuka modal premium muncul. Mereka dapat dengan mudah menyeret dan menjatuhkan atau mengunggah foto referensi diri mereka. Mereka juga memiliki kotak teks untuk menambahkan instruksi skenario kustom (misalnya, <em>\\"
 
 msgid "2. The Generation Process"
 msgstr "2. Proses Generasi"
 
 msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
-msgstr "Setelah mereka mengklik Generate, plugin mengambil <strong>Gambar Produk</strong>, <strong>Gambar yang Diunggah Pelanggan</strong>, dan <strong>teks Skenario</strong>, dan menggabungkannya menggunakan <em>Pembangun Struktur Prompt Akhir</em> (ditemukan di tab Prompts)."
+msgstr "Setelah mereka mengklik Hasilkan, plugin mengambil <strong>Gambar Produk</strong>, <strong>Gambar yang Diunggah Pelanggan</strong>, dan <strong>teks Skenario</strong> mereka, dan menggabungkannya menggunakan <em>Pembuat Struktur Prompt Akhir</em> (ditemukan di tab Prompt)."
 
 msgid "3. Image vs Video"
 msgstr "3. Gambar vs Video"
@@ -409,31 +412,31 @@ msgid "Videos:"
 msgstr "Video:"
 
 msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
-msgstr "Didukung secara eksklusif oleh model <strong>Veo</strong> mutakhir dari Google. Generasi video dapat memakan waktu beberapa menit. Plugin ini menangani ini dengan baik dengan terus memeriksa server Google di latar belakang, memungkinkan pelanggan untuk melihat pembaruan status secara real-time tanpa meninggalkan halaman."
+msgstr "Didukung secara eksklusif oleh model <strong>Veo</strong> mutakhir dari Google. Pembuatan video dapat memakan waktu beberapa menit. Plugin ini menangani ini dengan baik dengan terus memeriksa server Google di latar belakang, memungkinkan pelanggan untuk melihat pembaruan status secara real-time tanpa meninggalkan halaman."
 
 msgid "API Keys & Configuration"
 msgstr "Kunci API &amp; Konfigurasi"
 
 msgid "Before the Try-On button will function, you must configure your AI providers."
-msgstr "Sebelum tombol Try-On berfungsi, Anda harus mengonfigurasi penyedia AI Anda."
+msgstr "Sebelum tombol Coba berfungsi, Anda harus mengonfigurasi penyedia AI Anda."
 
 msgid "Important:"
 msgstr "Penting:"
 
 msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
-msgstr "Anda harus mengklik tombol <strong>Verifikasi</strong> di sebelah model yang Anda pilih di tab Pengaturan AI untuk mengonfirmasi bahwa kunci API Anda memiliki akses."
+msgstr "Anda harus mengklik tombol <strong>Verifikasi</strong> di samping model yang Anda pilih di tab Pengaturan AI untuk mengonfirmasi bahwa kunci API Anda memiliki akses."
 
 msgid "Getting a Google Gemini Key"
 msgstr "Mendapatkan Kunci Google Gemini"
 
-msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
-msgstr "Model Gemini dari Google (termasuk Imagen 3 dan Veo) memerlukan kunci API dari Google AI Studio. Anda dapat mendapatkan kunci API gratis dengan mengunjungi <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\\"
+msgstr "Model Gemini Google (termasuk Imagen 3 dan Veo) memerlukan kunci API dari Google AI Studio. Anda dapat mendapatkan kunci API gratis dengan mengunjungi &lt;a href=\\"
 
 msgid "Getting an OpenAI Key"
 msgstr "Mendapatkan Kunci OpenAI"
 
-msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
-msgstr "Model OpenAI (seperti DALL-E 3) memerlukan akun platform OpenAI berbayar. Anda dapat menghasilkan kunci di <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">Kunci API OpenAI</a>."
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\\"
+msgstr "Model OpenAI (seperti DALL-E 3) memerlukan akun platform OpenAI berbayar. Anda dapat menghasilkan kunci di &lt;a href=\\"
 
 msgid "Need Support?"
 msgstr "Butuh Dukungan?"
@@ -511,7 +514,7 @@ msgid " ( Recommended )"
 msgstr " ( Direkomendasikan )"
 
 msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
-msgstr "Pilih model Google Veo untuk generasi video try-on. (Tersedia di Pro)"
+msgstr "Pilih model Google Veo untuk generasi video coba. (Tersedia di Pro)"
 
 msgid "API Key is empty."
 msgstr "Kunci API kosong."
@@ -523,7 +526,7 @@ msgid "API Error: "
 msgstr "Kesalahan API: "
 
 msgid "Connection failed (HTTP %1$s). Details: %2$s"
-msgstr "Koneksi gagal (HTTP %1$s). Detail: %2$s"
+msgstr "Koneksi gagal (HTTP %1$s). Rincian: %2$s"
 
 msgid "API Error"
 msgstr "Kesalahan API"
@@ -571,7 +574,7 @@ msgid "API Configuration missing. Contact store administrator."
 msgstr "Konfigurasi API hilang. Hubungi administrator toko."
 
 msgid "No media data provided."
-msgstr "Tidak ada data media yang diberikan."
+msgstr "Tidak ada data media yang disediakan."
 
 msgid "Invalid base64 data."
 msgstr "Data base64 tidak valid."
@@ -735,17 +738,17 @@ msgstr "Menghasilkan Keajaiban..."
 msgid "Add to Cart"
 msgstr "Tambahkan ke Keranjang"
 
-msgid "AI Analyst"
-msgstr "Analis AI"
+msgid "AI Business Analyst"
+msgstr "Analisis AI"
 
 msgid "AI Store Analyst"
-msgstr "Analis Toko AI"
+msgstr "Analisis Toko AI"
 
 msgid "WooCommerce Intelligence"
 msgstr "Inteligensi WooCommerce"
 
 msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
-msgstr "Wawasan penjualan instan, inteligensi prediktif, dan analitik mendalam yang didukung oleh AI."
+msgstr "Wawasan penjualan instan, inteligensi prediktif, dan analitik mendalam yang didorong oleh AI."
 
 msgid "Active AI Provider"
 msgstr "Penyedia AI Aktif"
@@ -799,13 +802,13 @@ msgid "No qualifying orders were found in the last 30 days. Check traffic, check
 msgstr "Tidak ada pesanan yang memenuhi syarat ditemukan dalam 30 hari terakhir. Periksa lalu lintas, kesalahan checkout, dan pengaturan status pesanan terlebih dahulu."
 
 msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
-msgstr "Pesanan turun %s%%. Fokus pada pemulihan lalu lintas dan pembeli berulang; tanyakan kepada analis pelanggan mana yang paling mungkin kembali."
+msgstr "Pesanan turun %s%%. Fokus pada pemulihan lalu lintas dan pembeli ulang; tanyakan kepada analis pelanggan mana yang paling mungkin kembali."
 
 msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
-msgstr "Nilai pesanan rata-rata turun %s%%. Uji bundel menggunakan laporan produk yang dibeli bersama."
+msgstr "Nilai pesanan rata-rata turun %s%%. Uji paket menggunakan laporan produk yang dibeli bersama."
 
 msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
-msgstr "%s memimpin pendapatan terbaru. Pasangkan dengan produk yang sering dibeli dan tampilkan bundel secara mencolok."
+msgstr "%s memimpin pendapatan terbaru. Pasangkan dengan produk yang sering dibeli dan tampilkan paket tersebut secara mencolok."
 
 msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
 msgstr "Tinjau pelanggan terbaru, kupon, dan saluran penjualan untuk menemukan peluang pertumbuhan yang paling jelas."
@@ -835,7 +838,7 @@ msgid "Compare these products with the previous period."
 msgstr "Bandingkan produk ini dengan periode sebelumnya."
 
 msgid "Summarize sales for this period."
-msgstr "Ringkas penjualan untuk periode ini."
+msgstr "Ringkaskan penjualan untuk periode ini."
 
 msgid "Show this period as a sales graph."
 msgstr "Tampilkan periode ini sebagai grafik penjualan."
@@ -901,7 +904,7 @@ msgid "Enable page suggestions with Gemini Result"
 msgstr "Aktifkan saran halaman dengan Hasil Gemini"
 
 msgid "Select POST TYPE(s) to include with search results"
-msgstr "Pilih TIPE POST yang ingin disertakan dengan hasil pencarian"
+msgstr "Pilih TIPE POST yang akan disertakan dengan hasil pencarian"
 
 msgid "Get your API key from https://aistudio.google.com/app/apikey. "
 msgstr "Dapatkan kunci API Anda dari https://aistudio.google.com/app/apikey."
@@ -915,11 +918,11 @@ msgstr "Model Gemini"
 msgid "Fetch Models"
 msgstr "Ambil Model"
 
-msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
-msgstr "Pilih model Gemini Anda. Klik \"Ambil Model\" untuk memperbarui daftar jika Anda baru saja menambahkan kunci API Anda."
+msgid "Select your Gemini model. Click \\"
+msgstr "Pilih model Gemini Anda. Klik \\"
 
 msgid "Please select a your paid model all model on the list are might not be available for free plans"
-msgstr "Silakan pilih model berbayar Anda, semua model dalam daftar mungkin tidak tersedia untuk paket gratis."
+msgstr "Silakan pilih model berbayar Anda, semua model dalam daftar mungkin tidak tersedia untuk rencana gratis"
 
 msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
 msgstr "Prompt Anda untuk Ditambahkan sebelum Kuery Pengguna untuk Hasil yang Disesuaikan (Opsional)"
@@ -931,10 +934,10 @@ msgid "Save settings"
 msgstr "Simpan pengaturan"
 
 msgid "Fine Tuning VS GPT Assistants VS RAG:"
-msgstr "Penyetelan Halus VS Asisten GPT VS RAG:"
+msgstr "Penyempurnaan Halus VS Asisten GPT VS RAG:"
 
 msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "Kami menyarankan menggunakan Asisten GPT atau RAG daripada Penyetelan Halus karena Penyetelan Halus memerlukan banyak data yang diformat dengan benar dan Asisten GPT lebih mudah diatur. Anda masih dapat menggunakan data situs web Anda untuk melatih bot."
+msgstr "Kami menyarankan menggunakan Asisten GPT atau RAG daripada Penyempurnaan Halus karena Penyempurnaan Halus memerlukan banyak data yang diformat dengan benar dan Asisten GPT lebih mudah diatur. Anda masih dapat menggunakan data situs web Anda untuk melatih bot."
 
 msgid "How to Use RAG in This Plugin:"
 msgstr "Cara Menggunakan RAG di Plugin Ini:"
@@ -964,7 +967,7 @@ msgid "Getting Started with gemini"
 msgstr "Memulai dengan gemini"
 
 msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
-msgstr "Gemini adalah Antarmuka atau Agregator terpadu untuk LLM. Anda dapat memilih dari ratusan model AI berbeda dari OpenAI hingga Deepseek atau Claude untuk mendapatkan respons AI."
+msgstr "Gemini adalah Antarmuka terpadu atau Agregator untuk LLM. Anda dapat memilih dari ratusan model AI berbeda dari OpenAI hingga Deepseek atau Claude untuk mendapatkan respons AI."
 
 msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
 msgstr "Yang perlu Anda lakukan adalah menambahkan Kunci API Gemini dan memilih Model Gemini."
@@ -994,13 +997,13 @@ msgid "Unauthorized access"
 msgstr "Akses tidak sah"
 
 msgid "Settings updated successfully"
-msgstr "Pengaturan berhasil diperbarui"
+msgstr "Pengaturan diperbarui dengan sukses"
 
 msgid "View Detail"
 msgstr "Lihat Detail"
 
 msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
-msgstr "OpenAI telah menonaktifkan beberapa model yang lebih lama. Silakan gunakan GPT 3.5 atau 4 untuk Penyetelan Halus. Anda perlu memperbarui dataset dan melakukan Penyetelan Halus lagi. Silakan periksa bagian Bantuan untuk detail."
+msgstr "OpenAI telah menonaktifkan beberapa model yang lebih lama. Silakan gunakan GPT 3.5 atau 4 untuk Penyempurnaan Halus. Anda perlu memperbarui dataset dan melakukan Penyempurnaan Halus lagi. Silakan periksa bagian Bantuan untuk detail."
 
 msgid "OpenAI settings"
 msgstr "Pengaturan OpenAI"
@@ -1012,7 +1015,7 @@ msgid "GPT Assistant"
 msgstr "Asisten GPT"
 
 msgid "Fine Tune with Website Data"
-msgstr "Penyetelan Halus dengan Data Situs Web"
+msgstr "Penyempurnaan Halus dengan Data Situs Web"
 
 msgid "AI Image Generator"
 msgstr "Generator Gambar AI"
@@ -1036,19 +1039,19 @@ msgid " Licenses"
 msgstr " Lisensi"
 
 msgid "Fine Tuning VS GPT Assistants:"
-msgstr "Penyetelan Halus VS Asisten GPT:"
+msgstr "Penyempurnaan Halus VS Asisten GPT:"
 
 msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "Kami menyarankan menggunakan Asisten GPT daripada Penyetelan Halus karena Penyetelan Halus memerlukan banyak data yang diformat dengan benar dan Asisten GPT lebih mudah diatur. Anda masih dapat menggunakan data situs web Anda untuk melatih bot."
+msgstr "Kami menyarankan menggunakan Asisten GPT daripada Penyempurnaan Halus karena Penyempurnaan Halus memerlukan banyak data yang diformat dengan benar dan Asisten GPT lebih mudah diatur. Anda masih dapat menggunakan data situs web Anda untuk melatih bot."
 
 msgid "Setting up GPT Assistants:"
 msgstr "Mengatur Asisten GPT:"
 
 msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
-msgstr "Buka tab pelatihan GPT dengan Data Situs Web. Pilih semua jenis Post yang Anda butuhkan dan tekan tombol Konversi Data untuk Asisten. Setelah selesai, unduh file data dalam format JSON"
+msgstr "Pergi ke tab pelatihan GPT dengan Data Situs Web. Pilih semua jenis Post yang Anda butuhkan dan tekan tombol Konversi Data untuk Asisten. Setelah selesai, unduh file data dalam format JSON"
 
 msgid "Go to "
-msgstr "Buka "
+msgstr "Pergi ke "
 
 msgid "Assistants playground"
 msgstr "permainan Asisten"
@@ -1057,13 +1060,13 @@ msgid " and create a new Assistant"
 msgstr " dan buat Asisten baru"
 
 msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
-msgstr "Unggah file JSON yang Anda unduh dan berikan instruksi kepada GPT yang mirip dengan yang di bawah ini tetapi sesuaikan dengan URL situs web Anda:"
+msgstr "Unggah file JSON yang Anda unduh dan berikan GPT Instruksi yang mirip dengan yang di bawah ini tetapi sesuaikan dengan URL situs web Anda:"
 
 msgid "Your name is Carry. You are a ChatBot assistant for the website "
 msgstr "Nama Anda adalah Carry. Anda adalah asisten ChatBot untuk situs web "
 
 msgid "https://www.quantumcloud.net. "
-msgstr "https://www.quantumcloud.net."
+msgstr "https://www.quantumcloud.net. "
 
 msgid "Use the website data and the uploaded file to answer any questions from our website users."
 msgstr "Gunakan data situs web dan file yang diunggah untuk menjawab pertanyaan dari pengguna situs web kami."
@@ -1071,8 +1074,8 @@ msgstr "Gunakan data situs web dan file yang diunggah untuk menjawab pertanyaan 
 msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
 msgstr "Salin ID Asisten dan tempel di bawah tab Asisten GPT di bawah pengaturan OpenAI di situs web Anda. Anda sudah selesai. Jika Anda telah membeli kredit dari platform API OpenAI, itu akan mulai berfungsi."
 
-msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
-msgstr "Anda dapat menggunakan berbagai Asisten GPT di halaman yang berbeda dengan Widget chatbot. Tempelkan shortcode contoh ini dan ganti ID Asisten sesuai kebutuhan: Contoh: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\\"
+msgstr "Anda dapat menggunakan Asisten GPT yang berbeda di halaman yang berbeda dengan Widget chatbot. Tempelkan shortcode contoh ini dan ganti ID Asisten sesuai kebutuhan: Contoh: [chatbot-widget hud_design=\\"
 
 msgid "Please check this article for step by step guide."
 msgstr "Silakan periksa artikel ini untuk panduan langkah demi langkah."
@@ -1081,7 +1084,7 @@ msgid "Getting Customized Results from the AI Services"
 msgstr "Mendapatkan Hasil yang Disesuaikan dari Layanan AI"
 
 msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
-msgstr "Hasil yang paling disesuaikan yang dapat Anda dapatkan dari layanan AI adalah dengan menggunakan Asisten GPT OpenAI yang memungkinkan Anda mengunggah dokumen dan data situs web Anda (dihasilkan oleh versi Pro kami). Namun, Anda masih dapat mendapatkan hasil yang disesuaikan dengan menulis prompt yang rinci. Di bawah bagian Perintah Sistem di area Pengaturan OpenAI (ada bagian prompt untuk layanan AI lainnya juga) Anda dapat menulis prompt yang rinci yang mencakup detail tentang layanan, produk Anda, cara menghubungi Anda, atau apa pun yang relevan untuk mendapatkan hasil yang disesuaikan. Hingga 3000 kata sudah cukup. Ini seharusnya cukup untuk sebagian besar situs web kecil hingga menengah."
+msgstr "Hasil yang disesuaikan terbaik yang dapat Anda dapatkan dari layanan AI adalah dengan menggunakan Asisten GPT OpenAI yang memungkinkan Anda mengunggah dokumen dan data situs web Anda (dihasilkan oleh versi Pro kami). Namun, Anda masih dapat mendapatkan hasil yang disesuaikan dengan menulis prompt yang rinci. Di bawah bagian Perintah Sistem di area Pengaturan OpenAI (ada bagian prompt untuk layanan AI lainnya juga) Anda dapat menulis prompt yang rinci yang mencakup detail tentang layanan, produk Anda, cara menghubungi Anda, atau apa pun yang relevan untuk mendapatkan hasil yang disesuaikan. Hingga 3000 kata sudah cukup. Ini seharusnya cukup untuk sebagian besar situs web kecil hingga menengah."
 
 msgid "**"
 msgstr "**"
@@ -1102,10 +1105,10 @@ msgid "OpenAI has changed their API billing policy lately. You have to "
 msgstr "OpenAI telah mengubah kebijakan penagihan API mereka baru-baru ini. Anda harus "
 
 msgid "pre-purchase API credits"
-msgstr "membeli kredit API terlebih dahulu"
+msgstr "membeli kredit API sebelumnya"
 
 msgid " now. Go to "
-msgstr " sekarang. Buka "
+msgstr " sekarang. Pergi ke "
 
 msgid "https://platform.openai.com/account/billing/ "
 msgstr "https://platform.openai.com/account/billing/ "
@@ -1113,14 +1116,14 @@ msgstr "https://platform.openai.com/account/billing/ "
 msgid "and add credits to your API account. Then increase the usage limit."
 msgstr "dan tambahkan kredit ke akun API Anda. Kemudian tingkatkan batas penggunaan."
 
-msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
-msgstr "Setelah Anda menambahkan kunci API OpenAI, itu seharusnya sudah mulai berfungsi untuk pertanyaan umum. Buka jendela browser baru dalam mode Incognito dan uji dengan bertanya \"Apa ibu kota Rusia?\""
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \\"
+msgstr "Setelah Anda menambahkan kunci API OpenAI, itu seharusnya sudah mulai berfungsi untuk pertanyaan umum. Buka jendela browser baru dalam mode Incognito dan uji dengan bertanya \\"
 
 msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
-msgstr "Silakan pastikan DialogFlow dinonaktifkan jika Anda ingin OpenAI berfungsi."
+msgstr "Silakan pastikan DialogFlow dinonaktifkan jika Anda ingin OpenAI berfungsi"
 
 msgid "Fine Tuning VS GPT Assistants VS RAG"
-msgstr "Penyetelan Halus VS Asisten GPT VS RAG"
+msgstr "Penyempurnaan Halus VS Asisten GPT VS RAG"
 
 msgid "GPT Assistants:"
 msgstr "Asisten GPT:"
@@ -1129,32 +1132,25 @@ msgid "How to get an OpenAI API Key"
 msgstr "Cara mendapatkan Kunci API OpenAI"
 
 msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
-msgstr "API OpenAI menggunakan kunci API untuk otentikasi. Kunjungi halaman Kunci API Anda untuk mengambil kunci API yang akan Anda gunakan dalam permintaan Anda. Ingat bahwa kunci API Anda adalah rahasia! Jangan bagikan dengan orang lain atau mengeksposnya dalam kode sisi klien (browser, aplikasi). Permintaan produksi harus diarahkan melalui server backend Anda sendiri di mana kunci API Anda dapat dimuat dengan aman dari variabel lingkungan atau layanan manajemen kunci."
+msgstr "API OpenAI menggunakan kunci API untuk otentikasi. Kunjungi halaman Kunci API Anda untuk mengambil kunci API yang akan Anda gunakan dalam permintaan Anda. Ingat bahwa kunci API Anda adalah rahasia! Jangan bagikan dengan orang lain atau mengeksposnya dalam kode sisi klien (peramban, aplikasi). Permintaan produksi harus diarahkan melalui server backend Anda sendiri di mana kunci API Anda dapat dimuat dengan aman dari variabel lingkungan atau layanan manajemen kunci."
 
 msgid "You can generate the API key from here: "
 msgstr "Anda dapat menghasilkan kunci API dari sini: "
 
 msgid "https://platform.openai.com/api-keys. "
-msgstr "https://platform.openai.com/api-keys."
+msgstr "https://platform.openai.com/api-keys. "
 
 msgid "Training or Fine Tuning OpenAI"
-msgstr "Pelatihan atau Penyetelan Halus OpenAI"
+msgstr "Pelatihan atau Penyempurnaan Halus OpenAI"
 
 msgid "To train OpenAI"
 msgstr "Untuk melatih OpenAI"
 
-msgid ""
-"a. To train or fine tune a model, 1st you need to:\n"
-"                "
-msgstr ""
-"a. Untuk melatih atau menyetel model, pertama Anda perlu:\n"
-"                "
-
 msgid "Gather the necessary data you want to train with"
-msgstr "Mengumpulkan data yang diperlukan yang ingin Anda latih"
+msgstr "Kumpulkan data yang diperlukan yang ingin Anda latih"
 
 msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
-msgstr "Memformat data dengan benar sesuai dengan persyaratan API OpenAI (Unduh format data contoh untuk melihat cara kerjanya). Dataset harus memiliki setidaknya 500 baris untuk menawarkan hasil yang berguna. Menurut dokumentasi OpenAI, jumlah 3.000 dan 5.000 baris disarankan."
+msgstr "Format data dengan benar sesuai dengan persyaratan API OpenAI (Unduh format data contoh untuk melihat cara kerjanya). Sebuah dataset harus memiliki setidaknya 500 baris untuk menawarkan hasil yang berguna. Menurut dokumentasi OpenAI, jumlah 3.000 dan 5.000 baris disarankan."
 
 msgid "Upload the data to OpenAI in .JSONL format"
 msgstr "Unggah data ke OpenAI dalam format .JSONL"
@@ -1162,24 +1158,17 @@ msgstr "Unggah data ke OpenAI dalam format .JSONL"
 msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
 msgstr "Latih model OpenAI yang ada (pilih dari halaman pengaturan Bot OpenAI) dengan data Anda"
 
-msgid ""
-"b. Once you have your JSONL file ready, please go to the Training model section.\n"
-"                Upload your training file in .JSONL format."
-msgstr ""
-"b. Setelah Anda memiliki file JSONL siap, silakan pergi ke bagian Model Pelatihan.\n"
-"                Unggah file pelatihan Anda dalam format .JSONL."
-
 msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
 msgstr "c. Setelah Anda mengunggah file pelatihan Anda, itu akan mengembalikan ID file dan pelatihan akan dimulai setelah Anda mengklik tombol Buat Model FT. Atur sufiks (untuk mengenali model itu sendiri nanti) dan model dasar di popup dan buat."
 
-msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
-msgstr "d. Setelah pelatihan selesai dan file siap, itu akan mengembalikan model yang disetel halus. Itu akan terdaftar di bawah Daftar Model yang Disetel Halus, status akan ditampilkan sebagai \"Berhasil\" dan Anda juga akan mendapatkan ID Model FT (untuk disalin ke halaman pengaturan)."
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \\"
+msgstr "d. Setelah pelatihan selesai dan file siap, itu akan mengembalikan model yang disempurnakan. Itu akan terdaftar di bawah Daftar Model yang Disempurnakan, status akan ditampilkan sebagai \\"
 
 msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
-msgstr "e. Anda dapat membuat beberapa model yang disetel halus mengikuti prosedur di atas. Salin ID model yang disetel halus yang ingin Anda gunakan."
+msgstr "e. Anda dapat membuat beberapa model yang Disempurnakan mengikuti prosedur di atas. Salin ID model yang Disempurnakan yang ingin Anda gunakan."
 
 msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
-msgstr "f. Buka halaman pengaturan Bot OpenAI utama dan tempelkan ID model yang disetel halus ke bidang Model yang Disetel Halus Kustom dan simpan. Sekarang bot akan mulai merespons sesuai dengan data Pelatihan."
+msgstr "f. Pergi ke halaman pengaturan Bot OpenAI utama dan tempelkan ID model yang Disempurnakan ke bidang Model Disempurnakan Kustom dan simpan. Sekarang bot akan mulai merespons sesuai dengan data Pelatihan."
 
 msgid "h. To Prepare your data model for GPT3.5/4:"
 msgstr "h. Untuk Menyiapkan model data Anda untuk GPT3.5/4:"
@@ -1191,13 +1180,13 @@ msgid "Each prompt and completion should be in a single line"
 msgstr "Setiap prompt dan penyelesaian harus dalam satu baris"
 
 msgid "Fine tuning file format with GPT 3.5/4"
-msgstr "Format file penyetelan halus dengan GPT 3.5/4"
+msgstr "Format file penyempurnaan dengan GPT 3.5/4"
 
-msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
-msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Anda adalah asisten yang kadang-kadang salah mengeja kata\" },{ \"role\": \"user\", \"content\": \"Ceritakan saya sebuah cerita.\" }, { \"role\": \"assistant\", \"content\": \"Suatu hari seorang siswa pergi ke sekolah.\" }]}"
+msgid "{ \\"
+msgstr "{ \\"
 
 msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
-msgstr "Klik kanan dan Simpan file jsonl Contoh untuk Penyetelan Halus dengan GPT 3.5/4"
+msgstr "Klik kanan dan Simpan file jsonl Contoh untuk Penyempurnaan dengan GPT 3.5/4"
 
 msgid "OpenAI RAG"
 msgstr "OpenAI RAG"
@@ -1206,25 +1195,25 @@ msgid "To Embed OpenAI"
 msgstr "Untuk Menyisipkan OpenAI"
 
 msgid "Important points about fine tuning"
-msgstr "Poin penting tentang penyetelan halus"
+msgstr "Poin penting tentang penyempurnaan"
 
-msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
-msgstr "Untuk hasil yang lebih baik, Anda memerlukan setidaknya 500+ prompt. Jika tidak, OpenAI akan mencampur respons dengan pengetahuan umum. Juga, prompt harus se-deskriptif mungkin. Ikuti format jenis FAQ dengan pertanyaan dan jawaban yang deskriptif. Contoh prompt: Alih-alih hanya \"Jaket Denim Vintage\" Anda bisa menulis \"Mengapa seseorang harus memakai Jaket Denim Vintage kami?\"."
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \\"
+msgstr "Untuk hasil yang lebih baik, Anda memerlukan setidaknya 500+ prompt. Jika tidak, OpenAI akan mencampur respons dengan pengetahuan umum. Selain itu, prompt harus sedetail mungkin. Ikuti format jenis FAQ dengan pertanyaan dan jawaban yang deskriptif. Contoh prompt: Alih-alih hanya \\"
 
 msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
-msgstr "Jika penyelesaian Anda pendek seperti di bawah ini atau sekitar 100 kata, pertahankan nilai Max Tokens 200. Sesuaikan pengaturan Temperature, Presence Penalty, dan Frequency penalty sampai Anda mendapatkan hasil yang Anda suka."
+msgstr "Jika penyelesaian Anda pendek seperti di bawah ini atau sekitar 100 kata, jaga nilai Max Tokens 200. Sesuaikan pengaturan Temperature, Presence Penalty, dan Frequency penalty sampai Anda mendapatkan hasil yang Anda suka."
 
 msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
-msgstr "Jika Anda melakukan penyetelan halus dengan data situs web, Bot akan menggunakan judul Post sebagai prompt. Jika judul Halaman/Post tidak deskriptif, Anda tidak akan mendapatkan hasil yang baik. Dalam kasus seperti itu, Anda dapat mengunduh file JSONL dari halaman Model Pelatihan dan memperbaiki prompt. Kemudian lakukan penyetelan halus lagi."
+msgstr "Jika Anda melakukan Penyempurnaan Halus dengan data situs web, Bot akan menggunakan judul Post sebagai prompt. Jika judul Halaman/Post tidak deskriptif, Anda tidak akan mendapatkan hasil yang baik. Dalam kasus seperti itu, Anda dapat mengunduh file JSONL dari halaman Model Pelatihan dan memperbaiki prompt. Kemudian lakukan penyempurnaan lagi."
 
 msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
-msgstr "Matikan pencarian Situs dari Pengaturan-&gt;Menu Awal agar bot tidak mengambil jawaban dari pencarian situs. Silakan keluar dan masuk kembali agar pengaturan kami tidak tertimpa."
+msgstr "Jaga pencarian Situs dinonaktifkan dari Pengaturan-&gt;Menu Awal agar bot tidak membawa jawaban dari pencarian situs. Silakan keluar dan masuk lagi agar pengaturan kami tidak tertimpa."
 
 msgid "How to Optimize Fine Tuning"
 msgstr "Cara Mengoptimalkan Penyempurnaan Halus"
 
 msgid "To get better results from fine-tuning please follow the following steps:"
-msgstr "Untuk mendapatkan hasil yang lebih baik dari penyempurnaan halus, silakan ikuti langkah-langkah berikut:"
+msgstr "Untuk mendapatkan hasil yang lebih baik dari penyempurnaan, silakan ikuti langkah-langkah berikut:"
 
 msgid "Set a lower value for Temperature"
 msgstr "Tetapkan nilai yang lebih rendah untuk Suhu"
@@ -1236,7 +1225,7 @@ msgid "If possible use the Curie model as your base model when you create the cu
 msgstr "Jika memungkinkan, gunakan model Curie sebagai model dasar Anda saat Anda membuat model kustom."
 
 msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
-msgstr "Gunakan token maksimum tergantung pada prompt dan penyelesaian Anda. Jika Anda menggunakan nilai token maksimum yang lebih tinggi, AI akan membuat lebih banyak informasi yang mungkin tidak relevan dengan konteks Anda. Hal yang sama berlaku untuk token maksimum yang lebih rendah. Jika Anda memilih nilai yang terlalu rendah untuk token maksimum, maka data Anda akan terputus atau menghasilkan kesalahan."
+msgstr "Gunakan token maksimum tergantung pada prompt dan penyelesaian Anda. Jika Anda menggunakan nilai yang lebih tinggi dari token maksimum, AI akan membuat lebih banyak informasi yang mungkin tidak relevan dengan konteks Anda. Hal yang sama berlaku untuk token maksimum yang lebih rendah. Jika Anda memilih nilai yang terlalu rendah untuk token maksimum, maka data Anda akan terputus atau menghasilkan kesalahan."
 
 msgid "Presence Penalty"
 msgstr "Penalti Kehadiran"
@@ -1248,7 +1237,7 @@ msgid "Frequency Penalty"
 msgstr "Penalti Frekuensi"
 
 msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
-msgstr "Angka antara -2.0 dan 2.0. Nilai positif menghukum token baru berdasarkan frekuensi yang ada dalam teks sejauh ini, mengurangi kemungkinan model untuk mengulangi baris yang sama secara verbatim."
+msgstr "Angka antara -2.0 dan 2.0. Nilai positif menghukum token baru berdasarkan frekuensi yang ada dalam teks sejauh ini, mengurangi kemungkinan model untuk mengulangi kalimat yang sama secara verbatim."
 
 msgid "Temperature"
 msgstr "Suhu"
@@ -1260,13 +1249,13 @@ msgid "My OpenAI does not work"
 msgstr "My OpenAI tidak berfungsi"
 
 msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
-msgstr "Silakan periksa pengaturan Anda (misalnya: Kunci Api, Token Maksimum, dll.). Tergantung pada model yang digunakan (GPT3 maksimum 4000), permintaan dapat menggunakan hingga 4097 token yang dibagi antara prompt dan penyelesaian. Jika prompt Anda adalah 4000 token, penyelesaian Anda dapat maksimal 97 token. Juga periksa apakah dialogflow tidak aktif. Dialogflow dan OpenAI tidak bekerja sama."
+msgstr "Silakan periksa pengaturan Anda (misalnya: Kunci API, Token maksimum, dll.). Tergantung pada model (GPT3 maksimum 4000) yang digunakan, permintaan dapat menggunakan hingga 4097 token yang dibagi antara prompt dan penyelesaian. Jika prompt Anda adalah 4000 token, penyelesaian Anda dapat maksimal 97 token. Juga periksa apakah dialogflow tidak aktif. Dialogflow dan OpenAI tidak bekerja sama."
 
 msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
-msgstr "Anda dapat membuat beberapa model Penyempurnaan Halus berdasarkan jenis pos dan halaman Anda. Anda dapat mengunduh data pelatihan Anda sebagai file JSONL untuk dimodifikasi dan kemudian mengunggahnya dalam proses yang sama seperti file lainnya (lihat di atas untuk instruksi). Juga, Anda dapat mengunggahnya dengan mengklik tombol `Unggah Sebagai Model FT`."
+msgstr "Anda dapat membuat beberapa model yang Disempurnakan berdasarkan jenis pos dan halaman Anda. Anda dapat mengunduh data pelatihan Anda sebagai file JSONL untuk dimodifikasi dan kemudian mengunggahnya dalam proses yang sama seperti file lainnya (lihat di atas untuk instruksi). Juga, Anda dapat mengunggahnya dengan mengklik tombol `Unggah Sebagai Model FT`."
 
 msgid "Fine tuning and training is available with the "
-msgstr "Penyempurnaan halus dan pelatihan tersedia dengan"
+msgstr "Penyempurnaan dan pelatihan tersedia dengan"
 
 msgid "WoowbotPro Professional"
 msgstr "WoowbotPro Profesional"
@@ -1281,7 +1270,7 @@ msgid "(if you want results from OpenAI only, It will disable default product Se
 msgstr "(jika Anda ingin hasil dari OpenAI saja, ini akan menonaktifkan pencarian produk default)"
 
 msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
-msgstr "Aktifkan Streaming (aliran respons AI secara real-time saat dihasilkan)"
+msgstr "Aktifkan Streaming (alir respons AI secara real-time saat dihasilkan)"
 
 msgid "Enable OpenAI Product Cards"
 msgstr "Aktifkan Kartu Produk OpenAI"
@@ -1293,7 +1282,7 @@ msgid "Enable WordPress page suggestions with GPT Results (the links are suggest
 msgstr "Aktifkan saran halaman WordPress dengan Hasil GPT (tautan disarankan oleh WordPress dan bukan AI)"
 
 msgid "Api key"
-msgstr "Kunci Api"
+msgstr "Kunci API"
 
 msgid "OpenAI Model"
 msgstr "Model OpenAI"
@@ -1332,19 +1321,19 @@ msgid "GPT-3 turbo"
 msgstr "GPT-3 turbo"
 
 msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
-msgstr "Perintah Sistem (Gunakan untuk Menginstruksikan ChatGPT bagaimana berperilaku). Anda dapat menulis prompt yang rinci di sini yang mencakup rincian tentang layanan, produk, dan cara menghubungi Anda atau apa pun yang relevan untuk mendapatkan"
+msgstr "Perintah Sistem (Gunakan untuk Menginstruksikan ChatGPT bagaimana berperilaku). Anda dapat menulis prompt yang lebih rinci di sini yang mencakup detail tentang layanan, produk, dan cara menghubungi Anda atau apa pun yang relevan untuk mendapatkan"
 
 msgid "Customized Results"
 msgstr "Hasil yang Disesuaikan"
 
 msgid ". Upto 3000 words is fine."
-msgstr ". Hingga 3000 kata baik."
+msgstr ". Hingga 3000 kata sudah cukup."
 
 msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
 msgstr "Anda adalah Asisten yang membantu. Jadilah ringkas dan relevan dalam jawaban Anda dan jangan memperkenalkan topik baru."
 
 msgid "To set the ChatBot's tone and character set a system message according to your need"
-msgstr "Untuk mengatur nada dan karakter ChatBot, tetapkan pesan sistem sesuai kebutuhan Anda"
+msgstr "Untuk mengatur nada dan karakter ChatBot, atur pesan sistem sesuai kebutuhan Anda"
 
 msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
 msgstr "Contoh: Anda adalah Asisten yang membantu. Jadilah ringkas dan relevan dalam jawaban Anda dan jangan memperkenalkan topik baru."
@@ -1356,7 +1345,7 @@ msgid "Content for the response"
 msgstr "Konten untuk respons"
 
 msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
-msgstr "Zona Berbahaya (Anda mungkin tidak mendapatkan respons dari AI jika kata kunci tidak diatur dengan benar. Hapus kata kunci jika Anda mengalami masalah)"
+msgstr "Zona Berbahaya (Anda mungkin tidak mendapatkan respons dari AI jika kata kunci tidak diatur dengan benar. Hapus kata kunci jika Anda menghadapi masalah)"
 
 msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
 msgstr "Sambungkan ke OpenAI hanya ketika kuery pengguna mencakup salah satu Kata Kunci yang Dipisahkan dengan Koma berikut"
@@ -1365,7 +1354,7 @@ msgid "Connect to OpenAI only when user query does NOT include one of the follow
 msgstr "Sambungkan ke OpenAI hanya ketika kuery pengguna TIDAK mencakup salah satu Kata Kunci yang Dipisahkan dengan Koma berikut"
 
 msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
-msgstr "Minta OpenAI untuk menjawab ketika pertanyaan relevan dengan Kata Kunci di atas (Mengaktifkan opsi ini akan meningkatkan akurasi tetapi akan menggunakan Token OpenAI)"
+msgstr "Minta OpenAI untuk membalas ketika pertanyaan relevan dengan Kata Kunci di atas (Mengaktifkan opsi ini akan meningkatkan akurasi tetapi akan menggunakan Token OpenAI)"
 
 msgid "Check Connection  "
 msgstr "Periksa Koneksi"
@@ -1374,7 +1363,7 @@ msgid "Save the Settings first and then press the Check Connection button"
 msgstr "Simpan Pengaturan terlebih dahulu dan kemudian tekan tombol Periksa Koneksi"
 
 msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
-msgstr "**Jika OpenAI tidak merespons dan bot hanya memuat, maka kemungkinan Anda telah mencapai batas penggunaan OpenAI Anda. Silakan beli kredit terlebih dahulu untuk menggunakan API OpenAI dan meningkatkan batas Penggunaan. Anda dapat menambahkan kredit ke akun API Anda dengan mengunjungi"
+msgstr "**Jika OpenAI tidak merespons dan bot hanya memuat, maka kemungkinan Anda telah mencapai batas penggunaan OpenAI Anda. Silakan beli kredit terlebih dahulu untuk menggunakan API OpenAI dan tingkatkan batas Penggunaan. Anda dapat menambahkan kredit ke akun API Anda dengan mengunjungi"
 
 msgid "billing page."
 msgstr "halaman penagihan."
@@ -1421,36 +1410,11 @@ msgstr "Izin tidak mencukupi"
 msgid "AI Setup configuration saved successfully."
 msgstr "Konfigurasi pengaturan AI berhasil disimpan."
 
-msgid ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event to reset the rate limit used counts\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Ensure WordPress cron functions are available\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-msgstr ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Jadwalkan pekerjaan cron untuk setiap peran jika belum dijadwalkan);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event untuk mereset batas penggunaan yang digunakan\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Pastikan fungsi cron WordPress tersedia\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-
 msgid "Rate limit exceeded. Please try again later."
-msgstr "Batas penggunaan terlampaui. Silakan coba lagi nanti."
+msgstr "Batas laju terlampaui. Silakan coba lagi nanti."
 
 msgid "More WordPress Goodies for You!"
-msgstr "Lebih Banyak Kelezatan WordPress untuk Anda!"
+msgstr "Lebih Banyak Kebaikan WordPress untuk Anda!"
 
 msgid "Support"
 msgstr "Dukungan"
@@ -1470,8 +1434,8 @@ msgstr "Basis Pengetahuan Online"
 msgid "Get Support for Free Version"
 msgstr "Dapatkan Dukungan untuk Versi Gratis"
 
-msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
-msgstr "Masalah dalam memproses permintaan pengiriman formulir Anda! Mohon maaf atas ketidaknyamanan.<br> Silakan kirim email ke <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> dengan umpan balik apa pun. Kami akan segera menghubungi Anda!"
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\\"
+msgstr "Masalah dalam memproses permintaan pengiriman formulir Anda! Mohon maaf atas ketidaknyamanan.<br> Silakan kirim email ke &lt;span style=\\"
 
 msgid "Please fill up all the requried form fields."
 msgstr "Silakan isi semua kolom formulir yang diperlukan."
@@ -1480,7 +1444,7 @@ msgid "Invalid email address."
 msgstr "Alamat email tidak valid."
 
 msgid "Support Request Details:"
-msgstr "Rincian Permintaan Dukungan:"
+msgstr "Detail Permintaan Dukungan:"
 
 msgid "Sent Via the Plugin"
 msgstr "Dikirim Melalui Plugin"
@@ -1548,19 +1512,13 @@ msgid "Installed"
 msgstr "Terinstal"
 
 msgid "More Details"
-msgstr "Detail Lebih Lanjut"
+msgstr "Lebih Banyak Detail"
 
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "Plugin ini tidak berfungsi dengan versi WordPress dan PHP Anda."
 
-msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
-msgstr "<a href=\"%1$s\">Silakan perbarui WordPress</a>, dan kemudian <a href=\"%2$s\">pelajari lebih lanjut tentang memperbarui PHP</a>."
-
-msgid "<a href=\"%s\">Please update WordPress</a>."
-msgstr "<a href=\"%s\">Silakan perbarui WordPress</a>."
-
-msgid "<a href=\"%s\">Learn more about updating PHP</a>."
-msgstr "<a href=\"%s\">Pelajari lebih lanjut tentang memperbarui PHP</a>."
+msgid "<a href=\\"
+msgstr "&lt;a href=\\"
 
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
 msgstr "Plugin ini tidak berfungsi dengan versi WordPress Anda."
@@ -1623,7 +1581,7 @@ msgid "OR"
 msgstr "ATAU"
 
 msgid " Get the Professional Version Now!"
-msgstr " Dapatkan Versi Profesional Sekarang!"
+msgstr "Dapatkan Versi Profesional Sekarang!"
 
 msgid "General settings"
 msgstr "Pengaturan umum"
@@ -1689,7 +1647,7 @@ msgid "NO"
 msgstr "TIDAK"
 
 msgid "Show on blog posts"
-msgstr "Tampilkan di posting blog"
+msgstr "Tampilkan di pos blog"
 
 msgid "Show on  pages"
 msgstr "Tampilkan di halaman"
@@ -1749,7 +1707,7 @@ msgid "Custom Icon"
 msgstr "Ikon Kustom"
 
 msgid "Upload custom Floating Icon"
-msgstr "Unggah Ikon Mengapung Kustom"
+msgstr "Unggah Ikon Mengambang Kustom"
 
 msgid "Upload Custom Icon"
 msgstr "Unggah Ikon Kustom"
@@ -1794,7 +1752,7 @@ msgid "Your Company or Website Name"
 msgstr "Nama Perusahaan atau Situs Web Anda"
 
 msgid "Agent name"
-msgstr "Nama Agen"
+msgstr "Nama agen"
 
 msgid "has joined the conversation"
 msgstr "telah bergabung dalam percakapan"
@@ -1848,7 +1806,7 @@ msgid "Catalog"
 msgstr "Katalog"
 
 msgid "Send Us Email"
-msgstr "Kirim Email Kami"
+msgstr "Kirim Email kepada Kami"
 
 msgid "You can browse our extensive catalog. Just pick a category from below"
 msgstr "Anda dapat menjelajahi katalog kami yang luas. Cukup pilih kategori dari bawah"
@@ -1884,19 +1842,19 @@ msgid "Multi Language Addon (**new)"
 msgstr "Addon Multi Bahasa (**baru)"
 
 msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
-msgstr "Tambahkan dukungan beberapa bahasa untuk ChatBot Anda. Pengguna dapat mengubah bahasa dari menu dropdown kapan saja. Admin dapat memilih bahasa default. Mendukung semua bahasa utama. Hubungkan dengan agen Dialogflow yang berbeda untuk bahasa yang berbeda"
+msgstr "Tambahkan dukungan multi bahasa untuk ChatBot Anda. Pengguna dapat mengubah bahasa dari menu dropdown kapan saja. Admin dapat memilih bahasa default. Mendukung semua bahasa utama. Hubungkan dengan agen Dialogflow yang berbeda untuk bahasa yang berbeda"
 
 msgid "Voice Message AddOn (**new)"
 msgstr "Addon Pesan Suara (**baru)"
 
 msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
-msgstr "Izinkan pelanggan Anda merekam pesan suara dari antarmuka ChatBot. Pesan suara disimpan di backend untuk didengarkan kapan saja. Mendukung pengenalan suara ke teks menggunakan API Google. Kompatibel dengan semua Browser Modern. Antarmuka Pengguna yang modern dan indah"
+msgstr "Izinkan pelanggan Anda merekam pesan suara dari antarmuka ChatBot. Pesan suara disimpan di backend untuk didengarkan kapan saja. Mendukung pengenalan suara menggunakan API Google. Kompatibel dengan semua Browser Modern. Antarmuka Pengguna modern yang indah"
 
 msgid "Extended UI Addon"
 msgstr "Addon UI Diperluas"
 
 msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
-msgstr "Beri ChatBot kesayangan Anda tampilan baru. Pilih dari 2 template tambahan yang modern, ramping, dan cukup mewah! Template baru ini pasti akan membuat pengunjung situs web Anda terkesan! Efek pemuat baru dan opsi kustomisasi warna yang luas tersedia!"
+msgstr "Beri ChatBot kesayangan Anda tampilan baru. Pilih dari 2 template tambahan yang modern, ramping, dan cukup mewah! Template baru ini pasti akan membuat pengunjung situs web Anda terkesan! Efek loader baru dan opsi kustomisasi warna yang luas tersedia!"
 
 msgid "Simple Text Responses Pro"
 msgstr "Respon Teks Sederhana Pro"
@@ -1908,25 +1866,25 @@ msgid "Bargaining ChatBot for WoowBot"
 msgstr "ChatBot Tawaran untuk WoowBot"
 
 msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
-msgstr "Buat Tawaran Anda Sekarang dengan ChatBot Tawaran. Menangkan lebih banyak pelanggan dengan negosiasi harga yang cerdas. Izinkan pelanggan Anda untuk membuat tawaran pada harga Anda. Negosiasikan harga minimum yang ditetapkan oleh Anda berdasarkan produk. Tangkap pembeli saat mereka memiliki niat tinggi untuk membeli. Tombol Buat Tawaran Anda hanya akan muncul di halaman produk tunggal yang Anda tetapkan harga minimumnya."
+msgstr "Buat Tawaran Anda Sekarang dengan ChatBot Tawaran. Menangkan lebih banyak pelanggan dengan negosiasi harga yang cerdas. Izinkan pelanggan Anda untuk membuat tawaran pada harga Anda. Negosiasikan harga minimum yang ditetapkan oleh Anda berdasarkan produk. Tangkap pembeli saat mereka memiliki niat tinggi untuk membeli. Tombol Buat Tawaran Anda hanya akan muncul di halaman produk tunggal yang Anda tetapkan harga minimum."
 
 msgid "Conversational Form Builder"
 msgstr "Pembuat Formulir Percakapan"
 
 msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
-msgstr "Buat percakapan dan formulir bersyarat untuk pengalaman ChatBot WordPress yang asli. Buat Formulir Standar, Formulir Dinamis dengan bidang bersyarat, Kalkulator, pemesanan janji, dll. Dilengkapi dengan 7 template siap pakai yang sudah ada. Menyimpan data formulir ke dalam database, respons otomatis, bidang bersyarat, variabel, revisi yang disimpan dan banyak lagi!"
+msgstr "Buat percakapan dan formulir bersyarat untuk pengalaman ChatBot WordPress yang asli. Buat Formulir Standar, Formulir Dinamis dengan bidang bersyarat, Kalkulator, pemesanan janji, dll. Dilengkapi dengan 7 template siap pakai yang sudah terintegrasi. Menyimpan data formulir ke dalam database, respons otomatis, bidang bersyarat, variabel, revisi yang disimpan, dan banyak lagi!"
 
 msgid "Export Import Settings"
 msgstr "Ekspor Impor Pengaturan"
 
 msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
-msgstr "Menggunakan WoowbotPro di beberapa situs web? Maka addon kecil yang berguna ini mungkin akan sangat membantu. Addon ini memungkinkan Anda mengekspor pengaturan Anda dan mengimpornya kembali ke situs lain atau jika Anda hanya ingin menyimpan cadangan. Sangat membantu untuk memindahkan pengaturan Pusat Bahasa yang bisa menjadi rumit dengan banyak opsi. Ambil sekarang!"
+msgstr "Menggunakan WoowbotPro di beberapa situs web? Maka addon kecil yang praktis ini mungkin berguna. Addon ini memungkinkan Anda untuk mengekspor pengaturan Anda dan mengimpornya kembali di situs lain atau jika Anda ingin menyimpan cadangan. Sangat membantu untuk memindahkan pengaturan Pusat Bahasa yang bisa menjadi rumit dengan banyak opsi. Ambil sekarang!"
 
 msgid "Messenger ChatBot Addon"
 msgstr "Addon ChatBot Messenger"
 
 msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
-msgstr "Manfaatkan Woowbot di situs web Anda sebagai pusat untuk menjawab pertanyaan pelanggan di Halaman FB &amp; Messenger"
+msgstr "Manfaatkan Woowbot di situs web Anda sebagai pusat untuk merespons pertanyaan pelanggan di Halaman FB &amp; Messenger"
 
 msgid "Extended Search"
 msgstr "Pencarian Diperluas"
@@ -1944,7 +1902,7 @@ msgid "LiveChat Addon"
 msgstr "Addon LiveChat"
 
 msgid "Live Human Chat integrated with WPBot"
-msgstr "Chat Manusia Langsung terintegrasi dengan WPBot"
+msgstr "Chat Langsung Manusia terintegrasi dengan WPBot"
 
 msgid "White Label WPBot"
 msgstr "White Label WPBot"
@@ -1956,7 +1914,7 @@ msgid "Mailing List Integration AddOn"
 msgstr "Addon Integrasi Daftar Email"
 
 msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
-msgstr "Integrasi Daftar Email adalah addon ChatBot yang memungkinkan Anda terhubung dengan akun Mailchimp dan Zapier Anda. Anda dapat menambahkan pelanggan baru ke Daftar Mailchimp Anda dari ChatBot dan membatalkan langganan mereka. Anda juga dapat membuat Zap baru di Akun Zapier Anda dan menghubungkannya dengan addon ini."
+msgstr "Integrasi Daftar Email adalah addon ChatBot yang memungkinkan Anda terhubung dengan akun Mailchimp dan Zapier Anda. Anda dapat menambahkan pelanggan baru ke Daftar Mailchimp Anda dari ChatBot dan membatalkan langganan mereka. Anda juga dapat membuat Zap baru di Akun Zapier Anda dan menghubungkan dengan addon ini."
 
 msgid "WoowBot Master Theme"
 msgstr "Tema Master WoowBot"
@@ -2025,7 +1983,7 @@ msgid "Plug and Play"
 msgstr "Plug and Play"
 
 msgid "No complex bot training required!"
-msgstr "Tidak perlu pelatihan bot yang rumit!"
+msgstr "Tidak diperlukan pelatihan bot yang rumit!"
 
 msgid "**Pro Tip: WoowBot pro integrates with"
 msgstr "**Tip Pro: WoowBot pro terintegrasi dengan"
@@ -2035,3 +1993,114 @@ msgstr "Facebook, Instagram, Telegram"
 
 msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
 msgstr "dan lebih banyak lagi untuk memberikan dukungan yang layak bagi pelanggan Anda. Tingkatkan kepuasan pelanggan!"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Tampilkan tombol \"Coba Dengan AI\" di halaman produk tunggal"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "Anda dapat sepenuhnya menyesuaikan posisi dan teks tombol \"Coba\" di tab <strong>Pengaturan Umum</strong>!"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "Ketika seorang pelanggan mengklik tombol Coba, antarmuka modal premium muncul. Mereka dapat dengan mudah menyeret dan menjatuhkan atau mengunggah foto referensi diri mereka. Mereka juga memiliki kotak teks untuk menambahkan instruksi skenario kustom (misalnya, <em>\"Berdiri di kafe modern\"</em>)."
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "Model Gemini Google (termasuk Imagen 3 dan Veo) memerlukan kunci API dari Google AI Studio. Anda dapat mendapatkan kunci API gratis dengan mengunjungi <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "Model OpenAI (seperti DALL-E 3) memerlukan akun platform OpenAI berbayar. Anda dapat menghasilkan kunci di <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">Kunci API OpenAI</a>."
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Pilih model Gemini Anda. Klik \"Ambil Model\" untuk memperbarui daftar jika Anda baru saja menambahkan kunci API Anda."
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "Anda dapat menggunakan berbagai Asisten GPT di halaman yang berbeda dengan Widget chatbot. Tempelkan shortcode contoh ini dan ganti ID Asisten sesuai kebutuhan: Contoh: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "Setelah Anda menambahkan kunci API OpenAI, seharusnya sudah mulai bekerja untuk pertanyaan umum. Buka jendela browser baru dalam mode Incognito dan uji dengan bertanya \"Apa ibu kota Rusia?\""
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:
+\n"
+"                "
+msgstr ""
+"a. Untuk melatih atau menyempurnakan model, pertama Anda perlu:
+\n"
+"                "
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+"b. Setelah Anda memiliki file JSONL Anda siap, silakan pergi ke bagian model Pelatihan.
+\n"
+"                Unggah file pelatihan Anda dalam format .JSONL."
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. Setelah pelatihan selesai dan file siap, itu akan mengembalikan model yang telah disempurnakan. Itu akan terdaftar di bawah Daftar Model yang Disempurnakan, status akan ditampilkan sebagai \"Berhasil\" dan Anda juga akan mendapatkan ID Model FT (Fine Tuned) (untuk disalin ke halaman pengaturan)."
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"Anda adalah asisten yang kadang-kadang salah mengeja kata\" },{ \"role\": \"user\", \"content\": \"Ceritakan sebuah cerita.\" }, { \"role\": \"assistant\", \"content\": \"Suatu hari seorang siswa pergi ke sekolah.\" }]}"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "Untuk hasil yang lebih baik, Anda memerlukan setidaknya 500+ prompt. Jika tidak, OpenAI akan mencampur respons dengan pengetahuan umum. Juga, prompt harus se-deskriptif mungkin. Ikuti format jenis FAQ dengan pertanyaan dan jawaban yang deskriptif. Contoh prompt: Alih-alih hanya \"Jaket Denim Vintage\" Anda dapat menulis \"Mengapa seseorang harus mengenakan Jaket Denim Vintage kami?\"."
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Jadwalkan pekerjaan cron untuk setiap peran jika belum dijadwalkan);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event untuk mengatur ulang jumlah batas yang digunakan
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Pastikan fungsi cron WordPress tersedia
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Masalah dalam memproses permintaan pengiriman formulir Anda! Mohon maaf atas ketidaknyamanan ini.<br> Silakan kirim email ke <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> dengan umpan balik apa pun. Kami akan segera menghubungi Anda!"
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Silakan perbarui WordPress</a>, dan kemudian <a href=\"%2$s\">pelajari lebih lanjut tentang memperbarui PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Silakan perbarui WordPress</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Pelajari lebih lanjut tentang memperbarui PHP</a>."

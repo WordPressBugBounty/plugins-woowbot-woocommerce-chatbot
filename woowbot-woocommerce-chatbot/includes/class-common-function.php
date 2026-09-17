@@ -75,7 +75,7 @@ class Qcld_WoowBot_Common_Functions {
                     foreach ( $post_ids as $post_id ) {
                         $url  = esc_url( get_permalink( $post_id ) );
                         $title = get_the_title( $post_id );
-                        $link = '<li><mark><a style="color: #000" href=' . $url . '>' . esc_html( $title ) . '</a><mark></li>';
+                        $link = '<li><mark><a class="qcld-chatbot-search-link" href=' . $url . '>' . esc_html( $title ) . '</a><mark></li>';
                         array_push( $links, $link );
                     }
                 }

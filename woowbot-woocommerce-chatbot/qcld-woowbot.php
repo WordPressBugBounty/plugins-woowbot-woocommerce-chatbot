@@ -4,7 +4,7 @@
     * Plugin URI: https://woowbot.pro/
     * Description: ChatBot for WooCommerce - WoowBot
     * Donate link: https://woowbot.pro/
-    * Version: 4.9.3
+    * Version: 4.9.5
     * @author    QuantumCloud
     * @category  WooCommerce
     * Author: ChatBot - WoowBot
@@ -12,14 +12,14 @@
     * Requires at least: 5.3
     * Tested up to: 7.1
     * Text Domain: woowbot-woocommerce-chatbot
-    * Domain Path: /lang
+    * Domain Path: /lang/
     * License: GPL2
     */
    
    
    if (!defined('ABSPATH')) exit; // Exit if accessed directly
    
-   define('QCLD_WOOCHATBOT_VERSION', '4.9.3');
+   define('QCLD_WOOCHATBOT_VERSION', '4.9.5');
    define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
    define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
@@ -114,7 +114,7 @@
    
            $promotion_img = QCLD_WOOCHATBOT_IMG_URL . "/cyber-25-woowbot.jpg";
          ?>
-         <div id="promotion-wpchatbots" data-dismiss-type="qcbot-feedback-notice" class="notice is-dismissible qcbot-feedback" style="background: #120976">
+          <div id="promotion-wpchatbots" data-dismiss-type="qcbot-feedback-notice" class="notice is-dismissible qcbot-feedback qcbot-feedback-notice-blue">
             <div class="">
                <div class="qc-review-text" >
                   <a href="https://woowbot.pro/pricing" target="_blank">
@@ -141,8 +141,8 @@
        );
        add_submenu_page(
          'woowbot',
-         esc_html('AI Settings'),
-         esc_html('AI Settings'),
+         esc_html('AI Settings', 'woowbot-woocommerce-chatbot'),
+         esc_html('AI Settings', 'woowbot-woocommerce-chatbot'),
          'manage_options',
          'chatbot_ai_setting',
          array($this, 'qcld_woo_chatbot_Ai_setting_func')
@@ -162,7 +162,7 @@
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended
         $page = isset($_GET['page']) ? sanitize_text_field(wp_unslash($_GET['page'])) : '';
 
-        if (($page == "woowbot") || ($hook == "widgets.php") || ($page == 'chatbot_ai_setting')) {
+        if (($page == "woowbot") || ($hook == "widgets.php") || ($page == 'chatbot_ai_setting') || ($page == 'qcld_woowbot_info_page')) {
 
             wp_enqueue_script('jquery');
 
@@ -322,6 +322,19 @@
        // Dashicons are not loaded on frontend by default.
        wp_enqueue_style('dashicons');
         wp_register_style('qcld-woo-chatbot-frontend-style', QCLD_WOOCHATBOT_PLUGIN_URL . 'css/frontend-style.css', array(), QCLD_WOOCHATBOT_VERSION, 'screen');
+        
+        $custom_css = '';
+        if ( get_option('woo_chatbot_custom_css') != "" ) {
+            $custom_css .= wp_strip_all_tags( get_option('woo_chatbot_custom_css') );
+        }
+        if ( get_option('qcld_woo_chatbot_change_bg') == 1 && get_option('qcld_woo_chatbot_board_bg_path') != "" ) {
+            $qcld_woo_chatbot_board_bg_path = get_option('qcld_woo_chatbot_board_bg_path');
+            $custom_css .= ' #woo-chatbot-ball-container:before { background-image: url(' . esc_url( $qcld_woo_chatbot_board_bg_path ) . ') !important; background-size: cover !important; background-position: center center !important; content: ""; position: absolute; inset: 0; filter: blur(6px); z-index: 0; } #woo-chatbot-ball-container { position: relative; overflow: hidden; }';
+        }
+        if ( !empty( $custom_css ) ) {
+            wp_add_inline_style('qcld-woo-chatbot-frontend-style', $custom_css);
+        }
+
         wp_enqueue_style('qcld-woo-chatbot-frontend-style');
    }
 
@@ -792,9 +805,9 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="row qcld-woo-chatbot-board-bg-container" <?php if (get_option('qcld_woo_chatbot_change_bg') != 1) {
-                                    echo 'style="display:none"';
-                                    } ?>>
+                                  <div class="row qcld-woo-chatbot-board-bg-container <?php if (get_option('qcld_woo_chatbot_change_bg') != 1) {
+                                     echo 'qcld-hidden';
+                                     } ?>">
                                     <div class="col-md-12 col-12">
                                        <p class="woo-chatbot-settings-instruction">
                                           <?php esc_html_e('Upload  message board background (Ideal image size 350px X 550px).', 'woowbot-woocommerce-chatbot'); ?>
@@ -820,11 +833,11 @@
                                        <p class="woo-chatbot-settings-instruction">
                                           <?php esc_html_e('Custom message board background', 'woowbot-woocommerce-chatbot'); ?>
                                        </p>
-                                       <?php if (get_option('qcld_woo_chatbot_board_bg_path') != "") { ?>
-                                       <img id="qcld_woo_chatbot_board_bg_image" style="height:100%;width:100%" src="<?php echo esc_url($qcld_woo_chatbot_board_bg_path); ?>" alt="">
-                                       <?php }else{ ?>
-                                       <img id="qcld_woo_chatbot_board_bg_image" style="height:100%;width:100%; display: none;" src="" alt="">
-                                       <?php } ?>
+                                        <?php if (get_option('qcld_woo_chatbot_board_bg_path') != "") { ?>
+                                        <img id="qcld_woo_chatbot_board_bg_image" class="qcld-w-100 qcld-h-100" src="<?php echo esc_url($qcld_woo_chatbot_board_bg_path); ?>" alt="">
+                                        <?php }else{ ?>
+                                        <img id="qcld_woo_chatbot_board_bg_image" class="qcld-w-100 qcld-h-100 qcld-hidden" src="" alt="">
+                                        <?php } ?>
                                     </div>
                                  </div>
                               </div>
@@ -964,22 +977,22 @@
                                     <?php wp_enqueue_style( 'qcpd-google-font-lato', 'https://fonts.googleapis.com/css?family=Lato', array(), QCLD_WOOCHATBOT_VERSION ); ?>
                                     <?php wp_enqueue_style( 'qcpd-style-addon-page', QCLD_WOOCHATBOT_PLUGIN_URL.'qc-support-promo-page/css/style.css', array(), QCLD_WOOCHATBOT_VERSION ); ?>
                                     <?php wp_enqueue_style( 'qcpd-style-responsive-addon-page', QCLD_WOOCHATBOT_PLUGIN_URL.'qc-support-promo-page/css/responsive.css', array(), QCLD_WOOCHATBOT_VERSION ); ?>
-                                    <div class="qc_support_container" style="background-color:#fff;border:none;">
-                                       <!--qc_support_container-->
-                                       <div class="qc_tabcontent clearfix-div">
-                                          <div class="qc-row">
-                                             <div class="wpbot-chatbot-pro-link">
-                                                <div class="support-block support-block-custom support-block-top">
-                                                   <div class="support-block-img">
-                                                      <a href="<?php echo esc_url('https://woowbot.pro/'); ?>" target="_blank"> <img src="<?php echo esc_url(QCLD_WOOCHATBOT_PLUGIN_URL.'images/logo-woow.png'); ?>" /></a>
-                                                   </div>
-                                                   <div class="support-block-info" style="    padding: 0 40px;">
-                                                      <h4><a style="color: #a0408d;font-weight: bold; font-size: 26px;" href="<?php echo esc_url('https://woowbot.pro/'); ?>" target="_blank"><?php esc_html_e('Get the #1 ChatBot for WooCommerce – WoowBot Pro', 'woowbot-woocommerce-chatbot'); ?></a></h4>
-                                                      <p style="text-align: center;">			
-                                                         <?php esc_html_e('WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!', 'woowbot-woocommerce-chatbot'); ?>
-                                                      </p>
-                                                      <p style="text-align: center;"><?php esc_html_e('The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!', 'woowbot-woocommerce-chatbot'); ?>	
-                                                      </p>
+                                     <div class="qc_support_container qc-support-container-clean">
+                                        <!--qc_support_container-->
+                                        <div class="qc_tabcontent clearfix-div">
+                                           <div class="qc-row">
+                                              <div class="wpbot-chatbot-pro-link">
+                                                 <div class="support-block support-block-custom support-block-top">
+                                                    <div class="support-block-img">
+                                                       <a href="<?php echo esc_url('https://woowbot.pro/'); ?>" target="_blank"> <img src="<?php echo esc_url(QCLD_WOOCHATBOT_PLUGIN_URL.'images/logo-woow.png'); ?>" /></a>
+                                                    </div>
+                                                    <div class="support-block-info support-block-info-padded">
+                                                       <h4><a class="woowbot-pro-promo-title" href="<?php echo esc_url('https://woowbot.pro/'); ?>" target="_blank"><?php esc_html_e('Get the #1 ChatBot for WooCommerce – WoowBot Pro', 'woowbot-woocommerce-chatbot'); ?></a></h4>
+                                                       <p class="qcld-text-center">			
+                                                          <?php esc_html_e('WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!', 'woowbot-woocommerce-chatbot'); ?>
+                                                       </p>
+                                                       <p class="qcld-text-center"><?php esc_html_e('The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!', 'woowbot-woocommerce-chatbot'); ?>	
+                                                       </p>
                                                       <a class="IncreaseSales" href="<?php echo esc_url('https://woowbot.pro/'); ?>" target="_blank"><?php esc_html_e('Get the WoowBot Pro Now and Increase Sales!', 'woowbot-woocommerce-chatbot'); ?></a>
                                                    </div>
                                                 </div>
@@ -1173,7 +1186,7 @@
                                                    </div>
                                                    <div class="support-block-info">
                                                       <h4><a href="<?php echo esc_url('https://www.quantumcloud.net/products/themes/woowbot-theme/'); ?>" target="_blank"><?php esc_html_e('WoowBot Master Theme', 'woowbot-woocommerce-chatbot'); ?></a></h4>
-                                                      <p style="margin-top: -18px;"><?php esc_html_e('Get a WoowBot Powered Theme!', 'woowbot-woocommerce-chatbot'); ?></p>
+                                                      <p class="qcld-mt-neg-18"><?php esc_html_e('Get a WoowBot Powered Theme!', 'woowbot-woocommerce-chatbot'); ?></p>
                                                    </div>
                                                 </div>
                                              </div>
@@ -1204,31 +1217,31 @@
 
                         <div class="wp-chatbot-admingradient-color">
                             <img class="wp-chatbot-admin-banner" src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/template-sample.png' ); ?>" alt="">
-                                <h3 class="wp-chatbot-admincart-title">Upgrade To <span>Pro</span></h3>
+                                <h3 class="wp-chatbot-admincart-title"><?php esc_html_e( 'Upgrade To', 'woowbot-woocommerce-chatbot' ); ?> <span><?php esc_html_e( 'Pro', 'woowbot-woocommerce-chatbot' ); ?></span></h3>
                                 <ul class="feature-list">
                                         
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Core ChatBot Pro</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WooCommerce module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Chat Sessions and Histories</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended Search Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Simple text Responses Pro Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Conversational Forms Pro Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">OpenAI Pro Adv.(Training, Fine Tuning, Assistant)</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Live (Human) Chat Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Tavily Search API module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Extended UI Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WebHook & Mailing List Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">White Label Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">FaceBook Messenger Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">WhatsApp through Twilio Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Multi Language Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Voice Message Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Telegram Module</li>
-                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt="">Priority Technical Support</li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Core ChatBot Pro', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WooCommerce module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Chat Sessions and Histories', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended Search Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Simple text Responses Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Conversational Forms Pro Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'OpenAI Pro Adv.(Training, Fine Tuning, Assistant)', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Live (Human) Chat Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Tavily Search API module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Extended UI Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WebHook & Mailing List Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'White Label Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'FaceBook Messenger Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'WhatsApp through Twilio Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Multi Language Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Voice Message Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Telegram Module', 'woowbot-woocommerce-chatbot' ); ?></li>
+                                    <li><img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/check2.svg' ); ?>" alt=""><?php esc_html_e( 'Priority Technical Support', 'woowbot-woocommerce-chatbot' ); ?></li>
 
                                 </ul>
 
-                            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="https://woowbot.pro/pricing/">Upgrade to Pro <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>"" alt=""></a>
+                            <a class="wp-chatbot-admin-pro-upgrade-button" target="_blank" href="<?php echo esc_url( 'https://woowbot.pro/pricing/');?>"><?php esc_html_e( 'Upgrade to Pro', 'woowbot-woocommerce-chatbot' ); ?> <img src="<?php echo esc_url( QCLD_WOOCHATBOT_PLUGIN_URL . '/images/external-white.svg' ); ?>" alt=""></a>
                         </div>
 
                         </div>
@@ -1264,39 +1277,39 @@
 
          <div id="qcld-quick-flyout" >
             <div class="qcld-quick-flyout-items">
-            <a href="https://woowbot.pro/docs/kb-sections/getting-started/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium" rel="noopener noreferrer" target="_blank" style="transition-delay: 0ms;">
+            <a href="<?php echo esc_url( 'https://woowbot.pro/docs/kb-sections/getting-started/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium qcld-flyout-delay-0" rel="noopener noreferrer">
                         <div class="qcld-quick-flyout-label">
-                           <div>Getting Started</div>
+                           <div><?php esc_html_e( 'Getting Started', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-admin-home"></i>
                      </a>
-                     <a href="https://woowbot.pro/faq/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 60ms;">
+                     <a href="<?php echo esc_url( 'https://woowbot.pro/faq/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-flyout-delay-60" rel="noopener noreferrer">
                         <div class="qcld-quick-flyout-label">
-                           <div>FAQ</div>
+                           <div><?php esc_html_e( 'FAQ', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-flag"></i>
                      </a>
-                     <a href="https://woowbot.pro/docs/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" style="transition-delay: 90ms;">
+                     <a href="<?php echo esc_url( 'https://woowbot.pro/docs/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-flyout-delay-90">
                         <div class="qcld-quick-flyout-label">
-                           <div>Read the Documentation</div>
+                           <div><?php esc_html_e( 'Read the Documentation', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-sos"></i>
                      </a>
-                     <a href="https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" rel="noopener noreferrer" target="_blank" style="transition-delay: 120ms;">
+                     <a href="<?php echo esc_url( 'https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-flyout-delay-120" rel="noopener noreferrer">
                         <div class="qcld-quick-flyout-label">
-                           <div>Ask for Help</div>
+                           <div><?php esc_html_e( 'Ask for Help', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-email"></i>
                      </a>           
-                     <a href="https://www.woowbot.pro/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item" style="transition-delay: 30ms;">
+                     <a href="<?php echo esc_url( 'https://woowbot.pro/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-flyout-delay-30">
                         <div class="qcld-quick-flyout-label">
-                           <div>Check out the WoowBot Demo</div>
+                           <div><?php esc_html_e( 'Check out the WoowBot Demo', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-welcome-view-site"></i>
                      </a>
-                     <a href="https://www.woowbot.pro/pricing/" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium" rel="noopener noreferrer" target="_blank" style="transition-delay: 0ms;">
+                     <a href="<?php echo esc_url( 'https://woowbot.pro/pricing/');?>" target="_blank" class="qcld-quick-flyout-button qcld-quick-flyout-item qcld-quick-flyout-premium qcld-flyout-delay-0" rel="noopener noreferrer">
                         <div class="qcld-quick-flyout-label">
-                           <div>Upgrade to Premium</div>
+                           <div><?php esc_html_e( 'Upgrade to Premium', 'woowbot-woocommerce-chatbot' ); ?></div>
                         </div>
                         <i class="dashicons dashicons-star-filled"></i>
                      </a>
@@ -1305,7 +1318,7 @@
                <div class="qcld-quick-flyout-label">
                      <div>Start Here</div>
                </div>
-               <img style="width:100%" src="<?php echo esc_url( QCLD_WOOCHATBOT_IMG_URL . '/icon-256x256.jpg' ); ?>" alt="Dialogflow CX">
+               <img class="qcld-w-100" src="<?php echo esc_url( QCLD_WOOCHATBOT_IMG_URL . '/icon-256x256.jpg' ); ?>" alt="Dialogflow CX">
             </a>
          </div>
 
@@ -1605,7 +1618,7 @@
                );
                ?>
          </p>
-         <div style="clear:both;"></div>
+         <div class="qcld-clear-both"></div>
       </div>
                   <?php
                   endif;
@@ -1760,46 +1773,16 @@
                   $screen = get_current_screen();
                   if ( is_admin() && ($screen->base == 'toplevel_page_woowbot') ) {
                   ?>
-                  <style>
-                     i.woobot_btn {
-                     width: 60px !important;
-                     background-size: 60px 20px;
-                     background-repeat: no-repeat;
-                     }
-                     .woowbot_info_carousel {
-                     padding:10px;
-                     width: 100%;
-                     margin-left: 15px;
-                     }
-                     .woowbot_info_carousel .slick-next {
-                     right: 0px;
-                     }
-                     .woowbot-notice {
-                     background: #9b8fd8;
-                     color: #fff;
-                     }
-                     .woowbot-notice {
-                     border-left-color: #f50029;
-                     }
-                     .woowbot-notice .notice-dismiss {
-                     top: 1px;
-                     right: -6px;
-                     }
-                     .woowbot_info_carousel .slick-slide {
-                     font-size: 15px;
-                     line-height: 1.4em;
-                     }
-                  </style>
-      <div class="notice notice-info is-dismissible woowbot-notice" style="display:none;width: 100%;">
+      <div class="notice notice-info is-dismissible woowbot-notice">
          <div class="woowbot_info_carousel">
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Want to make WoowBot Really intelligent with', 'woowbot-woocommerce-chatbot'); ?> <strong style="color:#d63638"><?php esc_html_e('AI and Natural Language Processing?', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('Upgrade to the Pro version', 'woowbot-woocommerce-chatbot'); ?> </div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot Pro is integrated with', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('OpenAI ChatGPT and DialogFlow AI', 'woowbot-woocommerce-chatbot'); ?></strong> </div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: ', 'woowbot-woocommerce-chatbot'); ?>  <strong style="color: #d63638"><?php esc_html_e('Use ChatGPT to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('answer  questions and provide real customer support', 'woowbot-woocommerce-chatbot'); ?></div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Are your customers not completing orders? Find out with the', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('Customer Conversion report', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('in the Pro version', 'woowbot-woocommerce-chatbot'); ?>.</div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip:', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('Use WoowBot Pro to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('provide live chat suport to your customers!', 'woowbot-woocommerce-chatbot'); ?></div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Utilize Onsite Retargeting for', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('Exit Intent or Scroll down Popups', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('with WoowBot Pro. Increase sales by 50% or more!', 'woowbot-woocommerce-chatbot'); ?></div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Setting up WoowBot pro is easy and quick!', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('Plug and Play', 'woowbot-woocommerce-chatbot'); ?></strong>. <?php esc_html_e('No complex bot training required!', 'woowbot-woocommerce-chatbot'); ?> </div>
-            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot pro integrates with', 'woowbot-woocommerce-chatbot'); ?> <strong style="color: #d63638"><?php esc_html_e('Facebook, Instagram, Telegram', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('and more to give your customers the support they deserve. Increase customer satisfaction!', 'woowbot-woocommerce-chatbot'); ?> </div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Want to make WoowBot Really intelligent with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('AI and Natural Language Processing?', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('Upgrade to the Pro version', 'woowbot-woocommerce-chatbot'); ?> </div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot Pro is integrated with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('OpenAI ChatGPT and DialogFlow AI', 'woowbot-woocommerce-chatbot'); ?></strong> </div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: ', 'woowbot-woocommerce-chatbot'); ?>  <strong class="qcld-tip-highlight"><?php esc_html_e('Use ChatGPT to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('answer  questions and provide real customer support', 'woowbot-woocommerce-chatbot'); ?></div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Are your customers not completing orders? Find out with the', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Customer Conversion report', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('in the Pro version', 'woowbot-woocommerce-chatbot'); ?>.</div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip:', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Use WoowBot Pro to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('provide live chat suport to your customers!', 'woowbot-woocommerce-chatbot'); ?></div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Utilize Onsite Retargeting for', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Exit Intent or Scroll down Popups', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('with WoowBot Pro. Increase sales by 50% or more!', 'woowbot-woocommerce-chatbot'); ?></div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Setting up WoowBot pro is easy and quick!', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Plug and Play', 'woowbot-woocommerce-chatbot'); ?></strong>. <?php esc_html_e('No complex bot training required!', 'woowbot-woocommerce-chatbot'); ?> </div>
+            <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot pro integrates with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Facebook, Instagram, Telegram', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('and more to give your customers the support they deserve. Increase customer satisfaction!', 'woowbot-woocommerce-chatbot'); ?> </div>
          </div>
       </div>
       <?php
@@ -1810,3 +1793,18 @@ if( is_admin() ){
 require_once("class-plugin-deactivate-feedback.php");
 $wowbot_feedback = new Wp_Usage_Feedback( __FILE__, 'plugins@quantumcloud.net', false, true );
 }
+
+
+if ( ! function_exists( 'qcld_chatbot_activation_redirect' ) ) {
+  function qcld_chatbot_activation_redirect( $plugin ) {
+
+    $screen = get_current_screen();
+
+    if( ( isset( $screen->base ) && $screen->base == 'plugins' ) && $plugin == plugin_basename( __FILE__ ) ) {
+
+      exit( esc_url( wp_safe_redirect( admin_url( 'admin.php?page=woowbot') ) ) );
+    }
+
+  }
+}
+add_action( 'activated_plugin', 'qcld_chatbot_activation_redirect' );

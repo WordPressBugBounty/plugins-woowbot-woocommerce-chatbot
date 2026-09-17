@@ -98,7 +98,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 		function func_show_upgrade_link_with_action_links( $links )
 		{
 			$links = array_merge( $links, array(
-				'<a title="'.esc_attr($this->link_text).'" class="'.esc_attr($this->link_class).'" style="font-weight: bold; color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" target="'.esc_attr($this->link_target).'">' . esc_html($this->link_text, 'woowbot-woocommerce-chatbot') . '</a>'
+				'<a title="'.esc_attr($this->link_text).'" class="qc-upgrade-link-bold '.esc_attr($this->link_class).'" style="color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" target="'.esc_attr($this->link_target).'">' . esc_attr($this->link_text) . '</a>'
 			) );
 			
 			return $links;
@@ -135,7 +135,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 			if ( strpos( $file, "$this->plugin_main_file" ) !== false ) {
 			
 				$new_links = array(
-					'<a class="'.esc_attr($this->link_class).'" style="font-weight: bold; color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" title="'.esc_attr($this->link_text).'" target="'.esc_attr($this->link_target).'">' . esc_html($this->link_text, 'woowbot-woocommerce-chatbot') . '</a>'
+					'<a class="qc-upgrade-link-bold '.esc_attr($this->link_class).'" style="color: '.esc_attr($this->link_color).';" href="' . esc_url( $this->upgrade_link ) . '" title="'.esc_attr($this->link_text).'" target="'.esc_attr($this->link_target).'">' . esc_attr($this->link_text) . '</a>'
 				);
 				
 				$links = array_merge( $links, $new_links );
@@ -173,7 +173,7 @@ if( !class_exists('QcPluginUpgradeToProNotice') )
 		     return;
 		    }
 
-		    $link_text = '<span class="qc-up-pro-link" style="font-weight: bold; padding: 5px; background: #2271B1; border-radius: 4px; line-height: 27px; padding: 3px 10px; color: '.esc_attr($this->link_color).'">'.esc_html($this->link_text, 'woowbot-woocommerce-chatbot').'</span>';
+		    $link_text = '<span class="qc-up-pro-link" style="font-weight: bold; padding: 5px; background: #2271B1; border-radius: 4px; line-height: 27px; padding: 3px 10px;color: '.esc_attr($this->link_color).'">'.esc_attr($this->link_text).'</span>';
 			if($current_user->roles[0]!='subscriber')
 				$submenu["$this->plugin_menu_slug"][402] = array( $link_text, 'activate_plugins' , $this->upgrade_link );
 

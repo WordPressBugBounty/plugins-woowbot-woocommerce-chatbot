@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
 "Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
-"POT-Creation-Date: 2026-09-14 11:50+0000\n"
-"PO-Revision-Date: 2026-09-14 11:50+0000\n"
+"POT-Creation-Date: 2026-09-15 09:54+0000\n"
+"PO-Revision-Date: 2026-09-15 09:54+0000\n"
 "Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
 "Language-Team: 日本語 (Japanese)\n"
 "Language: ja\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
 
 msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
-msgstr "プラグイン情報を検出できません。これはおそらく、プラグインのメインファイルにコードが含まれていないためです。"
+msgstr "プラグイン情報を検出できません。これは、おそらくプラグインのメインファイルにコードが含まれていないためです。"
 
 msgid "Sorry to see you go"
 msgstr "お別れするのは残念です"
@@ -25,7 +25,7 @@ msgid "Need More Features"
 msgstr "もっと機能が必要です"
 
 msgid "Deactivating Temporarily"
-msgstr "一時的に無効化しています"
+msgstr "一時的に無効化中"
 
 msgid "Upgrading to Pro"
 msgstr "Proにアップグレード中"
@@ -76,10 +76,10 @@ msgid "IP Address"
 msgstr "IPアドレス"
 
 msgid "Mail Generated on"
-msgstr "生成されたメール"
+msgstr "メール生成日"
 
 msgid "Click for Product Details"
-msgstr "製品の詳細をクリック"
+msgstr "製品詳細をクリック"
 
 msgid "AI Settings"
 msgstr "AI設定"
@@ -129,8 +129,8 @@ msgstr "%sのレート制限"
 msgid "Timeframe:"
 msgstr "時間枠:"
 
-msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
-msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+msgid "rate_limit_timeframe_' . $role_key ); ?>\\"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\\"
 
 msgid "48 Hours"
 msgstr "48時間"
@@ -162,8 +162,11 @@ msgstr "&laquo;"
 msgid "&raquo;"
 msgstr "&raquo;"
 
+msgid "%s item"
+msgstr "%sアイテム"
+
 msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
-msgstr "<strong>WooCommerce用AIトライオンアドオン</strong>は、WooCommerceがインストールされていてアクティブである必要があります。プラグインの機能はWooCommerceがアクティブになるまで機能しません。"
+msgstr "<strong>WooCommerce用AIトライオンアドオン</strong>は、WooCommerceがインストールされていてアクティブである必要があります。プラグインの機能は、WooCommerceがアクティブになるまで機能しません。"
 
 msgid "AI Try-On Configurations"
 msgstr "AIトライオン設定"
@@ -175,136 +178,136 @@ msgid "Prompts"
 msgstr "プロンプト"
 
 msgid "Help"
-msgstr "すべてのAIトライオン設定を一箇所で構成します。"
+msgstr "ヘルプ"
 
 msgid "Configure all your AI Try-On settings in one place."
-msgstr "トライオンボタンを有効にする"
+msgstr "すべてのAIトライオン設定を一箇所で構成します。"
 
 msgid "Enable Try-On Button"
-msgstr "単一製品ページに「AIでトライオン」ボタンを表示"
+msgstr "トライオンボタンを有効にする"
 
-msgid "Show the \"Try On with AI\" button on single product pages"
-msgstr "ログインを要求"
+msgid "Show the \\"
+msgstr "表示する \\"
 
 msgid "Require Login"
-msgstr "ログインユーザーのみにトライオン機能を表示"
+msgstr "ログインを要求"
 
 msgid "Show the Try-On feature for logged-in users only"
-msgstr "カートに追加ボタンを表示"
+msgstr "ログインユーザーのみにトライオン機能を表示"
 
 msgid "Show Add to Cart Button"
-msgstr "トライオンモーダルのフッターに「カートに追加」ボタンを表示"
+msgstr "カートに追加ボタンを表示"
 
 msgid "Show the 'Add to Cart' button in the Try-On modal footer"
-msgstr "デイリー生成制限"
+msgstr "トライオンモーダルのフッターに「カートに追加」ボタンを表示"
 
 msgid "Daily Generation Limit"
-msgstr "例：5（無制限にするには空白のままにする）"
+msgstr "日次生成制限"
 
 msgid "e.g. 5 (Leave blank for unlimited)"
-msgstr "セッションごと+ IPごとの画像と動画生成を24時間制限します。無制限にするには空白または0にしてください。"
+msgstr "例: 5 (無制限の場合は空白のままにする)"
 
 msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
-msgstr "トライオンボタンの位置"
+msgstr "セッションごと + IPごとの画像と動画生成を24時間制限します。無制限の場合は空白または0にしてください。"
 
 msgid "Try-On Button Position"
-msgstr "デフォルト"
+msgstr "トライオンボタンの位置"
 
 msgid "Default"
-msgstr "製品概要内"
+msgstr "デフォルト"
 
 msgid "Inside Product Summary"
-msgstr "カートの前"
+msgstr "製品概要内"
 
 msgid "Before Cart"
-msgstr "カートフォームの上"
+msgstr "カートの前"
 
 msgid "Above Add to Cart Form"
-msgstr "カートの後"
+msgstr "カートフォームの上"
 
 msgid "After Cart"
-msgstr "カートフォームの下"
+msgstr "カートの後"
 
 msgid "Below Add to Cart Form"
-msgstr "メタの前"
+msgstr "カートフォームの下"
 
 msgid "Before Meta"
-msgstr "カテゴリ/タグの上"
+msgstr "メタの前"
 
 msgid "Above Categories/Tags"
-msgstr "メタの後"
+msgstr "カテゴリ/タグの上"
 
 msgid "After Meta"
-msgstr "カテゴリ/タグの下"
+msgstr "メタの後"
 
 msgid "Below Categories/Tags"
-msgstr "概要の下"
+msgstr "カテゴリ/タグの下"
 
 msgid "Below Summary"
-msgstr "製品詳細の下部"
+msgstr "概要の下"
 
 msgid "At bottom of product details"
-msgstr "概要の上"
+msgstr "製品詳細の一番下"
 
 msgid "Above Summary"
-msgstr "製品詳細の最上部"
+msgstr "概要の上"
 
 msgid "At very top of product details"
-msgstr "トライオンボタンアイコン"
+msgstr "製品詳細の一番上"
 
 msgid "Try-On Button Icon"
-msgstr "スパークル"
+msgstr "トライオンボタンアイコン"
 
 msgid "Sparkles"
-msgstr "魔法の杖"
+msgstr "スパークル"
 
 msgid "Magic Wand"
-msgstr "シャツ"
+msgstr "魔法の杖"
 
 msgid "Shirt"
-msgstr "アイコンなし"
+msgstr "シャツ"
 
 msgid "No Icon"
-msgstr "ボタンテキストの前に表示する絵文字アイコンを選択してください。"
+msgstr "アイコンなし"
 
 msgid "Select an emoji icon to display before the button text."
-msgstr "あなたの写真で試すボタンテキスト"
+msgstr "ボタンテキストの前に表示する絵文字アイコンを選択してください。"
 
 msgid "Try with your photo Button Text"
-msgstr "フロントエンドボタンに表示されるテキスト。"
+msgstr "あなたの写真で試すボタンテキスト"
 
 msgid "The text displayed on the frontend button."
-msgstr "デフォルトの動画の長さ"
+msgstr "フロントエンドボタンに表示されるテキスト。"
 
 msgid "Default Video Duration"
-msgstr "(Pro機能)"
+msgstr "デフォルトの動画の長さ"
 
 msgid "(Pro Feature)"
-msgstr "4秒"
+msgstr "(Pro機能)"
 
 msgid "4 Seconds"
-msgstr "標準生成"
+msgstr "4秒"
 
 msgid "Standard generation"
-msgstr "8秒"
+msgstr "標準生成"
 
 msgid "8 Seconds"
-msgstr "拡張生成"
+msgstr "8秒"
 
 msgid "Extended generation"
-msgstr "生成される動画の長さを選択してください。(Proで利用可能)"
+msgstr "拡張生成"
 
 msgid "Select the length of the generated video. (Available in Pro)"
-msgstr "動画解像度"
+msgstr "生成される動画の長さを選択してください。(Proで利用可能)"
 
 msgid "Video Resolution"
-msgstr "720p"
+msgstr "動画解像度"
 
 msgid "720p"
-msgstr "標準定義"
+msgstr "720p"
 
 msgid "Standard Definition"
-msgstr "1080p"
+msgstr "標準定義"
 
 msgid "1080p"
 msgstr "1080p"
@@ -364,7 +367,7 @@ msgid "Use placeholders:"
 msgstr "プレースホルダーを使用:"
 
 msgid "to structure how the final combined prompt is sent."
-msgstr "最終的に結合されたプロンプトがどのように送信されるかを構成します。"
+msgstr "最終的に結合されたプロンプトがどのように送信されるかを構造化します。"
 
 msgid "Quick Start Guide"
 msgstr "クイックスタートガイド"
@@ -381,14 +384,14 @@ msgstr "このプラグインを使用すると、顧客は最先端の生成AI�
 msgid "Pro Tip:"
 msgstr "プロのヒント:"
 
-msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
-msgstr "<strong>一般設定</strong>タブで「試着」ボタンの位置とテキストを完全にカスタマイズできます！"
+msgid "You can completely customize the \\"
+msgstr "完全にカスタマイズできます。"
 
 msgid "1. Customer Experience"
 msgstr "1. 顧客体験"
 
-msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
-msgstr "顧客が試着ボタンをクリックすると、プレミアムモーダルインターフェースがスライドアップします。顧客は自分の参照写真を簡単にドラッグ＆ドロップまたはアップロードできます。また、カスタムシナリオ指示を追加するためのテキストボックスもあります（例：<em>「現代のカフェに立っている」</em>）。"
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\\"
+msgstr "顧客がトライオンボタンをクリックすると、プレミアムモーダルインターフェースがスライドアップします。顧客は自分の参照写真を簡単にドラッグ＆ドロップまたはアップロードできます。また、カスタムシナリオ指示を追加するためのテキストボックスもあります（例：<em>"
 
 msgid "2. The Generation Process"
 msgstr "2. 生成プロセス"
@@ -403,19 +406,19 @@ msgid "Images:"
 msgstr "画像:"
 
 msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
-msgstr "Google Gemini（Imagen 3）またはOpenAI（DALL-E 3）によって即座に生成されます。"
+msgstr "Google Gemini（Imagen 3）またはOpenAI（DALL-E 3）によって瞬時に生成されます。"
 
 msgid "Videos:"
 msgstr "ビデオ:"
 
 msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
-msgstr "Googleの最先端の<strong>Veo</strong>モデルによって独占的に提供されます。ビデオ生成には数分かかる場合があります。プラグインは、顧客がページを離れることなくリアルタイムのステータス更新を確認できるように、バックグラウンドでGoogleのサーバーを継続的にポーリングすることで、これを優雅に処理します。"
+msgstr "Googleの最先端の<strong>Veo</strong>モデルによってのみ提供されます。ビデオ生成には数分かかる場合があります。プラグインは、顧客がページを離れることなくリアルタイムのステータス更新を確認できるように、バックグラウンドでGoogleのサーバーを継続的にポーリングすることで、これを優雅に処理します。"
 
 msgid "API Keys & Configuration"
 msgstr "APIキーと設定"
 
 msgid "Before the Try-On button will function, you must configure your AI providers."
-msgstr "試着ボタンが機能する前に、AIプロバイダーを設定する必要があります。"
+msgstr "トライオンボタンを機能させるには、AIプロバイダーを設定する必要があります。"
 
 msgid "Important:"
 msgstr "重要:"
@@ -426,14 +429,14 @@ msgstr "AI設定タブで選択したモデルの隣にある<strong>確認</str
 msgid "Getting a Google Gemini Key"
 msgstr "Google Geminiキーの取得"
 
-msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
-msgstr "GoogleのGeminiモデル（Imagen 3およびVeoを含む）には、Google AI StudioからのAPIキーが必要です。<a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>を訪問することで、無料のAPIキーを取得できます。"
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\\"
+msgstr "GoogleのGeminiモデル（Imagen 3およびVeoを含む）には、Google AI StudioからのAPIキーが必要です。&lt;a href=&quot;"
 
 msgid "Getting an OpenAI Key"
 msgstr "OpenAIキーの取得"
 
-msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
-msgstr "OpenAIのモデル（DALL-E 3など）には、有料のOpenAIプラットフォームアカウントが必要です。<a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI APIキー</a>でキーを生成できます。"
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\\"
+msgstr "OpenAIのモデル（DALL-E 3など）には、有料のOpenAIプラットフォームアカウントが必要です。&lt;a href=&quot;"
 
 msgid "Need Support?"
 msgstr "サポートが必要ですか？"
@@ -478,7 +481,7 @@ msgid "OpenAI API Key"
 msgstr "OpenAI APIキー"
 
 msgid "Test Connection"
-msgstr "接続テスト"
+msgstr "接続をテスト"
 
 msgid "OpenAI Image Model"
 msgstr "OpenAI画像モデル"
@@ -493,7 +496,7 @@ msgid "Google Gemini Integration Settings"
 msgstr "Google Gemini統合設定"
 
 msgid "Powered by Veo for Video"
-msgstr "ビデオ用のVeoによって提供"
+msgstr "ビデオ用のVeoによって提供されます"
 
 msgid "Gemini API Key"
 msgstr "Gemini APIキー"
@@ -511,7 +514,7 @@ msgid " ( Recommended )"
 msgstr "（推奨）"
 
 msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
-msgstr "ビデオ試着生成のためのGoogle Veoモデルを選択してください。（Pro版で利用可能）"
+msgstr "ビデオトライオン生成のためのGoogle Veoモデルを選択してください。（Pro版で利用可能）"
 
 msgid "API Key is empty."
 msgstr "APIキーが空です。"
@@ -535,7 +538,7 @@ msgid "Generation failed. (HTTP %s)"
 msgstr "生成に失敗しました。（HTTP %s）"
 
 msgid "Model verified successfully."
-msgstr "モデルの確認に成功しました。"
+msgstr "モデルが正常に確認されました。"
 
 msgid "Model verification failed. (HTTP %s)"
 msgstr "モデルの確認に失敗しました。（HTTP %s）"
@@ -547,7 +550,7 @@ msgid "OpenAI API Request Failed: "
 msgstr "OpenAI APIリクエストに失敗しました: "
 
 msgid "Generation execution failure. %s"
-msgstr "生成実行に失敗しました。 %s"
+msgstr "生成実行の失敗。 %s"
 
 msgid "OpenAI Error: "
 msgstr "OpenAIエラー: "
@@ -574,7 +577,7 @@ msgid "No media data provided."
 msgstr "メディアデータが提供されていません。"
 
 msgid "Invalid base64 data."
-msgstr "無効なbase64データ。"
+msgstr "無効なbase64データです。"
 
 msgid "Failed to decode base64."
 msgstr "base64のデコードに失敗しました。"
@@ -586,13 +589,13 @@ msgid "Failed to save base64 media."
 msgstr "base64メディアの保存に失敗しました。"
 
 msgid "Failed to download media from URL."
-msgstr "URLからメディアをダウンロードできませんでした。"
+msgstr "URLからメディアのダウンロードに失敗しました。"
 
 msgid "Failed to save downloaded media."
 msgstr "ダウンロードしたメディアの保存に失敗しました。"
 
 msgid "Invalid media format."
-msgstr "無効なメディアフォーマット。"
+msgstr "無効なメディアフォーマットです。"
 
 msgid "Reset!"
 msgstr "リセット！"
@@ -610,7 +613,7 @@ msgid "Unknown error"
 msgstr "不明なエラー"
 
 msgid "Request failed: "
-msgstr "リクエストが失敗しました: "
+msgstr "リクエストに失敗しました: "
 
 msgid "Please select a model first."
 msgstr "最初にモデルを選択してください。"
@@ -622,10 +625,10 @@ msgid "Testing..."
 msgstr "テスト中..."
 
 msgid "Verified! Model accepts this modality."
-msgstr "確認完了！モデルはこのモダリティを受け入れます。"
+msgstr "確認済み！モデルはこのモダリティを受け入れます。"
 
 msgid "AJAX request failed."
-msgstr "AJAXリクエストが失敗しました。"
+msgstr "AJAXリクエストに失敗しました。"
 
 msgid "Recommended (Optimal speed & pricing rate)"
 msgstr "推奨（最適な速度と価格）"
@@ -634,7 +637,7 @@ msgid "Processing..."
 msgstr "処理中..."
 
 msgid "Generating Video (This may take up to 5 minutes)..."
-msgstr "ビデオを生成中（最大5分かかる場合があります）..."
+msgstr "ビデオ生成中（最大5分かかる場合があります）..."
 
 msgid "Status Check Error: "
 msgstr "ステータスチェックエラー: "
@@ -735,7 +738,7 @@ msgstr "マジックを生成中..."
 msgid "Add to Cart"
 msgstr "カートに追加"
 
-msgid "AI Analyst"
+msgid "AI Business Analyst"
 msgstr "AIアナリスト"
 
 msgid "AI Store Analyst"
@@ -745,13 +748,13 @@ msgid "WooCommerce Intelligence"
 msgstr "WooCommerceインテリジェンス"
 
 msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
-msgstr "AIによる即時の販売インサイト、予測インテリジェンス、深い分析。"
+msgstr "AIによる瞬時の販売インサイト、予測インテリジェンス、深い分析。"
 
 msgid "Active AI Provider"
 msgstr "アクティブAIプロバイダー"
 
 msgid "Ready to analyze your store"
-msgstr "ストアの分析の準備ができました"
+msgstr "ストアを分析する準備ができました"
 
 msgid "Clear Conversation History"
 msgstr "会話履歴をクリア"
@@ -763,13 +766,13 @@ msgid "Ask a question"
 msgstr "質問をする"
 
 msgid "Ask about sales, best-selling products, customers, trends…"
-msgstr "販売、ベストセラー商品、顧客、トレンドについて尋ねる…"
+msgstr "販売、ベストセラー商品、顧客、トレンドについて質問してください…"
 
 msgid "Send question"
 msgstr "質問を送信"
 
 msgid "Press Enter ↵ to send • Shift + Enter for new line"
-msgstr "Enter ↵ を押して送信 • Shift + Enter で改行"
+msgstr "Enter ↵を押して送信 • Shift + Enterで改行"
 
 msgid "Store Insights"
 msgstr "ストアインサイト"
@@ -778,7 +781,7 @@ msgid "AI Growth Recommendation"
 msgstr "AI成長推奨"
 
 msgid "Analyzing recent store orders and performance…"
-msgstr "最近のストアの注文とパフォーマンスを分析中…"
+msgstr "最近のストア注文とパフォーマンスを分析中…"
 
 msgid "Performance Overview"
 msgstr "パフォーマンス概要"
@@ -799,13 +802,13 @@ msgid "No qualifying orders were found in the last 30 days. Check traffic, check
 msgstr "過去30日間に該当する注文は見つかりませんでした。まずはトラフィック、チェックアウトエラー、注文ステータス設定を確認してください。"
 
 msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
-msgstr "注文は %s%% 減少しています。トラフィックとリピート購入者の回復に注力してください。アナリストにどの顧客が最も戻ってくる可能性が高いかを尋ねてください。"
+msgstr "注文は%s%%減少しています。トラフィックとリピート購入者の回復に注力し、どの顧客が最も戻ってくる可能性が高いかをアナリストに尋ねてください。"
 
 msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
-msgstr "平均注文額は %s%% 減少しています。購入された製品レポートを使用してバンドルをテストしてください。"
+msgstr "平均注文額は%s%%減少しています。購入された製品レポートを使用してバンドルをテストしてください。"
 
 msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
-msgstr "%s が最近の収益をリードしています。頻繁に購入される製品と組み合わせて、バンドルを目立たせてください。"
+msgstr "%sが最近の収益をリードしています。頻繁に購入される製品と組み合わせて、バンドルを目立たせてください。"
 
 msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
 msgstr "最近の顧客、クーポン、販売チャネルをレビューして、最も明確な次の成長機会を見つけてください。"
@@ -814,16 +817,16 @@ msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI S
 msgstr "AIトライオンとAI設定でOpenAIまたはGoogle GeminiのAPIキーを設定してください。"
 
 msgid "Google Gemini request failed."
-msgstr "Google Geminiのリクエストが失敗しました。"
+msgstr "Google Geminiリクエストに失敗しました。"
 
 msgid "OpenAI request failed."
-msgstr "OpenAIのリクエストが失敗しました。"
+msgstr "OpenAIリクエストに失敗しました。"
 
 msgid "Which period performed best?"
 msgstr "どの期間が最も良いパフォーマンスを発揮しましたか？"
 
 msgid "Show the top products during the strongest period."
-msgstr "最も強い期間中のトップ製品を表示します。"
+msgstr "最も強力な期間中のトップ製品を表示します。"
 
 msgid "Compare this trend with the previous period."
 msgstr "このトレンドを前の期間と比較します。"
@@ -841,16 +844,16 @@ msgid "Show this period as a sales graph."
 msgstr "この期間を販売グラフとして表示します。"
 
 msgid "Which products sold best during this period?"
-msgstr "この期間に最も売れた製品はどれですか？"
+msgstr "この期間中に最も売れた製品はどれですか？"
 
 msgid "Compare this with the preceding period."
 msgstr "これを前の期間と比較します。"
 
 msgid "What were total sales in the last 30 days?"
-msgstr "過去30日間の総売上はどれくらいですか？"
+msgstr "過去30日間の総販売額はいくらですか？"
 
 msgid "Show the monthly sales trend for the last year."
-msgstr "昨年の月別販売トレンドを表示します。"
+msgstr "昨年の月次販売トレンドを表示します。"
 
 msgid "What are my top 10 products this year?"
 msgstr "今年のトップ10製品は何ですか？"
@@ -877,7 +880,7 @@ msgid "Revenue by channel"
 msgstr "チャネル別収益"
 
 msgid "Frequently bought together"
-msgstr "よく一緒に購入される"
+msgstr "頻繁に購入される製品"
 
 msgid "Gemini settings"
 msgstr "Gemini設定"
@@ -904,22 +907,22 @@ msgid "Select POST TYPE(s) to include with search results"
 msgstr "検索結果に含めるPOST TYPEを選択"
 
 msgid "Get your API key from https://aistudio.google.com/app/apikey. "
-msgstr "https://aistudio.google.com/app/apikey からAPIキーを取得してください。"
+msgstr "https://aistudio.google.com/app/apikeyからAPIキーを取得してください。"
 
 msgid "It requires a paid Gemini API plan"
-msgstr "有料のGemini APIプランが必要です"
+msgstr "有料のGemini APIプランが必要です。"
 
 msgid "Gemini Model"
-msgstr "Geminiモデル"
+msgstr "ジェミニモデル"
 
 msgid "Fetch Models"
 msgstr "モデルを取得"
 
-msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
-msgstr "Geminiモデルを選択してください。APIキーを追加したばかりの場合は、「モデルを取得」をクリックしてリストを更新してください。"
+msgid "Select your Gemini model. Click \\"
+msgstr "あなたのジェミニモデルを選択してください。クリックして\\"
 
 msgid "Please select a your paid model all model on the list are might not be available for free plans"
-msgstr "有料モデルを選択してください。リスト上のすべてのモデルが無料プランで利用できるわけではありません。"
+msgstr "リストにあるすべてのモデルが無料プランで利用できるわけではないため、有料モデルを選択してください。"
 
 msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
 msgstr "カスタマイズされた結果のためにユーザーのクエリの前に追加されるプロンプト（オプション）"
@@ -934,16 +937,16 @@ msgid "Fine Tuning VS GPT Assistants VS RAG:"
 msgstr "ファインチューニング VS GPTアシスタント VS RAG:"
 
 msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "ファインチューニングは適切にフォーマットされたデータが大量に必要であり、GPTアシスタントは設定が簡単なため、ファインチューニングの代わりにGPTアシスタントまたはRAGの使用をお勧めします。ボットのトレーニングには、ウェブサイトのデータを引き続き使用できます。"
+msgstr "ファインチューニングには適切にフォーマットされたデータが大量に必要であり、GPTアシスタントの方が設定が簡単なため、GPTアシスタントまたはRAGを使用することをお勧めします。それでも、ボットをトレーニングするためにウェブサイトのデータを使用できます。"
 
 msgid "How to Use RAG in This Plugin:"
 msgstr "このプラグインでRAGを使用する方法:"
 
 msgid "Enable RAG from the settings panel"
-msgstr "設定パネルからRAGを有効にします"
+msgstr "設定パネルからRAGを有効にする"
 
 msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
-msgstr "ソースを選択した後、「すべての選択したソースを埋め込む」ボタンをクリックします。"
+msgstr "ソースを選択した後、「すべて選択したソースを埋め込む」ボタンをクリックします。"
 
 msgid "(Optional) Upload PDFs or CSV files for embedding"
 msgstr "(オプション) 埋め込み用のPDFまたはCSVファイルをアップロード"
@@ -955,25 +958,25 @@ msgid "User questions will now be answered using your site’s knowledge base"
 msgstr "ユーザーの質問は、あなたのサイトのナレッジベースを使用して回答されます"
 
 msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
-msgstr "OpenAI APIキー、AIモデル、システムコマンドをメインのOpenAI設定で構成する必要があります"
+msgstr "メインのOpenAI設定の下でOpenAI APIキー、AIモデル、システムコマンドを設定する必要があります"
 
 msgid "You can update or re-embed content at any time without retraining."
-msgstr "いつでもコンテンツを更新または再埋め込むことができ、再トレーニングは必要ありません。"
+msgstr "いつでもコンテンツを更新または再埋め込むことができ、再トレーニングは不要です。"
 
 msgid "Getting Started with gemini"
-msgstr "Geminiの使い方"
+msgstr "ジェミニの始め方"
 
 msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
-msgstr "GeminiはLLM用の統一インターフェースまたはアグリゲーターです。OpenAIからDeepseek、Claudeまでの数百の異なるAIモデルから選択してAI応答を得ることができます。"
+msgstr "ジェミニはLLM用の統一インターフェースまたはアグリゲーターです。OpenAIからDeepseekやClaudeまで、さまざまなAIモデルの中から選択してAI応答を得ることができます。"
 
 msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
-msgstr "Gemini APIキーを追加し、Geminiモデルを選択するだけです。"
+msgstr "あなたがする必要があるのは、ジェミニAPIキーを追加し、ジェミニモデルを選択することだけです。"
 
 msgid "Grab your API key from"
-msgstr "APIキーを取得するには"
+msgstr "APIキーを取得する"
 
 msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
-msgstr "Geminiを機能させるには、DialogFlowとOpenAIが無効になっていることを確認してください。"
+msgstr "ジェミニを機能させるためには、DialogFlowとOpenAIが無効になっていることを確認してください。"
 
 msgid "Failed in Security check"
 msgstr "セキュリティチェックに失敗しました"
@@ -1021,7 +1024,7 @@ msgid "AI Article Generator"
 msgstr "AI記事生成器"
 
 msgid "GPT Assistant is available with the "
-msgstr "GPTアシスタントは「"
+msgstr "GPTアシスタントは次のもので利用可能です。"
 
 msgid "WoowBot Pro Professional"
 msgstr "WoowBot Proプロフェッショナル"
@@ -1039,85 +1042,85 @@ msgid "Fine Tuning VS GPT Assistants:"
 msgstr "ファインチューニング VS GPTアシスタント:"
 
 msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
-msgstr "ファインチューニングには適切にフォーマットされたデータが大量に必要であり、GPTアシスタントは設定が簡単なため、ファインチューニングの代わりにGPTアシスタントの使用をお勧めします。ボットのトレーニングには、ウェブサイトのデータを引き続き使用できます。"
+msgstr "ファインチューニングには適切にフォーマットされたデータが大量に必要であり、GPTアシスタントの方が設定が簡単なため、GPTアシスタントを使用することをお勧めします。それでも、ボットをトレーニングするためにウェブサイトのデータを使用できます。"
 
 msgid "Setting up GPT Assistants:"
 msgstr "GPTアシスタントの設定:"
 
 msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
-msgstr "ウェブサイトデータでのGPTトレーニングタブに移動します。必要なすべての投稿タイプを選択し、「アシスタント用データを変換」ボタンを押します。完了したら、データファイルをJSON形式でダウンロードします"
+msgstr "ウェブサイトデータでのGPTトレーニングタブに移動します。必要なすべての投稿タイプを選択し、「アシスタント用データを変換」ボタンを押します。完了したら、データファイルをJSON形式でダウンロードします。"
 
 msgid "Go to "
-msgstr "に移動します"
+msgstr "移動する"
 
 msgid "Assistants playground"
-msgstr "アシスタントのプレイグラウンド"
+msgstr "アシスタントプレイグラウンド"
 
 msgid " and create a new Assistant"
-msgstr "を作成します"
+msgstr "新しいアシスタントを作成します"
 
 msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
-msgstr "ダウンロードしたJSONファイルをアップロードし、以下のような指示をGPTに与えますが、あなたのウェブサイトのURLに合わせてカスタマイズしてください:"
+msgstr "ダウンロードしたJSONファイルをアップロードし、以下のような指示をGPTに与えますが、あなたのウェブサイトのURLに合わせてカスタマイズしてください。"
 
 msgid "Your name is Carry. You are a ChatBot assistant for the website "
-msgstr "あなたの名前はCarryです。あなたはウェブサイト「"
+msgstr "あなたの名前はキャリーです。あなたはウェブサイトのためのチャットボットアシスタントです。"
 
 msgid "https://www.quantumcloud.net. "
-msgstr "https://www.quantumcloud.net。」"
+msgstr "https://www.quantumcloud.net。"
 
 msgid "Use the website data and the uploaded file to answer any questions from our website users."
-msgstr "ウェブサイトのデータとアップロードしたファイルを使用して、ウェブサイトのユーザーからの質問に答えます。"
+msgstr "ウェブサイトのデータとアップロードしたファイルを使用して、ウェブサイトユーザーからの質問に答えます。"
 
 msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
-msgstr "アシスタントのIDをコピーし、ウェブサイトのOpenAI設定のGPTアシスタントタブに貼り付けます。これで完了です。OpenAI APIプラットフォームからクレジットを購入している場合は、動作を開始します。"
+msgstr "アシスタントのIDをコピーし、ウェブサイトのOpenAI設定の下のGPTアシスタントタブに貼り付けます。これで完了です。OpenAI APIプラットフォームからクレジットを購入した場合、動作を開始します。"
 
-msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
-msgstr "異なるページで異なるGPTアシスタントをチャットボットウィジェットで使用できます。このサンプルショートコードを貼り付け、必要に応じてアシスタントIDを置き換えてください: 例: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\\"
+msgstr "異なるページで異なるGPTアシスタントをチャットボットウィジェットで使用できます。このサンプルショートコードを貼り付け、必要に応じてアシスタントIDを置き換えてください: 例: [chatbot-widget hud_design=\\"
 
 msgid "Please check this article for step by step guide."
-msgstr "ステップバイステップのガイドについては、この記事を確認してください。"
+msgstr "このガイドをステップバイステップで確認してください。"
 
 msgid "Getting Customized Results from the AI Services"
-msgstr "AIサービスからカスタマイズされた結果を得る"
+msgstr "AIサービスからカスタマイズされた結果を取得する"
 
 msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
-msgstr "AIサービスから得られる最良のカスタマイズされた結果は、ドキュメントとウェブサイトデータをアップロードできるOpenAI GPTアシスタントを使用することです（私たちのプロバージョンによって生成された）。ただし、詳細なプロンプトを書くことでカスタマイズされた結果を得ることもできます。OpenAI設定エリアのシステムコマンドセクション（他のAIサービス用のプロンプトセクションもあります）で、サービス、製品、連絡方法、またはカスタマイズされた結果を得るために関連する詳細を含む詳細なプロンプトを書くことができます。最大3000語で大丈夫です。これはほとんどの小規模から中規模のウェブサイトには十分です。"
+msgstr "AIサービスから得られる最良のカスタマイズされた結果は、ドキュメントとあなたのウェブサイトデータ（私たちのプロバージョンによって生成された）をアップロードできるOpenAI GPTアシスタントを使用することです。ただし、詳細なプロンプトを書くことでカスタマイズされた結果を得ることもできます。OpenAI設定エリアのシステムコマンドセクション（他のAIサービス用のプロンプトセクションもあります）で、サービス、製品、連絡方法、またはカスタマイズされた結果を得るために関連する詳細を含む詳細なプロンプトを書くことができます。最大3000語で大丈夫です。これはほとんどの小規模から中規模のウェブサイトには十分です。"
 
 msgid "**"
 msgstr "**"
 
 msgid "Check this article"
-msgstr "この記事を確認してください"
+msgstr "この記事をチェックしてください"
 
 msgid "for more details abou how to get Customized Results from OpenAI."
-msgstr "OpenAIからカスタマイズされた結果を得る方法の詳細については。"
+msgstr "カスタマイズされた結果をOpenAIから取得する方法についての詳細。"
 
 msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
-msgstr "GPTアシスタントを使用するには、WoowbotProプロフェッショナルまたはマスターライセンスにアップグレードしてください。"
+msgstr "WoowbotProプロフェッショナルまたはマスターライセンスにアップグレードしてGPTアシスタントを使用してください。"
 
 msgid "Getting Started with OpenAI"
-msgstr "OpenAIの使い方"
+msgstr "OpenAIの始め方"
 
 msgid "OpenAI has changed their API billing policy lately. You have to "
-msgstr "OpenAIは最近APIの請求ポリシーを変更しました。今すぐ"
+msgstr "OpenAIは最近API請求ポリシーを変更しました。あなたは"
 
 msgid "pre-purchase API credits"
 msgstr "APIクレジットを事前購入する必要があります"
 
 msgid " now. Go to "
-msgstr "。"
+msgstr "今すぐ。移動する"
 
 msgid "https://platform.openai.com/account/billing/ "
 msgstr "https://platform.openai.com/account/billing/"
 
 msgid "and add credits to your API account. Then increase the usage limit."
-msgstr "にアクセスして、APIアカウントにクレジットを追加します。その後、使用制限を増やします。"
+msgstr "そして、APIアカウントにクレジットを追加します。その後、使用制限を増やします。"
 
-msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
-msgstr "OpenAI APIキーを追加すると、一般的な質問に対してすでに動作を開始するはずです。シークレットモードで新しいブラウザウィンドウを開き、「ロシアの首都はどこですか？」と尋ねてテストします。"
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \\"
+msgstr "OpenAI APIキーを追加すると、一般的な質問に対してすでに動作を開始するはずです。シークレットモードで新しいブラウザウィンドウを開き、\\"
 
 msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
-msgstr "OpenAIを機能させるには、DialogFlowが無効になっていることを確認してください"
+msgstr "OpenAIを機能させるためにはDialogFlowが無効になっていることを確認してください"
 
 msgid "Fine Tuning VS GPT Assistants VS RAG"
 msgstr "ファインチューニング VS GPTアシスタント VS RAG"
@@ -1129,7 +1132,7 @@ msgid "How to get an OpenAI API Key"
 msgstr "OpenAI APIキーを取得する方法"
 
 msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
-msgstr "OpenAI APIは認証のためにAPIキーを使用します。リクエストに使用するAPIキーを取得するには、APIキーのページにアクセスしてください。APIキーは秘密です！他の人と共有したり、クライアント側のコード（ブラウザ、アプリ）に公開したりしないでください。プロダクションリクエストは、APIキーを環境変数またはキー管理サービスから安全に読み込むことができる自分のバックエンドサーバーを経由する必要があります。"
+msgstr "OpenAI APIは認証のためにAPIキーを使用します。リクエストに使用するAPIキーを取得するには、APIキーのページを訪問してください。あなたのAPIキーは秘密です！他の人と共有したり、クライアント側のコード（ブラウザ、アプリ）に公開しないでください。プロダクションリクエストは、APIキーが環境変数またはキー管理サービスから安全に読み込まれる自分のバックエンドサーバーを通じてルーティングする必要があります。"
 
 msgid "You can generate the API key from here: "
 msgstr "ここからAPIキーを生成できます: "
@@ -1143,43 +1146,29 @@ msgstr "OpenAIのトレーニングまたはファインチューニング"
 msgid "To train OpenAI"
 msgstr "OpenAIをトレーニングするには"
 
-msgid ""
-"a. To train or fine tune a model, 1st you need to:\n"
-"                "
-msgstr ""
-"a. モデルをトレーニングまたはファインチューニングするには、まず次のことを行う必要があります:\n"
-"                "
-
 msgid "Gather the necessary data you want to train with"
-msgstr "トレーニングに使用する必要なデータを収集します"
+msgstr "トレーニングに必要なデータを収集します"
 
 msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
-msgstr "データをOpenAI APIの要件に従って正しくフォーマットします（サンプルデータフォーマットをダウンロードして、どのように機能するかを確認してください）。データセットは、役立つ結果を提供するために少なくとも500行を持っている必要があります。OpenAIのドキュメントによると、3000行および5000行が推奨されています。"
+msgstr "OpenAI APIの要件に従ってデータを正しくフォーマットします（サンプルデータ形式をダウンロードして、どのように機能するかを確認してください）。データセットは、役立つ結果を提供するために少なくとも500行を持っている必要があります。OpenAIのドキュメントによると、3000行と5000行の数が推奨されています。"
 
 msgid "Upload the data to OpenAI in .JSONL format"
-msgstr "データを.JSONL形式でOpenAIにアップロードします"
+msgstr "データをOpenAIに.JSONL形式でアップロードします"
 
 msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
-msgstr "データを使用して既存のOpenAIモデルをトレーニングします（ボットOpenAI設定ページから選択）"
-
-msgid ""
-"b. Once you have your JSONL file ready, please go to the Training model section.\n"
-"                Upload your training file in .JSONL format."
-msgstr ""
-"b. JSONLファイルが準備できたら、トレーニングモデルセクションに移動します。\n"
-"                トレーニングファイルを.JSONL形式でアップロードします。"
+msgstr "あなたのデータで既存のOpenAIモデルをトレーニングします（ボットOpenAI設定ページから選択）"
 
 msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
-msgstr "c. トレーニングファイルをアップロードすると、ファイルIDが返され、[FTモデルを作成]ボタンをクリックするとトレーニングが開始されます。モデルを後で認識するためのサフィックスとポップアップ内のベースモデルを設定し、作成します。"
+msgstr "c. トレーニングファイルをアップロードすると、ファイルIDが返され、[Create FT Model]ボタンをクリックするとトレーニングが開始されます。モデルを後で認識するためのサフィックスとポップアップ内のベースモデルを設定して作成します。"
 
-msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
-msgstr "d. トレーニングが完了し、ファイルが準備できると、ファインチューニングされたモデルが返されます。ファインチューニングされたモデルリストに表示され、ステータスは「成功」と表示され、FT（ファインチューニング）モデルIDも取得できます（設定ページにコピーします）。"
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \\"
+msgstr "d. トレーニングが完了し、ファイルが準備できると、ファインチューニングされたモデルが返されます。ファインチューニングされたモデルリストに表示され、ステータスは\\"
 
 msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
-msgstr "e. 上記の手順に従って複数のファインチューニングされたモデルを作成できます。使用したいファインチューニングモデルIDをコピーします。"
+msgstr "e. 上記の手順に従って複数のファインチューニングされたモデルを作成できます。使用したいファインチューニングされたモデルIDをコピーします。"
 
 msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
-msgstr "f. メインのボットOpenAI設定ページに移動し、カスタムファインチューニングモデルフィールドにファインチューニングモデルIDを貼り付けて保存します。これでボットはトレーニングデータに応じて応答を開始します。"
+msgstr "f. メインのボットOpenAI設定ページに移動し、ファインチューニングされたモデルIDをカスタムファインチューニングモデルフィールドに貼り付けて保存します。これでボットはトレーニングデータに基づいて応答を開始します。"
 
 msgid "h. To Prepare your data model for GPT3.5/4:"
 msgstr "h. GPT3.5/4用にデータモデルを準備するには:"
@@ -1193,53 +1182,53 @@ msgstr "各プロンプトと完了は1行にする必要があります"
 msgid "Fine tuning file format with GPT 3.5/4"
 msgstr "GPT 3.5/4用のファインチューニングファイル形式"
 
-msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
-msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"あなたは時々単語を誤って綴るアシスタントです\" },{ \"role\": \"user\", \"content\": \"物語を教えてください。\" }, { \"role\": \"assistant\", \"content\": \"ある日、学生が学校に行きました。\" }]}"
+msgid "{ \\"
+msgstr "{ \\"
 
 msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
-msgstr "右クリックして、GPT 3.5/4用のファインチューニングの例jsonlファイルを保存します"
+msgstr "右クリックして、GPT 3.5/4でのファインチューニング用のサンプルjsonlファイルを保存します"
 
 msgid "OpenAI RAG"
 msgstr "OpenAI RAG"
 
 msgid "To Embed OpenAI"
-msgstr "OpenAIを埋め込むには"
+msgstr "OpenAIを埋め込むために"
 
 msgid "Important points about fine tuning"
 msgstr "ファインチューニングに関する重要なポイント"
 
-msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
-msgstr "より良い結果を得るには、少なくとも500以上のプロンプトが必要です。そうでない場合、OpenAIは応答を一般的な知識と混ぜてしまいます。また、プロンプトはできるだけ詳細であるべきです。FAQ形式に従い、詳細な質問と回答を用意してください。例: 単に「ヴィンテージデニムジャケット」と言うのではなく、「なぜ私たちのヴィンテージデニムジャケットを着るべきなのか？」と書くことができます。"
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \\"
+msgstr "より良い結果を得るには、少なくとも500以上のプロンプトが必要です。そうでない場合、OpenAIは応答を一般的な知識と混合します。また、プロンプトはできるだけ詳細であるべきです。FAQ形式に従って、詳細な質問と回答を含めてください。例のプロンプト: 単に\\"
 
 msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
-msgstr "完了が短い場合（以下のように）や約100語の場合、最大トークン値を200に設定してください。結果が気に入るまで、温度、存在ペナルティ、頻度ペナルティの設定を調整してください。"
+msgstr "完了が短い場合は、最大トークン値を200に設定してください。結果が気に入るまで、温度、存在ペナルティ、頻度ペナルティの設定を調整してください。"
 
 msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
-msgstr "ウェブサイトデータでファインチューニングを行う場合、ボットは投稿タイトルをプロンプトとして使用します。ページ/投稿タイトルが説明的でない場合、良い結果は得られません。その場合は、トレーニングモデルページからJSONLファイルをダウンロードしてプロンプトを改善してください。その後、再度ファインチューニングを行います。"
+msgstr "ウェブサイトデータでファインチューニングしている場合、ボットは投稿タイトルをプロンプトとして使用します。ページ/投稿タイトルが説明的でない場合、良い結果は得られません。その場合、トレーニングモデルページからJSONLファイルをダウンロードし、プロンプトを改善できます。その後、再度ファインチューニングします。"
 
 msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
-msgstr "設定-&gt;スタートメニューからサイト検索を無効にして、ボットがサイト検索から回答を持ってこないようにしてください。設定が上書きされないように、ログアウトして再度ログインしてください。"
+msgstr "ボットがサイト検索から回答を持ってこないように、設定-&gt;スタートメニューからサイト検索を無効にしてください。設定が上書きされないように、ログアウトして再度ログインしてください。"
 
 msgid "How to Optimize Fine Tuning"
-msgstr "ファインチューニングの最適化方法"
+msgstr "ファインチューニングを最適化する方法"
 
 msgid "To get better results from fine-tuning please follow the following steps:"
-msgstr "ファインチューニングからより良い結果を得るために、以下の手順に従ってください:"
+msgstr "より良い結果を得るために、以下の手順に従ってください:"
 
 msgid "Set a lower value for Temperature"
 msgstr "温度の値を低く設定する"
 
 msgid "Use a higher value for the Presence Penalty and Frequency penalty."
-msgstr "プレゼンスペナルティと頻度ペナルティの値を高く設定する。"
+msgstr "存在ペナルティと頻度ペナルティの値を高く設定する。"
 
 msgid "If possible use the Curie model as your base model when you create the custom model."
 msgstr "可能であれば、カスタムモデルを作成する際にベースモデルとしてCurieモデルを使用してください。"
 
 msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
-msgstr "プロンプトと完了に応じて最大トークンを使用してください。最大トークンの値が高い場合、AIは文脈に無関係な情報を生成する可能性があります。最大トークンの値が低すぎると、データが短く切り捨てられたり、エラーが発生したりします。"
+msgstr "プロンプトと完了に応じて最大トークンを使用します。最大トークンの値を高く設定すると、AIは文脈に関連しない情報を生成する可能性があります。最大トークンの値が低すぎると、データが短く切り捨てられたり、エラーが発生することがあります。"
 
 msgid "Presence Penalty"
-msgstr "プレゼンスペナルティ"
+msgstr "存在ペナルティ"
 
 msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
 msgstr "-2.0から2.0の間の数値。正の値は、これまでのテキストに出現したかどうかに基づいて新しいトークンにペナルティを課し、新しいトピックについて話す可能性を高めます。"
@@ -1248,22 +1237,22 @@ msgid "Frequency Penalty"
 msgstr "頻度ペナルティ"
 
 msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
-msgstr "-2.0から2.0の間の数値。正の値は、これまでのテキストにおける既存の頻度に基づいて新しいトークンにペナルティを課し、同じ行を逐語的に繰り返す可能性を減少させます。"
+msgstr "-2.0から2.0の間の数値。正の値は、これまでのテキストにおける既存の頻度に基づいて新しいトークンにペナルティを課し、同じ行をそのまま繰り返す可能性を減少させます。"
 
 msgid "Temperature"
 msgstr "温度"
 
 msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
-msgstr "最も重要な設定の1つは温度と呼ばれます。温度が0を超えると、同じプロンプトを送信するたびに異なる完了が得られます。モデルは、前のテキストに続く可能性が最も高いテキストを予測します。温度は0から1の間の値で、モデルがこれらの予測を行う際の自信の度合いを制御します。温度を下げるとリスクが少なくなり、完了はより正確で決定的になります。温度を上げると、より多様な完了が得られます。"
+msgstr "最も重要な設定の1つは温度と呼ばれます。温度が0を超えると、同じプロンプトを送信しても毎回異なる完了が得られます。モデルは、前のテキストに続く可能性が最も高いテキストを予測します。温度は0から1の間の値で、モデルがこれらの予測を行う際の自信の度合いを制御します。温度を下げるとリスクを減らし、完了はより正確で決定的になります。温度を上げると、より多様な完了が得られます。"
 
 msgid "My OpenAI does not work"
 msgstr "私のOpenAIは動作しません"
 
 msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
-msgstr "設定（APIキー、最大トークンなど）を確認してください。使用するモデル（GPT3は最大4000）に応じて、リクエストはプロンプトと完了の間で共有される4097トークンまで使用できます。プロンプトが4000トークンの場合、完了は最大97トークンになります。また、Dialogflowが非アクティブであることを確認してください。DialogflowとOpenAIは一緒に動作しません。"
+msgstr "設定を確認してください（例：APIキー、最大トークンなど）。使用するモデル（GPT3は最大4000）によって、リクエストはプロンプトと完了の間で共有される4097トークンまで使用できます。プロンプトが4000トークンの場合、完了は最大97トークンになります。また、Dialogflowが非アクティブであることを確認してください。DialogflowとOpenAIは一緒に動作しません。"
 
 msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
-msgstr "投稿タイプやページに基づいて複数のファインチューニングモデルを作成できます。トレーニングデータをJSONLファイルとしてダウンロードして修正し、他のファイルと同じプロセスでアップロードできます（上記の指示を参照）。また、`FTモデルとしてアップロード`ボタンをクリックしてアップロードすることもできます。その後、トレーニングモデルタブからファインチューニングモデルを作成できます。"
+msgstr "投稿タイプやページに基づいて複数のファインチューニングモデルを作成できます。トレーニングデータをJSONLファイルとしてダウンロードし、修正してから、他のファイルと同じプロセスでアップロードできます（手順については上記を参照）。また、`FTモデルとしてアップロード`ボタンをクリックしてアップロードすることもできます。その後、トレーニングモデルタブからファインチューニングモデルを作成できます。"
 
 msgid "Fine tuning and training is available with the "
 msgstr "ファインチューニングとトレーニングは、"
@@ -1287,10 +1276,10 @@ msgid "Enable OpenAI Product Cards"
 msgstr "OpenAI製品カードを有効にする"
 
 msgid "(Display relevant product cards inside AI responses to increase sales.)"
-msgstr "(AIの応答内に関連する製品カードを表示して販売を促進します。)"
+msgstr "(AIの応答内に関連する製品カードを表示して、販売を増やします。)"
 
 msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
-msgstr "GPT結果を使用してWordPressページの提案を有効にする（リンクはWordPressによって提案され、AIではありません）"
+msgstr "GPT結果を使用してWordPressページの提案を有効にする（リンクはWordPressによって提案され、AIによってではありません）"
 
 msgid "Api key"
 msgstr "APIキー"
@@ -1332,13 +1321,13 @@ msgid "GPT-3 turbo"
 msgstr "GPT-3 turbo"
 
 msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
-msgstr "システムコマンド（ChatGPTにどのように振る舞うかを指示するために使用します）。ここにサービス、製品、連絡方法、または関連する詳細を含む詳細なプロンプトを書くことができます。"
+msgstr "システムコマンド（ChatGPTにどのように振る舞うかを指示するために使用します）。ここにサービス、製品、連絡先情報など、関連する詳細を含む詳細なプロンプトを書くことができます。"
 
 msgid "Customized Results"
 msgstr "カスタマイズされた結果"
 
 msgid ". Upto 3000 words is fine."
-msgstr "3000語までが適切です。"
+msgstr ". 最大3000語までが適切です。"
 
 msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
 msgstr "あなたは役立つアシスタントです。回答は簡潔で関連性があり、新しいトピックを導入しないでください。"
@@ -1347,7 +1336,7 @@ msgid "To set the ChatBot's tone and character set a system message according to
 msgstr "チャットボットのトーンとキャラクターを設定するには、必要に応じてシステムメッセージを設定してください。"
 
 msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
-msgstr "例: あなたは役立つアシスタントです。回答は簡潔で関連性があり、新しいトピックを導入しないでください。"
+msgstr "例：あなたは役立つアシスタントです。回答は簡潔で関連性があり、新しいトピックを導入しないでください。"
 
 msgid "Prompt to be Appended at the End of the User Query (Optional)"
 msgstr "ユーザーのクエリの最後に追加されるプロンプト（オプション）"
@@ -1356,16 +1345,16 @@ msgid "Content for the response"
 msgstr "応答の内容"
 
 msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
-msgstr "危険ゾーン（キーワードが適切に設定されていない場合、AIからの応答が得られない可能性があります。問題が発生した場合はキーワードを削除してください）"
+msgstr "危険ゾーン（キーワードが正しく設定されていない場合、AIからの応答が得られない可能性があります。問題が発生した場合はキーワードを削除してください）"
 
 msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
 msgstr "ユーザーのクエリに以下のカンマ区切りのキーワードのいずれかが含まれている場合のみOpenAIに接続します。"
 
 msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
-msgstr "ユーザーのクエリに以下のカンマ区切りのキーワードが含まれていない場合のみOpenAIに接続します。"
+msgstr "ユーザーのクエリに以下のカンマ区切りのキーワードのいずれかが含まれていない場合のみOpenAIに接続します。"
 
 msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
-msgstr "上記のキーワードに関連する質問がある場合はOpenAIに返信を求めます（このオプションを有効にすると精度が向上しますが、OpenAIトークンを使用します）。"
+msgstr "上記のキーワードに関連する質問に対してOpenAIに返信を求めます（このオプションを有効にすると精度が向上しますが、OpenAIトークンを使用します）。"
 
 msgid "Check Connection  "
 msgstr "接続を確認する"
@@ -1374,7 +1363,7 @@ msgid "Save the Settings first and then press the Check Connection button"
 msgstr "設定を最初に保存し、その後接続確認ボタンを押してください。"
 
 msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
-msgstr "**OpenAIが応答せず、ボットがただ読み込み中の場合、OpenAIの使用制限に達している可能性があります。OpenAI APIを使用するためにクレジットを事前に購入し、使用制限を増やしてください。APIアカウントにクレジットを追加するには、"
+msgstr "**OpenAIが応答しない場合、ボットがただ読み込み中である場合、OpenAIの使用制限に達している可能性があります。OpenAI APIを使用するためにクレジットを事前に購入し、使用制限を増やしてください。APIアカウントにクレジットを追加するには、"
 
 msgid "billing page."
 msgstr "請求ページを訪問してください。"
@@ -1421,25 +1410,11 @@ msgstr "権限が不足しています"
 msgid "AI Setup configuration saved successfully."
 msgstr "AIセットアップ構成が正常に保存されました。"
 
-msgid ""
-"session_schedules_rate_limit_' . $role ),\n"
-"\t\t\t\t);\n"
-"\t\t\t\t// Schedule the cron job for each role if not already scheduled);\n"
-"\t\t\t}\n"
-"\t\t\treturn $schedules;\n"
-"\t\t}\n"
-"        // wpshedule event to reset the rate limit used counts\n"
-"\t\tpublic function schedule_rate_limit_reset_events()\n"
-"\t\t{\n"
-"\t\t\t// Ensure WordPress cron functions are available\n"
-"\t\t\tif (! function_exists('wp_schedule_event"
-msgstr "rate limit exceeded. Please try again later."
-
 msgid "Rate limit exceeded. Please try again later."
 msgstr "レート制限を超えました。後でもう一度お試しください。"
 
 msgid "More WordPress Goodies for You!"
-msgstr "あなたのためのWordPressの良いものがもっとあります！"
+msgstr "あなたのためのWordPressのさらなるグッズ！"
 
 msgid "Support"
 msgstr "サポート"
@@ -1448,7 +1423,7 @@ msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
 msgstr "あなたのウェブサイトをより良くするかもしれない他の作品をチェックしてください"
 
 msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
-msgstr "すべてのプロバージョンユーザーは、プレミアムで保証された迅速な1対1の優先サポートを受けられます。"
+msgstr "すべてのProバージョンユーザーは、プレミアムで保証された迅速な1対1の優先サポートを受けられます。"
 
 msgid "Get Priority Support "
 msgstr "優先サポートを受ける"
@@ -1459,8 +1434,8 @@ msgstr "オンラインナレッジベース"
 msgid "Get Support for Free Version"
 msgstr "無料版のサポートを受ける"
 
-msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
-msgstr "フォーム送信リクエストの処理中に問題が発生しました！ご不便をおかけして申し訳ありません。<br>フィードバックがある場合は、<span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span>までメールしてください。すぐにお返事いたします！"
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\\"
+msgstr "フォーム送信リクエストの処理中に問題が発生しました！ご不便をおかけして申し訳ありません。<br> &lt;span style=\\"
 
 msgid "Please fill up all the requried form fields."
 msgstr "すべての必須フォームフィールドに記入してください。"
@@ -1475,13 +1450,13 @@ msgid "Sent Via the Plugin"
 msgstr "プラグイン経由で送信されました"
 
 msgid "Mail sent from:"
-msgstr "送信元:"
+msgstr "送信元メール:"
 
 msgid "URL:"
 msgstr "URL:"
 
 msgid "Mail Generated on:"
-msgstr "メール生成日:"
+msgstr "メール生成日時:"
 
 msgid "From Plugin Support Page:"
 msgstr "プラグインサポートページから:"
@@ -1537,25 +1512,19 @@ msgid "Installed"
 msgstr "インストール済み"
 
 msgid "More Details"
-msgstr "詳細を見る"
+msgstr "詳細"
 
 msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
-msgstr "このプラグインは、あなたのWordPressおよびPHPのバージョンでは動作しません。"
+msgstr "このプラグインは、あなたのWordPressとPHPのバージョンでは動作しません。"
 
-msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
-msgstr "<a href=\"%1$s\">WordPressを更新してください</a>、そして<a href=\"%2$s\">PHPの更新について詳しく学んでください</a>。"
-
-msgid "<a href=\"%s\">Please update WordPress</a>."
-msgstr "<a href=\"%s\">WordPressを更新してください</a>。"
-
-msgid "<a href=\"%s\">Learn more about updating PHP</a>."
-msgstr "<a href=\"%s\">PHPの更新について詳しく学んでください</a>。"
+msgid "<a href=\\"
+msgstr "&lt;a href=\\"
 
 msgid "This plugin doesn&#8217;t work with your version of WordPress."
-msgstr "このプラグインは、あなたのWordPressのバージョンでは動作しません。"
+msgstr "このプラグインはあなたのWordPressのバージョンでは動作しません。"
 
 msgid "This plugin doesn&#8217;t work with your version of PHP."
-msgstr "このプラグインは、あなたのPHPのバージョンでは動作しません。"
+msgstr "このプラグインはあなたのPHPのバージョンでは動作しません。"
 
 msgid "Live Preview"
 msgstr "ライブプレビュー"
@@ -1573,13 +1542,13 @@ msgid "You can also upload a custom Agent icon in the pro version."
 msgstr "プロ版ではカスタムエージェントアイコンもアップロードできます。"
 
 msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
-msgstr "ライト版では、ニーズに合わせてカスタマイズできるいくつかの言語設定があります。デフォルトの言語は英語を使用する店舗には問題ありません。しかし、ボットの応答を文字通り任意の言語に変更できます！"
+msgstr "ライト版では、ニーズに合わせてカスタマイズできるいくつかの言語設定があります。デフォルトの言語は英語を使用する店舗には問題ありませんが、ボットの応答を文字通り任意の言語に変更できます！"
 
 msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
-msgstr "WoowBot内の色やフォント設定を調整する必要がある場合は、カスタムCSSパネルを使用してください。"
+msgstr "WoowBot内で色やフォント設定を調整する必要がある場合は、カスタムCSSパネルを使用してください。"
 
 msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
-msgstr "WooCommerce用のNo.1チャットボット – WoowBot"
+msgstr "WooCommerceのためのNo.1チャットボット – WoowBot"
 
 msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
 msgstr "WoowBot Proで高度なAI機能、顧客リターゲティングなどを手に入れましょう"
@@ -1588,7 +1557,7 @@ msgid "Get the WoowBot Pro Now!"
 msgstr "今すぐWoowBot Proを手に入れましょう！"
 
 msgid "Crafted By:"
-msgstr "制作:"
+msgstr "作成者:"
 
 msgid "Web Design Company"
 msgstr "ウェブデザイン会社"
@@ -1612,7 +1581,7 @@ msgid "OR"
 msgstr "または"
 
 msgid " Get the Professional Version Now!"
-msgstr "今すぐプロ版を手に入れましょう！"
+msgstr "今すぐプロフェッショナル版を手に入れましょう！"
 
 msgid "General settings"
 msgstr "一般設定"
@@ -1627,7 +1596,7 @@ msgid "Custom CSS"
 msgstr "カスタムCSS"
 
 msgid "Emails Will be Sent to"
-msgstr "メールは次の宛先に送信されます"
+msgstr "メールは次のアドレスに送信されます"
 
 msgid "From Email Address"
 msgstr "送信元メールアドレス"
@@ -1648,7 +1617,7 @@ msgid "Disable WoowBot to Load on Mobile Device"
 msgstr "モバイルデバイスでWoowBotの読み込みを無効にする"
 
 msgid "Override WoowBot Icon's Position"
-msgstr "WoowBotアイコンの位置を上書きする"
+msgstr "WoowBotアイコンの位置をオーバーライド"
 
 msgid "120"
 msgstr "120"
@@ -1657,13 +1626,13 @@ msgid "50"
 msgstr "50"
 
 msgid "From Right In px"
-msgstr "右からの距離（px）"
+msgstr "右からの距離(px)"
 
 msgid "From Bottom In px"
-msgstr "下からの距離（px）"
+msgstr "下からの距離(px)"
 
 msgid "Number of products to show in search results. ( '-1' for all products )."
-msgstr "検索結果に表示する製品の数。 ('-1'はすべての製品を意味します)。"
+msgstr "検索結果に表示する製品の数。 ('-1' はすべての製品を意味します)。"
 
 msgid "Page controller"
 msgstr "ページコントローラー"
@@ -1774,7 +1743,7 @@ msgid "Custom message board background"
 msgstr "カスタムメッセージボードの背景"
 
 msgid "Message setting for"
-msgstr "次のためのメッセージ設定"
+msgstr "メッセージ設定"
 
 msgid "Identity"
 msgstr "アイデンティティ"
@@ -1804,7 +1773,7 @@ msgid "Nice to meet you"
 msgstr "お会いできて嬉しいです"
 
 msgid "Message settings for"
-msgstr "次のためのメッセージ設定"
+msgstr "メッセージ設定"
 
 msgid "Editor Box"
 msgstr "エディターボックス"
@@ -1819,7 +1788,7 @@ msgid "Products Search"
 msgstr "製品検索"
 
 msgid "I am here to find you the product you need. What are you shopping for"
-msgstr "あなたが必要な製品を見つけるためにここにいます。何をお探しですか"
+msgstr "必要な製品を見つけるためにここにいます。何をお探しですか？"
 
 msgid "if products found"
 msgstr "製品が見つかった場合"
@@ -1837,10 +1806,10 @@ msgid "Catalog"
 msgstr "カタログ"
 
 msgid "Send Us Email"
-msgstr "メールを送信する"
+msgstr "メールを送信"
 
 msgid "You can browse our extensive catalog. Just pick a category from below"
-msgstr "当社の広範なカタログを閲覧できます。以下からカテゴリを選択してください"
+msgstr "私たちの広範なカタログを閲覧できます。以下からカテゴリーを選んでください"
 
 msgid "Too many choices? Let's try another search term"
 msgstr "選択肢が多すぎますか？別の検索用語を試してみましょう"
@@ -1858,19 +1827,19 @@ msgid "You can paste or write your custom css here."
 msgstr "ここにカスタムCSSを貼り付けるか、記入できます。"
 
 msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
-msgstr "WooCommerce用の#1チャットボット – WoowBot Pro"
+msgstr "WooCommerceのための#1チャットボット – WoowBot Pro"
 
 msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
-msgstr "WoowBot Proは、売上を顕著に増加させることができるWooCommerceショッピングチャットボットです。ショッパーはボットと流暢に会話でき、GoogleのDialogflowとの統合により、チャットインターフェースから直接製品を検索してカートに追加し、サポートを受けることができます！"
+msgstr "WoowBot Proは、店舗の売上を目に見えて増加させることができるWooCommerceショッピングチャットボットです。ショッパーはボットと流暢に会話でき、GoogleのDialogflowとの統合のおかげで、チャットインターフェースから直接商品を検索してカートに追加したり、サポートを受けたりできます！"
 
 msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
-msgstr "オンサイトリターゲティングは、退出意図、時間間隔、またはページのスクロールダウンに特別オファーやクーポンを表示することで、コンバージョン率の最適化を支援します。顧客のコンバージョンを統計で追跡し、ショッパーがカートを放棄しているかどうかを確認します。売上を増やしましょう！"
+msgstr "オンサイトリターゲティングは、退出意図、時間間隔、またはページのスクロールダウンに基づいて特別オファーやクーポンを表示することで、コンバージョン率の最適化を助けます。顧客のコンバージョンを統計で追跡し、ショッパーがカートを放棄しているかどうかを確認します。売上を増やしましょう！"
 
 msgid "Get the WoowBot Pro Now and Increase Sales!"
 msgstr "今すぐWoowBot Proを取得して売上を増やしましょう！"
 
 msgid "Multi Language Addon (**new)"
-msgstr "多言語アドオン (**新)"
+msgstr "マルチランゲージアドオン (**新)"
 
 msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
 msgstr "チャットボットに複数の言語サポートを追加します。ユーザーはいつでもドロップダウンメニューから言語を変更できます。管理者はデフォルトの言語を選択できます。すべての主要な言語をサポートします。異なる言語用の異なるDialogflowエージェントに接続します"
@@ -1885,37 +1854,37 @@ msgid "Extended UI Addon"
 msgstr "拡張UIアドオン"
 
 msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
-msgstr "愛するチャットボットに新しい外観を与えましょう。2つの追加のモダンで洗練されたテンプレートから選択できます！これらの新しいテンプレートは、あなたのウェブサイトの訪問者を驚かせることでしょう！新しいローダー効果と広範なカラーカスタマイズオプションが利用可能です！"
+msgstr "愛するチャットボットに新しい顔を与えましょう。2つの追加のモダンで洗練されたテンプレートから選択できます！これらの新しいテンプレートは、あなたのウェブサイトの訪問者を驚かせること間違いなしです！新しいローダー効果と広範なカラーカスタマイズオプションが利用可能です！"
 
 msgid "Simple Text Responses Pro"
-msgstr "シンプルテキストレスポンスPro"
+msgstr "シンプルテキストレスポンスプロ"
 
 msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
-msgstr "CSVのエクスポート/インポート機能を使用して、顧客の問い合わせに対するテキストベースのレスポンスを簡単に作成できます。STR Proは、バックエンドとフロントエンドのシンプルなテキストレスポンス用のカテゴリをサポートします。チャットボットの返信をフォーマットするためのHTMLビジュアルエディタと、より良い検索マッチングのためのストップワードの削除機能があります。"
+msgstr "CSVのエクスポート/インポート機能を使用して、顧客の問い合わせに対するテキストベースのレスポンスを簡単に作成します。STR Proは、バックエンドとフロントエンドのシンプルなテキストレスポンス用のカテゴリをサポートします。チャットボットの返信をフォーマットするためのHTMLビジュアルエディタと、より良い検索マッチングのためのストップワードの削除をサポートします。"
 
 msgid "Bargaining ChatBot for WoowBot"
 msgstr "交渉チャットボット for WoowBot"
 
 msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
-msgstr "交渉チャットボットで今すぐオファーを作成しましょう。スマートな価格交渉でより多くの顧客を獲得します。顧客があなたの価格に対してオファーを出すことを許可します。製品ごとに設定した最低価格で交渉します。購入意欲が高いショッパーをキャッチします。「オファーを作成」ボタンは、最低価格を設定した製品の単一ページにのみ表示されます。"
+msgstr "交渉チャットボットで今すぐオファーを出しましょう。スマートな価格交渉でより多くの顧客を獲得します。顧客があなたの価格に対してオファーを出すことを許可します。製品ごとに設定した最低価格で交渉します。購入意欲が高いショッパーをキャッチします。オファーボタンは、あなたが最低価格を設定した製品の単一ページにのみ表示されます。"
 
 msgid "Conversational Form Builder"
 msgstr "会話型フォームビルダー"
 
 msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
-msgstr "ネイティブWordPressチャットボット体験のために条件付き会話とフォームを作成します。標準フォーム、条件付きフィールドを持つ動的フォーム、計算機、予約などを構築します。7つの準備されたテンプレートが組み込まれています。フォームデータをデータベースに保存し、自動応答、条件付きフィールド、変数、保存されたリビジョンなどを提供します！"
+msgstr "ネイティブWordPressチャットボット体験のための条件付き会話とフォームを作成します。標準フォーム、条件付きフィールドを持つ動的フォーム、計算機、予約などを構築します。7つの準備されたテンプレートが組み込まれています。フォームデータをデータベースに保存し、自動応答、条件付きフィールド、変数、保存されたリビジョンなどをサポートします！"
 
 msgid "Export Import Settings"
-msgstr "設定のエクスポートインポート"
+msgstr "エクスポートインポート設定"
 
 msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
-msgstr "複数のウェブサイトでWoowbotProを使用していますか？この便利なアドオンが役立つかもしれません。このアドオンを使用すると、設定をエクスポートして別のサイトにインポートしたり、バックアップを保持したりできます。多くのオプションがある言語センターの設定を移行するのに非常に便利です。今すぐ手に入れましょう！"
+msgstr "複数のウェブサイトでWoowbotProを使用していますか？この便利なアドオンが役立つかもしれません。このアドオンを使用すると、設定をエクスポートして別のサイトにインポートしたり、バックアップを保持したりできます。多くのオプションがある言語センターの設定を移行するのに非常に役立ちます。今すぐ手に入れましょう！"
 
 msgid "Messenger ChatBot Addon"
-msgstr "メッセンジャーチャットボットアドオン"
+msgstr "Messengerチャットボットアドオン"
 
 msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
-msgstr "ウェブサイト上でWoowbotをハブとして利用し、FBページとメッセンジャーで顧客の質問に応答します"
+msgstr "あなたのウェブサイトでWoowbotをハブとして利用し、FBページとMessengerで顧客の質問に応答します"
 
 msgid "Extended Search"
 msgstr "拡張検索"
@@ -1927,31 +1896,31 @@ msgid "ChatBot Session Save Addon"
 msgstr "チャットボットセッション保存アドオン"
 
 msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
-msgstr "このアドオンはユーザーのチャットセッションを保存し、ボットを微調整してより良いサポートとパフォーマンスを提供するのに役立ちます。"
+msgstr "このアドオンはユーザーのチャットセッションを保存し、より良いサポートとパフォーマンスのためにボットを微調整するのに役立ちます。"
 
 msgid "LiveChat Addon"
 msgstr "ライブチャットアドオン"
 
 msgid "Live Human Chat integrated with WPBot"
-msgstr "WPBotと統合されたライブヒューマンチャット"
+msgstr "WPBotと統合されたライブ人間チャット"
 
 msgid "White Label WPBot"
 msgstr "ホワイトラベルWPBot"
 
 msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
-msgstr "QuantumCloudのロゴとブランディングをあなたのものに置き換えます。クライアントにチャットボットサービスを提供したい開発者や代理店に適しています。"
+msgstr "QuantumCloudのロゴとブランディングをあなたのものに置き換えます。顧客にチャットボットサービスを提供したい開発者や代理店に適しています。"
 
 msgid "Mailing List Integration AddOn"
 msgstr "メーリングリスト統合アドオン"
 
 msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
-msgstr "メーリングリスト統合は、MailchimpおよびZapierアカウントと接続できるチャットボットアドオンです。チャットボットからMailchimpリストに新しい購読者を追加し、解除することができます。また、Zapierアカウントで新しいZapを作成し、このアドオンと接続することもできます。"
+msgstr "メーリングリスト統合は、あなたのMailchimpおよびZapierアカウントに接続できるチャットボットアドオンです。チャットボットからMailchimpリストに新しい購読者を追加したり、解除したりできます。また、Zapierアカウントで新しいZapを作成し、このアドオンと接続することもできます。"
 
 msgid "WoowBot Master Theme"
 msgstr "WoowBotマスターテーマ"
 
 msgid "Get a WoowBot Powered Theme!"
-msgstr "WoowBotパワードテーマを取得しましょう！"
+msgstr "WoowBotパワードテーマを取得！"
 
 msgid "Save Settings"
 msgstr "設定を保存"
@@ -1960,16 +1929,16 @@ msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
 msgstr "**プロのヒント: WoowBotを本当に賢くしたいですか？"
 
 msgid "AI and Natural Language Processing?"
-msgstr "AIと自然言語処理を使って？"
+msgstr "AIと自然言語処理で？"
 
 msgid "Upgrade to the Pro version"
 msgstr "プロ版にアップグレード"
 
 msgid "**Pro Tip: WoowBot Pro is integrated with"
-msgstr "**プロのヒント: WoowBot Proは"
+msgstr "**プロのヒント: WoowBot Proは、"
 
 msgid "OpenAI ChatGPT and DialogFlow AI"
-msgstr "OpenAI ChatGPTとDialogFlow AIと統合されています"
+msgstr "OpenAI ChatGPTおよびDialogFlow AIと統合されています"
 
 msgid "**Pro Tip: "
 msgstr "**プロのヒント: "
@@ -1981,7 +1950,7 @@ msgid "answer  questions and provide real customer support"
 msgstr "質問に答え、実際の顧客サポートを提供します"
 
 msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
-msgstr "**プロのヒント: 顧客が注文を完了していない場合は、"
+msgstr "**プロのヒント: 顧客が注文を完了していませんか？"
 
 msgid "Customer Conversion report"
 msgstr "顧客コンバージョンレポートで確認してください"
@@ -1996,13 +1965,13 @@ msgid "Use WoowBot Pro to"
 msgstr "WoowBot Proを使用して"
 
 msgid "provide live chat suport to your customers!"
-msgstr "顧客にライブチャットサポートを提供しましょう！"
+msgstr "顧客にライブチャットサポートを提供します！"
 
 msgid "**Pro Tip: Utilize Onsite Retargeting for"
 msgstr "**プロのヒント: オンサイトリターゲティングを利用して"
 
 msgid "Exit Intent or Scroll down Popups"
-msgstr "退出意図またはスクロールダウンポップアップを"
+msgstr "退出意図またはスクロールダウンポップアップのために"
 
 msgid "with WoowBot Pro. Increase sales by 50% or more!"
 msgstr "with WoowBot Pro. Increase sales by 50% or more!"
@@ -2023,4 +1992,115 @@ msgid "Facebook, Instagram, Telegram"
 msgstr "Facebook、Instagram、Telegram"
 
 msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
-msgstr "などと統合して、顧客が受けるべきサポートを提供します。顧客満足度を向上させましょう！"
+msgstr "などと統合され、顧客が受けるべきサポートを提供します。顧客満足度を向上させましょう！"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "単一商品ページに「AIで試着」ボタンを表示"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "「試着」ボタンの位置とテキストを<strong>一般設定</strong>タブで完全にカスタマイズできます！"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "顧客が試着ボタンをクリックすると、プレミアムモーダルインターフェースがスライドアップします。彼らは自分自身の参照写真を簡単にドラッグアンドドロップまたはアップロードできます。また、カスタムシナリオの指示を追加するためのテキストボックスもあります（例：<em>「モダンなコーヒーショップに立っている」</em>）。"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "GoogleのGeminiモデル（Imagen 3やVeoを含む）には、Google AI StudioからのAPIキーが必要です。<a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>を訪問して無料のAPIキーを取得できます。"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAIのモデル（DALL-E 3など）には、有料のOpenAIプラットフォームアカウントが必要です。<a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI APIキー</a>でキーを生成できます。"
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "Geminiモデルを選択します。「モデルを取得」をクリックして、APIキーを追加した場合はリストを更新します。"
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "異なるページで異なるGPTアシスタントをチャットボットウィジェットで使用できます。このサンプルショートコードを貼り付け、必要に応じてアシスタントIDを置き換えます：例：[chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr "OpenAI APIキーを追加すると、一般的な質問に対してすでに機能し始めるはずです。シークレットモードで新しいブラウザウィンドウを開き、「ロシアの首都はどこですか？」と尋ねてテストします。"
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:
+\n"
+"                "
+msgstr ""
+"a. モデルをトレーニングまたは微調整するには、まず次のことを行う必要があります：
+\n"
+"                "
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
+"                Upload your training file in .JSONL format."
+msgstr ""
+"b. JSONLファイルが準備できたら、トレーニングモデルセクションに移動してください。
+\n"
+"                トレーニングファイルを.JSONL形式でアップロードします。"
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "d. トレーニングが完了し、ファイルが準備できると、微調整されたモデルが返されます。微調整されたモデルリストに表示され、ステータスは「成功」と表示され、FT（微調整）モデルIDも取得できます（設定ページにコピーします）。"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"あなたは時々単語を誤って綴るアシスタントです\" },{ \"role\": \"user\", \"content\": \"物語を教えてください。\" }, { \"role\": \"assistant\", \"content\": \"ある日、学生が学校に行きました。\" }]}"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr "より良い結果を得るには、少なくとも500以上のプロンプトが必要です。そうしないと、OpenAIは応答を一般的な知識と混ぜてしまいます。また、プロンプトはできるだけ詳細であるべきです。FAQ形式に従い、詳細な質問と回答を提供してください。例：単に「ビンテージデニムジャケット」と言うのではなく、「なぜ私たちのビンテージデニムジャケットを着るべきなのか？」と書くことができます。"
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// 各ロールのためにcronジョブをスケジュールします。すでにスケジュールされていない場合は);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // 使用されたレート制限をリセットするためのイベントをスケジュールします
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// WordPressのcron関数が利用可能であることを確認します
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "フォーム送信リクエストの処理中に問題が発生しました！ご不便をおかけして申し訳ありません。<br>フィードバックがある場合は、<span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span>までメールしてください。すぐにお返事いたします！"
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">WordPressを更新してください</a>、その後<a href=\"%2$s\">PHPの更新について詳しく学んでください</a>。"
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">WordPressを更新してください</a>。"
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">PHPの更新について詳しく学んでください</a>。"

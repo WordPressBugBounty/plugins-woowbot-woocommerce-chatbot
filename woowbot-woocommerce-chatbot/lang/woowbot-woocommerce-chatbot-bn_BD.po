@@ -1,0 +1,2113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woowbot-woocommerce-chatbot (AI Translated)\n"
+"Report-Msgid-Bugs-To: https://www.quantumcloud.net/\n"
+"POT-Creation-Date: 2026-09-15 10:59+0000\n"
+"PO-Revision-Date: 2026-09-15 10:59+0000\n"
+"Last-Translator: AI Language Packs <support@quantumcloud.net>\n"
+"Language-Team: বাংলা (Bengali)\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI Language Packs WordPress Plugin v1.0.2\n"
+
+msgid "We can't detect any plugin information. This is most probably because you have not included the code in the plugin main file."
+msgstr "আমরা কোন প্লাগইন তথ্য সনাক্ত করতে পারছি না। এটি সম্ভবত কারণ আপনি প্লাগইনের প্রধান ফাইলে কোড অন্তর্ভুক্ত করেননি।"
+
+msgid "Sorry to see you go"
+msgstr "আপনাকে যেতে দেখে দুঃখিত"
+
+msgid "Found a Bug"
+msgstr "একটি বাগ পাওয়া গেছে"
+
+msgid "Need More Features"
+msgstr "আরও বৈশিষ্ট্যের প্রয়োজন"
+
+msgid "Deactivating Temporarily"
+msgstr "অস্থায়ীভাবে নিষ্ক্রিয় করা হচ্ছে"
+
+msgid "Upgrading to Pro"
+msgstr "প্রো তে আপগ্রেড করা হচ্ছে"
+
+msgid "Please provide email so we can contact with bug fixes"
+msgstr "দয়া করে ইমেইল প্রদান করুন যাতে আমরা বাগ সংশোধনের জন্য যোগাযোগ করতে পারি"
+
+msgid "Please provide some details so we can improve the plugin"
+msgstr "দয়া করে কিছু বিস্তারিত প্রদান করুন যাতে আমরা প্লাগইনটি উন্নত করতে পারি"
+
+msgid "Submitting form"
+msgstr "ফর্ম জমা দেওয়া হচ্ছে"
+
+msgid "Expand chat window"
+msgstr "চ্যাট উইন্ডো সম্প্রসারিত করুন"
+
+msgid "Conversations with"
+msgstr "এর সাথে কথোপকথন"
+
+msgid "Close chat window"
+msgstr "চ্যাট উইন্ডো বন্ধ করুন"
+
+msgid "Send a message."
+msgstr "একটি বার্তা পাঠান।"
+
+msgid "Support Request Details"
+msgstr "সমর্থন অনুরোধের বিস্তারিত"
+
+msgid "Name"
+msgstr "নাম"
+
+msgid "Email"
+msgstr "ইমেইল"
+
+msgid "Subject"
+msgstr "বিষয়"
+
+msgid "Message"
+msgstr "বার্তা"
+
+msgid "Page"
+msgstr "পৃষ্ঠা"
+
+msgid "User Agent"
+msgstr "ব্যবহারকারী এজেন্ট"
+
+msgid "IP Address"
+msgstr "আইপি ঠিকানা"
+
+msgid "Mail Generated on"
+msgstr "মেইল তৈরি হয়েছে"
+
+msgid "Click for Product Details"
+msgstr "পণ্যের বিস্তারিত জানার জন্য ক্লিক করুন"
+
+msgid "AI Settings"
+msgstr "এআই সেটিংস"
+
+msgid "selected"
+msgstr "নির্বাচিত"
+
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgid "Gemini"
+msgstr "জেমিনি"
+
+msgid "Grok"
+msgstr "গ্রোক"
+
+msgid "Knowledge Base (RAG)"
+msgstr "জ্ঞানভাণ্ডার (RAG)"
+
+msgid "AI Wizard"
+msgstr "এআই উইজার্ড"
+
+msgid "Common AI Settings"
+msgstr "সাধারণ এআই সেটিংস"
+
+msgid "Rate Limit"
+msgstr "রেট সীমা"
+
+msgid "Other Common Settings"
+msgstr "অন্যান্য সাধারণ সেটিংস"
+
+msgid "Enable Rate Limiting"
+msgstr "রেট সীমা সক্ষম করুন"
+
+msgid "Set the maximum number of requests each user of a particular role can make to the OpenAI API within a specific period. Leave the field empty or set it to 0 for unlimited requests."
+msgstr "নির্দিষ্ট সময়ের মধ্যে একটি নির্দিষ্ট ভূমিকার প্রতিটি ব্যবহারকারী কতটি অনুরোধ OpenAI API তে করতে পারে তার সর্বাধিক সংখ্যা সেট করুন। সীমাহীন অনুরোধের জন্য ক্ষেত্রটি খালি রাখুন বা 0 সেট করুন।"
+
+msgid "Set the rate limit for each user role:"
+msgstr "প্রতিটি ব্যবহারকারী ভূমিকার জন্য রেট সীমা সেট করুন:"
+
+msgid "Rate limit for %s"
+msgstr "%s এর জন্য রেট সীমা"
+
+msgid "Timeframe:"
+msgstr "সময়সীমা:"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\\"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\\"
+
+msgid "48 Hours"
+msgstr "48 ঘণ্টা"
+
+msgid "24 Hours"
+msgstr "24 ঘণ্টা"
+
+msgid "12 Hours"
+msgstr "12 ঘণ্টা"
+
+msgid "6 Hours"
+msgstr "6 ঘণ্টা"
+
+msgid "Rate limit for Guest Users"
+msgstr "অতিথি ব্যবহারকারীদের জন্য রেট সীমা"
+
+msgid "rate_limit_guest"
+msgstr "rate_limit_guest"
+
+msgid "Please connect to an AI service like OpenAI or Gemini before embedding. "
+msgstr "এম্বেড করার আগে OpenAI বা Gemini এর মতো একটি AI পরিষেবার সাথে সংযোগ করুন।"
+
+msgid "Check this Tutorial for more details."
+msgstr "আরও বিস্তারিত জানার জন্য এই টিউটোরিয়ালটি চেক করুন।"
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "%s item"
+msgstr "%s আইটেম"
+
+msgid "<strong>AI Try-On Addon for WooCommerce</strong> requires WooCommerce to be installed and active. The plugin's features will not function until WooCommerce is active."
+msgstr "<strong>WooCommerce এর জন্য AI Try-On অ্যাডঅন</strong> ইনস্টল এবং সক্রিয় WooCommerce প্রয়োজন। WooCommerce সক্রিয় না হওয়া পর্যন্ত প্লাগইনের বৈশিষ্ট্যগুলি কাজ করবে না।"
+
+msgid "AI Try-On Configurations"
+msgstr "AI Try-On কনফিগারেশন"
+
+msgid "General Settings"
+msgstr "সাধারণ সেটিংস"
+
+msgid "Prompts"
+msgstr "প্রম্পট"
+
+msgid "Help"
+msgstr "সাহায্য"
+
+msgid "Configure all your AI Try-On settings in one place."
+msgstr "এক জায়গায় আপনার সমস্ত AI Try-On সেটিংস কনফিগার করুন।"
+
+msgid "Enable Try-On Button"
+msgstr "Try-On বোতাম সক্ষম করুন"
+
+msgid "Show the \\"
+msgstr "দেখান \\"
+
+msgid "Require Login"
+msgstr "লগইন প্রয়োজন"
+
+msgid "Show the Try-On feature for logged-in users only"
+msgstr "লগ ইন করা ব্যবহারকারীদের জন্য শুধুমাত্র Try-On বৈশিষ্ট্যটি দেখান"
+
+msgid "Show Add to Cart Button"
+msgstr "কার্টে যোগ করুন বোতাম দেখান"
+
+msgid "Show the 'Add to Cart' button in the Try-On modal footer"
+msgstr "Try-On মডাল ফুটারে 'কার্টে যোগ করুন' বোতামটি দেখান"
+
+msgid "Daily Generation Limit"
+msgstr "দৈনিক উৎপাদন সীমা"
+
+msgid "e.g. 5 (Leave blank for unlimited)"
+msgstr "যেমন 5 (সীমাহীন জন্য খালি রাখুন)"
+
+msgid "Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited."
+msgstr "প্রতি সেশন + আইপি প্রতি 24 ঘণ্টায় চিত্র এবং ভিডিও উৎপাদন সীমাবদ্ধ করুন। সীমাহীন জন্য খালি বা 0 রাখুন।"
+
+msgid "Try-On Button Position"
+msgstr "Try-On বোতামের অবস্থান"
+
+msgid "Default"
+msgstr "ডিফল্ট"
+
+msgid "Inside Product Summary"
+msgstr "পণ্য সারাংশের ভিতরে"
+
+msgid "Before Cart"
+msgstr "কার্টের আগে"
+
+msgid "Above Add to Cart Form"
+msgstr "কার্ট ফর্মের উপরে"
+
+msgid "After Cart"
+msgstr "কার্টের পরে"
+
+msgid "Below Add to Cart Form"
+msgstr "কার্ট ফর্মের নিচে"
+
+msgid "Before Meta"
+msgstr "মেটার আগে"
+
+msgid "Above Categories/Tags"
+msgstr "শ্রেণী/ট্যাগের উপরে"
+
+msgid "After Meta"
+msgstr "মেটার পরে"
+
+msgid "Below Categories/Tags"
+msgstr "শ্রেণী/ট্যাগের নিচে"
+
+msgid "Below Summary"
+msgstr "সারাংশের নিচে"
+
+msgid "At bottom of product details"
+msgstr "পণ্য বিস্তারিতের নিচে"
+
+msgid "Above Summary"
+msgstr "সারাংশের উপরে"
+
+msgid "At very top of product details"
+msgstr "পণ্য বিস্তারিতের খুব উপরে"
+
+msgid "Try-On Button Icon"
+msgstr "Try-On বোতামের আইকন"
+
+msgid "Sparkles"
+msgstr "স্পার্কলস"
+
+msgid "Magic Wand"
+msgstr "ম্যাজিক ওয়ান্ড"
+
+msgid "Shirt"
+msgstr "শার্ট"
+
+msgid "No Icon"
+msgstr "কোন আইকন নয়"
+
+msgid "Select an emoji icon to display before the button text."
+msgstr "বোতাম পাঠ্যের আগে প্রদর্শনের জন্য একটি ইমোজি আইকন নির্বাচন করুন।"
+
+msgid "Try with your photo Button Text"
+msgstr "আপনার ছবির সাথে চেষ্টা করুন বোতাম পাঠ্য"
+
+msgid "The text displayed on the frontend button."
+msgstr "ফ্রন্টএন্ড বোতামে প্রদর্শিত পাঠ্য।"
+
+msgid "Default Video Duration"
+msgstr "ডিফল্ট ভিডিও সময়কাল"
+
+msgid "(Pro Feature)"
+msgstr "(প্রো বৈশিষ্ট্য)"
+
+msgid "4 Seconds"
+msgstr "4 সেকেন্ড"
+
+msgid "Standard generation"
+msgstr "মানক উৎপাদন"
+
+msgid "8 Seconds"
+msgstr "8 সেকেন্ড"
+
+msgid "Extended generation"
+msgstr "বিস্তৃত উৎপাদন"
+
+msgid "Select the length of the generated video. (Available in Pro)"
+msgstr "উৎপন্ন ভিডিওর দৈর্ঘ্য নির্বাচন করুন। (প্রোতে উপলব্ধ)"
+
+msgid "Video Resolution"
+msgstr "ভিডিও রেজোলিউশন"
+
+msgid "720p"
+msgstr "720p"
+
+msgid "Standard Definition"
+msgstr "মানক সংজ্ঞা"
+
+msgid "1080p"
+msgstr "1080p"
+
+msgid "High Definition"
+msgstr "উচ্চ সংজ্ঞা"
+
+msgid "Select the resolution for generated videos. (Available in Pro)"
+msgstr "তৈরি করা ভিডিওগুলির জন্য রেজোলিউশন নির্বাচন করুন। (প্রোতে উপলব্ধ)"
+
+msgid "Image Size"
+msgstr "ছবির আকার"
+
+msgid "1024x1024 (Square)"
+msgstr "১০২৪x১০২৪ (বর্গাকার)"
+
+msgid "DALL-E 2, DALL-E 3, Gemini"
+msgstr "ড্যাল-ই ২, ড্যাল-ই ৩, জেমিনি"
+
+msgid "1024x1792 (Portrait)"
+msgstr "১০২৪x১৭৯২ (পোর্ট্রেট)"
+
+msgid "DALL-E 3, Gemini"
+msgstr "ড্যাল-ই ৩, জেমিনি"
+
+msgid "1792x1024 (Landscape)"
+msgstr "১৭৯২x১০২৪ (ল্যান্ডস্কেপ)"
+
+msgid "Select the aspect ratio / size for AI generated images."
+msgstr "এআই দ্বারা তৈরি ছবির জন্য দৃষ্টিভঙ্গি অনুপাত / আকার নির্বাচন করুন।"
+
+msgid "Google Gemini Base Prompt"
+msgstr "গুগল জেমিনি বেস প্রম্পট"
+
+msgid "Customize the base instructions sent to Google Gemini. The user's input will be appended automatically."
+msgstr "গুগল জেমিনিতে পাঠানো বেস নির্দেশনাগুলি কাস্টমাইজ করুন। ব্যবহারকারীর ইনপুট স্বয়ংক্রিয়ভাবে যুক্ত হবে।"
+
+msgid "Reset to Default"
+msgstr "ডিফল্টে রিসেট করুন"
+
+msgid "Gemini Veo Video Base Prompt"
+msgstr "জেমিনি ভিও ভিডিও বেস প্রম্পট"
+
+msgid "Customize the base instructions for Veo video generation. The user's input will be appended automatically. (Available in Pro)"
+msgstr "ভিও ভিডিও উৎপাদনের জন্য বেস নির্দেশনাগুলি কাস্টমাইজ করুন। ব্যবহারকারীর ইনপুট স্বয়ংক্রিয়ভাবে যুক্ত হবে। (প্রোতে উপলব্ধ)"
+
+msgid "OpenAI Base Prompt"
+msgstr "ওপেনএআই বেস প্রম্পট"
+
+msgid "Customize the base instructions sent to OpenAI. The user's input will be appended automatically."
+msgstr "ওপেনএআইতে পাঠানো বেস নির্দেশনাগুলি কাস্টমাইজ করুন। ব্যবহারকারীর ইনপুট স্বয়ংক্রিয়ভাবে যুক্ত হবে।"
+
+msgid "Final Prompt Structure Builder"
+msgstr "চূড়ান্ত প্রম্পট স্ট্রাকচার বিল্ডার"
+
+msgid "Use placeholders:"
+msgstr "প্লেসহোল্ডার ব্যবহার করুন:"
+
+msgid "to structure how the final combined prompt is sent."
+msgstr "চূড়ান্ত সংযুক্ত প্রম্পট কিভাবে পাঠানো হয় তা গঠন করতে।"
+
+msgid "Quick Start Guide"
+msgstr "দ্রুত শুরু গাইড"
+
+msgid "Welcome to"
+msgstr "স্বাগতম"
+
+msgid "WooCommerce AI Try-On"
+msgstr "উWooCommerce AI ট্রাই-অন"
+
+msgid "This plugin allows your customers to virtually try on your products using cutting edge generative AI."
+msgstr "এই প্লাগইনটি আপনার গ্রাহকদের কাটিং এজ জেনারেটিভ এআই ব্যবহার করে আপনার পণ্যগুলি ভার্চুয়ালি ট্রাই অন করতে দেয়।"
+
+msgid "Pro Tip:"
+msgstr "প্রো টিপ:"
+
+msgid "You can completely customize the \\"
+msgstr "আপনি সম্পূর্ণরূপে কাস্টমাইজ করতে পারেন \\"
+
+msgid "1. Customer Experience"
+msgstr "১. গ্রাহক অভিজ্ঞতা"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\\"
+msgstr "যখন একজন গ্রাহক ট্রাই-অন বোতামে ক্লিক করে, একটি প্রিমিয়াম মডাল ইন্টারফেস উপরে স্লাইড করে। তারা সহজেই একটি রেফারেন্স ছবি টেনে আনতে বা আপলোড করতে পারে। তাদের কাছে কাস্টম দৃশ্য নির্দেশনা যোগ করার জন্য একটি টেক্সট বক্সও রয়েছে (যেমন, <em>\\"
+
+msgid "2. The Generation Process"
+msgstr "২. উৎপাদন প্রক্রিয়া"
+
+msgid "Once they click Generate, the plugin takes the <strong>Product Image</strong>, the <strong>Customer's Uploaded Image</strong>, and their <strong>Scenario text</strong>, and combines them using the <em>Final Prompt Structure Builder</em> (found in the Prompts tab)."
+msgstr "একবার তারা জেনারেট ক্লিক করলে, প্লাগইন <strong>পণ্য ছবি</strong>, <strong>গ্রাহকের আপলোড করা ছবি</strong>, এবং তাদের <strong>দৃশ্যের টেক্সট</strong> গ্রহণ করে এবং <em>চূড়ান্ত প্রম্পট স্ট্রাকচার বিল্ডার</em> ব্যবহার করে তাদের সংমিশ্রণ করে (প্রম্পট ট্যাবে পাওয়া যায়)।"
+
+msgid "3. Image vs Video"
+msgstr "৩. ছবি বনাম ভিডিও"
+
+msgid "Images:"
+msgstr "ছবিগুলি:"
+
+msgid "Generated instantly by either Google Gemini (Imagen 3) or OpenAI (DALL-E 3)."
+msgstr "গুগল জেমিনি (ইমেজ ৩) বা ওপেনএআই (ড্যাল-ই ৩) দ্বারা তাত্ক্ষণিকভাবে তৈরি।"
+
+msgid "Videos:"
+msgstr "ভিডিও:"
+
+msgid "Powered exclusively by Google's cutting-edge <strong>Veo</strong> model. Video generation can take several minutes. The plugin handles this gracefully by continuously polling Google's servers in the background, allowing the customer to see real-time status updates without leaving the page."
+msgstr "গুগলের কাটিং এজ <strong>ভিও</strong> মডেল দ্বারা একচেটিয়াভাবে চালিত। ভিডিও উৎপাদনে কয়েক মিনিট সময় লাগতে পারে। প্লাগইনটি এটি সুন্দরভাবে পরিচালনা করে গুগলের সার্ভারগুলিকে পটভূমিতে ক্রমাগত পোলিং করে, গ্রাহককে পৃষ্ঠা ছাড়াই বাস্তব-সময়ের স্থিতি আপডেট দেখতে দেয়।"
+
+msgid "API Keys & Configuration"
+msgstr "এপিআই কী এবং কনফিগারেশন"
+
+msgid "Before the Try-On button will function, you must configure your AI providers."
+msgstr "ট্রাই-অন বোতাম কাজ করার আগে, আপনাকে আপনার এআই প্রদানকারীদের কনফিগার করতে হবে।"
+
+msgid "Important:"
+msgstr "গুরুতর:"
+
+msgid "You must click the <strong>Verify</strong> button next to your selected models in the AI Settings tab to confirm your API key has access."
+msgstr "আপনাকে এআই সেটিংস ট্যাবে আপনার নির্বাচিত মডেলের পাশে <strong>যাচাই করুন</strong> বোতামে ক্লিক করতে হবে যাতে আপনার এপিআই কী অ্যাক্সেস নিশ্চিত হয়।"
+
+msgid "Getting a Google Gemini Key"
+msgstr "গুগল জেমিনি কী পাওয়া"
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\\"
+msgstr "গুগলের জেমিনি মডেলগুলি (ইমেজ ৩ এবং ভিও সহ) গুগল এআই স্টুডিও থেকে একটি এপিআই কী প্রয়োজন। আপনি &lt;a href=\\"
+
+msgid "Getting an OpenAI Key"
+msgstr "ওপেনএআই কী পাওয়া"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\\"
+msgstr "ওপেনএআই-এর মডেলগুলি (যেমন ড্যাল-ই ৩) একটি পেইড ওপেনএআই প্ল্যাটফর্ম অ্যাকাউন্ট প্রয়োজন। আপনি &lt;a href=\\"
+
+msgid "Need Support?"
+msgstr "সমর্থনের প্রয়োজন?"
+
+msgid "If you're experiencing issues with the plugin or have feature requests, please reach out to our support desk."
+msgstr "যদি আপনি প্লাগইন নিয়ে সমস্যা অনুভব করেন বা বৈশিষ্ট্যের অনুরোধ থাকে, তবে দয়া করে আমাদের সমর্থন ডেস্কের সাথে যোগাযোগ করুন।"
+
+msgid "Contact Support &rarr;"
+msgstr "সমর্থনে যোগাযোগ করুন &rarr;"
+
+msgid "Useful Links"
+msgstr "উপকারী লিঙ্ক"
+
+msgid "Google AI Studio"
+msgstr "গুগল এআই স্টুডিও"
+
+msgid "OpenAI Developer Platform"
+msgstr "ওপেনএআই ডেভেলপার প্ল্যাটফর্ম"
+
+msgid "WooCommerce Docs"
+msgstr "উWooCommerce ডক্স"
+
+msgid "Save Configurations"
+msgstr "কনফিগারেশন সংরক্ষণ করুন"
+
+msgid "AI API Configuration"
+msgstr "এআই এপিআই কনফিগারেশন"
+
+msgid "Configure API keys, models, and generation settings."
+msgstr "এপিআই কী, মডেল এবং উৎপাদন সেটিংস কনফিগার করুন।"
+
+msgid "Image Generation AI Provider"
+msgstr "ছবি উৎপাদন এআই প্রদানকারী"
+
+msgid "Google Gemini"
+msgstr "গুগল জেমিনি"
+
+msgid "OpenAI Integration Settings"
+msgstr "ওপেনএআই ইন্টিগ্রেশন সেটিংস"
+
+msgid "OpenAI API Key"
+msgstr "ওপেনএআই এপিআই কী"
+
+msgid "Test Connection"
+msgstr "সংযোগ পরীক্ষা করুন"
+
+msgid "OpenAI Image Model"
+msgstr "ওপেনএআই ছবি মডেল"
+
+msgid "Verify"
+msgstr "যাচাই করুন"
+
+msgid "Select the OpenAI model for image generation."
+msgstr "ছবি উৎপাদনের জন্য ওপেনএআই মডেল নির্বাচন করুন।"
+
+msgid "Google Gemini Integration Settings"
+msgstr "গুগল জেমিনি ইন্টিগ্রেশন সেটিংস"
+
+msgid "Powered by Veo for Video"
+msgstr "ভিডিওর জন্য ভিও দ্বারা চালিত"
+
+msgid "Gemini API Key"
+msgstr "জেমিনি এপিআই কী"
+
+msgid "Gemini Image Model"
+msgstr "জেমিনি ছবি মডেল"
+
+msgid "Select the Gemini model for image generation."
+msgstr "ছবি উৎপাদনের জন্য জেমিনি মডেল নির্বাচন করুন।"
+
+msgid "Gemini Video Model (Google Veo)"
+msgstr "জেমিনি ভিডিও মডেল (গুগল ভিও)"
+
+msgid " ( Recommended )"
+msgstr " ( সুপারিশকৃত )"
+
+msgid "Select the Google Veo model for video try-on generation. (Available in Pro)"
+msgstr "ভিডিও ট্রাই-অন উৎপাদনের জন্য গুগল ভিও মডেল নির্বাচন করুন। (প্রোতে উপলব্ধ)"
+
+msgid "API Key is empty."
+msgstr "এপিআই কী খালি।"
+
+msgid "Connection successful!"
+msgstr "সংযোগ সফল!"
+
+msgid "API Error: "
+msgstr "এপিআই ত্রুটি: "
+
+msgid "Connection failed (HTTP %1$s). Details: %2$s"
+msgstr "সংযোগ ব্যর্থ (এইচটিটিপি %1$s)। বিস্তারিত: %2$s"
+
+msgid "API Error"
+msgstr "এপিআই ত্রুটি"
+
+msgid "Missing API key or model."
+msgstr "এপিআই কী বা মডেল অনুপস্থিত।"
+
+msgid "Generation failed. (HTTP %s)"
+msgstr "উৎপাদন ব্যর্থ। (এইচটিটিপি %s)"
+
+msgid "Model verified successfully."
+msgstr "মডেল সফলভাবে যাচাই করা হয়েছে।"
+
+msgid "Model verification failed. (HTTP %s)"
+msgstr "মডেল যাচাইকরণ ব্যর্থ। (এইচটিটিপি %s)"
+
+msgid "Invalid provider."
+msgstr "অবৈধ প্রদানকারী।"
+
+msgid "OpenAI API Request Failed: "
+msgstr "ওপেনএআই এপিআই অনুরোধ ব্যর্থ: "
+
+msgid "Generation execution failure. %s"
+msgstr "উৎপাদন কার্যকরী ব্যর্থতা। %s"
+
+msgid "OpenAI Error: "
+msgstr "ওপেনএআই ত্রুটি: "
+
+msgid "Gemini API Request Failed: "
+msgstr "জেমিনি এপিআই অনুরোধ ব্যর্থ: "
+
+msgid "Gemini generation stopped. Reason: "
+msgstr "জেমিনি উৎপাদন বন্ধ হয়েছে। কারণ: "
+
+msgid "Unknown Gemini Error."
+msgstr "অজানা জেমিনি ত্রুটি।"
+
+msgid "Gemini API Error: "
+msgstr "জেমিনি এপিআই ত্রুটি: "
+
+msgid "You have reached your daily limit for AI generations. Please try again tomorrow."
+msgstr "আপনি এআই উৎপাদনের জন্য আপনার দৈনিক সীমা পৌঁছেছেন। দয়া করে আগামীকাল আবার চেষ্টা করুন।"
+
+msgid "API Configuration missing. Contact store administrator."
+msgstr "এপিআই কনফিগারেশন অনুপস্থিত। দোকানের প্রশাসকের সাথে যোগাযোগ করুন।"
+
+msgid "No media data provided."
+msgstr "কোন মিডিয়া ডেটা প্রদান করা হয়নি।"
+
+msgid "Invalid base64 data."
+msgstr "অবৈধ বেস64 ডেটা।"
+
+msgid "Failed to decode base64."
+msgstr "বেস64 ডিকোড করতে ব্যর্থ।"
+
+msgid "Saved to Media Library!"
+msgstr "মিডিয়া লাইব্রেরিতে সংরক্ষিত!"
+
+msgid "Failed to save base64 media."
+msgstr "বেস64 মিডিয়া সংরক্ষণ করতে ব্যর্থ।"
+
+msgid "Failed to download media from URL."
+msgstr "ইউআরএল থেকে মিডিয়া ডাউনলোড করতে ব্যর্থ।"
+
+msgid "Failed to save downloaded media."
+msgstr "ডাউনলোড করা মিডিয়া সংরক্ষণ করতে ব্যর্থ।"
+
+msgid "Invalid media format."
+msgstr "অবৈধ মিডিয়া ফরম্যাট।"
+
+msgid "Reset!"
+msgstr "রিসেট!"
+
+msgid "Please enter an API key first."
+msgstr "দয়া করে প্রথমে একটি এপিআই কী প্রবেশ করুন।"
+
+msgid "Testing connection..."
+msgstr "সংযোগ পরীক্ষা করা হচ্ছে..."
+
+msgid "Error: "
+msgstr "ত্রুটি: "
+
+msgid "Unknown error"
+msgstr "অজানা ত্রুটি"
+
+msgid "Request failed: "
+msgstr "অনুরোধ ব্যর্থ হয়েছে: "
+
+msgid "Please select a model first."
+msgstr "দয়া করে প্রথমে একটি মডেল নির্বাচন করুন।"
+
+msgid "Verifying..."
+msgstr "যাচাই করা হচ্ছে..."
+
+msgid "Testing..."
+msgstr "পরীক্ষা করা হচ্ছে..."
+
+msgid "Verified! Model accepts this modality."
+msgstr "যাচাই করা হয়েছে! মডেল এই মোডালিটি গ্রহণ করে।"
+
+msgid "AJAX request failed."
+msgstr "AJAX অনুরোধ ব্যর্থ হয়েছে।"
+
+msgid "Recommended (Optimal speed & pricing rate)"
+msgstr "সুপারিশকৃত (সর্বোত্তম গতি ও মূল্য হার)"
+
+msgid "Processing..."
+msgstr "প্রক্রিয়াকরণ হচ্ছে..."
+
+msgid "Generating Video (This may take up to 5 minutes)..."
+msgstr "ভিডিও তৈরি করা হচ্ছে (এতে ৫ মিনিট সময় লাগতে পারে)..."
+
+msgid "Status Check Error: "
+msgstr "স্থিতি পরীক্ষা ত্রুটি: "
+
+msgid "Execution Error: "
+msgstr "নিষ্পত্তি ত্রুটি: "
+
+msgid "An unexpected infrastructure communication failure occurred."
+msgstr "একটি অপ্রত্যাশিত অবকাঠামো যোগাযোগ ব্যর্থতা ঘটেছে।"
+
+msgid "No media available to download."
+msgstr "ডাউনলোড করার জন্য কোন মিডিয়া উপলব্ধ নেই।"
+
+msgid "Only images/videos can be saved to the Media Library."
+msgstr "মিডিয়া লাইব্রেরিতে শুধুমাত্র ছবি/ভিডিও সংরক্ষণ করা যেতে পারে।"
+
+msgid "Saving..."
+msgstr "সংরক্ষণ করা হচ্ছে..."
+
+msgid "Saved!"
+msgstr "সংরক্ষিত!"
+
+msgid "Error"
+msgstr "ত্রুটি"
+
+msgid "Error saving media."
+msgstr "মিডিয়া সংরক্ষণে ত্রুটি।"
+
+msgid "Network error."
+msgstr "নেটওয়ার্ক ত্রুটি।"
+
+msgid "Adding..."
+msgstr "যোগ করা হচ্ছে..."
+
+msgid "You must be logged in to use this feature."
+msgstr "এই বৈশিষ্ট্যটি ব্যবহার করতে আপনাকে লগ ইন করতে হবে।"
+
+msgid "AI Product Generation"
+msgstr "AI পণ্য উৎপাদন"
+
+msgid "Original Image"
+msgstr "মূল ছবি"
+
+msgid "Original Product"
+msgstr "মূল পণ্য"
+
+msgid "Upload Image"
+msgstr "ছবি আপলোড করুন"
+
+msgid "Generate Image"
+msgstr "ছবি তৈরি করুন"
+
+msgid "Background Preference"
+msgstr "পটভূমির পছন্দ"
+
+msgid "Studio"
+msgstr "স্টুডিও"
+
+msgid "Outdoor"
+msgstr "আউটডোর"
+
+msgid "Lifestyle"
+msgstr "লাইফস্টাইল"
+
+msgid "Output Style"
+msgstr "আউটপুট শৈলী"
+
+msgid "Model Shoot"
+msgstr "মডেল শুট"
+
+msgid "Flat Lay"
+msgstr "ফ্ল্যাট লে"
+
+msgid "Ghost Mannequin"
+msgstr "ভূত ম্যানেকিন"
+
+msgid "Prompt (Optional)"
+msgstr "প্রম্পট (ঐচ্ছিক)"
+
+msgid "Add any specific instructions (optional)"
+msgstr "কোনও নির্দিষ্ট নির্দেশনা যোগ করুন (ঐচ্ছিক)"
+
+msgid "Generate"
+msgstr "তৈরি করুন"
+
+msgid "Download"
+msgstr "ডাউনলোড করুন"
+
+msgid "Generated Output"
+msgstr "তৈরি করা আউটপুট"
+
+msgid "Ready to generate"
+msgstr "তৈরি করতে প্রস্তুত"
+
+msgid "Generating Magic..."
+msgstr "যাদু তৈরি করা হচ্ছে..."
+
+msgid "Add to Cart"
+msgstr "কার্টে যোগ করুন"
+
+msgid "AI Business Analyst"
+msgstr "AI বিশ্লেষক"
+
+msgid "AI Store Analyst"
+msgstr "AI স্টোর বিশ্লেষক"
+
+msgid "WooCommerce Intelligence"
+msgstr "WooCommerce বুদ্ধিমত্তা"
+
+msgid "Instant sales insights, predictive intelligence, and deep analytics powered by AI."
+msgstr "তাত্ক্ষণিক বিক্রয় অন্তর্দৃষ্টি, পূর্বাভাস বুদ্ধিমত্তা, এবং গভীর বিশ্লেষণ AI দ্বারা চালিত।"
+
+msgid "Active AI Provider"
+msgstr "সক্রিয় AI প্রদানকারী"
+
+msgid "Ready to analyze your store"
+msgstr "আপনার স্টোর বিশ্লেষণ করতে প্রস্তুত"
+
+msgid "Clear Conversation History"
+msgstr "আলাপচারিতা ইতিহাস পরিষ্কার করুন"
+
+msgid "Reset Chat"
+msgstr "চ্যাট রিসেট করুন"
+
+msgid "Ask a question"
+msgstr "একটি প্রশ্ন জিজ্ঞাসা করুন"
+
+msgid "Ask about sales, best-selling products, customers, trends…"
+msgstr "বিক্রয়, সেরা বিক্রিত পণ্য, গ্রাহক, প্রবণতা সম্পর্কে জিজ্ঞাসা করুন..."
+
+msgid "Send question"
+msgstr "প্রশ্ন পাঠান"
+
+msgid "Press Enter ↵ to send • Shift + Enter for new line"
+msgstr "পাঠাতে এন্টার ↵ চাপুন • নতুন লাইনের জন্য শিফট + এন্টার"
+
+msgid "Store Insights"
+msgstr "স্টোর অন্তর্দৃষ্টি"
+
+msgid "AI Growth Recommendation"
+msgstr "AI বৃদ্ধির সুপারিশ"
+
+msgid "Analyzing recent store orders and performance…"
+msgstr "সাম্প্রতিক স্টোর অর্ডার এবং কর্মক্ষমতা বিশ্লেষণ করা হচ্ছে..."
+
+msgid "Performance Overview"
+msgstr "কর্মক্ষমতা পর্যালোচনা"
+
+msgid "Last 30 Days"
+msgstr "শেষ ৩০ দিন"
+
+msgid "Revenue Trend"
+msgstr "রাজস্ব প্রবণতা"
+
+msgid "Top Products by Revenue"
+msgstr "রাজস্ব দ্বারা শীর্ষ পণ্য"
+
+msgid "The requested analysis is not available."
+msgstr "অনুরোধকৃত বিশ্লেষণ উপলব্ধ নয়।"
+
+msgid "No qualifying orders were found in the last 30 days. Check traffic, checkout errors, and order-status settings first."
+msgstr "শেষ ৩০ দিনে কোন যোগ্য অর্ডার পাওয়া যায়নি। প্রথমে ট্রাফিক, চেকআউট ত্রুটি এবং অর্ডার-স্ট্যাটাস সেটিংস পরীক্ষা করুন।"
+
+msgid "Orders are down %s%%. Focus on recovering traffic and repeat buyers; ask the analyst which customers are most likely to return."
+msgstr "অর্ডার %s%% কমেছে। ট্রাফিক এবং পুনরাবৃত্ত গ্রাহকদের পুনরুদ্ধারে মনোযোগ দিন; বিশ্লেষককে জিজ্ঞাসা করুন কোন গ্রাহকরা সবচেয়ে বেশি ফিরে আসার সম্ভাবনা রয়েছে।"
+
+msgid "Average order value is down %s%%. Test bundles using the products-bought-together report."
+msgstr "গড় অর্ডার মূল্য %s%% কমেছে। পণ্য-একসাথে-ক্রয় রিপোর্ট ব্যবহার করে বান্ডেল পরীক্ষা করুন।"
+
+msgid "%s leads recent revenue. Pair it with frequently bought products and feature the bundle prominently."
+msgstr "%s সাম্প্রতিক রাজস্বের নেতৃত্ব দিচ্ছে। এটি প্রায়ই কেনা পণ্যের সাথে যুক্ত করুন এবং বান্ডেলটি স্পষ্টভাবে প্রদর্শন করুন।"
+
+msgid "Review recent customers, coupons, and sales channels to find the clearest next growth opportunity."
+msgstr "সাম্প্রতিক গ্রাহক, কুপন এবং বিক্রয় চ্যানেল পর্যালোচনা করুন সবচেয়ে পরিষ্কার পরবর্তী বৃদ্ধির সুযোগ খুঁজতে।"
+
+msgid "Please configure your OpenAI or Google Gemini API key in AI Try-On & AI Settings."
+msgstr "দয়া করে আপনার OpenAI বা Google Gemini API কী AI Try-On &amp; AI Settings এ কনফিগার করুন।"
+
+msgid "Google Gemini request failed."
+msgstr "Google Gemini অনুরোধ ব্যর্থ হয়েছে।"
+
+msgid "OpenAI request failed."
+msgstr "OpenAI অনুরোধ ব্যর্থ হয়েছে।"
+
+msgid "Which period performed best?"
+msgstr "কোন সময়কাল সেরা পারফর্ম করেছে?"
+
+msgid "Show the top products during the strongest period."
+msgstr "শক্তিশালী সময়কালে শীর্ষ পণ্যগুলি দেখান।"
+
+msgid "Compare this trend with the previous period."
+msgstr "এই প্রবণতাটি পূর্ববর্তী সময়ের সাথে তুলনা করুন।"
+
+msgid "Show the sales trend for the same period."
+msgstr "একই সময়ের জন্য বিক্রয় প্রবণতা দেখান।"
+
+msgid "Compare these products with the previous period."
+msgstr "এই পণ্যগুলিকে পূর্ববর্তী সময়ের সাথে তুলনা করুন।"
+
+msgid "Summarize sales for this period."
+msgstr "এই সময়ের জন্য বিক্রয় সারসংক্ষেপ করুন।"
+
+msgid "Show this period as a sales graph."
+msgstr "এই সময়কালকে বিক্রয় গ্রাফ হিসাবে দেখান।"
+
+msgid "Which products sold best during this period?"
+msgstr "এই সময়কালে কোন পণ্যগুলি সবচেয়ে ভাল বিক্রি হয়েছে?"
+
+msgid "Compare this with the preceding period."
+msgstr "এটি পূর্ববর্তী সময়ের সাথে তুলনা করুন।"
+
+msgid "What were total sales in the last 30 days?"
+msgstr "শেষ ৩০ দিনে মোট বিক্রয় কত ছিল?"
+
+msgid "Show the monthly sales trend for the last year."
+msgstr "গত বছরের জন্য মাসিক বিক্রয় প্রবণতা দেখান।"
+
+msgid "What are my top 10 products this year?"
+msgstr "এই বছরে আমার শীর্ষ ১০ পণ্য কী?"
+
+msgid "Sales trend"
+msgstr "বিক্রয় প্রবণতা"
+
+msgid "Top products by revenue"
+msgstr "রাজস্ব দ্বারা শীর্ষ পণ্য"
+
+msgid "Coupon-attributed revenue"
+msgstr "কুপন-অ্যাট্রিবিউটেড রাজস্ব"
+
+msgid "Most valuable customers"
+msgstr "সর্বাধিক মূল্যবান গ্রাহক"
+
+msgid "Product profit"
+msgstr "পণ্যের লাভ"
+
+msgid "Product revenue"
+msgstr "পণ্যের রাজস্ব"
+
+msgid "Revenue by channel"
+msgstr "চ্যানেল দ্বারা রাজস্ব"
+
+msgid "Frequently bought together"
+msgstr "প্রায়ই একসাথে কেনা হয়েছে"
+
+msgid "Gemini settings"
+msgstr "জেমিনি সেটিংস"
+
+msgid "RAG"
+msgstr "RAG"
+
+msgid "Gemini Help"
+msgstr "জেমিনি সাহায্য"
+
+msgid "Enable Gemini AI"
+msgstr "জেমিনি AI সক্ষম করুন"
+
+msgid "(if you want results from Gemini only, disable Site Search from Settings->Start Menu)"
+msgstr "(যদি আপনি শুধুমাত্র জেমিনি থেকে ফলাফল চান, তবে সেটিংস-&gt;স্টার্ট মেনু থেকে সাইট অনুসন্ধান নিষ্ক্রিয় করুন)"
+
+msgid "Context awareness"
+msgstr "প্রসঙ্গ সচেতনতা"
+
+msgid "Enable page suggestions with Gemini Result"
+msgstr "জেমিনি ফলাফলের সাথে পৃষ্ঠা সুপারিশ সক্ষম করুন"
+
+msgid "Select POST TYPE(s) to include with search results"
+msgstr "অনুসন্ধান ফলাফলের সাথে অন্তর্ভুক্ত করার জন্য POST TYPE(s) নির্বাচন করুন"
+
+msgid "Get your API key from https://aistudio.google.com/app/apikey. "
+msgstr "আপনার API কী পান https://aistudio.google.com/app/apikey। "
+
+msgid "It requires a paid Gemini API plan"
+msgstr "এটি একটি পেইড জেমিনি API পরিকল্পনা প্রয়োজন"
+
+msgid "Gemini Model"
+msgstr "জেমিনি মডেল"
+
+msgid "Fetch Models"
+msgstr "মডেলগুলি আনুন"
+
+msgid "Select your Gemini model. Click \\"
+msgstr "আপনার জেমিনি মডেল নির্বাচন করুন। ক্লিক করুন \\"
+
+msgid "Please select a your paid model all model on the list are might not be available for free plans"
+msgstr "দয়া করে আপনার পেইড মডেলটি নির্বাচন করুন, তালিকার সব মডেল বিনামূল্যে পরিকল্পনার জন্য উপলব্ধ নাও হতে পারে"
+
+msgid "Your Prompt to be Added before the User Query for Customized Results (Optional)"
+msgstr "আপনার কাস্টমাইজড ফলাফলের জন্য ব্যবহারকারীর প্রশ্নের আগে যোগ করার জন্য আপনার প্রম্পট (ঐচ্ছিক)"
+
+msgid "Your Prompt to be Appended at the End of the User Query for Customized Results (Optional)"
+msgstr "আপনার কাস্টমাইজড ফলাফলের জন্য ব্যবহারকারীর প্রশ্নের শেষে যোগ করার জন্য আপনার প্রম্পট (ঐচ্ছিক)"
+
+msgid "Save settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG:"
+msgstr "ফাইন টিউনিং বনাম GPT সহকারী বনাম RAG:"
+
+msgid "We suggest using GPT Assistants or RAG instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "আমরা সুপারিশ করছি যে ফাইন টিউনিংয়ের পরিবর্তে GPT সহকারী বা RAG ব্যবহার করুন কারণ ফাইন টিউনিংয়ের জন্য অনেক সঠিকভাবে ফরম্যাট করা ডেটার প্রয়োজন এবং GPT সহায়ক সেট আপ করা সহজ। আপনি এখনও আপনার ওয়েবসাইটের ডেটা ব্যবহার করে বটটি প্রশিক্ষণ দিতে পারেন।"
+
+msgid "How to Use RAG in This Plugin:"
+msgstr "এই প্লাগইনে RAG কীভাবে ব্যবহার করবেন:"
+
+msgid "Enable RAG from the settings panel"
+msgstr "সেটিংস প্যানেল থেকে RAG সক্ষম করুন"
+
+msgid "Click “Embed All Selected Sources” button, after selecting the sources from the"
+msgstr "সূত্রগুলি নির্বাচন করার পরে “সব নির্বাচিত উৎস এম্বেড করুন” বোতামে ক্লিক করুন,"
+
+msgid "(Optional) Upload PDFs or CSV files for embedding"
+msgstr "(ঐচ্ছিক) এম্বেড করার জন্য PDF বা CSV ফাইল আপলোড করুন"
+
+msgid "The system automatically stores embeddings in the database"
+msgstr "সিস্টেম স্বয়ংক্রিয়ভাবে ডেটাবেসে এম্বেডিং সংরক্ষণ করে"
+
+msgid "User questions will now be answered using your site’s knowledge base"
+msgstr "ব্যবহারকারীর প্রশ্নগুলি এখন আপনার সাইটের জ্ঞানভাণ্ডার ব্যবহার করে উত্তর দেওয়া হবে"
+
+msgid "You need to configure the OpenAI API key, AI Model and System Command under the main OpenAI Settings"
+msgstr "আপনাকে প্রধান OpenAI সেটিংসের অধীনে OpenAI API কী, AI মডেল এবং সিস্টেম কমান্ড কনফিগার করতে হবে"
+
+msgid "You can update or re-embed content at any time without retraining."
+msgstr "আপনি যে কোনও সময় কনটেন্ট আপডেট বা পুনরায় এম্বেড করতে পারেন পুনঃপ্রশিক্ষণের প্রয়োজন ছাড়াই।"
+
+msgid "Getting Started with gemini"
+msgstr "জেমিনি দিয়ে শুরু করা"
+
+msgid "Gemini is an unified Interface or Aggregator for LLMs. You can choose from hundreds of different AI models from OpenAI to Deepseek or Claude to get AI responses."
+msgstr "জেমিনি হল LLM-এর জন্য একটি একক ইন্টারফেস বা অ্যাগ্রিগেটর। আপনি OpenAI থেকে Deepseek বা Claude পর্যন্ত শত শত বিভিন্ন AI মডেল থেকে নির্বাচন করতে পারেন AI প্রতিক্রিয়া পেতে।"
+
+msgid "All you have to do is add the Gemini API Key and select an Gemini Model."
+msgstr "আপনার যা করতে হবে তা হল জেমিনি API কী যোগ করা এবং একটি জেমিনি মডেল নির্বাচন করা।"
+
+msgid "Grab your API key from"
+msgstr "আপনার API কীটি এখানে পান"
+
+msgid "Please make sure that DialogFlow, OpenAI are Disabled if you want Gemini to work."
+msgstr "দয়া করে নিশ্চিত করুন যে আপনি জেমিনি কাজ করতে চাইলে DialogFlow, OpenAI নিষ্ক্রিয় করেছেন।"
+
+msgid "Failed in Security check"
+msgstr "নিরাপত্তা পরীক্ষায় ব্যর্থ"
+
+msgid "Unauthorized user"
+msgstr "অননুমোদিত ব্যবহারকারী"
+
+msgid "Security check failed. Unauthorized request."
+msgstr "নিরাপত্তা পরীক্ষা ব্যর্থ হয়েছে। অননুমোদিত অনুরোধ।"
+
+msgid "API Key is required"
+msgstr "API কী প্রয়োজন"
+
+msgid "Security check failed"
+msgstr "নিরাপত্তা পরীক্ষা ব্যর্থ হয়েছে"
+
+msgid "Unauthorized access"
+msgstr "অননুমোদিত অ্যাক্সেস"
+
+msgid "Settings updated successfully"
+msgstr "সেটিংস সফলভাবে আপডেট হয়েছে"
+
+msgid "View Detail"
+msgstr "বিস্তারিত দেখুন"
+
+msgid "OpenAI has disabled some of the older models. Please use GPT 3.5 or 4 to Fine tune. You need to update the dataset and Fine tune again. Please check the Help section for details."
+msgstr "OpenAI কিছু পুরানো মডেল নিষ্ক্রিয় করেছে। দয়া করে ফাইন টিউন করার জন্য GPT 3.5 বা 4 ব্যবহার করুন। আপনাকে ডেটাসেট আপডেট করতে হবে এবং আবার ফাইন টিউন করতে হবে। বিস্তারিত জানার জন্য সহায়তা বিভাগটি দেখুন।"
+
+msgid "OpenAI settings"
+msgstr "OpenAI সেটিংস"
+
+msgid "Training Model"
+msgstr "প্রশিক্ষণ মডেল"
+
+msgid "GPT Assistant"
+msgstr "GPT সহকারী"
+
+msgid "Fine Tune with Website Data"
+msgstr "ওয়েবসাইটের ডেটা দিয়ে ফাইন টিউন"
+
+msgid "AI Image Generator"
+msgstr "AI ইমেজ জেনারেটর"
+
+msgid "AI Article Generator"
+msgstr "AI নিবন্ধ জেনারেটর"
+
+msgid "GPT Assistant is available with the "
+msgstr "GPT সহকারী উপলব্ধ "
+
+msgid "WoowBot Pro Professional"
+msgstr "WoowBot Pro পেশাদার"
+
+msgid " and "
+msgstr " এবং "
+
+msgid "Master"
+msgstr "মাস্টার"
+
+msgid " Licenses"
+msgstr " লাইসেন্স"
+
+msgid "Fine Tuning VS GPT Assistants:"
+msgstr "ফাইন টিউনিং বনাম GPT সহকারীরা:"
+
+msgid "We suggest using GPT Assistants instead of Fine Tuning as Fine Tuning requires a lot of properly formatted data and GPT Assistants are easier to set up. You can still use your website data to train the bot."
+msgstr "আমরা সুপারিশ করছি যে ফাইন টিউনিংয়ের পরিবর্তে GPT সহকারী ব্যবহার করুন কারণ ফাইন টিউনিংয়ের জন্য অনেক সঠিকভাবে ফরম্যাট করা ডেটার প্রয়োজন এবং GPT সহায়ক সেট আপ করা সহজ। আপনি এখনও আপনার ওয়েবসাইটের ডেটা ব্যবহার করে বটটি প্রশিক্ষণ দিতে পারেন।"
+
+msgid "Setting up GPT Assistants:"
+msgstr "GPT সহকারী সেট আপ করা:"
+
+msgid "Go to the GPT training with Website Data tab. Select all the Post types you need and press the button Convert Data for Assistant. Once it is done, download the data file in JSON format"
+msgstr "ওয়েবসাইটের ডেটা দিয়ে GPT প্রশিক্ষণে যান। আপনার প্রয়োজনীয় সমস্ত পোস্টের ধরন নির্বাচন করুন এবং সহায়কের জন্য ডেটা রূপান্তর বোতামে ক্লিক করুন। একবার এটি সম্পন্ন হলে, JSON ফরম্যাটে ডেটা ফাইলটি ডাউনলোড করুন"
+
+msgid "Go to "
+msgstr "যাও"
+
+msgid "Assistants playground"
+msgstr "সহায়কদের খেলার মাঠ"
+
+msgid " and create a new Assistant"
+msgstr " এবং একটি নতুন সহকারী তৈরি করুন"
+
+msgid "Upload the JSON file you downloaded and give the GPT an Instruction similar to the one below but customize it to your website URL:"
+msgstr "আপনি যে JSON ফাইলটি ডাউনলোড করেছেন তা আপলোড করুন এবং GPT-কে নীচের মতো একটি নির্দেশনা দিন তবে এটি আপনার ওয়েবসাইটের URL-এ কাস্টমাইজ করুন:"
+
+msgid "Your name is Carry. You are a ChatBot assistant for the website "
+msgstr "আপনার নাম ক্যারি। আপনি ওয়েবসাইটের জন্য একটি চ্যাটবট সহায়ক"
+
+msgid "https://www.quantumcloud.net. "
+msgstr "https://www.quantumcloud.net।"
+
+msgid "Use the website data and the uploaded file to answer any questions from our website users."
+msgstr "ওয়েবসাইটের ডেটা এবং আপলোড করা ফাইলটি ব্যবহার করে আমাদের ওয়েবসাইটের ব্যবহারকারীদের যেকোনো প্রশ্নের উত্তর দিন।"
+
+msgid "Copy the Assistants ID and paste under the GPT Assistants tab under the OpenAI settings on your website. You are done. If you have purchased credits from the OpenAI API platform, it will start working."
+msgstr "সহায়কের ID কপি করুন এবং আপনার ওয়েবসাইটের OpenAI সেটিংসে GPT সহায়ক ট্যাবের অধীনে পেস্ট করুন। আপনি সম্পন্ন। যদি আপনি OpenAI API প্ল্যাটফর্ম থেকে ক্রেডিট কিনে থাকেন, এটি কাজ করা শুরু করবে।"
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\\"
+msgstr "আপনি বিভিন্ন পৃষ্ঠায় চ্যাটবট উইজেটের সাথে বিভিন্ন GPT সহকারী ব্যবহার করতে পারেন। এই নমুনা শর্টকোডটি পেস্ট করুন এবং প্রয়োজন অনুযায়ী সহায়ক ID প্রতিস্থাপন করুন: উদাহরণ: [chatbot-widget hud_design=\\"
+
+msgid "Please check this article for step by step guide."
+msgstr "দয়া করে ধাপে ধাপে গাইডের জন্য এই নিবন্ধটি দেখুন।"
+
+msgid "Getting Customized Results from the AI Services"
+msgstr "AI পরিষেবাগুলি থেকে কাস্টমাইজড ফলাফল পাওয়া"
+
+msgid "The best possible customized results you can get from AI services is to use the OpenAI GPT Assistant which allows you to upload documents and your website data (generated by our Pro versions). However, you can still get customized results by writing a detailed prompt. Under the System Command section in OpenAI Settings area (there is a prompt section for other AI services as well) you can write a detailed prompt that includes details about your services, products, how to contact you, or anything relevant to get customized results. Up to 3000 words is fine. This should be enough for most small to mid-sized websites."
+msgstr "AI পরিষেবাগুলি থেকে আপনি যে সেরা কাস্টমাইজড ফলাফলগুলি পেতে পারেন তা হল OpenAI GPT সহায়ক ব্যবহার করা যা আপনাকে নথি এবং আপনার ওয়েবসাইটের ডেটা (আমাদের প্রো সংস্করণ দ্বারা উত্পন্ন) আপলোড করতে দেয়। তবে, আপনি এখনও একটি বিস্তারিত প্রম্পট লিখে কাস্টমাইজড ফলাফল পেতে পারেন। OpenAI সেটিংস এলাকায় সিস্টেম কমান্ড বিভাগে (অন্যান্য AI পরিষেবাগুলির জন্যও একটি প্রম্পট বিভাগ রয়েছে) আপনি একটি বিস্তারিত প্রম্পট লিখতে পারেন যা আপনার পরিষেবাগুলি, পণ্যগুলি, আপনার সাথে যোগাযোগের উপায় বা কাস্টমাইজড ফলাফল পাওয়ার জন্য প্রাসঙ্গিক কিছু অন্তর্ভুক্ত করে। 3000 শব্দ পর্যন্ত ঠিক আছে। এটি বেশিরভাগ ছোট থেকে মাঝারি আকারের ওয়েবসাইটের জন্য যথেষ্ট হওয়া উচিত।"
+
+msgid "**"
+msgstr "**"
+
+msgid "Check this article"
+msgstr "এই নিবন্ধটি চেক করুন"
+
+msgid "for more details abou how to get Customized Results from OpenAI."
+msgstr "কাস্টমাইজড ফলাফল পাওয়ার জন্য OpenAI সম্পর্কে আরও বিস্তারিত জানার জন্য।"
+
+msgid "Upgrade to WoowbotPro Professional or the Master License to use GPT Assistant."
+msgstr "GPT সহায়ক ব্যবহার করতে WoowbotPro পেশাদার বা মাস্টার লাইসেন্সে আপগ্রেড করুন।"
+
+msgid "Getting Started with OpenAI"
+msgstr "OpenAI দিয়ে শুরু করা"
+
+msgid "OpenAI has changed their API billing policy lately. You have to "
+msgstr "OpenAI সম্প্রতি তাদের API বিলিং নীতি পরিবর্তন করেছে। আপনাকে "
+
+msgid "pre-purchase API credits"
+msgstr "পূর্ব-ক্রয় API ক্রেডিট"
+
+msgid " now. Go to "
+msgstr " এখন। যান "
+
+msgid "https://platform.openai.com/account/billing/ "
+msgstr "https://platform.openai.com/account/billing/ "
+
+msgid "and add credits to your API account. Then increase the usage limit."
+msgstr "এবং আপনার API অ্যাকাউন্টে ক্রেডিট যোগ করুন। তারপর ব্যবহার সীমা বাড়ান।"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \\"
+msgstr "একবার আপনি OpenAI API কী যোগ করলে, এটি ইতিমধ্যেই সাধারণ প্রশ্নের জন্য কাজ করা শুরু করবে। ইনকগনিটো মোডে একটি নতুন ব্রাউজার উইন্ডো খুলুন এবং \\"
+
+msgid "Please make sure DialogFlow is Disabled if you want OpenAI to work"
+msgstr "আপনি OpenAI কাজ করতে চাইলে দয়া করে নিশ্চিত করুন যে DialogFlow নিষ্ক্রিয় আছে"
+
+msgid "Fine Tuning VS GPT Assistants VS RAG"
+msgstr "ফাইন টিউনিং বনাম GPT সহকারীরা বনাম RAG"
+
+msgid "GPT Assistants:"
+msgstr "GPT সহকারী:"
+
+msgid "How to get an OpenAI API Key"
+msgstr "OpenAI API কী কীভাবে পাবেন"
+
+msgid "The OpenAI API uses API keys for authentication. Visit your API Keys page to retrieve the API key you’ll use in your requests.Remember that your API key is a secret! Do not share it with others or expose it in any client-side code (browsers, apps). Production requests must be routed through your own backend server where your API key can be securely loaded from an environment variable or key management service."
+msgstr "OpenAI API প্রমাণীকরণের জন্য API কী ব্যবহার করে। আপনার API কী পৃষ্ঠায় যান যাতে আপনি আপনার অনুরোধগুলিতে ব্যবহার করার জন্য API কীটি পুনরুদ্ধার করতে পারেন। মনে রাখবেন আপনার API কী একটি গোপন! এটি অন্যদের সাথে শেয়ার করবেন না বা কোনও ক্লায়েন্ট-সাইড কোডে (ব্রাউজার, অ্যাপস) প্রকাশ করবেন না। উৎপাদন অনুরোধগুলি আপনার নিজস্ব ব্যাকএন্ড সার্ভারের মাধ্যমে রাউট করা উচিত যেখানে আপনার API কী নিরাপদে পরিবেশের পরিবর্তনশীল বা কী ব্যবস্থাপনা পরিষেবার মাধ্যমে লোড করা যেতে পারে।"
+
+msgid "You can generate the API key from here: "
+msgstr "আপনি এখানে API কী তৈরি করতে পারেন: "
+
+msgid "https://platform.openai.com/api-keys. "
+msgstr "https://platform.openai.com/api-keys।"
+
+msgid "Training or Fine Tuning OpenAI"
+msgstr "OpenAI প্রশিক্ষণ বা ফাইন টিউনিং"
+
+msgid "To train OpenAI"
+msgstr "OpenAI প্রশিক্ষণ দিতে"
+
+msgid "Gather the necessary data you want to train with"
+msgstr "আপনার প্রশিক্ষণের জন্য প্রয়োজনীয় ডেটা সংগ্রহ করুন"
+
+msgid "Format the data correctly according to OpenAI API requirements (Download sample data format to see how it works). A dataset should have a at least 500 rows to offer useful results. According to the OpenAI documentation, numbers of 3,000 and 5,000 rows are recommended."
+msgstr "OpenAI API প্রয়োজনীয়তার অনুযায়ী ডেটা সঠিকভাবে ফরম্যাট করুন (এটি কীভাবে কাজ করে তা দেখতে নমুনা ডেটা ফরম্যাট ডাউনলোড করুন)। একটি ডেটাসেটে অন্তত 500 সারি থাকা উচিত যাতে কার্যকর ফলাফল পাওয়া যায়। OpenAI ডকুমেন্টেশনের অনুযায়ী, 3,000 এবং 5,000 সারির সংখ্যা সুপারিশ করা হয়।"
+
+msgid "Upload the data to OpenAI in .JSONL format"
+msgstr "ডেটা OpenAI-তে .JSONL ফরম্যাটে আপলোড করুন"
+
+msgid "Train an existing OpenAI model(select from the Bot OpenAI settings page) with your data"
+msgstr "আপনার ডেটার সাথে বিদ্যমান OpenAI মডেল প্রশিক্ষণ দিন (বট OpenAI সেটিংস পৃষ্ঠায় নির্বাচন করুন)"
+
+msgid "c. Once you upload your training file, it will return a file id and the training will start once you click the Create FT Model button. Set a suffix (to recognize the model yourself later) and base model in the popup and create."
+msgstr "c. একবার আপনি আপনার প্রশিক্ষণ ফাইল আপলোড করলে, এটি একটি ফাইল আইডি ফেরত দেবে এবং আপনি Create FT Model বোতামে ক্লিক করার পরে প্রশিক্ষণ শুরু হবে। একটি উপসর্গ সেট করুন (পরে মডেলটি নিজে চিনতে) এবং পপআপে ভিত্তি মডেল তৈরি করুন।"
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \\"
+msgstr "d. একবার প্রশিক্ষণ সম্পন্ন হলে এবং ফাইল প্রস্তুত হলে, এটি ফাইন টিউন করা মডেল ফেরত দেবে। এটি ফাইন টিউন করা মডেল তালিকার অধীনে তালিকাভুক্ত হবে, স্থিতি হিসাবে প্রদর্শিত হবে \\"
+
+msgid "e. You can create multiple Fine Tuned models following the above procedure. Copy the Fine Tuned model ID you want to use."
+msgstr "e. আপনি উপরের পদ্ধতি অনুসরণ করে একাধিক ফাইন টিউন করা মডেল তৈরি করতে পারেন। আপনি যে ফাইন টিউন করা মডেল ID ব্যবহার করতে চান তা কপি করুন।"
+
+msgid "f. Go to the main Bot OpenAI settings page and paste the Fine Tuned model ID to the Custom Fine Tuned Model field and save. Now the bot will start responding according to the Training data."
+msgstr "f. প্রধান বট OpenAI সেটিংস পৃষ্ঠায় যান এবং কাস্টম ফাইন টিউন করা মডেল ক্ষেত্রের অধীনে ফাইন টিউন করা মডেল ID পেস্ট করুন এবং সংরক্ষণ করুন। এখন বটটি প্রশিক্ষণ ডেটার অনুযায়ী প্রতিক্রিয়া দিতে শুরু করবে।"
+
+msgid "h. To Prepare your data model for GPT3.5/4:"
+msgstr "h. GPT3.5/4-এর জন্য আপনার ডেটা মডেল প্রস্তুত করতে:"
+
+msgid "1st you need to create a jsonl file like the formate below"
+msgstr "প্রথমে আপনাকে নীচের ফরম্যাটের মতো একটি jsonl ফাইল তৈরি করতে হবে"
+
+msgid "Each prompt and completion should be in a single line"
+msgstr "প্রতিটি প্রম্পট এবং সম্পূর্ণতা একটি একক লাইনে থাকা উচিত"
+
+msgid "Fine tuning file format with GPT 3.5/4"
+msgstr "GPT 3.5/4 এর সাথে ফাইন টিউনিং ফাইলের ফরম্যাট"
+
+msgid "{ \\"
+msgstr "{ \\"
+
+msgid "Right click and Save the Example jsonl file for Fine Tuning with GPT 3.5/4"
+msgstr "ডান ক্লিক করুন এবং GPT 3.5/4 এর সাথে ফাইন টিউনিংয়ের জন্য উদাহরণ jsonl ফাইলটি সংরক্ষণ করুন"
+
+msgid "OpenAI RAG"
+msgstr "OpenAI RAG"
+
+msgid "To Embed OpenAI"
+msgstr "OpenAI এম্বেড করতে"
+
+msgid "Important points about fine tuning"
+msgstr "ফাইন টিউনিং সম্পর্কে গুরুত্বপূর্ণ পয়েন্ট"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \\"
+msgstr "ভাল ফলাফলের জন্য, আপনার অন্তত 500+ প্রম্পট প্রয়োজন। অন্যথায়, OpenAI সাধারণ জ্ঞানের সাথে প্রতিক্রিয়া মিশ্রিত করবে। এছাড়াও, প্রম্পটগুলি যতটা সম্ভব বর্ণনামূলক হওয়া উচিত। বর্ণনামূলক প্রশ্ন এবং উত্তর সহ FAQ ধরনের ফরম্যাট অনুসরণ করুন। উদাহরণ প্রম্পট: শুধু \\"
+
+msgid "If your completion is short like below or around 100 words, keep the Max Tokens value 200. Tweak the Temperature, Presence Penalty and Frequency penalty settings until you get results that you like."
+msgstr "যদি আপনার সম্পূর্ণতা সংক্ষিপ্ত হয় যেমন নীচে বা প্রায় 100 শব্দ, সর্বাধিক টোকেনের মান 200 রাখুন। আপনি যে ফলাফলগুলি পছন্দ করেন তা পেতে তাপমাত্রা, উপস্থিতি জরিমানা এবং ফ্রিকোয়েন্সি জরিমানা সেটিংস পরিবর্তন করুন।"
+
+msgid "If you are Fine tuning with website data, the Bot will use the Post titles as prompts. If the Page/Post titles are not descriptive you will not get good results. In such caes, you can download the JSONL file from the Training Model page and improve the prompts.Then fine tune again."
+msgstr "যদি আপনি ওয়েবসাইটের ডেটা দিয়ে ফাইন টিউনিং করছেন, তবে বটটি পোস্টের শিরোনামগুলি প্রম্পট হিসাবে ব্যবহার করবে। যদি পৃষ্ঠা/পোস্টের শিরোনামগুলি বর্ণনামূলক না হয় তবে আপনি ভাল ফলাফল পাবেন না। এমন ক্ষেত্রে, আপনি প্রশিক্ষণ মডেল পৃষ্ঠায় JSONL ফাইলটি ডাউনলোড করতে পারেন এবং প্রম্পটগুলি উন্নত করতে পারেন। তারপর আবার ফাইন টিউন করুন।"
+
+msgid "Keep the Site search disabled from Settings->Start Menu so that the bot does not bring answers from the site search. Please log out and log in again so our settings do not get overwritten."
+msgstr "সেটিংস-&gt;স্টার্ট মেনু থেকে সাইট অনুসন্ধান নিষ্ক্রিয় রাখুন যাতে বটটি সাইট অনুসন্ধান থেকে উত্তর না নিয়ে আসে। দয়া করে লগ আউট করুন এবং আবার লগ ইন করুন যাতে আমাদের সেটিংস ওভাররাইট না হয়।"
+
+msgid "How to Optimize Fine Tuning"
+msgstr "ফাইন টিউনিং অপ্টিমাইজ করার উপায়"
+
+msgid "To get better results from fine-tuning please follow the following steps:"
+msgstr "ভাল ফলাফল পাওয়ার জন্য দয়া করে নিম্নলিখিত পদক্ষেপগুলি অনুসরণ করুন:"
+
+msgid "Set a lower value for Temperature"
+msgstr "তাপমাত্রার জন্য একটি নিম্ন মান সেট করুন"
+
+msgid "Use a higher value for the Presence Penalty and Frequency penalty."
+msgstr "প্রেসেন্স পেনাল্টি এবং ফ্রিকোয়েন্সি পেনাল্টির জন্য একটি উচ্চ মান ব্যবহার করুন।"
+
+msgid "If possible use the Curie model as your base model when you create the custom model."
+msgstr "যদি সম্ভব হয় তবে কাস্টম মডেল তৈরি করার সময় আপনার বেস মডেল হিসাবে কিউরি মডেলটি ব্যবহার করুন।"
+
+msgid "Use max token depending on your prompt and completions. If you use a higher value of max token, AI will create more information which can be irrelevant to your context. The same for the lower max token. If you chose too low a value for max token then it will cut your data short or give errors."
+msgstr "আপনার প্রম্পট এবং সম্পূর্ণতার উপর ভিত্তি করে সর্বাধিক টোকেন ব্যবহার করুন। যদি আপনি সর্বাধিক টোকেনের জন্য একটি উচ্চ মান ব্যবহার করেন, তবে AI আরও তথ্য তৈরি করবে যা আপনার প্রসঙ্গের জন্য অপ্রাসঙ্গিক হতে পারে। নিম্নতম সর্বাধিক টোকেনের জন্যও একই। যদি আপনি সর্বাধিক টোকেনের জন্য খুব কম মান নির্বাচন করেন তবে এটি আপনার ডেটা সংক্ষিপ্ত করে ফেলবে বা ত্রুটি দেবে।"
+
+msgid "Presence Penalty"
+msgstr "প্রেসেন্স পেনাল্টি"
+
+msgid "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics."
+msgstr "-2.0 এবং 2.0 এর মধ্যে সংখ্যা। ইতিবাচক মানগুলি নতুন টোকেনগুলিকে টেক্সটে এখন পর্যন্ত উপস্থিতির উপর ভিত্তি করে শাস্তি দেয়, নতুন বিষয় সম্পর্কে কথা বলার জন্য মডেলের সম্ভাবনা বাড়ায়।"
+
+msgid "Frequency Penalty"
+msgstr "ফ্রিকোয়েন্সি পেনাল্টি"
+
+msgid " Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim."
+msgstr "-2.0 এবং 2.0 এর মধ্যে সংখ্যা। ইতিবাচক মানগুলি টেক্সটে এখন পর্যন্ত তাদের বিদ্যমান ফ্রিকোয়েন্সির উপর ভিত্তি করে নতুন টোকেনগুলিকে শাস্তি দেয়, একই লাইনটি শব্দবদ্ধভাবে পুনরাবৃত্তি করার জন্য মডেলের সম্ভাবনা কমায়।"
+
+msgid "Temperature"
+msgstr "তাপমাত্রা"
+
+msgid " One of the most important settings is called temperature.When the temperature is above 0, submitting the same prompt results in different completions each time.Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions."
+msgstr "সবচেয়ে গুরুত্বপূর্ণ সেটিংগুলির মধ্যে একটি হল তাপমাত্রা। যখন তাপমাত্রা 0 এর উপরে থাকে, তখন একই প্রম্পট জমা দেওয়া প্রতিবার ভিন্ন সম্পূর্ণতা ফলস্বরূপ হয়। মনে রাখবেন যে মডেলটি পূর্ববর্তী টেক্সটের পরে কোন টেক্সটটি সবচেয়ে সম্ভাব্য তা পূর্বাভাস দেয়। তাপমাত্রা 0 এবং 1 এর মধ্যে একটি মান যা মূলত আপনাকে নিয়ন্ত্রণ করতে দেয় যে মডেলটি এই পূর্বাভাসগুলি তৈরি করার সময় কতটা আত্মবিশ্বাসী হওয়া উচিত। তাপমাত্রা কমানো মানে এটি কম ঝুঁকি নেবে, এবং সম্পূর্ণতা আরও সঠিক এবং নির্ধারক হবে। তাপমাত্রা বাড়ানো আরও বৈচিত্র্যময় সম্পূর্ণতার ফলস্বরূপ হবে।"
+
+msgid "My OpenAI does not work"
+msgstr "আমার OpenAI কাজ করছে না"
+
+msgid " Please check your settings( i.e: Api keys, Max token etc.). Depending on the model (GPT3 was maximum 4000 ) used, requests can use up to 4097 tokens shared between prompt and completion. If your prompt is 4000 tokens, your completion can be 97 tokens at most. Also check the dialogflow is inactive. Dialogflow and OpenAI does not work together."
+msgstr "দয়া করে আপনার সেটিংস চেক করুন (যেমন: এপিআই কী, সর্বাধিক টোকেন ইত্যাদি)। ব্যবহৃত মডেলের উপর নির্ভর করে (GPT3 সর্বাধিক 4000 ছিল) অনুরোধগুলি প্রম্পট এবং সম্পূর্ণতার মধ্যে ভাগ করা 4097 টোকেন পর্যন্ত ব্যবহার করতে পারে। যদি আপনার প্রম্পট 4000 টোকেন হয়, তবে আপনার সম্পূর্ণতা সর্বাধিক 97 টোকেন হতে পারে। এছাড়াও চেক করুন যে ডায়ালগফ্লো নিষ্ক্রিয়। ডায়ালগফ্লো এবং OpenAI একসাথে কাজ করে না।"
+
+msgid "You can create multiple Fine Tuned models based on your post types and pages. You can download your training data as a JSONL file to modify and then upload it in the same process as other file (see above for instructions). Also, you can upload it by clicking the `Upload As FT Model` button. Then you can create a Fine Tuned model from the Training Model tab."
+msgstr "আপনি আপনার পোস্টের ধরন এবং পৃষ্ঠার উপর ভিত্তি করে একাধিক ফাইন টিউনড মডেল তৈরি করতে পারেন। আপনি আপনার প্রশিক্ষণ ডেটা একটি JSONL ফাইল হিসাবে ডাউনলোড করতে পারেন যাতে এটি সংশোধন করতে পারেন এবং তারপর এটি অন্যান্য ফাইলের মতো একই প্রক্রিয়ায় আপলোড করতে পারেন (নির্দেশনার জন্য উপরে দেখুন)। এছাড়াও, আপনি `Upload As FT Model` বোতামে ক্লিক করে এটি আপলোড করতে পারেন। তারপর আপনি প্রশিক্ষণ মডেল ট্যাব থেকে একটি ফাইন টিউনড মডেল তৈরি করতে পারেন।"
+
+msgid "Fine tuning and training is available with the "
+msgstr "ফাইন টিউনিং এবং প্রশিক্ষণ উপলব্ধ"
+
+msgid "WoowbotPro Professional"
+msgstr "WoowbotPro পেশাদার"
+
+msgid "It requires a paid OpenAI API plan"
+msgstr "এটি একটি পেইড OpenAI API পরিকল্পনা প্রয়োজন"
+
+msgid "Enable OpenAI"
+msgstr "OpenAI সক্ষম করুন"
+
+msgid "(if you want results from OpenAI only, It will disable default product Search)"
+msgstr "(যদি আপনি শুধুমাত্র OpenAI থেকে ফলাফল চান, এটি ডিফল্ট পণ্য অনুসন্ধান অক্ষম করবে)"
+
+msgid "Enable Streaming (stream AI responses in real-time as they are generated)"
+msgstr "স্ট্রিমিং সক্ষম করুন (AI প্রতিক্রিয়া তৈরি হওয়ার সাথে সাথে রিয়েল-টাইমে প্রবাহিত করুন)"
+
+msgid "Enable OpenAI Product Cards"
+msgstr "OpenAI পণ্য কার্ড সক্ষম করুন"
+
+msgid "(Display relevant product cards inside AI responses to increase sales.)"
+msgstr "(বিক্রয় বাড়ানোর জন্য AI প্রতিক্রিয়ার মধ্যে প্রাসঙ্গিক পণ্য কার্ড প্রদর্শন করুন।)"
+
+msgid "Enable WordPress page suggestions with GPT Results (the links are suggested by WordPress and not AI)"
+msgstr "GPT ফলাফলের সাথে WordPress পৃষ্ঠা সুপারিশ সক্ষম করুন (লিঙ্কগুলি WordPress দ্বারা প্রস্তাবিত এবং AI দ্বারা নয়)"
+
+msgid "Api key"
+msgstr "এপিআই কী"
+
+msgid "OpenAI Model"
+msgstr "OpenAI মডেল"
+
+msgid "GPT-5-Mini"
+msgstr "GPT-5-মিনি"
+
+msgid "GPT-5-Nano"
+msgstr "GPT-5-ন্যানো"
+
+msgid "GPT-5"
+msgstr "GPT-5"
+
+msgid "GPT-4.1-Mini"
+msgstr "GPT-4.1-মিনি"
+
+msgid "GPT-4.1-Nano"
+msgstr "GPT-4.1-ন্যানো"
+
+msgid "GPT-4.1"
+msgstr "GPT-4.1"
+
+msgid "GPT-4o-Mini"
+msgstr "GPT-4o-মিনি"
+
+msgid "GPT-4o"
+msgstr "GPT-4o"
+
+msgid "gpt-4-turbo"
+msgstr "gpt-4-turbo"
+
+msgid "GPT-4"
+msgstr "GPT-4"
+
+msgid "GPT-3 turbo"
+msgstr "GPT-3 টার্বো"
+
+msgid "System Command (Use it to Instruct ChatGPT how to behave). You can write a detailed prompt here that includes details about your services, products, and how to contact you or anything relevant to get"
+msgstr "সিস্টেম কমান্ড (এটি ChatGPT কে কীভাবে আচরণ করতে হবে তা নির্দেশ করতে ব্যবহার করুন)। আপনি এখানে একটি বিস্তারিত প্রম্পট লিখতে পারেন যা আপনার পরিষেবাগুলি, পণ্যগুলি এবং আপনার সাথে যোগাযোগ করার উপায় বা কিছু প্রাসঙ্গিক বিষয় অন্তর্ভুক্ত করে।"
+
+msgid "Customized Results"
+msgstr "কাস্টমাইজড ফলাফল"
+
+msgid ". Upto 3000 words is fine."
+msgstr ". সর্বাধিক 3000 শব্দ ঠিক আছে।"
+
+msgid "You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "আপনি একটি সহায়ক সহকারী। আপনার উত্তরগুলিতে সংক্ষিপ্ত এবং প্রাসঙ্গিক হন এবং নতুন বিষয় পরিচয় করিয়ে দেবেন না।"
+
+msgid "To set the ChatBot's tone and character set a system message according to your need"
+msgstr "ChatBot এর স্বর এবং চরিত্র সেট করতে আপনার প্রয়োজন অনুযায়ী একটি সিস্টেম বার্তা সেট করুন"
+
+msgid "Example: You are a helpful Assistant. Be concise and relevant in your answers and do not introduce new topic."
+msgstr "উদাহরণ: আপনি একটি সহায়ক সহকারী। আপনার উত্তরগুলিতে সংক্ষিপ্ত এবং প্রাসঙ্গিক হন এবং নতুন বিষয় পরিচয় করিয়ে দেবেন না।"
+
+msgid "Prompt to be Appended at the End of the User Query (Optional)"
+msgstr "ব্যবহারকারীর প্রশ্নের শেষে যুক্ত করার জন্য প্রম্পট (ঐচ্ছিক)"
+
+msgid "Content for the response"
+msgstr "প্রতিক্রিয়ার জন্য বিষয়বস্তু"
+
+msgid "Danger Zone (you may not get any responses from AI if the keywords are not set properly. Remove keywords if you face problems )"
+msgstr "ডেঞ্জার জোন (যদি কীওয়ার্ডগুলি সঠিকভাবে সেট না করা হয় তবে আপনি AI থেকে কোনও প্রতিক্রিয়া পেতে নাও পারেন। সমস্যা হলে কীওয়ার্ডগুলি সরান)"
+
+msgid "Connect to OpenAI only when user query includes one of the following Comma Separated Keywords"
+msgstr "নিচের কমা দ্বারা পৃথক করা কীওয়ার্ডগুলির মধ্যে একটি ব্যবহারকারী প্রশ্ন অন্তর্ভুক্ত হলে OpenAI এর সাথে সংযোগ করুন"
+
+msgid "Connect to OpenAI only when user query does NOT include one of the following Comma Separated Keywords"
+msgstr "নিচের কমা দ্বারা পৃথক করা কীওয়ার্ডগুলির মধ্যে একটি ব্যবহারকারী প্রশ্ন অন্তর্ভুক্ত না হলে OpenAI এর সাথে সংযোগ করুন"
+
+msgid "Ask OpenAI to reply when question is relevant to above Keywords (Enabling this option will improve accuracy but it will use OpenAI Tokens)"
+msgstr "উপরের কীওয়ার্ডগুলির সাথে সম্পর্কিত প্রশ্ন হলে OpenAI কে উত্তর দিতে বলুন (এই বিকল্পটি সক্ষম করা সঠিকতা বাড়াবে কিন্তু এটি OpenAI টোকেন ব্যবহার করবে)"
+
+msgid "Check Connection  "
+msgstr "সংযোগ পরীক্ষা করুন"
+
+msgid "Save the Settings first and then press the Check Connection button"
+msgstr "প্রথমে সেটিংস সংরক্ষণ করুন এবং তারপর চেক সংযোগ বোতামে চাপুন"
+
+msgid "**If OpenAI is not responding back and the bot is just loading, then likely you hit your OpenAI usage limit. Please pre-purchase credit to use OpenAI API and increase the Usage limit. You can add credits to your API account by visiting the "
+msgstr "**যদি OpenAI প্রতিক্রিয়া না দেয় এবং বটটি কেবল লোড হচ্ছে, তবে সম্ভবত আপনি আপনার OpenAI ব্যবহারের সীমা অতিক্রম করেছেন। OpenAI API ব্যবহার করতে এবং ব্যবহারের সীমা বাড়ানোর জন্য দয়া করে পূর্ব-ক্রয় ক্রেডিট করুন। আপনি \""
+
+msgid "billing page."
+msgstr "বিলিং পৃষ্ঠা।"
+
+msgid "How to reduce cost "
+msgstr "কিভাবে খরচ কমানো যায়"
+
+msgid "and save money on OpenAI API cost for your ChatBot."
+msgstr "এবং আপনার ChatBot এর জন্য OpenAI API খরচ সাশ্রয় করুন।"
+
+msgid "success"
+msgstr "সফলতা"
+
+msgid "error"
+msgstr "ত্রুটি"
+
+msgid "RAG cannot be enabled without an API key."
+msgstr "RAG একটি API কী ছাড়া সক্ষম করা যায় না।"
+
+msgid "Please enable RAG in settings to save RAG related options."
+msgstr "RAG সম্পর্কিত বিকল্পগুলি সংরক্ষণ করতে সেটিংসে RAG সক্ষম করুন।"
+
+msgid "OpenAI API key is empty. Please save your API key first."
+msgstr "OpenAI API কী খালি। দয়া করে প্রথমে আপনার API কী সংরক্ষণ করুন।"
+
+msgid "Congrats! You are connected to AI."
+msgstr "অভিনন্দন! আপনি AI এর সাথে সংযুক্ত।"
+
+msgid "Success"
+msgstr "সফলতা"
+
+msgid "Connection to OpenAI failed. Please check your API key and settings."
+msgstr "OpenAI এর সাথে সংযোগ ব্যর্থ হয়েছে। দয়া করে আপনার API কী এবং সেটিংস চেক করুন।"
+
+msgid "Invalid product ID"
+msgstr "অবৈধ পণ্য আইডি"
+
+msgid "Product not found"
+msgstr "পণ্য পাওয়া যায়নি"
+
+msgid "Insufficient permissions"
+msgstr "যথেষ্ট অনুমতি নেই"
+
+msgid "AI Setup configuration saved successfully."
+msgstr "AI সেটআপ কনফিগারেশন সফলভাবে সংরক্ষিত হয়েছে।"
+
+msgid "Rate limit exceeded. Please try again later."
+msgstr "রেট সীমা অতিক্রম করা হয়েছে। দয়া করে পরে আবার চেষ্টা করুন।"
+
+msgid "More WordPress Goodies for You!"
+msgstr "আপনার জন্য আরও WordPress গুডিজ!"
+
+msgid "Support"
+msgstr "সমর্থন"
+
+msgid "Check Out Some of Our Other Works that Might Make Your Website Better"
+msgstr "আপনার ওয়েবসাইটকে আরও ভাল করতে পারে এমন আমাদের অন্যান্য কাজগুলি দেখুন"
+
+msgid "All our Pro Version users get Premium, Guaranteed Quick, One on One Priority Support."
+msgstr "আমাদের সমস্ত প্রো সংস্করণ ব্যবহারকারীরা প্রিমিয়াম, গ্যারান্টিযুক্ত দ্রুত, এক-এক অগ্রাধিকার সমর্থন পান।"
+
+msgid "Get Priority Support "
+msgstr "অগ্রাধিকার সমর্থন পান"
+
+msgid "Online KnowledgeBase"
+msgstr "অনলাইন জ্ঞানভান্ডার"
+
+msgid "Get Support for Free Version"
+msgstr "ফ্রি সংস্করণের জন্য সমর্থন পান"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\\"
+msgstr "আপনার ফর্ম জমা দেওয়ার অনুরোধ প্রক্রিয়াকরণে সমস্যা! অসুবিধার জন্য দুঃখিত।<br> দয়া করে ইমেইল করুন &lt;span style=\\"
+
+msgid "Please fill up all the requried form fields."
+msgstr "দয়া করে সমস্ত প্রয়োজনীয় ফর্ম ক্ষেত্র পূরণ করুন।"
+
+msgid "Invalid email address."
+msgstr "অবৈধ ইমেইল ঠিকানা।"
+
+msgid "Support Request Details:"
+msgstr "সমর্থন অনুরোধের বিস্তারিত:"
+
+msgid "Sent Via the Plugin"
+msgstr "প্লাগইন দ্বারা পাঠানো হয়েছে"
+
+msgid "Mail sent from:"
+msgstr "মেইল পাঠানো হয়েছে:"
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Mail Generated on:"
+msgstr "মেইল তৈরি হয়েছে:"
+
+msgid "From Plugin Support Page:"
+msgstr "প্লাগইন সমর্থন পৃষ্ঠায়:"
+
+msgid "Your email was sent successfully. Thanks!"
+msgstr "আপনার ইমেইল সফলভাবে পাঠানো হয়েছে। ধন্যবাদ!"
+
+msgid "By %s"
+msgstr "%s দ্বারা"
+
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "%s এখন ইনস্টল করুন"
+
+msgid "Install Now"
+msgstr "এখন ইনস্টল করুন"
+
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "ইনস্টল করা যাবে না"
+
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "%s এখন আপডেট করুন"
+
+msgid "Update Now"
+msgstr "এখন আপডেট করুন"
+
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "আপডেট করা যাবে না"
+
+msgctxt "plugin"
+msgid "Active"
+msgstr "সক্রিয়"
+
+msgid "Activate"
+msgstr "সক্রিয় করুন"
+
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "%s সক্রিয় করুন"
+
+msgid "Network Activate"
+msgstr "নেটওয়ার্ক সক্রিয় করুন"
+
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "%s নেটওয়ার্ক সক্রিয় করুন"
+
+msgctxt "plugin"
+msgid "Installed"
+msgstr "ইনস্টল করা হয়েছে"
+
+msgid "More Details"
+msgstr "আরও বিস্তারিত"
+
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "এই প্লাগইনটি আপনার WordPress এবং PHP সংস্করণের সাথে কাজ করে না।"
+
+msgid "<a href=\\"
+msgstr "&lt;a href=\\"
+
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "এই প্লাগইন আপনার ওয়ার্ডপ্রেসের সংস্করণের সাথে কাজ করে না।"
+
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "এই প্লাগইন আপনার PHP সংস্করণের সাথে কাজ করে না।"
+
+msgid "Live Preview"
+msgstr "লাইভ প্রিভিউ"
+
+msgid "Update To Pro"
+msgstr "প্রো সংস্করণে আপডেট করুন"
+
+msgid "Getting started with WoowBot is instantaneous. All you need to do is install and activate the plugin."
+msgstr "WoowBot দিয়ে শুরু করা খুব সহজ। আপনাকে যা করতে হবে তা হল প্লাগইনটি ইনস্টল এবং সক্রিয় করা।"
+
+msgid "You can upload your own ChatBot icon from WoowBot panel->Icons section."
+msgstr "আপনি WoowBot প্যানেল-&gt;আইকন বিভাগ থেকে আপনার নিজস্ব চ্যাটবট আইকন আপলোড করতে পারেন।"
+
+msgid "You can also upload a custom Agent icon in the pro version."
+msgstr "আপনি প্রো সংস্করণে একটি কাস্টম এজেন্ট আইকনও আপলোড করতে পারেন।"
+
+msgid "In the lite version there are a few language settings that you can customize to your need. The default languages are fine for stores using the English language. But you can change the bot responses literally into any language!"
+msgstr "লাইট সংস্করণে কিছু ভাষার সেটিংস রয়েছে যা আপনি আপনার প্রয়োজন অনুযায়ী কাস্টমাইজ করতে পারেন। ডিফল্ট ভাষাগুলি ইংরেজি ভাষা ব্যবহারকারী দোকানের জন্য ঠিক আছে। তবে আপনি বটের প্রতিক্রিয়া সত্যিই যেকোনো ভাষায় পরিবর্তন করতে পারেন!"
+
+msgid "Use the custom CSS panel if you need to tweak some colors or font settings inside WoowBot."
+msgstr "যদি আপনি WoowBot এর ভিতরে কিছু রঙ বা ফন্ট সেটিংস পরিবর্তন করতে চান তবে কাস্টম CSS প্যানেল ব্যবহার করুন।"
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot"
+msgstr "#1 চ্যাটবট WooCommerce এর জন্য – WoowBot"
+
+msgid "Get Advanced AI Features, Customer Retargeting and more with WoowBot Pro"
+msgstr "WoowBot Pro এর সাথে উন্নত AI বৈশিষ্ট্য, গ্রাহক পুনরায় লক্ষ্যকরণ এবং আরও কিছু পান"
+
+msgid "Get the WoowBot Pro Now!"
+msgstr "এখনই WoowBot Pro পান!"
+
+msgid "Crafted By:"
+msgstr "তৈরি করেছেন:"
+
+msgid "Web Design Company"
+msgstr "ওয়েব ডিজাইন কোম্পানি"
+
+msgid "QuantumCloud"
+msgstr "QuantumCloud"
+
+msgid "WoowBot Control Panel"
+msgstr "WoowBot কন্ট্রোল প্যানেল"
+
+msgid "WoowBot Panel"
+msgstr "WoowBot প্যানেল"
+
+msgid "Yes"
+msgstr "হ্যাঁ"
+
+msgid "No"
+msgstr "না"
+
+msgid "OR"
+msgstr "অথবা"
+
+msgid " Get the Professional Version Now!"
+msgstr "এখনই পেশাদার সংস্করণ পান!"
+
+msgid "General settings"
+msgstr "সাধারণ সেটিংস"
+
+msgid "WoowBot ICONS"
+msgstr "WoowBot আইকন"
+
+msgid "Language Center"
+msgstr "ভাষা কেন্দ্র"
+
+msgid "Custom CSS"
+msgstr "কাস্টম CSS"
+
+msgid "Emails Will be Sent to"
+msgstr "ইমেইল পাঠানো হবে"
+
+msgid "From Email Address"
+msgstr "ইমেইল ঠিকানা থেকে"
+
+msgid "Disable WoowBot"
+msgstr "WoowBot নিষ্ক্রিয় করুন"
+
+msgid "Disable WoowBot to Load"
+msgstr "মোবাইল ডিভাইসে WoowBot লোড করতে নিষ্ক্রিয় করুন"
+
+msgid "Enable Product details from AI"
+msgstr "AI থেকে পণ্য বিবরণ সক্ষম করুন"
+
+msgid "Disable WooWBot on Mobile Device"
+msgstr "মোবাইল ডিভাইসে WooWBot নিষ্ক্রিয় করুন"
+
+msgid "Disable WoowBot to Load on Mobile Device"
+msgstr "মোবাইল ডিভাইসে WoowBot লোড করতে নিষ্ক্রিয় করুন"
+
+msgid "Override WoowBot Icon's Position"
+msgstr "WoowBot আইকনের অবস্থান ওভাররাইড করুন"
+
+msgid "120"
+msgstr "120"
+
+msgid "50"
+msgstr "50"
+
+msgid "From Right In px"
+msgstr "ডান থেকে px"
+
+msgid "From Bottom In px"
+msgstr "নিচ থেকে px"
+
+msgid "Number of products to show in search results. ( '-1' for all products )."
+msgstr "অনুসন্ধান ফলাফলে প্রদর্শনের জন্য পণ্যের সংখ্যা। ( '-1' সব পণ্যের জন্য)।"
+
+msgid "Page controller"
+msgstr "পৃষ্ঠা নিয়ন্ত্রক"
+
+msgid "Show on Home Page"
+msgstr "হোম পৃষ্ঠায় দেখান"
+
+msgid "YES"
+msgstr "হ্যাঁ"
+
+msgid "NO"
+msgstr "না"
+
+msgid "Show on blog posts"
+msgstr "ব্লগ পোস্টে দেখান"
+
+msgid "Show on  pages"
+msgstr "পৃষ্ঠায় দেখান"
+
+msgid "All Pages"
+msgstr "সমস্ত পৃষ্ঠা"
+
+msgid "Selected Pages Only "
+msgstr "শুধুমাত্র নির্বাচিত পৃষ্ঠা"
+
+msgid "Exclude from Custom Post"
+msgstr "কাস্টম পোস্ট থেকে বাদ দিন"
+
+msgid "Icon - 0"
+msgstr "আইকন - 0"
+
+msgid "Icon - 1"
+msgstr "আইকন - 1"
+
+msgid "Icon - 2"
+msgstr "আইকন - 2"
+
+msgid "Icon - 3"
+msgstr "আইকন - 3"
+
+msgid "Icon - 4"
+msgstr "আইকন - 4"
+
+msgid "Icon - 5"
+msgstr "আইকন - 5"
+
+msgid "Icon - 6"
+msgstr "আইকন - 6"
+
+msgid "Icon - 7"
+msgstr "আইকন - 7"
+
+msgid "Icon -9"
+msgstr "আইকন - 9"
+
+msgid "Icon - 10"
+msgstr "আইকন - 10"
+
+msgid "Icon - 11"
+msgstr "আইকন - 11"
+
+msgid "Icon - 12"
+msgstr "আইকন - 12"
+
+msgid "Icon - 13"
+msgstr "আইকন - 13"
+
+msgid "Icon - 14"
+msgstr "আইকন - 14"
+
+msgid "Custom Icon"
+msgstr "কাস্টম আইকন"
+
+msgid "Upload custom Floating Icon"
+msgstr "কাস্টম ফ্লোটিং আইকন আপলোড করুন"
+
+msgid "Upload Custom Icon"
+msgstr "কাস্টম আইকন আপলোড করুন"
+
+msgid " Woobot Agent Image"
+msgstr "Woobot এজেন্ট ইমেজ"
+
+msgid "Default Agent"
+msgstr "ডিফল্ট এজেন্ট"
+
+msgid "Custom Agent"
+msgstr "কাস্টম এজেন্ট"
+
+msgid "Custom Agent Icon"
+msgstr "কাস্টম এজেন্ট আইকন"
+
+msgid "Upload Agent Icon"
+msgstr "এজেন্ট আইকন আপলোড করুন"
+
+msgid "Custom Backgroud"
+msgstr "কাস্টম ব্যাকগ্রাউন্ড"
+
+msgid "Change the  message board background image (except mini mode)."
+msgstr "বার্তা বোর্ডের ব্যাকগ্রাউন্ড ইমেজ পরিবর্তন করুন (মিনি মোড বাদে)।"
+
+msgid "Upload  message board background (Ideal image size 350px X 550px)."
+msgstr "বার্তা বোর্ডের ব্যাকগ্রাউন্ড আপলোড করুন (আইডিয়াল ইমেজ সাইজ 350px X 550px)।"
+
+msgid "Upload  background."
+msgstr "ব্যাকগ্রাউন্ড আপলোড করুন।"
+
+msgid "Custom message board background"
+msgstr "কাস্টম বার্তা বোর্ডের ব্যাকগ্রাউন্ড"
+
+msgid "Message setting for"
+msgstr "বার্তার সেটিংস জন্য"
+
+msgid "Identity"
+msgstr "পরিচয়"
+
+msgid "Your Company or Website Name"
+msgstr "আপনার কোম্পানি বা ওয়েবসাইটের নাম"
+
+msgid "Agent name"
+msgstr "এজেন্টের নাম"
+
+msgid "has joined the conversation"
+msgstr "আলাপচারিতায় যোগ দিয়েছে"
+
+msgid "Greetings"
+msgstr "স্বাগতম"
+
+msgid "Welcome to "
+msgstr "স্বাগতম "
+
+msgid "Hi There! May I know your name?"
+msgstr "হ্যালো! আমি কি আপনার নাম জানতে পারি?"
+
+msgid "I am "
+msgstr "আমি "
+
+msgid "Nice to meet you"
+msgstr "আপনার সাথে দেখা করে ভালো লাগলো"
+
+msgid "Message settings for"
+msgstr "বার্তার সেটিংস জন্য"
+
+msgid "Editor Box"
+msgstr "এডিটর বক্স"
+
+msgid "is typing..."
+msgstr "টাইপ করছে..."
+
+msgid "Send a message"
+msgstr "একটি বার্তা পাঠান"
+
+msgid "Products Search"
+msgstr "পণ্যের অনুসন্ধান"
+
+msgid "I am here to find you the product you need. What are you shopping for"
+msgstr "আমি আপনাকে প্রয়োজনীয় পণ্য খুঁজে পেতে এখানে আছি। আপনি কি কিনতে চান"
+
+msgid "if products found"
+msgstr "যদি পণ্য পাওয়া যায়"
+
+msgid "If no matching products is found"
+msgstr "যদি কোন মেলানো পণ্য পাওয়া না যায়"
+
+msgid "Can you be more specific?"
+msgstr "আপনি কি আরও নির্দিষ্ট হতে পারেন?"
+
+msgid "Product Search"
+msgstr "পণ্যের অনুসন্ধান"
+
+msgid "Catalog"
+msgstr "ক্যাটালগ"
+
+msgid "Send Us Email"
+msgstr "আমাদের ইমেইল পাঠান"
+
+msgid "You can browse our extensive catalog. Just pick a category from below"
+msgstr "আপনি আমাদের বিস্তৃত ক্যাটালগ ব্রাউজ করতে পারেন। শুধু নিচ থেকে একটি বিভাগ বেছে নিন"
+
+msgid "Too many choices? Let's try another search term"
+msgstr "বেশি বেশি পছন্দ? চলুন আরেকটি অনুসন্ধান শব্দ চেষ্টা করি"
+
+msgid "Email has been sent successfully"
+msgstr "ইমেইল সফলভাবে পাঠানো হয়েছে"
+
+msgid "Please provide your email address"
+msgstr "দয়া করে আপনার ইমেইল ঠিকানা প্রদান করুন"
+
+msgid "Please write you message"
+msgstr "দয়া করে আপনার বার্তা লিখুন"
+
+msgid "You can paste or write your custom css here."
+msgstr "আপনি এখানে আপনার কাস্টম সিএসএস পেস্ট বা লিখতে পারেন।"
+
+msgid "Get the #1 ChatBot for WooCommerce – WoowBot Pro"
+msgstr "WooCommerce এর জন্য #1 চ্যাটবট পান - WoowBot Pro"
+
+msgid "WoowBot Pro is a WooCommerce Shopping ChatBot that can help Increase your store Sales perceptibly. Shoppers can converse fluidly with the Bot – thanks to its Integration with Google‘s Dialogflow, Search and Add products to the cart directly from the chat interface, get Support and more!"
+msgstr "WoowBot Pro একটি WooCommerce শপিং চ্যাটবট যা আপনার দোকানের বিক্রয় উল্লেখযোগ্যভাবে বাড়াতে সাহায্য করতে পারে। ক্রেতারা বটের সাথে সাবলীলভাবে কথোপকথন করতে পারে - Google এর Dialogflow এর সাথে সংযোগের জন্য ধন্যবাদ, চ্যাট ইন্টারফেস থেকে সরাসরি পণ্য খুঁজুন এবং কার্টে যোগ করুন, সহায়তা পান এবং আরও অনেক কিছু!"
+
+msgid "The Onsite Retargeting helps your Conversion rate optimization by showing special offers and coupons on Exit Intent, time interval or page scroll-down. Track Customer Conversions with statistics to find out if shoppers are abandoning carts. Get more sales!"
+msgstr "অনসাইট রিটার্গেটিং আপনার রূপান্তর হার অপ্টিমাইজেশনে সাহায্য করে বিশেষ অফার এবং কুপনগুলি দেখিয়ে যা এক্সিট ইন্টেন্ট, সময়ের অন্তর বা পৃষ্ঠা স্ক্রোল-ডাউন অনুযায়ী। ক্রেতাদের রূপান্তরগুলি পরিসংখ্যানের সাথে ট্র্যাক করুন যাতে আপনি জানতে পারেন ক্রেতারা কার্ট ত্যাগ করছে কিনা। আরও বিক্রয় পান!"
+
+msgid "Get the WoowBot Pro Now and Increase Sales!"
+msgstr "এখনই WoowBot Pro পান এবং বিক্রয় বাড়ান!"
+
+msgid "Multi Language Addon (**new)"
+msgstr "মাল্টি ল্যাঙ্গুয়েজ অ্যাডঅন (**নতুন)"
+
+msgid "Add multiple language support for your ChatBot. User can change language from drop down menu any time. Admin can select default language. Supports all major languages. Connect with different Dialogflow agents for different languages"
+msgstr "আপনার চ্যাটবটের জন্য একাধিক ভাষার সমর্থন যোগ করুন। ব্যবহারকারী যে কোনও সময় ড্রপ ডাউন মেনু থেকে ভাষা পরিবর্তন করতে পারে। প্রশাসক ডিফল্ট ভাষা নির্বাচন করতে পারেন। সমস্ত প্রধান ভাষা সমর্থন করে। বিভিন্ন ভাষার জন্য বিভিন্ন Dialogflow এজেন্টের সাথে সংযোগ করুন"
+
+msgid "Voice Message AddOn (**new)"
+msgstr "ভয়েস মেসেজ অ্যাডঅন (**নতুন)"
+
+msgid "Allow your customers to record a voice message from the ChatBot interface. Voice messages are saved in the backend to listen to any time. Supports speech to text using Google API. Compatible with all Modern Browsers. Beautiful modern User Interface"
+msgstr "আপনার গ্রাহকদের চ্যাটবট ইন্টারফেস থেকে একটি ভয়েস মেসেজ রেকর্ড করার অনুমতি দিন। ভয়েস মেসেজগুলি ব্যাকএন্ডে সংরক্ষিত হয় যাতে যেকোনো সময় শোনা যায়। Google API ব্যবহার করে বক্তৃতা থেকে টেক্সটে সমর্থন করে। সমস্ত আধুনিক ব্রাউজারের সাথে সামঞ্জস্যপূর্ণ। সুন্দর আধুনিক ব্যবহারকারী ইন্টারফেস"
+
+msgid "Extended UI Addon"
+msgstr "এক্সটেন্ডেড ইউআই অ্যাডঅন"
+
+msgid "Give your beloved ChatBot a facelift. Choose from 2 additional modern, slick and quite fancy templates! These new templates are sure to WOW your website visitors! New loader effect and Extensive color customization options are available!"
+msgstr "আপনার প্রিয় চ্যাটবটকে একটি নতুন রূপ দিন। 2টি অতিরিক্ত আধুনিক, স্লিক এবং বেশ ফ্যান্সি টেমপ্লেট থেকে নির্বাচন করুন! এই নতুন টেমপ্লেটগুলি আপনার ওয়েবসাইট দর্শকদের WOW করতে নিশ্চিত! নতুন লোডার প্রভাব এবং ব্যাপক রঙ কাস্টমাইজেশন বিকল্পগুলি উপলব্ধ!"
+
+msgid "Simple Text Responses Pro"
+msgstr "সাধারণ টেক্সট প্রতিক্রিয়া প্রো"
+
+msgid "Create text based responses for your customer queries easily with CSV export/import feature. STR Pro supports categories for Simple text responses for back end and front end. HTML visual editor to format your ChatBot replies and removing stop words for better search mathing."
+msgstr "আপনার গ্রাহকের প্রশ্নের জন্য সহজেই টেক্সট ভিত্তিক প্রতিক্রিয়া তৈরি করুন CSV রপ্তানি/আমদানি বৈশিষ্ট্য সহ। STR Pro সাধারণ টেক্সট প্রতিক্রিয়ার জন্য ব্যাকএন্ড এবং ফ্রন্টএন্ডের জন্য বিভাগ সমর্থন করে। আপনার চ্যাটবটের প্রতিক্রিয়া ফরম্যাট করতে এবং আরও ভাল অনুসন্ধান মেলানোর জন্য স্টপ শব্দগুলি অপসারণ করতে HTML ভিজ্যুয়াল সম্পাদক।"
+
+msgid "Bargaining ChatBot for WoowBot"
+msgstr "বাজারদর চ্যাটবট WoowBot এর জন্য"
+
+msgid "Make Your Offer Now with the Bargaining ChatBot. Win more customers with smart price negotiations. Allow your customers to make an offer on your price. Negotiate a minimum price set by you product wise. Capture shoppers while they have a high intent to purchase. The Make your Offer button will only show on product single page that you set the minimum price for."
+msgstr "বাজারদর চ্যাটবটের সাথে এখনই আপনার অফার করুন। স্মার্ট মূল্য আলোচনা দিয়ে আরও বেশি গ্রাহক জিতুন। আপনার গ্রাহকদের আপনার মূল্যে একটি অফার করতে দিন। আপনার পণ্য অনুযায়ী একটি ন্যূনতম মূল্য আলোচনা করুন। ক্রেতাদের ধরুন যখন তারা কেনার উচ্চ ইচ্ছা রাখে। আপনার সেট করা ন্যূনতম মূল্যের জন্য একক পণ্য পৃষ্ঠায় শুধুমাত্র 'আপনার অফার করুন' বোতামটি দেখানো হবে।"
+
+msgid "Conversational Form Builder"
+msgstr "কনভারসেশনাল ফর্ম বিল্ডার"
+
+msgid "Create conditional conversations and forms for a native WordPress ChatBot experience  Build Standard Forms, Dynamic Forms with conditional fields, Calculators, Appointment booking etc. Comes with 7 ready templates built-in. Saves form data into database, auto response, conditional fields, variables, saved revisions and more!"
+msgstr "একটি স্থানীয় WordPress চ্যাটবট অভিজ্ঞতার জন্য শর্তাধীন কথোপকথন এবং ফর্ম তৈরি করুন। স্ট্যান্ডার্ড ফর্ম, শর্তাধীন ক্ষেত্র সহ ডাইনামিক ফর্ম, ক্যালকুলেটর, অ্যাপয়েন্টমেন্ট বুকিং ইত্যাদি তৈরি করুন। 7টি প্রস্তুত টেমপ্লেট অন্তর্ভুক্ত। ফর্মের তথ্য ডেটাবেসে সংরক্ষণ করে, স্বয়ংক্রিয় প্রতিক্রিয়া, শর্তাধীন ক্ষেত্র, পরিবর্তনশীল, সংরক্ষিত সংশোধন এবং আরও অনেক কিছু!"
+
+msgid "Export Import Settings"
+msgstr "রপ্তানি আমদানি সেটিংস"
+
+msgid "Using the WoowbotPro on multiple websites? Then this nifty little addon may come in handy. This addon allows you to export your settings and import them back in another site or if you want to just keep a back up. Very helpful for porting the Language center settings which can be a handful with lots of options. Grab it now!"
+msgstr "একাধিক ওয়েবসাইটে WoowbotPro ব্যবহার করছেন? তাহলে এই ছোট্ট অ্যাডঅনটি আপনার জন্য সহায়ক হতে পারে। এই অ্যাডঅনটি আপনাকে আপনার সেটিংস রপ্তানি করতে এবং অন্য সাইটে আবার আমদানি করতে দেয় অথবা আপনি যদি কেবল একটি ব্যাকআপ রাখতে চান। অনেক বিকল্পের সাথে ভাষা কেন্দ্রের সেটিংস স্থানান্তরের জন্য খুব সহায়ক। এখনই এটি গ্রহণ করুন!"
+
+msgid "Messenger ChatBot Addon"
+msgstr "মেসেঞ্জার চ্যাটবট অ্যাডঅন"
+
+msgid "Utilize the Woowboton your website as a hub to respond to customer questions on FB Page & Messenger"
+msgstr "আপনার ওয়েবসাইটে Woowbot ব্যবহার করুন গ্রাহকের প্রশ্নের উত্তর দেওয়ার জন্য FB পৃষ্ঠা এবং মেসেঞ্জারে একটি কেন্দ্র হিসাবে"
+
+msgid "Extended Search"
+msgstr "এক্সটেন্ডেড সার্চ"
+
+msgid "Extend WPBot’s search power to include almost any Custom Post Type including WooCommerce"
+msgstr "WPBot এর অনুসন্ধান ক্ষমতা বাড়ান প্রায় যেকোনো কাস্টম পোস্ট টাইপ অন্তর্ভুক্ত করতে WooCommerce সহ"
+
+msgid "ChatBot Session Save Addon"
+msgstr "চ্যাটবট সেশন সেভ অ্যাডঅন"
+
+msgid "This AddOn saves the user chat sessions and helps you fine tune the bot for better support and performance."
+msgstr "এই অ্যাডঅনটি ব্যবহারকারীর চ্যাট সেশনগুলি সংরক্ষণ করে এবং আপনাকে বটটিকে আরও ভাল সহায়তা এবং কর্মক্ষমতার জন্য সূক্ষ্মভাবে টিউন করতে সাহায্য করে।"
+
+msgid "LiveChat Addon"
+msgstr "লাইভচ্যাট অ্যাডঅন"
+
+msgid "Live Human Chat integrated with WPBot"
+msgstr "WPBot এর সাথে সংযুক্ত লাইভ মানব চ্যাট"
+
+msgid "White Label WPBot"
+msgstr "হোয়াইট লেবেল WPBot"
+
+msgid "Replace the QuantumCloud Logo and branding with yours. Suitable for developers and agencies interested in providing ChatBot services for their clients."
+msgstr "কোয়ান্টামক্লাউড লোগো এবং ব্র্যান্ডিং আপনার সাথে প্রতিস্থাপন করুন। ডেভেলপার এবং এজেন্সিগুলির জন্য উপযুক্ত যারা তাদের ক্লায়েন্টদের জন্য চ্যাটবট পরিষেবা প্রদান করতে আগ্রহী।"
+
+msgid "Mailing List Integration AddOn"
+msgstr "মেইলিং লিস্ট ইন্টিগ্রেশন অ্যাডঅন"
+
+msgid "Mailing List Integration is the ChatBot addon that lets you connect with your Mailchimp and Zapier accounts. You can add new subscribers to your Mailchimp Lists from the ChatBot and unsubscribe them. You can also create new Zap on your Zapier Account and connect with this addon."
+msgstr "মেইলিং লিস্ট ইন্টিগ্রেশন হল চ্যাটবট অ্যাডঅন যা আপনাকে আপনার Mailchimp এবং Zapier অ্যাকাউন্টের সাথে সংযোগ করতে দেয়। আপনি চ্যাটবট থেকে আপনার Mailchimp তালিকায় নতুন সদস্য যোগ করতে পারেন এবং তাদের আনসাবস্ক্রাইব করতে পারেন। আপনি আপনার Zapier অ্যাকাউন্টে নতুন Zap তৈরি করতে পারেন এবং এই অ্যাডঅনটির সাথে সংযোগ করতে পারেন।"
+
+msgid "WoowBot Master Theme"
+msgstr "WoowBot মাস্টার থিম"
+
+msgid "Get a WoowBot Powered Theme!"
+msgstr "একটি WoowBot চালিত থিম পান!"
+
+msgid "Save Settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+msgid "**Pro Tip: Want to make WoowBot Really intelligent with"
+msgstr "**প্রো টিপ: WoowBot কে সত্যিই বুদ্ধিমান করতে চান"
+
+msgid "AI and Natural Language Processing?"
+msgstr "এআই এবং প্রাকৃতিক ভাষা প্রক্রিয়াকরণ?"
+
+msgid "Upgrade to the Pro version"
+msgstr "প্রো সংস্করণে আপগ্রেড করুন"
+
+msgid "**Pro Tip: WoowBot Pro is integrated with"
+msgstr "**প্রো টিপ: WoowBot Pro এর সাথে সংযুক্ত"
+
+msgid "OpenAI ChatGPT and DialogFlow AI"
+msgstr "OpenAI ChatGPT এবং DialogFlow AI"
+
+msgid "**Pro Tip: "
+msgstr "**প্রো টিপ: "
+
+msgid "Use ChatGPT to"
+msgstr "ChatGPT ব্যবহার করুন"
+
+msgid "answer  questions and provide real customer support"
+msgstr "প্রশ্নের উত্তর দিতে এবং বাস্তব গ্রাহক সহায়তা প্রদান করতে"
+
+msgid "**Pro Tip: Are your customers not completing orders? Find out with the"
+msgstr "**প্রো টিপ: আপনার গ্রাহকরা কি অর্ডার সম্পন্ন করছেন না? জানুন"
+
+msgid "Customer Conversion report"
+msgstr "গ্রাহক রূপান্তর রিপোর্টে"
+
+msgid "in the Pro version"
+msgstr "প্রো সংস্করণে"
+
+msgid "**Pro Tip:"
+msgstr "**প্রো টিপ:"
+
+msgid "Use WoowBot Pro to"
+msgstr "WoowBot Pro ব্যবহার করুন"
+
+msgid "provide live chat suport to your customers!"
+msgstr "আপনার গ্রাহকদের লাইভ চ্যাট সহায়তা প্রদান করতে!"
+
+msgid "**Pro Tip: Utilize Onsite Retargeting for"
+msgstr "**প্রো টিপ: অনসাইট রিটার্গেটিং ব্যবহার করুন"
+
+msgid "Exit Intent or Scroll down Popups"
+msgstr "এক্সিট ইন্টেন্ট বা স্ক্রোল ডাউন পপআপের জন্য"
+
+msgid "with WoowBot Pro. Increase sales by 50% or more!"
+msgstr "with WoowBot Pro. Increase sales by 50% or more!"
+
+msgid "**Pro Tip: Setting up WoowBot pro is easy and quick!"
+msgstr "**প্রো টিপ: WoowBot Pro সেট আপ করা সহজ এবং দ্রুত!"
+
+msgid "Plug and Play"
+msgstr "প্লাগ এবং প্লে"
+
+msgid "No complex bot training required!"
+msgstr "কোন জটিল বট প্রশিক্ষণের প্রয়োজন নেই!"
+
+msgid "**Pro Tip: WoowBot pro integrates with"
+msgstr "**প্রো টিপ: WoowBot Pro Facebook, Instagram, Telegram এর সাথে সংযুক্ত হয়"
+
+msgid "Facebook, Instagram, Telegram"
+msgstr "এবং আপনার গ্রাহকদের প্রাপ্য সহায়তা দেওয়ার জন্য আরও। গ্রাহক সন্তুষ্টি বাড়ান!"
+
+msgid "and more to give your customers the support they deserve. Increase customer satisfaction!"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "rate_limit_timeframe_' . $role_key ); ?>\" <?php echo ( get_option( 'is_rate_limiting_enabled"
+msgstr "rate_limit_timeframe_' . $role_key ); ?&gt;\" &lt;?php echo ( get_option( &#039;is_rate_limiting_enabled"
+
+msgid "Show the \"Try On with AI\" button on single product pages"
+msgstr "Show the \"Try On with AI\" button on single product pages"
+
+msgid "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+msgstr "You can completely customize the \"Try On\" button's position and text in the <strong>General Settings</strong> tab!"
+
+msgid "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+msgstr "When a customer clicks the Try-On button, a premium modal interface slides up. They can easily drag-and-drop or upload a reference photo of themselves. They also have a text box to add custom scenario instructions (e.g., <em>\"Standing in a modern coffee shop\"</em>)."
+
+msgid "Google's Gemini models (including Imagen 3 and Veo) require an API key from Google AI Studio. You can get a free API key by visiting <a href=\"https://aistudio.google.com/\" target=\"_blank\">Google AI Studio</a>."
+msgstr "OpenAI এর মডেলগুলি (যেমন DALL-E 3) একটি পেইড OpenAI প্ল্যাটফর্ম অ্যাকাউন্ট প্রয়োজন। আপনি <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a> এ একটি কী তৈরি করতে পারেন।"
+
+msgid "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+msgstr "OpenAI's models (like DALL-E 3) require a paid OpenAI platform account. You can generate a key at <a href=\"https://platform.openai.com/api-keys\" target=\"_blank\">OpenAI API Keys</a>."
+
+msgid "Select your Gemini model. Click \"Fetch Models\" to update the list if you just added your API key."
+msgstr "আপনি চ্যাটবট উইজেটগুলির সাথে বিভিন্ন পৃষ্ঠায় বিভিন্ন GPT সহায়ক ব্যবহার করতে পারেন। এই নমুনা শর্টকোডটি পেস্ট করুন এবং প্রয়োজন অনুযায়ী সহায়ক আইডি প্রতিস্থাপন করুন: উদাহরণ: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+
+msgid "You can use different GPT Assistants on different pages with chatbot Widgets. Paste this sample shortcode and replace the Assistant ID as needed: Ex: [chatbot-widget hud_design=\"lite\" gpt_assistant_id=\"assst_12345678\"]"
+msgstr "একবার আপনি OpenAI API কী যোগ করলে, এটি সাধারণ প্রশ্নের জন্য কাজ করা শুরু করা উচিত। ইনকগনিটো মোডে একটি নতুন ব্রাউজার উইন্ডো খুলুন এবং \"রাশিয়ার রাজধানী কী?\" জিজ্ঞাসা করে পরীক্ষা করুন।"
+
+msgid "Once you add the OpenAI API key, it should already start working for generic questions. Open a new browser window in Incognito mode and test by asking \"What is the capital of Russia?\""
+msgstr ""
+"ক. একটি মডেল প্রশিক্ষণ বা সূক্ষ্ম টিউন করতে, প্রথমে আপনাকে করতে হবে:
+\n"
+"                "
+
+msgid ""
+"a. To train or fine tune a model, 1st you need to:
+\n"
+"                "
+msgstr ""
+"খ. একবার আপনার JSONL ফাইল প্রস্তুত হলে, দয়া করে প্রশিক্ষণ মডেল বিভাগের কাছে যান।
+\n"
+"                আপনার প্রশিক্ষণ ফাইলটি .JSONL ফরম্যাটে আপলোড করুন।"
+
+msgid ""
+"b. Once you have your JSONL file ready, please go to the Training model section.
+\n"
+"                Upload your training file in .JSONL format."
+msgstr "গ. প্রশিক্ষণ শেষ হলে এবং ফাইল প্রস্তুত হলে, এটি সূক্ষ্ম টিউন করা মডেলটি ফিরিয়ে দেবে। এটি সূক্ষ্ম টিউন করা মডেল তালিকার অধীনে তালিকাবদ্ধ হবে, স্থিতি \"সফল\" হিসাবে প্রদর্শিত হবে এবং আপনি একটি FT (ফাইন টিউন) মডেল আইডি পাবেন (সেটিংস পৃষ্ঠায় কপি করার জন্য)।"
+
+msgid "d. Once the training is done and the file is ready, it will return the fine tuned model. It will be listed under the Fine Tuned Models List, the status will be shown as \"Succeeded\" and you will also get a FT(Fine Tuned) Model ID (to copy to the settings page)."
+msgstr "{ \"messages\": [  { \"role\": \"system\", \"content\": \"আপনি একটি সহায়ক যা মাঝে মাঝে শব্দ বানান ভুল করে\" },{ \"role\": \"user\", \"content\": \"আমাকে একটি গল্প বলুন।\" }, { \"role\": \"assistant\", \"content\": \"একদিন একজন ছাত্র স্কুলে গেল।\" }]}"
+
+msgid "{ \"messages\": [  { \"role\": \"system\", \"content\": \"You are an assistant that occasionally misspells words\" },{ \"role\": \"user\", \"content\": \"Tell me a story.\" }, { \"role\": \"assistant\", \"content\": \"One day a student went to schoool.\" }]}"
+msgstr "ভাল ফলাফলের জন্য, আপনার অন্তত 500+ প্রম্পট প্রয়োজন। অন্যথায়, OpenAI প্রতিক্রিয়াটি সাধারণ জ্ঞানের সাথে মিশিয়ে দেবে। এছাড়াও, প্রম্পটগুলি যতটা সম্ভব বর্ণনামূলক হওয়া উচিত। বর্ণনামূলক প্রশ্ন এবং উত্তর সহ FAQ ধরনের ফরম্যাট অনুসরণ করুন। উদাহরণ প্রম্পট: \"ভিনটেজ ডেনিম জ্যাকেট\" এর পরিবর্তে আপনি লিখতে পারেন \"কেন একজনকে আমাদের ভিনটেজ ডেনিম জ্যাকেট পরা উচিত?\"।"
+
+msgid "For better results, you need at least 500+ prompts. Otherwise, OpenAI will mix the response with generic knowledge. Also, the prompts should be as descriptive as possible. Follow the FAQ type format with  descriptive questions and answers. Example prompt: Instead of just \"Vintage Denim Jacket\" you can write \"Why one should wear our Vintage Denim Jacket?\"."
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// প্রতিটি ভূমিকায় ক্রন কাজের সময়সূচী নির্ধারণ করুন যদি ইতিমধ্যে নির্ধারিত না হয়);
+\n"
+"\t\t\t}"
+
+msgid ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+msgstr ""
+"session_schedules_rate_limit_' . $role ),
+\n"
+"\t\t\t\t);
+\n"
+"\t\t\t\t// Schedule the cron job for each role if not already scheduled);
+\n"
+"\t\t\t}
+\n"
+"\t\t\treturn $schedules;
+\n"
+"\t\t}
+\n"
+"        // wpshedule event to reset the rate limit used counts
+\n"
+"\t\tpublic function schedule_rate_limit_reset_events()
+\n"
+"\t\t{
+\n"
+"\t\t\t// Ensure WordPress cron functions are available
+\n"
+"\t\t\tif (! function_exists('wp_schedule_event"
+
+msgid "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px \"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+msgstr "Problem in processing your form submission request! Apologies for the inconveniences.<br> Please email to <span style=\"color:#22A0C9;font-weight:bold !important;font-size:14px\"> quantumcloud@gmail.com </span> with any feedback. We will get back to you right away!"
+
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">PHP আপডেট করার বিষয়ে আরও জানুন</a>."
+
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">PHP আপডেট করার বিষয়ে আরও জানুন</a>."

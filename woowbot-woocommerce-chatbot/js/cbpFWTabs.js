@@ -39,8 +39,34 @@
 		this.items = [].slice.call( this.el.querySelectorAll( '.content-wrap > section' ) );
 		// current index
 		this.current = -1;
+
+		var startIdx = this.options.start;
+		var hash = window.location.hash;
+		var storedTab = null;
+		try {
+			storedTab = localStorage.getItem( 'woowbot_active_tab' );
+		} catch( e ) {}
+
+		var matched = false;
+		if ( hash ) {
+			for ( var i = 0; i < this.tabs.length; i++ ) {
+				var link = this.tabs[i].querySelector( 'a' );
+				if ( link && link.getAttribute( 'href' ) === hash ) {
+					startIdx = i;
+					matched = true;
+					break;
+				}
+			}
+		}
+		if ( !matched && storedTab !== null ) {
+			var tabIndex = parseInt( storedTab, 10 );
+			if ( !isNaN( tabIndex ) && tabIndex >= 0 && tabIndex < this.items.length ) {
+				startIdx = tabIndex;
+			}
+		}
+
 		// show current content item
-		this._show();
+		this._show( startIdx );
 		// init events
 		this._initEvents();
 	};
@@ -51,18 +77,47 @@
 			tab.addEventListener( 'click', function( ev ) {
 				ev.preventDefault();
 				self._show( idx );
+				var link = tab.querySelector( 'a' );
+				if ( link && link.getAttribute( 'href' ) ) {
+					var href = link.getAttribute( 'href' );
+					if ( window.history && window.history.replaceState ) {
+						window.history.replaceState( null, null, href );
+					} else {
+						window.location.hash = href;
+					}
+				}
+				try {
+					localStorage.setItem( 'woowbot_active_tab', idx );
+				} catch( e ) {}
 			} );
+		} );
+
+		window.addEventListener( 'hashchange', function() {
+			var hash = window.location.hash;
+			if ( hash ) {
+				for ( var i = 0; i < self.tabs.length; i++ ) {
+					var link = self.tabs[i].querySelector( 'a' );
+					if ( link && link.getAttribute( 'href' ) === hash ) {
+						self._show( i );
+						break;
+					}
+				}
+			}
 		} );
 	};
 
 	CBPFWTabs.prototype._show = function( idx ) {
-		if( this.current >= 0 ) {
+		if( this.current >= 0 && this.tabs[ this.current ] && this.items[ this.current ] ) {
 			this.tabs[ this.current ].className = this.items[ this.current ].className = '';
 		}
 		// change current
-		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
-		this.tabs[ this.current ].className = 'tab-current';
-		this.items[ this.current ].className = 'content-current';
+		this.current = ( idx !== undefined && idx >= 0 && idx < this.items.length ) ? idx : ( this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0 );
+		if ( this.tabs[ this.current ] ) {
+			this.tabs[ this.current ].className = 'tab-current';
+		}
+		if ( this.items[ this.current ] ) {
+			this.items[ this.current ].className = 'content-current';
+		}
 	};
 
 	// add to global namespace

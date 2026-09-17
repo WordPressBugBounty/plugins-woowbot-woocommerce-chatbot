@@ -206,7 +206,7 @@ if(!class_exists('qcld_wpopenai_addons')){
         
                         $url  = esc_url( get_permalink() );
         
-                        $link = '<li><mark><a style="color: #000" href=' . $url . '>' . get_the_title() . '</a><mark></li>';
+                        $link = '<li><mark><a class="qcld-chatbot-search-link" href=' . $url . '>' . get_the_title() . '</a><mark></li>';
         
                         array_push($links, $link);
         
@@ -421,9 +421,9 @@ if(!class_exists('qcld_wpopenai_addons')){
                     $relevant_post_link = get_option('qlcd_wp_chatbot_relevant_post_link_openai');
                     
                     if(is_array($relevant_post_link )){
-                        $relevant_pagelinks = '<br><br><p><em>'. implode('', $relevant_post_link) .'</em></p><ul style="list-style: disc;padding-left: 10px;">'. implode(" ", $relevant_pagelink). '</ul>';
+                        $relevant_pagelinks = '<br><br><p><em>'. implode('', $relevant_post_link) .'</em></p><ul class="qcld-chatbot-relevant-list">'. implode(" ", $relevant_pagelink). '</ul>';
                    }else{
-                        $relevant_pagelinks = '<br><br><p><em>'. $relevant_post_link .'</em></p><ul style="list-style: disc;padding-left: 10px;">'. implode(" ", $relevant_pagelink) .'</ul>';
+                        $relevant_pagelinks = '<br><br><p><em>'. $relevant_post_link .'</em></p><ul class="qcld-chatbot-relevant-list">'. implode(" ", $relevant_pagelink) .'</ul>';
                    }
                 }else{
                     $relevant_pagelinks = '';

@@ -259,6 +259,13 @@
 	align-items: start;
 }
 
+.qcld-wia-main {
+	min-width: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .qcld-wia-card {
 	background: var(--wia-bg-card);
 	border: 1px solid var(--wia-border);
@@ -278,8 +285,9 @@
 .qcld-wia-chat-shell {
 	display: flex;
 	flex-direction: column;
-	height: calc(100vh - 220px);
-	min-height: 620px;
+	height: calc(100vh - 200px);
+	min-height: min(520px, calc(100vh - 180px));
+	max-height: 850px;
 	background: #ffffff;
 }
 
@@ -870,7 +878,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Responsive Design
+   Responsive Design & Display Height Adaptations
    -------------------------------------------------------------------------- */
 @media (max-width: 1100px) {
 	.qcld-wia-layout {
@@ -892,17 +900,86 @@
 	.qcld-wia-header {
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 16px;
-		padding: 18px;
+		gap: 12px;
+		padding: 16px;
 	}
 	.qcld-wia-sidebar {
 		grid-template-columns: 1fr;
 	}
 	.qcld-wia-chat-shell {
-		height: 520px;
+		height: calc(100vh - 200px);
+		min-height: 380px;
 	}
 	.qcld-wia-msg-row {
 		max-width: 95%;
+	}
+}
+
+/* Adapt to device display height */
+@media (max-height: 900px) {
+	.qcld-wia-header {
+		padding: 16px 20px;
+		margin-bottom: 16px;
+	}
+	.qcld-wia-title {
+		font-size: 20px;
+	}
+	.qcld-wia-subtitle {
+		font-size: 13px;
+	}
+	.qcld-wia-chat-shell {
+		height: calc(100vh - 175px);
+		min-height: 380px;
+	}
+}
+
+@media (max-height: 768px) {
+	.qcld-wia-header {
+		padding: 10px 16px;
+		margin-bottom: 12px;
+	}
+	.qcld-wia-badge {
+		margin-bottom: 2px;
+		padding: 2px 8px;
+		font-size: 10px;
+	}
+	.qcld-wia-title {
+		font-size: 18px;
+		gap: 8px;
+		margin-bottom: 0;
+	}
+	.qcld-wia-title-icon {
+		width: 28px;
+		height: 28px;
+	}
+	.qcld-wia-title-icon svg {
+		width: 18px;
+		height: 18px;
+	}
+	.qcld-wia-subtitle {
+		display: none;
+	}
+	.qcld-wia-chat-shell {
+		height: calc(100vh - 140px);
+		min-height: 320px;
+	}
+	.qcld-wia-chat {
+		padding: 14px 16px;
+		gap: 14px;
+	}
+	.qcld-wia-input-container {
+		padding: 10px 14px;
+	}
+}
+
+@media (max-height: 620px) {
+	.qcld-wia-header {
+		padding: 8px 12px;
+		margin-bottom: 8px;
+	}
+	.qcld-wia-chat-shell {
+		height: calc(100vh - 110px);
+		min-height: 240px;
 	}
 }
 

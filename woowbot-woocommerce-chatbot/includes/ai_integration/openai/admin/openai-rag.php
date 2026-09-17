@@ -6,16 +6,16 @@
          RAG MAIN SWITCH
     ============================ -->
         <div class="wrap">
-            <h3>OpenAI RAG Settings</h3>
-            <p>If you enable RAG, you must configure the <a id="ai-knowledge-base-tab-openai" href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>">Knowledgebase</a> for Post types and other data to embed.</p>
-            <span style="color:red"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
+            <h3><?php esc_html_e( 'OpenAI RAG Settings','woowbot-woocommerce-chatbot');?></h3>
+            <p><?php esc_html_e( 'If you enable RAG, you must configure the','woowbot-woocommerce-chatbot');?> <a id="ai-knowledge-base-tab-openai" href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>"><?php esc_html_e( 'Knowledgebase','woowbot-woocommerce-chatbot');?></a> <?php esc_html_e( 'for Post types and other data to embed.','woowbot-woocommerce-chatbot');?></p>
+            <span class="qcld-red-text"><?php esc_html_e('It requires a paid OpenAI API plan', 'woowbot-woocommerce-chatbot'); ?> </span>
             <div class="form-check form-switch my-4">
                 <input class="form-check-input"
                     type="checkbox"
                     id="is_page_rag_enabled"
                     <?php echo (get_option('is_page_rag_enabled') == '1') ? 'checked' : ''; ?>>
                 <label class="form-check-label" for="is_page_rag_enabled">
-                    Enable RAG
+                    <?php esc_html_e( 'Enable RAG','woowbot-woocommerce-chatbot');?>
                 </label>
             </div>
         </div>
@@ -34,7 +34,7 @@
 			<b><?php echo esc_html__( 'How to Use RAG in This Plugin:', 'woowbot-woocommerce-chatbot' ); ?></b>
 			<ol>
 				<li><?php echo esc_html__( 'Enable RAG from the settings panel', 'woowbot-woocommerce-chatbot' ); ?></li>
-				<li><?php echo esc_html__( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>" target="_blank">knowledgebase tab</a></li>
+				<li><?php echo esc_html__( 'Click “Embed All Selected Sources” button, after selecting the sources from the', 'woowbot-woocommerce-chatbot' ); ?> <a href="<?php echo esc_url( admin_url('admin.php?page=chatbot_ai_setting#ai-knowledge-base-tab') ); ?>" target="_blank"><?php echo esc_html__( 'knowledgebase tab', 'woowbot-woocommerce-chatbot' ); ?></a></li>
 				<li><?php echo esc_html__( '(Optional) Upload PDFs or CSV files for embedding', 'woowbot-woocommerce-chatbot' ); ?></li>
 				<li><?php echo esc_html__( 'The system automatically stores embeddings in the database', 'woowbot-woocommerce-chatbot' ); ?></li>
 				<li><?php echo esc_html__( 'User questions will now be answered using your site’s knowledge base', 'woowbot-woocommerce-chatbot' ); ?></li> 

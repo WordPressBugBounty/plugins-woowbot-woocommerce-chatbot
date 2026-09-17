@@ -695,3 +695,61 @@ h3.qcld_woo_chatbot-section-title.qcld_woo_chatbot-header-gemini {
     border-left-color: #f59e0b;
     color: #92400e;
 }
+
+/* Utility Classes */
+.qcld_woo_chatbot-pro-badge {
+    color: #ff9800;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 6px;
+}
+.qcld_woo_chatbot-mt-15 {
+    margin-top: 15px !important;
+}
+.qcld_woo_chatbot-mt-10 {
+    margin-top: 10px !important;
+}
+.qcld_woo_chatbot-mt-2 {
+    margin-top: 2px !important;
+}
+.qcld_woo_chatbot-m-0 {
+    margin: 0 !important;
+}
+.qcld_woo_chatbot-mb-0 {
+    margin-bottom: 0 !important;
+}
+.qcld_woo_chatbot-mb-8 {
+    margin-bottom: 8px !important;
+}
+.qcld_woo_chatbot-max-w-200 {
+    max-width: 200px !important;
+}
+.qcld_woo_chatbot-icon-badge {
+    font-size: 20px;
+    margin-right: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+}
+.qcld_woo_chatbot-card-row-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 6px;
+}
+.qcld_woo_chatbot-section-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.qcld_woo_chatbot-clean-list {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+.qcld_woo_chatbot-svg-align {
+    vertical-align: text-bottom;
+}
+

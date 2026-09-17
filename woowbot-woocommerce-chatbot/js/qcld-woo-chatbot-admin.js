@@ -189,48 +189,80 @@ $(document).ready(function () {
                 }
             });
         })
-        $('#ai-provider-selector').on('change', function () {
-            var selected = $(this).val();
+        $('#ai-provider-selector').on('click', '.qcld-ai-provider-card', function () {
+            var selected = $(this).data('provider');
+            $('.qcld-ai-provider-card')
+                .removeClass('active')
+                .attr('aria-selected', 'false');
+            $(this)
+                .addClass('active')
+                .attr('aria-selected', 'true');
             $('.ai-settings-provider').hide();
             $('#' + selected + '-settings').show();
             $('#rag-settings').hide(); // Ensure RAG is hidden when switching providers
+            $('#common-ai-settings').hide();
+
+            // Reset URL hash to default when switching back to AI provider
+            if (window.location.hash) {
+                if (window.history && window.history.pushState) {
+                    window.history.pushState('', document.title, window.location.pathname + window.location.search);
+                } else {
+                    window.location.hash = '';
+                }
+            }
         });
 
         if (window.location.hash.indexOf('#ai-knowledge-base-tab') === 0) {
             $('.ai-settings-provider').hide();
             $('#rag-settings').show();
+        } else if (window.location.hash.indexOf('#common-ai-settings') === 0) {
+            $('.ai-settings-provider').hide();
+            $('#common-ai-settings').show();
         }
 
-        $('#ai-knowledge-base-tab').on('click', function (e) {
+        $('#ai-knowledge-base-tab, #ai-knowledge-base-tab-openai, #ai-knowledge-base-tab-gemini').on('click', function (e) {
             e.preventDefault();
             $('.ai-settings-provider').hide();
             $('#rag-settings').show();
-            window.location.hash = 'ai-knowledge-base-tab';
-            // Optional: Reset selector or add visual indication
+            if (window.history && window.history.pushState) {
+                window.history.pushState(null, null, window.location.pathname + window.location.search + '#ai-knowledge-base-tab');
+            } else {
+                window.location.hash = 'ai-knowledge-base-tab';
+            }
         });
+
         // common Ai settings tab
         $('#qcld-common-ai-settings').on('click', function (e) {
             e.preventDefault();
             $('.ai-settings-provider').hide();
             $('#common-ai-settings').show();
-            window.location.hash = 'common-ai-settings';
-            // Optional: Reset selector or add visual indication
+            if (window.history && window.history.pushState) {
+                window.history.pushState(null, null, window.location.pathname + window.location.search + '#common-ai-settings');
+            } else {
+                window.location.hash = 'common-ai-settings';
+            }
         });
-        $('#ai-knowledge-base-tab-openai').on('click', function (e) {
-            e.preventDefault();
-            $('.ai-settings-provider').hide();
-            $('#rag-settings').show();
-            window.location.hash = 'ai-knowledge-base-tab';
-            // Optional: Reset selector or add visual indication
+
+        // Handle browser Back / Forward buttons
+        $(window).on('popstate hashchange', function () {
+            var hash = window.location.hash;
+            if (hash.indexOf('#ai-knowledge-base-tab') === 0) {
+                $('.ai-settings-provider').hide();
+                $('#rag-settings').show();
+            } else if (hash.indexOf('#common-ai-settings') === 0) {
+                $('.ai-settings-provider').hide();
+                $('#common-ai-settings').show();
+            } else if (!hash) {
+                var selected = $('#ai-provider-selector .qcld-ai-provider-card.active').data('provider');
+                $('.ai-settings-provider').hide();
+                if (selected && $('#' + selected + '-settings').length) {
+                    $('#' + selected + '-settings').show();
+                } else {
+                    $('.ai-settings-provider.active').show();
+                }
+            }
         });
         // Delete Document
-        $('#ai-provider-selector').on('change', function () {
-            var selected = $(this).val();
-            $('.ai-settings-provider').hide();
-            $('#' + selected + '-settings').show();
-            console.log(('#' + selected + '-settings'))
-            $('#rag-settings').hide(); // Ensure RAG is hidden when switching providers
-        });
         $(document).on('click','#qcld_article_keyword_suggestion',function(e){
             var qcld_keyword_suggestion         = $('#qcld_article_keyword_suggestion_mf').val();
             var qcld_keyword_number             = $('#qcld_keyword_number').val();
@@ -301,11 +333,6 @@ $(document).ready(function () {
         
         });
         
-        $('#ai-provider-selector').on('change', function() {
-            var selected = $(this).val();
-            $('.ai-settings-provider').hide();
-            $('#' + selected + '-settings').show();
-        });
         
         $('#is_rate_limiting_enabled').on('change', function () {
             if ($(this).is(":checked")) {

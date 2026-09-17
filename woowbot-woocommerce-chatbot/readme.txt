@@ -4,7 +4,7 @@ Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
 Tested up to: 7.1
-Stable tag: 4.9.3
+Stable tag: 4.9.5
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
@@ -202,6 +202,19 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 14. ChatBot for Woocommerce backend
 
 == Changelog ==
+
+= 4.9.5 =
+# "FitRoom TryOn" images generate issue fixed.
+# chatbot z-index issue fixed
+# menu name changed AI Analyst to AI Business Analyst
+# Training Model, gpt assistant, fine tune tab removed from admin settings
+
+= 4.9.4 =
+# reload active tab issue fixed
+# AI Settings tab feature updated
+# AI Store Analyst feature added
+# plugin activation wp_safe_redirect issue fixed
+# plugin deactivate modal css and js issue fixed
 
 = 4.9.3 =
 # Introducing AI business analysis
