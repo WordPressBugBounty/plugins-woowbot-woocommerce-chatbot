@@ -66,7 +66,7 @@ function qcld_woo_chatbot_settings_page() {
                                     <div class="qcld_woo_chatbot-toggle-wrapper">
                                         <label class="qcld_woo_chatbot-switch" for="qcld_woo_chatbot_button_enabled">
                                             <input type="hidden" name="qcld_woo_chatbot_button_enabled" value="0" />
-                                            <input type="checkbox" id="qcld_woo_chatbot_button_enabled" name="qcld_woo_chatbot_button_enabled" value="1" <?php checked(get_option('qcld_woo_chatbot_button_enabled', '1'), '1'); ?> />
+                                            <input type="checkbox" id="qcld_woo_chatbot_button_enabled" name="qcld_woo_chatbot_button_enabled" value="1" <?php checked(get_option('qcld_woo_chatbot_button_enabled', '0'), '1'); ?> />
                                             <span class="qcld_woo_chatbot-slider"></span>
                                         </label>
                                         <span class="qcld_woo_chatbot-toggle-label"><?php esc_html_e( 'Show the "Try On with AI" button on single product pages', 'woowbot-woocommerce-chatbot' ); ?></span>
