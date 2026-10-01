@@ -387,10 +387,6 @@ div#wp-chatbot-exclude-post-list ul li label {
 .woo-chatbot-tabs.woo-chatbot-tabs-style-flip section#section-flip-3 ul.radio-list li img {
     max-width: 65px;
 }
-img#qcld_woo_chatbot_board_bg_image {
-    width: auto !important;
-    height: auto !important;
-}
 .qcld-wpbot-agent-image label.qc-opt-dcs-font {
     font-size: 14px;
     font-weight: bold;
@@ -632,10 +628,260 @@ body.woowbot-flyout #wpcontent .is-open {
     bottom: 0;
     padding: 40px;
 }
-.row.qcld-woo-chatbot-board-bg-container img#qcld_woo_chatbot_board_bg_image {
+/* ==========================================================================
+   Professional Message Board Background Preview
+   ========================================================================== */
+.qcld-board-bg-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    align-items: flex-start;
+}
+
+.qcld-board-bg-controls {
+    flex: 1;
+    min-width: 280px;
+}
+
+.qcld-board-bg-controls .woo-chatbot-settings-instruction {
+    font-size: 15px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.qcld-board-bg-hint {
+    display: block;
+    font-size: 13px;
+    color: #64748b;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.qcld-board-bg-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0;
+    align-items: center;
+}
+
+.qcld-btn-board-upload {
+    background: #a1408d !important;
+    border: 1px solid #a1408d !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    box-shadow: 0 2px 4px rgba(161, 64, 141, 0.2) !important;
+    line-height: normal !important;
+}
+
+.qcld-btn-board-upload:hover {
+    background: #8c357a !important;
+    border-color: #8c357a !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(161, 64, 141, 0.3) !important;
+}
+
+.qcld-btn-board-upload .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.qcld-btn-board-remove {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #ef4444 !important;
+    padding: 10px 16px !important;
+    border-radius: 6px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.qcld-btn-board-remove:hover {
+    background: #fef2f2 !important;
+    border-color: #fca5a5 !important;
+    color: #dc2626 !important;
+}
+
+.qcld-btn-board-remove .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.qcld-board-bg-note {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+}
+
+.qcld-board-bg-preview-section {
+    width: 330px;
+    max-width: 100%;
+}
+
+.qcld-board-bg-preview-section > span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.qcld-board-mockup-frame {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.qcld-board-mockup-frame:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.12);
+}
+
+.qcld-board-mockup-header {
+    background: linear-gradient(135deg, #a1408d 0%, #8c357a 100%);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qcld-board-mockup-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.qcld-board-mockup-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.qcld-board-mockup-title {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.qcld-board-mockup-body {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background: #f8fafc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.qcld-board-mockup-body img#qcld_woo_chatbot_board_bg_image {
+    position: absolute;
+    inset: 0;
     width: 100% !important;
-    object-fit: cover;
-    max-height: 480px;
+    height: 100% !important;
+    object-fit: cover !important;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.qcld-board-bg-empty-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    background: repeating-linear-gradient(45deg, #f8fafc, #f8fafc 10px, #f1f5f9 10px, #f1f5f9 20px);
+}
+
+.qcld-board-bg-empty-placeholder .dashicons {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.qcld-board-bg-empty-placeholder span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.qcld-board-bg-empty-placeholder small {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+.qcld-board-mockup-chat-bubble-sample {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.qcld-mock-bubble {
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    max-width: 85%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.qcld-mock-bubble-bot {
+    background: #ffffff;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.qcld-mock-bubble-user {
+    background: #a1408d;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
 }
 
 .cxsc-settings-blocks button:hover {

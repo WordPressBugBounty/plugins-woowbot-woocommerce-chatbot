@@ -362,7 +362,7 @@ function qcld_woo_chatbot_settings_page() {
                     </div> <!-- closes qcld_woo_chatbot-settings-grid -->
                     
                     <div class="qcld_woo_chatbot-settings-footer">
-                        <?php submit_button(esc_html__( 'Save Configurations', 'woowbot-woocommerce-chatbot' ), 'primary', 'submit', false, array('class' => 'qcld_woo_chatbot-btn qcld_woo_chatbot-btn-save')); ?>
+                        <?php submit_button(esc_html__( 'Save Configurations', 'woowbot-woocommerce-chatbot' ), 'primary', 'submit', false, array('class' => 'qcld_woo_chatbot-btn qcld_woo_chatbot-btn-save qcld_woo_chatbot-btn-primary')); ?>
                     </div>
                 </form>
             </div>
@@ -558,9 +558,10 @@ function qcld_woo_chatbot_settings_page() {
                             
                         </div>
                     </div>
-                </div>
-                <?php submit_button(); ?>
-            </form>
+                    <div class="qcld_woo_chatbot-settings-footer">
+                        <?php submit_button(esc_html__( 'Save AI Configurations', 'woowbot-woocommerce-chatbot' ), 'primary', 'submit', false, array('class' => 'qcld_woo_chatbot-btn qcld_woo_chatbot-btn-save qcld_woo_chatbot-btn-primary')); ?>
+                    </div>
+                </form>
         </div>
     </div>
     <?php

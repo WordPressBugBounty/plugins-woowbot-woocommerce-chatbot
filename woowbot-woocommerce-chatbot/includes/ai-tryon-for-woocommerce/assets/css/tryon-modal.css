@@ -125,7 +125,7 @@
 /* Middle Column - Form Controls */
 .qcld_woo_chatbot-tabs {
     display: flex;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #a1408d;
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -145,7 +145,8 @@
 }
 
 .qcld_woo_chatbot-tab.active {
-    background: #1a202c;
+    background: #a1408d;
+    border: 1px solid #a1408d;
     color: #ffffff;
 }
 
@@ -197,12 +198,15 @@
 }
 
 .qcld_woo_chatbot-btn-primary {
-    background-color: #3182ce;
+    background: #a1408d;
+    border: 1px solid #a1408d;
     color: #ffffff;
 }
 
 .qcld_woo_chatbot-btn-primary:hover {
-    background-color: #2b6cb0;
+    background: #8c357a;
+    border: 1px solid #8c357a;
+    color: #ffffff;
 }
 
 .qcld_woo_chatbot-btn-secondary {
@@ -317,7 +321,7 @@
 
 .qcld_woo_chatbot-palette-btn:hover {
     background: #ffffff;
-    color: #3182ce;
+    color: #a1408d;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
@@ -478,6 +482,21 @@
 .qcld_woo_chatbot-button-wrapper{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.qcld_woo_chatbot-button-wrapper button,
+#qcld_woo_chatbot-open-modal-btn {
+    background: #a1408d !important;
+    border: 1px solid #a1408d !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.qcld_woo_chatbot-button-wrapper button:hover,
+#qcld_woo_chatbot-open-modal-btn:hover {
+    background: #8c357a !important;
+    border: 1px solid #8c357a !important;
+    color: #ffffff !important;
 }
 
 .qcld_woo_chatbot-btn-icon-svg {

@@ -4,24 +4,32 @@ Donate link: https://woowbot.pro/
 Tags: bot, chatbot, live chat, woocommerce, woocommerce chatbot
 Requires at least: 4.6
 Tested up to: 7.1
-Stable tag: 4.9.6
+Stable tag: 4.9.7
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://woowbot.pro/
 
-AI chatbot for WooCommerce that automates support, increases WooCommerce sales, answer questions, & boosts engagement. AI, ChatGPT, Gemini. No coding!
+AI chatbot for WooCommerce. Automate support, Increase WooCommerce Sales. AI TryOn, AI Business Analysis. ChatGPT, Gemini. Boost Engagement No Coding!
 
 == Description ==
 = AI ChatBot for WooCommerce - WoowBot =
 <strong>WoowBot AI ChatBot for WooCommerce</strong> is a Free SIMPLE and <strong>Native</strong> WordPress eCommerce ChatBot. This plug n' play chatbot or Woocoommerce shopping bot works out of the box. Use this eCommerce ChatBot for Woocommerce product search, customer support, and to answer user questions.
 
+> 🚀 Upgrade to the Best <strong> [ChatBot for WooCommerce - WoowBot](https://woowbot.pro/) for AI & Advanced Features</strong> 
+> 🚀 [Support, Bug Report, Feature Requests](https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/)
+
 The WoowBot Free version is an <strong>eCommerce ChatBot</strong> for woocommerce shoppers to search and find the right product quickly. If the shopper does not find the product they are searching for, they can email the shop admin directly from the ChatBot window. Use ChatBot for increased sales in your eCommerce websites.
 
 Integrate with OpenAI or Gemini to answer user questions from your website data. You can train an AI model with your website and product data.
 
-> 🚀 Upgrade to the Best <strong> [ChatBot for WooCommerce - WoowBot](https://woowbot.pro/) for AI & Advanced Features</strong> 
-> 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot](https://woowbot.pro/) 
+<strong>AI Studio:</strong>
+Let Your Customers Try Before They Buy — Right on Your Product Page.
 
+WoowBot AI Studio allows your shoppers to upload a photo and see exactly how it looks on their body. No guesswork. Fewer return rates. No developers needed. Not only photos – video previews are also available with all WoowBot Pro plans!
+
+<strong>AI Business Analytics</strong>
+
+Have you ever wondered why your WooCommerce sales dropped? What is your best selling product in a given period, or which coupon is getting used the most? Now you can – just by chatting with the WoowBot AI Business Analyst- get answers in natural language. Get a unique, conversational perspective on your business run by WooCommerce inside the Woowbot AI Studio.
 
 <strong>A pro version </strong>of the ChatBot plugin is available with tons of advanced features that can provide automated customer support and can be integrated with <strong>OpenAI (ChatGPT)</strong>, Gemini, OpenRouter, or <strong>Google's Dialogflow </strong>. Use AI ChatBot for product recommendations in eCommerce and provide automated live customer support.
 
@@ -145,7 +153,7 @@ Monitor your success in real time. View, track, and manage all live customer cha
 Ready to automate your WooCommerce support and drive more revenue? Upgrade to WoowBot Pro AI Chatbot today and deliver an always-on, premium shopping experience.
 
 > 🚀 <strong> for AI & Advanced Features Upgrade to [ChatBot for WooCommerce - WoowBot Pro](https://woowbot.pro/) Now!</strong> 
-> 🚀 [Support, Bug Report, Feature Requests](https://woowbot.pro/free-support/) | Demo for [WoowBot Pro](https://woowbot.pro/) 
+> 🚀 [Support, Bug Report, Feature Requests](https://wordpress.org/support/plugin/woowbot-woocommerce-chatbot/)
 
 
 = Support, Bug Fix, Feature Request =
@@ -202,6 +210,10 @@ MultiLanguage is supported with the WoowBot Pro versions. For a multilingual Cha
 14. ChatBot for Woocommerce backend
 
 == Changelog ==
+
+= 4.9.7 =
+# "WoowBot – AI Studio" design updated
+# Zoom issue fixed on iPhone
 
 = 4.9.6 =
 # Disable TryOn by default

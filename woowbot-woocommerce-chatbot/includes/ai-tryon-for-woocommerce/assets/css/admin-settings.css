@@ -7,21 +7,21 @@
     --qcld_woo_chatbot-bg-card: #ffffff;
     --qcld_woo_chatbot-bg-card-header: #f1f5f9;
     --qcld_woo_chatbot-border: #e2e8f0;
-    --qcld_woo_chatbot-border-focus: #3b82f6;
+    --qcld_woo_chatbot-border-focus: #a1408d;
     
     --qcld_woo_chatbot-text-main: #0f172a;
     --qcld_woo_chatbot-text-muted: #64748b;
     --qcld_woo_chatbot-text-light: #94a3b8;
     
-    --qcld_woo_chatbot-primary: #2563eb;
-    --qcld_woo_chatbot-primary-hover: #1d4ed8;
+    --qcld_woo_chatbot-primary: #a1408d;
+    --qcld_woo_chatbot-primary-hover: #8c357a;
     --qcld_woo_chatbot-secondary: #f1f5f9;
     --qcld_woo_chatbot-secondary-hover: #e2e8f0;
     
     --qcld_woo_chatbot-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --qcld_woo_chatbot-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --qcld_woo_chatbot-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --qcld_woo_chatbot-shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    --qcld_woo_chatbot-shadow-focus: 0 0 0 3px rgba(161, 64, 141, 0.2);
     
     --qcld_woo_chatbot-radius-sm: 6px;
     --qcld_woo_chatbot-radius-md: 10px;
@@ -32,7 +32,6 @@
 .qcld_woo_chatbot-admin-wrap {
     max-width: 100%;
     margin: 0px 0px 0px 0px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     color: var(--qcld_woo_chatbot-text-main);
 }
 
@@ -176,25 +175,30 @@ h3.qcld_woo_chatbot-section-title.qcld_woo_chatbot-header-gemini {
     padding: 0 !important;
     border-bottom: 2px solid var(--qcld_woo_chatbot-border);
     display: flex;
-    gap: 24px;
+    gap: 12px;
 }
 .qcld_woo_chatbot-tab-link {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--qcld_woo_chatbot-text-muted);
-    padding: 0 0 12px 0;
+    padding: 8px 16px;
     margin-bottom: -2px;
-    border-bottom: 2px solid transparent;
+    border: 1px solid transparent;
+    border-radius: 6px 6px 0 0;
     transition: all 0.2s ease;
     box-shadow: none !important;
+    display: inline-block;
 }
 .qcld_woo_chatbot-tab-link:hover {
     color: var(--qcld_woo_chatbot-primary-hover);
+    background: rgba(161, 64, 141, 0.08);
 }
 .qcld_woo_chatbot-tab-link.active {
-    color: var(--qcld_woo_chatbot-primary);
-    border-bottom-color: var(--qcld_woo_chatbot-primary);
+    background: #a1408d !important;
+    border: 1px solid #a1408d !important;
+    color: #ffffff !important;
+    border-radius: 6px 6px 0 0;
 }
 .qcld_woo_chatbot-tab-content {
     display: none;
@@ -336,15 +340,18 @@ h3.qcld_woo_chatbot-section-title.qcld_woo_chatbot-header-gemini {
 }
 
 .qcld_woo_chatbot-btn-primary {
-    background: var(--qcld_woo_chatbot-primary) !important;
+    background: #a1408d !important;
+    border: 1px solid #a1408d !important;
     color: #ffffff !important;
-    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2) !important;
+    box-shadow: 0 2px 4px rgba(161, 64, 141, 0.2) !important;
 }
 
 .qcld_woo_chatbot-btn-primary:hover {
-    background: var(--qcld_woo_chatbot-primary-hover) !important;
+    background: #8c357a !important;
+    border: 1px solid #8c357a !important;
+    color: #ffffff !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 4px 6px rgba(161, 64, 141, 0.3) !important;
 }
 
 .qcld_woo_chatbot-btn-secondary {
@@ -369,6 +376,62 @@ h3.qcld_woo_chatbot-section-title.qcld_woo_chatbot-header-gemini {
     border-top: 1px solid var(--qcld_woo_chatbot-border);
     display: flex;
     justify-content: flex-start;
+}
+
+/* Submit Buttons inside Admin Wrap & Settings Footer */
+.qcld_woo_chatbot-admin-wrap input[type="submit"],
+.qcld_woo_chatbot-admin-wrap button[type="submit"],
+.qcld_woo_chatbot-admin-wrap #submit,
+.qcld_woo_chatbot-admin-wrap .button-primary,
+.qcld_woo_chatbot-admin-wrap p.submit input[type="submit"],
+.wp-core-ui .qcld_woo_chatbot-admin-wrap .button-primary,
+.wp-core-ui .qcld_woo_chatbot-admin-wrap input[type="submit"],
+.qcld_woo_chatbot-settings-footer input[type="submit"],
+.qcld_woo_chatbot-settings-footer button[type="submit"],
+.qcld_woo_chatbot-settings-footer #submit,
+.qcld_woo_chatbot-settings-footer .button-primary,
+.qcld_woo_chatbot-settings-footer .qcld_woo_chatbot-btn-save,
+.wp-core-ui .qcld_woo_chatbot-settings-footer .button-primary,
+.wp-core-ui .qcld_woo_chatbot-settings-footer input[type="submit"] {
+    background: #a1408d !important;
+    border: 1px solid #a1408d !important;
+    color: #ffffff !important;
+    padding: 10px 24px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border-radius: var(--qcld_woo_chatbot-radius-sm) !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 4px rgba(161, 64, 141, 0.2) !important;
+    text-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    min-height: 40px !important;
+    line-height: normal !important;
+    text-decoration: none !important;
+}
+
+.qcld_woo_chatbot-admin-wrap input[type="submit"]:hover,
+.qcld_woo_chatbot-admin-wrap button[type="submit"]:hover,
+.qcld_woo_chatbot-admin-wrap #submit:hover,
+.qcld_woo_chatbot-admin-wrap .button-primary:hover,
+.qcld_woo_chatbot-admin-wrap p.submit input[type="submit"]:hover,
+.wp-core-ui .qcld_woo_chatbot-admin-wrap .button-primary:hover,
+.wp-core-ui .qcld_woo_chatbot-admin-wrap input[type="submit"]:hover,
+.qcld_woo_chatbot-settings-footer input[type="submit"]:hover,
+.qcld_woo_chatbot-settings-footer button[type="submit"]:hover,
+.qcld_woo_chatbot-settings-footer #submit:hover,
+.qcld_woo_chatbot-settings-footer .button-primary:hover,
+.qcld_woo_chatbot-settings-footer .qcld_woo_chatbot-btn-save:hover,
+.wp-core-ui .qcld_woo_chatbot-settings-footer .button-primary:hover,
+.wp-core-ui .qcld_woo_chatbot-settings-footer input[type="submit"]:hover {
+    background: #8c357a !important;
+    border: 1px solid #8c357a !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 6px rgba(161, 64, 141, 0.3) !important;
 }
 
 /* Toggle Switch CSS */

@@ -31,41 +31,31 @@ $(document).ready(function () {
             }
 
         });
-        //Custom Backgroud image
-
+        //Custom Background image
         $('.qcld_woo_chatbot_board_bg_button').click(function(e) {
-
             e.preventDefault();
-
             var image = wp.media({
-
-                title: 'Custom Agent',
-
-                // mutiple: true if you want to upload multiple files at once
-
+                title: 'Custom Message Board Background',
                 multiple: false
-
             })
-
                 .open()
-
                 .on('select', function(e){
-
-                    // This will return the selected image from the Media Uploader, the result is an object
-
                     var uploaded_image = image.state().get('selection').first();
-
                     var image_url = uploaded_image.toJSON().url;
 
-                    // Let's assign the url value to the hidden field value and img src.
-
-                    $('#qcld_woo_chatbot_board_bg_image').attr('src',image_url).css({ display: "block" });
-                    //$('#qcld_woo_chatbot_board_bg_image').css({ display: "block" });
-
+                    $('#qcld_woo_chatbot_board_bg_image').attr('src', image_url).removeClass('qcld-hidden').show();
+                    $('#qcld_woo_chatbot_board_bg_placeholder').addClass('qcld-hidden').hide();
+                    $('.qcld_woo_chatbot_board_bg_remove_button').removeClass('qcld-hidden').show();
                     $('#qcld_woo_chatbot_board_bg_path').val(image_url);
-
                 });
+        });
 
+        $(document).on('click', '.qcld_woo_chatbot_board_bg_remove_button', function(e) {
+            e.preventDefault();
+            $('#qcld_woo_chatbot_board_bg_path').val('');
+            $('#qcld_woo_chatbot_board_bg_image').attr('src', '').addClass('qcld-hidden').hide();
+            $('#qcld_woo_chatbot_board_bg_placeholder').removeClass('qcld-hidden').show();
+            $(this).addClass('qcld-hidden').hide();
         });
 
         $('.wp_chatbot_custom_agent_button').click(function(e) {
