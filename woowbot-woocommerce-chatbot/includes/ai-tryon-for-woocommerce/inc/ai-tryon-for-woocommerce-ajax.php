@@ -244,33 +244,149 @@ function qcld_woo_chatbot_get_appropriate_model( $provider, $generation_type ) {
     return '';
 }
 
-function qcld_woo_chatbot_build_generation_prompt( $product_name, $product_image, $second_image, $prompt ) {
-    $product_image_url_val = '';
-    if ( !empty($product_image) ) {
-        if ( stripos($product_image, 'data:image') === 0 ) {
-            $product_image_url_val = "[Image provided visually via Base64 attachment]";
-        } else {
-            $product_image_url_val = esc_url($product_image);
+function qcld_woo_chatbot_ensure_image_inline_data( $image_data ) {
+    if ( empty( $image_data ) ) {
+        return null;
+    }
+
+    // 1. If already Base64 data URI
+    if ( stripos( $image_data, 'data:image' ) === 0 ) {
+        if ( preg_match( '/data:(image\/[^;]+);base64,(.+)/', $image_data, $matches ) ) {
+            return array(
+                'mimeType' => $matches[1],
+                'data'     => $matches[2],
+            );
         }
     }
-    
-    $second_image_url_val = '';
-    if ( !empty($second_image) ) {
-        if ( stripos($second_image, 'data:image') === 0 ) {
-            $second_image_url_val = "[Image provided visually via Base64 attachment]";
-        } else {
-            $second_image_url_val = esc_url($second_image);
+
+    // 2. If it's a URL, fetch and convert to Base64
+    if ( filter_var( $image_data, FILTER_VALIDATE_URL ) ) {
+        $response = wp_remote_get( $image_data, array( 'timeout' => 15, 'sslverify' => false ) );
+        if ( ! is_wp_error( $response ) && wp_remote_retrieve_response_code( $response ) === 200 ) {
+            $body = wp_remote_retrieve_body( $response );
+            $content_type = wp_remote_retrieve_header( $response, 'content-type' );
+            if ( empty( $content_type ) ) {
+                $content_type = 'image/jpeg';
+            } else {
+                $content_type = explode( ';', $content_type )[0];
+            }
+            if ( ! empty( $body ) ) {
+                return array(
+                    'mimeType' => trim( $content_type ),
+                    'data'     => base64_encode( $body ),
+                );
+            }
         }
     }
-    
-    $structure = get_option('qcld_woo_chatbot_build_generation_prompt', 'Product name: {product_name}. Product Image URL: {product_image_url}. Reference Image URL: {second_image_url}. Scenario instruction: {scenario}');
-    
+
+    return null;
+}
+
+function qcld_woo_chatbot_cleanup_old_temp_images() {
+    $last_cleanup = get_transient( 'qcld_woo_chatbot_temp_cleanup_cron' );
+    if ( $last_cleanup ) {
+        return;
+    }
+    set_transient( 'qcld_woo_chatbot_temp_cleanup_cron', 1, DAY_IN_SECONDS );
+
+    $upload_dir = wp_upload_dir();
+    $temp_dir   = $upload_dir['basedir'] . '/qcld-ai-tryon-temp';
+    if ( ! is_dir( $temp_dir ) ) {
+        return;
+    }
+
+    $files = glob( $temp_dir . '/*' );
+    $now   = time();
+    if ( is_array( $files ) ) {
+        foreach ( $files as $file ) {
+            if ( is_file( $file ) && basename( $file ) !== 'index.php' ) {
+                if ( $now - filemtime( $file ) >= DAY_IN_SECONDS ) {
+                    @unlink( $file );
+                }
+            }
+        }
+    }
+}
+
+function qcld_woo_chatbot_base64_to_temp_image_url( $base64_data, $prefix = 'tryon' ) {
+    if ( empty( $base64_data ) || stripos( $base64_data, 'data:image' ) !== 0 ) {
+        return filter_var( $base64_data, FILTER_VALIDATE_URL ) ? esc_url_raw( $base64_data ) : '';
+    }
+
+    if ( ! preg_match( '/data:(image\/([a-zA-Z0-9\+\-]+));base64,(.+)/', $base64_data, $matches ) ) {
+        return '';
+    }
+
+    $mime_type = $matches[1];
+    $ext       = str_replace( array( 'image/', 'jpeg' ), array( '', 'jpg' ), $mime_type );
+    $decoded   = base64_decode( $matches[3] );
+
+    if ( ! $decoded ) {
+        return '';
+    }
+
+    qcld_woo_chatbot_cleanup_old_temp_images();
+
+    $upload_dir = wp_upload_dir();
+    $temp_dir   = $upload_dir['basedir'] . '/qcld-ai-tryon-temp';
+    $temp_url   = $upload_dir['baseurl'] . '/qcld-ai-tryon-temp';
+
+    if ( ! file_exists( $temp_dir ) ) {
+        wp_mkdir_p( $temp_dir );
+        @file_put_contents( $temp_dir . '/index.php', '<?php // Silence' );
+    }
+
+    $filename  = sanitize_file_name( $prefix . '-' . md5( $decoded . wp_salt() ) . '.' . $ext );
+    $file_path = $temp_dir . '/' . $filename;
+    $file_url  = $temp_url . '/' . $filename;
+
+    if ( ! file_exists( $file_path ) ) {
+        @file_put_contents( $file_path, $decoded );
+    }
+
+    return esc_url_raw( $file_url );
+}
+
+function qcld_woo_chatbot_build_generation_prompt( $product_name, $product_image, $second_image, $prompt, $product_image_url = '' ) {
+    // 1. Resolve Product Image Actual URL
+    $resolved_prod_url = '';
+    if ( ! empty( $product_image_url ) && filter_var( $product_image_url, FILTER_VALIDATE_URL ) ) {
+        $resolved_prod_url = esc_url_raw( $product_image_url );
+    } elseif ( ! empty( $product_image ) && filter_var( $product_image, FILTER_VALIDATE_URL ) ) {
+        $resolved_prod_url = esc_url_raw( $product_image );
+    } elseif ( ! empty( $product_image ) && stripos( $product_image, 'data:image' ) === 0 ) {
+        $resolved_prod_url = qcld_woo_chatbot_base64_to_temp_image_url( $product_image, 'product' );
+    }
+
+    // 2. Resolve Customer / Reference Image Actual URL
+    $resolved_sec_url = '';
+    if ( ! empty( $second_image ) && filter_var( $second_image, FILTER_VALIDATE_URL ) ) {
+        $resolved_sec_url = esc_url_raw( $second_image );
+    } elseif ( ! empty( $second_image ) && stripos( $second_image, 'data:image' ) === 0 ) {
+        $resolved_sec_url = qcld_woo_chatbot_base64_to_temp_image_url( $second_image, 'user' );
+    }
+
+    $structure = get_option( 'qcld_woo_chatbot_build_generation_prompt', 'Product name: {product_name}. Product Image: {product_image_url}. Reference Image: {second_image_url}. Scenario instruction: {scenario}' );
+    if ( empty( $structure ) ) {
+        $structure = 'Product name: {product_name}. Product Image: {product_image_url}. Reference Image: {second_image_url}. Scenario instruction: {scenario}';
+    }
+
     $final = str_replace(
-        array('{product_name}', '{product_image_url}', '{second_image_url}', '{scenario}'),
-        array($product_name, $product_image_url_val, $second_image_url_val, $prompt),
+        array( '{product_name}', '{product_image_url}', '{second_image_url}', '{scenario}' ),
+        array(
+            ! empty( $product_name ) ? sanitize_text_field( $product_name ) : 'Product',
+            $resolved_prod_url,
+            $resolved_sec_url,
+            sanitize_text_field( $prompt )
+        ),
         $structure
     );
-    
+
+    // Clean up empty URL label fragments if not present
+    $final = preg_replace( '/\b(Product Image|Product Image URL|Reference Image|Reference Image URL|Model Reference)\s*(URL)?:\s*(?=[.,\n]|$)/i', '', $final );
+    $final = preg_replace( '/\s+([.,])/', '$1', $final );
+    $final = trim( preg_replace( '/\s+/', ' ', $final ) );
+
     return $final;
 }
 
@@ -326,28 +442,16 @@ function qcld_woo_chatbot_execute_gemini_image_generation( $final_prompt, $api_k
         array( 'text' => $gemini_prompt )
     );
 
-    // Append product image as inlineData
-    if ( !empty($product_image) && stripos($product_image, 'data:image') === 0 ) {
-        if ( preg_match('/data:(image\/[^;]+);base64,(.+)/', $product_image, $matches) ) {
-            $parts[] = array(
-                'inlineData' => array(
-                    'mimeType' => $matches[1],
-                    'data'     => $matches[2]
-                )
-            );
-        }
+    // Append product image as inlineData (Base64 or URL auto-converted)
+    $prod_inline = qcld_woo_chatbot_ensure_image_inline_data( $product_image );
+    if ( $prod_inline ) {
+        $parts[] = array( 'inlineData' => $prod_inline );
     }
 
-    // Append user uploaded second image as inlineData
-    if ( !empty($second_image) && stripos($second_image, 'data:image') === 0 ) {
-        if ( preg_match('/data:(image\/[^;]+);base64,(.+)/', $second_image, $matches) ) {
-            $parts[] = array(
-                'inlineData' => array(
-                    'mimeType' => $matches[1],
-                    'data'     => $matches[2]
-                )
-            );
-        }
+    // Append user uploaded second image as inlineData (Base64 or URL auto-converted)
+    $sec_inline = qcld_woo_chatbot_ensure_image_inline_data( $second_image );
+    if ( $sec_inline ) {
+        $parts[] = array( 'inlineData' => $sec_inline );
     }
 
     $payload = array(
@@ -399,62 +503,97 @@ function qcld_woo_chatbot_handle_generation_backend() {
     @set_time_limit( 300 );
     check_ajax_referer( 'qcld_woo_chatbot_generation_nonce', 'security' );
 
-    // Enforce Rate Limit
-    $limit = get_option('qcld_woo_chatbot_generation_limit', '');
-    if ( $limit !== '' && intval($limit) > 0 ) {
-        $limit_val = intval($limit);
-        $remote_addr = isset($_SERVER['REMOTE_ADDR']) ? sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR'])) : '';
-        $user_identifier = is_user_logged_in() ? 'user_' . get_current_user_id() : 'ip_' . $remote_addr;
-        $transient_name = 'qcld_woo_chatbot_gen_limit_' . md5($user_identifier);
-        
-        $current_count = get_transient($transient_name);
-        if ( $current_count === false ) {
-            $current_count = 0;
-        }
-        
-        if ( $current_count >= $limit_val ) {
-            wp_send_json_error( array( 'message' => esc_html__('You have reached your daily limit for AI generations. Please try again tomorrow.', 'woowbot-woocommerce-chatbot') ) );
-        }
-        
-        set_transient($transient_name, $current_count + 1, DAY_IN_SECONDS);
+    // 1. Enforce Server-Side Logged-In Restriction if configured
+    $require_login = get_option( 'qcld_woo_chatbot_logged_in_users_only', '0' );
+    if ( $require_login === '1' && ! is_user_logged_in() ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'You must be logged in to use this AI Try-On feature.', 'woowbot-woocommerce-chatbot' ) ) );
     }
 
-    $prompt          = isset($_POST['prompt']) ? sanitize_text_field( wp_unslash( $_POST['prompt'] ) ) : '';
-    $product_name    = isset($_POST['product_name']) ? sanitize_text_field( wp_unslash( $_POST['product_name'] ) ) : '';
-    $generation_type = isset($_POST['generation_type']) ? sanitize_text_field( wp_unslash( $_POST['generation_type'] ) ) : 'image';
-    $provider        = get_option( 'qcld_woo_chatbot_api_provider', 'openai' );
-    
+    // 2. Resolve Client Identifier
+    $remote_addr     = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : 'unknown';
+    $user_identifier = is_user_logged_in() ? 'user_' . get_current_user_id() : 'ip_' . $remote_addr;
+
+    // 3. Burst Rate Limit Protection (Max 2 requests per 15 seconds per IP/User)
+    $burst_transient = 'qcld_woo_chatbot_burst_' . md5( $user_identifier );
+    $burst_count     = (int) get_transient( $burst_transient );
+    if ( $burst_count >= 2 ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'Please wait a few seconds before requesting another generation.', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
+    // 4. Daily Generation Limit with Safe Fail-Closed Default (Default: 20 per 24 hours)
+    $raw_limit   = get_option( 'qcld_woo_chatbot_generation_limit', '' );
+    $daily_limit = ( $raw_limit === '' || ! is_numeric( $raw_limit ) ) ? 20 : absint( $raw_limit );
+
+    if ( $daily_limit <= 0 ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'AI generation is currently disabled by the store administrator.', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
+    $limit_transient = 'qcld_woo_chatbot_gen_limit_' . md5( $user_identifier );
+    $current_count   = (int) get_transient( $limit_transient );
+
+    if ( $current_count >= $daily_limit ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'You have reached your daily limit for AI generations. Please try again tomorrow.', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
+    // 5. Global Site-Wide Circuit Breaker
+    $raw_global_limit = get_option( 'qcld_woo_chatbot_global_daily_limit', '250' );
+    $global_limit     = ( $raw_global_limit === '' || ! is_numeric( $raw_global_limit ) ) ? 250 : absint( $raw_global_limit );
+    $global_limit     = (int) apply_filters( 'qcld_woo_chatbot_global_daily_limit', $global_limit );
+    $global_transient = 'qcld_woo_chatbot_global_daily_count';
+    $global_count     = (int) get_transient( $global_transient );
+    if ( $global_limit > 0 && $global_count >= $global_limit ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'Site daily generation quota reached. Please try again tomorrow.', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
+    // 6. Payload Sanitization & Validation
+    $prompt          = isset( $_POST['prompt'] ) ? sanitize_text_field( wp_unslash( $_POST['prompt'] ) ) : '';
+    $product_name    = isset( $_POST['product_name'] ) ? sanitize_text_field( wp_unslash( $_POST['product_name'] ) ) : '';
+    $generation_type = isset( $_POST['generation_type'] ) ? sanitize_text_field( wp_unslash( $_POST['generation_type'] ) ) : 'image';
+
+    if ( mb_strlen( $prompt ) > 1000 ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'Prompt text is too long (maximum 1000 characters).', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
+    if ( ! in_array( $generation_type, array( 'image', 'video' ), true ) ) {
+        $generation_type = 'image';
+    }
+
+    $provider = get_option( 'qcld_woo_chatbot_api_provider', 'openai' );
     if ( $generation_type === 'video' ) {
         $provider = 'gemini'; // Force Gemini for video
     }
-    
+
     $api_key = $provider === 'openai' ? get_option( 'qcld_woo_chatbot_openai_api_key', '' ) : get_option( 'qcld_woo_chatbot_gemini_api_key', '' );
     $model   = qcld_woo_chatbot_get_appropriate_model( $provider, $generation_type );
 
     if ( empty( $api_key ) ) {
-        wp_send_json_error( array( 'message' => esc_html__('API Configuration missing. Contact store administrator.', 'woowbot-woocommerce-chatbot') ) );
+        wp_send_json_error( array( 'message' => esc_html__( 'API Configuration missing. Contact store administrator.', 'woowbot-woocommerce-chatbot' ) ) );
     }
 
-    $product_image = isset($_POST['product_image']) ? sanitize_textarea_field( wp_unslash( $_POST['product_image'] ) ) : '';
-    $second_image  = isset($_POST['second_image']) ? sanitize_textarea_field( wp_unslash( $_POST['second_image'] ) ) : '';
-    
-    $final_prompt = qcld_woo_chatbot_build_generation_prompt( $product_name, $product_image, $second_image, $prompt );
-    
-    $frontend_size = get_option('qcld_woo_chatbot_image_size', '1024x1792');
-    
+    // Apply Burst and Usage Rate Limits before dispatching API call
+    set_transient( $burst_transient, $burst_count + 1, 15 );
+    set_transient( $limit_transient, $current_count + 1, DAY_IN_SECONDS );
+    set_transient( $global_transient, $global_count + 1, DAY_IN_SECONDS );
+
+    $product_image     = isset( $_POST['product_image'] ) ? sanitize_textarea_field( wp_unslash( $_POST['product_image'] ) ) : '';
+    $second_image      = isset( $_POST['second_image'] ) ? sanitize_textarea_field( wp_unslash( $_POST['second_image'] ) ) : '';
+    $product_image_url = isset( $_POST['product_image_url'] ) ? sanitize_text_field( wp_unslash( $_POST['product_image_url'] ) ) : '';
+
+    $final_prompt = qcld_woo_chatbot_build_generation_prompt( $product_name, $product_image, $second_image, $prompt, $product_image_url );
+    $frontend_size = get_option( 'qcld_woo_chatbot_image_size', '1024x1792' );
+
     if ( $provider === 'openai' ) {
         $api_size = $frontend_size;
-        if ( $model === 'dall-e-3' && !in_array($api_size, ['1024x1024', '1024x1792', '1792x1024']) ) {
+        if ( $model === 'dall-e-3' && ! in_array( $api_size, array( '1024x1024', '1024x1792', '1792x1024' ), true ) ) {
             $api_size = '1024x1024'; // Fallback to square if 256/512 selected but using DALL-E 3
-        } elseif ( $model !== 'dall-e-3' && !in_array($api_size, ['256x256', '512x512', '1024x1024']) ) {
+        } elseif ( $model !== 'dall-e-3' && ! in_array( $api_size, array( '256x256', '512x512', '1024x1024' ), true ) ) {
             $api_size = '1024x1024'; // Fallback to square if portrait/landscape selected but using DALL-E 2
         }
         qcld_woo_chatbot_execute_openai_image_generation( $final_prompt, $api_key, $model, $api_size );
     } else {
-        $final_prompt .= " Generate the image in a " . $frontend_size . " format.";
+        $final_prompt .= ' Generate the image in a ' . $frontend_size . ' format.';
         qcld_woo_chatbot_execute_gemini_image_generation( $final_prompt, $api_key, $model, $product_image, $second_image );
     }
-    
 }
 
 
@@ -462,7 +601,11 @@ function qcld_woo_chatbot_handle_generation_backend() {
 add_action( 'wp_ajax_qcld_woo_chatbot_save_media', 'qcld_woo_chatbot_save_media_to_library' );
 function qcld_woo_chatbot_save_media_to_library() {
     check_ajax_referer( 'qcld_woo_chatbot_generation_nonce', 'security' );
-    
+
+    if ( ! current_user_can( 'upload_files' ) ) {
+        wp_send_json_error( array( 'message' => esc_html__( 'Permission denied. You do not have permission to upload files.', 'woowbot-woocommerce-chatbot' ) ) );
+    }
+
     $media_data = isset($_POST['media_data']) ? sanitize_textarea_field( wp_unslash( $_POST['media_data'] ) ) : '';
     
     if ( empty($media_data) ) {

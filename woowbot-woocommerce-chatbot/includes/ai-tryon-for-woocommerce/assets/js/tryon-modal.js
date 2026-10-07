@@ -24,9 +24,11 @@ jQuery(document).ready(function($) {
     }
 
     // Open Modal interface
-    $('#qcld_woo_chatbot-open-modal-btn').on('click', function() {
-        currentProductName = $(this).data('product-title');
-        currentProductImage = $(this).data('product-image');
+    $(document).on('click', '#qcld_woo_chatbot-open-modal-btn', function(e) {
+        e.preventDefault();
+        var $btn = $(this);
+        currentProductName = $btn.data('product-title');
+        currentProductImage = $btn.data('product-image');
         currentProductImageBase64 = '';
         
         if (currentProductImage) {
@@ -142,37 +144,55 @@ jQuery(document).ready(function($) {
                 security: qcld_woo_chatbot_ajax_obj.nonce,
                 prompt: promptText,
                 product_name: currentProductName,
-                product_image: currentProductImageBase64,
+                product_image: currentProductImageBase64 ? currentProductImageBase64 : currentProductImage,
+                product_image_url: currentProductImage,
                 second_image: currentSecondImage,
-                // Extra fields for backend logic when implemented:
+                // Extra fields for backend logic:
                 bg_preference: bgPref,
                 output_style: outputStyle,
                 image_size: imageSize,
                 generation_type: genType
             },
             success: function(response) {
-                if (response.success) {
-                    if (response.data.html) {
-                        $('#qcld_woo_chatbot-loading-spinner').addClass('qcld_woo_chatbot-hidden');
-                        $submitBtn.prop('disabled', false).text(originalBtnText).css('opacity', '1').css('cursor', 'pointer');
-                        var paletteHtml = '<div class="qcld_woo_chatbot-floating-palette">' +
-                            '<button type="button" class="qcld_woo_chatbot-palette-btn qcld_woo_chatbot-regenerate-btn" title="Regenerate"><span class="dashicons dashicons-update-alt"></span><br>Regenerate</button>' +
-                            '<button type="button" class="qcld_woo_chatbot-palette-btn qcld_woo_chatbot-download-btn" title="Download"><span class="dashicons dashicons-download"></span><br>Download</button>' +
-                            '</div>';
-                        $('#qcld_woo_chatbot-result-display').html(response.data.html + paletteHtml);
-                        $('#qcld_woo_chatbot-result-placeholder').addClass('qcld_woo_chatbot-hidden');
-                    }
+                if (response && response.success && response.data && response.data.html) {
+                    $('#qcld_woo_chatbot-loading-spinner').addClass('qcld_woo_chatbot-hidden');
+                    $submitBtn.prop('disabled', false).text(originalBtnText).css('opacity', '1').css('cursor', 'pointer');
+                    var paletteHtml = '<div class="qcld_woo_chatbot-floating-palette">' +
+                        '<button type="button" class="qcld_woo_chatbot-palette-btn qcld_woo_chatbot-regenerate-btn" title="Regenerate"><span class="dashicons dashicons-update-alt"></span><br>Regenerate</button>' +
+                        '<button type="button" class="qcld_woo_chatbot-palette-btn qcld_woo_chatbot-download-btn" title="Download"><span class="dashicons dashicons-download"></span><br>Download</button>' +
+                        '</div>';
+                    $('#qcld_woo_chatbot-result-display').html(response.data.html + paletteHtml);
+                    $('#qcld_woo_chatbot-result-placeholder').addClass('qcld_woo_chatbot-hidden');
                 } else {
                     $('#qcld_woo_chatbot-loading-spinner').addClass('qcld_woo_chatbot-hidden');
                     $submitBtn.prop('disabled', false).text(originalBtnText).css('opacity', '1').css('cursor', 'pointer');
-                    $('#qcld_woo_chatbot-result-display').html('<p class="qcld_woo_chatbot-error">' + qcld_woo_chatbot_ajax_obj.i18n.execution_error + response.data.message + '</p>');
+
+                    var errorMsg = '';
+                    if (response && response.data) {
+                        if (typeof response.data === 'string') {
+                            errorMsg = response.data;
+                        } else if (response.data.message) {
+                            errorMsg = response.data.message;
+                        }
+                    } else if (typeof response === 'string' && response.length > 0 && response !== '0' && response !== '-1') {
+                        errorMsg = response;
+                    }
+
+                    if (!errorMsg) {
+                        errorMsg = (qcld_woo_chatbot_ajax_obj && qcld_woo_chatbot_ajax_obj.i18n && qcld_woo_chatbot_ajax_obj.i18n.unexpected_error) ? qcld_woo_chatbot_ajax_obj.i18n.unexpected_error : 'Unexpected error occurred.';
+                    }
+
+                    var prefix = (qcld_woo_chatbot_ajax_obj && qcld_woo_chatbot_ajax_obj.i18n && qcld_woo_chatbot_ajax_obj.i18n.execution_error) ? qcld_woo_chatbot_ajax_obj.i18n.execution_error : '';
+                    $('#qcld_woo_chatbot-result-display').html('<p class="qcld_woo_chatbot-error">' + prefix + errorMsg + '</p>');
                     $('#qcld_woo_chatbot-result-placeholder').removeClass('qcld_woo_chatbot-hidden');
                 }
             },
-            error: function() {
+            error: function(xhr) {
                 $('#qcld_woo_chatbot-loading-spinner').addClass('qcld_woo_chatbot-hidden');
                 $submitBtn.prop('disabled', false).text(originalBtnText).css('opacity', '1').css('cursor', 'pointer');
-                $('#qcld_woo_chatbot-result-display').html('<p class="qcld_woo_chatbot-error">' + qcld_woo_chatbot_ajax_obj.i18n.unexpected_error + '</p>');
+                var serverError = (xhr && xhr.responseJSON && xhr.responseJSON.data && xhr.responseJSON.data.message) ? xhr.responseJSON.data.message : '';
+                var unexpected = (qcld_woo_chatbot_ajax_obj && qcld_woo_chatbot_ajax_obj.i18n && qcld_woo_chatbot_ajax_obj.i18n.unexpected_error) ? qcld_woo_chatbot_ajax_obj.i18n.unexpected_error : 'An unexpected network error occurred.';
+                $('#qcld_woo_chatbot-result-display').html('<p class="qcld_woo_chatbot-error">' + (serverError ? serverError : unexpected) + '</p>');
                 $('#qcld_woo_chatbot-result-placeholder').removeClass('qcld_woo_chatbot-hidden');
             }
         });
@@ -268,7 +288,8 @@ jQuery(document).ready(function($) {
                     }, 2000);
                 } else {
                     $btn.html('<span class="dashicons dashicons-warning"></span><br>' + qcld_woo_chatbot_ajax_obj.i18n.error);
-                    alert(response.data.message || qcld_woo_chatbot_ajax_obj.i18n.error_saving);
+                    var saveMsg = (response && response.data && response.data.message) ? response.data.message : (qcld_woo_chatbot_ajax_obj.i18n.error_saving || 'Failed to save media.');
+                    alert(saveMsg);
                     setTimeout(function() {
                         $btn.html(originalText);
                     }, 2000);

@@ -98,11 +98,25 @@ function qcld_woo_chatbot_settings_page() {
                                 </div>
                                 
                                 <div class="qcld_woo_chatbot-form-group">
-                                    <label for="qcld_woo_chatbot_generation_limit"><?php esc_html_e( 'Daily Generation Limit', 'woowbot-woocommerce-chatbot' ); ?></label>
+                                    <label for="qcld_woo_chatbot_generation_limit"><?php esc_html_e( 'Daily Generation Limit (Per IP / User)', 'woowbot-woocommerce-chatbot' ); ?></label>
                                     <div class="qcld_woo_chatbot-input-action-group">
-                                        <input type="number" id="qcld_woo_chatbot_generation_limit" name="qcld_woo_chatbot_generation_limit" class="qcld_woo_chatbot-input-field qcld_woo_chatbot-max-w-200" value="<?php echo esc_attr(get_option('qcld_woo_chatbot_generation_limit', '')); ?>" placeholder="<?php esc_attr_e( 'e.g. 5 (Leave blank for unlimited)', 'woowbot-woocommerce-chatbot' ); ?>" min="0" />
+                                        <input type="number" id="qcld_woo_chatbot_generation_limit" name="qcld_woo_chatbot_generation_limit" class="qcld_woo_chatbot-input-field qcld_woo_chatbot-max-w-200" value="<?php echo esc_attr(get_option('qcld_woo_chatbot_generation_limit', '20')); ?>" placeholder="20" min="1" />
                                     </div>
-                                    <span class="qcld_woo_chatbot-description"><?php esc_html_e( 'Limit Image and Video generation per session + IP per 24 hours. Leave blank or 0 for unlimited.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <span class="qcld_woo_chatbot-description">
+                                        <?php esc_html_e( 'Max AI generations permitted per visitor IP or logged-in user in a 24-hour window (Default: 20).', 'woowbot-woocommerce-chatbot' ); ?>
+                                        <br>
+                                        <strong><?php esc_html_e( 'Cost Warning:', 'woowbot-woocommerce-chatbot' ); ?></strong> <?php esc_html_e( 'Visitor-triggered operations directly consume your configured OpenAI / Gemini API credits (~$0.04 - $0.08 / generation).', 'woowbot-woocommerce-chatbot' ); ?>
+                                    </span>
+                                </div>
+
+                                <div class="qcld_woo_chatbot-form-group">
+                                    <label for="qcld_woo_chatbot_global_daily_limit"><?php esc_html_e( 'Global Site-Wide Daily Limit (Circuit Breaker)', 'woowbot-woocommerce-chatbot' ); ?></label>
+                                    <div class="qcld_woo_chatbot-input-action-group">
+                                        <input type="number" id="qcld_woo_chatbot_global_daily_limit" name="qcld_woo_chatbot_global_daily_limit" class="qcld_woo_chatbot-input-field qcld_woo_chatbot-max-w-200" value="<?php echo esc_attr(get_option('qcld_woo_chatbot_global_daily_limit', '250')); ?>" placeholder="250" min="1" />
+                                    </div>
+                                    <span class="qcld_woo_chatbot-description">
+                                        <?php esc_html_e( 'Hard daily generation ceiling for the entire website across all visitors/IPs in 24 hours (Default: 250). Protects against distributed bot attacks.', 'woowbot-woocommerce-chatbot' ); ?>
+                                    </span>
                                 </div>
 
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
@@ -459,7 +473,7 @@ function qcld_woo_chatbot_settings_page() {
                                         <button type="button" class="qcld_woo_chatbot-btn qcld_woo_chatbot-btn-secondary qcld_woo_chatbot-verify-model-btn" data-provider="openai" data-type="image"><?php esc_html_e( 'Verify', 'woowbot-woocommerce-chatbot' ); ?></button>
                                     </div>
                                     <span class="qcld_woo_chatbot-verify-status qcld_woo_chatbot-status-text"></span>
-                                    <span class="qcld_woo_chatbot-description"><?php esc_html_e( 'Select the OpenAI model for image generation.', 'woowbot-woocommerce-chatbot' ); ?></span>
+                                    <span class="qcld_woo_chatbot-description"><?php esc_html_e( 'Select the OpenAI model for image generation.', 'woowbot-woocommerce-chatbot' ); ?> <i>( gpt-image-1 Recommended ) </i></span>
                                 </div>
                             </div>
 
@@ -573,6 +587,7 @@ function qcld_woo_chatbot_register_settings() {
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_logged_in_users_only', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_modal_add_to_cart_btn_enabled', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_generation_limit', array( 'sanitize_callback' => 'absint' ) );
+    register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_global_daily_limit', array( 'sanitize_callback' => 'absint' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_button_position', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_button_icon', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_button_text', array( 'sanitize_callback' => 'sanitize_text_field' ) );
