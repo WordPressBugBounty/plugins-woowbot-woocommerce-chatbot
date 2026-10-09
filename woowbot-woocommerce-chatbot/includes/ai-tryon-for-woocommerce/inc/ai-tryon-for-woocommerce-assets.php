@@ -41,19 +41,23 @@ function qcld_woo_chatbot_enqueue_assets() {
             'ajax_url' => admin_url( 'admin-ajax.php' ),
             'nonce'    => wp_create_nonce( 'qcld_woo_chatbot_generation_nonce' ),
             'i18n'     => array(
-                'processing'        => esc_html__( 'Processing...', 'woowbot-woocommerce-chatbot' ),
-                'generating_video'  => esc_html__( 'Generating Video (This may take up to 5 minutes)...', 'woowbot-woocommerce-chatbot' ),
+                'processing'        => get_option( 'qcld_woo_chatbot_txt_processing', esc_html__( 'Processing...', 'woowbot-woocommerce-chatbot' ) ),
+                'adding'            => get_option( 'qcld_woo_chatbot_txt_adding_to_cart', esc_html__( 'Adding...', 'woowbot-woocommerce-chatbot' ) ),
+                'select_option'     => get_option( 'qcld_woo_chatbot_txt_select_options_first', esc_html__( 'Please select product options first.', 'woowbot-woocommerce-chatbot' ) ),
+                'choose_option'     => get_option( 'qcld_woo_chatbot_txt_choose_option', esc_html__( 'Choose an option', 'woowbot-woocommerce-chatbot' ) ),
+                'optimizing_photo'  => get_option( 'qcld_woo_chatbot_txt_optimizing_photo', esc_html__( 'Optimizing photo...', 'woowbot-woocommerce-chatbot' ) ),
+                'palette_regenerate'=> get_option( 'qcld_woo_chatbot_txt_palette_regenerate', esc_html__( 'Regenerate', 'woowbot-woocommerce-chatbot' ) ),
+                'palette_download'  => get_option( 'qcld_woo_chatbot_txt_palette_download', esc_html__( 'Download', 'woowbot-woocommerce-chatbot' ) ),
+                'no_media'          => get_option( 'qcld_woo_chatbot_txt_no_media', esc_html__( 'No media available to download.', 'woowbot-woocommerce-chatbot' ) ),
+                'saving'            => get_option( 'qcld_woo_chatbot_txt_saving', esc_html__( 'Saving...', 'woowbot-woocommerce-chatbot' ) ),
+                'saved'             => get_option( 'qcld_woo_chatbot_txt_saved', esc_html__( 'Saved!', 'woowbot-woocommerce-chatbot' ) ),
                 'status_error'      => esc_html__( 'Status Check Error: ', 'woowbot-woocommerce-chatbot' ),
                 'execution_error'   => esc_html__( 'Execution Error: ', 'woowbot-woocommerce-chatbot' ),
                 'unexpected_error'  => esc_html__( 'An unexpected infrastructure communication failure occurred.', 'woowbot-woocommerce-chatbot' ),
-                'no_media'          => esc_html__( 'No media available to download.', 'woowbot-woocommerce-chatbot' ),
                 'only_media'        => esc_html__( 'Only images/videos can be saved to the Media Library.', 'woowbot-woocommerce-chatbot' ),
-                'saving'            => esc_html__( 'Saving...', 'woowbot-woocommerce-chatbot' ),
-                'saved'             => esc_html__( 'Saved!', 'woowbot-woocommerce-chatbot' ),
                 'error'             => esc_html__( 'Error', 'woowbot-woocommerce-chatbot' ),
                 'error_saving'      => esc_html__( 'Error saving media.', 'woowbot-woocommerce-chatbot' ),
                 'network_error'     => esc_html__( 'Network error.', 'woowbot-woocommerce-chatbot' ),
-                'adding'            => esc_html__( 'Adding...', 'woowbot-woocommerce-chatbot' )
             )
         ));
     }

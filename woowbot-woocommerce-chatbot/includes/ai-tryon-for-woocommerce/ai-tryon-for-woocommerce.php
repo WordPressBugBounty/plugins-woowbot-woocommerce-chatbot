@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Declare Constants
 if ( ! defined( 'ai_tryon_for_wc_version' ) ) {
-  define('ai_tryon_for_wc_version', '1.0.0');
+  define('ai_tryon_for_wc_version', '1.0.2');
 }
 if ( ! defined( 'ai_tryon_for_wc_url' ) ) {
   define('ai_tryon_for_wc_url', plugin_dir_url(__FILE__));
