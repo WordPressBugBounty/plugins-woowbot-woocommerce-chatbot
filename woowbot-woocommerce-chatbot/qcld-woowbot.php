@@ -4,13 +4,13 @@
 * Plugin URI: https://woowbot.pro/
 * Description: ChatBot for WooCommerce - WoowBot
 * Donate link: https://woowbot.pro/
-* Version: 4.9.9
+* Version: 5.0.0
 * @author    QuantumCloud
 * @category  WooCommerce
 * Author: ChatBot - WoowBot
 * Author URI: https://woowbot.pro/
 * Requires at least: 5.3
-* Tested up to: 7.1.2
+* Tested up to: 7.1.3
 * Text Domain: woowbot-woocommerce-chatbot
 * Domain Path: /lang/
 * License: GPL2
@@ -19,13 +19,30 @@
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
-define('QCLD_WOOCHATBOT_VERSION', '4.9.9');
-define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
-define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
-define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
-define('QCLD_WOOCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('QCLD_WOOCHATBOT_IMG_URL', QCLD_WOOCHATBOT_PLUGIN_URL . "images");
-define('QCLD_WOOCHATBOT_IMG_ABSOLUTE_PATH', plugin_dir_path(__FILE__) . "images");
+if ( ! defined( 'QCLD_WOOCHATBOT_VERSION' ) ) {
+  define('QCLD_WOOCHATBOT_VERSION', '5.0.0');
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION' ) ) {
+  define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_PLUGIN_DIR_PATH' ) ) {
+  define('QCLD_WOOCHATBOT_PLUGIN_DIR_PATH', basename(plugin_dir_path(__FILE__)));
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH' ) ) {
+  define('QCLD_WOOCHATBOT_PLUGIN_DIR_FULL_PATH', plugin_dir_path(__FILE__));
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_PLUGIN_URL' ) ) {
+  define('QCLD_WOOCHATBOT_PLUGIN_URL', plugin_dir_url(__FILE__));
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_IMG_URL' ) ) {
+  define('QCLD_WOOCHATBOT_IMG_URL', QCLD_WOOCHATBOT_PLUGIN_URL . "images");
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_IMG_ABSOLUTE_PATH' ) ) {
+  define('QCLD_WOOCHATBOT_IMG_ABSOLUTE_PATH', plugin_dir_path(__FILE__) . "images");
+}
+if ( ! defined( 'QCLD_WOOCHATBOT_FILE_URL' ) ) {
+  define( 'QCLD_WOOCHATBOT_FILE_URL', __FILE__ );
+}
 
 $active_plugins = (array) get_option( 'active_plugins', array() );
 if ( is_multisite() ) {
