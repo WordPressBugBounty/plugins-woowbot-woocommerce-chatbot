@@ -4,13 +4,13 @@
 * Plugin URI: https://woowbot.pro/
 * Description: ChatBot for WooCommerce - WoowBot
 * Donate link: https://woowbot.pro/
-* Version: 5.0.0
+* Version: 5.0.1
 * @author    QuantumCloud
 * @category  WooCommerce
 * Author: ChatBot - WoowBot
 * Author URI: https://woowbot.pro/
 * Requires at least: 5.3
-* Tested up to: 7.1.3
+* Tested up to: 7.1
 * Text Domain: woowbot-woocommerce-chatbot
 * Domain Path: /lang/
 * License: GPL2
@@ -20,7 +20,7 @@
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 if ( ! defined( 'QCLD_WOOCHATBOT_VERSION' ) ) {
-  define('QCLD_WOOCHATBOT_VERSION', '5.0.0');
+  define('QCLD_WOOCHATBOT_VERSION', '5.0.1');
 }
 if ( ! defined( 'QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION' ) ) {
   define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);

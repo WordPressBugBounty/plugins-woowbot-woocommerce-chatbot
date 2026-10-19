@@ -216,6 +216,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 		// AJAX handler for PDF upload
 		public function ajax_rag_upload_pdf() {
 			check_ajax_referer('rag_upload_nonce', 'nonce');
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(['message' => 'Unauthorized'], 403);
+			}
 			
 			if (empty($_FILES['rag_pdf'])) {
 				wp_send_json_error(['message' => 'No PDF files uploaded']);
@@ -231,6 +234,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 		// AJAX handler for XAML upload
 		public function ajax_rag_upload_xaml() {
 			check_ajax_referer('rag_upload_nonce', 'nonce');
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(['message' => 'Unauthorized'], 403);
+			}
 			
 			if (empty($_FILES['rag_xaml'])) {
 				wp_send_json_error(['message' => 'No XAML files uploaded']);
@@ -246,6 +252,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 		// AJAX handler for CSV upload  
 		public function ajax_rag_upload_csv() {
 					check_ajax_referer('rag_upload_nonce', 'nonce');
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(['message' => 'Unauthorized'], 403);
+			}
 					
 					if (empty($_FILES['rag_csv'])) {
 						wp_send_json_error(['message' => 'No CSV files uploaded']);
@@ -815,6 +824,9 @@ if ( ! class_exists( 'Qcld_Bot_Rag' ) ) {
 		}
 		public function ajax_rag_manual_sync() {
 			check_ajax_referer('wp_chatbot', 'nonce');
+			if (!current_user_can('manage_options')) {
+				wp_send_json_error(['message' => 'Unauthorized'], 403);
+			}
 			
 			$doc_id = isset($_POST['id']) ? intval( wp_unslash( $_POST['id'] ) ) : 0;
 			if (!$doc_id) {
