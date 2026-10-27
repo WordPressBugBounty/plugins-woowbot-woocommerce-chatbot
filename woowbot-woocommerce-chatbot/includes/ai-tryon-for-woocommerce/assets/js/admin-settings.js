@@ -57,6 +57,10 @@ jQuery(document).ready(function($) {
     });
 
     $('.qcld_woo_chatbot-radio-card').on('click', function() {
+        // Locked (Pro) options: don't show a selection that won't be saved.
+        if ( $(this).find('input').prop('disabled') ) {
+            return;
+        }
         $(this).closest('.qcld_woo_chatbot-radio-grid').find('.qcld_woo_chatbot-radio-card').removeClass('active');
         $(this).addClass('active');
         $(this).find('input').prop('checked', true);
@@ -66,6 +70,9 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         const target = $(this).data('target');
         const defaultVal = $(this).data('default');
+        if ( $('#' + target).prop('disabled') ) {
+            return;
+        }
         $('#' + target).val(defaultVal);
         
         // Optional visual feedback

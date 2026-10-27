@@ -4,13 +4,13 @@
 * Plugin URI: https://woowbot.pro/
 * Description: ChatBot for WooCommerce - WoowBot
 * Donate link: https://woowbot.pro/
-* Version: 5.0.1
+* Version: 5.0.3
 * @author    QuantumCloud
 * @category  WooCommerce
 * Author: ChatBot - WoowBot
 * Author URI: https://woowbot.pro/
 * Requires at least: 5.3
-* Tested up to: 7.1
+* Tested up to: 7.1.3
 * Text Domain: woowbot-woocommerce-chatbot
 * Domain Path: /lang/
 * License: GPL2
@@ -20,7 +20,7 @@
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 if ( ! defined( 'QCLD_WOOCHATBOT_VERSION' ) ) {
-  define('QCLD_WOOCHATBOT_VERSION', '5.0.1');
+  define('QCLD_WOOCHATBOT_VERSION', '5.0.3');
 }
 if ( ! defined( 'QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION' ) ) {
   define('QCLD_WOOCHATBOT_REQUIRED_WOOCOMMERCE_VERSION', 2.2);
@@ -1661,182 +1661,224 @@ if (isset($_POST["qcld_woo_chatbot_board_bg_path"])) {
 
 }
 
-                  /**
-                   * Instantiate plugin.
-                  *
-                  */
-                  
-                  if (!function_exists('qcld_woo_chatboot_plugin_init')) {
-                    function qcld_woo_chatboot_plugin_init()
-                    {
+/**
+ * Instantiate plugin.
+*
+*/
 
-                      global $qcld_woo_chatbot;
+if (!function_exists('qcld_woo_chatboot_plugin_init')) {
+  function qcld_woo_chatboot_plugin_init()
+  {
 
-                      $qcld_woo_chatbot = QCLD_Woo_Chatbot::qcld_woo_chatbot_get_instance();
-                    }
-                  }
-                  add_action('plugins_loaded', 'qcld_woo_chatboot_plugin_init');
-                  
-                  /*
-                  * Initial Options will be insert as defualt data
-                  */
-                  register_activation_hook(__FILE__, 'qcld_woo_chatboot_defualt_options');
-                  function qcld_woo_chatboot_defualt_options(){
-                   if(!get_option('woo_chatbot_position_x')){
-                     update_option('woo_chatbot_position_x', intval(50));
-                   }
-                   if(!get_option('woo_chatbot_position_y')) {
-                     update_option('woo_chatbot_position_y', intval(50));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_ppp')){
-                     update_option('qlcd_woo_chatbot_ppp', intval(10));
-                   }
-                   if(!get_option('disable_woo_chatbot')){
-                     update_option('disable_woo_chatbot', '');
-                   }
-                   if(!get_option('qlcd_wp_chatbot_admin_email')){
-                     update_option('qlcd_wp_chatbot_admin_email', '');
-                   }
-                   if(!get_option('qlcd_wp_chatbot_admin_from_email')){
-                     update_option('qlcd_wp_chatbot_admin_from_email', '');
-                   }
+    global $qcld_woo_chatbot;
 
-                   if(!get_option('qlcd_wp_chatbot_admin_email_name')){
-                     update_option('qlcd_wp_chatbot_admin_email_name', '');
-                   }
-                   if(!get_option('disable_woo_chatbot_on_mobile')) {
-                     update_option('disable_woo_chatbot_on_mobile', '');
-                   }
-                   if(!get_option('woo_chatbot_icon')) {
-                     update_option('woo_chatbot_icon', sanitize_text_field('icon-0.png'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_host')) {
-                     update_option('qlcd_woo_chatbot_host', sanitize_text_field('Our Store'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_agent')) {
-                     update_option('qlcd_woo_chatbot_agent', sanitize_text_field('Carrie'));
-                   }
-                   if(!get_option('wp_chatbot_custom_agent_path')) {
-                     $default_image = esc_url_raw( QCLD_WOOCHATBOT_IMG_URL.'icon-0.png' );
-                     update_option('wp_chatbot_agent_image', sanitize_text_field($default_image));
-                     update_option('wp_chatbot_custom_agent_path', sanitize_text_field('agent image'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_agent_join')) {
-                     update_option('qlcd_woo_chatbot_agent_join', sanitize_text_field('has joined the conversation'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_welcome')) {
-                     update_option('qlcd_woo_chatbot_welcome', sanitize_text_field('Welcome to'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_asking_name')) {
-                     update_option('qlcd_woo_chatbot_asking_name', sanitize_text_field('May I know your name?!'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_name_greeting')) {
-                     update_option('qlcd_woo_chatbot_name_greeting', sanitize_text_field('Nice to meet you'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_i_am')) {
-                     update_option('qlcd_woo_chatbot_i_am', sanitize_text_field('I am!'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_product_success')) {
-                     update_option('qlcd_woo_chatbot_product_success', sanitize_text_field('Great! We have these products.'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_product_fail')) {
-                     update_option('qlcd_woo_chatbot_product_fail', sanitize_text_field('Oops! Nothing matches your criteria'));
-                   }
+    $qcld_woo_chatbot = QCLD_Woo_Chatbot::qcld_woo_chatbot_get_instance();
+  }
+}
+add_action('plugins_loaded', 'qcld_woo_chatboot_plugin_init');
 
-                   if(!get_option('qlcd_woo_chatbot_product_search')) {
-                     update_option('qlcd_woo_chatbot_product_search', sanitize_text_field('Product Search'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_catalog')) {
-                     update_option('qlcd_woo_chatbot_catalog', sanitize_text_field('Catalog'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_send_us_email')) {
-                     update_option('qlcd_woo_chatbot_send_us_email', sanitize_text_field('Send Us Email'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_more_specific')) {
-                     update_option('qlcd_woo_chatbot_more_specific', sanitize_text_field('Can you be more specific?'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_product_asking')) {
-                     update_option('qlcd_woo_chatbot_product_asking', sanitize_text_field('I am here to find you the product you need. What are you shopping for?'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_product_suggest')) {
-                     update_option('qlcd_woo_chatbot_product_suggest', sanitize_text_field('You can browse our extensive catalog. Just pick a category from below:'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_product_infinite')) {
-                     update_option('qlcd_woo_chatbot_product_infinite', sanitize_text_field('Too many choices? Lets try another search term'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_email_successfully')){
-                     update_option('qlcd_woo_chatbot_email_successfully', sanitize_text_field('Your email has been sent successfully! We will post a reply very soon. Thank you!'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_provide_email_address')){
-                     update_option('qlcd_woo_chatbot_provide_email_address', sanitize_text_field('Please provide your email address'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_write_your_message')){
-                     update_option('qlcd_woo_chatbot_write_your_message', sanitize_text_field('Please write you message'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_conversations_with')) {
-                     update_option('qlcd_woo_chatbot_conversations_with', sanitize_text_field('Conversations with'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_is_typing')) {
-                     update_option('qlcd_woo_chatbot_is_typing', sanitize_text_field('is typing...'));
-                   }
-                   if(!get_option('qlcd_woo_chatbot_send_a_msg')) {
-                     update_option('qlcd_woo_chatbot_send_a_msg', sanitize_text_field('Send a message'));
-                   }
-                   if( !get_option('qcld_openai_stream_enabled') ){
-                    update_option('qcld_openai_stream_enabled', 1);
-                  }
-                }
+/*
+* Initial Options will be insert as defualt data
+*/
+register_activation_hook(__FILE__, 'qcld_woo_chatboot_defualt_options');
+function qcld_woo_chatboot_defualt_options(){
+ if(!get_option('woo_chatbot_position_x')){
+   update_option('woo_chatbot_position_x', intval(50));
+ }
+ if(!get_option('woo_chatbot_position_y')) {
+   update_option('woo_chatbot_position_y', intval(50));
+ }
+ if(!get_option('qlcd_woo_chatbot_ppp')){
+   update_option('qlcd_woo_chatbot_ppp', intval(10));
+ }
+ if(!get_option('disable_woo_chatbot')){
+   update_option('disable_woo_chatbot', '');
+ }
+ if(!get_option('qlcd_wp_chatbot_admin_email')){
+   update_option('qlcd_wp_chatbot_admin_email', '');
+ }
+ if(!get_option('qlcd_wp_chatbot_admin_from_email')){
+   update_option('qlcd_wp_chatbot_admin_from_email', '');
+ }
 
-                  /**
-                   *
-                  * Function to load translation files.
-                  *
-                  */
-                  
-                  function woo_chatbot_lang_init() {
-                  // phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound, WordPress.WP.DeprecatedParameters.Load_plugin_textdomainParam2Found
-                    load_plugin_textdomain( 'woowbot-woocommerce-chatbot', false, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
-                  }
-                  
-                  add_action( 'plugins_loaded', 'woo_chatbot_lang_init' );
-                  //Blink
-                  function qcld_chatbot_options_instructions_example() {
-                    global $my_admin_page;
-                    $screen = get_current_screen();
-                    if ( is_admin() && ($screen->base == 'toplevel_page_woowbot') ) {
-                      ?>
-                      <div class="notice notice-info is-dismissible woowbot-notice">
-                       <div class="woowbot_info_carousel">
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Want to make WoowBot Really intelligent with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('AI and Natural Language Processing?', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('Upgrade to the Pro version', 'woowbot-woocommerce-chatbot'); ?> </div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot Pro is integrated with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('OpenAI ChatGPT and DialogFlow AI', 'woowbot-woocommerce-chatbot'); ?></strong> </div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: ', 'woowbot-woocommerce-chatbot'); ?>  <strong class="qcld-tip-highlight"><?php esc_html_e('Use ChatGPT to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('answer  questions and provide real customer support', 'woowbot-woocommerce-chatbot'); ?></div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Are your customers not completing orders? Find out with the', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Customer Conversion report', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('in the Pro version', 'woowbot-woocommerce-chatbot'); ?>.</div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip:', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Use WoowBot Pro to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('provide live chat suport to your customers!', 'woowbot-woocommerce-chatbot'); ?></div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Utilize Onsite Retargeting for', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Exit Intent or Scroll down Popups', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('with WoowBot Pro. Increase sales by 50% or more!', 'woowbot-woocommerce-chatbot'); ?></div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Setting up WoowBot pro is easy and quick!', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Plug and Play', 'woowbot-woocommerce-chatbot'); ?></strong>. <?php esc_html_e('No complex bot training required!', 'woowbot-woocommerce-chatbot'); ?> </div>
-                        <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot pro integrates with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Facebook, Instagram, Telegram', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('and more to give your customers the support they deserve. Increase customer satisfaction!', 'woowbot-woocommerce-chatbot'); ?> </div>
-                      </div>
-                    </div>
-                    <?php
-                  }
-                }
-                add_action( 'admin_notices', 'qcld_chatbot_options_instructions_example',100 );
-                if( is_admin() ){
-                  require_once("class-plugin-deactivate-feedback.php");
-                  $wowbot_feedback = new Wp_Usage_Feedback( __FILE__, 'plugins@quantumcloud.net', false, true );
-                }
+ if(!get_option('qlcd_wp_chatbot_admin_email_name')){
+   update_option('qlcd_wp_chatbot_admin_email_name', '');
+ }
+ if(!get_option('disable_woo_chatbot_on_mobile')) {
+   update_option('disable_woo_chatbot_on_mobile', '');
+ }
+ if(!get_option('woo_chatbot_icon')) {
+   update_option('woo_chatbot_icon', sanitize_text_field('icon-0.png'));
+ }
+ if(!get_option('qlcd_woo_chatbot_host')) {
+   update_option('qlcd_woo_chatbot_host', sanitize_text_field('Our Store'));
+ }
+ if(!get_option('qlcd_woo_chatbot_agent')) {
+   update_option('qlcd_woo_chatbot_agent', sanitize_text_field('Carrie'));
+ }
+ if(!get_option('wp_chatbot_custom_agent_path')) {
+   $default_image = esc_url_raw( QCLD_WOOCHATBOT_IMG_URL.'icon-0.png' );
+   update_option('wp_chatbot_agent_image', sanitize_text_field($default_image));
+   update_option('wp_chatbot_custom_agent_path', sanitize_text_field('agent image'));
+ }
+ if(!get_option('qlcd_woo_chatbot_agent_join')) {
+   update_option('qlcd_woo_chatbot_agent_join', sanitize_text_field('has joined the conversation'));
+ }
+ if(!get_option('qlcd_woo_chatbot_welcome')) {
+   update_option('qlcd_woo_chatbot_welcome', sanitize_text_field('Welcome to'));
+ }
+ if(!get_option('qlcd_woo_chatbot_asking_name')) {
+   update_option('qlcd_woo_chatbot_asking_name', sanitize_text_field('May I know your name?'));
+ }
+ if(!get_option('qlcd_woo_chatbot_name_greeting')) {
+   update_option('qlcd_woo_chatbot_name_greeting', sanitize_text_field('Nice to meet you'));
+ }
+ if(!get_option('qlcd_woo_chatbot_i_am')) {
+   update_option('qlcd_woo_chatbot_i_am', sanitize_text_field('I am!'));
+ }
+ if(!get_option('qlcd_woo_chatbot_product_success')) {
+   update_option('qlcd_woo_chatbot_product_success', sanitize_text_field('Great! We have these products.'));
+ }
+ if(!get_option('qlcd_woo_chatbot_product_fail')) {
+   update_option('qlcd_woo_chatbot_product_fail', sanitize_text_field('Oops! Nothing matches your criteria'));
+ }
+
+ if(!get_option('qlcd_woo_chatbot_product_search')) {
+   update_option('qlcd_woo_chatbot_product_search', sanitize_text_field('Product Search'));
+ }
+ if(!get_option('qlcd_woo_chatbot_catalog')) {
+   update_option('qlcd_woo_chatbot_catalog', sanitize_text_field('Catalog'));
+ }
+ if(!get_option('qlcd_woo_chatbot_send_us_email')) {
+   update_option('qlcd_woo_chatbot_send_us_email', sanitize_text_field('Send Us Email'));
+ }
+ if(!get_option('qlcd_woo_chatbot_more_specific')) {
+   update_option('qlcd_woo_chatbot_more_specific', sanitize_text_field('Can you be more specific?'));
+ }
+ if(!get_option('qlcd_woo_chatbot_product_asking')) {
+   update_option('qlcd_woo_chatbot_product_asking', sanitize_text_field('I am here to find you the product you need. What are you shopping for?'));
+ }
+ if(!get_option('qlcd_woo_chatbot_product_suggest')) {
+   update_option('qlcd_woo_chatbot_product_suggest', sanitize_text_field('You can browse our extensive catalog. Just pick a category from below:'));
+ }
+ if(!get_option('qlcd_woo_chatbot_product_infinite')) {
+   update_option('qlcd_woo_chatbot_product_infinite', sanitize_text_field('Too many choices? Lets try another search term'));
+ }
+ if(!get_option('qlcd_woo_chatbot_email_successfully')){
+   update_option('qlcd_woo_chatbot_email_successfully', sanitize_text_field('Your email has been sent successfully! We will post a reply very soon. Thank you!'));
+ }
+ if(!get_option('qlcd_woo_chatbot_provide_email_address')){
+   update_option('qlcd_woo_chatbot_provide_email_address', sanitize_text_field('Please provide your email address'));
+ }
+ if(!get_option('qlcd_woo_chatbot_write_your_message')){
+   update_option('qlcd_woo_chatbot_write_your_message', sanitize_text_field('Please write you message'));
+ }
+ if(!get_option('qlcd_woo_chatbot_conversations_with')) {
+   update_option('qlcd_woo_chatbot_conversations_with', sanitize_text_field('Conversations with'));
+ }
+ if(!get_option('qlcd_woo_chatbot_is_typing')) {
+   update_option('qlcd_woo_chatbot_is_typing', sanitize_text_field('is typing...'));
+ }
+ if(!get_option('qlcd_woo_chatbot_send_a_msg')) {
+   update_option('qlcd_woo_chatbot_send_a_msg', sanitize_text_field('Send a message'));
+ }
+ if( !get_option('qcld_openai_stream_enabled') ){
+  update_option('qcld_openai_stream_enabled', 1);
+}
+}
+
+/**
+ *
+* Function to load translation files.
+*
+*/
+
+function woo_chatbot_lang_init() {
+// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound, WordPress.WP.DeprecatedParameters.Load_plugin_textdomainParam2Found
+  load_plugin_textdomain( 'woowbot-woocommerce-chatbot', false, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
+}
+
+add_action( 'plugins_loaded', 'woo_chatbot_lang_init' );
+//Blink
+function qcld_chatbot_options_instructions_example() {
+  global $my_admin_page;
+  $screen = get_current_screen();
+  if ( is_admin() && ($screen->base == 'toplevel_page_woowbot') ) {
+    ?>
+    <div class="notice notice-info is-dismissible woowbot-notice">
+     <div class="woowbot_info_carousel">
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Want to make WoowBot Really intelligent with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('AI and Natural Language Processing?', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('Upgrade to the Pro version', 'woowbot-woocommerce-chatbot'); ?> </div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot Pro is integrated with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('OpenAI ChatGPT and DialogFlow AI', 'woowbot-woocommerce-chatbot'); ?></strong> </div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: ', 'woowbot-woocommerce-chatbot'); ?>  <strong class="qcld-tip-highlight"><?php esc_html_e('Use ChatGPT to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('answer  questions and provide real customer support', 'woowbot-woocommerce-chatbot'); ?></div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Are your customers not completing orders? Find out with the', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Customer Conversion report', 'woowbot-woocommerce-chatbot'); ?></strong>  <?php esc_html_e('in the Pro version', 'woowbot-woocommerce-chatbot'); ?>.</div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip:', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Use WoowBot Pro to', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('provide live chat suport to your customers!', 'woowbot-woocommerce-chatbot'); ?></div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Utilize Onsite Retargeting for', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Exit Intent or Scroll down Popups', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('with WoowBot Pro. Increase sales by 50% or more!', 'woowbot-woocommerce-chatbot'); ?></div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: Setting up WoowBot pro is easy and quick!', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Plug and Play', 'woowbot-woocommerce-chatbot'); ?></strong>. <?php esc_html_e('No complex bot training required!', 'woowbot-woocommerce-chatbot'); ?> </div>
+      <div class="woowbot_info_item"><?php esc_html_e('**Pro Tip: WoowBot pro integrates with', 'woowbot-woocommerce-chatbot'); ?> <strong class="qcld-tip-highlight"><?php esc_html_e('Facebook, Instagram, Telegram', 'woowbot-woocommerce-chatbot'); ?></strong> <?php esc_html_e('and more to give your customers the support they deserve. Increase customer satisfaction!', 'woowbot-woocommerce-chatbot'); ?> </div>
+    </div>
+  </div>
+  <?php
+  }
+}
+add_action( 'admin_notices', 'qcld_chatbot_options_instructions_example',100 );
 
 
-                if ( ! function_exists( 'qcld_chatbot_activation_redirect' ) ) {
-                  function qcld_chatbot_activation_redirect( $plugin ) {
+if( is_admin() ){
+  require_once("class-plugin-deactivate-feedback.php");
+  $wowbot_feedback = new Wp_Usage_Feedback( __FILE__, 'plugins@quantumcloud.net', false, true );
+}
 
-                    $screen = get_current_screen();
 
-                    if( ( isset( $screen->base ) && $screen->base == 'plugins' ) && $plugin == plugin_basename( __FILE__ ) ) {
+if ( ! function_exists( 'qcld_chatbot_activation_redirect' ) ) {
+function qcld_chatbot_activation_redirect( $plugin ) {
 
-                      exit( esc_url( wp_safe_redirect( admin_url( 'admin.php?page=woowbot') ) ) );
-                    }
+  $screen = get_current_screen();
 
-                  }
-                }
-                add_action( 'activated_plugin', 'qcld_chatbot_activation_redirect' );
+  if( ( isset( $screen->base ) && $screen->base == 'plugins' ) && $plugin == plugin_basename( __FILE__ ) ) {
+
+    exit( esc_url( wp_safe_redirect( admin_url( 'admin.php?page=woowbot') ) ) );
+  }
+
+}
+}
+add_action( 'activated_plugin', 'qcld_chatbot_activation_redirect' );
+
+add_action( 'admin_notices', 'qcld_chatbot_options_notice' );
+if ( ! function_exists( 'qcld_chatbot_options_notice' ) ) {
+  function qcld_chatbot_options_notice(){
+    global $pagenow;
+
+    // Define all the specific page slugs that should show the notice
+    $allowed_pages = array(
+      'woowbot',
+      'chatbot_ai_setting',
+      'qcpro-promo-page-woowbot-support',
+      'qcld_woowbot_info_page',
+      'ai-tryon-for-woocommerce',
+      'ai-tryon-for-woocommerce-ai',
+      'ai-woo-insights'
+    );
+
+    $current_page = isset( $_GET['page'] ) ? sanitize_text_field( $_GET['page'] ) : '';
+
+    // Condition 1: Check if it's the core plugins screen
+    // Condition 2: Check if it's an admin.php page with an allowed slug
+    if ( 
+      ( $pagenow === 'plugins.php' ) || 
+      ( $pagenow === 'admin.php' && in_array( $current_page, $allowed_pages, true ) ) 
+    ) {
+    ?>
+    <div id="message" class="notice notice-info is-dismissible" style="padding:4px 0px 0px 4px;background:#c13825;">
+        <?php
+            printf(
+                esc_html('%s  %s  %s', 'woowbot-woocommerce-chatbot'),
+                '<a href="'.esc_url('https://woowbot.pro/').'" target="_blank">',
+                '<img src="'.esc_url(QCLD_WOOCHATBOT_IMG_URL . '/halloween-woowbot-2026.jpg').'" >',
+                '</a>'
+            );
+        ?>
+    </div>
+    <?php
+    }
+  }
+}

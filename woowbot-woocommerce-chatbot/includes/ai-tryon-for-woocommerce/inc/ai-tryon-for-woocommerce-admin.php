@@ -40,6 +40,7 @@ function qcld_woo_chatbot_settings_page() {
     ?>
     <div class="wrap">
         <h2><?php esc_html_e( 'AI Try-On Configurations', 'woowbot-woocommerce-chatbot' ); ?></h2>
+        <?php settings_errors(); ?>
         <div class="qcld_woo_chatbot-admin-wrap">
             
             <form method="post" action="options.php" class="qcld_woo_chatbot-settings-form">
@@ -203,7 +204,7 @@ function qcld_woo_chatbot_settings_page() {
                                             foreach ($durations as $val => $data) {
                                                 $active_class = ($selected_duration === $val) ? 'active' : '';
                                                 echo '<label class="qcld_woo_chatbot-radio-card ' . esc_attr($active_class) . '">';
-                                                echo '<input type="radio" name="qcld_woo_chatbot_video_duration" value="'.esc_attr($val).'" ' . checked($selected_duration, $val, false) . ' disabled />';
+                                                echo '<input type="radio" name="qcld_woo_chatbot_video_duration" value="'.esc_attr($val).'" ' . checked($selected_duration, $val, false) . ( qcld_woo_chatbot_video_settings_enabled() ? '' : ' disabled' ) . ' />';
                                                 echo '<div class="qcld_woo_chatbot-radio-content">';
                                                 echo '<span class="dashicons '.esc_attr($data['icon']).'"></span>';
                                                 echo '<div class="qcld_woo_chatbot-radio-title">'.esc_html($data['title']).'</div>';
@@ -229,7 +230,7 @@ function qcld_woo_chatbot_settings_page() {
                                             foreach ($resolutions as $val => $data) {
                                                 $active_class = ($selected_resolution === $val) ? 'active' : '';
                                                 echo '<label class="qcld_woo_chatbot-radio-card ' . esc_attr($active_class) . '">';
-                                                echo '<input type="radio" name="qcld_woo_chatbot_video_resolution" value="'.esc_attr($val).'" ' . checked($selected_resolution, $val, false) . ' disabled />';
+                                                echo '<input type="radio" name="qcld_woo_chatbot_video_resolution" value="'.esc_attr($val).'" ' . checked($selected_resolution, $val, false) . ( qcld_woo_chatbot_video_settings_enabled() ? '' : ' disabled' ) . ' />';
                                                 echo '<div class="qcld_woo_chatbot-radio-content">';
                                                 echo '<span class="dashicons '.esc_attr($data['icon']).'"></span>';
                                                 echo '<div class="qcld_woo_chatbot-radio-title">'.esc_html($data['title']).'</div>';
@@ -312,7 +313,7 @@ function qcld_woo_chatbot_settings_page() {
 
                                 <div class="qcld_woo_chatbot-form-group qcld_woo_chatbot-full-width">
                                     <label for="qcld_woo_chatbot_veo_prompt"><?php esc_html_e( 'Gemini Veo Video Base Prompt', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
-                                    <textarea id="qcld_woo_chatbot_veo_prompt" name="qcld_woo_chatbot_veo_prompt" class="qcld_woo_chatbot-textarea-field" rows="3" disabled><?php echo esc_textarea(get_option('qcld_woo_chatbot_veo_prompt', 'Create a realistic virtual try-on video based on this image. The first image is the product {product_name} to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Background: {bg_preference}. Style: {output_style}. Do not change the model/user/customer face appearance. Additional context: {scenario}')); ?></textarea>
+                                    <textarea id="qcld_woo_chatbot_veo_prompt" name="qcld_woo_chatbot_veo_prompt" class="qcld_woo_chatbot-textarea-field" rows="3"<?php echo esc_attr( ( qcld_woo_chatbot_video_settings_enabled() ? '' : ' disabled' ) ); ?>><?php echo esc_textarea(get_option('qcld_woo_chatbot_veo_prompt', 'Create a realistic virtual try-on video based on this image. The first image is the product {product_name} to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Background: {bg_preference}. Style: {output_style}. Do not change the model/user/customer face appearance. Additional context: {scenario}')); ?></textarea>
                                     <div class="qcld_woo_chatbot-card-row-flex">
                                         <span class="qcld_woo_chatbot-description qcld_woo_chatbot-m-0"><?php esc_html_e( 'Customize the base instructions for Veo video generation. (Available in Pro)', 'woowbot-woocommerce-chatbot' ); ?></span>
                                         <a href="#" class="qcld_woo_chatbot-reset-prompt-btn" data-target="qcld_woo_chatbot_veo_prompt" data-default="Create a realistic virtual try-on video based on this image. The first image is the product {product_name} to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Background: {bg_preference}. Style: {output_style}. Do not change the model/user/customer face appearance. Additional context: {scenario}"><?php esc_html_e( 'Reset to Default', 'woowbot-woocommerce-chatbot' ); ?></a>
@@ -629,6 +630,7 @@ function qcld_woo_chatbot_settings_page() {
         ?>
         <div class="wrap">
             <h2><?php esc_html_e( 'AI Settings', 'woowbot-woocommerce-chatbot' ); ?></h2>
+            <?php settings_errors(); ?>
             <div class="qcld_woo_chatbot-admin-wrap">
                 <form method="post" action="options.php" class="qcld_woo_chatbot-settings-form">
                     <?php settings_fields( 'qcld_woo_chatbot_ai_settings_group' ); ?>
@@ -702,7 +704,7 @@ function qcld_woo_chatbot_settings_page() {
                                             
                                             if(!empty($image_models)){
                                                 foreach ($image_models as $m) {
-                                                    $selected = ($m === $saved_model) ? 'selected' : '';
+                                                    $selected = ($m == $saved_model) ? 'selected' : '';
                                                     echo '<option value="' . esc_attr($m) . '" ' . wp_kses_post($selected) . '>' . esc_html($m) . '</option>';
                                                 }
                                             }
@@ -773,7 +775,7 @@ function qcld_woo_chatbot_settings_page() {
                                 <div class="qcld_woo_chatbot-form-group">
                                     <label for="qcld_woo_chatbot_gemini_video_model"><?php esc_html_e( 'Gemini Video Model (Google Veo)', 'woowbot-woocommerce-chatbot' ); ?> <span class="qcld_woo_chatbot-pro-badge"><?php esc_html_e( '(Pro Feature)', 'woowbot-woocommerce-chatbot' ); ?></span></label>
                                     <div class="qcld_woo_chatbot-input-action-group">
-                                        <select id="qcld_woo_chatbot_gemini_video_model" name="qcld_woo_chatbot_gemini_video_model" class="qcld_woo_chatbot-select-field" disabled>
+                                        <select id="qcld_woo_chatbot_gemini_video_model" name="qcld_woo_chatbot_gemini_video_model" class="qcld_woo_chatbot-select-field"<?php echo esc_attr( ( qcld_woo_chatbot_video_settings_enabled() ? '' : ' disabled' ) ); ?>>
                                             <?php
                                             $saved_g_video = get_option('qcld_woo_chatbot_gemini_video_model', 'veo-3.1-generate-preview');
                                             $g_video_models = get_option('qcld_woo_chatbot_gemini_available_video_models', array());
@@ -819,6 +821,59 @@ function qcld_woo_chatbot_settings_page() {
     <?php
 }
 
+/**
+ * Whether the video settings (duration, resolution, Veo prompt, Veo model)
+ * can be edited. They are Pro features: a Pro add-on returns true here.
+ *
+ * @return bool
+ */
+function qcld_woo_chatbot_video_settings_enabled() {
+    return (bool) apply_filters( 'qcld_woo_chatbot_video_settings_enabled', false );
+}
+
+/**
+ * Keep the saved value when a video field was not submitted (it is
+ * disabled) or holds an unexpected value. Without this, options.php would
+ * save an empty value for a registered field that was not posted.
+ *
+ * @param mixed    $value   Submitted value.
+ * @param string   $option  Option name.
+ * @param string   $default Default value.
+ * @param string[] $allowed Allowed values; empty means any text.
+ * @param bool     $textarea Sanitize as multi-line text.
+ * @return string
+ */
+function qcld_woo_chatbot_sanitize_video_option( $value, $option, $default, $allowed = array(), $textarea = false ) {
+    $current = (string) get_option( $option, $default );
+    if ( null === $value || ! qcld_woo_chatbot_video_settings_enabled() ) {
+        return $current;
+    }
+    $value = $textarea ? sanitize_textarea_field( (string) $value ) : sanitize_text_field( (string) $value );
+    if ( '' === $value ) {
+        return $current;
+    }
+    if ( ! empty( $allowed ) && ! in_array( $value, $allowed, true ) ) {
+        return $current;
+    }
+    return $value;
+}
+
+function qcld_woo_chatbot_sanitize_video_duration( $value ) {
+    return qcld_woo_chatbot_sanitize_video_option( $value, 'qcld_woo_chatbot_video_duration', '4s', array( '4s', '8s' ) );
+}
+
+function qcld_woo_chatbot_sanitize_video_resolution( $value ) {
+    return qcld_woo_chatbot_sanitize_video_option( $value, 'qcld_woo_chatbot_video_resolution', '720p', array( '720p', '1080p' ) );
+}
+
+function qcld_woo_chatbot_sanitize_veo_prompt( $value ) {
+    return qcld_woo_chatbot_sanitize_video_option( $value, 'qcld_woo_chatbot_veo_prompt', 'Create a realistic virtual try-on video based on this image. The first image is the product {product_name} to wear/use. The second image is the model/user/customer photo. Put the product on the person naturally with correct proportions, lighting, and perspective. Background: {bg_preference}. Style: {output_style}. Do not change the model/user/customer face appearance. Additional context: {scenario}', array(), true );
+}
+
+function qcld_woo_chatbot_sanitize_gemini_video_model( $value ) {
+    return qcld_woo_chatbot_sanitize_video_option( $value, 'qcld_woo_chatbot_gemini_video_model', 'veo-3.1-generate-preview' );
+}
+
 function qcld_woo_chatbot_register_settings() {
     // General & Prompts Settings
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_button_enabled', array( 'sanitize_callback' => 'sanitize_text_field' ) );
@@ -834,6 +889,9 @@ function qcld_woo_chatbot_register_settings() {
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_openai_system_prompt', array( 'sanitize_callback' => 'sanitize_textarea_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_image_size', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_openai_image_quality', array( 'sanitize_callback' => 'sanitize_text_field' ) );
+    register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_video_duration', array( 'sanitize_callback' => 'qcld_woo_chatbot_sanitize_video_duration' ) );
+    register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_video_resolution', array( 'sanitize_callback' => 'qcld_woo_chatbot_sanitize_video_resolution' ) );
+    register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_veo_prompt', array( 'sanitize_callback' => 'qcld_woo_chatbot_sanitize_veo_prompt' ) );
 
     // Language Center Settings
     register_setting( 'qcld_woo_chatbot_settings_group', 'qcld_woo_chatbot_txt_modal_badge', array( 'sanitize_callback' => 'sanitize_text_field' ) );
@@ -880,5 +938,6 @@ function qcld_woo_chatbot_register_settings() {
     register_setting( 'qcld_woo_chatbot_ai_settings_group', 'qcld_woo_chatbot_openai_image_model', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_ai_settings_group', 'qcld_woo_chatbot_gemini_api_key', array( 'sanitize_callback' => 'sanitize_text_field' ) );
     register_setting( 'qcld_woo_chatbot_ai_settings_group', 'qcld_woo_chatbot_gemini_image_model', array( 'sanitize_callback' => 'sanitize_text_field' ) );
+    register_setting( 'qcld_woo_chatbot_ai_settings_group', 'qcld_woo_chatbot_gemini_video_model', array( 'sanitize_callback' => 'qcld_woo_chatbot_sanitize_gemini_video_model' ) );
 
 }

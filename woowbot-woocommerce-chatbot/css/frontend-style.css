@@ -764,10 +764,17 @@ ul.woo-chatbot-messages-container  li.woo-chatbot-msg .qcld-modal-bargin-add-to-
     border-radius: 5px !important;
 }
 .woo-chatbot-comment-loader{
-	background: transparent !important;
-	padding: 0;
-	border-radius: 0 !important;
+	background: #ffffff !important;
+	padding: 10px 14px !important;
+	border-radius: 15px !important;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
+	box-sizing: content-box !important;
+	display: inline-block !important;
+}
+span.woo-chatbot-paragraph.ai-response .woo-chatbot-comment-loader{
+	padding: 0 !important;
 	box-shadow: none !important;
+	background: transparent !important;
 }
 .slimScrollDiv {
     border-radius: 5px 5px 0 0 !important;
